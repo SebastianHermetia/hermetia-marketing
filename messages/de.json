@@ -1,0 +1,292 @@
+{
+  "site": {
+    "name": "Hermetia",
+    "tagline": "Wie oben, so unten",
+    "claim": "Ein Bild deiner Seele – aus allem, was dich ausmacht."
+  },
+  "nav": {
+    "leistungen": "Leistungen",
+    "systeme": "Systeme",
+    "methodik": "So entsteht dein Profil",
+    "preise": "Preise",
+    "login": "Anmelden",
+    "start": "Profil starten"
+  },
+  "cta": {
+    "startFree": "Profil kostenlos starten",
+    "seeChart": "Kostenlos meine Seelenkarte sehen",
+    "howItWorks": "Wie das funktioniert",
+    "comparePrices": "Preise vergleichen",
+    "allServices": "Alle Leistungen ansehen",
+    "exploreSystems": "Alle Systeme erkunden",
+    "methodDetail": "Wie wir rechnen – im Detail",
+    "more": "Mehr erfahren"
+  },
+  "footer": {
+    "blurb": "Ein Bild deiner Seele – aus allem, was dich ausmacht. Wie oben, so unten.",
+    "product": "Produkt",
+    "discover": "Entdecken",
+    "legal": "Rechtliches",
+    "magazin": "Magazin",
+    "glossar": "Glossar",
+    "faq": "FAQ",
+    "about": "Über Hermetia",
+    "datenschutz": "Datenschutz",
+    "kiTransparenz": "KI-Transparenz",
+    "agb": "AGB",
+    "widerruf": "Widerruf",
+    "impressum": "Impressum",
+    "disclaimer": "Inspiration zur Selbstreflexion – keine medizinische oder therapeutische Beratung. Inhalte teilweise KI-gestützt erstellt (EU AI Act Art. 50)."
+  },
+  "home": {
+    "seoTitle": "Hermetia — Deine Seelenkarte. Ein Bild, das dich versteht.",
+    "seoDescription": "Hermetia verwandelt deine Geburtsdaten in eine Seelenkarte aus 25 Deutungssystemen und begleitet dich Tag für Tag. Jetzt kostenlos dein Profil entdecken.",
+    "hero": {
+      "eyebrow": "Wie oben, so unten",
+      "title": "Ein Bild deiner Seele – aus allem, was dich ausmacht.",
+      "lead": "Hermetia liest deine Geburtsdaten und webt aus bis zu 25 Deutungssystemen eine einzige, klare Seelenkarte – und begleitet dich Tag für Tag. Kein Datenblatt. Eine Reise zu dir.",
+      "trustline": "Kostenlos starten · keine Kreditkarte · EU-Hosting & verschlüsselt",
+      "quote": "Deine Sensibilität ist ein Kompass – keine Schwäche.",
+      "chips": ["Tiefe Wahrnehmung", "Schöpferische Ruhe", "Mut zur Klarheit"]
+    },
+    "trust": {
+      "kicker": "Für Menschen, die sich gesehen fühlen wollen – nicht vermessen",
+      "items": ["25 Deutungssysteme", "DSGVO & Art. 9 by design", "KI transparent gekennzeichnet", "Einladend, nie bestimmend"]
+    },
+    "features": {
+      "kicker": "Was Hermetia für dich tut",
+      "title": "Sechs Wege, dich besser zu verstehen",
+      "items": [
+        { "icon": "❂", "title": "Deine Seelenkarte", "text": "Ein schönes, persönliches Gesamtbild – Chart-Wheel und Energiekörper in einem Blick. Dein Aha-Moment." },
+        { "icon": "❧", "title": "Deine Ebenen", "text": "Stärken, Schatten, Beziehungen, Berufung – als Reise freischaltbar, nicht als 10.000-Wort-Wand." },
+        { "icon": "☼", "title": "Tagesimpuls „Heute“", "text": "Ein ruhiger Fokus-Satz pro Tag, gebunden an dein Profil. Beruhigend statt bindend – kein FOMO." },
+        { "icon": "✍", "title": "Journaling & Reflexion", "text": "Reflexionsfragen zum Mitschreiben, Monatsrückblick und wiederkehrende Themen." },
+        { "icon": "❦", "title": "Dein Buch", "text": "Dein vollständiges Profil als gebundenes, gestaltetes PDF zum Behalten und Lesen." },
+        { "icon": "⚭", "title": "Beziehungen", "text": "Lege ein zweites Profil an und sieh Harmonie, Spannung und Entwicklung – mit klarer Einwilligung." }
+      ]
+    },
+    "method": {
+      "kicker": "So entsteht dein Profil",
+      "title": "Wir rechnen exakt. Wir deuten warm.",
+      "lead": "Drei Schritte, transparent – damit du verstehst, woher jede Aussage kommt.",
+      "steps": [
+        { "step": "Schritt 01", "title": "Berechnen", "text": "Ein deterministischer Rechenkern (Skyfield) bestimmt aus Datum, Zeit und Ort dein finites Fundament je System – immer reproduzierbar, nie geraten." },
+        { "step": "Schritt 02", "title": "Verknüpfen", "text": "Unsere Konvergenz-Engine findet, wo sich Systeme bestätigen (Stärke) und wo sie sich widersprechen (gute Fragen). Das ist Hermetias Herz." },
+        { "step": "Schritt 03", "title": "Begleiten", "text": "Erst hier deutet die KI – einladend, in deiner Sprache. Sichtbar gekennzeichnet, niemals als medizinischer oder schicksalhafter Rat." }
+      ]
+    },
+    "systems": {
+      "kicker": "Die eingebetteten Systeme",
+      "title": "25 Traditionen. Eine Stimme.",
+      "text": "Astrologie, Human Design, Gene Keys, Numerologie, BaZi, Enneagramm und mehr – Hermetia liest sie nicht nebeneinander, sondern zusammen. Wo viele Wege auf denselben Punkt zeigen, wird daraus Gewissheit.",
+      "chips": ["Astrologie", "Human Design", "Gene Keys", "Numerologie", "BaZi · Vier Säulen", "Enneagramm", "Maya Tzolk’in", "Nakshatra", "I Ching", "Ayurveda", "+ 15 weitere"]
+    },
+    "voices": {
+      "kicker": "Stimmen",
+      "title": "Was Menschen erleben",
+      "items": [
+        { "quote": "Zum ersten Mal hat sich Spiritualität nicht kitschig angefühlt, sondern klug.", "name": "Marie K., 34" },
+        { "quote": "Die Seelenkarte war mein Aha-Moment. Ich wollte sofort mehr lesen.", "name": "Lena S., 41" },
+        { "quote": "Der Tagesimpuls begleitet mich morgens – ruhig, nie aufdringlich.", "name": "Anette H., 38" }
+      ]
+    },
+    "pricingTeaser": {
+      "kicker": "Preise",
+      "title": "Beginne kostenlos. Bleibe für 49 € im Jahr.",
+      "lead": "Sieh deine Seelenkarte und dein erstes Kernthema gratis. Öffne alle Ebenen für den Preis eines Kaffees im Monat."
+    },
+    "faq": {
+      "kicker": "Häufige Fragen",
+      "title": "Gut zu wissen",
+      "items": [
+        { "q": "Was ist eine Seelenkarte?", "a": "Deine Seelenkarte ist ein integriertes Persönlichkeitsbild, das Hermetia aus deinen Geburtsdaten und bis zu 25 Deutungssystemen berechnet und zu einer verständlichen, schönen Darstellung verbindet." },
+        { "q": "Brauche ich meine genaue Geburtszeit?", "a": "Nein. Hermetia funktioniert auch ohne exakte Uhrzeit – du wählst dann eine Tageszeit. Wir sagen dir transparent, welcher Teil deines Profils auch ohne Uhrzeit gesichert ist." },
+        { "q": "Ist das eine Diagnose oder Vorhersage?", "a": "Nein. Hermetia ist Inspiration zur Selbstreflexion – keine medizinische, psychologische oder therapeutische Beratung und keine Schicksalsvorhersage." },
+        { "q": "Was passiert mit meinen Daten?", "a": "Deine Daten liegen verschlüsselt in der EU. Spirituell-weltanschauliche Profile sind besondere Daten (DSGVO Art. 9) – wir holen dafür deine ausdrückliche Einwilligung und du kannst alles jederzeit exportieren oder löschen." }
+      ]
+    },
+    "finalCta": {
+      "title": "Deine Reise beginnt mit einem Blick.",
+      "lead": "Sieh deine Seelenkarte in zwei Minuten – kostenlos."
+    }
+  },
+  "leistungen": {
+    "seoTitle": "Leistungen — Was Hermetia für dich tut | Seelenkarte, Ebenen, Tagesimpuls",
+    "seoDescription": "Seelenkarte, freischaltbare Ebenen, täglicher Impuls, Journaling, dein Buch und Beziehungsauswertungen: alle Funktionen von Hermetia im Überblick.",
+    "kicker": "Leistungen",
+    "title": "Alles, was dich auf deiner Reise begleitet.",
+    "lead": "Von deinem ersten Aha-Moment bis zur täglichen Begleitung – Hermetia wächst mit dir.",
+    "soulmap": { "tag": "Dein Aha-Moment", "title": "Die Seelenkarte", "text": "Ein schönes, persönliches Gesamtbild: dein Chart-Wheel und dein abstrahierter Energiekörper in einem Blick – berechnet, nicht behauptet. Der Moment, in dem du dich zum ersten Mal gesehen fühlst." },
+    "levels": { "tag": "Als Reise, nicht als Wand", "title": "Deine Ebenen", "text": "Zehn seelisch gerahmte Themen – Stärken, Schatten, Beziehungen, Berufung, Seelenweg und mehr. Sie öffnen sich wie Türen, eine nach der anderen. Synthese zuerst, Details zum Aufklappen – nie eine 10.000-Wort-Wand.", "open": "geöffnet", "locked": "Ebene öffnen", "labels": ["Was dich ausmacht", "Stärken & Gaben", "Schatten & Wachstum"] },
+    "daily": {
+      "kicker": "Tag für Tag",
+      "title": "Begleitung, die im Alltag trägt",
+      "items": [
+        { "icon": "☼", "title": "Tagesimpuls „Heute“", "text": "Ein ruhiger Fokus-Satz, gebunden an dein Profil und den heutigen Tag. Optional „Warum heute?“. Beruhigend, nie bindend.", "tier": "" },
+        { "icon": "✍", "title": "Journaling", "text": "Reflexionsfrage zum Mitschreiben, „Hat das gestimmt?“-Feedback, Monatsrückblick und wiederkehrende Themen.", "tier": "" },
+        { "icon": "❦", "title": "Dein Buch", "text": "Dein vollständiges Profil als gebundenes, gestaltetes PDF – mit Seelenkarten-Galerie und „Wie wurde das berechnet?“.", "tier": "" },
+        { "icon": "⚭", "title": "Beziehungen", "text": "Zweites Profil anlegen (Partner, Eltern, Kind) und Harmonie, Spannung & Entwicklung sehen – mit klarer Einwilligung.", "tier": "Tiefe" },
+        { "icon": "✶", "title": "Orakel & Companion", "text": "Stell eine Frage und erhalte einen kontemplativen Impuls aus deinem Profil – transparent KI-gestützt.", "tier": "Tiefe" },
+        { "icon": "⟳", "title": "Profil verfeinern", "text": "Geburtszeit nachtragen, Profil neu berechnen, Sprache wechseln, Daten exportieren oder löschen – jederzeit.", "tier": "" }
+      ]
+    },
+    "cta": { "title": "Fang mit deiner Seelenkarte an.", "lead": "Kostenlos, in zwei Minuten." }
+  },
+  "systeme": {
+    "seoTitle": "Die Systeme hinter Hermetia — 25 Traditionen, eine Seelenkarte",
+    "seoDescription": "Astrologie, Human Design, Gene Keys, Numerologie, BaZi und mehr: So funktionieren die 25 Deutungssysteme in Hermetia – und wie die Konvergenz-Engine sie verbindet.",
+    "kicker": "Die eingebetteten Systeme",
+    "title": "25 Traditionen der Menschheit – für ein Bild von dir.",
+    "lead": "Jedes System ist ein Fenster. Hermetia öffnet viele auf einmal und zeigt dir, wo sie auf dasselbe blicken.",
+    "convergence": { "tag": "Das Herz von Hermetia", "title": "Die Konvergenz-Engine", "text": "Kein anderer Rechner tut das: Hermetia legt alle Systeme übereinander und misst, wo sie sich bestätigen – das wird zu deiner Stärke – und wo sie sich widersprechen – das wird zu deiner Frage. Aus vielen Stimmen wird eine." },
+    "coreKicker": "Die fünf Kernsysteme",
+    "coreTitle": "Das Fundament jeder Seelenkarte",
+    "core": [
+      { "icon": "♋", "title": "Astrologie", "text": "Sonne, Mond und Planeten zur Geburt – das vertrauteste Sprachbild für Charakter, Rhythmus und Lebensthemen." },
+      { "icon": "⬡", "title": "Human Design", "text": "Typ, innere Autorität und Energiezentren – wie du Entscheidungen triffst und deine Energie sich am stimmigsten entfaltet." },
+      { "icon": "✦", "title": "Gene Keys", "text": "64 Archetypen mit dem Weg von Schatten über Gabe zur höchsten Frequenz – eine Landkarte für Wachstum." },
+      { "icon": "№", "title": "Numerologie", "text": "Aus Name und Geburtsdatum abgeleitete Kernzahlen – Lebensweg, Berufung und persönliche Zyklen." },
+      { "icon": "䷀", "title": "BaZi · Vier Säulen", "text": "Das chinesische Geburtsdiagramm aus Jahr, Monat, Tag und Stunde – ein fein aufgelöstes Lebenszeit-Bild." }
+    ],
+    "moreCard": { "title": "… und 20 weitere", "text": "Enneagramm, Maya Tzolk’in, Nakshatra, I Ching, Ayurveda u.v.m. – freischaltbar je nach Tarif." },
+    "moreKicker": "Weitere Perspektiven",
+    "moreTitle": "Jedes bringt einen eigenen Blickwinkel",
+    "more": [
+      { "title": "Enneagramm", "text": "Neun Typen der Tiefenmotivation – warum du tust, was du tust. (Fragebogen)" },
+      { "title": "Maya Tzolk’in", "text": "260 Tageszeichen aus dem Maya-Kalender – ein fremder, reicher Archetyp-Raum." },
+      { "title": "Vedische Nakshatra", "text": "27 Mondhäuser der indischen Astrologie – feine Nuancen deiner Gefühlswelt." },
+      { "title": "I Ching", "text": "64 Hexagramme als Spiegel für den heutigen Tag – ruhige Kontemplation." },
+      { "title": "Ayurveda · Doshas", "text": "Dein körperlich-energetischer Typ – ideal für alltagsnahe Impulse. (Fragebogen)" },
+      { "title": "Hellenistische Astrologie · Mondknoten · Persönliches Jahr · u. a.", "text": "Klassische Vertiefungen und Zyklen, die deine Karte über die Zeit lebendig halten." }
+    ],
+    "note": "Hermetia integriert ausschließlich lizenz- und kultursensibel geprüfte Systeme. Berechnungen sind erlaubt; geschützte Originaltexte verwenden wir nie.",
+    "cta": { "title": "Sieh, was deine Systeme über dich sagen.", "lead": "Dein Kernprofil ist kostenlos. Die Tiefe öffnest du, wenn du willst." }
+  },
+  "methodik": {
+    "seoTitle": "So entsteht dein Profil — Wie Hermetia rechnet und deutet",
+    "seoDescription": "Transparent erklärt: Wie Hermetia aus deinen Geburtsdaten ein Profil berechnet (Skyfield), mit der Konvergenz-Engine verknüpft und warm deutet – und was die KI tut und was nicht.",
+    "kicker": "So entsteht dein Profil",
+    "title": "Wir rechnen exakt. Wir deuten warm.",
+    "lead": "Vertrauen entsteht durch Transparenz. Darum zeigen wir dir genau, woher jede Aussage kommt – und wo eine KI mitschreibt.",
+    "steps": [
+      { "n": "01", "title": "Berechnen — der feste Boden", "text": "Aus Geburtsdatum, -zeit und -ort bestimmt ein deterministischer Rechenkern (die quelloffene Ephemeride Skyfield) die exakten Positionen von Sonne, Mond und Planeten und das finite Fundament jedes Systems. Gleiche Daten → gleiches Ergebnis. Nichts wird geraten.", "tag": "" },
+      { "n": "02", "title": "Verknüpfen — die Konvergenz-Engine", "text": "Alle Systeme speisen eine gemeinsame Themen-Landkarte. Eine reine Rechen-Engine (keine KI) misst, wo sich Systeme bestätigen – das wird zu deiner Stärke – und wo sie auseinandergehen – das wird zu einer guten Frage. So wird aus vielen Stimmen eine.", "tag": "Das Herz von Hermetia" },
+      { "n": "03", "title": "Begleiten — die warme Stimme", "text": "Erst jetzt formuliert eine KI deine Deutung – in deiner Sprache, einladend statt bestimmend. Sie liest nur die berechneten Fakten und die Themen-Landkarte, niemals dein rohes Geburtsdatum. Jeder KI-Text ist sichtbar gekennzeichnet.", "tag": "" }
+    ],
+    "layersKicker": "Drei Schichten",
+    "layersTitle": "Vom Fundament zum Tagesimpuls",
+    "layers": [
+      { "label": "Schicht A", "title": "Grundlagen je System", "text": "Pro System ein vollständiges, dauerhaftes Grundlagenprofil – die Basis für alles." },
+      { "label": "Schicht B", "title": "Kernprofil & Ebenen", "text": "Aus der Synergie aller Systeme entstehen deine zehn navigierbaren Ebenen." },
+      { "label": "Schicht C", "title": "Tägliche Ableitung", "text": "Aus deinem Kernprofil + Tagesdaten (Transite, Mondphase) wird dein sanfter Tagesimpuls." }
+    ],
+    "aiDoTitle": "Was die KI tut",
+    "aiDo": ["berechnete Fakten in warme, lesbare Sprache übersetzen", "deine Ebenen-Texte und Tagesimpulse formulieren", "in deiner Sprache schreiben, einladend und nicht-deterministisch"],
+    "aiDontTitle": "Was die KI nicht tut",
+    "aiDont": ["keine Diagnosen, keine medizinische/therapeutische Beratung", "keine Schicksals- oder Angst-Aussagen", "dein rohes Geburtsdatum sieht das KI-Modell nie"],
+    "privacyNote": "Deine Daten liegen verschlüsselt in der EU. Spirituell-weltanschauliche Profile sind besondere Daten nach DSGVO Art. 9 – wir holen dafür deine ausdrückliche, getrennte Einwilligung. KI-Inhalte kennzeichnen wir gemäß EU AI Act Art. 50.",
+    "cta": { "title": "Sieh die Methode an deinem eigenen Profil.", "lead": "Kostenlos und transparent – du entscheidest, wie tief du gehst." }
+  },
+  "preise": {
+    "seoTitle": "Preise — Hermetia kostenlos starten, ab 49 € / Jahr alle Ebenen",
+    "seoDescription": "Hermetia hat nur drei klare Tarife: Entdecken (kostenlos), Begleitung (49 €/Jahr, alle Ebenen) und Tiefe (99 €/Jahr). Jederzeit kündbar, EU-gehostet.",
+    "kicker": "Preise",
+    "title": "Klar, fair, ohne Kleingedrucktes.",
+    "lead": "Beginne kostenlos. Öffne alle Ebenen für 49 € im Jahr – das sind 4 Cent am Tag.",
+    "toggleYear": "Jährlich · spare 2 Monate",
+    "toggleMonth": "Monatlich",
+    "popular": "⭐ Beliebteste Wahl",
+    "perYear": "/ Jahr",
+    "tiers": [
+      { "name": "Entdecken", "price": "Kostenlos", "per": "", "note": "für immer · keine Karte nötig", "cta": "Kostenlos starten", "featured": false, "features": ["Deine Seelenkarte", "2 Kernthemen", "Ebene 1 vollständig", "Ebenen 2–6 als Vorschau", "Wöchentlicher Impuls (7-Tage-Schnupper)"] },
+      { "name": "Begleitung", "price": "49 €", "per": "/ Jahr", "note": "≈ 4,08 € / Monat · jederzeit kündbar", "cta": "Begleitung wählen", "featured": true, "features": ["Alle Ebenen vollständig", "Täglicher Impuls & Tagesweisheit", "Journaling & Monatsreflexion", "Dein Buch als PDF", "Profil verfeinern (Geburtszeit nachtragen)", "Alle freischaltbaren Systeme"] },
+      { "name": "Tiefe", "price": "99 €", "per": "/ Jahr", "note": "≈ 8,25 € / Monat · jederzeit kündbar", "cta": "Tiefe wählen", "featured": false, "features": ["Alles aus Begleitung", "Orakel & Companion-Dialog (Kontingent)", "Beziehungs- & Kompatibilitätsprofile", "Mehrere Profile", "Vertiefte Module & Jahresvorschau"] }
+    ],
+    "smallprint": "Alle Preise inkl. MwSt. · Zahlung sicher über Stripe · EU-Hosting",
+    "trust": [
+      { "icon": "⟲", "title": "Jederzeit kündbar", "text": "Ein Klick im Profil – kein Anruf, keine Frist. So verlangt es das Gesetz, so machen wir es." },
+      { "icon": "🔒", "title": "Verschlüsselt in der EU", "text": "Deine sensiblen Daten liegen verschlüsselt auf EU-Servern – mit ausdrücklicher Einwilligung (Art. 9)." },
+      { "icon": "↩", "title": "14 Tage Widerruf", "text": "Faire Widerrufsbelehrung für digitale Inhalte. Kein Risiko beim Ausprobieren." }
+    ],
+    "faqKicker": "Abo-Fragen",
+    "faqTitle": "Häufige Fragen zu den Tarifen",
+    "faq": [
+      { "q": "Was kostet Hermetia wirklich?", "a": "Der Einstieg ist dauerhaft kostenlos. Der beliebteste Tarif „Begleitung“ kostet 49 € pro Jahr und öffnet alle Ebenen, den täglichen Impuls, Journaling und dein Buch. „Tiefe“ für 99 € ergänzt Orakel, Beziehungsprofile und mehrere Profile." },
+      { "q": "Kann ich monatlich zahlen?", "a": "Ja. Begleitung gibt es auch monatlich; im Jahresabo sparst du rund zwei Monate." },
+      { "q": "Wie kündige ich?", "a": "Mit einem Klick im Profil über den Kündigungsbutton – ohne Frist und ohne Begründung. Dein Zugang bleibt bis zum Ende der bezahlten Periode aktiv." },
+      { "q": "Brauche ich für den kostenlosen Tarif eine Kreditkarte?", "a": "Nein. Du siehst deine Seelenkarte und dein erstes Kernthema ohne jede Zahlungsangabe." }
+    ],
+    "cta": "Jetzt kostenlos deine Seelenkarte sehen"
+  },
+  "legal": {
+    "updatedLabel": "Stand",
+    "updated": "Juni 2026",
+    "reviewNote": "Sorgfältiger Entwurf – die anwaltliche Endprüfung erfolgt vor dem Launch. Mit [ ] markierte Angaben werden vor Veröffentlichung ergänzt.",
+    "tocLabel": "Inhalt",
+    "impressum": {
+      "title": "Impressum",
+      "sections": [
+        { "heading": "Angaben gemäß § 5 DDG", "body": "[Anbieter / Firmenname]\n[Straße und Hausnummer]\n[PLZ und Ort]\n[Land]" },
+        { "heading": "Vertreten durch", "body": "[Name der vertretungsberechtigten Person]" },
+        { "heading": "Kontakt", "body": "Telefon: [Telefonnummer]\nE-Mail: hallo@hermetia.de" },
+        { "heading": "Umsatzsteuer-Identifikationsnummer", "body": "USt-IdNr. gemäß § 27a Umsatzsteuergesetz: [USt-IdNr.]\n(Falls Kleinunternehmer nach § 19 UStG: Es wird keine Umsatzsteuer ausgewiesen.)" },
+        { "heading": "Redaktionell verantwortlich (§ 18 Abs. 2 MStV)", "body": "[Name]\n[Anschrift wie oben]" },
+        { "heading": "EU-Streitschlichtung", "body": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/. Unsere E-Mail-Adresse findest du oben. Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen." },
+        { "heading": "Haftung für Inhalte und Links", "body": "Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Für Inhalte externer Links sind ausschließlich deren Betreiber verantwortlich; zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. Bei Bekanntwerden von Rechtsverletzungen entfernen wir solche Links umgehend." },
+        { "heading": "Urheberrecht", "body": "Die durch uns erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet." }
+      ]
+    },
+    "datenschutz": {
+      "title": "Datenschutzerklärung",
+      "sections": [
+        { "heading": "1 · Verantwortlicher", "body": "Verantwortlich für die Datenverarbeitung ist [Anbieter / Firmenname], [Anschrift], E-Mail: datenschutz@hermetia.de. [Sofern bestellt:] Datenschutzbeauftragte/r: [Name, Kontakt]." },
+        { "heading": "2 · Überblick", "body": "Hermetia erstellt aus deinen Geburtsdaten ein persönliches Profil („Seelenkarte“) und begleitet dich mit täglichen Impulsen. Wir verarbeiten dabei personenbezogene Daten und – mit deiner ausdrücklichen Einwilligung – besondere Kategorien personenbezogener Daten (Art. 9 DSGVO). Datensparsamkeit, EU-Hosting und Verschlüsselung sind von Anfang an eingebaut." },
+        { "heading": "3 · Welche Daten wir verarbeiten", "body": "• Kontodaten: E-Mail, Passwort (gehasht), Spracheinstellung.\n• Profil-/Geburtsdaten: Geburtsname, -datum, -zeit (optional) und -ort sowie daraus abgeleitete Berechnungen.\n• Abgeleitete Profilinhalte: spirituell-weltanschauliche Deutungen (besondere Kategorien, Art. 9).\n• Nutzungsdaten: Interaktionen, Journaling-Einträge (sofern du sie erstellst).\n• Zahlungsdaten: über unseren Zahlungsdienstleister; wir speichern keine vollständigen Kartendaten." },
+        { "heading": "4 · Besondere Kategorien (Art. 9 DSGVO)", "body": "Abgeleitete Aussagen über weltanschauliche/spirituelle Themen gelten als besondere Kategorien personenbezogener Daten. Wir verarbeiten sie ausschließlich auf Grundlage deiner ausdrücklichen, getrennten Einwilligung (Art. 9 Abs. 2 lit. a DSGVO). Du kannst diese Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen; die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung bleibt unberührt." },
+        { "heading": "5 · Zwecke und Rechtsgrundlagen", "body": "• Bereitstellung des Kontos und der Funktionen: Vertragserfüllung (Art. 6 Abs. 1 lit. b).\n• Berechnung und Deutung des Profils: ausdrückliche Einwilligung (Art. 9 Abs. 2 lit. a) sowie Vertragserfüllung.\n• Zahlungsabwicklung: Vertragserfüllung und rechtliche Pflichten (Art. 6 Abs. 1 lit. b, c).\n• Sicherheit, Missbrauchsvermeidung, Produktverbesserung: berechtigtes Interesse (Art. 6 Abs. 1 lit. f).\n• Newsletter/Tagesimpuls per E-Mail: Einwilligung (Art. 6 Abs. 1 lit. a)." },
+        { "heading": "6 · KI-Verarbeitung und Drittlandübermittlung", "body": "Die Deutungstexte werden von einem KI-Modell des Anbieters Anthropic formuliert. An das Modell werden ausschließlich berechnete, pseudonymisierte Fakten übermittelt – nicht dein rohes Geburtsdatum und keine direkten Identifikatoren. Soweit dabei eine Übermittlung in die USA erfolgt, stützen wir diese auf geeignete Garantien (EU-Standardvertragsklauseln gemäß Art. 46 DSGVO) sowie zusätzliche Schutzmaßnahmen." },
+        { "heading": "7 · Empfänger und Auftragsverarbeiter", "body": "Wir setzen sorgfältig ausgewählte Dienstleister als Auftragsverarbeiter ein (Art. 28 DSGVO): Hosting/Infrastruktur in der EU, Zahlungsabwicklung (Stripe), E-Mail-Versand sowie der genannte KI-Dienst. Eine Weitergabe zu Werbezwecken an Dritte erfolgt nicht." },
+        { "heading": "8 · Speicherdauer", "body": "Wir speichern personenbezogene Daten nur so lange, wie es für die genannten Zwecke erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen. Mit Löschung deines Kontos werden dein Profil und die abgeleiteten Inhalte gelöscht, soweit keine gesetzlichen Pflichten entgegenstehen." },
+        { "heading": "9 · Deine Rechte", "body": "Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, erteilte Einwilligungen jederzeit zu widerrufen. Export und Löschung sind in der App als Funktion verfügbar. Außerdem hast du das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde." },
+        { "heading": "10 · Cookies und Reichweitenmessung", "body": "Die Marketing-Seite kommt mit technisch notwendigen Mitteln aus. Optionale Analyse erfolgt nur mit deiner Einwilligung und – wo möglich – datensparsam/EU-gehostet. Details und Einstellungen findest du im Consent-Banner." },
+        { "heading": "11 · Änderungen", "body": "Wir passen diese Datenschutzerklärung an, wenn sich Funktionen oder die Rechtslage ändern. Die jeweils aktuelle Fassung findest du auf dieser Seite." }
+      ]
+    },
+    "agb": {
+      "title": "Allgemeine Geschäftsbedingungen",
+      "sections": [
+        { "heading": "1 · Geltungsbereich und Anbieter", "body": "Diese AGB gelten für die Nutzung von Hermetia, angeboten von [Anbieter / Firmenname], [Anschrift] („wir“). Maßgeblich ist die bei Vertragsschluss gültige Fassung." },
+        { "heading": "2 · Leistungsgegenstand", "body": "Hermetia ist ein digitales Angebot zur Selbstreflexion: Es berechnet aus Geburtsdaten ein persönliches Profil und stellt Deutungen, tägliche Impulse und weitere Funktionen bereit. Es gibt einen kostenlosen Zugang („Entdecken“) sowie kostenpflichtige Abonnements („Begleitung“, „Tiefe“). Die Inhalte sind Inspiration zur Selbstreflexion und keine medizinische, psychologische, therapeutische, rechtliche oder finanzielle Beratung." },
+        { "heading": "3 · Vertragsschluss", "body": "Mit der Registrierung kommt ein kostenloser Nutzungsvertrag zustande. Ein kostenpflichtiges Abonnement schließt du ab, indem du den jeweiligen Tarif auswählst und den Bestellvorgang über unseren Zahlungsdienstleister abschließt." },
+        { "heading": "4 · Preise und Zahlung", "body": "Es gelten die zum Zeitpunkt der Bestellung angezeigten Preise (inkl. gesetzlicher Umsatzsteuer, sofern ausgewiesen). Die Zahlung erfolgt über den Zahlungsdienstleister Stripe per der dort angebotenen Zahlungsarten. Jahresabonnements werden im Voraus abgerechnet." },
+        { "heading": "5 · Laufzeit und Kündigung", "body": "Abonnements laufen für die gewählte Periode (monatlich oder jährlich) und verlängern sich, sofern nicht gekündigt, um dieselbe Periode. Du kannst jederzeit mit einem Klick über den Kündigungsbutton im Profil kündigen (§ 312k BGB). Die Kündigung wirkt zum Ende der bereits bezahlten Periode; bereits gezahlte Entgelte werden nicht anteilig erstattet, soweit nicht zwingendes Recht etwas anderes vorsieht." },
+        { "heading": "6 · Widerrufsrecht", "body": "Verbraucher:innen haben ein gesetzliches Widerrufsrecht. Einzelheiten und das Muster-Widerrufsformular findest du in unserer Widerrufsbelehrung." },
+        { "heading": "7 · KI-Inhalte und Haftungsausschluss", "body": "Teile der Inhalte werden mithilfe von KI erzeugt und sind gekennzeichnet (EU AI Act Art. 50). Sie ersetzen keine fachliche Beratung. Bei Anzeichen gesundheitlicher oder psychischer Belastung wende dich bitte an qualifizierte Fachpersonen." },
+        { "heading": "8 · Mindestalter", "body": "Die Nutzung setzt ein Mindestalter von 16 Jahren voraus; für kostenpflichtige Abonnements gilt ein Mindestalter von 18 Jahren bzw. die Zustimmung der gesetzlichen Vertreter." },
+        { "heading": "9 · Haftung", "body": "Wir haften unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei Verletzung von Leben, Körper und Gesundheit. Im Übrigen haften wir nur bei Verletzung wesentlicher Vertragspflichten und begrenzt auf den vertragstypischen, vorhersehbaren Schaden." },
+        { "heading": "10 · Änderungen der AGB", "body": "Wir können diese AGB aus sachlichem Grund mit angemessener Vorankündigung ändern. Widersprichst du nicht innerhalb der Frist, gilt die Änderung als angenommen; auf das Widerspruchsrecht und die Folgen weisen wir gesondert hin." },
+        { "heading": "11 · Schlussbestimmungen", "body": "Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts; zwingende Verbraucherschutzvorschriften des Aufenthaltsstaates bleiben unberührt. Sollte eine Bestimmung unwirksam sein, bleibt der übrige Vertrag wirksam." }
+      ]
+    },
+    "widerruf": {
+      "title": "Widerrufsbelehrung",
+      "sections": [
+        { "heading": "Widerrufsrecht", "body": "Du hast das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsschlusses." },
+        { "heading": "Ausübung des Widerrufs", "body": "Um dein Widerrufsrecht auszuüben, musst du uns ([Anbieter], [Anschrift], E-Mail: widerruf@hermetia.de) mittels einer eindeutigen Erklärung (z. B. per E-Mail) über deinen Entschluss informieren. Du kannst dafür das untenstehende Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist. Zur Wahrung der Frist genügt die rechtzeitige Absendung." },
+        { "heading": "Folgen des Widerrufs", "body": "Wenn du diesen Vertrag widerrufst, erstatten wir alle Zahlungen, die wir von dir erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen zurück. Wir verwenden dasselbe Zahlungsmittel wie bei der ursprünglichen Transaktion, sofern nichts anderes vereinbart wurde; Entgelte berechnen wir dir dafür nicht." },
+        { "heading": "Vorzeitiges Erlöschen bei digitalen Inhalten", "body": "Dein Widerrufsrecht erlischt vorzeitig, wenn wir mit der Bereitstellung der digitalen Inhalte begonnen haben, nachdem du ausdrücklich zugestimmt hast, dass wir vor Ablauf der Widerrufsfrist beginnen, und du deine Kenntnis davon bestätigt hast, dass du dadurch dein Widerrufsrecht verlierst." },
+        { "heading": "Muster-Widerrufsformular", "body": "(Wenn du den Vertrag widerrufen willst, fülle dieses Formular aus und sende es zurück.)\n\n— An [Anbieter], [Anschrift], widerruf@hermetia.de:\n— Hiermit widerrufe(n) ich/wir den von mir/uns abgeschlossenen Vertrag über die folgende Dienstleistung: Hermetia-Abonnement\n— Bestellt am / erhalten am: __________\n— Name der/des Verbraucher(s): __________\n— Anschrift: __________\n— Datum und Unterschrift (nur bei Mitteilung auf Papier): __________" },
+        { "heading": "Kündigung laufender Verträge", "body": "Unabhängig vom Widerrufsrecht kannst du ein laufendes Abonnement jederzeit über den Kündigungsbutton im Profil beenden (§ 312k BGB)." }
+      ]
+    },
+    "ki": {
+      "title": "KI-Transparenz",
+      "sections": [
+        { "heading": "Wo KI mitschreibt", "body": "Die persönlichen Deutungen, Ebenen-Texte und Tagesimpulse in Hermetia werden mithilfe eines KI-Sprachmodells formuliert. Wir kennzeichnen solche Inhalte gemäß EU AI Act Art. 50, damit du jederzeit weißt, wann ein Text KI-gestützt entstanden ist." },
+        { "heading": "Was die KI verarbeitet – und was nicht", "body": "Das KI-Modell erhält ausschließlich die zuvor berechneten, pseudonymisierten Fakten und eine Themen-Landkarte. Es sieht niemals dein rohes Geburtsdatum, deinen vollständigen Namen oder direkte Kontaktdaten. Die Berechnung selbst erfolgt deterministisch ohne KI." },
+        { "heading": "Keine Beratung, keine Vorhersage", "body": "KI-Inhalte sind Inspiration zur Selbstreflexion. Sie sind keine medizinische, psychologische oder therapeutische Beratung und keine Vorhersage über dein Schicksal. Du behältst stets die Deutungshoheit über dich selbst." },
+        { "heading": "Menschliche Aufsicht und Grenzen", "body": "Prompts und Sicherheits-Leitplanken werden von uns gepflegt; problematische Themen werden abgefangen oder mit Hinweisen auf qualifizierte Hilfe versehen. KI kann sich irren – wenn etwas nicht zu dir passt, ist das in Ordnung." }
+      ]
+    }
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "site": {
+    "name": "Hermetia",
+    "tagline": "As above, so below",
+    "claim": "A portrait of your soul — from everything that makes you you."
+  },
+  "nav": {
+    "leistungen": "Features",
+    "systeme": "Systems",
+    "methodik": "How your profile is made",
+    "preise": "Pricing",
+    "login": "Log in",
+    "start": "Start your profile"
+  },
+  "cta": {
+    "startFree": "Start your profile for free",
+    "seeChart": "See my soul map for free",
+    "howItWorks": "How it works",
+    "comparePrices": "Compare plans",
+    "allServices": "See all features",
+    "exploreSystems": "Explore all systems",
+    "methodDetail": "How we calculate — in detail",
+    "more": "Learn more"
+  },
+  "footer": {
+    "blurb": "A portrait of your soul — from everything that makes you you. As above, so below.",
+    "product": "Product",
+    "discover": "Discover",
+    "legal": "Legal",
+    "magazin": "Magazine",
+    "glossar": "Glossary",
+    "faq": "FAQ",
+    "about": "About Hermetia",
+    "datenschutz": "Privacy",
+    "kiTransparenz": "AI transparency",
+    "agb": "Terms",
+    "widerruf": "Withdrawal",
+    "impressum": "Imprint",
+    "disclaimer": "Inspiration for self-reflection — not medical or therapeutic advice. Content is partly AI-assisted (EU AI Act Art. 50)."
+  },
+  "home": {
+    "seoTitle": "Hermetia — Your soul map. A portrait that understands you.",
+    "seoDescription": "Hermetia turns your birth data into a soul map drawn from 25 interpretive systems and walks beside you day by day. Discover your profile for free.",
+    "hero": {
+      "eyebrow": "As above, so below",
+      "title": "A portrait of your soul — from everything that makes you you.",
+      "lead": "Hermetia reads your birth data and weaves a single, clear soul map from up to 25 interpretive systems — and accompanies you day by day. Not a data sheet. A journey to yourself.",
+      "trustline": "Start free · no credit card · EU-hosted & encrypted",
+      "quote": "Your sensitivity is a compass — not a weakness.",
+      "chips": ["Deep perception", "Creative calm", "Courage to be clear"]
+    },
+    "trust": {
+      "kicker": "For people who want to feel seen — not measured",
+      "items": ["25 interpretive systems", "GDPR & Art. 9 by design", "AI transparently labelled", "Inviting, never prescriptive"]
+    },
+    "features": {
+      "kicker": "What Hermetia does for you",
+      "title": "Six ways to understand yourself better",
+      "items": [
+        { "icon": "❂", "title": "Your soul map", "text": "A beautiful, personal whole — chart wheel and energy body at a glance. Your aha moment." },
+        { "icon": "❧", "title": "Your levels", "text": "Strengths, shadows, relationships, calling — unlocked as a journey, never a 10,000-word wall." },
+        { "icon": "☼", "title": "Daily impulse “Today”", "text": "One calm focus line per day, tied to your profile. Soothing, not binding — no FOMO." },
+        { "icon": "✍", "title": "Journaling & reflection", "text": "Reflection prompts to write along with, a monthly review and recurring themes." },
+        { "icon": "❦", "title": "Your book", "text": "Your complete profile as a bound, designed PDF to keep and read." },
+        { "icon": "⚭", "title": "Relationships", "text": "Add a second profile and see harmony, tension and growth — with clear consent." }
+      ]
+    },
+    "method": {
+      "kicker": "How your profile is made",
+      "title": "We calculate precisely. We interpret warmly.",
+      "lead": "Three transparent steps — so you understand where every statement comes from.",
+      "steps": [
+        { "step": "Step 01", "title": "Calculate", "text": "A deterministic engine (Skyfield) derives your finite foundation per system from date, time and place — always reproducible, never guessed." },
+        { "step": "Step 02", "title": "Connect", "text": "Our convergence engine finds where systems confirm one another (strength) and where they disagree (good questions). This is Hermetia’s heart." },
+        { "step": "Step 03", "title": "Accompany", "text": "Only here does the AI interpret — inviting, in your language. Visibly labelled, never as medical or fated advice." }
+      ]
+    },
+    "systems": {
+      "kicker": "The embedded systems",
+      "title": "25 traditions. One voice.",
+      "text": "Astrology, Human Design, Gene Keys, numerology, BaZi, the Enneagram and more — Hermetia doesn’t read them side by side, it reads them together. Where many paths point to the same place, that becomes certainty.",
+      "chips": ["Astrology", "Human Design", "Gene Keys", "Numerology", "BaZi · Four Pillars", "Enneagram", "Maya Tzolk’in", "Nakshatra", "I Ching", "Ayurveda", "+ 15 more"]
+    },
+    "voices": {
+      "kicker": "Voices",
+      "title": "What people experience",
+      "items": [
+        { "quote": "For the first time spirituality didn’t feel kitschy, but clever.", "name": "Marie K., 34" },
+        { "quote": "The soul map was my aha moment. I wanted to read more right away.", "name": "Lena S., 41" },
+        { "quote": "The daily impulse keeps me company in the morning — calm, never pushy.", "name": "Anette H., 38" }
+      ]
+    },
+    "pricingTeaser": {
+      "kicker": "Pricing",
+      "title": "Begin for free. Stay for €49 a year.",
+      "lead": "See your soul map and your first core theme for free. Open every level for the price of a coffee a month."
+    },
+    "faq": {
+      "kicker": "Frequently asked",
+      "title": "Good to know",
+      "items": [
+        { "q": "What is a soul map?", "a": "Your soul map is an integrated personality portrait that Hermetia calculates from your birth data and up to 25 interpretive systems, woven into one understandable, beautiful view." },
+        { "q": "Do I need my exact birth time?", "a": "No. Hermetia works without an exact time — you simply pick a time of day. We tell you transparently which part of your profile is reliable even without the time." },
+        { "q": "Is this a diagnosis or a prediction?", "a": "No. Hermetia is inspiration for self-reflection — not medical, psychological or therapeutic advice, and not a prediction of fate." },
+        { "q": "What happens to my data?", "a": "Your data is stored encrypted in the EU. Spiritual-philosophical profiles are special data (GDPR Art. 9) — we ask for your explicit consent and you can export or delete everything at any time." }
+      ]
+    },
+    "finalCta": {
+      "title": "Your journey begins with a single look.",
+      "lead": "See your soul map in two minutes — for free."
+    }
+  },
+  "leistungen": {
+    "seoTitle": "Features — What Hermetia does for you | Soul map, levels, daily impulse",
+    "seoDescription": "Soul map, unlockable levels, daily impulse, journaling, your book and relationship readings: all of Hermetia’s features at a glance.",
+    "kicker": "Features",
+    "title": "Everything that accompanies you on your journey.",
+    "lead": "From your first aha moment to daily companionship — Hermetia grows with you.",
+    "soulmap": { "tag": "Your aha moment", "title": "The soul map", "text": "A beautiful, personal whole: your chart wheel and your abstracted energy body at a glance — calculated, not claimed. The moment you first feel truly seen." },
+    "levels": { "tag": "A journey, not a wall", "title": "Your levels", "text": "Ten soulfully framed themes — strengths, shadows, relationships, calling, soul path and more. They open like doors, one after another. Synthesis first, details to expand — never a 10,000-word wall.", "open": "open", "locked": "Open level", "labels": ["What makes you you", "Strengths & gifts", "Shadow & growth"] },
+    "daily": {
+      "kicker": "Day by day",
+      "title": "Companionship that carries you through daily life",
+      "items": [
+        { "icon": "☼", "title": "Daily impulse “Today”", "text": "One calm focus line, tied to your profile and today. Optional “Why today?”. Soothing, never binding.", "tier": "" },
+        { "icon": "✍", "title": "Journaling", "text": "A reflection prompt to write along with, “Did this resonate?” feedback, a monthly review and recurring themes.", "tier": "" },
+        { "icon": "❦", "title": "Your book", "text": "Your complete profile as a bound, designed PDF — with a soul-map gallery and “How was this calculated?”.", "tier": "" },
+        { "icon": "⚭", "title": "Relationships", "text": "Add a second profile (partner, parent, child) and see harmony, tension & growth — with clear consent.", "tier": "Depth" },
+        { "icon": "✶", "title": "Oracle & Companion", "text": "Ask a question and receive a contemplative impulse from your profile — transparently AI-assisted.", "tier": "Depth" },
+        { "icon": "⟳", "title": "Refine your profile", "text": "Add your birth time, recalculate, switch language, export or delete your data — any time.", "tier": "" }
+      ]
+    },
+    "cta": { "title": "Begin with your soul map.", "lead": "Free, in two minutes." }
+  },
+  "systeme": {
+    "seoTitle": "The systems behind Hermetia — 25 traditions, one soul map",
+    "seoDescription": "Astrology, Human Design, Gene Keys, numerology, BaZi and more: how the 25 interpretive systems in Hermetia work — and how the convergence engine connects them.",
+    "kicker": "The embedded systems",
+    "title": "25 traditions of humanity — for one portrait of you.",
+    "lead": "Each system is a window. Hermetia opens many at once and shows you where they look at the same thing.",
+    "convergence": { "tag": "The heart of Hermetia", "title": "The convergence engine", "text": "No other calculator does this: Hermetia overlays all systems and measures where they confirm one another — that becomes your strength — and where they disagree — that becomes your question. Many voices become one." },
+    "coreKicker": "The five core systems",
+    "coreTitle": "The foundation of every soul map",
+    "core": [
+      { "icon": "♋", "title": "Astrology", "text": "Sun, moon and planets at birth — the most familiar language for character, rhythm and life themes." },
+      { "icon": "⬡", "title": "Human Design", "text": "Type, inner authority and energy centres — how you make decisions and where your energy flows most truly." },
+      { "icon": "✦", "title": "Gene Keys", "text": "64 archetypes with the path from shadow through gift to highest frequency — a map for growth." },
+      { "icon": "№", "title": "Numerology", "text": "Core numbers derived from name and birth date — life path, calling and personal cycles." },
+      { "icon": "䷀", "title": "BaZi · Four Pillars", "text": "The Chinese birth chart of year, month, day and hour — a finely resolved portrait of your lifetime." }
+    ],
+    "moreCard": { "title": "… and 20 more", "text": "Enneagram, Maya Tzolk’in, Nakshatra, I Ching, Ayurveda and many more — unlockable depending on your plan." },
+    "moreKicker": "Further perspectives",
+    "moreTitle": "Each brings its own point of view",
+    "more": [
+      { "title": "Enneagram", "text": "Nine types of deep motivation — why you do what you do. (Questionnaire)" },
+      { "title": "Maya Tzolk’in", "text": "260 day signs from the Maya calendar — a foreign, rich space of archetypes." },
+      { "title": "Vedic Nakshatra", "text": "27 lunar mansions of Indian astrology — subtle nuances of your emotional world." },
+      { "title": "I Ching", "text": "64 hexagrams as a mirror for the present day — quiet contemplation." },
+      { "title": "Ayurveda · Doshas", "text": "Your bodily-energetic type — ideal for everyday impulses. (Questionnaire)" },
+      { "title": "Hellenistic astrology · Lunar nodes · Personal year · and more", "text": "Classic depth and cycles that keep your map alive over time." }
+    ],
+    "note": "Hermetia integrates only systems vetted for licensing and cultural sensitivity. Calculations are permitted; we never use protected original texts.",
+    "cta": { "title": "See what your systems say about you.", "lead": "Your core profile is free. You open the depth whenever you wish." }
+  },
+  "methodik": {
+    "seoTitle": "How your profile is made — How Hermetia calculates and interprets",
+    "seoDescription": "Transparently explained: how Hermetia calculates a profile from your birth data (Skyfield), connects it with the convergence engine and interprets it warmly — and what the AI does and does not do.",
+    "kicker": "How your profile is made",
+    "title": "We calculate precisely. We interpret warmly.",
+    "lead": "Trust grows from transparency. So we show you exactly where every statement comes from — and where an AI writes along.",
+    "steps": [
+      { "n": "01", "title": "Calculate — the solid ground", "text": "From birth date, time and place a deterministic engine (the open-source ephemeris Skyfield) computes the exact positions of sun, moon and planets and the finite foundation of every system. Same data → same result. Nothing is guessed.", "tag": "" },
+      { "n": "02", "title": "Connect — the convergence engine", "text": "All systems feed a shared map of themes. A pure calculation engine (no AI) measures where systems confirm one another — that becomes your strength — and where they diverge — that becomes a good question. Many voices become one.", "tag": "The heart of Hermetia" },
+      { "n": "03", "title": "Accompany — the warm voice", "text": "Only now does an AI phrase your interpretation — in your language, inviting rather than prescriptive. It reads only the calculated facts and the map of themes, never your raw birth date. Every AI text is visibly labelled.", "tag": "" }
+    ],
+    "layersKicker": "Three layers",
+    "layersTitle": "From foundation to daily impulse",
+    "layers": [
+      { "label": "Layer A", "title": "Foundations per system", "text": "A complete, lasting foundational profile per system — the basis for everything." },
+      { "label": "Layer B", "title": "Core profile & levels", "text": "From the synergy of all systems emerge your ten navigable levels." },
+      { "label": "Layer C", "title": "Daily derivation", "text": "From your core profile + daily data (transits, moon phase) comes your gentle daily impulse." }
+    ],
+    "aiDoTitle": "What the AI does",
+    "aiDo": ["translate calculated facts into warm, readable language", "phrase your level texts and daily impulses", "write in your language, inviting and non-deterministic"],
+    "aiDontTitle": "What the AI does not do",
+    "aiDont": ["no diagnoses, no medical/therapeutic advice", "no statements about fate or fear", "the AI model never sees your raw birth date"],
+    "privacyNote": "Your data is stored encrypted in the EU. Spiritual-philosophical profiles are special data under GDPR Art. 9 — we ask for your explicit, separate consent. We label AI content per EU AI Act Art. 50.",
+    "cta": { "title": "See the method on your own profile.", "lead": "Free and transparent — you decide how deep you go." }
+  },
+  "preise": {
+    "seoTitle": "Pricing — Start Hermetia free, from €49 / year for all levels",
+    "seoDescription": "Hermetia has just three clear plans: Discover (free), Companion (€49/year, all levels) and Depth (€99/year). Cancel anytime, EU-hosted.",
+    "kicker": "Pricing",
+    "title": "Clear, fair, no fine print.",
+    "lead": "Begin for free. Open every level for €49 a year — that’s 4 cents a day.",
+    "toggleYear": "Yearly · save 2 months",
+    "toggleMonth": "Monthly",
+    "popular": "⭐ Most popular",
+    "perYear": "/ year",
+    "tiers": [
+      { "name": "Discover", "price": "Free", "per": "", "note": "forever · no card needed", "cta": "Start free", "featured": false, "features": ["Your soul map", "2 core themes", "Level 1 in full", "Levels 2–6 as preview", "Weekly impulse (7-day taster)"] },
+      { "name": "Companion", "price": "€49", "per": "/ year", "note": "≈ €4.08 / month · cancel anytime", "cta": "Choose Companion", "featured": true, "features": ["All levels in full", "Daily impulse & daily wisdom", "Journaling & monthly review", "Your book as PDF", "Refine your profile (add birth time)", "All unlockable systems"] },
+      { "name": "Depth", "price": "€99", "per": "/ year", "note": "≈ €8.25 / month · cancel anytime", "cta": "Choose Depth", "featured": false, "features": ["Everything in Companion", "Oracle & Companion dialogue (quota)", "Relationship & compatibility profiles", "Multiple profiles", "Deeper modules & yearly outlook"] }
+    ],
+    "smallprint": "All prices incl. VAT · Secure payment via Stripe · EU-hosted",
+    "trust": [
+      { "icon": "⟲", "title": "Cancel anytime", "text": "One click in your profile — no call, no notice period. As the law requires, as we do it." },
+      { "icon": "🔒", "title": "Encrypted in the EU", "text": "Your sensitive data is stored encrypted on EU servers — with explicit consent (Art. 9)." },
+      { "icon": "↩", "title": "14-day withdrawal", "text": "A fair right of withdrawal for digital content. No risk in trying it out." }
+    ],
+    "faqKicker": "Plan questions",
+    "faqTitle": "Frequently asked about the plans",
+    "faq": [
+      { "q": "What does Hermetia really cost?", "a": "Getting started is free forever. The most popular plan, “Companion”, costs €49 a year and opens all levels, the daily impulse, journaling and your book. “Depth” at €99 adds the oracle, relationship profiles and multiple profiles." },
+      { "q": "Can I pay monthly?", "a": "Yes. Companion is also available monthly; with the yearly plan you save about two months." },
+      { "q": "How do I cancel?", "a": "With one click in your profile via the cancellation button — no notice period, no reason needed. Your access stays active until the end of the paid period." },
+      { "q": "Do I need a credit card for the free plan?", "a": "No. You see your soul map and your first core theme without any payment details." }
+    ],
+    "cta": "See your soul map for free now"
+  },
+  "legal": {
+    "updatedLabel": "Last updated",
+    "updated": "June 2026",
+    "reviewNote": "Careful draft – final legal review takes place before launch. Items marked [ ] will be completed before publication.",
+    "tocLabel": "Contents",
+    "impressum": {
+      "title": "Imprint",
+      "sections": [
+        { "heading": "Information pursuant to § 5 DDG", "body": "[Provider / company name]\n[Street and number]\n[Postal code and city]\n[Country]" },
+        { "heading": "Represented by", "body": "[Name of the authorised representative]" },
+        { "heading": "Contact", "body": "Phone: [phone number]\nEmail: hallo@hermetia.de" },
+        { "heading": "VAT identification number", "body": "VAT ID pursuant to § 27a of the German VAT Act: [VAT ID]\n(If small-business scheme per § 19 UStG applies: no VAT is shown.)" },
+        { "heading": "Responsible for content (§ 18 (2) MStV)", "body": "[Name]\n[Address as above]" },
+        { "heading": "EU dispute resolution", "body": "The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr/. Our email address is above. We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board." },
+        { "heading": "Liability for content and links", "body": "As a service provider we are responsible for our own content on these pages under general law. The operators of linked external sites are solely responsible for their content; no legal violations were apparent at the time of linking. We remove such links immediately upon becoming aware of any infringement." },
+        { "heading": "Copyright", "body": "The content and works created by us on these pages are subject to German copyright law. Third-party contributions are marked as such." }
+      ]
+    },
+    "datenschutz": {
+      "title": "Privacy policy",
+      "sections": [
+        { "heading": "1 · Controller", "body": "The controller for data processing is [Provider / company name], [address], email: datenschutz@hermetia.de. [Where appointed:] Data protection officer: [name, contact]." },
+        { "heading": "2 · Overview", "body": "Hermetia creates a personal profile (your “soul map”) from your birth data and accompanies you with daily impulses. In doing so we process personal data and — with your explicit consent — special categories of personal data (Art. 9 GDPR). Data minimisation, EU hosting and encryption are built in from the start." },
+        { "heading": "3 · What data we process", "body": "• Account data: email, password (hashed), language preference.\n• Profile/birth data: birth name, date, time (optional) and place, and calculations derived from them.\n• Derived profile content: spiritual-philosophical interpretations (special categories, Art. 9).\n• Usage data: interactions, journaling entries (where you create them).\n• Payment data: via our payment provider; we do not store full card details." },
+        { "heading": "4 · Special categories (Art. 9 GDPR)", "body": "Derived statements about worldview/spiritual topics constitute special categories of personal data. We process them solely on the basis of your explicit, separate consent (Art. 9(2)(a) GDPR). You may withdraw this consent at any time with future effect; the lawfulness of processing up to that point is unaffected." },
+        { "heading": "5 · Purposes and legal bases", "body": "• Providing the account and features: performance of a contract (Art. 6(1)(b)).\n• Calculating and interpreting the profile: explicit consent (Art. 9(2)(a)) and contract performance.\n• Payment processing: contract performance and legal obligations (Art. 6(1)(b), (c)).\n• Security, abuse prevention, product improvement: legitimate interest (Art. 6(1)(f)).\n• Newsletter/daily impulse by email: consent (Art. 6(1)(a))." },
+        { "heading": "6 · AI processing and third-country transfer", "body": "Interpretation texts are phrased by an AI model from the provider Anthropic. Only calculated, pseudonymised facts are transmitted to the model — not your raw birth date and no direct identifiers. Insofar as a transfer to the USA occurs, we base it on appropriate safeguards (EU Standard Contractual Clauses under Art. 46 GDPR) plus additional protective measures." },
+        { "heading": "7 · Recipients and processors", "body": "We use carefully selected service providers as processors (Art. 28 GDPR): hosting/infrastructure in the EU, payment processing (Stripe), email delivery and the AI service mentioned. We do not pass data to third parties for advertising purposes." },
+        { "heading": "8 · Retention", "body": "We store personal data only as long as necessary for the stated purposes or as required by statutory retention periods. When you delete your account, your profile and derived content are deleted unless legal obligations require otherwise." },
+        { "heading": "9 · Your rights", "body": "You have the right to access, rectification, erasure, restriction of processing, data portability and objection, as well as the right to withdraw consent at any time. Export and deletion are available as features in the app. You also have the right to lodge a complaint with a data protection supervisory authority." },
+        { "heading": "10 · Cookies and analytics", "body": "The marketing site works with technically necessary means. Optional analytics only run with your consent and — where possible — in a data-minimising/EU-hosted way. Details and settings are in the consent banner." },
+        { "heading": "11 · Changes", "body": "We update this privacy policy when features or the legal situation change. The current version is always available on this page." }
+      ]
+    },
+    "agb": {
+      "title": "Terms and conditions",
+      "sections": [
+        { "heading": "1 · Scope and provider", "body": "These terms apply to the use of Hermetia, offered by [Provider / company name], [address] (“we”). The version valid at the time the contract is concluded applies." },
+        { "heading": "2 · Subject of the service", "body": "Hermetia is a digital service for self-reflection: it calculates a personal profile from birth data and provides interpretations, daily impulses and further features. There is a free tier (“Discover”) and paid subscriptions (“Companion”, “Depth”). The content is inspiration for self-reflection and not medical, psychological, therapeutic, legal or financial advice." },
+        { "heading": "3 · Conclusion of contract", "body": "A free usage contract is concluded upon registration. You enter into a paid subscription by selecting the relevant plan and completing the order via our payment provider." },
+        { "heading": "4 · Prices and payment", "body": "The prices displayed at the time of ordering apply (incl. statutory VAT where shown). Payment is made via the payment provider Stripe using the payment methods offered there. Annual subscriptions are billed in advance." },
+        { "heading": "5 · Term and cancellation", "body": "Subscriptions run for the chosen period (monthly or yearly) and renew for the same period unless cancelled. You can cancel at any time with one click via the cancellation button in your profile (§ 312k BGB). Cancellation takes effect at the end of the period already paid for; fees already paid are not refunded pro rata unless mandatory law provides otherwise." },
+        { "heading": "6 · Right of withdrawal", "body": "Consumers have a statutory right of withdrawal. Details and the model withdrawal form are in our withdrawal policy." },
+        { "heading": "7 · AI content and disclaimer", "body": "Parts of the content are generated with the help of AI and are labelled (EU AI Act Art. 50). They do not replace professional advice. If you notice signs of physical or mental strain, please consult qualified professionals." },
+        { "heading": "8 · Minimum age", "body": "Use requires a minimum age of 16; paid subscriptions require a minimum age of 18 or the consent of a legal guardian." },
+        { "heading": "9 · Liability", "body": "We are liable without limitation for intent and gross negligence and for injury to life, body and health. Otherwise we are liable only for breach of essential contractual obligations, limited to the foreseeable damage typical for this type of contract." },
+        { "heading": "10 · Changes to the terms", "body": "We may change these terms for good cause with reasonable advance notice. If you do not object within the deadline, the change is deemed accepted; we will separately inform you of the right to object and its consequences." },
+        { "heading": "11 · Final provisions", "body": "German law applies, excluding the UN Convention on Contracts for the International Sale of Goods; mandatory consumer protection provisions of your country of residence remain unaffected. If a provision is invalid, the rest of the contract remains effective." }
+      ]
+    },
+    "widerruf": {
+      "title": "Right of withdrawal",
+      "sections": [
+        { "heading": "Right of withdrawal", "body": "You have the right to withdraw from this contract within fourteen days without giving any reason. The withdrawal period is fourteen days from the day the contract is concluded." },
+        { "heading": "Exercising the right", "body": "To exercise your right of withdrawal, you must inform us ([Provider], [address], email: widerruf@hermetia.de) of your decision by means of a clear statement (e.g. by email). You may use the model withdrawal form below, but it is not mandatory. To meet the deadline, it is sufficient to send your notification before the period expires." },
+        { "heading": "Consequences of withdrawal", "body": "If you withdraw from this contract, we will refund all payments received from you without undue delay and at the latest within fourteen days. We use the same means of payment as in the original transaction unless otherwise agreed; you will not incur any fees for this." },
+        { "heading": "Early expiry for digital content", "body": "Your right of withdrawal expires early if we have begun providing the digital content after you expressly consented to us beginning before the end of the withdrawal period and you confirmed your awareness that you thereby lose your right of withdrawal." },
+        { "heading": "Model withdrawal form", "body": "(If you wish to withdraw from the contract, complete this form and return it.)\n\n— To [Provider], [address], widerruf@hermetia.de:\n— I/we hereby withdraw from the contract concluded by me/us for the following service: Hermetia subscription\n— Ordered on / received on: __________\n— Name of consumer(s): __________\n— Address: __________\n— Date and signature (only if notified on paper): __________" },
+        { "heading": "Cancelling ongoing contracts", "body": "Independently of the right of withdrawal, you can end an ongoing subscription at any time via the cancellation button in your profile (§ 312k BGB)." }
+      ]
+    },
+    "ki": {
+      "title": "AI transparency",
+      "sections": [
+        { "heading": "Where AI writes along", "body": "The personal interpretations, level texts and daily impulses in Hermetia are phrased with the help of an AI language model. We label such content per EU AI Act Art. 50 so you always know when a text was created with AI assistance." },
+        { "heading": "What the AI processes — and what it does not", "body": "The AI model receives only the previously calculated, pseudonymised facts and a map of themes. It never sees your raw birth date, your full name or direct contact details. The calculation itself is deterministic and uses no AI." },
+        { "heading": "No advice, no prediction", "body": "AI content is inspiration for self-reflection. It is not medical, psychological or therapeutic advice and not a prediction of your fate. You always keep interpretive authority over yourself." },
+        { "heading": "Human oversight and limits", "body": "Prompts and safety guardrails are maintained by us; sensitive topics are intercepted or accompanied by pointers to qualified help. AI can be wrong — if something doesn’t fit you, that’s perfectly fine." }
+      ]
+    }
+  }
+}

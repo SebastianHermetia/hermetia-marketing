@@ -1,0 +1,36 @@
+# Decap CMS — git-basiert. Speichern committet ins Repo → CI baut die Seite neu.
+# Vor Go-Live: <DEIN-GITHUB-ACCOUNT>/<REPO> eintragen und GitHub-OAuth einrichten
+# (oder lokal testen mit:  npx decap-server  +  local_backend: true).
+backend:
+  name: github
+  repo: SebastianHermetia/hermetia-marketing
+  branch: main
+
+# Produktion: false. Zum lokalen Testen ohne GitHub-Login vorübergehend auf true
+# setzen und `npx decap-server` starten, dann localhost:3060/admin.
+local_backend: false
+
+media_folder: "public/images"
+public_folder: "/images"
+
+# Mehrsprachig: Inhalte werden je Sprache gepflegt.
+i18n:
+  structure: multiple_folders
+  locales: [de, en]
+  default_locale: de
+
+collections:
+  # Magazin-Artikel (SEO/GEO-Content-Hub). Texte + Titelbild ohne Code.
+  - name: magazin
+    label: "Magazin-Artikel"
+    label_singular: "Artikel"
+    folder: "content/magazin"
+    create: true
+    slug: "{{slug}}"
+    i18n: true
+    fields:
+      - { name: title, label: "Titel", widget: string, i18n: true }
+      - { name: description, label: "SEO-Beschreibung", widget: text, i18n: true }
+      - { name: date, label: "Datum", widget: datetime, i18n: duplicate }
+      - { name: cover, label: "Titelbild", widget: image, required: false, i18n: duplicate }
+      - { name: body, label: "Inhalt", widget: markdown, i18n: true }

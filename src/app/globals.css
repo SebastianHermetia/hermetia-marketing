@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-creme text-tinte font-sans antialiased;
+    background-image:
+      radial-gradient(1200px 600px at 80% -10%, rgba(205, 180, 219, 0.25), transparent 60%),
+      radial-gradient(900px 500px at -10% 10%, rgba(156, 174, 139, 0.18), transparent 55%);
+    background-attachment: fixed;
+  }
+  h1, h2, h3 {
+    @apply font-serif font-normal text-aubergine leading-tight;
+  }
+}
+
+@layer components {
+  .wrap { @apply mx-auto max-w-wrap px-6; }
+  .kicker { @apply text-[11px] tracking-[2px] uppercase text-gold font-semibold; }
+  .lead { @apply text-lg text-pflaume/90; }
+  .muted { @apply text-[#6c6175]; }
+  .note { @apply text-[12.5px] text-[#8a7f93]; }
+
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-field px-5 py-3 font-semibold text-[14.5px] no-underline transition-transform border border-transparent cursor-pointer; }
+  .btn-lg { @apply px-7 py-3.5 text-base; }
+  .btn-primary { @apply bg-gradient-to-br from-aubergine to-pflaume text-gold-weich shadow-soft hover:-translate-y-0.5; }
+  .btn-ghost { @apply bg-transparent text-aubergine border-sand hover:border-gold; }
+  .btn-on-dark { @apply bg-white text-aubergine; }
+
+  .card { @apply bg-white border border-sand rounded-card p-6 shadow-soft; }
+  .chip { @apply inline-block bg-salbei/20 text-salbei-tief rounded-pill px-3.5 py-1.5 text-[12.5px] font-semibold; }
+  .chip-gold { @apply bg-gold/15 text-gold; }
+  .chip-rose { @apply bg-altrosa/20 text-altrosa-tief; }
+  .ic { @apply w-12 h-12 rounded-2xl bg-creme-tief flex items-center justify-center mb-4 text-[22px] text-salbei-tief; }
+  .hair { @apply border-0 border-t border-sand; }
+}
