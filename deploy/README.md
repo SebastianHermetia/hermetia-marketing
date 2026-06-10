@@ -4,23 +4,40 @@ Statische Marketing-Seite hinter dem bestehenden Cloudflare-Tunnel auf `95.216.2
 (token-basiert, dashboard-managed) ausliefern — konsistent mit den übrigen
 `*.digital-expert.de`-Diensten.
 
-## Deploy (von lokal)
+## Erstdeploy (von lokal)
 
 ```bash
 # 1) Bauen (erzeugt out/, ist gitignored)
 npm run build
 
-# 2) Dateien auf den Server (Zielordner /opt/hermetia-marketing)
-ssh -i ~/.ssh/codex_cx33 root@95.216.218.48 'mkdir -p /opt/hermetia-marketing'
-scp -i ~/.ssh/codex_cx33 deploy/docker-compose.preview.yml root@95.216.218.48:/opt/hermetia-marketing/docker-compose.yml
-scp -i ~/.ssh/codex_cx33 deploy/nginx.conf               root@95.216.218.48:/opt/hermetia-marketing/nginx.conf
-rsync -az -e 'ssh -i ~/.ssh/codex_cx33' --delete out/    root@95.216.218.48:/opt/hermetia-marketing/out/
+# 2) Configs + Build auf den Server (Zielordner /opt/hermetia-marketing)
+SSHK=~/.ssh/codex_cx33
+ssh -i $SSHK root@95.216.218.48 'mkdir -p /opt/hermetia-marketing'
+scp -i $SSHK deploy/docker-compose.preview.yml root@95.216.218.48:/opt/hermetia-marketing/docker-compose.yml
+scp -i $SSHK deploy/nginx.conf                 root@95.216.218.48:/opt/hermetia-marketing/nginx.conf
+# out/ als tar-Stream (kein rsync auf Windows/Git-Bash); Inhalt IN-PLACE ersetzen,
+# damit der Verzeichnis-Inode erhalten bleibt (sonst entkoppelt der Bind-Mount → 404):
+tar czf - out | ssh -i $SSHK root@95.216.218.48 \
+  'cd /opt/hermetia-marketing && mkdir -p out && find out -mindepth 1 -delete && tar xzf -'
 
-# 3) Container (neu) starten
-ssh -i ~/.ssh/codex_cx33 root@95.216.218.48 'cd /opt/hermetia-marketing && docker compose up -d'
+# 3) Container starten
+ssh -i $SSHK root@95.216.218.48 'cd /opt/hermetia-marketing && docker compose up -d'
 ```
 
-Update später = Schritte 1–3 erneut (rsync ersetzt `out/`, `docker compose up -d` lädt nginx neu).
+## Update (neue Inhalte)
+
+```bash
+npm run build
+SSHK=~/.ssh/codex_cx33
+tar czf - out | ssh -i $SSHK root@95.216.218.48 \
+  'cd /opt/hermetia-marketing && find out -mindepth 1 -delete && tar xzf -'
+# nginx serviert die gemounteten Dateien live — kein Restart nötig.
+```
+
+> **WICHTIG:** Niemals `rm -rf out` verwenden — das löscht das vom Container
+> gemountete Verzeichnis und entkoppelt den Bind-Mount (Container liefert dann 404).
+> Stattdessen `find out -mindepth 1 -delete` (leert den Inhalt, behält das Verzeichnis).
+> Falls doch mal entkoppelt: `docker compose up -d --force-recreate`.
 
 ## Tunnel-Route (einmalig, Cloudflare-Dashboard)
 

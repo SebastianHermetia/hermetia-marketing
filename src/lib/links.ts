@@ -7,11 +7,14 @@ export function localePath(locale: Locale, path = ""): string {
 }
 
 // Onboarding (Profil starten) und Login leben in der bestehenden Hermetia-App.
+// Die App-Routen sind NICHT locale-prefixed (`/onboarding`, `/login`); die
+// Profilsprache wählt der Nutzer im ersten Onboarding-Schritt. `?lang=` ist ein
+// unschädlicher Sprach-Hinweis (App darf ihn künftig zur UI-Vorauswahl nutzen).
 export function startUrl(locale: Locale): string {
-  return `${appUrl}/${locale}/start`;
+  return `${appUrl}/onboarding?lang=${locale}`;
 }
 export function loginUrl(locale: Locale): string {
-  return `${appUrl}/${locale}/login`;
+  return `${appUrl}/login?lang=${locale}`;
 }
 
 // Pfad-Konstanten (ohne Locale) – eine Quelle der Wahrheit für Nav + Sitemap.
