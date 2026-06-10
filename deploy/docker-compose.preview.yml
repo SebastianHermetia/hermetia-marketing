@@ -1,0 +1,20 @@
+# Vorschau-/Test-Deploy der Marketing-Seite auf dem Hermetia-Server (95.216.218.48),
+# erreichbar über den dort laufenden Cloudflare-Tunnel.
+#
+# Layout auf dem Server (/opt/hermetia-marketing/):
+#   docker-compose.yml   (diese Datei)
+#   nginx.conf           (deploy/nginx.conf)
+#   out/                 (lokaler `npm run build` → scp hochgeladen; out/ ist gitignored)
+#
+# Start:   docker compose up -d
+# Tunnel:  Dashboard-Route  hermetiastart.digital-expert.de  →  http://localhost:3070
+services:
+  marketing:
+    image: nginx:1.27-alpine
+    container_name: hermetia-marketing
+    restart: unless-stopped
+    ports:
+      - '127.0.0.1:3070:80'
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./out:/usr/share/nginx/html:ro
