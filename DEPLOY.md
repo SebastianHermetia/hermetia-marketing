@@ -15,10 +15,12 @@ Statischer Export (`output: "export"` → `/out`), deployt über **Cloudflare Pa
    - **Build command:** `npm run build`
    - **Build output directory:** `out`
    - **Environment variables:**
-     - `NEXT_PUBLIC_SITE_URL` = `https://www.hermetia.digital-expert.de` (oder gewählte Subdomain)
+     - `NEXT_PUBLIC_SITE_URL` = `https://hermetiastart.digital-expert.de` (aktuelle Test-Subdomain)
      - `NEXT_PUBLIC_APP_URL`  = `https://hermetia.digital-expert.de`
      - `NODE_VERSION` = `22` (oder via `.node-version`)
-   - **Custom domain:** die gewünschte Subdomain (z. B. `www.hermetia.digital-expert.de`) → CNAME auf das `*.pages.dev`-Ziel (Cloudflare richtet das beim Hinzufügen der Custom Domain ein).
+   - **Custom domain:** `hermetiastart.digital-expert.de` → CNAME auf das `*.pages.dev`-Ziel (Cloudflare richtet das beim Hinzufügen der Custom Domain automatisch ein).
+
+> **Noindex in der Testphase:** `public/_headers` setzt `X-Robots-Tag: noindex, nofollow` für die gesamte Seite, damit die Test-Subdomain nicht von Google indexiert wird. robots.txt erlaubt bewusst weiter Crawling (sonst sähe Google den noindex-Header nicht). **Zum echten Launch entfernen/anpassen.**
 
 3. **Decap CMS** (optional, nach Launch): in `public/admin/config.yml` ist `repo: SebastianHermetia/hermetia-marketing` schon gesetzt; GitHub-OAuth-App für Decap einrichten.
 
