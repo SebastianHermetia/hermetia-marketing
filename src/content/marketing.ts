@@ -263,6 +263,106 @@ const dePages = {
     ctaTitle: "Erst die Seelenkarte öffnen, dann entscheiden, ob du Tiefe willst.",
     ctaText: "Starte kostenlos und prüfe, ob dein Profil genug Resonanz für das Vollprofil-Buch erzeugt.",
   },
+  companion: {
+    slug: "companion",
+    navKey: "companion",
+    title: "Hermetia Companion: ein ruhiger AI-Begleiter für deine Seelenkarte",
+    seoTitle: "Hermetia Companion - AI-Begleiter für Profil, Fragen und Reflexion",
+    seoDescription:
+      "Wie der Hermetia Companion persönliche Fragen zur Seelenkarte beantwortet, Tagesimpulse vertieft und dabei klare Grenzen für AI, Datenschutz und Beratung einhält.",
+    eyebrow: "AI · Begleitung",
+    lead:
+      "Der Companion soll kein Orakel sein, das dir sagt, was du tun musst. Er ist als ruhiger Gesprächsraum gedacht, der deine Seelenkarte erklärt, gute Fragen stellt und Grenzen respektiert.",
+    answer:
+      "Der Hermetia Companion ist ein AI-gestützter Begleiter, der berechnete Profilinformationen, Kernthemen und freigegebene Reflexionen in verständliche Antworten übersetzt. Er ersetzt keine Beratung, trifft keine Entscheidungen und soll immer sichtbar machen, worauf eine Antwort basiert.",
+    image: "/images/hermetia/resonance-instrument.png",
+    imageAlt: "Ein Resonanzinstrument als Bild für den Hermetia Companion",
+    sections: [
+      {
+        title: "Was ein Companion leisten soll",
+        body:
+          "Viele Nutzer verstehen ihr Profil nicht in einem einzigen Durchgang. Sie lesen einen Satz, spüren Resonanz und haben danach Fragen. Der Companion soll genau dort helfen: Was bedeutet dieses Kernthema? Warum taucht es in mehreren Systemen auf? Welche Journaling-Frage passt dazu? Die Antwort soll warm und verständlich sein, aber nicht so tun, als hätte die AI eine höhere Wahrheit über den Menschen.",
+      },
+      {
+        title: "Berechnungsbasiert statt freier Spekulation",
+        body:
+          "Der Companion darf nicht einfach mystisch improvisieren. Seine Stärke entsteht, wenn er auf berechneten Profilfakten, Konvergenzsignalen, freigegebenen Notizen und klaren Produktgrenzen arbeitet. Nutzer sollen nachvollziehen können, ob eine Antwort aus Astrologie, Human Design, Numerologie, Fragebogenwerten, Journaling oder allgemeinen Reflexionsfragen abgeleitet wurde. Dadurch bleibt das Erlebnis persönlicher, ohne beliebig zu werden.",
+      },
+      {
+        title: "Orakel-Moment ohne Schicksalsdruck",
+        body:
+          "Ein optionaler Orakel- oder Kartenmoment kann inspirierend sein, wenn er sauber gerahmt ist. Hermetia sollte ihn nicht als Vorhersage verkaufen, sondern als Symbolfrage für den Moment: Worauf könnte ich heute achten? Was will gesehen werden? Welche Perspektive hilft mir, ruhiger zu handeln? Der Companion kann solche Motive erklären, aber niemals Druck, Angst oder Abhängigkeit erzeugen.",
+      },
+      {
+        title: "Grenzen bei Gesundheit, Beziehung und Entscheidung",
+        body:
+          "Der Companion darf keine medizinischen, therapeutischen, rechtlichen oder finanziellen Ratschläge geben. Bei Beziehungsthemen muss er respektvoll bleiben und keine Aussagen über eine zweite Person treffen, wenn deren Einwilligung fehlt. Bei psychischer Belastung sollte er klare Hilfsgrenzen benennen. Genau diese Grenzen gehören auf die Marketing-Website, weil sie Vertrauen schaffen.",
+      },
+      {
+        title: "Warum der Companion Premium-Wert erzeugt",
+        body:
+          "Der kostenlose Einstieg zeigt die Seelenkarte. Der Companion wird wertvoll, wenn Nutzer tiefer fragen, Beispiele wünschen, Journaling vertiefen oder lange Profilkapitel verständlich aufschlüsseln möchten. Das ist ein natürlicher Premium-Nutzen: mehr Begleitung, mehr Kontext, mehr Ruhe. Die Website soll diesen Wert erklären, ohne so zu tun, als bräuchte jeder Mensch dauerhaft eine AI-Stimme.",
+      },
+    ],
+    faq: [
+      { q: "Ist der Companion ein Orakel?", a: "Nein. Er kann symbolische Impulse erklären, aber er ist kein Vorhersagewerkzeug und keine Autorität über Entscheidungen." },
+      { q: "Kann der Companion mein ganzes Profil sehen?", a: "Er sollte nur die Daten nutzen, die für die jeweilige Antwort nötig und freigegeben sind. Datenminimierung bleibt auch bei AI-Begleitung wichtig." },
+      { q: "Ersetzt der Companion Beratung oder Therapie?", a: "Nein. Er bietet Reflexionsfragen und Erklärungen zur Seelenkarte, aber keine medizinische, psychologische, therapeutische, rechtliche oder finanzielle Beratung." },
+      { q: "Warum ist der Companion nicht komplett kostenlos?", a: "Persönliche AI-Begleitung, sichere Infrastruktur, Redaktion, Qualitätssicherung und längere Profilkontexte verursachen laufende Kosten. Deshalb kann Tiefe Teil bezahlter Modelle sein." },
+    ],
+    ctaTitle: "Öffne deine Seelenkarte und stelle später die Fragen, die wirklich zählen.",
+    ctaText: "Der Companion wird sinnvoll, sobald dein eigenes Profil die Grundlage bildet.",
+  },
+  profilVerfeinern: {
+    slug: "profil-verfeinern",
+    navKey: "profilVerfeinern",
+    title: "Profil verfeinern: Feedback, Export und Löschung verständlich erklärt",
+    seoTitle: "Hermetia Profil verfeinern - Feedback, Datenexport und Löschung",
+    seoDescription:
+      "Wie Nutzer ihr Hermetia-Profil durch Feedback, genauere Geburtsdaten und bewusste Einstellungen verfeinern und dabei Kontrolle über Export und Löschung behalten.",
+    eyebrow: "Daten · Kontrolle",
+    lead:
+      "Ein gutes Profil darf nicht starr sein. Hermetia soll zeigen, welche Aussagen sicher sind, was du später nachtragen kannst und wie du die Kontrolle über persönliche Inhalte behältst.",
+    answer:
+      "Profilverfeinerung bedeutet bei Hermetia: Nutzer können Geburtszeit, Selbstauskunft, Resonanzfeedback und Einstellungen nachschärfen, damit die Seelenkarte genauer und nützlicher wird. Gleichzeitig müssen Export, Löschung, Einwilligung und AI-Nutzung transparent bleiben.",
+    image: "/images/hermetia/atmospheric-data-topography.png",
+    imageAlt: "Eine feine Datentopografie als Bild für Profilverfeinerung und Datenkontrolle",
+    sections: [
+      {
+        title: "Warum Profile nicht fertig vom Himmel fallen",
+        body:
+          "Viele Systeme starten mit Geburtsdaten, aber Menschen sind mehr als ein Datensatz. Hermetia kann sehr viel berechnen, doch Resonanz entsteht erst im Zusammenspiel mit echter Selbstauskunft. Wenn Nutzer später ihre Geburtszeit finden, Interessen nachtragen, Tagesimpulse bewerten oder Journalmuster reflektieren, wird das Profil klarer. Das ist kein Fehler im ersten Profil, sondern Teil eines ehrlichen Produktverständnisses.",
+      },
+      {
+        title: "Resonanzfeedback statt blinder Korrektur",
+        body:
+          "Wenn ein Nutzer sagt, dass ein Satz nicht passt, sollte Hermetia das nicht als bloßes Nein behandeln. Interessant ist die Frage: War die Aussage zu stark, zu allgemein, zu früh oder fachlich falsch eingeordnet? Gutes Feedback verbessert Sprache, Gewichtung und künftige Reflexion. Gleichzeitig darf die Plattform Nutzer nicht drängen, immer mehr intime Details preiszugeben. Verfeinerung muss freiwillig bleiben.",
+      },
+      {
+        title: "Export als Vertrauenssignal",
+        body:
+          "Wer persönliche Inhalte speichert, sollte sie auch wieder herausgeben können. Ein Export von Profil, Journalnotizen oder wichtigen Einstellungen schafft Vertrauen, besonders bei sensiblen spirituellen Daten. Die Marketing-Seite muss nicht jedes technische Format versprechen, sollte aber deutlich machen: Hermetia denkt Datenportabilität, Transparenz und Nutzersouveränität als Teil des Produkts.",
+      },
+      {
+        title: "Löschung und Einwilligung nicht verstecken",
+        body:
+          "Ein spirituelles Profil kann intime Aussagen über Weltbild, Identität und Beziehung enthalten. Deshalb muss Löschung einfach erklärbar sein. Ebenso wichtig ist die Einwilligung: Nutzer sollen wissen, welche Daten für Berechnung, AI-Formulierung, Journaling und Beziehungsauswertungen genutzt werden. Gerade diese Klarheit kann Conversion stärken, weil sie Angst reduziert.",
+      },
+      {
+        title: "Premium-Wert durch bessere Genauigkeit",
+        body:
+          "Profilverfeinerung kann ein bezahlter Mehrwert sein, wenn sie echte Tiefe schafft: genauere Ebenen, bessere Rückblicke, differenzierte Companion-Antworten, verfeinerte Beziehungsmuster und klarere Tagesimpulse. Die Grenze muss fair bleiben. Der kostenlose Einstieg zeigt Resonanz, bezahlte Modelle vertiefen und begleiten, ohne Nutzer in Datenabgabe zu drängen.",
+      },
+    ],
+    faq: [
+      { q: "Kann ich meine Geburtszeit später ergänzen?", a: "Ja. Eine spätere Geburtszeit kann bestimmte Systeme genauer machen. Hermetia sollte transparent zeigen, welche Aussagen dadurch belastbarer werden." },
+      { q: "Kann ich mein Profil exportieren?", a: "Das Produktziel ist, dass wichtige persönliche Inhalte exportierbar sind. Die Website rahmt Export bewusst als Vertrauens- und Datenschutzsignal." },
+      { q: "Kann ich Daten löschen lassen?", a: "Ja. Persönliche Profile, sensible Inhalte und Einwilligungen brauchen klare Löschwege. Rechtstexte und Produktlogik müssen das vor Launch verbindlich abbilden." },
+      { q: "Muss ich immer mehr Daten angeben?", a: "Nein. Verfeinerung soll freiwillig bleiben. Hermetia soll erklären, was zusätzliche Angaben verbessern, aber keinen Druck erzeugen." },
+    ],
+    ctaTitle: "Starte mit dem, was du weißt, und verfeinere dein Profil später.",
+    ctaText: "Die erste Seelenkarte funktioniert als Einstieg. Mehr Genauigkeit kann wachsen, wenn du sie willst.",
+  },
   beziehungen: {
     slug: "beziehungen",
     navKey: "beziehungen",

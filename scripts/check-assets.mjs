@@ -16,6 +16,8 @@ const files = [
   "src/app/[locale]/profil-starten/page.tsx",
   "src/app/[locale]/journaling/page.tsx",
   "src/app/[locale]/vollprofil-buch/page.tsx",
+  "src/app/[locale]/companion/page.tsx",
+  "src/app/[locale]/profil-verfeinern/page.tsx",
 ];
 
 const refs = new Set();

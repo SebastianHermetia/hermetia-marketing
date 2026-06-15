@@ -39,6 +39,8 @@ export function Footer({ locale }: { locale: Locale }) {
             <FootLink href={L(paths.tagesimpulse)}>Tagesimpulse</FootLink>
             <FootLink href={L(paths.journaling)}>Journaling</FootLink>
             <FootLink href={L(paths.profilBuch)}>Vollprofil-Buch</FootLink>
+            <FootLink href={L(paths.companion)}>Companion</FootLink>
+            <FootLink href={L(paths.profilVerfeinern)}>Profil verfeinern</FootLink>
             <FootLink href={L(paths.beziehungen)}>Beziehungen</FootLink>
             <FootLink href={L(paths.sprachen)}>Sprachen</FootLink>
             <FootLink href={L(paths.faq)}>{t.footer.faq}</FootLink>

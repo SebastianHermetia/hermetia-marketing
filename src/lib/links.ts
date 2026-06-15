@@ -49,6 +49,8 @@ export const paths = {
   tagesimpulse: "/tagesimpulse",
   journaling: "/journaling",
   profilBuch: "/vollprofil-buch",
+  companion: "/companion",
+  profilVerfeinern: "/profil-verfeinern",
   beziehungen: "/beziehungen",
   glossar: "/glossar",
   wissen: "/wissen",

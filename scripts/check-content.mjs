@@ -66,6 +66,10 @@ const journaling = readOut("de/journaling");
 const frJournaling = readOut("fr/journaling");
 const profileBook = readOut("de/vollprofil-buch");
 const frProfileBook = readOut("fr/vollprofil-buch");
+const companion = readOut("de/companion");
+const frCompanion = readOut("fr/companion");
+const profileRefinement = readOut("de/profil-verfeinern");
+const frProfileRefinement = readOut("fr/profil-verfeinern");
 const pricing = readOut("de/preise");
 const services = readOut("de/leistungen");
 const systemsHub = readOut("de/systeme");
@@ -138,6 +142,16 @@ const checks = [
   ["Profile book page has tracked CTAs", profileBook.includes("utm_content=vollprofil-buch-inline-1") && profileBook.includes("utm_content=vollprofil-buch-final")],
   ["Profile book page is linked in footer", deHome.includes("/de/vollprofil-buch/")],
   ["Profile book page has localized fallback SEO", frProfileBook.includes("<title>Livre de profil complet | Hermetia</title>")],
+  ["Companion page exists", companion.includes("Hermetia Companion") && companion.includes("ruhiger AI-Begleiter")],
+  ["Companion page has FAQ schema", companion.includes("FAQPage")],
+  ["Companion page has tracked CTAs", companion.includes("utm_content=companion-inline-1") && companion.includes("utm_content=companion-final")],
+  ["Companion page is linked in footer", deHome.includes("/de/companion/")],
+  ["Companion page has localized fallback SEO", frCompanion.includes("<title>Companion | Hermetia</title>")],
+  ["Profile refinement page exists", profileRefinement.includes("Profil verfeinern") && profileRefinement.includes("Export und Löschung")],
+  ["Profile refinement page has FAQ schema", profileRefinement.includes("FAQPage")],
+  ["Profile refinement page has tracked CTAs", profileRefinement.includes("utm_content=profil-verfeinern-inline-1") && profileRefinement.includes("utm_content=profil-verfeinern-final")],
+  ["Profile refinement page is linked in footer", deHome.includes("/de/profil-verfeinern/")],
+  ["Profile refinement page has localized fallback SEO", frProfileRefinement.includes("<title>Affiner le profil | Hermetia</title>")],
   ["Header CTAs are source tagged", deHome.includes("utm_content=header-start") && deHome.includes("utm_content=header-login")],
   ["Home CTAs are source tagged", deHome.includes("utm_content=home-hero") && deHome.includes("utm_content=home-final")],
   ["Pricing CTAs are source tagged", pricing.includes("utm_content=pricing-tier-1") && pricing.includes("utm_content=pricing-tier-2") && pricing.includes("utm_content=pricing-tier-3") && pricing.includes("utm_content=pricing-final")],
