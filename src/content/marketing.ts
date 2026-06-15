@@ -103,23 +103,64 @@ const dePages = {
       {
         title: "Warum die Seelenkarte kein klassisches Chart ist",
         body:
-          "Ein klassisches Chart zeigt oft viele Symbole, Linien und Fachbegriffe. Das kann faszinieren, aber auch überfordern. Die Seelenkarte geht anders vor: Sie nimmt die berechneten Daten ernst, stellt aber zuerst die menschlich verständliche Synthese in den Mittelpunkt. Du siehst nicht nur Planeten, Zahlen oder Typen, sondern die Frage: Was wiederholt sich in mir über mehrere Perspektiven hinweg?",
+          "Ein klassisches Chart zeigt oft viele Symbole, Linien und Fachbegriffe. Das kann faszinieren, aber auch überfordern. Die Seelenkarte geht anders vor: Sie nimmt die berechneten Daten ernst, stellt aber zuerst die menschlich verständliche Synthese in den Mittelpunkt. Du siehst nicht nur Planeten, Zahlen oder Typen, sondern die Frage: Was wiederholt sich in mir über mehrere Perspektiven hinweg? Genau deshalb ist die Seelenkarte keine Kopie eines Horoskops, kein Human-Design-Bodygraph und kein Persönlichkeitstest mit hübscher Oberfläche. Sie ist Hermetias eigene Darstellungsform für Konvergenz: ein lesbares Profil, das mehrere Systeme nebeneinander ernst nimmt, sie aber nicht ungefiltert auf dich stapelt.",
       },
       {
         title: "Ebenen statt Informationswand",
         body:
-          "Hermetia gliedert dein Profil in Ebenen: Wesenskern, Gaben, Schatten, Beziehung, Berufung, Rhythmus und Seelenweg. Jede Ebene kann für sich gelesen werden. Dadurch entsteht eine geführte Reise. Du musst nicht alles auf einmal verstehen, sondern kannst nach und nach tiefer gehen.",
+          "Hermetia gliedert dein Profil in Ebenen: Wesenskern, Gaben, Schatten, Beziehung, Berufung, Rhythmus und Seelenweg. Jede Ebene kann für sich gelesen werden. Dadurch entsteht eine geführte Reise. Du musst nicht alles auf einmal verstehen, sondern kannst nach und nach tiefer gehen. Für die Website ist diese Struktur wichtig, weil sie den Unterschied zwischen kostenlosem Einstieg und bezahlter Tiefe erklärt: Der erste Blick zeigt Resonanz, die vollständigen Ebenen machen aus einem Aha-Moment eine langfristig nutzbare Ressource.",
+      },
+      {
+        title: "Welche Daten in die Seelenkarte einfließen",
+        body:
+          "Die Seelenkarte kann Geburtsdatum, Geburtsort, Geburtszeit, Namen, Selbstauskunft und spätere Profilverfeinerungen nutzen. Nicht jede Angabe ist für jedes System gleich wichtig. Eine genaue Geburtszeit verbessert zeit- und ortsabhängige Systeme, während Fragebögen Alltag, Verhalten und Selbstwahrnehmung erden. Hermetia muss deshalb transparent zeigen, welche Aussagen auf welchen Eingaben beruhen und wo Unsicherheit besteht. Das stärkt Vertrauen, verhindert Überdeutung und unterstützt eine informierte Entscheidung im Onboarding.",
+      },
+      {
+        title: "Von Systemsignalen zu Kernthemen",
+        body:
+          "Die Seelenkarte entsteht nicht dadurch, dass Hermetia 31 Systeme nacheinander ausgibt. Zuerst werden Rohsignale berechnet, dann in Themen übersetzt, in Systemfamilien gruppiert und über die Konvergenz-Engine gewichtet. So wird sichtbar, ob ein Motiv nur aus einer Datenfamilie kommt oder ob unabhängige Perspektiven dasselbe Thema tragen. Nutzer sollen dadurch verstehen: Eine starke Aussage ist bei Hermetia nicht lauter, weil sie dramatisch klingt, sondern belastbarer, weil sie nachvollziehbar hergeleitet wird.",
+      },
+      {
+        title: "Was kostenlos sichtbar wird",
+        body:
+          "Der kostenlose Profilstart soll genug zeigen, um eine echte Entscheidung zu ermöglichen: erste Kernthemen, eine verständliche Grundresonanz und ein Gefühl dafür, ob Sprache, Ton und Datenschutz stimmig sind. Dieser Bereich darf nicht künstlich leer wirken. Er soll neugierig machen, aber fair bleiben. Wer nach dem kostenlosen Einstieg merkt, dass Hermetia nicht passt, hat trotzdem Orientierung gewonnen. Wer Resonanz spürt, versteht klarer, warum Premium-Tiefe sinnvoll werden kann.",
+      },
+      {
+        title: "Was Premium an der Seelenkarte vertieft",
+        body:
+          "Bezahlte Modelle werden dort plausibel, wo Hermetia mehr als einen ersten Eindruck liefert: vollständige Ebenen, längere Deutungen, Profilbuch, Journaling, Tagesimpulse, Beziehungsprofile, Rückblicke und Profilverfeinerung. Die Seelenkarte ist damit nicht nur ein Ergebnis, sondern der Ausgangspunkt einer Arbeitsumgebung. Gute Conversion entsteht hier nicht durch Druck, sondern durch nachvollziehbaren Mehrwert: mehr Kontext, mehr Zeitbezug, mehr Selbstbeobachtung und mehr Möglichkeiten, die eigenen Themen im Alltag zu prüfen.",
       },
       {
         title: "Der persönliche Nutzen",
         body:
-          "Die Seelenkarte soll dich neugierig machen, ohne dich zu vereinnahmen. Sie kann Worte für Muster geben, die du schon lange spürst, aber schwer greifen konntest. Gleichzeitig bleibt sie offen: Wenn etwas nicht resoniert, ist das ein wertvoller Hinweis. Hermetia ist Reflexion, keine Festlegung.",
+          "Die Seelenkarte soll dich neugierig machen, ohne dich zu vereinnahmen. Sie kann Worte für Muster geben, die du schon lange spürst, aber schwer greifen konntest. Gleichzeitig bleibt sie offen: Wenn etwas nicht resoniert, ist das ein wertvoller Hinweis. Hermetia ist Reflexion, keine Festlegung. Der Nutzen liegt nicht darin, eine neue Identität zu behaupten, sondern bessere Fragen zu ermöglichen: Wo erkenne ich mich? Wo widerspreche ich? Was möchte ich beobachten? Was verändert sich, wenn ich dieses Muster nicht bekämpfe, sondern verstehe?",
+      },
+      {
+        title: "Rechtliche und ethische Grenzen",
+        body:
+          "Die Seelenkarte darf keine Diagnose, keine Therapie, keine medizinische Empfehlung und keine sichere Vorhersage sein. Auch spirituelle Sprache muss sorgfältig bleiben, weil persönliche Profile sensible Rückschlüsse auf Identität, Weltbild und Beziehungsmuster erlauben. Hermetia verwendet deshalb eigene redaktionelle Texte, keine übernommenen proprietären Deutungspassagen fremder Systeme, und rahmt jede Aussage als Reflexionsangebot. Diese Grenze ist nicht nur rechtlicher Schutz, sondern Teil des Markenvertrauens.",
+      },
+    ],
+    graphics: [
+      {
+        src: "/graphics/convergence/abb1-familien-modell.svg",
+        alt: "Hermetia Systemfamilien als Grundlage der Seelenkarte",
+        caption: "Die Seelenkarte bündelt verwandte Systeme in Familien, damit ähnliche Rohquellen nicht fälschlich als unabhängige Bestätigung wirken.",
+      },
+      {
+        src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
+        alt: "Algorithmus-Funnel von Daten zur lesbaren Seelenkarte",
+        caption: "Aus Eingaben, Rohsignalen und Familienbelegen entsteht eine verständliche Seelenkarte mit Kernthemen, Grenzen und Premium-Tiefe.",
       },
     ],
     faq: [
       { q: "Ist die Seelenkarte kostenlos?", a: "Der Einstieg ist kostenlos. Du siehst deine Seelenkarte und erste Kernthemen ohne Kreditkarte. Weitere Ebenen können über ein bezahltes Modell freigeschaltet werden." },
       { q: "Brauche ich eine genaue Geburtszeit?", a: "Eine genaue Geburtszeit verbessert manche Systeme. Hermetia funktioniert aber auch mit grober Tageszeit und kennzeichnet, was dadurch weniger sicher ist." },
       { q: "Ist das eine Diagnose?", a: "Nein. Die Seelenkarte ist Inspiration zur Selbstreflexion und keine medizinische, psychologische oder therapeutische Beratung." },
+      { q: "Warum nutzt Hermetia mehrere Systeme für eine Seelenkarte?", a: "Weil ein einzelnes System nur eine Perspektive liefert. Hermetia prüft, welche Themen über mehrere unabhängige Systemfamilien hinweg auftauchen und dadurch als Kernthemen tragfähiger werden." },
+      { q: "Was unterscheidet die Seelenkarte von einem Persönlichkeitstest?", a: "Ein Persönlichkeitstest basiert meist auf Selbstauskunft. Die Seelenkarte verbindet Selbstauskunft, berechnete Daten, Systemfamilien und Konvergenz zu einem mehrschichtigen Reflexionsprofil." },
+      { q: "Wann lohnt sich Premium für die Seelenkarte?", a: "Premium lohnt sich, wenn du nicht nur erste Kernthemen sehen möchtest, sondern vollständige Ebenen, Profilbuch, Journaling, Tagesimpulse, Beziehungsauswertungen oder langfristige Reflexion nutzen willst." },
+      { q: "Verwendet Hermetia geschützte Texte anderer Systeme?", a: "Nein. Hermetia formuliert eigene redaktionelle Deutungstexte und übernimmt keine proprietären Passagen, Tabellen oder Originalformulierungen fremder Anbieter." },
     ],
     ctaTitle: "Beginne mit deiner eigenen Seelenkarte.",
     ctaText: "In wenigen Minuten siehst du kostenlos, welche ersten Themen Hermetia bei dir erkennt.",

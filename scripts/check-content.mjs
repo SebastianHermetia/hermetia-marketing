@@ -52,6 +52,7 @@ const comparison = readOut("de/vergleiche/big-five-vs-human-design");
 const glossaryHub = readOut("de/glossar");
 const glossary = readOut("de/glossar/datenminimierung");
 const convergence = readOut("de/konvergenz-engine");
+const soulMap = readOut("de/seelenkarte");
 const systemDetail = readOut("de/systeme/human-design");
 const languages = readOut("de/sprachen");
 const launchReview = readOut("de/freigaben");
@@ -115,6 +116,12 @@ const checks = [
   ["Glossary hub has structured data", glossaryHub.includes("Article") && glossaryHub.includes("BreadcrumbList")],
   ["Glossary hub has tracked CTAs", glossaryHub.includes("utm_content=glossary-hero") && glossaryHub.includes("utm_content=glossary-index")],
   ["Convergence page embeds explainer graphics", convergence.includes("/graphics/convergence/abb1-familien-modell.svg") && convergence.includes("/graphics/convergence/abb5-algorithmus-funnel.svg")],
+  ["Soul map page has data basis", soulMap.includes("Welche Daten in die Seelenkarte einfließen") && soulMap.includes("Geburtsdatum, Geburtsort, Geburtszeit")],
+  ["Soul map page explains convergence", soulMap.includes("Von Systemsignalen zu Kernthemen") && soulMap.includes("Konvergenz-Engine")],
+  ["Soul map page explains free and premium depth", soulMap.includes("Was kostenlos sichtbar wird") && soulMap.includes("Was Premium an der Seelenkarte vertieft")],
+  ["Soul map page has legal and ethical limits", soulMap.includes("Rechtliche und ethische Grenzen") && soulMap.includes("keine übernommenen proprietären Deutungspassagen")],
+  ["Soul map page has graphics", soulMap.includes("/graphics/convergence/abb1-familien-modell.svg") && soulMap.includes("/graphics/convergence/abb5-algorithmus-funnel.svg")],
+  ["Soul map page has expanded FAQ and CTAs", soulMap.includes("FAQPage") && soulMap.includes("Wann lohnt sich Premium für die Seelenkarte") && soulMap.includes("utm_content=seelenkarte-inline-1") && soulMap.includes("utm_content=seelenkarte-final")],
   ["System detail has data basis block", systemDetail.includes("Datenbasis") && systemDetail.includes("Welche Angaben Hermetia")],
   ["System detail has fictional example", systemDetail.includes("Beispiel, fiktiv") && systemDetail.includes("Wie eine Deutung klingen könnte")],
   ["System detail has pro and contra block", systemDetail.includes("Pro und Contra") && systemDetail.includes("verantwortungsvoll lesen")],
