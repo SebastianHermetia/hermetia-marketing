@@ -480,27 +480,54 @@ const dePages = {
       {
         title: "Warum Profile nicht fertig vom Himmel fallen",
         body:
-          "Viele Systeme starten mit Geburtsdaten, aber Menschen sind mehr als ein Datensatz. Hermetia kann sehr viel berechnen, doch Resonanz entsteht erst im Zusammenspiel mit echter Selbstauskunft. Wenn Nutzer später ihre Geburtszeit finden, Interessen nachtragen, Tagesimpulse bewerten oder Journalmuster reflektieren, wird das Profil klarer. Das ist kein Fehler im ersten Profil, sondern Teil eines ehrlichen Produktverständnisses.",
+          "Viele Systeme starten mit Geburtsdaten, aber Menschen sind mehr als ein Datensatz. Hermetia kann sehr viel berechnen, doch Resonanz entsteht erst im Zusammenspiel mit echter Selbstauskunft. Wenn Nutzer später ihre Geburtszeit finden, Interessen nachtragen, Tagesimpulse bewerten oder Journalmuster reflektieren, wird das Profil klarer. Das ist kein Fehler im ersten Profil, sondern Teil eines ehrlichen Produktverständnisses. Die Website sollte deshalb erklären: Ein Profil darf wachsen, ohne den ersten Einstieg zu entwerten.",
+      },
+      {
+        title: "Datenqualität sichtbar machen",
+        body:
+          "Profilverfeinerung beginnt mit Transparenz. Nutzer sollten sehen, welche Angaben sicher sind, welche nur grob geschätzt wurden und welche Systeme besonders von Genauigkeit abhängen. Eine bekannte Geburtszeit verbessert andere Aussagen als ein ausgefüllter Fragebogen oder ein Journaling-Verlauf. Hermetia kann daraus eine Datenqualitätslogik machen: Was ist stabil? Was ist unsicher? Was würde sich verbessern, wenn ich freiwillig ergänze?",
       },
       {
         title: "Resonanzfeedback statt blinder Korrektur",
         body:
-          "Wenn ein Nutzer sagt, dass ein Satz nicht passt, sollte Hermetia das nicht als bloßes Nein behandeln. Interessant ist die Frage: War die Aussage zu stark, zu allgemein, zu früh oder fachlich falsch eingeordnet? Gutes Feedback verbessert Sprache, Gewichtung und künftige Reflexion. Gleichzeitig darf die Plattform Nutzer nicht drängen, immer mehr intime Details preiszugeben. Verfeinerung muss freiwillig bleiben.",
+          "Wenn ein Nutzer sagt, dass ein Satz nicht passt, sollte Hermetia das nicht als bloßes Nein behandeln. Interessant ist die Frage: War die Aussage zu stark, zu allgemein, zu früh oder fachlich falsch eingeordnet? Gutes Feedback verbessert Sprache, Gewichtung und künftige Reflexion. Gleichzeitig darf die Plattform Nutzer nicht drängen, immer mehr intime Details preiszugeben. Verfeinerung muss freiwillig bleiben. Auch ein Widerspruch ist wertvoll, weil er hilft, die eigene Sprache genauer zu finden.",
+      },
+      {
+        title: "Sicherheitsstufen statt Absolutheit",
+        body:
+          "Nicht jede Aussage im Profil ist gleich belastbar. Hermetia sollte daher mit Sicherheitsstufen arbeiten: hoch, wenn Eingaben vollständig und mehrere unabhängige Systemfamilien beteiligt sind; mittel, wenn gute Hinweise vorliegen, aber eine Quelle fehlt; niedrig, wenn ein Thema poetisch interessant, aber dünn belegt ist. Diese Differenzierung macht die Seelenkarte glaubwürdiger und verhindert, dass Nutzer schöne Formulierungen mit endgültigen Wahrheiten verwechseln.",
       },
       {
         title: "Export als Vertrauenssignal",
         body:
-          "Wer persönliche Inhalte speichert, sollte sie auch wieder herausgeben können. Ein Export von Profil, Journalnotizen oder wichtigen Einstellungen schafft Vertrauen, besonders bei sensiblen spirituellen Daten. Die Marketing-Seite muss nicht jedes technische Format versprechen, sollte aber deutlich machen: Hermetia denkt Datenportabilität, Transparenz und Nutzersouveränität als Teil des Produkts.",
+          "Wer persönliche Inhalte speichert, sollte sie auch wieder herausgeben können. Ein Export von Profil, Journalnotizen oder wichtigen Einstellungen schafft Vertrauen, besonders bei sensiblen spirituellen Daten. Die Marketing-Seite muss nicht jedes technische Format versprechen, sollte aber deutlich machen: Hermetia denkt Datenportabilität, Transparenz und Nutzersouveränität als Teil des Produkts. Export ist damit nicht nur ein Datenschutzthema, sondern ein Kaufargument für bezahlte Tiefe.",
       },
       {
         title: "Löschung und Einwilligung nicht verstecken",
         body:
-          "Ein spirituelles Profil kann intime Aussagen über Weltbild, Identität und Beziehung enthalten. Deshalb muss Löschung einfach erklärbar sein. Ebenso wichtig ist die Einwilligung: Nutzer sollen wissen, welche Daten für Berechnung, AI-Formulierung, Journaling und Beziehungsauswertungen genutzt werden. Gerade diese Klarheit kann Conversion stärken, weil sie Angst reduziert.",
+          "Ein spirituelles Profil kann intime Aussagen über Weltbild, Identität und Beziehung enthalten. Deshalb muss Löschung einfach erklärbar sein. Ebenso wichtig ist die Einwilligung: Nutzer sollen wissen, welche Daten für Berechnung, AI-Formulierung, Journaling und Beziehungsauswertungen genutzt werden. Gerade diese Klarheit kann Conversion stärken, weil sie Angst reduziert. Besonders bei Beziehungsprofilen muss Einwilligung getrennt gedacht werden: Meine Daten sind nicht automatisch die Erlaubnis, eine zweite Person zu deuten.",
+      },
+      {
+        title: "AI-Nutzung und Profilverfeinerung",
+        body:
+          "Wenn AI bei Zusammenfassungen, Companion-Antworten oder Profiltexten hilft, muss Hermetia erklären, welche verfeinerten Daten überhaupt in den Kontext gelangen. Eine gute Regel lautet: nur notwendige Informationen, nur für den angegebenen Zweck und nur mit sichtbarer Grenze. Profilverfeinerung darf die AI nicht zu einer Blackbox machen, sondern sollte genauer zeigen, warum eine Antwort besser wird.",
       },
       {
         title: "Premium-Wert durch bessere Genauigkeit",
         body:
-          "Profilverfeinerung kann ein bezahlter Mehrwert sein, wenn sie echte Tiefe schafft: genauere Ebenen, bessere Rückblicke, differenzierte Companion-Antworten, verfeinerte Beziehungsmuster und klarere Tagesimpulse. Die Grenze muss fair bleiben. Der kostenlose Einstieg zeigt Resonanz, bezahlte Modelle vertiefen und begleiten, ohne Nutzer in Datenabgabe zu drängen.",
+          "Profilverfeinerung kann ein bezahlter Mehrwert sein, wenn sie echte Tiefe schafft: genauere Ebenen, bessere Rückblicke, differenzierte Companion-Antworten, verfeinerte Beziehungsmuster und klarere Tagesimpulse. Die Grenze muss fair bleiben. Der kostenlose Einstieg zeigt Resonanz, bezahlte Modelle vertiefen und begleiten, ohne Nutzer in Datenabgabe zu drängen. Der Kaufgrund ist nicht, dass vorher alles ungenau war, sondern dass mehr Kontext über Zeit mehr Nutzen schafft.",
+      },
+    ],
+    graphics: [
+      {
+        src: "/graphics/convergence/abb4-pipeline-einordnung.svg",
+        alt: "Pipeline von Eingaben zu Profilverfeinerung und besserer Einordnung",
+        caption: "Profilverfeinerung macht sichtbar, welche Eingaben eine Aussage verbessern und welche Unsicherheiten erhalten bleiben.",
+      },
+      {
+        src: "/graphics/convergence/abb2-konvergenz-vs-staerke.svg",
+        alt: "Konvergenz versus Stärke als Grundlage für Sicherheitsstufen",
+        caption: "Eine Aussage kann stark wirken, aber erst Konvergenz und gute Datenqualität machen sie belastbarer.",
       },
     ],
     faq: [
@@ -508,6 +535,10 @@ const dePages = {
       { q: "Kann ich mein Profil exportieren?", a: "Das Produktziel ist, dass wichtige persönliche Inhalte exportierbar sind. Die Website rahmt Export bewusst als Vertrauens- und Datenschutzsignal." },
       { q: "Kann ich Daten löschen lassen?", a: "Ja. Persönliche Profile, sensible Inhalte und Einwilligungen brauchen klare Löschwege. Rechtstexte und Produktlogik müssen das vor Launch verbindlich abbilden." },
       { q: "Muss ich immer mehr Daten angeben?", a: "Nein. Verfeinerung soll freiwillig bleiben. Hermetia soll erklären, was zusätzliche Angaben verbessern, aber keinen Druck erzeugen." },
+      { q: "Was bedeutet Datenqualität in Hermetia?", a: "Datenqualität beschreibt, wie vollständig und belastbar die Eingaben sind. Eine genaue Geburtszeit, gute Selbstauskunft und freiwilliges Feedback können unterschiedliche Profilbereiche verbessern." },
+      { q: "Werden Aussagen nach Sicherheit gekennzeichnet?", a: "Das Produktziel ist, Unsicherheit sichtbar zu machen: starke Konvergenz, vollständige Daten und mehrere Systemfamilien sollten anders gelesen werden als dünn belegte Hinweise." },
+      { q: "Verbessert Feedback die AI-Antworten?", a: "Feedback kann helfen, Kontext und Sprache besser einzuordnen. AI sollte dabei nur notwendige und freigegebene Informationen nutzen." },
+      { q: "Ist Profilverfeinerung nur für Premium sinnvoll?", a: "Nein. Schon kostenloses Feedback kann Orientierung schaffen. Premium wird sinnvoll, wenn Verlauf, Rückblicke, Companion, Journaling und tiefere Ebenen regelmäßig genutzt werden." },
     ],
     ctaTitle: "Starte mit dem, was du weißt, und verfeinere dein Profil später.",
     ctaText: "Die erste Seelenkarte funktioniert als Einstieg. Mehr Genauigkeit kann wachsen, wenn du sie willst.",
