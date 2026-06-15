@@ -46,6 +46,7 @@ const article = readOut("de/wissen/seelenkarte-erstellen");
 const comparison = readOut("de/vergleiche/big-five-vs-human-design");
 const glossary = readOut("de/glossar/datenminimierung");
 const convergence = readOut("de/konvergenz-engine");
+const languages = readOut("de/sprachen");
 
 const checks = [
   ["DE has no fallback language notice", !deHome.includes("Sprachfassung in redaktioneller Vorbereitung")],
@@ -62,6 +63,11 @@ const checks = [
   ["Glossary detail has limits block", glossary.includes("Grenzen der Deutung")],
   ["Glossary detail has FAQ schema", glossary.includes("FAQPage")],
   ["Convergence page embeds explainer graphics", convergence.includes("/graphics/convergence/abb1-familien-modell.svg") && convergence.includes("/graphics/convergence/abb5-algorithmus-funnel.svg")],
+  ["Language status page exists", languages.includes("Hermetia in europäischen Sprachen")],
+  ["Language status page reports 24 live routes", languages.includes("Sprachrouten live") && languages.includes(">24<")],
+  ["Language status page reports editorial locales", languages.includes("Redaktionell freigegeben") && languages.includes(">2<")],
+  ["Language status page reports fallback locales", languages.includes("In Übersetzung") && languages.includes(">22<")],
+  ["Language status page is linked in footer", deHome.includes("/de/sprachen/")],
 ];
 
 for (const [label, ok] of checks) {

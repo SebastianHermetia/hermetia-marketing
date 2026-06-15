@@ -30,6 +30,7 @@ export const paths = {
   glossar: "/glossar",
   wissen: "/wissen",
   vergleiche: "/vergleiche",
+  sprachen: "/sprachen",
   preise: "/preise",
   faq: "/faq",
   datenschutz: "/datenschutz",
