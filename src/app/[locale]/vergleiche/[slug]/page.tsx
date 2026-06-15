@@ -50,6 +50,24 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
               <p className="muted mt-2 leading-relaxed">Keines der Systeme sollte allein über eine Person entscheiden. Hermetia nutzt Vergleiche als Orientierung, nicht als endgültiges Urteil.</p>
             </div>
           </div>
+          <div className="mt-8 rounded-card border border-sand bg-creme-tief p-6">
+            <span className="kicker">Entscheidungshilfe</span>
+            <h2 className="mt-2 text-[clamp(24px,3vw,30px)]">Wann welcher Blick hilfreicher ist</h2>
+            <div className="mt-5 grid gap-4 md:grid-cols-3">
+              <div className="rounded-card border border-sand bg-white p-5">
+                <h3 className="text-[18px]">Für den ersten Aha-Moment</h3>
+                <p className="muted mt-2 text-[15px] leading-relaxed">Nutze die Perspektive, die schnell Sprache für ein Muster gibt, ohne dich festzulegen.</p>
+              </div>
+              <div className="rounded-card border border-sand bg-white p-5">
+                <h3 className="text-[18px]">Für verlässliche Tiefe</h3>
+                <p className="muted mt-2 text-[15px] leading-relaxed">Achte darauf, ob unabhängige Datenquellen dasselbe Thema stützen oder nur dieselbe Familie wiederholt wird.</p>
+              </div>
+              <div className="rounded-card border border-sand bg-white p-5">
+                <h3 className="text-[18px]">Für Premium-Entscheidung</h3>
+                <p className="muted mt-2 text-[15px] leading-relaxed">Tiefe lohnt sich, wenn du den Vergleich nicht nur lesen, sondern im eigenen Profil nachvollziehen willst.</p>
+              </div>
+            </div>
+          </div>
           <div className="mt-10 flex flex-col gap-10">
             {sections.map((section, idx) => (
               <section key={section.title}>
@@ -63,6 +81,20 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
               </section>
             ))}
           </div>
+          <section className="mt-10">
+            <span className="kicker">Datenquellen und Fairness</span>
+            <h2 className="mt-2 text-[clamp(24px,3vw,32px)]">Warum Vergleiche bei Hermetia keine Gewinnerliste sind</h2>
+            <p className="muted mt-3 text-[17px] leading-[1.9]">
+              Hermetia bewertet Systeme nicht nach Lautstärke, Bekanntheit oder spiritueller Dramaturgie. Entscheidend ist, welche Datenbasis vorliegt, welche Aussage daraus verantwortungsvoll abgeleitet werden kann und ob andere unabhängige Quellen dasselbe Motiv bestätigen. So entsteht ein Vergleich, der Nutzer weiterführt, ohne Systeme gegeneinander auszuspielen.
+            </p>
+          </section>
+          <section className="mt-10">
+            <span className="kicker">Rechtliche Grenzen</span>
+            <h2 className="mt-2 text-[clamp(24px,3vw,32px)]">Keine Diagnose, keine kopierten Deutungstexte</h2>
+            <p className="muted mt-3 text-[17px] leading-[1.9]">
+              Die Vergleichstexte sind eigene Hermetia-Erklärungen. Sie übernehmen keine geschützten Reporttexte, Fragebogenitems oder fremden Kartendeutungen. Gerade bei psychologischen, körpernahen oder spirituellen Systemen bleibt die Sprache bewusst vorsichtig: Reflexion ja, Diagnose oder Therapie nein.
+            </p>
+          </section>
           <div className="mt-12">
             <h2 className="mb-4 text-[clamp(24px,3vw,32px)]">Häufige Fragen</h2>
             <Faq items={faq} />
