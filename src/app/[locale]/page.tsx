@@ -33,7 +33,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <h1 className="max-w-[760px] text-[clamp(34px,6vw,52px)] leading-[1.1]">{h.hero.title}</h1>
           <p className="lead my-6 max-w-[620px]">{h.hero.lead}</p>
           <div className="flex flex-wrap justify-center gap-3.5">
-            <a className="btn btn-primary btn-lg" href={startUrl(locale)}>{t.cta.seeChart}</a>
+            <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "home-hero" })}>{t.cta.seeChart}</a>
             <a className="btn btn-ghost btn-lg" href="#methodik">{t.cta.howItWorks}</a>
           </div>
           <p className="note mt-4">{h.hero.trustline}</p>
@@ -167,7 +167,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div className="rounded-card bg-gradient-to-br from-aubergine to-pflaume px-8 py-16 text-center">
             <h2 className="text-[clamp(28px,4vw,40px)] text-white">{h.finalCta.title}</h2>
             <p className="mx-auto my-4 max-w-[520px] text-lg text-[#e9dcf2]">{h.finalCta.lead}</p>
-            <a className="btn btn-on-dark btn-lg" href={startUrl(locale)}>{t.cta.startFree}</a>
+            <a className="btn btn-on-dark btn-lg" href={startUrl(locale, { source: "home-final" })}>{t.cta.startFree}</a>
           </div>
         </div>
       </section>

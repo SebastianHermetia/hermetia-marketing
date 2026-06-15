@@ -33,8 +33,8 @@ export function Header({ locale, current }: { locale: Locale; current?: string }
         </nav>
         <span className="flex-1" />
         <LocaleSwitch locale={locale} current={current} />
-        <a className="btn btn-ghost hidden sm:inline-flex" href={loginUrl(locale)}>{t.nav.login}</a>
-        <a className="btn btn-primary" href={startUrl(locale)}>{t.nav.start}</a>
+        <a className="btn btn-ghost hidden sm:inline-flex" href={loginUrl(locale, { source: "header-login", medium: "nav" })}>{t.nav.login}</a>
+        <a className="btn btn-primary" href={startUrl(locale, { source: "header-start", medium: "nav" })}>{t.nav.start}</a>
       </div>
     </header>
   );

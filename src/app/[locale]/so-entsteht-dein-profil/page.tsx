@@ -92,7 +92,7 @@ export default async function MethodikPage({ params }: { params: Promise<{ local
         <div className="wrap">
           <h2 className="text-[clamp(26px,3.5vw,34px)] text-white">{p.cta.title}</h2>
           <p className="mx-auto my-4 max-w-[480px] text-[#e9dcf2]">{p.cta.lead}</p>
-          <a className="btn btn-on-dark btn-lg" href={startUrl(locale)}>{t.cta.startFree}</a>
+          <a className="btn btn-on-dark btn-lg" href={startUrl(locale, { source: "method-final" })}>{t.cta.startFree}</a>
         </div>
       </section>
 

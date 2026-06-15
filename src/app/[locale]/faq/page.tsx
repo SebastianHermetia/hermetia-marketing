@@ -42,7 +42,7 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: st
 
       <section className="bg-creme-tief py-16 text-center">
         <div className="wrap">
-          <a className="btn btn-primary btn-lg" href={startUrl(locale)}>{t.cta.startFree}</a>
+          <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "faq-final" })}>{t.cta.startFree}</a>
         </div>
       </section>
 

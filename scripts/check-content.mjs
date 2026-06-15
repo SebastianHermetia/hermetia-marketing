@@ -48,6 +48,11 @@ const glossary = readOut("de/glossar/datenminimierung");
 const convergence = readOut("de/konvergenz-engine");
 const languages = readOut("de/sprachen");
 const launchReview = readOut("de/freigaben");
+const pricing = readOut("de/preise");
+const services = readOut("de/leistungen");
+const systemsHub = readOut("de/systeme");
+const method = readOut("de/so-entsteht-dein-profil");
+const faqPage = readOut("de/faq");
 
 const checks = [
   ["DE has no fallback language notice", !deHome.includes("Sprachfassung in redaktioneller Vorbereitung")],
@@ -79,6 +84,11 @@ const checks = [
   ["Launch review page states external legal review", launchReview.includes("keine anwaltliche Endfreigabe")],
   ["Launch review page lists indexing gate", launchReview.includes("Indexing und Domain-Launch")],
   ["Launch review page is linked in footer", deHome.includes("/de/freigaben/")],
+  ["Header CTAs are source tagged", deHome.includes("utm_content=header-start") && deHome.includes("utm_content=header-login")],
+  ["Home CTAs are source tagged", deHome.includes("utm_content=home-hero") && deHome.includes("utm_content=home-final")],
+  ["Pricing CTAs are source tagged", pricing.includes("utm_content=pricing-tier-1") && pricing.includes("utm_content=pricing-tier-2") && pricing.includes("utm_content=pricing-tier-3") && pricing.includes("utm_content=pricing-final")],
+  ["Hub CTAs are source tagged", services.includes("utm_content=services-final") && systemsHub.includes("utm_content=systems-final") && method.includes("utm_content=method-final") && faqPage.includes("utm_content=faq-final")],
+  ["Language CTAs are source tagged", languages.includes("utm_content=language-status-inline") && languages.includes("utm_content=language-status")],
 ];
 
 for (const [label, ok] of checks) {

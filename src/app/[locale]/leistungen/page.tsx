@@ -92,7 +92,7 @@ export default async function LeistungenPage({ params }: { params: Promise<{ loc
         <div className="wrap">
           <h2 className="text-[clamp(26px,3.5vw,34px)]">{p.cta.title}</h2>
           <p className="lead mx-auto my-4 max-w-[520px]">{p.cta.lead}</p>
-          <a className="btn btn-primary btn-lg" href={startUrl(locale)}>{t.cta.startFree}</a>
+          <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "services-final" })}>{t.cta.startFree}</a>
         </div>
       </section>
 

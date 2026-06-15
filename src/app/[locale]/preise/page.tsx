@@ -54,7 +54,7 @@ export default async function PreisePage({ params }: { params: Promise<{ locale:
                   {tier.per ? <span className="muted font-sans text-base"> {tier.per}</span> : null}
                 </p>
                 <p className="note">{tier.note}</p>
-                <a className={`btn ${tier.featured ? "btn-primary" : "btn-ghost"} my-5 w-full`} href={startUrl(locale)}>{tier.cta}</a>
+                <a className={`btn ${tier.featured ? "btn-primary" : "btn-ghost"} my-5 w-full`} href={startUrl(locale, { source: `pricing-tier-${i + 1}` })}>{tier.cta}</a>
                 <ul className="flex list-none flex-col gap-2.5 text-[14.5px]">
                   {tier.features.map((f, k) => <li key={k}>✓ {f}</li>)}
                 </ul>
@@ -91,7 +91,7 @@ export default async function PreisePage({ params }: { params: Promise<{ locale:
 
       <section className="pb-20 text-center">
         <div className="wrap">
-          <a className="btn btn-primary btn-lg" href={startUrl(locale)}>{p.cta}</a>
+          <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "pricing-final" })}>{p.cta}</a>
         </div>
       </section>
 

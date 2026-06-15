@@ -96,7 +96,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
                 <p className="muted mt-3 text-[17px] leading-[1.85]">
                   Die Sprachwahl ist schon nutzbar. Bei nicht final geprüften Sprachen ist der Inhalt aber als vorbereiteter Rollout zu verstehen. Für Anmeldung und Profilstart wird die gewählte Sprache als Hinweis an die App übergeben.
                 </p>
-                <a className="btn btn-primary mt-5" href={startUrl(locale)}>Profil kostenlos starten</a>
+                <a className="btn btn-primary mt-5" href={startUrl(locale, { source: "language-status-inline" })}>Profil kostenlos starten</a>
               </div>
             </div>
           </div>

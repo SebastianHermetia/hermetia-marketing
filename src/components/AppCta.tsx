@@ -14,7 +14,7 @@ export function AppCta({
   source: string;
   secondary?: boolean;
 }) {
-  const url = `${startUrl(locale)}&utm_source=marketing&utm_medium=cta&utm_campaign=content&utm_content=${encodeURIComponent(source)}`;
+  const url = startUrl(locale, { source, medium: "cta", campaign: "content" });
   return (
     <div className="rounded-card bg-gradient-to-br from-aubergine to-pflaume px-7 py-10 text-center text-white">
       <h2 className="mx-auto max-w-[720px] text-[clamp(25px,3.5vw,34px)] text-white">{title}</h2>
