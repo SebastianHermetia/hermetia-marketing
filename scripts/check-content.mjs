@@ -48,6 +48,7 @@ const plMethod = readOut("pl/so-entsteht-dein-profil");
 const svConvergence = readOut("sv/konvergenz-engine");
 const article = readOut("de/wissen/seelenkarte-erstellen");
 const comparison = readOut("de/vergleiche/big-five-vs-human-design");
+const glossaryHub = readOut("de/glossar");
 const glossary = readOut("de/glossar/datenminimierung");
 const convergence = readOut("de/konvergenz-engine");
 const systemDetail = readOut("de/systeme/human-design");
@@ -101,6 +102,11 @@ const checks = [
   ["Glossary detail has IP and privacy block", glossary.includes("IP und Datenschutz") && glossary.includes("eigene Sprache verwendet")],
   ["Glossary detail has related terms block", glossary.includes("Verwandte Begriffe") && glossary.includes("/de/glossar/")],
   ["Glossary detail has FAQ schema", glossary.includes("FAQPage")],
+  ["Glossary hub has AEO questions", glossaryHub.includes("Antwortmaschine") && glossaryHub.includes("Welche Fragen beantwortet das Glossar")],
+  ["Glossary hub has term families", glossaryHub.includes("Begriffsfamilien") && glossaryHub.includes("Profil und Seelenkarte") && glossaryHub.includes("AI, Datenschutz und Recht")],
+  ["Glossary hub has all terms heading", glossaryHub.includes("Alle Begriffe") && glossaryHub.includes("Von Seelenkarte bis Datenminimierung")],
+  ["Glossary hub has structured data", glossaryHub.includes("Article") && glossaryHub.includes("BreadcrumbList")],
+  ["Glossary hub has tracked CTAs", glossaryHub.includes("utm_content=glossary-hero") && glossaryHub.includes("utm_content=glossary-index")],
   ["Convergence page embeds explainer graphics", convergence.includes("/graphics/convergence/abb1-familien-modell.svg") && convergence.includes("/graphics/convergence/abb5-algorithmus-funnel.svg")],
   ["System detail has data basis block", systemDetail.includes("Datenbasis") && systemDetail.includes("Welche Angaben Hermetia")],
   ["System detail has fictional example", systemDetail.includes("Beispiel, fiktiv") && systemDetail.includes("Wie eine Deutung klingen könnte")],
