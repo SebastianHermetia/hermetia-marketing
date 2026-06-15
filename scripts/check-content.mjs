@@ -87,6 +87,7 @@ const profileRefinement = readOut("de/profil-verfeinern");
 const frProfileRefinement = readOut("fr/profil-verfeinern");
 const dailyImpulses = readOut("de/tagesimpulse");
 const pricing = readOut("de/preise");
+const enPricing = readOut("en/preise");
 const services = readOut("de/leistungen");
 const systemsHub = readOut("de/systeme");
 const method = readOut("de/so-entsteht-dein-profil");
@@ -309,6 +310,8 @@ const checks = [
   ["Pricing page has tier comparison", pricing.includes("Was öffnet sich in welchem Tarif") && pricing.includes("Begleitung") && pricing.includes("Tiefe")],
   ["Pricing page has correct daily price logic", pricing.includes("rund 13 Cent am Tag") && pricing.includes("rund 27 Cent am Tag") && !pricing.includes("4 Cent am Tag")],
   ["Pricing page has checkout transparency", pricing.includes("Preiswahrheit") && pricing.includes("Bestellübersicht in der App") && pricing.includes("verbindlich")],
+  ["EN pricing page has localized longform sections", enPricing.includes("Price clarity") && enPricing.includes("Which plan fits which moment") && enPricing.includes("A good reason to buy is clarity")],
+  ["EN pricing page has no German core pricing headings", !enPricing.includes("Preiswahrheit") && !enPricing.includes("Entscheidungshilfe") && !enPricing.includes("Fairness und Grenzen")],
   ["Pricing page explains value logic", pricing.includes("Warum 49 Euro pro Jahr plausibel sind") && pricing.includes("Wann kostenlos reicht")],
   ["Pricing page has fairness limits", pricing.includes("Fairness und Grenzen") && pricing.includes("Ein guter Kaufgrund ist Klarheit")],
   ["Pricing page has expanded tracked CTAs", pricing.includes("utm_content=pricing-decision") && pricing.includes("utm_content=pricing-comparison") && pricing.includes("utm_content=pricing-fairness") && pricing.includes("utm_content=pricing-integrity")],

@@ -8,60 +8,166 @@ import { Footer } from "@/components/Footer";
 import { Faq } from "@/components/Faq";
 import { JsonLd, faqSchema, productSchema } from "@/components/JsonLd";
 
-const decisionSteps = [
-  {
-    label: "1",
-    title: "Erst kostenlos Resonanz prüfen",
-    text: "Hermetia wirkt nur dann wertvoll, wenn die erste Seelenkarte persönlich anschließt. Deshalb beginnt die Reise ohne Kreditkarte: Profil starten, erste Kernthemen sehen, Sprache testen.",
+const pricingPageCopy = {
+  de: {
+    recommendation:
+      "Empfehlung: Starte kostenlos, prüfe deine erste Seelenkarte und wähle ein bezahltes Modell erst, wenn du mehr Tiefe wirklich nutzen möchtest.",
+    priceTruthKicker: "Preiswahrheit",
+    priceTruthTitle: "Was bedeutet der Jahrespreis im Alltag?",
+    priceTruthText:
+      "Hermetia rechnet Jahrespreise offen herunter, ohne daraus ein künstlich kleines Versprechen zu machen. Vor dem Kauf zählt immer die Bestellübersicht in der App: Dort stehen Preis, Laufzeit, Zahlungsart, Leistungsbeginn und Kündigung verbindlich.",
+    priceTruthCta: "Preis prüfen und starten",
+    withdrawalCta: "Widerruf lesen",
+    priceTruthRows: [
+      ["Begleitung", "49 € / Jahr", "ca. 4,08 € / Monat", "rund 13 Cent am Tag"],
+      ["Tiefe", "99 € / Jahr", "ca. 8,25 € / Monat", "rund 27 Cent am Tag"],
+    ],
+    decisionKicker: "Entscheidungshilfe",
+    decisionTitle: "Welches Modell passt zu welchem Moment?",
+    decisionText:
+      "Die Preis-Seite soll nicht drängen. Sie soll erklären, wann der kostenlose Einstieg genügt und wann ein bezahltes Modell echten Mehrwert schafft. So wird der Wechsel in die App nachvollziehbar und vertrauensvoll.",
+    stepLabel: "Schritt",
+    decisionPrimaryCta: "Kostenlos prüfen",
+    decisionSecondaryCta: "Kostenlos vs. Premium",
+    decisionSteps: [
+      {
+        label: "1",
+        title: "Erst kostenlos Resonanz prüfen",
+        text: "Hermetia wirkt nur dann wertvoll, wenn die erste Seelenkarte persönlich anschließt. Deshalb beginnt die Reise ohne Kreditkarte: Profil starten, erste Kernthemen sehen, Sprache testen.",
+      },
+      {
+        label: "2",
+        title: "Dann Tiefe nach Bedarf wählen",
+        text: "Wenn du mehr Ebenen, Tagesimpulse, Journaling und dein Vollprofil-Buch nutzen möchtest, ist Begleitung der natürliche nächste Schritt. Der Kaufgrund ist Tiefe, nicht künstlicher Druck.",
+      },
+      {
+        label: "3",
+        title: "Sensible Zusatzmodule bewusst freischalten",
+        text: "Tiefe lohnt sich, wenn Beziehungsprofile, mehrere Profile oder Companion-Dialoge relevant werden. Gerade diese Module brauchen klare Einwilligung und transparente Grenzen.",
+      },
+    ],
+    comparisonKicker: "Vergleich",
+    comparisonTitle: "Was öffnet sich in welchem Tarif?",
+    comparisonText:
+      "Nutzer müssen nicht alle Featuredetails auswendig lesen. Entscheidend ist die Logik: kostenlos zeigt Resonanz, Begleitung öffnet die fortlaufende Praxis, Tiefe ergänzt sensible Zusatzmodule.",
+    comparisonCta: "Mit meinem Profil starten",
+    comparisonRows: [
+      ["Funktion", "Entdecken", "Begleitung", "Tiefe"],
+      ["Seelenkarte", "Enthalten", "Vollständig", "Vollständig"],
+      ["Kernthemen und Ebenen", "Auszug und Vorschau", "Alle Ebenen", "Alle Ebenen plus Vertiefungen"],
+      ["Tagesimpulse", "Schnupperphase", "Regelmäßig", "Regelmäßig plus erweiterte Deutung"],
+      ["Journaling und Rückblick", "Basis oder Vorschau", "Enthalten", "Erweitert"],
+      ["Vollprofil-Buch", "Nicht vollständig", "PDF enthalten", "PDF plus mehr Profile"],
+      ["Beziehungsprofile", "Nicht enthalten", "Nicht enthalten oder begrenzt", "Enthalten mit Einwilligung"],
+    ],
+    valueBlocks: [
+      {
+        title: "Warum 49 Euro pro Jahr plausibel sind",
+        text: "Begleitung bündelt die Funktionen, die aus einem einmaligen Profil einen wiederkehrenden Reflexionsraum machen: alle Ebenen, tägliche Impulse, Journaling, Monatsreflexion, Profilverfeinerung und ein lesbares Vollprofil-Buch.",
+      },
+      {
+        title: "Wann kostenlos reicht",
+        text: "Kostenlos reicht, wenn du Hermetia kennenlernen, die erste Seelenkarte sehen und prüfen willst, ob die Tonalität resoniert. Niemand muss sofort upgraden, um einen echten Eindruck zu bekommen.",
+      },
+      {
+        title: "Wann Tiefe sinnvoll wird",
+        text: "Tiefe ist für Nutzer gedacht, die Hermetia nicht nur für sich selbst, sondern auch für Beziehungsmuster, mehrere Profile, Companion-Dialoge und vertiefte Jahres- oder Entwicklungsfragen nutzen möchten.",
+      },
+    ],
+    fairnessKicker: "Fairness und Grenzen",
+    fairnessTitle: "Ein guter Kaufgrund ist Klarheit, nicht Angst.",
+    fairnessText:
+      "Hermetia soll bezahlte Modelle verkaufen, aber ohne FOMO, Schicksalsdruck oder Heilsversprechen. Die Tarife erklären Tiefe, Komfort und Begleitung. Sie ersetzen keine Therapie, keine medizinische Beratung und keine sichere Zukunftsaussage.",
+    fairnessCta: "Fair starten",
+    dataCta: "Daten und Sicherheit",
+    beforePurchaseTitle: "Vor dem Kauf wichtig",
+    trustNotes: [
+      "Keine Kreditkarte im kostenlosen Einstieg.",
+      "Jahrespreis wird transparent vor dem Kauf gezeigt.",
+      "Kündigung über das Profil, kein versteckter Prozess.",
+      "Digitale Inhalte, Widerruf und Leistungsbeginn werden rechtlich sauber erklärt.",
+    ],
   },
-  {
-    label: "2",
-    title: "Dann Tiefe nach Bedarf wählen",
-    text: "Wenn du mehr Ebenen, Tagesimpulse, Journaling und dein Vollprofil-Buch nutzen möchtest, ist Begleitung der natürliche nächste Schritt. Der Kaufgrund ist Tiefe, nicht künstlicher Druck.",
+  en: {
+    recommendation:
+      "Recommendation: start free, test your first soul map and choose a paid plan only when you genuinely want more depth.",
+    priceTruthKicker: "Price clarity",
+    priceTruthTitle: "What does the yearly price mean day to day?",
+    priceTruthText:
+      "Hermetia breaks yearly prices down openly without turning them into an artificially tiny promise. Before purchase, the in-app order summary is binding: it shows price, term, payment method, service start and cancellation clearly.",
+    priceTruthCta: "Check price and start",
+    withdrawalCta: "Read withdrawal policy",
+    priceTruthRows: [
+      ["Companion", "€49 / year", "about €4.08 / month", "about 13 cents a day"],
+      ["Depth", "€99 / year", "about €8.25 / month", "about 27 cents a day"],
+    ],
+    decisionKicker: "Decision help",
+    decisionTitle: "Which plan fits which moment?",
+    decisionText:
+      "The pricing page should not pressure people. It should explain when the free start is enough and when a paid plan creates real value. That makes the move into the app understandable and trustworthy.",
+    stepLabel: "Step",
+    decisionPrimaryCta: "Test for free",
+    decisionSecondaryCta: "Free vs. Premium",
+    decisionSteps: [
+      {
+        label: "1",
+        title: "First test resonance for free",
+        text: "Hermetia is only valuable when the first soul map feels personally relevant. That is why the journey starts without a credit card: create a profile, see first core themes and test the language.",
+      },
+      {
+        label: "2",
+        title: "Then choose depth when needed",
+        text: "If you want more levels, daily impulses, journaling and your full profile book, Companion is the natural next step. The reason to buy is depth, not artificial pressure.",
+      },
+      {
+        label: "3",
+        title: "Unlock sensitive modules consciously",
+        text: "Depth makes sense when relationship profiles, multiple profiles or Companion dialogues become relevant. These modules especially need clear consent and transparent limits.",
+      },
+    ],
+    comparisonKicker: "Comparison",
+    comparisonTitle: "What opens up in each plan?",
+    comparisonText:
+      "Users should not have to memorize every feature detail. The logic matters: free shows resonance, Companion opens ongoing practice, Depth adds sensitive extra modules.",
+    comparisonCta: "Start with my profile",
+    comparisonRows: [
+      ["Feature", "Discover", "Companion", "Depth"],
+      ["Soul map", "Included", "Complete", "Complete"],
+      ["Core themes and levels", "Extract and preview", "All levels", "All levels plus deeper modules"],
+      ["Daily impulses", "Taster phase", "Regular", "Regular plus expanded interpretation"],
+      ["Journaling and review", "Basic or preview", "Included", "Expanded"],
+      ["Full profile book", "Not complete", "PDF included", "PDF plus more profiles"],
+      ["Relationship profiles", "Not included", "Not included or limited", "Included with consent"],
+    ],
+    valueBlocks: [
+      {
+        title: "Why €49 per year is plausible",
+        text: "Companion bundles the functions that turn a one-time profile into a recurring reflection space: all levels, daily impulses, journaling, monthly reflection, profile refinement and a readable full profile book.",
+      },
+      {
+        title: "When free is enough",
+        text: "Free is enough if you want to get to know Hermetia, see your first soul map and check whether the tone resonates. Nobody has to upgrade immediately to get a real impression.",
+      },
+      {
+        title: "When Depth makes sense",
+        text: "Depth is for users who want to use Hermetia not only for themselves, but also for relationship patterns, multiple profiles, Companion dialogues and deeper yearly or development questions.",
+      },
+    ],
+    fairnessKicker: "Fairness and limits",
+    fairnessTitle: "A good reason to buy is clarity, not fear.",
+    fairnessText:
+      "Hermetia should sell paid plans, but without FOMO, destiny pressure or healing promises. The plans explain depth, comfort and guidance. They do not replace therapy, medical advice or a guaranteed prediction.",
+    fairnessCta: "Start fairly",
+    dataCta: "Data and security",
+    beforePurchaseTitle: "Important before purchase",
+    trustNotes: [
+      "No credit card is needed for the free start.",
+      "The yearly price is shown transparently before purchase.",
+      "Cancellation happens through the profile, with no hidden process.",
+      "Digital content, withdrawal and service start are explained clearly.",
+    ],
   },
-  {
-    label: "3",
-    title: "Sensible Zusatzmodule bewusst freischalten",
-    text: "Tiefe lohnt sich, wenn Beziehungsprofile, mehrere Profile oder Companion-Dialoge relevant werden. Gerade diese Module brauchen klare Einwilligung und transparente Grenzen.",
-  },
-];
-
-const valueBlocks = [
-  {
-    title: "Warum 49 Euro pro Jahr plausibel sind",
-    text: "Begleitung bündelt die Funktionen, die aus einem einmaligen Profil einen wiederkehrenden Reflexionsraum machen: alle Ebenen, tägliche Impulse, Journaling, Monatsreflexion, Profilverfeinerung und ein lesbares Vollprofil-Buch.",
-  },
-  {
-    title: "Wann kostenlos reicht",
-    text: "Kostenlos reicht, wenn du Hermetia kennenlernen, die erste Seelenkarte sehen und prüfen willst, ob die Tonalität resoniert. Niemand muss sofort upgraden, um einen echten Eindruck zu bekommen.",
-  },
-  {
-    title: "Wann Tiefe sinnvoll wird",
-    text: "Tiefe ist für Nutzer gedacht, die Hermetia nicht nur für sich selbst, sondern auch für Beziehungsmuster, mehrere Profile, Companion-Dialoge und vertiefte Jahres- oder Entwicklungsfragen nutzen möchten.",
-  },
-];
-
-const comparisonRows = [
-  ["Funktion", "Entdecken", "Begleitung", "Tiefe"],
-  ["Seelenkarte", "Enthalten", "Vollständig", "Vollständig"],
-  ["Kernthemen und Ebenen", "Auszug und Vorschau", "Alle Ebenen", "Alle Ebenen plus Vertiefungen"],
-  ["Tagesimpulse", "Schnupperphase", "Regelmäßig", "Regelmäßig plus erweiterte Deutung"],
-  ["Journaling und Rückblick", "Basis oder Vorschau", "Enthalten", "Erweitert"],
-  ["Vollprofil-Buch", "Nicht vollständig", "PDF enthalten", "PDF plus mehr Profile"],
-  ["Beziehungsprofile", "Nicht enthalten", "Nicht enthalten oder begrenzt", "Enthalten mit Einwilligung"],
-];
-
-const trustNotes = [
-  "Keine Kreditkarte im kostenlosen Einstieg.",
-  "Jahrespreis wird transparent vor dem Kauf gezeigt.",
-  "Kündigung über das Profil, kein versteckter Prozess.",
-  "Digitale Inhalte, Widerruf und Leistungsbeginn werden rechtlich sauber erklärt.",
-];
-
-const priceTruthRows = [
-  ["Begleitung", "49 € / Jahr", "ca. 4,08 € / Monat", "rund 13 Cent am Tag"],
-  ["Tiefe", "99 € / Jahr", "ca. 8,25 € / Monat", "rund 27 Cent am Tag"],
-];
+} as const;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -74,6 +180,7 @@ export default async function PreisePage({ params }: { params: Promise<{ locale:
   const locale = raw as Locale;
   const t = getDictionary(locale);
   const p = t.preise;
+  const copy = locale === "en" ? pricingPageCopy.en : pricingPageCopy.de;
   const pageUrl = `${siteUrl}/${locale}${paths.preise}/`;
   const offers = p.tiers.map((tier) => ({ name: tier.name, price: tier.price.match(/\d+/)?.[0] ?? "0" }));
 
@@ -91,9 +198,7 @@ export default async function PreisePage({ params }: { params: Promise<{ locale:
             <span className="rounded-pill bg-white px-[18px] py-2 text-aubergine shadow-soft">{p.toggleYear}</span>
             <span className="px-[18px] py-2 text-[#8a7f93]">{p.toggleMonth}</span>
           </div>
-          <p className="note mt-5 max-w-[620px]">
-            Empfehlung: Starte kostenlos, prüfe deine erste Seelenkarte und wähle ein bezahltes Modell erst, wenn du mehr Tiefe wirklich nutzen möchtest.
-          </p>
+          <p className="note mt-5 max-w-[620px]">{copy.recommendation}</p>
         </div>
       </section>
 
@@ -126,18 +231,16 @@ export default async function PreisePage({ params }: { params: Promise<{ locale:
       <section className="py-14">
         <div className="wrap grid items-start gap-8 lg:grid-cols-[.9fr_1.1fr]">
           <div>
-            <span className="kicker">Preiswahrheit</span>
-            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Was bedeutet der Jahrespreis im Alltag?</h2>
-            <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Hermetia rechnet Jahrespreise offen herunter, ohne daraus ein künstlich kleines Versprechen zu machen. Vor dem Kauf zählt immer die Bestellübersicht in der App: Dort stehen Preis, Laufzeit, Zahlungsart, Leistungsbeginn und Kündigung verbindlich.
-            </p>
+            <span className="kicker">{copy.priceTruthKicker}</span>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.priceTruthTitle}</h2>
+            <p className="muted mt-4 text-[17px] leading-[1.85]">{copy.priceTruthText}</p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "pricing-integrity" })}>Preis prüfen und starten</a>
-              <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.widerruf)}>Widerruf lesen</a>
+              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "pricing-integrity" })}>{copy.priceTruthCta}</a>
+              <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.widerruf)}>{copy.withdrawalCta}</a>
             </div>
           </div>
           <div className="overflow-hidden rounded-card border border-sand bg-white shadow-soft">
-            {priceTruthRows.map(([plan, yearly, monthly, daily], index) => (
+            {copy.priceTruthRows.map(([plan, yearly, monthly, daily], index) => (
               <div key={plan} className={`grid gap-3 p-4 text-[14.5px] md:grid-cols-4 ${index ? "border-t border-sand" : "bg-creme-tief font-semibold text-aubergine"}`}>
                 <span>{plan}</span>
                 <span>{yearly}</span>
@@ -152,24 +255,22 @@ export default async function PreisePage({ params }: { params: Promise<{ locale:
       <section className="bg-creme-tief py-16">
         <div className="wrap">
           <div className="mb-9 max-w-[760px]">
-            <span className="kicker">Entscheidungshilfe</span>
-            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Welches Modell passt zu welchem Moment?</h2>
-            <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Die Preis-Seite soll nicht drängen. Sie soll erklären, wann der kostenlose Einstieg genügt und wann ein bezahltes Modell echten Mehrwert schafft. So wird der Wechsel in die App nachvollziehbar und vertrauensvoll.
-            </p>
+            <span className="kicker">{copy.decisionKicker}</span>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.decisionTitle}</h2>
+            <p className="muted mt-4 text-[17px] leading-[1.85]">{copy.decisionText}</p>
           </div>
           <div className="grid gap-5 lg:grid-cols-3">
-            {decisionSteps.map((step) => (
+            {copy.decisionSteps.map((step) => (
               <article key={step.title} className="card">
-                <span className="chip w-fit">Schritt {step.label}</span>
+                <span className="chip w-fit">{copy.stepLabel} {step.label}</span>
                 <h3 className="mt-4 text-[23px]">{step.title}</h3>
                 <p className="muted mt-3 text-[15.5px] leading-relaxed">{step.text}</p>
               </article>
             ))}
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "pricing-decision" })}>Kostenlos prüfen</a>
-            <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.freePremium)}>Kostenlos vs. Premium</a>
+            <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "pricing-decision" })}>{copy.decisionPrimaryCta}</a>
+            <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.freePremium)}>{copy.decisionSecondaryCta}</a>
           </div>
         </div>
       </section>
@@ -177,17 +278,15 @@ export default async function PreisePage({ params }: { params: Promise<{ locale:
       <section className="py-16">
         <div className="wrap grid items-start gap-8 lg:grid-cols-[.9fr_1.1fr]">
           <div>
-            <span className="kicker">Vergleich</span>
-            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Was öffnet sich in welchem Tarif?</h2>
-            <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Nutzer müssen nicht alle Featuredetails auswendig lesen. Entscheidend ist die Logik: kostenlos zeigt Resonanz, Begleitung öffnet die fortlaufende Praxis, Tiefe ergänzt sensible Zusatzmodule.
-            </p>
+            <span className="kicker">{copy.comparisonKicker}</span>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.comparisonTitle}</h2>
+            <p className="muted mt-4 text-[17px] leading-[1.85]">{copy.comparisonText}</p>
             <div className="mt-7">
-              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "pricing-comparison" })}>Mit meinem Profil starten</a>
+              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "pricing-comparison" })}>{copy.comparisonCta}</a>
             </div>
           </div>
           <div className="overflow-hidden rounded-card border border-sand bg-white shadow-soft">
-            {comparisonRows.map(([feature, free, guidance, depth], index) => (
+            {copy.comparisonRows.map(([feature, free, guidance, depth], index) => (
               <div key={feature} className={`grid gap-3 p-4 text-[14.5px] md:grid-cols-[1.1fr_.9fr_.9fr_.9fr] ${index ? "border-t border-sand" : "bg-creme-tief font-semibold text-aubergine"}`}>
                 <span>{feature}</span>
                 <span>{free}</span>
@@ -201,7 +300,7 @@ export default async function PreisePage({ params }: { params: Promise<{ locale:
 
       <section className="bg-aubergine py-16 text-white">
         <div className="wrap grid gap-5 lg:grid-cols-3">
-          {valueBlocks.map((block) => (
+          {copy.valueBlocks.map((block) => (
             <article key={block.title} className="rounded-card border border-white/15 bg-white/8 p-7">
               <h2 className="text-[24px] text-white">{block.title}</h2>
               <p className="mt-3 text-[15.5px] leading-relaxed text-[#e9dcf2]">{block.text}</p>
@@ -226,20 +325,18 @@ export default async function PreisePage({ params }: { params: Promise<{ locale:
       <section className="py-14">
         <div className="wrap grid items-center gap-8 lg:grid-cols-[1fr_.9fr]">
           <div>
-            <span className="kicker">Fairness und Grenzen</span>
-            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Ein guter Kaufgrund ist Klarheit, nicht Angst.</h2>
-            <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Hermetia soll bezahlte Modelle verkaufen, aber ohne FOMO, Schicksalsdruck oder Heilsversprechen. Die Tarife erklären Tiefe, Komfort und Begleitung. Sie ersetzen keine Therapie, keine medizinische Beratung und keine sichere Zukunftsaussage.
-            </p>
+            <span className="kicker">{copy.fairnessKicker}</span>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.fairnessTitle}</h2>
+            <p className="muted mt-4 text-[17px] leading-[1.85]">{copy.fairnessText}</p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "pricing-fairness" })}>Fair starten</a>
-              <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.datenSicherheit)}>Daten und Sicherheit</a>
+              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "pricing-fairness" })}>{copy.fairnessCta}</a>
+              <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.datenSicherheit)}>{copy.dataCta}</a>
             </div>
           </div>
           <div className="rounded-card border border-sand bg-white p-7 shadow-soft">
-            <h3 className="text-[23px]">Vor dem Kauf wichtig</h3>
+            <h3 className="text-[23px]">{copy.beforePurchaseTitle}</h3>
             <ul className="mt-5 flex list-none flex-col gap-3 text-[15.5px] leading-relaxed text-pflaume/90">
-              {trustNotes.map((note) => <li key={note}>✓ {note}</li>)}
+              {copy.trustNotes.map((note) => <li key={note}>✓ {note}</li>)}
             </ul>
           </div>
         </div>
