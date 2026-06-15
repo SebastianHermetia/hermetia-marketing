@@ -75,6 +75,7 @@ const dataSecurity = readOut("de/daten-und-sicherheit");
 const enDataSecurity = readOut("en/daten-und-sicherheit");
 const frDataSecurity = readOut("fr/daten-und-sicherheit");
 const aiTransparency = readOut("de/ki-transparenz");
+const enAiTransparency = readOut("en/ki-transparenz");
 const frAiTransparency = readOut("fr/ki-transparenz");
 const relationships = readOut("de/beziehungen");
 const onboarding = readOut("de/profil-starten");
@@ -245,6 +246,8 @@ const checks = [
   ["AI transparency page covers Companion and journaling", aiTransparency.includes("Companion, Journaling und persönliche Dialoge") && aiTransparency.includes("Journaltexte dürfen nicht automatisch grenzenlos genutzt werden")],
   ["AI transparency page covers fair conversion", aiTransparency.includes("Premium-Inhalte und faire Conversion") && aiTransparency.includes("Gute Conversion entsteht durch Klarheit")],
   ["AI transparency page covers copyright and launch indexing", aiTransparency.includes("Urheberrecht, Quellen und eigene Sprache") && aiTransparency.includes("noindex/nofollow")],
+  ["EN AI transparency page has localized longform sections", enAiTransparency.includes("Why Hermetia discloses AI transparency") && enAiTransparency.includes("Calculation, convergence and wording are separate") && enAiTransparency.includes("Premium content and fair conversion")],
+  ["EN AI transparency page has no German core headings", !enAiTransparency.includes("Warum Hermetia KI-Transparenz offenlegt") && !enAiTransparency.includes("Berechnung, Konvergenz und Formulierung sind getrennt") && !enAiTransparency.includes("Premium-Inhalte und faire Conversion")],
   ["AI transparency page is linked in footer", deHome.includes("/de/ki-transparenz/")],
   ["AI transparency page has localized fallback SEO", frAiTransparency.includes("<title>KI-Transparenz</title>") && frAiTransparency.includes("Version éditoriale en préparation")],
   ["Relationships page has consent framing", relationships.includes("Warum Einwilligung unverzichtbar ist") && relationships.includes("Wer andere heimlich auswerten will")],
