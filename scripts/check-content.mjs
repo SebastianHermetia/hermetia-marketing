@@ -79,6 +79,7 @@ const aiTransparency = readOut("de/ki-transparenz");
 const enAiTransparency = readOut("en/ki-transparenz");
 const frAiTransparency = readOut("fr/ki-transparenz");
 const relationships = readOut("de/beziehungen");
+const enRelationships = readOut("en/beziehungen");
 const onboarding = readOut("de/profil-starten");
 const enOnboarding = readOut("en/profil-starten");
 const frOnboarding = readOut("fr/profil-starten");
@@ -261,6 +262,9 @@ const checks = [
   ["Relationships page has legal limits", relationships.includes("Was Hermetia nicht verspricht") && relationships.includes("keine Beziehungsgarantie")],
   ["Relationships page has graphics", relationships.includes("/graphics/convergence/abb6-beispiel-radar.svg") && relationships.includes("/graphics/convergence/abb9-deine-innere-spannung.svg")],
   ["Relationships page has expanded FAQ and CTAs", relationships.includes("FAQPage") && relationships.includes("Was ist der Unterschied zwischen Synastrie und Composite") && relationships.includes("utm_content=beziehungen-inline-1") && relationships.includes("utm_content=beziehungen-final")],
+  ["EN relationships page has localized consent and premium sections", enRelationships.includes("Why consent is essential") && enRelationships.includes("Data protection for profiles of other people") && enRelationships.includes("Why relationship readings create premium depth")],
+  ["EN relationships page has no German core headings", !enRelationships.includes("Warum Einwilligung unverzichtbar ist") && !enRelationships.includes("Datenschutz bei Profilen anderer Menschen") && !enRelationships.includes("Warum Beziehungsauswertungen Premium-Tiefe schaffen")],
+  ["EN marketing content chrome is localized", enRelationships.includes("On this page") && enRelationships.includes("In short") && enRelationships.includes("Frequently asked questions")],
   ["Onboarding guide page exists", onboarding.includes("So kommst du von der Website") && onboarding.includes("Vier Schritte")],
   ["Onboarding guide page has FAQ schema", onboarding.includes("FAQPage")],
   ["Onboarding guide page has pre-start trust", onboarding.includes("Was vor dem App-Absprung klar sein sollte") && onboarding.includes("Kostenlos vor Kauf")],

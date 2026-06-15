@@ -637,6 +637,103 @@ const enPages: Record<keyof typeof dePages, ContentPage> = Object.fromEntries(
   ]),
 ) as Record<keyof typeof dePages, ContentPage>;
 
+enPages.beziehungen = {
+  ...dePages.beziehungen,
+  title: "Understanding relationships: resonance, friction and growth",
+  seoTitle: "Relationship readings with synastry and composite — Hermetia explains",
+  seoDescription:
+    "How Hermetia frames relationship readings: synastry, composite, harmony, friction, growth and clear consent.",
+  eyebrow: "Relationships · Consent",
+  lead:
+    "Relationship profiles are powerful and sensitive. Hermetia therefore does not treat them as a game, but as consent-based reflection about two people.",
+  answer:
+    "A relationship reading connects two profiles and asks: where does resonance arise, where does friction appear and where can growth happen? Hermetia uses calculated synastry and composite logic, but only with clear consent from the person concerned.",
+  imageAlt: "Two gardens overlapping into a shared relationship space",
+  sections: [
+    {
+      title: "Synastry and composite, explained simply",
+      body:
+        "Synastry compares two profiles directly: which points touch, where do patterns complement each other and where does tension arise? Composite looks at the relationship as its own third field. Both perspectives are valuable, but they must not be misunderstood as a verdict about right or wrong. Hermetia uses this logic as reflection language: it can show where closeness comes easily, where two rhythms rub against each other and which themes a relationship can make conscious.",
+    },
+    {
+      title: "Why consent is essential",
+      body:
+        "A relationship reading processes sensitive statements about a second person. It is therefore not enough to simply enter data. Real use needs the affected person's own informed consent or a legally clean guardian case. This is not an obstacle, but respect. The marketing website has to make this stance clear because trust matters more here than quick conversion: someone who wants to read others secretly is not the right user for this feature.",
+    },
+    {
+      title: "Which relationship questions Hermetia can answer",
+      body:
+        "Hermetia can structure questions without judging the relationship: where do we speak a similar language, where do we need translation, which dynamic feels recurring, where is there attraction but also overwhelm, which themes belong to me, which to the other person and which emerge only in the shared field? These questions are relevant for partnership, friendship, family, creative collaboration and conscious separation alike.",
+    },
+    {
+      title: "Resonance, friction and growth field",
+      body:
+        "A good relationship reading needs more than harmony points. Too much agreement can soothe, but can also create blind spots. Friction can be exhausting, but it can make growth possible. Hermetia should therefore distinguish three layers: resonance as the feeling of being understood, friction as productive difference and growth field as a question that can help two people mature together. This is how a nuanced, non-judgmental relationship language emerges.",
+    },
+    {
+      title: "Data protection for profiles of other people",
+      body:
+        "Relationship profiles are especially sensitive under data-protection logic because they connect data and derivations about at least two people. Hermetia must explain which data is needed, who enters it, who has access, how consent is documented and how deletion works. Birth data, spiritual derivations and relationship patterns can allow intimate inferences. Data protection therefore belongs not only in the footer, but directly in the content of the relationship page.",
+    },
+    {
+      title: "Why relationship readings create premium depth",
+      body:
+        "Relationship readings are a natural premium area because they need more calculation logic, more textual depth, consent flows and more responsibility than a single profile. The value is not a quick compatibility verdict, but a readable shared map: dynamics, fields of tension, conversation impulses, journaling questions and recurring themes. Users should understand why this depth needs paid space.",
+    },
+    {
+      title: "What Hermetia does not promise",
+      body:
+        "Hermetia does not say whether a relationship will last. It does not judge people and does not replace couples counselling. The reading should give language for dynamics: what feels easy, where friction appears and which growth the relationship invites. It must not be a diagnosis, blame assignment or decision about separation, commitment or the future. The user remains responsible, and violence, crisis or psychological strain require professional support.",
+    },
+  ],
+  graphics: [
+    {
+      src: "/graphics/convergence/abb6-beispiel-radar.svg",
+      alt: "Radar graphic for resonance, friction and relationship themes",
+      caption:
+        "Relationship profiles should not only show harmony, but several dimensions such as resonance, tension and growth.",
+    },
+    {
+      src: "/graphics/convergence/abb9-deine-innere-spannung.svg",
+      alt: "Inner tension as a basis for relationship dynamics",
+      caption:
+        "Some friction does not arise between two people, but from inner fields of tension that become visible in relationship.",
+    },
+  ],
+  faq: [
+    {
+      q: "Can I simply enter my partner's data?",
+      a: "For real customer use, the second person needs their own informed consent. Hermetia is intentionally strict here.",
+    },
+    {
+      q: "Does Hermetia say whether we are compatible?",
+      a: "No. Hermetia shows resonance, tensions and growth themes, but no relationship guarantee.",
+    },
+    {
+      q: "Is this therapeutic counselling?",
+      a: "No. Relationship readings are reflection impulses and do not replace professional counselling.",
+    },
+    {
+      q: "What is the difference between synastry and composite?",
+      a: "Synastry compares two profiles directly. Composite looks at the relationship as a shared field. Hermetia uses both perspectives carefully and not as a verdict.",
+    },
+    {
+      q: "Why does Hermetia need consent for relationship profiles?",
+      a: "Because a reading can derive sensitive statements about a second person. Informed consent protects privacy, trust and the later legal product logic.",
+    },
+    {
+      q: "Can Hermetia solve relationship conflicts?",
+      a: "No. Hermetia can offer language, questions and patterns. It does not replace conflict resolution, counselling or therapy.",
+    },
+    {
+      q: "When is premium worth it for relationships?",
+      a: "Premium is worthwhile when both people consciously want to work with a relationship reading: with deeper analysis, conversation impulses, journaling and clearly documented consent.",
+    },
+  ],
+  ctaTitle: "Start with your own profile first.",
+  ctaText: "Your relationship patterns become easier to understand when you know your own soul map.",
+};
+
 export const pillarPages: Record<string, LocalizedPage> = Object.fromEntries(
   Object.entries(dePages).map(([key, de]) => [key, { de, en: enPages[key as keyof typeof dePages] }]),
 ) as Record<string, LocalizedPage>;
