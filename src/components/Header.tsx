@@ -17,24 +17,24 @@ export function Header({ locale, current }: { locale: Locale; current?: string }
 
   return (
     <header className="sticky top-0 z-30 border-b border-sand bg-creme/80 backdrop-blur">
-      <div className="wrap flex h-[68px] items-center gap-7">
-        <Link href={localePath(locale)} className="flex items-center gap-2 font-serif text-[21px] text-aubergine no-underline">
+      <div className="wrap flex h-[68px] items-center gap-4 lg:gap-6">
+        <Link href={localePath(locale)} className="flex shrink-0 items-center gap-2 font-serif text-[21px] text-aubergine no-underline">
           <span className="relative inline-block h-[22px] w-[22px] rounded-full border-[1.4px] border-gold">
             <span className="absolute inset-[5px] rounded-full bg-gold/85" />
           </span>
           Hermetia
         </Link>
-        <nav className="ml-2 hidden gap-6 text-[14.5px] md:flex">
+        <nav className="ml-1 hidden min-w-0 gap-4 text-[14px] lg:flex xl:gap-6 xl:text-[14.5px]">
           {items.map((i) => (
-            <Link key={i.key} href={i.href} className={`no-underline hover:text-aubergine ${current === i.key ? "text-aubergine" : "text-tinte/80"}`}>
+            <Link key={i.key} href={i.href} className={`whitespace-nowrap no-underline hover:text-aubergine ${current === i.key ? "text-aubergine" : "text-tinte/80"}`}>
               {i.label}
             </Link>
           ))}
         </nav>
         <span className="flex-1" />
         <LocaleSwitch locale={locale} current={current} />
-        <a className="btn btn-ghost hidden sm:inline-flex" href={loginUrl(locale, { source: "header-login", medium: "nav" })}>{t.nav.login}</a>
-        <a className="btn btn-primary" href={startUrl(locale, { source: "header-start", medium: "nav" })}>{t.nav.start}</a>
+        <a className="btn btn-ghost hidden whitespace-nowrap sm:inline-flex" href={loginUrl(locale, { source: "header-login", medium: "nav" })}>{t.nav.login}</a>
+        <a className="btn btn-primary whitespace-nowrap" href={startUrl(locale, { source: "header-start", medium: "nav" })}>{t.nav.start}</a>
       </div>
     </header>
   );
