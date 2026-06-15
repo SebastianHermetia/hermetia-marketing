@@ -37,7 +37,7 @@ export function orgSchema(siteUrl: string) {
     logo: `${siteUrl}/og/default.jpg`,
     slogan: "Wie oben, so unten",
     description:
-      "Hermetia verwandelt Geburtsdaten in eine Seelenkarte aus bis zu 25 Deutungssystemen und begleitet Menschen Tag für Tag.",
+      "Hermetia verwandelt Geburtsdaten in eine Seelenkarte aus bis zu 31 Deutungssystemen und begleitet Menschen Tag für Tag.",
   };
 }
 

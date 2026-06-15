@@ -40,18 +40,18 @@
   },
   "home": {
     "seoTitle": "Hermetia — Your soul map. A portrait that understands you.",
-    "seoDescription": "Hermetia turns your birth data into a soul map drawn from 25 interpretive systems and walks beside you day by day. Discover your profile for free.",
+    "seoDescription": "Hermetia turns your birth data into a soul map drawn from 31 interpretive systems and walks beside you day by day. Discover your profile for free.",
     "hero": {
       "eyebrow": "As above, so below",
       "title": "A portrait of your soul — from everything that makes you you.",
-      "lead": "Hermetia reads your birth data and weaves a single, clear soul map from up to 25 interpretive systems — and accompanies you day by day. Not a data sheet. A journey to yourself.",
+      "lead": "Hermetia reads your birth data and weaves a single, clear soul map from up to 31 interpretive systems — and accompanies you day by day. Not a data sheet. A journey to yourself.",
       "trustline": "Start free · no credit card · EU-hosted & encrypted",
       "quote": "Your sensitivity is a compass — not a weakness.",
       "chips": ["Deep perception", "Creative calm", "Courage to be clear"]
     },
     "trust": {
       "kicker": "For people who want to feel seen — not measured",
-      "items": ["25 interpretive systems", "GDPR & Art. 9 by design", "AI transparently labelled", "Inviting, never prescriptive"]
+      "items": ["31 interpretive systems", "GDPR & Art. 9 by design", "AI transparently labelled", "Inviting, never prescriptive"]
     },
     "features": {
       "kicker": "What Hermetia does for you",
@@ -99,7 +99,7 @@
       "kicker": "Frequently asked",
       "title": "Good to know",
       "items": [
-        { "q": "What is a soul map?", "a": "Your soul map is an integrated personality portrait that Hermetia calculates from your birth data and up to 25 interpretive systems, woven into one understandable, beautiful view." },
+        { "q": "What is a soul map?", "a": "Your soul map is an integrated personality portrait that Hermetia calculates from your birth data and up to 31 interpretive systems, woven into one understandable, beautiful view." },
         { "q": "Do I need my exact birth time?", "a": "No. Hermetia works without an exact time — you simply pick a time of day. We tell you transparently which part of your profile is reliable even without the time." },
         { "q": "Is this a diagnosis or a prediction?", "a": "No. Hermetia is inspiration for self-reflection — not medical, psychological or therapeutic advice, and not a prediction of fate." },
         { "q": "What happens to my data?", "a": "Your data is stored encrypted in the EU. Spiritual-philosophical profiles are special data (GDPR Art. 9) — we ask for your explicit consent and you can export or delete everything at any time." }

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Fraunces, Mulish } from "next/font/google";
 import { locales, type Locale } from "@/i18n/config";
+import { LanguageNotice } from "@/components/LanguageNotice";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -32,7 +33,10 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${fraunces.variable} ${mulish.variable}`}>
-      <body>{children}</body>
+      <body>
+        <LanguageNotice locale={locale as Locale} />
+        {children}
+      </body>
     </html>
   );
 }
