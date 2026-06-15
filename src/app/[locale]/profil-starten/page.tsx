@@ -38,6 +38,44 @@ const prepare = [
   "ein paar Minuten Ruhe, um die ersten Themen wirklich zu lesen",
 ];
 
+const trustBeforeStart = [
+  {
+    title: "Kostenlos vor Kauf",
+    text: "Der erste Profilstart soll Resonanz prüfen, bevor ein Tarif gewählt wird. Das reduziert Druck und macht spätere Premium-Entscheidungen bewusster.",
+  },
+  {
+    title: "Datenlogik vor Eingabe",
+    text: "Nutzer sollen vorab verstehen, warum Geburtsdaten, Einwilligung und abgeleitete Profilinhalte sensibel sind und welche Rechte sie haben.",
+  },
+  {
+    title: "Unsicherheit sichtbar",
+    text: "Wenn eine Geburtszeit fehlt oder eine Angabe grob ist, muss Hermetia das kennzeichnen, statt jede Aussage gleich sicher wirken zu lassen.",
+  },
+];
+
+const appHandoff = [
+  {
+    title: "Website erklärt",
+    text: "Die Marketing-Seite beantwortet vor dem Absprung Fragen zu Methode, Daten, Grenzen, Kosten und Nutzen.",
+  },
+  {
+    title: "App berechnet",
+    text: "Das Onboarding sammelt die notwendigen Eingaben, verarbeitet Einwilligung und erzeugt daraus die erste persönliche Seelenkarte.",
+  },
+  {
+    title: "Nutzer entscheidet",
+    text: "Nach dem kostenlosen Einstieg wird bewusst geprüft, ob Vollprofil, Tagesimpulse, Journaling, Companion oder Beziehungen Sinn ergeben.",
+  },
+];
+
+const afterStart = [
+  "erste Seelenkarte und Kernthemen lesen",
+  "Datenqualität und unsichere Bereiche verstehen",
+  "kostenlos Resonanz prüfen, ohne Kreditkarte",
+  "bei Bedarf Geburtszeit oder Feedback später ergänzen",
+  "erst danach Premium-Modelle vergleichen",
+];
+
 const faq = [
   {
     q: "Kann ich ohne genaue Geburtszeit starten?",
@@ -54,6 +92,18 @@ const faq = [
   {
     q: "Was passiert nach der ersten Seelenkarte?",
     a: "Du kannst die ersten Themen lesen, die Methode prüfen und entscheiden, ob du weitere Ebenen, Tagesimpulse, Journaling oder Beziehungsauswertungen nutzen möchtest.",
+  },
+  {
+    q: "Werde ich direkt zu einem Kauf gedrängt?",
+    a: "Nein. Der Profilstart ist als kostenloser Resonanztest gedacht. Premium wird erst sinnvoll, wenn du nach der ersten Seelenkarte mehr Tiefe wirklich nutzen möchtest.",
+  },
+  {
+    q: "Was passiert, wenn ich die App nach dem Start verlasse?",
+    a: "Der Produktanspruch ist, dass ein Konto und klare Wiederaufnahmewege bestehen. Die Website erklärt den Weg, die App muss ihn technisch sauber abbilden.",
+  },
+  {
+    q: "Kann ich meine Daten später korrigieren?",
+    a: "Ja. Profilverfeinerung ist Teil des Konzepts: Geburtszeit, Feedback, Einstellungen und spätere Ergänzungen sollen nachvollziehbar nachgetragen werden können.",
   },
 ];
 
@@ -116,6 +166,26 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
           </div>
         </section>
 
+        <section className="py-16">
+          <div className="wrap">
+            <div className="mb-9 max-w-[820px]">
+              <span className="kicker">Vor dem Start</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Was vor dem App-Absprung klar sein sollte.</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">
+                Die Profilstart-Seite hat eine klare Aufgabe: Sie soll Neugier in Handlung verwandeln, aber nur mit genug Vertrauen. Nutzer sollen nicht blind in ein Formular fallen, sondern wissen, warum der nächste Schritt sinnvoll ist.
+              </p>
+            </div>
+            <div className="grid gap-5 md:grid-cols-3">
+              {trustBeforeStart.map((item) => (
+                <article key={item.title} className="card">
+                  <h3 className="text-[21px]">{item.title}</h3>
+                  <p className="muted mt-3 text-[15.5px] leading-relaxed">{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="bg-creme-tief py-16">
           <div className="wrap">
             <div className="mb-9 max-w-[760px]">
@@ -138,6 +208,32 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
         </section>
 
         <section className="py-16">
+          <div className="wrap grid gap-8 lg:grid-cols-[1fr_.95fr]">
+            <div>
+              <span className="kicker">App-Handoff</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Was die Website erklärt und was die App übernimmt.</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">
+                Der Übergang von Marketing-Website zur Hermetia-App muss sich wie ein einziger ruhiger Weg anfühlen. Die Website bereitet vor, die App berechnet, der Nutzer entscheidet.
+              </p>
+              <div className="mt-6 grid gap-4">
+                {appHandoff.map((item) => (
+                  <article key={item.title} className="rounded-card border border-sand bg-white p-5 shadow-soft">
+                    <h3 className="text-[20px]">{item.title}</h3>
+                    <p className="muted mt-2 text-[15px] leading-relaxed">{item.text}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+            <figure className="m-0 rounded-card border border-sand bg-white p-4 shadow-soft">
+              <img src="/graphics/convergence/abb4-pipeline-einordnung.svg" alt="Pipeline von Website-Fragen zu App-Onboarding und Profilberechnung" className="w-full rounded-[6px]" loading="lazy" />
+              <figcaption className="muted mt-3 text-[14px] leading-relaxed">
+                Der App-Handoff folgt derselben Logik wie die Methode: Eingaben verstehen, sauber einordnen, erst dann deuten.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section className="py-16">
           <div className="wrap grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
             <div>
               <span className="kicker">Vorbereitung</span>
@@ -149,6 +245,24 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
             <div className="rounded-card border border-sand bg-white p-7 shadow-soft">
               <ul className="flex list-none flex-col gap-3 text-[15.5px] leading-relaxed text-pflaume/90">
                 {prepare.map((item) => <li key={item}>Check: {item}</li>)}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-creme-tief py-16">
+          <div className="wrap grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
+            <div>
+              <span className="kicker">Nach dem Start</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Was du nach der ersten Seelenkarte tun kannst.</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">
+                Der wichtigste Conversion-Moment kommt nicht vor dem Profil, sondern danach: Wenn die ersten Themen Resonanz haben, wird bezahlte Tiefe erklärbar.
+              </p>
+              <a className="btn btn-ghost mt-6" href={localePath(locale, paths.freePremium)}>Kostenlos vs Premium verstehen</a>
+            </div>
+            <div className="rounded-card border border-sand bg-white p-7 shadow-soft">
+              <ul className="flex list-none flex-col gap-3 text-[15.5px] leading-relaxed text-pflaume/90">
+                {afterStart.map((item) => <li key={item}>Check: {item}</li>)}
               </ul>
             </div>
           </div>
