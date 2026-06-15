@@ -163,6 +163,106 @@ const dePages = {
     ctaTitle: "Erlebe, wie dein Profil den Tag färbt.",
     ctaText: "Starte kostenlos und öffne deine ersten persönlichen Impulse.",
   },
+  journaling: {
+    slug: "journaling",
+    navKey: "journaling",
+    title: "Journaling mit Hermetia: aus Impulsen wird Selbsterkenntnis",
+    seoTitle: "Journaling mit Hermetia - Profil, Tagesimpulse und Reflexion verbinden",
+    seoDescription:
+      "Wie Hermetia Journaling nutzt, um Tagesimpulse, Seelenkarte, Feedback und langfristige Muster zu einer ruhigen Reflexionspraxis zu verbinden.",
+    eyebrow: "Alltag · Reflexion",
+    lead:
+      "Journaling ist bei Hermetia nicht einfach ein leeres Textfeld. Es ist die Brücke zwischen deinem Profil, deinen Tagesimpulsen und dem, was du wirklich in deinem Alltag bemerkst.",
+    answer:
+      "Hermetia-Journaling verbindet persönliche Impulse mit eigenen Notizen, Feedback und wiederkehrenden Themen. Die App soll nicht behaupten, dich besser zu kennen als du selbst, sondern dir helfen, Resonanz, Zweifel, Muster und Entwicklung über Zeit bewusster zu sehen.",
+    image: "/images/hermetia/library-of-self-profile.png",
+    imageAlt: "Eine ruhige Bibliothek innerer Notizen als Bild für Hermetia Journaling",
+    sections: [
+      {
+        title: "Warum Journaling die Seelenkarte erdet",
+        body:
+          "Eine Seelenkarte kann berühren, aber sie wird erst wertvoll, wenn du sie mit deinem gelebten Alltag verbindest. Journaling ist diese Erdung. Du kannst festhalten, welche Aussagen resonieren, welche Fragen offen bleiben und welche Muster sich wiederholen. Dadurch bleibt Hermetia keine Einmal-Auswertung, sondern wird zu einem lernenden Reflexionsraum. Wichtig ist: Deine Notizen sind keine Beweise gegen dich und keine Diagnosedaten. Sie sind deine eigene Sprache für das, was du beobachtest.",
+      },
+      {
+        title: "Vom Tagesimpuls zur eigenen Beobachtung",
+        body:
+          "Ein Tagesimpuls gibt einen Fokus. Das Journal fragt danach, was du daraus machst. Hat der Impuls etwas sichtbar gemacht? Gab es eine Situation, in der ein Kernthema spürbar wurde? War der Satz unpassend, zu stark oder überraschend genau? Diese Rückmeldung ist wichtig, weil sie die Deutung menschlicher macht. Hermetia soll nicht nur senden, sondern dir Raum geben, zurückzusprechen. So entsteht aus einem täglichen Hinweis eine persönliche Spur.",
+      },
+      {
+        title: "Muster über Wochen und Monate erkennen",
+        body:
+          "Ein einzelner Eintrag ist oft nur ein Moment. Spannend wird es, wenn sich Themen über Wochen sammeln: Rückzug, Sichtbarkeit, Entscheidung, Beziehung, Kreativität, Überforderung oder Ruhe. Hermetia kann diese Wiederholungen als Rückblick sichtbar machen, ohne daraus starre Wahrheiten zu bauen. Gerade hier entsteht Premium-Tiefe: nicht mehr Text um des Textes willen, sondern eine klarere Sicht auf die eigene Entwicklung.",
+      },
+      {
+        title: "Privatsphäre und sensible Notizen",
+        body:
+          "Journaling kann sehr persönlich sein. Deshalb muss die Website klar erklären, dass solche Inhalte sensibel behandelt werden. Nutzer sollen verstehen, was gespeichert wird, wie Löschung und Export gedacht sind und welche Rolle AI bei Zusammenfassungen spielt. Hermetia darf aus Journaltexten keine medizinischen, therapeutischen oder rechtlichen Aussagen ableiten. Die Funktion bleibt ein Reflexionswerkzeug, kein Ersatz für professionelle Beratung.",
+      },
+      {
+        title: "Kostenlos starten, bezahlte Tiefe verstehen",
+        body:
+          "Der kostenlose Einstieg kann erste Impulse und einfache Reflexion ermöglichen. Bezahlte Modelle werden sinnvoll, wenn Nutzer Verlauf, Rückblicke, mehr Ebenen, tiefere Fragen und langfristige Muster nutzen möchten. Genau deshalb gehört Journaling auf die Marketing-Website: Es erklärt, warum Hermetia nicht nur ein Profilrechner ist, sondern eine fortlaufende Begleitung, die sich mit der Zeit entfaltet.",
+      },
+    ],
+    faq: [
+      { q: "Ist Hermetia-Journaling ein normales Tagebuch?", a: "Es kann wie ein Tagebuch genutzt werden, ist aber stärker mit Profil, Tagesimpulsen und wiederkehrenden Themen verbunden. Der Fokus liegt auf Selbstreflexion, nicht auf Leistung oder perfekter Dokumentation." },
+      { q: "Liest die AI meine Journaltexte?", a: "AI-gestützte Zusammenfassungen dürfen nur transparent und zweckgebunden erfolgen. Nutzer müssen verstehen, wann AI beteiligt ist und welche Inhalte dafür verwendet werden." },
+      { q: "Kann ich Journal-Einträge löschen?", a: "Ja. Das Produktziel ist, dass persönliche Inhalte exportierbar und löschbar sind. Die Marketing-Website beschreibt diese Erwartung bewusst als Teil der Datenschutzlinie." },
+      { q: "Ist Journaling Therapie?", a: "Nein. Hermetia-Journaling ist ein Reflexionswerkzeug und ersetzt keine medizinische, psychologische oder therapeutische Beratung." },
+    ],
+    ctaTitle: "Starte mit deiner Seelenkarte und halte fest, was wirklich resoniert.",
+    ctaText: "Das Journal wird wertvoll, sobald dein eigenes Profil die ersten Fragen öffnet.",
+  },
+  profilBuch: {
+    slug: "vollprofil-buch",
+    navKey: "profilBuch",
+    title: "Das Vollprofil-Buch: deine Seelenkarte als tiefe, lesbare Reise",
+    seoTitle: "Hermetia Vollprofil-Buch - Seelenkarte, Systeme und Premium-Tiefe",
+    seoDescription:
+      "Was das Hermetia Vollprofil-Buch enthält, wie es aus Systemen, Konvergenz und AI-Deutung entsteht und wann sich bezahlte Premium-Tiefe lohnt.",
+    eyebrow: "Premium · Tiefenprofil",
+    lead:
+      "Das Vollprofil-Buch ist für Menschen gedacht, die nicht nur einen schnellen Aha-Moment wollen, sondern ihre Seelenkarte in Ruhe lesen, wiederlesen und als Entwicklungsbegleiter nutzen möchten.",
+    answer:
+      "Das Vollprofil-Buch bündelt die wichtigsten Ebenen deiner Hermetia-Seelenkarte in einer langen, strukturierten Auswertung. Es verbindet berechnete Systeme, Konvergenz, fiktive Beispielkapitel und AI-gestützte Formulierung zu einem lesbaren Profil, bleibt aber klar als Reflexionsangebot gerahmt.",
+    image: "/images/hermetia/alchemical-listening-room.png",
+    imageAlt: "Ein alchemistischer Leseraum als Bild für das Hermetia Vollprofil-Buch",
+    sections: [
+      {
+        title: "Warum ein Buch mehr ist als eine Ergebnisansicht",
+        body:
+          "Eine Ergebnisansicht ist schnell, ein Buch erlaubt Tiefe. Das Hermetia-Vollprofil soll deine wichtigsten Themen nicht nur anzeigen, sondern in eine lesbare Dramaturgie bringen: Wesenskern, Gaben, Schatten, Beziehungsmuster, Berufung, Rhythmus, Seelenweg und praktische Reflexionsfragen. Dadurch entsteht ein Dokument, das man nicht hektisch konsumiert, sondern in Etappen liest. Genau hier liegt ein zentraler Premium-Wert.",
+      },
+      {
+        title: "Wie das Vollprofil aus der Konvergenz entsteht",
+        body:
+          "Das Buch sollte nicht einfach alle Systeme nacheinander abdrucken. Hermetia verdichtet zuerst, welche Themen wirklich tragen, welche nur Nebenmotive sind und welche Spannungsfelder sich zeigen. Erst danach entsteht die Kapitelstruktur. Dadurch wird das Profil ruhiger und relevanter: Nutzer lesen nicht eine Sammlung einzelner Deutungsschnipsel, sondern eine begründete Synthese ihrer Seelenkarte.",
+      },
+      {
+        title: "Kapitel, die Nutzer wirklich erwarten",
+        body:
+          "Ein gutes Vollprofil braucht Orientierung. Sinnvoll sind Kapitel zu Kernthemen, Gaben, Schatten und Wachstum, Entscheidung und Energie, Beziehung, Arbeit und Berufung, Rhythmus, Timing, persönliche Fragen und nächste Schritte. Jedes Kapitel sollte erklären, welche Systeme die Aussage tragen, wo Unsicherheit besteht und wie der Nutzer damit reflektieren kann. Das macht die Auswertung wertvoller und rechtlich sauberer als absolute Behauptungen.",
+      },
+      {
+        title: "Bezahlte Tiefe ohne Druck",
+        body:
+          "Das Vollprofil-Buch ist ein natürlicher Grund für ein bezahltes Modell, aber es darf nicht mit Angst verkauft werden. Die Website sollte klar machen: Der kostenlose Einstieg zeigt Resonanz. Das Buch lohnt sich, wenn jemand tiefer lesen, Zusammenhänge verstehen und seine Themen langfristig begleiten möchte. Keine künstliche Dringlichkeit, keine Schicksalsversprechen, keine Heilsprache. Der Kaufgrund ist Tiefe, nicht Druck.",
+      },
+      {
+        title: "Rechtliche und redaktionelle Leitplanken",
+        body:
+          "Das Vollprofil darf keine fremden Deutungstexte, keine geschützten Fragebogenitems und keine therapeutischen Versprechen enthalten. AI kann helfen, berechnete und kuratierte Informationen lesbar zu formulieren, darf aber nicht als unfehlbare Autorität auftreten. Beispiele müssen fiktiv sein. Aussagen über Gesundheit, Beziehung und psychische Belastung brauchen vorsichtige Sprache und klare Grenzen.",
+      },
+    ],
+    faq: [
+      { q: "Ist das Vollprofil-Buch ein PDF?", a: "Das Produktziel kann ein exportierbares Dokument oder ein buchartiger Lesemodus sein. Wichtig ist die strukturierte, wiederlesbare Tiefe, nicht das Dateiformat allein." },
+      { q: "Ist das Buch im kostenlosen Einstieg enthalten?", a: "Der kostenlose Einstieg zeigt die erste Seelenkarte und Kernthemen. Das ausführliche Vollprofil-Buch ist als Premium-Tiefe gedacht." },
+      { q: "Schreibt AI das ganze Profil frei?", a: "Nein. AI soll berechnete, kuratierte und konvergenzgeprüfte Informationen lesbar formulieren. Die Grundlage bleibt die Profilberechnung." },
+      { q: "Kann ich das Vollprofil als Wahrheit über mich lesen?", a: "Nein. Das Vollprofil ist ein Reflexionsangebot. Es kann Sprache für Muster geben, ersetzt aber keine eigene Entscheidung und keine professionelle Beratung." },
+    ],
+    ctaTitle: "Erst die Seelenkarte öffnen, dann entscheiden, ob du Tiefe willst.",
+    ctaText: "Starte kostenlos und prüfe, ob dein Profil genug Resonanz für das Vollprofil-Buch erzeugt.",
+  },
   beziehungen: {
     slug: "beziehungen",
     navKey: "beziehungen",

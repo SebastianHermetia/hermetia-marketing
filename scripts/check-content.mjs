@@ -62,6 +62,10 @@ const dataSecurity = readOut("de/daten-und-sicherheit");
 const frDataSecurity = readOut("fr/daten-und-sicherheit");
 const onboarding = readOut("de/profil-starten");
 const frOnboarding = readOut("fr/profil-starten");
+const journaling = readOut("de/journaling");
+const frJournaling = readOut("fr/journaling");
+const profileBook = readOut("de/vollprofil-buch");
+const frProfileBook = readOut("fr/vollprofil-buch");
 const pricing = readOut("de/preise");
 const services = readOut("de/leistungen");
 const systemsHub = readOut("de/systeme");
@@ -124,6 +128,16 @@ const checks = [
   ["Onboarding guide page has tracked CTAs", onboarding.includes("utm_content=onboarding-guide-hero") && onboarding.includes("utm_content=onboarding-guide-final")],
   ["Onboarding guide page is linked in footer", deHome.includes("/de/profil-starten/")],
   ["Onboarding guide page has localized fallback SEO", frOnboarding.includes("<title>Commencer le profil | Hermetia</title>")],
+  ["Journaling page exists", journaling.includes("Journaling mit Hermetia") && journaling.includes("aus Impulsen wird Selbsterkenntnis")],
+  ["Journaling page has FAQ schema", journaling.includes("FAQPage")],
+  ["Journaling page has tracked CTAs", journaling.includes("utm_content=journaling-inline-1") && journaling.includes("utm_content=journaling-final")],
+  ["Journaling page is linked in footer", deHome.includes("/de/journaling/")],
+  ["Journaling page has localized fallback SEO", frJournaling.includes("<title>Journal | Hermetia</title>")],
+  ["Profile book page exists", profileBook.includes("Das Vollprofil-Buch") && profileBook.includes("Premium-Tiefe")],
+  ["Profile book page has FAQ schema", profileBook.includes("FAQPage")],
+  ["Profile book page has tracked CTAs", profileBook.includes("utm_content=vollprofil-buch-inline-1") && profileBook.includes("utm_content=vollprofil-buch-final")],
+  ["Profile book page is linked in footer", deHome.includes("/de/vollprofil-buch/")],
+  ["Profile book page has localized fallback SEO", frProfileBook.includes("<title>Livre de profil complet | Hermetia</title>")],
   ["Header CTAs are source tagged", deHome.includes("utm_content=header-start") && deHome.includes("utm_content=header-login")],
   ["Home CTAs are source tagged", deHome.includes("utm_content=home-hero") && deHome.includes("utm_content=home-final")],
   ["Pricing CTAs are source tagged", pricing.includes("utm_content=pricing-tier-1") && pricing.includes("utm_content=pricing-tier-2") && pricing.includes("utm_content=pricing-tier-3") && pricing.includes("utm_content=pricing-final")],

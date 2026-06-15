@@ -47,6 +47,8 @@ export const paths = {
   konvergenz: "/konvergenz-engine",
   seelenkarte: "/seelenkarte",
   tagesimpulse: "/tagesimpulse",
+  journaling: "/journaling",
+  profilBuch: "/vollprofil-buch",
   beziehungen: "/beziehungen",
   glossar: "/glossar",
   wissen: "/wissen",
