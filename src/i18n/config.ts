@@ -30,9 +30,14 @@ export const locales = [
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "de";
 export const editorialLocales = ["de", "en"] as const;
+export const uiLocalizedLocales = ["de", "en", "fr", "es", "it", "nl", "pl", "pt"] as const;
 
 export function hasEditorialTranslation(locale: Locale): boolean {
   return (editorialLocales as readonly string[]).includes(locale);
+}
+
+export function hasUiLocalization(locale: Locale): boolean {
+  return (uiLocalizedLocales as readonly string[]).includes(locale);
 }
 
 export const localeNames: Record<Locale, string> = {

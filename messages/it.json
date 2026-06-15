@@ -1,0 +1,39 @@
+{
+  "site": {
+    "tagline": "Come in alto, così in basso",
+    "claim": "Una mappa della tua anima, da tutto ciò che ti rende te."
+  },
+  "nav": {
+    "leistungen": "Funzioni",
+    "systeme": "Sistemi",
+    "methodik": "Metodo",
+    "preise": "Prezzi",
+    "login": "Accedi",
+    "start": "Inizia il profilo"
+  },
+  "cta": {
+    "startFree": "Inizia gratis",
+    "seeChart": "Vedi gratis la mia mappa dell'anima",
+    "howItWorks": "Come funziona",
+    "comparePrices": "Confronta i prezzi",
+    "allServices": "Vedi tutte le funzioni",
+    "exploreSystems": "Esplora tutti i sistemi",
+    "methodDetail": "Vedi il metodo in dettaglio",
+    "more": "Scopri di più"
+  },
+  "footer": {
+    "blurb": "Una mappa della tua anima, da tutto ciò che ti rende te. Come in alto, così in basso.",
+    "product": "Prodotto",
+    "discover": "Scoprire",
+    "legal": "Legale",
+    "magazin": "Magazine",
+    "glossar": "Glossario",
+    "faq": "FAQ",
+    "datenschutz": "Privacy",
+    "kiTransparenz": "Trasparenza AI",
+    "agb": "Termini",
+    "widerruf": "Recesso",
+    "impressum": "Note legali",
+    "disclaimer": "Ispirazione per l'autoriflessione, non consulenza medica o terapeutica. Alcuni contenuti sono assistiti da AI."
+  }
+}

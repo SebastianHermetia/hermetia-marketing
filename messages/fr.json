@@ -1,0 +1,39 @@
+{
+  "site": {
+    "tagline": "Comme en haut, ainsi en bas",
+    "claim": "Une carte de votre âme, à partir de tout ce qui vous compose."
+  },
+  "nav": {
+    "leistungen": "Fonctionnalités",
+    "systeme": "Systèmes",
+    "methodik": "Méthode",
+    "preise": "Tarifs",
+    "login": "Connexion",
+    "start": "Commencer le profil"
+  },
+  "cta": {
+    "startFree": "Commencer gratuitement",
+    "seeChart": "Voir ma carte d'âme gratuitement",
+    "howItWorks": "Comment cela fonctionne",
+    "comparePrices": "Comparer les tarifs",
+    "allServices": "Voir toutes les fonctionnalités",
+    "exploreSystems": "Explorer tous les systèmes",
+    "methodDetail": "Voir la méthode en détail",
+    "more": "En savoir plus"
+  },
+  "footer": {
+    "blurb": "Une carte de votre âme, à partir de tout ce qui vous compose. Comme en haut, ainsi en bas.",
+    "product": "Produit",
+    "discover": "Découvrir",
+    "legal": "Mentions légales",
+    "magazin": "Magazine",
+    "glossar": "Glossaire",
+    "faq": "FAQ",
+    "datenschutz": "Confidentialité",
+    "kiTransparenz": "Transparence AI",
+    "agb": "Conditions",
+    "widerruf": "Rétractation",
+    "impressum": "Mentions légales",
+    "disclaimer": "Inspiration pour l'autoréflexion, sans conseil médical ou thérapeutique. Certains contenus sont assistés par AI."
+  }
+}

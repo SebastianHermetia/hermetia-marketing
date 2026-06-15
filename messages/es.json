@@ -1,0 +1,39 @@
+{
+  "site": {
+    "tagline": "Como es arriba, es abajo",
+    "claim": "Un mapa de tu alma, a partir de todo lo que te compone."
+  },
+  "nav": {
+    "leistungen": "Funciones",
+    "systeme": "Sistemas",
+    "methodik": "Método",
+    "preise": "Precios",
+    "login": "Iniciar sesión",
+    "start": "Empezar perfil"
+  },
+  "cta": {
+    "startFree": "Empezar gratis",
+    "seeChart": "Ver mi mapa del alma gratis",
+    "howItWorks": "Cómo funciona",
+    "comparePrices": "Comparar precios",
+    "allServices": "Ver todas las funciones",
+    "exploreSystems": "Explorar todos los sistemas",
+    "methodDetail": "Ver el método en detalle",
+    "more": "Más información"
+  },
+  "footer": {
+    "blurb": "Un mapa de tu alma, a partir de todo lo que te compone. Como es arriba, es abajo.",
+    "product": "Producto",
+    "discover": "Descubrir",
+    "legal": "Legal",
+    "magazin": "Revista",
+    "glossar": "Glosario",
+    "faq": "FAQ",
+    "datenschutz": "Privacidad",
+    "kiTransparenz": "Transparencia AI",
+    "agb": "Términos",
+    "widerruf": "Desistimiento",
+    "impressum": "Aviso legal",
+    "disclaimer": "Inspiración para la autorreflexión, sin consejo médico o terapéutico. Algunos contenidos cuentan con asistencia de AI."
+  }
+}

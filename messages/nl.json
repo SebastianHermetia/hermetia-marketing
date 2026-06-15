@@ -1,0 +1,39 @@
+{
+  "site": {
+    "tagline": "Zo boven, zo beneden",
+    "claim": "Een kaart van je ziel, uit alles wat jou vormt."
+  },
+  "nav": {
+    "leistungen": "Functies",
+    "systeme": "Systemen",
+    "methodik": "Methode",
+    "preise": "Prijzen",
+    "login": "Inloggen",
+    "start": "Profiel starten"
+  },
+  "cta": {
+    "startFree": "Gratis starten",
+    "seeChart": "Mijn zielskaart gratis bekijken",
+    "howItWorks": "Hoe het werkt",
+    "comparePrices": "Prijzen vergelijken",
+    "allServices": "Alle functies bekijken",
+    "exploreSystems": "Alle systemen verkennen",
+    "methodDetail": "De methode in detail",
+    "more": "Meer informatie"
+  },
+  "footer": {
+    "blurb": "Een kaart van je ziel, uit alles wat jou vormt. Zo boven, zo beneden.",
+    "product": "Product",
+    "discover": "Ontdekken",
+    "legal": "Juridisch",
+    "magazin": "Magazine",
+    "glossar": "Glossarium",
+    "faq": "FAQ",
+    "datenschutz": "Privacy",
+    "kiTransparenz": "AI-transparantie",
+    "agb": "Voorwaarden",
+    "widerruf": "Herroeping",
+    "impressum": "Colofon",
+    "disclaimer": "Inspiratie voor zelfreflectie, geen medisch of therapeutisch advies. Sommige inhoud is AI-ondersteund."
+  }
+}

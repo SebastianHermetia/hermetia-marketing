@@ -1,0 +1,39 @@
+{
+  "site": {
+    "tagline": "Assim em cima, assim em baixo",
+    "claim": "Um mapa da sua alma, a partir de tudo o que faz de você quem é."
+  },
+  "nav": {
+    "leistungen": "Funcionalidades",
+    "systeme": "Sistemas",
+    "methodik": "Método",
+    "preise": "Preços",
+    "login": "Entrar",
+    "start": "Iniciar perfil"
+  },
+  "cta": {
+    "startFree": "Começar grátis",
+    "seeChart": "Ver meu mapa da alma grátis",
+    "howItWorks": "Como funciona",
+    "comparePrices": "Comparar preços",
+    "allServices": "Ver todas as funcionalidades",
+    "exploreSystems": "Explorar todos os sistemas",
+    "methodDetail": "Ver o método em detalhe",
+    "more": "Saber mais"
+  },
+  "footer": {
+    "blurb": "Um mapa da sua alma, a partir de tudo o que faz de você quem é. Assim em cima, assim em baixo.",
+    "product": "Produto",
+    "discover": "Descobrir",
+    "legal": "Legal",
+    "magazin": "Revista",
+    "glossar": "Glossário",
+    "faq": "FAQ",
+    "datenschutz": "Privacidade",
+    "kiTransparenz": "Transparência AI",
+    "agb": "Termos",
+    "widerruf": "Retratação",
+    "impressum": "Aviso legal",
+    "disclaimer": "Inspiração para autorreflexão, sem aconselhamento médico ou terapêutico. Alguns conteúdos contam com apoio de AI."
+  }
+}

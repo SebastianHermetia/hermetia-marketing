@@ -35,10 +35,11 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               Hermetia ist technisch bereits für alle offiziellen EU-Sprachen vorbereitet. Redaktionelle Qualität bleibt dabei wichtiger als ein stiller Maschinen-Fallback: nicht final geprüfte Sprachfassungen werden sichtbar gekennzeichnet.
             </p>
 
-            <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <div className="mt-8 grid gap-4 sm:grid-cols-4">
               <Metric label="Sprachrouten live" value={summary.total.toString()} />
               <Metric label="Redaktionell freigegeben" value={summary.editorial.toString()} />
-              <Metric label="In Übersetzung" value={summary.fallback.toString()} />
+              <Metric label="UI lokalisiert" value={summary.ui.toString()} />
+              <Metric label="Technischer Fallback" value={summary.fallback.toString()} />
             </div>
           </div>
         </section>
@@ -85,7 +86,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               <div className="rounded-card border border-sand bg-white p-6 shadow-soft">
                 <h2 className="text-[clamp(24px,3vw,32px)]">Rollout-Prinzip</h2>
                 <p className="muted mt-3 text-[17px] leading-[1.85]">
-                  Erst werden Deutsch und Englisch als Masterfassungen gepflegt. Danach folgen große EU-Sprachen mit Terminologie-QA. Rechtliche Seiten, Datenschutz, AI-Transparenz und Beziehungsinhalte werden erst nach gesonderter Prüfung als redaktionell freigegeben markiert.
+                  Erst werden Deutsch und Englisch als Masterfassungen gepflegt. Danach folgen große EU-Sprachen schrittweise: zunächst Navigation, CTAs und globale UI, danach Longform-Content mit Terminologie-QA. Rechtliche Seiten, Datenschutz, AI-Transparenz und Beziehungsinhalte werden erst nach gesonderter Prüfung als redaktionell freigegeben markiert.
                 </p>
               </div>
               <div className="rounded-card border border-altrosa/25 bg-altrosa/10 p-6">

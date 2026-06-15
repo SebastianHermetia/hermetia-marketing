@@ -1,0 +1,39 @@
+{
+  "site": {
+    "tagline": "Jak na górze, tak na dole",
+    "claim": "Mapa Twojej duszy, z tego wszystkiego, co Cię tworzy."
+  },
+  "nav": {
+    "leistungen": "Funkcje",
+    "systeme": "Systemy",
+    "methodik": "Metoda",
+    "preise": "Ceny",
+    "login": "Zaloguj",
+    "start": "Rozpocznij profil"
+  },
+  "cta": {
+    "startFree": "Zacznij za darmo",
+    "seeChart": "Zobacz moją mapę duszy za darmo",
+    "howItWorks": "Jak to działa",
+    "comparePrices": "Porównaj ceny",
+    "allServices": "Zobacz wszystkie funkcje",
+    "exploreSystems": "Poznaj wszystkie systemy",
+    "methodDetail": "Zobacz metodę szczegółowo",
+    "more": "Dowiedz się więcej"
+  },
+  "footer": {
+    "blurb": "Mapa Twojej duszy, z tego wszystkiego, co Cię tworzy. Jak na górze, tak na dole.",
+    "product": "Produkt",
+    "discover": "Odkrywaj",
+    "legal": "Informacje prawne",
+    "magazin": "Magazyn",
+    "glossar": "Glosariusz",
+    "faq": "FAQ",
+    "datenschutz": "Prywatność",
+    "kiTransparenz": "Transparentność AI",
+    "agb": "Warunki",
+    "widerruf": "Odstąpienie",
+    "impressum": "Nota prawna",
+    "disclaimer": "Inspiracja do autorefleksji, bez porad medycznych lub terapeutycznych. Część treści jest wspierana przez AI."
+  }
+}
