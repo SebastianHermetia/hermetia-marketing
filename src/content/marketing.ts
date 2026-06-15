@@ -463,23 +463,59 @@ const dePages = {
       {
         title: "Synastrie und Composite einfach erklärt",
         body:
-          "Synastrie vergleicht zwei Profile miteinander: Welche Punkte berühren sich, wo ergänzen sich Muster, wo entsteht Spannung? Composite betrachtet die Beziehung als eigenes drittes Feld. Beide Blickwinkel sind wertvoll, aber sie dürfen nicht als Urteil über richtig oder falsch missverstanden werden.",
+          "Synastrie vergleicht zwei Profile miteinander: Welche Punkte berühren sich, wo ergänzen sich Muster, wo entsteht Spannung? Composite betrachtet die Beziehung als eigenes drittes Feld. Beide Blickwinkel sind wertvoll, aber sie dürfen nicht als Urteil über richtig oder falsch missverstanden werden. Hermetia nutzt diese Logik als Reflexionssprache: Sie kann zeigen, wo Nähe leicht entsteht, wo zwei Rhythmen aneinander reiben und welche Themen eine Beziehung bewusst machen kann.",
       },
       {
         title: "Warum Einwilligung unverzichtbar ist",
         body:
-          "Eine Beziehungsauswertung verarbeitet sensible Aussagen über eine zweite Person. Deshalb reicht es nicht, einfach Daten einzutragen. Vor echter Nutzung braucht die betroffene Person eine eigene, informierte Einwilligung oder einen rechtlich sauberen Guardian-Fall. Das ist kein Hindernis, sondern Respekt.",
+          "Eine Beziehungsauswertung verarbeitet sensible Aussagen über eine zweite Person. Deshalb reicht es nicht, einfach Daten einzutragen. Vor echter Nutzung braucht die betroffene Person eine eigene, informierte Einwilligung oder einen rechtlich sauberen Guardian-Fall. Das ist kein Hindernis, sondern Respekt. Die Marketing-Website muss diese Haltung deutlich machen, weil Vertrauen hier wichtiger ist als schnelle Conversion: Wer andere heimlich auswerten will, ist nicht der richtige Nutzer für diese Funktion.",
+      },
+      {
+        title: "Welche Beziehungsfragen Hermetia beantworten kann",
+        body:
+          "Hermetia kann Fragen strukturieren, ohne die Beziehung zu bewerten: Wo sprechen wir eine ähnliche Sprache? Wo brauchen wir Übersetzung? Welche Dynamik fühlt sich wiederkehrend an? Wo entsteht Anziehung, aber auch Überforderung? Welche Themen gehören zu mir, welche zur anderen Person und welche entstehen erst im gemeinsamen Feld? Diese Fragen sind für Partnerschaft, Freundschaft, Familie, kreative Zusammenarbeit und bewusste Trennung gleichermaßen relevant.",
+      },
+      {
+        title: "Resonanz, Reibung und Entwicklungsfeld",
+        body:
+          "Eine gute Beziehungsauswertung braucht mehr als Harmoniepunkte. Zu viel Übereinstimmung kann beruhigen, aber auch blinde Flecken erzeugen. Reibung kann anstrengend sein, aber Entwicklung ermöglichen. Hermetia sollte deshalb drei Ebenen unterscheiden: Resonanz als Gefühl von Verstandenwerden, Reibung als produktive Differenz und Entwicklungsfeld als Frage, die zwei Menschen gemeinsam reifer machen kann. Genau daraus entsteht eine differenzierte, nicht wertende Beziehungssprache.",
+      },
+      {
+        title: "Datenschutz bei Profilen anderer Menschen",
+        body:
+          "Beziehungsprofile sind datenschutzrechtlich besonders sensibel, weil sie Daten und Ableitungen über mindestens zwei Personen verbinden. Hermetia muss erklären, welche Daten benötigt werden, wer sie eingibt, wer Zugriff hat, wie Einwilligung dokumentiert wird und wie Löschung funktioniert. Gerade Geburtsdaten, spirituelle Ableitungen und Beziehungsmuster können intime Rückschlüsse ermöglichen. Deshalb gehört Datenschutz nicht in den Footer allein, sondern in den Content der Beziehungsseite.",
+      },
+      {
+        title: "Warum Beziehungsauswertungen Premium-Tiefe schaffen",
+        body:
+          "Beziehungsauswertungen sind ein natürlicher Premium-Bereich, weil sie mehr Rechenlogik, mehr Texttiefe, Consent-Flows und mehr Verantwortung brauchen als ein einzelnes Profil. Der Wert liegt nicht in einem schnellen Kompatibilitätsurteil, sondern in einer lesbaren gemeinsamen Landkarte: Dynamiken, Spannungsfelder, Gesprächsimpulse, Journaling-Fragen und wiederkehrende Themen. Nutzer sollen verstehen, warum diese Tiefe bezahlten Raum braucht.",
       },
       {
         title: "Was Hermetia nicht verspricht",
         body:
-          "Hermetia sagt nicht, ob eine Beziehung halten wird. Es bewertet keine Menschen und ersetzt keine Paarberatung. Die Auswertung soll Sprache für Dynamiken geben: Was fühlt sich leicht an? Wo entsteht Reibung? Welche Entwicklung lädt die Beziehung ein?",
+          "Hermetia sagt nicht, ob eine Beziehung halten wird. Es bewertet keine Menschen und ersetzt keine Paarberatung. Die Auswertung soll Sprache für Dynamiken geben: Was fühlt sich leicht an? Wo entsteht Reibung? Welche Entwicklung lädt die Beziehung ein? Sie darf keine Diagnose, keine Schuldzuweisung und keine Entscheidung über Trennung, Bindung oder Zukunft sein. Der Nutzer bleibt verantwortlich, und bei Gewalt, Krise oder psychischer Belastung braucht es professionelle Hilfe.",
+      },
+    ],
+    graphics: [
+      {
+        src: "/graphics/convergence/abb6-beispiel-radar.svg",
+        alt: "Radar-Grafik für Resonanz, Reibung und Beziehungsthemen",
+        caption: "Beziehungsprofile sollten nicht nur Harmonie zeigen, sondern mehrere Dimensionen wie Resonanz, Spannung und Entwicklung sichtbar machen.",
+      },
+      {
+        src: "/graphics/convergence/abb9-deine-innere-spannung.svg",
+        alt: "Innere Spannung als Grundlage für Beziehungsdynamik",
+        caption: "Manche Reibung entsteht nicht zwischen zwei Menschen, sondern aus inneren Spannungsfeldern, die in Beziehung sichtbar werden.",
       },
     ],
     faq: [
       { q: "Kann ich einfach die Daten meines Partners eingeben?", a: "Für echte Kundennutzung braucht die zweite Person eine eigene informierte Einwilligung. Hermetia ist hier bewusst streng." },
       { q: "Sagt Hermetia, ob wir zusammenpassen?", a: "Nein. Hermetia zeigt Resonanzen, Spannungen und Entwicklungsthemen, aber keine Beziehungsgarantie." },
       { q: "Ist das therapeutische Beratung?", a: "Nein. Beziehungsauswertungen sind Reflexionsimpulse und ersetzen keine professionelle Beratung." },
+      { q: "Was ist der Unterschied zwischen Synastrie und Composite?", a: "Synastrie vergleicht zwei Profile direkt miteinander. Composite betrachtet die Beziehung als gemeinsames Feld. Hermetia nutzt beide Perspektiven vorsichtig und nicht als Urteil." },
+      { q: "Warum braucht Hermetia Consent für Beziehungsprofile?", a: "Weil eine Auswertung sensible Aussagen über eine zweite Person ableiten kann. Informierte Einwilligung schützt Privatsphäre, Vertrauen und die spätere rechtliche Produktlogik." },
+      { q: "Kann Hermetia Beziehungskonflikte lösen?", a: "Nein. Hermetia kann Sprache, Fragen und Muster anbieten. Konfliktlösung, Beratung oder Therapie ersetzt die Plattform nicht." },
+      { q: "Wann lohnt sich Premium für Beziehungen?", a: "Premium lohnt sich, wenn beide Personen bewusst mit einer Beziehungsauswertung arbeiten möchten: mit tieferer Analyse, Gesprächsimpulsen, Journaling und klar dokumentierter Einwilligung." },
     ],
     ctaTitle: "Beginne zuerst mit deinem eigenen Profil.",
     ctaText: "Deine Beziehungsmuster werden verständlicher, wenn du deine eigene Seelenkarte kennst.",

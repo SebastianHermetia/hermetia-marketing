@@ -64,6 +64,7 @@ const freePremium = readOut("de/kostenlos-vs-premium");
 const frFreePremium = readOut("fr/kostenlos-vs-premium");
 const dataSecurity = readOut("de/daten-und-sicherheit");
 const frDataSecurity = readOut("fr/daten-und-sicherheit");
+const relationships = readOut("de/beziehungen");
 const onboarding = readOut("de/profil-starten");
 const frOnboarding = readOut("fr/profil-starten");
 const journaling = readOut("de/journaling");
@@ -174,6 +175,14 @@ const checks = [
   ["Data security page has tracked CTAs", dataSecurity.includes("utm_content=data-security-hero") && dataSecurity.includes("utm_content=data-security-final")],
   ["Data security page is linked in footer", deHome.includes("/de/daten-und-sicherheit/")],
   ["Data security page has localized fallback SEO", frDataSecurity.includes("<title>Données et sécurité | Hermetia</title>")],
+  ["Relationships page has consent framing", relationships.includes("Warum Einwilligung unverzichtbar ist") && relationships.includes("Wer andere heimlich auswerten will")],
+  ["Relationships page has use questions", relationships.includes("Welche Beziehungsfragen Hermetia beantworten kann") && relationships.includes("Partnerschaft, Freundschaft, Familie")],
+  ["Relationships page has resonance model", relationships.includes("Resonanz, Reibung und Entwicklungsfeld") && relationships.includes("Harmoniepunkte")],
+  ["Relationships page has privacy block", relationships.includes("Datenschutz bei Profilen anderer Menschen") && relationships.includes("Einwilligung dokumentiert")],
+  ["Relationships page has premium value", relationships.includes("Warum Beziehungsauswertungen Premium-Tiefe schaffen") && relationships.includes("Consent-Flows")],
+  ["Relationships page has legal limits", relationships.includes("Was Hermetia nicht verspricht") && relationships.includes("keine Beziehungsgarantie")],
+  ["Relationships page has graphics", relationships.includes("/graphics/convergence/abb6-beispiel-radar.svg") && relationships.includes("/graphics/convergence/abb9-deine-innere-spannung.svg")],
+  ["Relationships page has expanded FAQ and CTAs", relationships.includes("FAQPage") && relationships.includes("Was ist der Unterschied zwischen Synastrie und Composite") && relationships.includes("utm_content=beziehungen-inline-1") && relationships.includes("utm_content=beziehungen-final")],
   ["Onboarding guide page exists", onboarding.includes("So kommst du von der Website") && onboarding.includes("Vier Schritte")],
   ["Onboarding guide page has FAQ schema", onboarding.includes("FAQPage")],
   ["Onboarding guide page has tracked CTAs", onboarding.includes("utm_content=onboarding-guide-hero") && onboarding.includes("utm_content=onboarding-guide-final")],
