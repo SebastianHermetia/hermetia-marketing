@@ -42,6 +42,7 @@ export function Footer({ locale }: { locale: Locale }) {
           </FootCol>
           <FootCol title={t.footer.legal}>
             <FootLink href={L(paths.datenschutz)}>{t.footer.datenschutz}</FootLink>
+            <FootLink href={L(paths.datenSicherheit)}>Daten & Sicherheit</FootLink>
             <FootLink href={L(paths.ki)}>{t.footer.kiTransparenz}</FootLink>
             <FootLink href={L(paths.freigaben)}>Freigaben</FootLink>
             <FootLink href={L(paths.agb)}>{t.footer.agb}</FootLink>

@@ -58,6 +58,8 @@ const useCases = readOut("de/anwendungsfaelle");
 const esUseCases = readOut("es/anwendungsfaelle");
 const freePremium = readOut("de/kostenlos-vs-premium");
 const frFreePremium = readOut("fr/kostenlos-vs-premium");
+const dataSecurity = readOut("de/daten-und-sicherheit");
+const frDataSecurity = readOut("fr/daten-und-sicherheit");
 const pricing = readOut("de/preise");
 const services = readOut("de/leistungen");
 const systemsHub = readOut("de/systeme");
@@ -110,6 +112,11 @@ const checks = [
   ["Free vs Premium page has tracked CTAs", freePremium.includes("utm_content=free-premium-hero") && freePremium.includes("utm_content=free-premium-final")],
   ["Free vs Premium page is linked in footer", deHome.includes("/de/kostenlos-vs-premium/")],
   ["Free vs Premium page has localized fallback SEO", frFreePremium.includes("<title>Gratuit ou Premium | Hermetia</title>")],
+  ["Data security page exists", dataSecurity.includes("Persönliche Tiefe braucht verständlichen Datenschutz") && dataSecurity.includes("Vier Datenbereiche")],
+  ["Data security page has FAQ schema", dataSecurity.includes("FAQPage")],
+  ["Data security page has tracked CTAs", dataSecurity.includes("utm_content=data-security-hero") && dataSecurity.includes("utm_content=data-security-final")],
+  ["Data security page is linked in footer", deHome.includes("/de/daten-und-sicherheit/")],
+  ["Data security page has localized fallback SEO", frDataSecurity.includes("<title>Données et sécurité | Hermetia</title>")],
   ["Header CTAs are source tagged", deHome.includes("utm_content=header-start") && deHome.includes("utm_content=header-login")],
   ["Home CTAs are source tagged", deHome.includes("utm_content=home-hero") && deHome.includes("utm_content=home-final")],
   ["Pricing CTAs are source tagged", pricing.includes("utm_content=pricing-tier-1") && pricing.includes("utm_content=pricing-tier-2") && pricing.includes("utm_content=pricing-tier-3") && pricing.includes("utm_content=pricing-final")],
