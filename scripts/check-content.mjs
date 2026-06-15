@@ -88,6 +88,7 @@ const frJournaling = readOut("fr/journaling");
 const profileBook = readOut("de/vollprofil-buch");
 const frProfileBook = readOut("fr/vollprofil-buch");
 const companion = readOut("de/companion");
+const enCompanion = readOut("en/companion");
 const frCompanion = readOut("fr/companion");
 const profileRefinement = readOut("de/profil-verfeinern");
 const frProfileRefinement = readOut("fr/profil-verfeinern");
@@ -309,6 +310,8 @@ const checks = [
   ["Companion page has premium value", companion.includes("Warum der Companion Premium-Wert erzeugt") && companion.includes("längeren Gesprächsverläufen")],
   ["Companion page has graphics", companion.includes("/graphics/convergence/abb5-algorithmus-funnel.svg") && companion.includes("/graphics/convergence/abb7-crosswalk-sankey.svg")],
   ["Companion page has expanded FAQ and tracked CTAs", companion.includes("Woher weiß der Companion") && companion.includes("Nutzt der Companion meine Journaltexte automatisch") && companion.includes("utm_content=companion-inline-1") && companion.includes("utm_content=companion-final")],
+  ["EN Companion page has localized AI and privacy sections", enCompanion.includes("Answer logic: source, context, question") && enCompanion.includes("Data protection and data minimization in conversation") && enCompanion.includes("Why the Companion creates premium value")],
+  ["EN Companion page has no German core headings", !enCompanion.includes("Antwortlogik: Quelle, Kontext, Frage") && !enCompanion.includes("Datenschutz und Datenminimierung im Gespräch") && !enCompanion.includes("Warum der Companion Premium-Wert erzeugt")],
   ["Companion page is linked in footer", deHome.includes("/de/companion/")],
   ["Companion page has localized fallback SEO", frCompanion.includes("<title>Companion | Hermetia</title>")],
   ["Profile refinement page exists", profileRefinement.includes("Profil verfeinern") && profileRefinement.includes("Export und Löschung")],

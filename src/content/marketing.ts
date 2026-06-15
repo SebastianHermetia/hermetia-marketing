@@ -734,6 +734,117 @@ enPages.beziehungen = {
   ctaText: "Your relationship patterns become easier to understand when you know your own soul map.",
 };
 
+enPages.companion = {
+  ...dePages.companion,
+  title: "Hermetia Companion: a calm AI guide for your soul map",
+  seoTitle: "Hermetia Companion - AI guide for profile questions and reflection",
+  seoDescription:
+    "How the Hermetia Companion answers personal questions about the soul map, deepens daily impulses and keeps clear limits for AI, data protection and advice.",
+  eyebrow: "AI · Companionship",
+  lead:
+    "The Companion should not be an oracle that tells you what to do. It is planned as a calm conversation space that explains your soul map, asks useful questions and respects limits.",
+  answer:
+    "The Hermetia Companion is an AI-assisted guide that translates calculated profile information, core themes and approved reflections into understandable answers. It does not replace advice, does not make decisions and should always show what an answer is based on.",
+  imageAlt: "A resonance instrument as an image for the Hermetia Companion",
+  sections: [
+    {
+      title: "What a Companion should do",
+      body:
+        "Many users do not understand their profile in a single pass. They read a sentence, feel resonance and then have questions. The Companion should help exactly there: what does this core theme mean, why does it appear in several systems and which journaling question fits? The answer should be warm and understandable, but it must not pretend that AI has a higher truth about the person. The Companion is therefore not a substitute for the user's own sensing, but a translator between profile, method and everyday life.",
+    },
+    {
+      title: "Calculation-based instead of free speculation",
+      body:
+        "The Companion must not simply improvise mystically. Its strength arises when it works from calculated profile facts, convergence signals, approved notes and clear product boundaries. Users should be able to understand whether an answer comes from astrology, Human Design, numerology, questionnaire values, journaling or general reflection questions. This keeps the experience personal without making it arbitrary. AI phrases, connects and explains, but the profile foundation comes from the Hermetia calculation.",
+    },
+    {
+      title: "Answer logic: source, context, question",
+      body:
+        "A good Companion answer should not only sound beautiful, but show its basis. A clear answer logic is useful: which profile source is relevant, in which context is the user asking, what uncertainty remains and which next reflection question helps? This structure makes the Companion strong for answer engines because it gives direct answers, and trustworthy because users see what a statement is based on.",
+    },
+    {
+      title: "Transparency when AI is used",
+      body:
+        "Hermetia should make visible when AI is involved and when it is not. Calculation, convergence and system logic are not the same as later wording. Users therefore need a simple explanation: AI does not write free truths about you, but phrases from approved profile information, editorial guardrails and your current question. This separation protects against overclaiming and makes the Companion legally cleaner.",
+    },
+    {
+      title: "Data protection and data minimization in conversation",
+      body:
+        "A Companion can quickly receive very personal questions. Data minimization must therefore also apply in conversation: only relevant profile parts, only approved journal notes, clear purposes, understandable deletion and export paths. Especially with sensitive spiritual data, the website must not only say that AI is helpful. It must explain how Hermetia prevents companionship from becoming unnecessary data collection.",
+    },
+    {
+      title: "Example questions for the Companion",
+      body:
+        "Good marketing content should show which questions make sense: why does my core theme appear in several systems, how can I journal this daily impulse, which tension between retreat and visibility does my profile show, how do I read a chapter from the full profile book and what is symbolic language versus calculated data? These examples make the value concrete without using real user profiles.",
+    },
+    {
+      title: "Oracle moment without fate pressure",
+      body:
+        "An optional oracle or card moment can be inspiring if it is framed cleanly. Hermetia should not sell it as prediction, but as a symbolic question for the moment: what could I pay attention to today, what wants to be seen and which perspective helps me act more calmly? The Companion can explain such motifs, but must never create pressure, fear or dependency. The boundary is clear: symbolic impulses may open, but not decide.",
+    },
+    {
+      title: "Limits around health, relationships and decisions",
+      body:
+        "The Companion must not give medical, therapeutic, legal or financial advice. In relationship topics, it must remain respectful and not make statements about a second person if that person's consent is missing. In psychological strain, it should name clear support boundaries. These limits belong on the marketing website because they create trust. A good answer also recognizes when it should not answer.",
+    },
+    {
+      title: "Why the Companion creates premium value",
+      body:
+        "The free start shows the soul map. The Companion becomes valuable when users ask deeper questions, want examples, deepen journaling or need long profile chapters explained in plain language. That is a natural premium benefit: more companionship, more context and more calm. The website should explain this value without pretending that every person permanently needs an AI voice. Premium here means access to better context, longer conversation histories and responsible quality assurance, not dependency.",
+    },
+  ],
+  graphics: [
+    {
+      src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
+      alt: "Funnel from profile calculation to Companion answers",
+      caption:
+        "The Companion does not answer freely from nowhere, but from calculated profile facts, convergence and approved contexts.",
+    },
+    {
+      src: "/graphics/convergence/abb7-crosswalk-sankey.svg",
+      alt: "Crosswalk graphic for translating different system languages",
+      caption:
+        "AI companionship becomes valuable when it translates different system languages into understandable reflection questions.",
+    },
+  ],
+  faq: [
+    {
+      q: "Is the Companion an oracle?",
+      a: "No. It can explain symbolic impulses, but it is not a prediction tool and not an authority over decisions.",
+    },
+    {
+      q: "Can the Companion see my whole profile?",
+      a: "It should use only the data needed and approved for the specific answer. Data minimization remains important in AI companionship.",
+    },
+    {
+      q: "Does the Companion replace advice or therapy?",
+      a: "No. It offers reflection questions and explanations for the soul map, but no medical, psychological, therapeutic, legal or financial advice.",
+    },
+    {
+      q: "Why is the Companion not completely free?",
+      a: "Personal AI companionship, secure infrastructure, editorial work, quality assurance and longer profile contexts create ongoing costs. Depth can therefore be part of paid models.",
+    },
+    {
+      q: "How does the Companion know what its answer is based on?",
+      a: "It should derive answers from calculated profile facts, convergence signals, approved notes and the current question. The basis must remain understandable to users.",
+    },
+    {
+      q: "Can I discuss sensitive topics with the Companion?",
+      a: "You can ask reflective questions, but the Companion does not replace professional support. Health, crisis, legal, financial or acute emotional strain require appropriate specialists.",
+    },
+    {
+      q: "Does the Companion use my journal texts automatically?",
+      a: "Journal texts should only be used when they are relevant for the purpose and explicitly approved. Data minimization and transparency remain central product rules.",
+    },
+    {
+      q: "Why does the Companion strengthen paid models?",
+      a: "Because longer contexts, more individual answers, secure AI infrastructure, quality assurance and editorial guardrails create ongoing effort.",
+    },
+  ],
+  ctaTitle: "Open your soul map first, then ask the questions that really matter.",
+  ctaText: "The Companion becomes useful once your own profile is the foundation.",
+};
+
 export const pillarPages: Record<string, LocalizedPage> = Object.fromEntries(
   Object.entries(dePages).map(([key, de]) => [key, { de, en: enPages[key as keyof typeof dePages] }]),
 ) as Record<string, LocalizedPage>;
