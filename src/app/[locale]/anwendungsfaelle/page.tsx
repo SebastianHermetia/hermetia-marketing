@@ -5,6 +5,7 @@ import { paths, startUrl, localePath } from "@/lib/links";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Faq } from "@/components/Faq";
+import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
 
 const useCases = [
@@ -52,6 +53,83 @@ const useCases = [
   },
 ];
 
+const searchQuestions = [
+  {
+    q: "Wofür kann ich Hermetia nutzen?",
+    a: "Für Selbstreflexion, Entscheidungsfragen, Beziehungsdynamiken, berufliche Orientierung, tägliche Impulse und die verständliche Einordnung verschiedener Deutungssysteme.",
+  },
+  {
+    q: "Hilft Hermetia bei Beziehungen?",
+    a: "Hermetia kann Resonanz, Reibung und wiederkehrende Muster als Reflexionsraum sichtbar machen. Profile anderer Menschen gehören aber nur mit klarer Einwilligung in die Auswertung.",
+  },
+  {
+    q: "Wann lohnt sich ein bezahltes Modell?",
+    a: "Wenn aus dem kostenlosen Aha-Moment eine regelmäßige Praxis werden soll: mehr Ebenen, Journaling, Tagesimpulse, Profilbuch, Beziehungsebene oder längere Begleitung.",
+  },
+  {
+    q: "Was darf Hermetia nicht ersetzen?",
+    a: "Keine Therapie, keine Diagnose, keine medizinische, rechtliche oder finanzielle Beratung und keine sicheren Zukunftsversprechen.",
+  },
+];
+
+const journey = [
+  {
+    step: "1",
+    title: "Neugier",
+    text: "Die Website beantwortet Grundfragen: Was ist Hermetia, welche Systeme werden betrachtet, welche Grenzen gelten und welche Anwendungsfälle passen wirklich?",
+  },
+  {
+    step: "2",
+    title: "Kostenloser Profilstart",
+    text: "Im Onboarding entsteht die erste persönliche Seelenkarte. Nutzer prüfen Resonanz, Sprache, Datenschutzgefühl und die ersten Kernthemen ohne Kaufdruck.",
+  },
+  {
+    step: "3",
+    title: "Bewusste Vertiefung",
+    text: "Premium wird sinnvoll, wenn die erste Resonanz tragfähig ist und die Person mehr Tiefe, Alltag, Journaling, Beziehungsauswertung oder ein Vollprofil-Buch nutzen möchte.",
+  },
+  {
+    step: "4",
+    title: "Fortlaufende Praxis",
+    text: "Hermetia wird dann nicht nur gelesen, sondern als ruhige Reflexionsumgebung genutzt: beobachten, schreiben, vergleichen, nachjustieren und Verantwortung behalten.",
+  },
+];
+
+const deepUseCases = [
+  {
+    title: "Identität und Selbstbild",
+    image: "/images/hermetia/resonance-instrument.png",
+    alt: "Ein fein abgestimmtes Resonanzinstrument als Symbol für Selbstbild und persönliche Muster",
+    text: "Viele Nutzer kommen zu Hermetia, weil sie sich in gängigen Persönlichkeitstypen nur teilweise wiederfinden. Die Plattform betrachtet keine einzelne Schublade, sondern wiederkehrende Signale aus mehreren Systemfamilien. Dadurch entsteht eine Sprache für innere Spannungen: Was wirkt stabil? Was zeigt sich zyklisch? Welche Seite möchte gesehen werden, ohne sofort zur neuen Identität zu werden?",
+    goodFor: ["Muster benennen", "Stärken und Schatten sortieren", "Selbstbeschreibung präzisieren"],
+    cta: "use-cases-identity",
+  },
+  {
+    title: "Entscheidungen und Übergänge",
+    image: "/images/hermetia/dawn-clock-of-becoming.png",
+    alt: "Eine helle Uhrlandschaft als Bild für Übergänge, Timing und bewusste Entscheidungen",
+    text: "Bei Berufswechsel, Beziehungsklärung, Umzug, Kreativprojekten oder inneren Neuanfängen suchen Menschen häufig nicht nur Fakten, sondern Orientierung. Hermetia liefert keine Anweisung. Es zeigt, welche Themen, Rhythmen und archetypischen Spannungen im eigenen Profil wiederkehren, damit Entscheidungen bewusster geprüft werden können.",
+    goodFor: ["Fragen strukturieren", "Timing reflektieren", "innere Prioritäten erkennen"],
+    cta: "use-cases-decisions",
+  },
+  {
+    title: "Beziehungen und Resonanz",
+    image: "/images/hermetia/garden-of-agreements.png",
+    alt: "Ein ruhiger Garten als Symbol für Beziehung, Grenzen und gegenseitige Einwilligung",
+    text: "Beziehungsarbeit braucht Sorgfalt. Hermetia kann helfen, Unterschiedlichkeit nicht sofort als Fehler zu lesen: Nähe und Autonomie, Tempo und Tiefe, Sicherheit und Abenteuer. Der ethische Rahmen ist dabei klar: Beziehungsauswertungen setzen Einwilligung voraus und bleiben Reflexionshilfe, keine Bewertung eines Menschen.",
+    goodFor: ["Resonanz verstehen", "Reibung entdramatisieren", "Einwilligung respektieren"],
+    cta: "use-cases-relationships",
+  },
+  {
+    title: "Alltag, Journaling und Integration",
+    image: "/images/hermetia/alchemical-listening-room.png",
+    alt: "Ein stiller Raum als Bild für Journaling, Integration und tägliche Reflexion",
+    text: "Der größte Wert entsteht nicht immer im ersten großen Profil, sondern in der Wiederholung. Tagesimpulse, Journaling und Profilverfeinerung helfen, Erkenntnisse im Alltag zu prüfen: Was stimmt heute? Was verändert sich? Welche Sprache unterstützt, ohne Druck zu erzeugen?",
+    goodFor: ["tägliche Reflexion", "Journaling-Routinen", "Erkenntnisse integrieren"],
+    cta: "use-cases-journaling",
+  },
+];
+
 const goodFit = [
   "Du möchtest dich selbst besser verstehen, ohne dich auf eine starre Identität festzulegen.",
   "Du magst spirituelle Systeme, willst aber Transparenz, Datenschutz und klare Grenzen.",
@@ -64,6 +142,28 @@ const badFit = [
   "Du möchtest sichere Vorhersagen über Zukunft, Liebe, Geld, Gesundheit oder Schicksal.",
   "Du suchst eine Autorität, die dir Entscheidungen abnimmt.",
   "Du möchtest Profile anderer Menschen ohne deren Einwilligung auswerten.",
+];
+
+const conversionPrinciples = [
+  "Jede inhaltliche Seite soll einen passenden Weg zum Profilstart anbieten, aber nicht jede Seite muss hart verkaufen.",
+  "Der kostenlose Einstieg ist der erste Vertrauensmoment: Nutzer sollen Resonanz prüfen, bevor sie ein bezahltes Modell wählen.",
+  "Premium-CTAs gehören besonders dort hin, wo Tiefe, Alltag, Journaling, Beziehung oder Vollprofil-Buch erklärt werden.",
+  "Rechtliche Grenzen, Datenschutz und IP-Sorgfalt bleiben sichtbar, damit Conversion nicht auf überzogenen Versprechen basiert.",
+];
+
+const legalFrames = [
+  {
+    title: "Keine Diagnose und keine Heilsversprechen",
+    text: "Anwendungsfälle werden als Reflexionsräume formuliert. Hermetia macht keine medizinischen, psychotherapeutischen, rechtlichen oder finanziellen Aussagen und ersetzt keine professionelle Hilfe.",
+  },
+  {
+    title: "Eigene Sprache statt geschützter Deutungstexte",
+    text: "Die Seite beschreibt Systeme, Muster und Hermetias Methodik in eigener redaktioneller Sprache. Proprietäre Texte, Tabellen, Formulierungen oder geschützte Auszüge anderer Anbieter werden nicht übernommen.",
+  },
+  {
+    title: "Einwilligung bei sensiblen Profilen",
+    text: "Beziehungs- und Vergleichsanwendungen werden an klare Zustimmung gebunden. Das schützt Privatsphäre, Vertrauen und die spätere Produktlogik.",
+  },
 ];
 
 const faq = [
@@ -144,6 +244,26 @@ export default async function UseCasesPage({ params }: { params: Promise<{ local
           </div>
         </section>
 
+        <section className="py-16">
+          <div className="wrap">
+            <div className="mb-8 max-w-[780px]">
+              <span className="kicker">Suchfragen</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Welche Anwendungsfragen beantwortet Hermetia?</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">
+                Diese Seite ist für Menschen gebaut, die noch nicht sicher sind, ob Hermetia nur interessant klingt oder im eigenen Leben wirklich nützlich werden kann. Die wichtigsten Antwortmaschinen-Fragen stehen deshalb direkt am Anfang.
+              </p>
+            </div>
+            <div className="grid gap-5 md:grid-cols-2">
+              {searchQuestions.map((item) => (
+                <article key={item.q} className="card">
+                  <h3 className="text-[21px]">{item.q}</h3>
+                  <p className="muted mt-3 text-[15.5px] leading-relaxed">{item.a}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="bg-creme-tief py-16">
           <div className="wrap">
             <div className="mb-9 max-w-[760px]">
@@ -167,6 +287,65 @@ export default async function UseCasesPage({ params }: { params: Promise<{ local
         </section>
 
         <section className="py-16">
+          <div className="wrap">
+            <div className="mb-9 max-w-[780px]">
+              <span className="kicker">Nutzerreise</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Vom ersten Interesse zur bezahlten Tiefe.</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">
+                Das Ziel der Website ist nicht nur Information, sondern ein klarer, vertrauensvoller Weg in die Hermetia-App. Wer neugierig wird, soll jederzeit starten können. Wer tiefer einsteigen will, soll verstehen, warum ein bezahltes Modell sinnvoll ist.
+              </p>
+            </div>
+            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+              {journey.map((item) => (
+                <article key={item.title} className="rounded-card border border-sand bg-white p-6 shadow-soft">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-aubergine text-[15px] font-bold text-white">{item.step}</span>
+                  <h3 className="mt-5 text-[21px]">{item.title}</h3>
+                  <p className="muted mt-3 text-[15px] leading-relaxed">{item.text}</p>
+                </article>
+              ))}
+            </div>
+            <div className="mt-9">
+              <AppCta
+                locale={locale}
+                title="Teste den wichtigsten Anwendungsfall zuerst: dein eigenes Profil."
+                text="Die beste Erklärung bleibt allgemein. Der kostenlose Profilstart zeigt, ob Hermetia bei dir persönlich Resonanz erzeugt."
+                source="use-cases-journey"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-creme-tief py-16">
+          <div className="wrap">
+            <div className="mb-9 max-w-[820px]">
+              <span className="kicker">Vertiefung</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Vier Anwendungsfelder, in denen Hermetia besonders stark wird.</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">
+                Die einzelnen Bereiche können getrennt gelesen werden. In der App laufen sie zusammen: Seelenkarte, Systeme, Tagesimpulse, Journaling, Profilbuch und Beziehungsebene bilden eine fortlaufende Reflexionsumgebung.
+              </p>
+            </div>
+            <div className="grid gap-6">
+              {deepUseCases.map((item, idx) => (
+                <article key={item.title} className="grid overflow-hidden rounded-card border border-sand bg-white shadow-soft lg:grid-cols-[.82fr_1fr]">
+                  <img src={item.image} alt={item.alt} className="h-full min-h-[280px] w-full object-cover" loading={idx === 0 ? "eager" : "lazy"} />
+                  <div className="p-7">
+                    <span className="chip">Anwendungsfeld</span>
+                    <h3 className="mt-4 text-[clamp(24px,3vw,32px)]">{item.title}</h3>
+                    <p className="muted mt-4 text-[16.5px] leading-[1.85]">{item.text}</p>
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {item.goodFor.map((signal) => (
+                        <span key={signal} className="rounded-full border border-salbei/45 bg-salbei/15 px-3 py-1 text-[13px] font-semibold text-pflaume">{signal}</span>
+                      ))}
+                    </div>
+                    <a className="btn btn-primary mt-6" href={startUrl(locale, { source: item.cta })}>Diesen Fall mit meinem Profil prüfen</a>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16">
           <div className="wrap grid gap-6 lg:grid-cols-2">
             <div className="rounded-card border border-salbei/40 bg-white p-7 shadow-soft">
               <span className="chip">Gute Passung</span>
@@ -181,6 +360,47 @@ export default async function UseCasesPage({ params }: { params: Promise<{ local
               <ul className="mt-5 flex list-none flex-col gap-3 text-[15.5px] leading-relaxed text-pflaume/90">
                 {badFit.map((item) => <li key={item}>× {item}</li>)}
               </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-creme-tief py-16">
+          <div className="wrap grid gap-8 lg:grid-cols-[1fr_.9fr]">
+            <div>
+              <span className="kicker">Conversion-Prinzip</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Neugier soll in Anmeldung übergehen, aber mit Vertrauen.</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">
+                Hermetia verkauft am stärksten, wenn Nutzer die eigene Entscheidung als selbstbestimmt erleben. Deshalb verbinden die Inhalte klare Nutzenfelder mit sichtbaren Grenzen, Einwilligung und einem kostenlosen Einstieg.
+              </p>
+              <ul className="mt-6 flex list-none flex-col gap-3 text-[15.5px] leading-relaxed text-pflaume/90">
+                {conversionPrinciples.map((item) => <li key={item}>✓ {item}</li>)}
+              </ul>
+            </div>
+            <figure className="m-0 rounded-card border border-sand bg-white p-4 shadow-soft">
+              <img src="/graphics/convergence/abb5-algorithmus-funnel.svg" alt="Grafik zum Weg von Daten über Einordnung zu verständlicher Hermetia-Sprache" className="w-full rounded-[6px]" loading="lazy" />
+              <figcaption className="muted mt-3 text-[14px] leading-relaxed">
+                Der Funnel zeigt, warum Hermetia nicht einfach Systemtexte addiert, sondern Signale prüft, dämpft und in eigene Sprache übersetzt.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section className="py-16">
+          <div className="wrap">
+            <div className="mb-8 max-w-[780px]">
+              <span className="kicker">Rechtlicher Rahmen</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Was Anwendungsfälle versprechen dürfen und was nicht.</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">
+                Für Reichweite, Vertrauen und spätere Paid-Conversion ist entscheidend, dass der Content rechtlich sauber bleibt. Hermetia formuliert Nutzen als Reflexion, nicht als Garantie.
+              </p>
+            </div>
+            <div className="grid gap-5 md:grid-cols-3">
+              {legalFrames.map((item) => (
+                <article key={item.title} className="card">
+                  <h3 className="text-[21px]">{item.title}</h3>
+                  <p className="muted mt-3 text-[15.5px] leading-relaxed">{item.text}</p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
