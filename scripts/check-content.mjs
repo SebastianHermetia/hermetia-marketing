@@ -89,6 +89,7 @@ const dailyImpulses = readOut("de/tagesimpulse");
 const pricing = readOut("de/preise");
 const enPricing = readOut("en/preise");
 const services = readOut("de/leistungen");
+const enServices = readOut("en/leistungen");
 const systemsHub = readOut("de/systeme");
 const method = readOut("de/so-entsteht-dein-profil");
 const knowledgeHub = readOut("de/wissen");
@@ -318,6 +319,8 @@ const checks = [
   ["Services page has offer blocks", services.includes("Leistungsbereiche") && services.includes("Vom ersten Profil bis zur bezahlten Tiefe")],
   ["Services page has depth table", services.includes("Wertlogik") && services.includes("Welche Tiefe entsteht in welchem Schritt")],
   ["Services page has legal limits block", services.includes("Rechtliche und redaktionelle Leitplanken") && services.includes("keine übernommenen proprietären Deutungstexte")],
+  ["EN services page has localized longform sections", enServices.includes("Feature areas") && enServices.includes("From the first profile to paid depth") && enServices.includes("Legal and editorial guardrails")],
+  ["EN services page has no German core service headings", !enServices.includes("Leistungsbereiche") && !enServices.includes("Wertlogik") && !enServices.includes("Rechtliche und redaktionelle Leitplanken")],
   ["Services page has FAQ schema", services.includes("FAQPage") && services.includes("Häufige Fragen zu Hermetia Leistungen")],
   ["Services page has expanded tracked CTAs", services.includes("utm_content=services-hero") && services.includes("utm_content=services-depth-table") && services.includes("utm_content=services-legal-cta")],
   ["Hub CTAs are source tagged", services.includes("utm_content=services-final") && systemsHub.includes("utm_content=systems-final") && method.includes("utm_content=method-final") && faqPage.includes("utm_content=faq-final")],
