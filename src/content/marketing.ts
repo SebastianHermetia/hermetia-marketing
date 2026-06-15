@@ -313,27 +313,54 @@ const dePages = {
       {
         title: "Warum ein Buch mehr ist als eine Ergebnisansicht",
         body:
-          "Eine Ergebnisansicht ist schnell, ein Buch erlaubt Tiefe. Das Hermetia-Vollprofil soll deine wichtigsten Themen nicht nur anzeigen, sondern in eine lesbare Dramaturgie bringen: Wesenskern, Gaben, Schatten, Beziehungsmuster, Berufung, Rhythmus, Seelenweg und praktische Reflexionsfragen. Dadurch entsteht ein Dokument, das man nicht hektisch konsumiert, sondern in Etappen liest. Genau hier liegt ein zentraler Premium-Wert.",
+          "Eine Ergebnisansicht ist schnell, ein Buch erlaubt Tiefe. Das Hermetia-Vollprofil soll deine wichtigsten Themen nicht nur anzeigen, sondern in eine lesbare Dramaturgie bringen: Wesenskern, Gaben, Schatten, Beziehungsmuster, Berufung, Rhythmus, Seelenweg und praktische Reflexionsfragen. Dadurch entsteht ein Dokument, das man nicht hektisch konsumiert, sondern in Etappen liest. Genau hier liegt ein zentraler Premium-Wert: Das Buch verwandelt einen ersten Profilmoment in eine Ressource, zu der Nutzer zurückkehren können.",
       },
       {
         title: "Wie das Vollprofil aus der Konvergenz entsteht",
         body:
-          "Das Buch sollte nicht einfach alle Systeme nacheinander abdrucken. Hermetia verdichtet zuerst, welche Themen wirklich tragen, welche nur Nebenmotive sind und welche Spannungsfelder sich zeigen. Erst danach entsteht die Kapitelstruktur. Dadurch wird das Profil ruhiger und relevanter: Nutzer lesen nicht eine Sammlung einzelner Deutungsschnipsel, sondern eine begründete Synthese ihrer Seelenkarte.",
+          "Das Buch sollte nicht einfach alle Systeme nacheinander abdrucken. Hermetia verdichtet zuerst, welche Themen wirklich tragen, welche nur Nebenmotive sind und welche Spannungsfelder sich zeigen. Erst danach entsteht die Kapitelstruktur. Dadurch wird das Profil ruhiger und relevanter: Nutzer lesen nicht eine Sammlung einzelner Deutungsschnipsel, sondern eine begründete Synthese ihrer Seelenkarte. Jedes Kapitel sollte zeigen, welche Systemfamilien ein Motiv stützen und wo Hermetia bewusst vorsichtig bleibt.",
       },
       {
         title: "Kapitel, die Nutzer wirklich erwarten",
         body:
-          "Ein gutes Vollprofil braucht Orientierung. Sinnvoll sind Kapitel zu Kernthemen, Gaben, Schatten und Wachstum, Entscheidung und Energie, Beziehung, Arbeit und Berufung, Rhythmus, Timing, persönliche Fragen und nächste Schritte. Jedes Kapitel sollte erklären, welche Systeme die Aussage tragen, wo Unsicherheit besteht und wie der Nutzer damit reflektieren kann. Das macht die Auswertung wertvoller und rechtlich sauberer als absolute Behauptungen.",
+          "Ein gutes Vollprofil braucht Orientierung. Sinnvoll sind Kapitel zu Kernthemen, Gaben, Schatten und Wachstum, Entscheidung und Energie, Beziehung, Arbeit und Berufung, Rhythmus, Timing, persönliche Fragen und nächste Schritte. Jedes Kapitel sollte erklären, welche Systeme die Aussage tragen, wo Unsicherheit besteht und wie der Nutzer damit reflektieren kann. Das macht die Auswertung wertvoller und rechtlich sauberer als absolute Behauptungen. Besonders wichtig sind Kapitelzusammenfassungen, damit Nutzer nach dem Lesen nicht verloren gehen, sondern konkrete Reflexionsfragen behalten.",
+      },
+      {
+        title: "Leseerlebnis, Export und Wiederlesen",
+        body:
+          "Das Vollprofil-Buch sollte sich nicht wie ein technischer Report anfühlen. Es braucht Kapitel, Zwischenübersichten, kleine Reflexionsfragen, visuelle Marker und einen ruhigen Lesefluss. Gleichzeitig ist Export ein Vertrauenssignal: Wer für Tiefe bezahlt, möchte Inhalte später wiederfinden, speichern oder in Etappen lesen können. Ob als PDF, buchartiger Lesemodus oder exportierbare Zusammenfassung: Der Wert liegt darin, dass die Seelenkarte dauerhaft zugänglich und wiederlesbar wird.",
+      },
+      {
+        title: "Beispielkapitel nur fiktiv und transparent",
+        body:
+          "Für Marketing und Produktdemo sind Beispielkapitel sinnvoll, aber sie müssen klar fiktiv sein. Hermetia sollte keine echten Nutzerprofile ohne Einwilligung zeigen und keine geschützten Deutungstexte anderer Systeme übernehmen. Gute Beispiele zeigen Struktur, Ton und Grenzen: So könnte ein Kapitel klingen, so wird ein Kernthema erklärt, so bleibt eine Aussage offen genug für Selbstreflexion. Das schützt rechtlich und macht das Produkt greifbarer.",
+      },
+      {
+        title: "Wie das Buch mit Journaling und Companion zusammenhängt",
+        body:
+          "Das Vollprofil-Buch ist nicht das Ende der Reise. Es kann die Grundlage für Journaling, Tagesimpulse und den Companion werden. Nutzer lesen ein Kapitel, markieren Resonanz, schreiben eigene Beobachtungen und stellen später Fragen an den Companion. Dadurch entsteht ein Ökosystem: Das Buch gibt Tiefe, Journaling erdet sie im Alltag, Tagesimpulse halten Themen lebendig und der Companion erklärt Zusammenhänge bei Bedarf.",
       },
       {
         title: "Bezahlte Tiefe ohne Druck",
         body:
-          "Das Vollprofil-Buch ist ein natürlicher Grund für ein bezahltes Modell, aber es darf nicht mit Angst verkauft werden. Die Website sollte klar machen: Der kostenlose Einstieg zeigt Resonanz. Das Buch lohnt sich, wenn jemand tiefer lesen, Zusammenhänge verstehen und seine Themen langfristig begleiten möchte. Keine künstliche Dringlichkeit, keine Schicksalsversprechen, keine Heilsprache. Der Kaufgrund ist Tiefe, nicht Druck.",
+          "Das Vollprofil-Buch ist ein natürlicher Grund für ein bezahltes Modell, aber es darf nicht mit Angst verkauft werden. Die Website sollte klar machen: Der kostenlose Einstieg zeigt Resonanz. Das Buch lohnt sich, wenn jemand tiefer lesen, Zusammenhänge verstehen und seine Themen langfristig begleiten möchte. Keine künstliche Dringlichkeit, keine Schicksalsversprechen, keine Heilsprache. Der Kaufgrund ist Tiefe, nicht Druck. Genau diese Fairness macht die Conversion stärker, weil Nutzer den Wert nachvollziehen können.",
       },
       {
         title: "Rechtliche und redaktionelle Leitplanken",
         body:
-          "Das Vollprofil darf keine fremden Deutungstexte, keine geschützten Fragebogenitems und keine therapeutischen Versprechen enthalten. AI kann helfen, berechnete und kuratierte Informationen lesbar zu formulieren, darf aber nicht als unfehlbare Autorität auftreten. Beispiele müssen fiktiv sein. Aussagen über Gesundheit, Beziehung und psychische Belastung brauchen vorsichtige Sprache und klare Grenzen.",
+          "Das Vollprofil darf keine fremden Deutungstexte, keine geschützten Fragebogenitems und keine therapeutischen Versprechen enthalten. AI kann helfen, berechnete und kuratierte Informationen lesbar zu formulieren, darf aber nicht als unfehlbare Autorität auftreten. Beispiele müssen fiktiv sein. Aussagen über Gesundheit, Beziehung und psychische Belastung brauchen vorsichtige Sprache und klare Grenzen. Jede Premium-Seite muss deshalb erklären: mehr Text bedeutet mehr Reflexion, nicht mehr Wahrheit über einen Menschen.",
+      },
+    ],
+    graphics: [
+      {
+        src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
+        alt: "Algorithmus-Funnel als Grundlage des Hermetia Vollprofil-Buchs",
+        caption: "Das Vollprofil-Buch entsteht erst nach Berechnung, Themenübersetzung, Systemfamilien und Konvergenz. Es ist keine lose Sammlung einzelner Systemtexte.",
+      },
+      {
+        src: "/graphics/convergence/abb10-verankert-und-fein.svg",
+        alt: "Verankert und fein als Prinzip für lesbare Premium-Tiefe",
+        caption: "Gute Premium-Tiefe bleibt zugleich verankert in Daten und fein genug, um persönliche Reflexion statt starre Festlegung zu ermöglichen.",
       },
     ],
     faq: [
@@ -341,6 +368,10 @@ const dePages = {
       { q: "Ist das Buch im kostenlosen Einstieg enthalten?", a: "Der kostenlose Einstieg zeigt die erste Seelenkarte und Kernthemen. Das ausführliche Vollprofil-Buch ist als Premium-Tiefe gedacht." },
       { q: "Schreibt AI das ganze Profil frei?", a: "Nein. AI soll berechnete, kuratierte und konvergenzgeprüfte Informationen lesbar formulieren. Die Grundlage bleibt die Profilberechnung." },
       { q: "Kann ich das Vollprofil als Wahrheit über mich lesen?", a: "Nein. Das Vollprofil ist ein Reflexionsangebot. Es kann Sprache für Muster geben, ersetzt aber keine eigene Entscheidung und keine professionelle Beratung." },
+      { q: "Welche Kapitel sollte ein Vollprofil enthalten?", a: "Sinnvoll sind Kernthemen, Gaben, Schatten, Beziehung, Arbeit, Berufung, Rhythmus, Timing, Reflexionsfragen und nächste Schritte. Die genaue Struktur sollte aus der Konvergenz der Seelenkarte entstehen." },
+      { q: "Kann ich das Vollprofil später wieder öffnen oder exportieren?", a: "Das Produktziel ist ein wiederlesbarer, gut strukturierter Premium-Inhalt. Export oder buchartiger Lesemodus sind wichtige Vertrauens- und Nutzensignale." },
+      { q: "Warum ist das Vollprofil Premium und nicht komplett kostenlos?", a: "Weil lange, strukturierte, geprüfte Profiltexte, AI-Formulierung, Sicherheit, Exportlogik und redaktionelle Qualität laufenden Aufwand erzeugen. Der kostenlose Einstieg zeigt zuerst Resonanz." },
+      { q: "Darf Hermetia Beispielprofile zeigen?", a: "Ja, wenn sie fiktiv, klar gekennzeichnet und rechtlich sauber formuliert sind. Echte Nutzerprofile brauchen ausdrückliche Einwilligung." },
     ],
     ctaTitle: "Erst die Seelenkarte öffnen, dann entscheiden, ob du Tiefe willst.",
     ctaText: "Starte kostenlos und prüfe, ob dein Profil genug Resonanz für das Vollprofil-Buch erzeugt.",
