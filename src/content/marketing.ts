@@ -394,27 +394,59 @@ const dePages = {
       {
         title: "Was ein Companion leisten soll",
         body:
-          "Viele Nutzer verstehen ihr Profil nicht in einem einzigen Durchgang. Sie lesen einen Satz, spüren Resonanz und haben danach Fragen. Der Companion soll genau dort helfen: Was bedeutet dieses Kernthema? Warum taucht es in mehreren Systemen auf? Welche Journaling-Frage passt dazu? Die Antwort soll warm und verständlich sein, aber nicht so tun, als hätte die AI eine höhere Wahrheit über den Menschen.",
+          "Viele Nutzer verstehen ihr Profil nicht in einem einzigen Durchgang. Sie lesen einen Satz, spüren Resonanz und haben danach Fragen. Der Companion soll genau dort helfen: Was bedeutet dieses Kernthema? Warum taucht es in mehreren Systemen auf? Welche Journaling-Frage passt dazu? Die Antwort soll warm und verständlich sein, aber nicht so tun, als hätte die AI eine höhere Wahrheit über den Menschen. Der Companion ist damit kein Ersatz für das eigene Spüren, sondern ein Übersetzer zwischen Profil, Methode und Alltag.",
       },
       {
         title: "Berechnungsbasiert statt freier Spekulation",
         body:
-          "Der Companion darf nicht einfach mystisch improvisieren. Seine Stärke entsteht, wenn er auf berechneten Profilfakten, Konvergenzsignalen, freigegebenen Notizen und klaren Produktgrenzen arbeitet. Nutzer sollen nachvollziehen können, ob eine Antwort aus Astrologie, Human Design, Numerologie, Fragebogenwerten, Journaling oder allgemeinen Reflexionsfragen abgeleitet wurde. Dadurch bleibt das Erlebnis persönlicher, ohne beliebig zu werden.",
+          "Der Companion darf nicht einfach mystisch improvisieren. Seine Stärke entsteht, wenn er auf berechneten Profilfakten, Konvergenzsignalen, freigegebenen Notizen und klaren Produktgrenzen arbeitet. Nutzer sollen nachvollziehen können, ob eine Antwort aus Astrologie, Human Design, Numerologie, Fragebogenwerten, Journaling oder allgemeinen Reflexionsfragen abgeleitet wurde. Dadurch bleibt das Erlebnis persönlicher, ohne beliebig zu werden. Die AI formuliert, verbindet und erklärt, aber die Profilgrundlage entsteht aus der Hermetia-Berechnung.",
+      },
+      {
+        title: "Antwortlogik: Quelle, Kontext, Frage",
+        body:
+          "Eine gute Companion-Antwort sollte nicht nur schön klingen, sondern ihre Grundlage zeigen. Sinnvoll ist eine klare Antwortlogik: Welche Profilquelle ist relevant? In welchem Kontext fragt der Nutzer? Welche Unsicherheit bleibt? Welche nächste Reflexionsfrage ist hilfreich? Diese Struktur macht den Companion AEO-stark, weil sie direkte Antworten liefert, und zugleich vertrauenswürdig, weil Nutzer sehen, worauf eine Aussage basiert.",
+      },
+      {
+        title: "Transparenz bei AI-Nutzung",
+        body:
+          "Hermetia sollte sichtbar machen, wann AI beteiligt ist und wann nicht. Berechnung, Konvergenz und Systemlogik sind nicht dasselbe wie die spätere Formulierung. Nutzer brauchen deshalb eine einfache Erklärung: Die AI schreibt keine freien Wahrheiten über dich, sondern formuliert aus freigegebenen Profilinformationen, redaktionellen Leitplanken und deiner aktuellen Frage. Diese Trennung schützt vor Überhöhung und macht den Companion rechtlich sauberer.",
+      },
+      {
+        title: "Datenschutz und Datenminimierung im Gespräch",
+        body:
+          "Ein Companion kann schnell sehr persönliche Fragen erhalten. Deshalb muss Datenminimierung auch im Gespräch gelten: Nur relevante Profilteile, nur freigegebene Journalnotizen, klare Zwecke, verständliche Lösch- und Exportwege. Gerade bei sensiblen spirituellen Daten darf die Website nicht nur sagen, dass AI hilfreich ist. Sie muss erklären, wie Hermetia verhindert, dass aus Begleitung eine unnötige Datensammlung wird.",
+      },
+      {
+        title: "Beispielhafte Fragen an den Companion",
+        body:
+          "Gute Marketing-Inhalte sollten zeigen, welche Fragen sinnvoll sind: Warum taucht mein Kernthema in mehreren Systemen auf? Wie kann ich diesen Tagesimpuls journaln? Welche Spannung zwischen Rückzug und Sichtbarkeit zeigt mein Profil? Wie lese ich ein Kapitel aus dem Vollprofil-Buch? Was ist nur Symbolsprache und was beruht auf berechneten Daten? Solche Beispiele machen den Nutzen konkret, ohne echte Nutzerprofile zu verwenden.",
       },
       {
         title: "Orakel-Moment ohne Schicksalsdruck",
         body:
-          "Ein optionaler Orakel- oder Kartenmoment kann inspirierend sein, wenn er sauber gerahmt ist. Hermetia sollte ihn nicht als Vorhersage verkaufen, sondern als Symbolfrage für den Moment: Worauf könnte ich heute achten? Was will gesehen werden? Welche Perspektive hilft mir, ruhiger zu handeln? Der Companion kann solche Motive erklären, aber niemals Druck, Angst oder Abhängigkeit erzeugen.",
+          "Ein optionaler Orakel- oder Kartenmoment kann inspirierend sein, wenn er sauber gerahmt ist. Hermetia sollte ihn nicht als Vorhersage verkaufen, sondern als Symbolfrage für den Moment: Worauf könnte ich heute achten? Was will gesehen werden? Welche Perspektive hilft mir, ruhiger zu handeln? Der Companion kann solche Motive erklären, aber niemals Druck, Angst oder Abhängigkeit erzeugen. Die Grenze lautet: Symbolische Impulse dürfen öffnen, aber nicht bestimmen.",
       },
       {
         title: "Grenzen bei Gesundheit, Beziehung und Entscheidung",
         body:
-          "Der Companion darf keine medizinischen, therapeutischen, rechtlichen oder finanziellen Ratschläge geben. Bei Beziehungsthemen muss er respektvoll bleiben und keine Aussagen über eine zweite Person treffen, wenn deren Einwilligung fehlt. Bei psychischer Belastung sollte er klare Hilfsgrenzen benennen. Genau diese Grenzen gehören auf die Marketing-Website, weil sie Vertrauen schaffen.",
+          "Der Companion darf keine medizinischen, therapeutischen, rechtlichen oder finanziellen Ratschläge geben. Bei Beziehungsthemen muss er respektvoll bleiben und keine Aussagen über eine zweite Person treffen, wenn deren Einwilligung fehlt. Bei psychischer Belastung sollte er klare Hilfsgrenzen benennen. Genau diese Grenzen gehören auf die Marketing-Website, weil sie Vertrauen schaffen. Eine gute Antwort erkennt also auch, wann sie nicht antworten sollte.",
       },
       {
         title: "Warum der Companion Premium-Wert erzeugt",
         body:
-          "Der kostenlose Einstieg zeigt die Seelenkarte. Der Companion wird wertvoll, wenn Nutzer tiefer fragen, Beispiele wünschen, Journaling vertiefen oder lange Profilkapitel verständlich aufschlüsseln möchten. Das ist ein natürlicher Premium-Nutzen: mehr Begleitung, mehr Kontext, mehr Ruhe. Die Website soll diesen Wert erklären, ohne so zu tun, als bräuchte jeder Mensch dauerhaft eine AI-Stimme.",
+          "Der kostenlose Einstieg zeigt die Seelenkarte. Der Companion wird wertvoll, wenn Nutzer tiefer fragen, Beispiele wünschen, Journaling vertiefen oder lange Profilkapitel verständlich aufschlüsseln möchten. Das ist ein natürlicher Premium-Nutzen: mehr Begleitung, mehr Kontext, mehr Ruhe. Die Website soll diesen Wert erklären, ohne so zu tun, als bräuchte jeder Mensch dauerhaft eine AI-Stimme. Premium heißt hier nicht Abhängigkeit, sondern Zugang zu besserem Kontext, längeren Gesprächsverläufen und verantwortungsvoller Qualitätssicherung.",
+      },
+    ],
+    graphics: [
+      {
+        src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
+        alt: "Funnel von Profilberechnung zu Companion-Antworten",
+        caption: "Der Companion antwortet nicht frei aus dem Nichts, sondern auf Basis berechneter Profilfakten, Konvergenz und freigegebener Kontexte.",
+      },
+      {
+        src: "/graphics/convergence/abb7-crosswalk-sankey.svg",
+        alt: "Crosswalk-Grafik für Übersetzung verschiedener Systemsprachen",
+        caption: "AI-Begleitung wird wertvoll, wenn sie unterschiedliche Systemsprachen in verständliche Reflexionsfragen übersetzt.",
       },
     ],
     faq: [
@@ -422,6 +454,10 @@ const dePages = {
       { q: "Kann der Companion mein ganzes Profil sehen?", a: "Er sollte nur die Daten nutzen, die für die jeweilige Antwort nötig und freigegeben sind. Datenminimierung bleibt auch bei AI-Begleitung wichtig." },
       { q: "Ersetzt der Companion Beratung oder Therapie?", a: "Nein. Er bietet Reflexionsfragen und Erklärungen zur Seelenkarte, aber keine medizinische, psychologische, therapeutische, rechtliche oder finanzielle Beratung." },
       { q: "Warum ist der Companion nicht komplett kostenlos?", a: "Persönliche AI-Begleitung, sichere Infrastruktur, Redaktion, Qualitätssicherung und längere Profilkontexte verursachen laufende Kosten. Deshalb kann Tiefe Teil bezahlter Modelle sein." },
+      { q: "Woher weiß der Companion, worauf seine Antwort basiert?", a: "Er sollte Antworten aus berechneten Profilfakten, Konvergenzsignalen, freigegebenen Notizen und der aktuellen Frage ableiten. Die Grundlage muss für Nutzer nachvollziehbar bleiben." },
+      { q: "Kann ich sensible Themen mit dem Companion besprechen?", a: "Du kannst reflektierende Fragen stellen, aber der Companion ersetzt keine professionelle Hilfe. Bei Gesundheit, Krise, Recht, Finanzen oder akuter Belastung braucht es passende Fachstellen." },
+      { q: "Nutzt der Companion meine Journaltexte automatisch?", a: "Journaltexte sollten nur genutzt werden, wenn sie für den Zweck relevant und freigegeben sind. Datenminimierung und Transparenz bleiben zentrale Produktregeln." },
+      { q: "Warum stärkt der Companion bezahlte Modelle?", a: "Weil längere Kontexte, individuellere Antworten, sichere AI-Infrastruktur, Qualitätssicherung und redaktionelle Leitplanken laufenden Aufwand erzeugen." },
     ],
     ctaTitle: "Öffne deine Seelenkarte und stelle später die Fragen, die wirklich zählen.",
     ctaText: "Der Companion wird sinnvoll, sobald dein eigenes Profil die Grundlage bildet.",
