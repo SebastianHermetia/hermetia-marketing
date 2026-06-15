@@ -67,6 +67,7 @@ const frTerms = readOut("fr/agb");
 const withdrawal = readOut("de/widerruf");
 const frWithdrawal = readOut("fr/widerruf");
 const freePremium = readOut("de/kostenlos-vs-premium");
+const enFreePremium = readOut("en/kostenlos-vs-premium");
 const frFreePremium = readOut("fr/kostenlos-vs-premium");
 const privacyPolicy = readOut("de/datenschutz");
 const frPrivacyPolicy = readOut("fr/datenschutz");
@@ -208,6 +209,8 @@ const checks = [
   ["Free vs Premium page has value ladder", freePremium.includes("Werttreppe") && freePremium.includes("Von kostenloser Resonanz zu bezahlter Tiefe")],
   ["Free vs Premium page has premium modules", freePremium.includes("Premium-Module") && freePremium.includes("Wofür bezahlte Modelle konkret stehen")],
   ["Free vs Premium page has fairness rules", freePremium.includes("Ein gutes Upgrade fühlt sich nicht gedrängt an") && freePremium.includes("Angstmarketing")],
+  ["EN Free vs Premium page has localized longform sections", enFreePremium.includes("Test resonance first") && enFreePremium.includes("Value ladder") && enFreePremium.includes("A good upgrade does not feel forced")],
+  ["EN Free vs Premium page has no German core headings", !enFreePremium.includes("Werttreppe") && !enFreePremium.includes("Entscheidungshilfe") && !enFreePremium.includes("Ein gutes Upgrade fühlt sich nicht gedrängt an")],
   ["Free vs Premium page has graphic", freePremium.includes("/graphics/convergence/abb10-verankert-und-fein.svg")],
   ["Free vs Premium page has expanded FAQ and tracked CTAs", freePremium.includes("Woran erkenne ich, dass Premium zu früh wäre") && freePremium.includes("Welche Premium-Funktion liefert den meisten Wert") && freePremium.includes("utm_content=free-premium-hero") && freePremium.includes("utm_content=free-premium-final")],
   ["Free vs Premium page is linked in footer", deHome.includes("/de/kostenlos-vs-premium/")],

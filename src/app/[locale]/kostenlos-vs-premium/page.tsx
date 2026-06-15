@@ -118,20 +118,214 @@ const faq = [
   },
 ];
 
+const freePremiumCopy = {
+  de: {
+    seoTitle: "Hermetia kostenlos vs Premium — wann sich bezahlte Tiefe lohnt",
+    seoDescription:
+      "Was du kostenlos bei Hermetia bekommst, wann Premium sinnvoll ist und wann du bewusst nicht upgraden solltest. Klare Entscheidungshilfe mit FAQ.",
+    articleHeadline: "Hermetia kostenlos vs Premium",
+    articleDescription: "Klare Entscheidungshilfe für kostenlosen Einstieg und bezahlte Tiefe.",
+    breadcrumb: "Kostenlos vs Premium",
+    heroKicker: "Kostenlos vs Premium",
+    heroTitle: "Erst Resonanz prüfen. Dann bewusst Tiefe wählen.",
+    heroLead:
+      "Hermetia soll nicht über Druck verkaufen. Der kostenlose Einstieg zeigt dir, ob deine Seelenkarte, die Sprache und die Methode stimmig wirken. Premium wird erst dann sinnvoll, wenn du mehr Tiefe, Alltag und Beziehungsebene wirklich nutzen möchtest.",
+    startCta: "Kostenlos starten",
+    pricingCta: "Tarife ansehen",
+    heroAlt: "Abstrakte Ebenen als Bild für kostenlosen Einstieg und Premium-Tiefe bei Hermetia",
+    heroCaption: "Kostenlos zeigt den ersten Zusammenhang. Premium öffnet die fortlaufende Arbeit mit den Ebenen.",
+    freeChip: "Kostenlos",
+    freeTitle: "Was du ohne Zahlung prüfen kannst",
+    freeText:
+      "Der kostenlose Einstieg ist nicht als Köder gedacht, sondern als Vertrauensprobe: Passt die Sprache? Fühlt sich die Seelenkarte stimmig an? Sind Methode und Datenschutz nachvollziehbar?",
+    premiumChip: "Premium",
+    premiumTitle: "Was bezahlte Tiefe sinnvoll macht",
+    premiumText:
+      "Premium ist für Nutzer gedacht, die aus einem einmaligen Aha-Moment eine fortlaufende Reflexionspraxis machen möchten: lesen, beobachten, journaln, vertiefen.",
+    valueKicker: "Werttreppe",
+    valueTitle: "Von kostenloser Resonanz zu bezahlter Tiefe.",
+    valueText:
+      "Die Preislogik von Hermetia soll nicht als harte Paywall wirken. Sie soll erklären, welche Art von Wert in welchem Nutzungsmoment entsteht und wann ein Upgrade wirklich Sinn ergibt.",
+    decisionKicker: "Entscheidungshilfe",
+    decisionTitle: "Nicht jeder sollte sofort upgraden.",
+    decisionText:
+      "Gute Conversion heißt bei Hermetia nicht, möglichst schnell Druck aufzubauen. Gute Conversion heißt: Nutzer verstehen, welcher Schritt wirklich passt.",
+    modulesKicker: "Premium-Module",
+    modulesTitle: "Wofür bezahlte Modelle konkret stehen.",
+    modulesText:
+      "Premium ist kein einzelnes Geheimkapitel. Es bündelt die Funktionen, die über Zeit echten Nutzen erzeugen: mehr Kontext, mehr Wiederholung, mehr Sicherheit und mehr persönliche Begleitung.",
+    moduleAlt: "Grafik für verankerte und feine Premium-Tiefe bei Hermetia",
+    moduleCaption: "Bezahlte Tiefe soll verankert in Daten und zugleich fein genug für persönliche Reflexion bleiben.",
+    fairnessKicker: "Fairness",
+    fairnessTitle: "Ein gutes Upgrade fühlt sich nicht gedrängt an.",
+    fairnessText:
+      "Hermetia soll wachsen, aber nicht über Angstmarketing. Gerade weil spirituelle Profile sensibel sind, muss die Kaufentscheidung ruhig, transparent und widerrufbar bleiben.",
+    approvalsCta: "Rechtliche Freigaben ansehen",
+    nextKicker: "Nächster Schritt",
+    nextTitle: "Beginne dort, wo Vertrauen entsteht: kostenlos.",
+    nextText:
+      "Öffne zuerst deine Seelenkarte. Wenn die ersten Themen Resonanz haben, kannst du die Tarife vergleichen und bewusst entscheiden, ob Premium zu deiner Nutzung passt.",
+    useCasesCta: "Anwendungsfälle lesen",
+    fairnessRuleTitle: "Fairness-Regel",
+    fairnessRuleText:
+      "Premium sollte sich wie eine bewusste Vertiefung anfühlen, nicht wie eine Angstreaktion. Deshalb benennt Hermetia Grenzen, Kündigung, Widerruf und Datenschutz sichtbar.",
+    faqKicker: "FAQ",
+    faqTitle: "Häufige Fragen zu kostenlos und Premium",
+    freeItems,
+    premiumItems,
+    decisionSignals,
+    valueLadder,
+    premiumModules,
+    fairnessRules,
+    faq,
+  },
+  en: {
+    seoTitle: "Hermetia free vs Premium — when paid depth is worth it",
+    seoDescription:
+      "What you get for free in Hermetia, when Premium makes sense and when you should deliberately wait. Clear decision help with FAQ.",
+    articleHeadline: "Hermetia free vs Premium",
+    articleDescription: "Clear decision help for the free start and paid depth.",
+    breadcrumb: "Free vs Premium",
+    heroKicker: "Free vs Premium",
+    heroTitle: "Test resonance first. Then choose depth consciously.",
+    heroLead:
+      "Hermetia should not sell through pressure. The free start shows whether your soul map, the language and the method feel coherent. Premium becomes useful only when you truly want more depth, daily practice and relationship layers.",
+    startCta: "Start free",
+    pricingCta: "View plans",
+    heroAlt: "Abstract layers as an image for Hermetia's free start and Premium depth",
+    heroCaption: "Free shows the first connection. Premium opens ongoing work with the levels.",
+    freeChip: "Free",
+    freeTitle: "What you can test without paying",
+    freeText:
+      "The free start is not meant as bait, but as a trust test: does the language fit, does the soul map resonate, and are method and data protection understandable?",
+    premiumChip: "Premium",
+    premiumTitle: "What makes paid depth meaningful",
+    premiumText:
+      "Premium is for users who want to turn a single aha moment into an ongoing reflection practice: reading, observing, journaling and going deeper.",
+    valueKicker: "Value ladder",
+    valueTitle: "From free resonance to paid depth.",
+    valueText:
+      "Hermetia's pricing logic should not feel like a hard paywall. It should explain what kind of value emerges at which moment of use and when an upgrade genuinely makes sense.",
+    decisionKicker: "Decision help",
+    decisionTitle: "Not everyone should upgrade immediately.",
+    decisionText:
+      "Good conversion in Hermetia does not mean creating pressure as quickly as possible. It means helping users understand which step truly fits.",
+    modulesKicker: "Premium modules",
+    modulesTitle: "What paid models stand for in practice.",
+    modulesText:
+      "Premium is not a single secret chapter. It bundles the functions that create value over time: more context, more repetition, more safety and more personal guidance.",
+    moduleAlt: "Graphic for grounded and subtle Premium depth in Hermetia",
+    moduleCaption: "Paid depth should remain grounded in data and subtle enough for personal reflection.",
+    fairnessKicker: "Fairness",
+    fairnessTitle: "A good upgrade does not feel forced.",
+    fairnessText:
+      "Hermetia should grow, but not through fear marketing. Precisely because spiritual profiles are sensitive, the purchase decision must remain calm, transparent and withdrawable.",
+    approvalsCta: "View legal approvals",
+    nextKicker: "Next step",
+    nextTitle: "Begin where trust starts: free.",
+    nextText:
+      "Open your soul map first. If the first themes resonate, you can compare plans and consciously decide whether Premium fits your use.",
+    useCasesCta: "Read use cases",
+    fairnessRuleTitle: "Fairness rule",
+    fairnessRuleText:
+      "Premium should feel like conscious deepening, not a fear response. That is why Hermetia makes limits, cancellation, withdrawal and data protection visible.",
+    faqKicker: "FAQ",
+    faqTitle: "Frequently asked questions about Free and Premium",
+    freeItems: [
+      "soul map as the first aha moment",
+      "first core themes and basic resonance",
+      "no credit card at the start",
+      "a feel for language, method and data protection",
+      "a decision on whether Hermetia fits at all",
+    ],
+    premiumItems: [
+      "all levels of your soul map",
+      "daily impulses and journaling",
+      "your profile as a designed book/PDF",
+      "relationship and compatibility profiles",
+      "multiple profiles, reviews and deeper modules",
+    ],
+    decisionSignals: [
+      {
+        title: "Free is enough if...",
+        text: "you first want to check whether Hermetia's language touches you, whether the soul map resonates and whether you build trust in the method, data protection and limits.",
+      },
+      {
+        title: "Premium is worth it if...",
+        text: "you want to work with your profile regularly: read levels, use daily impulses, deepen journaling or consciously reflect on relationship patterns.",
+      },
+      {
+        title: "Waiting is right if...",
+        text: "you are currently looking for a diagnosis, therapy, acute crisis support or a guaranteed decision. Hermetia is not designed for that.",
+      },
+    ],
+    valueLadder: [
+      { step: "1", title: "Test resonance", text: "The free start answers the first question: do I recognize myself in the language, method and soul map at all?" },
+      { step: "2", title: "Open depth", text: "Premium becomes useful when users want more levels, longer chapters, system references and a rereadable profile structure." },
+      { step: "3", title: "Support daily life", text: "Daily impulses, journaling, reviews and Companion turn a profile into an ongoing reflection practice." },
+      { step: "4", title: "Relationships and history", text: "Relationship profiles, profile refinement and longer histories need consent, safety, calculation logic and more context." },
+    ],
+    premiumModules: [
+      { title: "Full profile book", text: "For users who want to read, reread and use their soul map as a long-term resource." },
+      { title: "Daily impulses and journaling", text: "For people who do not only want a result, but want to work with questions, observations and reviews in everyday life." },
+      { title: "Companion", text: "For follow-up questions about the soul map, core themes, chapters, daily impulses or journaling, with clear AI transparency." },
+      { title: "Relationship profiles", text: "For conscious relationship readings with consent, resonance, friction, conversation prompts and data protection logic." },
+    ],
+    fairnessRules: [
+      "Premium must not be sold through fear, destiny pressure or artificial scarcity.",
+      "Free must show enough for users to test resonance, data protection feeling and tone.",
+      "An upgrade makes sense when use develops over time: reading, journaling, asking, refining and returning.",
+      "Legal texts, withdrawal, cancellation, data protection and AI limits must remain understandable before purchase.",
+    ],
+    faq: [
+      {
+        q: "Can I really start Hermetia for free?",
+        a: "Yes. The entry is designed without a credit card. You see your soul map and first core themes before deciding whether a paid model makes sense.",
+      },
+      {
+        q: "Why is there a Premium model at all?",
+        a: "Deep readings, daily guidance, journaling, relationship readings, security, infrastructure and editorial quality need ongoing development. Premium funds that depth.",
+      },
+      {
+        q: "When should I not upgrade?",
+        a: "If you would upgrade only from fear, pressure or a wish for guaranteed predictions. Hermetia should not create FOMO, but support conscious reflection.",
+      },
+      {
+        q: "Can I cancel later?",
+        a: "Yes. Running subscriptions should be transparently cancellable. The website also links to terms, withdrawal information and legal approvals before final launch.",
+      },
+      {
+        q: "How do I know Premium would be too early?",
+        a: "If you do not feel resonance yet, would upgrade only from fear or are looking for diagnosis, therapy or a guaranteed decision. Then waiting is wiser.",
+      },
+      {
+        q: "Which Premium function creates the most value?",
+        a: "It depends on use. Readers benefit from the full profile book, daily users from impulses and journaling, question-driven users from Companion and relationship-focused users from consent-based relationship readings.",
+      },
+      {
+        q: "Why is the free start important for trust?",
+        a: "Because Hermetia works with sensitive profile themes. Users should experience language, limits, data protection and first core themes before choosing paid depth.",
+      },
+    ],
+  },
+} as const;
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
+  const copy = locale === "en" ? freePremiumCopy.en : freePremiumCopy.de;
   return buildMetadata({
     locale: locale as Locale,
     path: paths.freePremium,
-    title: "Hermetia kostenlos vs Premium — wann sich bezahlte Tiefe lohnt",
-    description:
-      "Was du kostenlos bei Hermetia bekommst, wann Premium sinnvoll ist und wann du bewusst nicht upgraden solltest. Klare Entscheidungshilfe mit FAQ.",
+    title: copy.seoTitle,
+    description: copy.seoDescription,
   });
 }
 
 export default async function FreePremiumPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  const copy = locale === "en" ? freePremiumCopy.en : freePremiumCopy.de;
+  const localizedFaq = copy.faq.map(({ q, a }) => ({ q, a }));
   const pageUrl = `${siteUrl}/${locale}${paths.freePremium}/`;
 
   return (
@@ -139,17 +333,17 @@ export default async function FreePremiumPage({ params }: { params: Promise<{ lo
       <JsonLd
         data={[
           articleSchema({
-            headline: "Hermetia kostenlos vs Premium",
-            description: "Klare Entscheidungshilfe für kostenlosen Einstieg und bezahlte Tiefe.",
+            headline: copy.articleHeadline,
+            description: copy.articleDescription,
             locale,
             url: pageUrl,
             about: "Hermetia Preise und Premium-Modell",
             image: `${siteUrl}/images/hermetia/celestial-layer-orbits.png`,
           }),
-          faqSchema(faq),
+          faqSchema(localizedFaq),
           breadcrumbSchema([
             { name: "Hermetia", url: `${siteUrl}/${locale}/` },
-            { name: "Kostenlos vs Premium", url: pageUrl },
+            { name: copy.breadcrumb, url: pageUrl },
           ]),
         ]}
       />
@@ -158,20 +352,18 @@ export default async function FreePremiumPage({ params }: { params: Promise<{ lo
         <section className="pb-10 pt-16">
           <div className="wrap grid items-center gap-10 lg:grid-cols-[1fr_.95fr]">
             <div>
-              <span className="kicker">Kostenlos vs Premium</span>
-              <h1 className="mt-3 text-[clamp(34px,5.5vw,54px)] leading-[1.08]">Erst Resonanz prüfen. Dann bewusst Tiefe wählen.</h1>
-              <p className="lead mt-5 max-w-[720px]">
-                Hermetia soll nicht über Druck verkaufen. Der kostenlose Einstieg zeigt dir, ob deine Seelenkarte, die Sprache und die Methode stimmig wirken. Premium wird erst dann sinnvoll, wenn du mehr Tiefe, Alltag und Beziehungsebene wirklich nutzen möchtest.
-              </p>
+              <span className="kicker">{copy.heroKicker}</span>
+              <h1 className="mt-3 text-[clamp(34px,5.5vw,54px)] leading-[1.08]">{copy.heroTitle}</h1>
+              <p className="lead mt-5 max-w-[720px]">{copy.heroLead}</p>
               <div className="mt-7 flex flex-wrap gap-3">
-                <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "free-premium-hero" })}>Kostenlos starten</a>
-                <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.preise)}>Tarife ansehen</a>
+                <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "free-premium-hero" })}>{copy.startCta}</a>
+                <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.preise)}>{copy.pricingCta}</a>
               </div>
             </div>
             <figure className="m-0 overflow-hidden rounded-card border border-sand bg-white shadow-soft">
-              <img src="/images/hermetia/celestial-layer-orbits.png" alt="Abstrakte Ebenen als Bild für kostenlosen Einstieg und Premium-Tiefe bei Hermetia" className="aspect-[4/3] w-full object-cover" />
+              <img src="/images/hermetia/celestial-layer-orbits.png" alt={copy.heroAlt} className="aspect-[4/3] w-full object-cover" />
               <figcaption className="px-5 py-4 text-[14px] text-pflaume/80">
-                Kostenlos zeigt den ersten Zusammenhang. Premium öffnet die fortlaufende Arbeit mit den Ebenen.
+                {copy.heroCaption}
               </figcaption>
             </figure>
           </div>
@@ -180,23 +372,19 @@ export default async function FreePremiumPage({ params }: { params: Promise<{ lo
         <section className="bg-creme-tief py-16">
           <div className="wrap grid gap-6 lg:grid-cols-2">
             <div className="rounded-card border border-sand bg-white p-7 shadow-soft">
-              <span className="chip">Kostenlos</span>
-              <h2 className="mt-4 text-[clamp(26px,3.5vw,34px)]">Was du ohne Zahlung prüfen kannst</h2>
-              <p className="muted mt-3 text-[16px] leading-relaxed">
-                Der kostenlose Einstieg ist nicht als Köder gedacht, sondern als Vertrauensprobe: Passt die Sprache? Fühlt sich die Seelenkarte stimmig an? Sind Methode und Datenschutz nachvollziehbar?
-              </p>
+              <span className="chip">{copy.freeChip}</span>
+              <h2 className="mt-4 text-[clamp(26px,3.5vw,34px)]">{copy.freeTitle}</h2>
+              <p className="muted mt-3 text-[16px] leading-relaxed">{copy.freeText}</p>
               <ul className="mt-5 flex list-none flex-col gap-3 text-[15.5px] leading-relaxed text-pflaume/90">
-                {freeItems.map((item) => <li key={item}>✓ {item}</li>)}
+                {copy.freeItems.map((item) => <li key={item}>✓ {item}</li>)}
               </ul>
             </div>
             <div className="rounded-card border-2 border-gold bg-white p-7 shadow-soft">
-              <span className="chip chip-gold">Premium</span>
-              <h2 className="mt-4 text-[clamp(26px,3.5vw,34px)]">Was bezahlte Tiefe sinnvoll macht</h2>
-              <p className="muted mt-3 text-[16px] leading-relaxed">
-                Premium ist für Nutzer gedacht, die aus einem einmaligen Aha-Moment eine fortlaufende Reflexionspraxis machen möchten: lesen, beobachten, journaln, vertiefen.
-              </p>
+              <span className="chip chip-gold">{copy.premiumChip}</span>
+              <h2 className="mt-4 text-[clamp(26px,3.5vw,34px)]">{copy.premiumTitle}</h2>
+              <p className="muted mt-3 text-[16px] leading-relaxed">{copy.premiumText}</p>
               <ul className="mt-5 flex list-none flex-col gap-3 text-[15.5px] leading-relaxed text-pflaume/90">
-                {premiumItems.map((item) => <li key={item}>✓ {item}</li>)}
+                {copy.premiumItems.map((item) => <li key={item}>✓ {item}</li>)}
               </ul>
             </div>
           </div>
@@ -205,14 +393,12 @@ export default async function FreePremiumPage({ params }: { params: Promise<{ lo
         <section className="py-16">
           <div className="wrap">
             <div className="mb-9 max-w-[820px]">
-              <span className="kicker">Werttreppe</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Von kostenloser Resonanz zu bezahlter Tiefe.</h2>
-              <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Die Preislogik von Hermetia soll nicht als harte Paywall wirken. Sie soll erklären, welche Art von Wert in welchem Nutzungsmoment entsteht und wann ein Upgrade wirklich Sinn ergibt.
-              </p>
+              <span className="kicker">{copy.valueKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.valueTitle}</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">{copy.valueText}</p>
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-              {valueLadder.map((item) => (
+              {copy.valueLadder.map((item) => (
                 <article key={item.title} className="rounded-card border border-sand bg-white p-6 shadow-soft">
                   <span className="flex h-10 w-10 items-center justify-center rounded-full bg-aubergine text-[15px] font-bold text-white">{item.step}</span>
                   <h3 className="mt-5 text-[21px]">{item.title}</h3>
@@ -226,14 +412,12 @@ export default async function FreePremiumPage({ params }: { params: Promise<{ lo
         <section className="py-16">
           <div className="wrap">
             <div className="mb-8 max-w-[760px]">
-              <span className="kicker">Entscheidungshilfe</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Nicht jeder sollte sofort upgraden.</h2>
-              <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Gute Conversion heißt bei Hermetia nicht, möglichst schnell Druck aufzubauen. Gute Conversion heißt: Nutzer verstehen, welcher Schritt wirklich passt.
-              </p>
+              <span className="kicker">{copy.decisionKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.decisionTitle}</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">{copy.decisionText}</p>
             </div>
             <div className="grid gap-5 md:grid-cols-3">
-              {decisionSignals.map((item) => (
+              {copy.decisionSignals.map((item) => (
                 <article key={item.title} className="card">
                   <h3 className="text-[22px]">{item.title}</h3>
                   <p className="muted mt-3 text-[15px] leading-relaxed">{item.text}</p>
@@ -246,13 +430,11 @@ export default async function FreePremiumPage({ params }: { params: Promise<{ lo
         <section className="bg-creme-tief py-16">
           <div className="wrap grid gap-8 lg:grid-cols-[1fr_.95fr]">
             <div>
-              <span className="kicker">Premium-Module</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Wofür bezahlte Modelle konkret stehen.</h2>
-              <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Premium ist kein einzelnes Geheimkapitel. Es bündelt die Funktionen, die über Zeit echten Nutzen erzeugen: mehr Kontext, mehr Wiederholung, mehr Sicherheit und mehr persönliche Begleitung.
-              </p>
+              <span className="kicker">{copy.modulesKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.modulesTitle}</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">{copy.modulesText}</p>
               <div className="mt-6 grid gap-4 md:grid-cols-2">
-                {premiumModules.map((item) => (
+                {copy.premiumModules.map((item) => (
                   <article key={item.title} className="rounded-card border border-sand bg-white p-5 shadow-soft">
                     <h3 className="text-[20px]">{item.title}</h3>
                     <p className="muted mt-2 text-[15px] leading-relaxed">{item.text}</p>
@@ -261,9 +443,9 @@ export default async function FreePremiumPage({ params }: { params: Promise<{ lo
               </div>
             </div>
             <figure className="m-0 rounded-card border border-sand bg-white p-4 shadow-soft">
-              <img src="/graphics/convergence/abb10-verankert-und-fein.svg" alt="Grafik für verankerte und feine Premium-Tiefe bei Hermetia" className="w-full rounded-[6px]" loading="lazy" />
+              <img src="/graphics/convergence/abb10-verankert-und-fein.svg" alt={copy.moduleAlt} className="w-full rounded-[6px]" loading="lazy" />
               <figcaption className="muted mt-3 text-[14px] leading-relaxed">
-                Bezahlte Tiefe soll verankert in Daten und zugleich fein genug für persönliche Reflexion bleiben.
+                {copy.moduleCaption}
               </figcaption>
             </figure>
           </div>
@@ -272,16 +454,14 @@ export default async function FreePremiumPage({ params }: { params: Promise<{ lo
         <section className="py-16">
           <div className="wrap grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
             <div>
-              <span className="kicker">Fairness</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Ein gutes Upgrade fühlt sich nicht gedrängt an.</h2>
-              <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Hermetia soll wachsen, aber nicht über Angstmarketing. Gerade weil spirituelle Profile sensibel sind, muss die Kaufentscheidung ruhig, transparent und widerrufbar bleiben.
-              </p>
-              <a className="btn btn-ghost mt-6" href={localePath(locale, paths.freigaben)}>Rechtliche Freigaben ansehen</a>
+              <span className="kicker">{copy.fairnessKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.fairnessTitle}</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">{copy.fairnessText}</p>
+              <a className="btn btn-ghost mt-6" href={localePath(locale, paths.freigaben)}>{copy.approvalsCta}</a>
             </div>
             <div className="rounded-card border border-sand bg-white p-7 shadow-soft">
               <ul className="flex list-none flex-col gap-3 text-[15.5px] leading-relaxed text-pflaume/90">
-                {fairnessRules.map((item) => <li key={item}>✓ {item}</li>)}
+                {copy.fairnessRules.map((item) => <li key={item}>✓ {item}</li>)}
               </ul>
             </div>
           </div>
@@ -290,20 +470,18 @@ export default async function FreePremiumPage({ params }: { params: Promise<{ lo
         <section className="bg-aubergine py-16 text-white">
           <div className="wrap grid items-center gap-8 lg:grid-cols-[1fr_.9fr]">
             <div>
-              <span className="kicker text-gold-weich">Nächster Schritt</span>
-              <h2 className="mt-3 text-[clamp(28px,4vw,40px)] text-white">Beginne dort, wo Vertrauen entsteht: kostenlos.</h2>
-              <p className="mt-4 max-w-[640px] text-[17px] leading-[1.85] text-[#e9dcf2]">
-                Öffne zuerst deine Seelenkarte. Wenn die ersten Themen Resonanz haben, kannst du die Tarife vergleichen und bewusst entscheiden, ob Premium zu deiner Nutzung passt.
-              </p>
+              <span className="kicker text-gold-weich">{copy.nextKicker}</span>
+              <h2 className="mt-3 text-[clamp(28px,4vw,40px)] text-white">{copy.nextTitle}</h2>
+              <p className="mt-4 max-w-[640px] text-[17px] leading-[1.85] text-[#e9dcf2]">{copy.nextText}</p>
               <div className="mt-7 flex flex-wrap gap-3">
-                <a className="btn btn-on-dark btn-lg" href={startUrl(locale, { source: "free-premium-final" })}>Kostenlos starten</a>
-                <a className="btn btn-ghost btn-lg border-white/30 text-white hover:bg-white/10" href={localePath(locale, paths.anwendungsfaelle)}>Anwendungsfälle lesen</a>
+                <a className="btn btn-on-dark btn-lg" href={startUrl(locale, { source: "free-premium-final" })}>{copy.startCta}</a>
+                <a className="btn btn-ghost btn-lg border-white/30 text-white hover:bg-white/10" href={localePath(locale, paths.anwendungsfaelle)}>{copy.useCasesCta}</a>
               </div>
             </div>
             <div className="rounded-card border border-gold-weich/20 bg-white/8 p-6">
-              <h3 className="text-[24px] text-white">Fairness-Regel</h3>
+              <h3 className="text-[24px] text-white">{copy.fairnessRuleTitle}</h3>
               <p className="mt-3 text-[15px] leading-relaxed text-[#e9dcf2]">
-                Premium sollte sich wie eine bewusste Vertiefung anfühlen, nicht wie eine Angstreaktion. Deshalb benennt Hermetia Grenzen, Kündigung, Widerruf und Datenschutz sichtbar.
+                {copy.fairnessRuleText}
               </p>
             </div>
           </div>
@@ -312,10 +490,10 @@ export default async function FreePremiumPage({ params }: { params: Promise<{ lo
         <section className="py-16">
           <div className="wrap">
             <div className="mb-8 text-center">
-              <span className="kicker">FAQ</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">Häufige Fragen zu kostenlos und Premium</h2>
+              <span className="kicker">{copy.faqKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">{copy.faqTitle}</h2>
             </div>
-            <Faq items={faq} />
+            <Faq items={localizedFaq} />
           </div>
         </section>
       </main>
