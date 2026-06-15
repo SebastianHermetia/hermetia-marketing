@@ -72,6 +72,7 @@ const frFreePremium = readOut("fr/kostenlos-vs-premium");
 const privacyPolicy = readOut("de/datenschutz");
 const frPrivacyPolicy = readOut("fr/datenschutz");
 const dataSecurity = readOut("de/daten-und-sicherheit");
+const enDataSecurity = readOut("en/daten-und-sicherheit");
 const frDataSecurity = readOut("fr/daten-und-sicherheit");
 const aiTransparency = readOut("de/ki-transparenz");
 const frAiTransparency = readOut("fr/ki-transparenz");
@@ -225,6 +226,8 @@ const checks = [
   ["Data security page has launch indexing gate", dataSecurity.includes("Launch und Indexierung") && dataSecurity.includes("noindex/nofollow")],
   ["Data security page has graphics", dataSecurity.includes("/graphics/convergence/abb4-pipeline-einordnung.svg") && dataSecurity.includes("/graphics/convergence/abb5-algorithmus-funnel.svg")],
   ["Data security page has expanded FAQ and tracked CTAs", dataSecurity.includes("Werden meine Daten für Werbung verkauft") && dataSecurity.includes("Warum bleibt die Website vor dem Launch auf noindex/nofollow") && dataSecurity.includes("utm_content=data-security-hero") && dataSecurity.includes("utm_content=data-security-final")],
+  ["EN data security page has localized longform sections", enDataSecurity.includes("Personal depth needs understandable data protection") && enDataSecurity.includes("Four data areas, clearly separated") && enDataSecurity.includes("Start only when the data logic feels coherent")],
+  ["EN data security page has no German core headings", !enDataSecurity.includes("Persönliche Tiefe braucht verständlichen Datenschutz") && !enDataSecurity.includes("Daten-Lebenszyklus") && !enDataSecurity.includes("Risikobereiche")],
   ["Data security page is linked in footer", deHome.includes("/de/daten-und-sicherheit/")],
   ["Data security page has localized fallback SEO", frDataSecurity.includes("<title>Données et sécurité | Hermetia</title>")],
   ["Privacy policy has extended sensitive data framing", privacyPolicy.includes("nicht wie gewöhnliche Marketingdaten") && privacyPolicy.includes("besondere Kategorien personenbezogener Daten")],

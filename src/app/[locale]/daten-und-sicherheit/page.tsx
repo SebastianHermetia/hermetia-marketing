@@ -127,20 +127,174 @@ const faq = [
   },
 ];
 
+const dataSecurityCopy = {
+  de: {
+    seoTitle: "Hermetia Daten und Sicherheit — sensible Profile, Einwilligung und AI",
+    seoDescription:
+      "Wie Hermetia Geburtsdaten, sensible Profilinhalte, Einwilligung, Export, Löschung, Zahlung und AI-Transparenz verständlich erklärt.",
+    articleHeadline: "Hermetia Daten und Sicherheit",
+    articleDescription: "Verständliche Erklärung zu sensiblen Profildaten, Einwilligung, AI und Nutzerrechten.",
+    breadcrumb: "Daten und Sicherheit",
+    heroKicker: "Daten und Sicherheit",
+    heroTitle: "Persönliche Tiefe braucht verständlichen Datenschutz.",
+    heroLead:
+      "Hermetia arbeitet mit Geburtsdaten und abgeleiteten Profilinhalten. Das kann sehr persönlich werden. Deshalb müssen Einwilligung, Datenminimierung, Export, Löschung, Zahlung und AI-Transparenz nicht irgendwo versteckt sein, sondern vor dem Profilstart klar werden.",
+    startCta: "Profil kostenlos starten",
+    privacyCta: "Datenschutzerklärung lesen",
+    heroAlt: "Abstrakte Datentopografie als Bild für Hermetia Datenschutz und Sicherheit",
+    heroCaption: "Datenschutz ist hier kein Pflichttext, sondern Teil der Produktverantwortung.",
+    dataKicker: "Welche Daten?",
+    dataTitle: "Vier Datenbereiche, klar getrennt.",
+    dataText:
+      "Nutzer sollen verstehen, welche Informationen wofür gebraucht werden. So entsteht Vertrauen vor der Anmeldung und vor jedem bezahlten Modell.",
+    trustKicker: "Trust-Fragen",
+    trustTitle: "Die drei wichtigsten Sicherheitsfragen vor dem Profilstart.",
+    trustText:
+      "Hermetia soll Nutzer neugierig machen, aber nicht dazu bringen, sensible Daten unüberlegt einzugeben. Deshalb beantwortet die Seite früh, warum die Daten besonders sind, wofür Einwilligung gebraucht wird und wie AI begrenzt bleibt.",
+    safeguardsKicker: "Schutzprinzipien",
+    safeguardsTitle: "Was vor dem Onboarding klar sein soll.",
+    safeguardsText:
+      "Hermetia soll Neugier erzeugen, aber keine blinde Dateneingabe. Die folgenden Prinzipien sind deshalb Teil der Website, der Freigabe-Gates und der Produktlogik.",
+    approvalsCta: "Launch-Freigaben ansehen",
+    lifecycleKicker: "Daten-Lebenszyklus",
+    lifecycleTitle: "Von der Eingabe bis zur Kontrolle.",
+    lifecycleText:
+      "Datenschutz wird verständlicher, wenn Nutzer sehen, an welcher Stelle welche Verarbeitung passiert. Diese Struktur hilft auch intern: Content, App, Rechtstexte und Freigabe-Gates müssen dieselbe Logik erzählen.",
+    risksKicker: "Risikobereiche",
+    risksTitle: "Wo Hermetia besonders vorsichtig sein muss.",
+    risksText:
+      "Nicht alle Daten haben dasselbe Risiko. Beziehungsauswertungen, Journaltexte, Zahlungsstatus und Launch-Indexierung brauchen besonders klare Regeln, weil hier Vertrauen schnell gewonnen oder verloren wird.",
+    pipelineAlt: "Pipeline-Grafik für Verarbeitung und Einordnung von Hermetia-Daten",
+    pipelineCaption: "Die Pipeline macht sichtbar, dass Rohdaten, Einordnung, Konvergenz und Sprache getrennte Schritte sind.",
+    funnelAlt: "Algorithmus-Funnel von Daten zu Kernthemen und verständlicher Sprache",
+    funnelCaption: "Der Funnel unterstützt die AI-Transparenz: Erst rechnen und prüfen, dann vorsichtig formulieren.",
+    finalKicker: "Vertrauensschritt",
+    finalTitle: "Starte erst, wenn die Datenlogik für dich stimmig ist.",
+    finalText:
+      "Der kostenlose Einstieg ist dafür da, Methode und Sprache zu prüfen. Wenn Datenschutz, Einwilligung und Grenzen für dich klar sind, kannst du deine Seelenkarte erstellen und danach bewusst entscheiden, ob mehr Tiefe passt.",
+    aiCta: "AI-Transparenz lesen",
+    importantTitle: "Wichtig",
+    importantText:
+      "Diese Seite ist bewusst verständlich formuliert. Maßgeblich bleiben vor finalem Launch die juristisch geprüften Datenschutz-, AGB-, Widerrufs- und Verbraucherrechtsinformationen.",
+    faqKicker: "FAQ",
+    faqTitle: "Häufige Fragen zu Daten und Sicherheit",
+    dataTypes,
+    safeguards,
+    trustQuestions,
+    lifecycle,
+    riskControls,
+    faq,
+  },
+  en: {
+    seoTitle: "Hermetia data and security — sensitive profiles, consent and AI",
+    seoDescription:
+      "How Hermetia explains birth data, sensitive profile content, consent, export, deletion, payment and AI transparency in understandable language.",
+    articleHeadline: "Hermetia data and security",
+    articleDescription: "Clear explanation of sensitive profile data, consent, AI and user rights.",
+    breadcrumb: "Data and security",
+    heroKicker: "Data and security",
+    heroTitle: "Personal depth needs understandable data protection.",
+    heroLead:
+      "Hermetia works with birth data and derived profile content. That can become very personal. Consent, data minimization, export, deletion, payment and AI transparency must therefore be clear before profile start, not hidden somewhere else.",
+    startCta: "Start profile for free",
+    privacyCta: "Read privacy policy",
+    heroAlt: "Abstract data topography as an image for Hermetia data protection and security",
+    heroCaption: "Data protection is not just mandatory text here; it is part of product responsibility.",
+    dataKicker: "Which data?",
+    dataTitle: "Four data areas, clearly separated.",
+    dataText:
+      "Users should understand which information is needed for which purpose. That creates trust before signup and before every paid model.",
+    dataTypes: [
+      { title: "Account data", text: "For example email, password hash, language setting and technical session information. These data make account and login usable." },
+      { title: "Birth and profile data", text: "Date of birth, optional birth time, place of birth and calculated system signals. These data are the core of the soul map." },
+      { title: "Derived interpretations", text: "Texts, levels, core themes and reflection content may touch worldview-related or spiritual statements and are therefore handled with special care." },
+      { title: "Usage and payment data", text: "Journaling, feedback, plan status and payment processing. Full card data should not be stored by Hermetia." },
+    ],
+    trustKicker: "Trust questions",
+    trustTitle: "The three most important security questions before profile start.",
+    trustText:
+      "Hermetia should make users curious, but not make them enter sensitive data without thought. The page therefore explains early why the data is special, what consent is needed for and how AI remains limited.",
+    trustQuestions: [
+      { title: "Why are spiritual profiles especially sensitive?", text: "Birth data may look neutral at first. Combined with interpretation systems, it can produce statements about worldview, identity, relationships, calling, inner conflicts or spiritual orientation. Hermetia therefore does not treat these derivations like harmless marketing data." },
+      { title: "What role does consent play?", text: "Profile start needs understandable consent for processing sensitive profile information. For relationship readings, the consent of one person is not enough because statements about a second person may also be created." },
+      { title: "What does AI do with my data?", text: "AI in Hermetia should not freely speculate about raw identity data. The product logic separates calculation, convergence and wording. AI uses only necessary, approved contexts to make calculated results easier to understand." },
+    ],
+    safeguardsKicker: "Protection principles",
+    safeguardsTitle: "What should be clear before onboarding.",
+    safeguardsText:
+      "Hermetia should create curiosity, but not blind data entry. The following principles are therefore part of the website, approval gates and product logic.",
+    approvalsCta: "View launch approvals",
+    safeguards: [
+      "explicit consent for sensitive profile processing",
+      "data minimization: process only what profile and features need",
+      "EU hosting and technical safeguards as product requirements",
+      "export and deletion as expected app functions",
+      "AI transparency: AI phrases, but does not replace human decision-making",
+      "no disclosure for advertising purposes as a product principle",
+    ],
+    lifecycleKicker: "Data lifecycle",
+    lifecycleTitle: "From input to control.",
+    lifecycleText:
+      "Data protection becomes easier to understand when users see where processing happens. This structure also helps internally: content, app, legal texts and approval gates must tell the same logic.",
+    lifecycle: [
+      { step: "1", title: "Collect", text: "Ask only for data needed for account, profile, security, payment or selected functions." },
+      { step: "2", title: "Calculate", text: "Translate birth and profile data into reproducible signals before understandable interpretation texts are created." },
+      { step: "3", title: "Phrase", text: "AI and editorial logic may explain, but not diagnose, decide or copy protected third-party texts." },
+      { step: "4", title: "Control", text: "Users need export, deletion, withdrawal, plan control and clear limits for journal and relationship contexts." },
+    ],
+    risksKicker: "Risk areas",
+    risksTitle: "Where Hermetia must be especially careful.",
+    risksText:
+      "Not all data has the same risk. Relationship readings, journal texts, payment status and launch indexing need especially clear rules because trust can be won or lost quickly here.",
+    riskControls: [
+      { title: "Relationship data", text: "Profiles of other people need special protection. Hermetia should provide consent flows, separate permission and clear visibility of shared data." },
+      { title: "Journal texts", text: "Journaling can contain intimate experiences. AI summaries may happen only transparently, purpose-bound and with data minimization." },
+      { title: "Payments", text: "Plan status and invoice data must be processed cleanly. Full payment data belongs to specialized payment providers, not into profile interpretation." },
+      { title: "Launch and indexing", text: "Before domain move and final approval, noindex/nofollow remains useful. Only after external legal and IP review should the reach engine be fully opened." },
+    ],
+    pipelineAlt: "Pipeline graphic for processing and classifying Hermetia data",
+    pipelineCaption: "The pipeline shows that raw data, classification, convergence and language are separate steps.",
+    funnelAlt: "Algorithm funnel from data to core themes and understandable language",
+    funnelCaption: "The funnel supports AI transparency: calculate and check first, then phrase carefully.",
+    finalKicker: "Trust step",
+    finalTitle: "Start only when the data logic feels coherent to you.",
+    finalText:
+      "The free start is there to test method and language. When data protection, consent and limits are clear to you, you can create your soul map and then consciously decide whether more depth fits.",
+    aiCta: "Read AI transparency",
+    importantTitle: "Important",
+    importantText:
+      "This page is intentionally written in understandable language. Before final launch, legally reviewed privacy, terms, withdrawal and consumer-rights information remains authoritative.",
+    faqKicker: "FAQ",
+    faqTitle: "Frequently asked questions about data and security",
+    faq: [
+      { q: "Why does Hermetia talk about sensitive data?", a: "Hermetia can derive spiritual or worldview-related profile content from birth data and systems. Such statements can be very personal and are therefore explained and processed with special care." },
+      { q: "Does Hermetia need my exact birth time?", a: "Not necessarily. An exact birth time improves certain systems. Without exact time, Hermetia marks which statements are less certain." },
+      { q: "Does AI see my raw birth date?", a: "The product concept separates calculation core, convergence and AI wording. AI should work with derived signals and not appear as an authority over raw identity data." },
+      { q: "Can I delete my data?", a: "Yes, deletion and export are intended as core rights. The formal privacy policy describes rights to access, rectification, deletion, portability and withdrawal." },
+      { q: "Is this page legal advice?", a: "No. This page explains the product logic in understandable language. Formal legal texts and external data-protection/legal review remain decisive for final launch." },
+      { q: "Will my data be sold for advertising?", a: "No. The website frames no disclosure for advertising purposes as a product principle. For final launch, the formal legal texts must make this binding." },
+      { q: "Why are relationship readings regulated differently?", a: "Because they can create data and derivations about at least two people. Hermetia therefore needs clear consent from the affected person and must not normalize secret readings." },
+      { q: "Why does the website remain noindex/nofollow before launch?", a: "As long as domain move, final legal texts and external legal/IP approval are not complete, noindex/nofollow is useful protection against premature indexing." },
+    ],
+  },
+} as const;
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
+  const copy = locale === "en" ? dataSecurityCopy.en : dataSecurityCopy.de;
   return buildMetadata({
     locale: locale as Locale,
     path: paths.datenSicherheit,
-    title: "Hermetia Daten und Sicherheit — sensible Profile, Einwilligung und AI",
-    description:
-      "Wie Hermetia Geburtsdaten, sensible Profilinhalte, Einwilligung, Export, Löschung, Zahlung und AI-Transparenz verständlich erklärt.",
+    title: copy.seoTitle,
+    description: copy.seoDescription,
   });
 }
 
 export default async function DataSecurityPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  const copy = locale === "en" ? dataSecurityCopy.en : dataSecurityCopy.de;
+  const localizedFaq = copy.faq.map(({ q, a }) => ({ q, a }));
   const pageUrl = `${siteUrl}/${locale}${paths.datenSicherheit}/`;
 
   return (
@@ -148,17 +302,17 @@ export default async function DataSecurityPage({ params }: { params: Promise<{ l
       <JsonLd
         data={[
           articleSchema({
-            headline: "Hermetia Daten und Sicherheit",
-            description: "Verständliche Erklärung zu sensiblen Profildaten, Einwilligung, AI und Nutzerrechten.",
+            headline: copy.articleHeadline,
+            description: copy.articleDescription,
             locale,
             url: pageUrl,
             about: "Datenschutz und Sicherheit",
             image: `${siteUrl}/images/hermetia/atmospheric-data-topography.png`,
           }),
-          faqSchema(faq),
+          faqSchema(localizedFaq),
           breadcrumbSchema([
             { name: "Hermetia", url: `${siteUrl}/${locale}/` },
-            { name: "Daten und Sicherheit", url: pageUrl },
+            { name: copy.breadcrumb, url: pageUrl },
           ]),
         ]}
       />
@@ -167,20 +321,20 @@ export default async function DataSecurityPage({ params }: { params: Promise<{ l
         <section className="pb-10 pt-16">
           <div className="wrap grid items-center gap-10 lg:grid-cols-[1fr_.95fr]">
             <div>
-              <span className="kicker">Daten und Sicherheit</span>
-              <h1 className="mt-3 text-[clamp(34px,5.5vw,54px)] leading-[1.08]">Persönliche Tiefe braucht verständlichen Datenschutz.</h1>
+              <span className="kicker">{copy.heroKicker}</span>
+              <h1 className="mt-3 text-[clamp(34px,5.5vw,54px)] leading-[1.08]">{copy.heroTitle}</h1>
               <p className="lead mt-5 max-w-[720px]">
-                Hermetia arbeitet mit Geburtsdaten und abgeleiteten Profilinhalten. Das kann sehr persönlich werden. Deshalb müssen Einwilligung, Datenminimierung, Export, Löschung, Zahlung und AI-Transparenz nicht irgendwo versteckt sein, sondern vor dem Profilstart klar werden.
+                {copy.heroLead}
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
-                <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "data-security-hero" })}>Profil kostenlos starten</a>
-                <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.datenschutz)}>Datenschutzerklärung lesen</a>
+                <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "data-security-hero" })}>{copy.startCta}</a>
+                <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.datenschutz)}>{copy.privacyCta}</a>
               </div>
             </div>
             <figure className="m-0 overflow-hidden rounded-card border border-sand bg-white shadow-soft">
-              <img src="/images/hermetia/atmospheric-data-topography.png" alt="Abstrakte Datentopografie als Bild für Hermetia Datenschutz und Sicherheit" className="aspect-[4/3] w-full object-cover" />
+              <img src="/images/hermetia/atmospheric-data-topography.png" alt={copy.heroAlt} className="aspect-[4/3] w-full object-cover" />
               <figcaption className="px-5 py-4 text-[14px] text-pflaume/80">
-                Datenschutz ist hier kein Pflichttext, sondern Teil der Produktverantwortung.
+                {copy.heroCaption}
               </figcaption>
             </figure>
           </div>
@@ -189,14 +343,14 @@ export default async function DataSecurityPage({ params }: { params: Promise<{ l
         <section className="bg-creme-tief py-16">
           <div className="wrap">
             <div className="mb-9 max-w-[760px]">
-              <span className="kicker">Welche Daten?</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Vier Datenbereiche, klar getrennt.</h2>
+              <span className="kicker">{copy.dataKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.dataTitle}</h2>
               <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Nutzer sollen verstehen, welche Informationen wofür gebraucht werden. So entsteht Vertrauen vor der Anmeldung und vor jedem bezahlten Modell.
+                {copy.dataText}
               </p>
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-              {dataTypes.map((item) => (
+              {copy.dataTypes.map((item) => (
                 <article key={item.title} className="card">
                   <h3 className="text-[21px]">{item.title}</h3>
                   <p className="muted mt-3 text-[15px] leading-relaxed">{item.text}</p>
@@ -209,14 +363,14 @@ export default async function DataSecurityPage({ params }: { params: Promise<{ l
         <section className="py-16">
           <div className="wrap">
             <div className="mb-9 max-w-[820px]">
-              <span className="kicker">Trust-Fragen</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Die drei wichtigsten Sicherheitsfragen vor dem Profilstart.</h2>
+              <span className="kicker">{copy.trustKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.trustTitle}</h2>
               <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Hermetia soll Nutzer neugierig machen, aber nicht dazu bringen, sensible Daten unüberlegt einzugeben. Deshalb beantwortet die Seite früh, warum die Daten besonders sind, wofür Einwilligung gebraucht wird und wie AI begrenzt bleibt.
+                {copy.trustText}
               </p>
             </div>
             <div className="grid gap-5 md:grid-cols-3">
-              {trustQuestions.map((item) => (
+              {copy.trustQuestions.map((item) => (
                 <article key={item.title} className="card">
                   <h3 className="text-[21px]">{item.title}</h3>
                   <p className="muted mt-3 text-[15.5px] leading-relaxed">{item.text}</p>
@@ -229,16 +383,16 @@ export default async function DataSecurityPage({ params }: { params: Promise<{ l
         <section className="py-16">
           <div className="wrap grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
             <div>
-              <span className="kicker">Schutzprinzipien</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Was vor dem Onboarding klar sein soll.</h2>
+              <span className="kicker">{copy.safeguardsKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.safeguardsTitle}</h2>
               <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Hermetia soll Neugier erzeugen, aber keine blinde Dateneingabe. Die folgenden Prinzipien sind deshalb Teil der Website, der Freigabe-Gates und der Produktlogik.
+                {copy.safeguardsText}
               </p>
-              <a className="btn btn-ghost mt-6" href={localePath(locale, paths.freigaben)}>Launch-Freigaben ansehen</a>
+              <a className="btn btn-ghost mt-6" href={localePath(locale, paths.freigaben)}>{copy.approvalsCta}</a>
             </div>
             <div className="rounded-card border border-sand bg-white p-7 shadow-soft">
               <ul className="flex list-none flex-col gap-3 text-[15.5px] leading-relaxed text-pflaume/90">
-                {safeguards.map((item) => <li key={item}>✓ {item}</li>)}
+                {copy.safeguards.map((item) => <li key={item}>✓ {item}</li>)}
               </ul>
             </div>
           </div>
@@ -247,14 +401,14 @@ export default async function DataSecurityPage({ params }: { params: Promise<{ l
         <section className="bg-creme-tief py-16">
           <div className="wrap">
             <div className="mb-9 max-w-[820px]">
-              <span className="kicker">Daten-Lebenszyklus</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Von der Eingabe bis zur Kontrolle.</h2>
+              <span className="kicker">{copy.lifecycleKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.lifecycleTitle}</h2>
               <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Datenschutz wird verständlicher, wenn Nutzer sehen, an welcher Stelle welche Verarbeitung passiert. Diese Struktur hilft auch intern: Content, App, Rechtstexte und Freigabe-Gates müssen dieselbe Logik erzählen.
+                {copy.lifecycleText}
               </p>
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-              {lifecycle.map((item) => (
+              {copy.lifecycle.map((item) => (
                 <article key={item.title} className="rounded-card border border-sand bg-white p-6 shadow-soft">
                   <span className="flex h-10 w-10 items-center justify-center rounded-full bg-aubergine text-[15px] font-bold text-white">{item.step}</span>
                   <h3 className="mt-5 text-[21px]">{item.title}</h3>
@@ -268,13 +422,13 @@ export default async function DataSecurityPage({ params }: { params: Promise<{ l
         <section className="py-16">
           <div className="wrap grid gap-8 lg:grid-cols-[1fr_.95fr]">
             <div>
-              <span className="kicker">Risikobereiche</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Wo Hermetia besonders vorsichtig sein muss.</h2>
+              <span className="kicker">{copy.risksKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.risksTitle}</h2>
               <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Nicht alle Daten haben dasselbe Risiko. Beziehungsauswertungen, Journaltexte, Zahlungsstatus und Launch-Indexierung brauchen besonders klare Regeln, weil hier Vertrauen schnell gewonnen oder verloren wird.
+                {copy.risksText}
               </p>
               <div className="mt-6 grid gap-4">
-                {riskControls.map((item) => (
+                {copy.riskControls.map((item) => (
                   <article key={item.title} className="rounded-card border border-sand bg-white p-5 shadow-soft">
                     <h3 className="text-[20px]">{item.title}</h3>
                     <p className="muted mt-2 text-[15px] leading-relaxed">{item.text}</p>
@@ -284,15 +438,15 @@ export default async function DataSecurityPage({ params }: { params: Promise<{ l
             </div>
             <div className="grid gap-5">
               <figure className="m-0 rounded-card border border-sand bg-white p-4 shadow-soft">
-                <img src="/graphics/convergence/abb4-pipeline-einordnung.svg" alt="Pipeline-Grafik für Verarbeitung und Einordnung von Hermetia-Daten" className="w-full rounded-[6px]" loading="lazy" />
+                <img src="/graphics/convergence/abb4-pipeline-einordnung.svg" alt={copy.pipelineAlt} className="w-full rounded-[6px]" loading="lazy" />
                 <figcaption className="muted mt-3 text-[14px] leading-relaxed">
-                  Die Pipeline macht sichtbar, dass Rohdaten, Einordnung, Konvergenz und Sprache getrennte Schritte sind.
+                  {copy.pipelineCaption}
                 </figcaption>
               </figure>
               <figure className="m-0 rounded-card border border-sand bg-white p-4 shadow-soft">
-                <img src="/graphics/convergence/abb5-algorithmus-funnel.svg" alt="Algorithmus-Funnel von Daten zu Kernthemen und verständlicher Sprache" className="w-full rounded-[6px]" loading="lazy" />
+                <img src="/graphics/convergence/abb5-algorithmus-funnel.svg" alt={copy.funnelAlt} className="w-full rounded-[6px]" loading="lazy" />
                 <figcaption className="muted mt-3 text-[14px] leading-relaxed">
-                  Der Funnel unterstützt die AI-Transparenz: Erst rechnen und prüfen, dann vorsichtig formulieren.
+                  {copy.funnelCaption}
                 </figcaption>
               </figure>
             </div>
@@ -302,20 +456,20 @@ export default async function DataSecurityPage({ params }: { params: Promise<{ l
         <section className="bg-aubergine py-16 text-white">
           <div className="wrap grid items-center gap-8 lg:grid-cols-[1fr_.9fr]">
             <div>
-              <span className="kicker text-gold-weich">Vertrauensschritt</span>
-              <h2 className="mt-3 text-[clamp(28px,4vw,40px)] text-white">Starte erst, wenn die Datenlogik für dich stimmig ist.</h2>
+              <span className="kicker text-gold-weich">{copy.finalKicker}</span>
+              <h2 className="mt-3 text-[clamp(28px,4vw,40px)] text-white">{copy.finalTitle}</h2>
               <p className="mt-4 max-w-[640px] text-[17px] leading-[1.85] text-[#e9dcf2]">
-                Der kostenlose Einstieg ist dafür da, Methode und Sprache zu prüfen. Wenn Datenschutz, Einwilligung und Grenzen für dich klar sind, kannst du deine Seelenkarte erstellen und danach bewusst entscheiden, ob mehr Tiefe passt.
+                {copy.finalText}
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
-                <a className="btn btn-on-dark btn-lg" href={startUrl(locale, { source: "data-security-final" })}>Profil kostenlos starten</a>
-                <a className="btn btn-ghost btn-lg border-white/30 text-white hover:bg-white/10" href={localePath(locale, paths.ki)}>AI-Transparenz lesen</a>
+                <a className="btn btn-on-dark btn-lg" href={startUrl(locale, { source: "data-security-final" })}>{copy.startCta}</a>
+                <a className="btn btn-ghost btn-lg border-white/30 text-white hover:bg-white/10" href={localePath(locale, paths.ki)}>{copy.aiCta}</a>
               </div>
             </div>
             <div className="rounded-card border border-gold-weich/20 bg-white/8 p-6">
-              <h3 className="text-[24px] text-white">Wichtig</h3>
+              <h3 className="text-[24px] text-white">{copy.importantTitle}</h3>
               <p className="mt-3 text-[15px] leading-relaxed text-[#e9dcf2]">
-                Diese Seite ist bewusst verständlich formuliert. Maßgeblich bleiben vor finalem Launch die juristisch geprüften Datenschutz-, AGB-, Widerrufs- und Verbraucherrechtsinformationen.
+                {copy.importantText}
               </p>
             </div>
           </div>
@@ -324,10 +478,10 @@ export default async function DataSecurityPage({ params }: { params: Promise<{ l
         <section className="py-16">
           <div className="wrap">
             <div className="mb-8 text-center">
-              <span className="kicker">FAQ</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">Häufige Fragen zu Daten und Sicherheit</h2>
+              <span className="kicker">{copy.faqKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">{copy.faqTitle}</h2>
             </div>
-            <Faq items={faq} />
+            <Faq items={localizedFaq} />
           </div>
         </section>
       </main>
