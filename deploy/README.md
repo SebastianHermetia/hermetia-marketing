@@ -28,11 +28,26 @@ ssh -i $SSHK root@95.216.218.48 'cd /opt/hermetia-marketing && docker compose up
 
 ```bash
 npm run build
+npm run check:assets
+npm run check:content
 SSHK=~/.ssh/codex_cx33
 tar czf - out | ssh -i $SSHK root@95.216.218.48 \
   'cd /opt/hermetia-marketing && find out -mindepth 1 -delete && tar xzf -'
 # nginx serviert die gemounteten Dateien live — kein Restart nötig.
 ```
+
+## Lokale Pflichtchecks
+
+Vor jedem Live-Upload:
+
+```bash
+npm run build
+npm run check:assets
+npm run check:content
+```
+
+- `check:assets` prüft, ob alle referenzierten Bilder und Grafiken in `public/` existieren.
+- `check:content` prüft Mindestumfang, Sprachhinweise, 31-Systeme-Konsistenz, Longform-Resource-Seiten, FAQ-Schema und Konvergenz-Grafiken im statischen Export.
 
 > **WICHTIG:** Niemals `rm -rf out` verwenden — das löscht das vom Container
 > gemountete Verzeichnis und entkoppelt den Bind-Mount (Container liefert dann 404).

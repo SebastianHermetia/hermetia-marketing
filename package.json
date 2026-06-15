@@ -7,6 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "check:assets": "node scripts/check-assets.mjs",
+    "check:content": "node scripts/check-content.mjs",
     "start": "next start",
     "lint": "next lint"
   },
