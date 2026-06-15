@@ -167,6 +167,11 @@ const checks = [
   ["Header CTAs are source tagged", deHome.includes("utm_content=header-start") && deHome.includes("utm_content=header-login")],
   ["Home CTAs are source tagged", deHome.includes("utm_content=home-hero") && deHome.includes("utm_content=home-final")],
   ["Pricing CTAs are source tagged", pricing.includes("utm_content=pricing-tier-1") && pricing.includes("utm_content=pricing-tier-2") && pricing.includes("utm_content=pricing-tier-3") && pricing.includes("utm_content=pricing-final")],
+  ["Services page has offer blocks", services.includes("Leistungsbereiche") && services.includes("Vom ersten Profil bis zur bezahlten Tiefe")],
+  ["Services page has depth table", services.includes("Wertlogik") && services.includes("Welche Tiefe entsteht in welchem Schritt")],
+  ["Services page has legal limits block", services.includes("Rechtliche und redaktionelle Leitplanken") && services.includes("keine übernommenen proprietären Deutungstexte")],
+  ["Services page has FAQ schema", services.includes("FAQPage") && services.includes("Häufige Fragen zu Hermetia Leistungen")],
+  ["Services page has expanded tracked CTAs", services.includes("utm_content=services-hero") && services.includes("utm_content=services-depth-table") && services.includes("utm_content=services-legal-cta")],
   ["Hub CTAs are source tagged", services.includes("utm_content=services-final") && systemsHub.includes("utm_content=systems-final") && method.includes("utm_content=method-final") && faqPage.includes("utm_content=faq-final")],
   ["Language CTAs are source tagged", languages.includes("utm_content=language-status-inline") && languages.includes("utm_content=language-status")],
 ];
