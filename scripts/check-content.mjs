@@ -173,6 +173,11 @@ const checks = [
   ["Services page has FAQ schema", services.includes("FAQPage") && services.includes("Häufige Fragen zu Hermetia Leistungen")],
   ["Services page has expanded tracked CTAs", services.includes("utm_content=services-hero") && services.includes("utm_content=services-depth-table") && services.includes("utm_content=services-legal-cta")],
   ["Hub CTAs are source tagged", services.includes("utm_content=services-final") && systemsHub.includes("utm_content=systems-final") && method.includes("utm_content=method-final") && faqPage.includes("utm_content=faq-final")],
+  ["FAQ page has answer categories", faqPage.includes("Antwortbereiche") && faqPage.includes("Die wichtigsten Fragen vor dem ersten Profil")],
+  ["FAQ page has expanded questions", faqPage.includes("Was ist Hermetia in einem Satz") && faqPage.includes("Was bedeutet Konvergenz in Hermetia")],
+  ["FAQ page has legal and IP answers", faqPage.includes("Verwendet Hermetia fremde geschützte Deutungstexte") && faqPage.includes("keine proprietären Systemtexte")],
+  ["FAQ page has conversion bridge", faqPage.includes("Die beste Antwort entsteht in deinem eigenen Profil")],
+  ["FAQ page has expanded tracked CTAs", faqPage.includes("utm_content=faq-hero") && faqPage.includes("utm_content=faq-final")],
   ["Language CTAs are source tagged", languages.includes("utm_content=language-status-inline") && languages.includes("utm_content=language-status")],
 ];
 
