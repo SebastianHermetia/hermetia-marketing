@@ -56,6 +56,20 @@ export function MarketingContentPage({ locale, page }: { locale: Locale; page: C
                 </section>
               ))}
             </div>
+            {page.graphics?.length ? (
+              <section className="mt-12">
+                <span className="kicker">Grafiken</span>
+                <h2 className="mt-3 text-[clamp(24px,3vw,32px)]">So arbeitet die Methode im Hintergrund</h2>
+                <div className="mt-6 grid gap-5">
+                  {page.graphics.map((graphic) => (
+                    <figure key={graphic.src} className="rounded-card border border-sand bg-white p-4 shadow-soft">
+                      <img src={graphic.src} alt={graphic.alt} className="w-full rounded-[6px]" loading="lazy" />
+                      <figcaption className="muted mt-3 text-[14px] leading-relaxed">{graphic.caption}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </section>
+            ) : null}
             <div className="mt-12">
               <h2 className="mb-4 text-[clamp(24px,3vw,32px)]">Häufige Fragen</h2>
               <Faq items={page.faq} />

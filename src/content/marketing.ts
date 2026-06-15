@@ -2,6 +2,7 @@ import type { Locale } from "@/i18n/config";
 
 export type FaqItem = { q: string; a: string };
 export type ContentSection = { title: string; body: string };
+export type ContentGraphic = { src: string; alt: string; caption: string };
 export type ContentPage = {
   slug: string;
   navKey: string;
@@ -14,6 +15,7 @@ export type ContentPage = {
   image: string;
   imageAlt: string;
   sections: ContentSection[];
+  graphics?: ContentGraphic[];
   faq: FaqItem[];
   ctaTitle: string;
   ctaText: string;
@@ -56,6 +58,23 @@ const dePages = {
         title: "Was du als Nutzer davon siehst",
         body:
           "Du musst die Mathematik dahinter nicht verstehen. In der App erscheint daraus eine klare Sprache: deine Kernthemen, deine leisen Nebenthemen, deine produktiven Spannungen und die Systeme, die diese Aussagen tragen. Auf Wunsch kannst du tiefer schauen und nachvollziehen, warum Hermetia eine Aussage macht. Der Aha-Moment bleibt warm, die Grundlage bleibt überprüfbar.",
+      },
+    ],
+    graphics: [
+      {
+        src: "/graphics/convergence/abb1-familien-modell.svg",
+        alt: "Systemfamilien-Modell der Hermetia Konvergenz-Engine",
+        caption: "Systemfamilien verhindern, dass verwandte Quellen mehrfach als unabhängige Bestätigung gezählt werden.",
+      },
+      {
+        src: "/graphics/convergence/abb3-daempfung-statt-summe.svg",
+        alt: "Dämpfung statt naiver Summierung in der Konvergenz-Engine",
+        caption: "Hermetia gewichtet ähnliche Signale vorsichtig, statt starke Aussagen durch reine Addition künstlich aufzublähen.",
+      },
+      {
+        src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
+        alt: "Algorithmus-Funnel von Rohsignalen zu Kernthemen",
+        caption: "Aus Rohsignalen werden Theme-Signale, daraus Familienbelege und schließlich verständliche Kernthemen.",
       },
     ],
     faq: [
