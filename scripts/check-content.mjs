@@ -52,6 +52,8 @@ const glossary = readOut("de/glossar/datenminimierung");
 const convergence = readOut("de/konvergenz-engine");
 const languages = readOut("de/sprachen");
 const launchReview = readOut("de/freigaben");
+const about = readOut("de/ueber-hermetia");
+const frAbout = readOut("fr/ueber-hermetia");
 const pricing = readOut("de/preise");
 const services = readOut("de/leistungen");
 const systemsHub = readOut("de/systeme");
@@ -90,6 +92,10 @@ const checks = [
   ["Launch review page states external legal review", launchReview.includes("keine anwaltliche Endfreigabe")],
   ["Launch review page lists indexing gate", launchReview.includes("Indexing und Domain-Launch")],
   ["Launch review page is linked in footer", deHome.includes("/de/freigaben/")],
+  ["About Hermetia page exists", about.includes("Ein System für Menschen") && about.includes("FAQPage")],
+  ["About Hermetia page has tracked CTAs", about.includes("utm_content=about-hero") && about.includes("utm_content=about-paid-depth")],
+  ["About Hermetia page is linked in footer", deHome.includes("/de/ueber-hermetia/")],
+  ["About Hermetia has localized fallback SEO", frAbout.includes("<title>À propos de Hermetia | Hermetia</title>")],
   ["Header CTAs are source tagged", deHome.includes("utm_content=header-start") && deHome.includes("utm_content=header-login")],
   ["Home CTAs are source tagged", deHome.includes("utm_content=home-hero") && deHome.includes("utm_content=home-final")],
   ["Pricing CTAs are source tagged", pricing.includes("utm_content=pricing-tier-1") && pricing.includes("utm_content=pricing-tier-2") && pricing.includes("utm_content=pricing-tier-3") && pricing.includes("utm_content=pricing-final")],

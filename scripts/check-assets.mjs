@@ -9,6 +9,7 @@ const files = [
   "src/app/[locale]/glossar/[slug]/page.tsx",
   "src/app/[locale]/wissen/[slug]/page.tsx",
   "src/app/[locale]/vergleiche/[slug]/page.tsx",
+  "src/app/[locale]/ueber-hermetia/page.tsx",
 ];
 
 const refs = new Set();
