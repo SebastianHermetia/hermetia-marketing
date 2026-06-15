@@ -1,11 +1,14 @@
 # Hermetia — Marketing-Basisseite
 
-Öffentliche Marketing-/Landing-Seite für Hermetia. Bewirbt die Leistungen und ist
-der Einstieg zu Onboarding (`/start`) und Login (beide in der bestehenden App).
+Öffentliche Marketing-Website für Hermetia. Sie erklärt Seelenkarte,
+Konvergenz-Engine, Systeme, Wissen, Vergleiche, Preise und rechtliche Grenzen
+und führt Nutzer in Onboarding und Login der bestehenden Hermetia-App.
 
-- **Stack:** Next.js 15 (App Router), **statischer Export** (`output: "export"` → `/out`), Tailwind, TypeScript.
-- **i18n:** DE + EN (Dictionary-Pattern, `messages/de.json` + `messages/en.json`). Weitere EU-Sprachen = Locale in `src/i18n/config.ts` ergänzen + `messages/<locale>.json` anlegen.
-- **SEO/GEO/AEO:** pro Seite canonical + hreflang, Schema.org JSON-LD (`Organization`, `FAQPage`), `sitemap.xml`, `robots.txt`.
+- **Stack:** Next.js 16 (App Router), **statischer Export** (`output: "export"` → `/out`), Tailwind, TypeScript.
+- **i18n:** 24 offizielle EU-Sprachrouten. DE und EN sind redaktionell gepflegt, alle weiteren Sprachen haben lokalisierte UI-Texte und sichtbare Longform-Hinweise bis zur finalen Redaktion.
+- **SEO/GEO/AEO:** pro Seite canonical + hreflang, Schema.org JSON-LD (`Organization`, `FAQPage`, Content-/Produktdaten), `sitemap.xml`, `robots.txt`, OG-Bild.
+- **Contentumfang:** 31 Systemseiten, 51 Glossarbegriffe, 20 Wissensartikel, 12 Vergleichsseiten plus Pillar-, Preis-, Rechts-, Sprachstatus- und Freigabeseiten.
+- **Launch-Sicherheit:** noindex/nofollow in der Testphase, Asset-Inventar, Freigabe-Gates und CI-Prüfungen für Content, Assets und Compliance.
 - **Brand:** Design-Tokens aus dem Hermetia-Design-Briefing (Creme/Aubergine/Gold, Fraunces + Mulish) in `tailwind.config.ts`.
 
 ## Befehle
@@ -14,18 +17,22 @@ der Einstieg zu Onboarding (`/start`) und Login (beide in der bestehenden App).
 npm install
 npm run dev        # Entwicklung: http://localhost:3000  (→ /de/)
 npm run build      # statischer Export nach /out
+npm run check:assets
+npm run check:content
+npm run check:compliance
 ```
 
 ## Struktur
 
 ```
-src/app/[locale]/        Seiten je Sprache (Start, Leistungen, Systeme, Methodik, Preise, FAQ, Recht)
+src/app/[locale]/        Seiten je Sprache (Start, Pillars, Ressourcen, Preise, FAQ, Recht, Sprachen, Freigaben)
 src/components/          Header, Footer, SoulMap, Faq, JsonLd, LegalPage, LocaleSwitch
 src/i18n/                Sprach-Konfig + Dictionary-Loader
 src/lib/                 SEO-Metadaten + Link-Helfer
-messages/                de.json / en.json  ← hier leben (fast) alle Texte
+src/content/             Systeme, Wissensinhalte, Glossar, Vergleiche, Launch-Gates
+messages/                UI- und Seitentexte je Sprache
 public/admin/            Decap CMS (Inhalte ohne Code bearbeiten)
-content/magazin/         CMS-verwaltete Artikel (de/ + en/)
+content/                 Asset-Inventar und redaktionelle Betriebsdokumente
 ```
 
 ## Domain umziehen (vor Launch)
@@ -35,9 +42,12 @@ kein Code-Änderung nötig. Siehe `.env.example`.
 
 ## Inhalte pflegen
 
-- **Texte (jetzt, sicher):** direkt in `messages/de.json` + `messages/en.json` (auch in Obsidian).
+- **Globale UI-Texte:** direkt in `messages/*.json`.
+- **Systeme und Ressourcen:** in `src/content/systems.ts` und `src/content/marketing.ts`.
+- **Übersetzungsstatus:** in `src/i18n/translation-status.ts` und live unter `/de/sprachen/`.
+- **Legal/IP/Launch-Gates:** in `src/content/launch-review.ts` und live unter `/de/freigaben/`.
 - **Magazin-Artikel & Bilder:** über Decap CMS unter `/admin` (Git-basiert, Auto-Rebuild). Lokal testen: `npx decap-server` + `local_backend: true`.
 - **Offen (Folgeschritt):** verlustfreie Einbindung der `messages/*.json`-Felder ins CMS-Formular
   (Teilmapping würde nicht gemappte Schlüssel überschreiben — daher bewusst noch nicht verdrahtet).
-- **Größeres (auf Zuruf):** neue Seiten, Longtail-Systemseiten, SEO-Feinschliff, Brand-Illustrationen.
+- **Vor finalem Launch:** externe Rechts-/IP-Freigabe, finale Domain-ENV, noindex entfernen, vollständige Longform-Übersetzung der offenen EU-Sprachen.
 ```

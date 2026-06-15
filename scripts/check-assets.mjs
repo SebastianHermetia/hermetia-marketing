@@ -12,6 +12,9 @@ const files = [
 ];
 
 const refs = new Set();
+const requiredPublicAssets = [
+  "og/default.jpg",
+];
 
 for (const file of files) {
   const text = readFileSync(join(root, file), "utf8");
@@ -29,10 +32,15 @@ for (const ref of [...refs].sort()) {
   if (!existsSync(path)) missing.push(ref);
 }
 
+for (const ref of requiredPublicAssets) {
+  const path = join(root, "public", ref);
+  if (!existsSync(path)) missing.push(ref);
+}
+
 if (missing.length > 0) {
   console.error("Missing public assets:");
   for (const ref of missing) console.error(`- /${ref}`);
   process.exit(1);
 }
 
-console.log(`Asset check passed: ${refs.size} referenced public assets found.`);
+console.log(`Asset check passed: ${refs.size} referenced public assets and ${requiredPublicAssets.length} required SEO assets found.`);
