@@ -38,6 +38,55 @@ const decisionSignals = [
   },
 ];
 
+const valueLadder = [
+  {
+    step: "1",
+    title: "Resonanz prüfen",
+    text: "Der kostenlose Start beantwortet die erste Frage: Erkenne ich mich überhaupt in Sprache, Methode und Seelenkarte wieder?",
+  },
+  {
+    step: "2",
+    title: "Tiefe öffnen",
+    text: "Premium wird sinnvoll, wenn Nutzer mehr Ebenen, längere Kapitel, Systembelege und eine wiederlesbare Profilstruktur wünschen.",
+  },
+  {
+    step: "3",
+    title: "Alltag begleiten",
+    text: "Tagesimpulse, Journaling, Rückblicke und Companion machen aus einem Profil eine fortlaufende Reflexionspraxis.",
+  },
+  {
+    step: "4",
+    title: "Beziehungen und Verlauf",
+    text: "Beziehungsprofile, Profilverfeinerung und längere Historien brauchen Consent, Sicherheit, Rechenlogik und mehr Kontext.",
+  },
+];
+
+const premiumModules = [
+  {
+    title: "Vollprofil-Buch",
+    text: "Für Nutzer, die ihre Seelenkarte in Ruhe lesen, wiederlesen und als langfristige Ressource nutzen möchten.",
+  },
+  {
+    title: "Tagesimpulse und Journaling",
+    text: "Für Menschen, die nicht nur ein Ergebnis sehen wollen, sondern im Alltag mit Fragen, Beobachtungen und Rückblicken arbeiten.",
+  },
+  {
+    title: "Companion",
+    text: "Für Rückfragen zur Seelenkarte, zu Kernthemen, Kapiteln, Tagesimpulsen oder Journaling, mit klarer AI-Transparenz.",
+  },
+  {
+    title: "Beziehungsprofile",
+    text: "Für bewusste Beziehungsauswertungen mit Einwilligung, Resonanz, Reibung, Gesprächsimpulsen und Datenschutzlogik.",
+  },
+];
+
+const fairnessRules = [
+  "Premium darf nicht mit Angst, Schicksalsdruck oder künstlicher Verknappung verkauft werden.",
+  "Kostenlos muss genug zeigen, damit Nutzer Resonanz, Datenschutzgefühl und Ton prüfen können.",
+  "Ein Upgrade ist sinnvoll, wenn Nutzung über Zeit entsteht: lesen, journaln, fragen, verfeinern, zurückkehren.",
+  "Rechtstexte, Widerruf, Kündigung, Datenschutz und AI-Grenzen müssen vor Kauf verständlich erreichbar bleiben.",
+];
+
 const faq = [
   {
     q: "Kann ich Hermetia wirklich kostenlos starten?",
@@ -54,6 +103,18 @@ const faq = [
   {
     q: "Kann ich später kündigen?",
     a: "Ja. Laufende Abonnements sollen transparent kündbar sein. Die Website verweist zusätzlich auf AGB, Widerruf und die rechtlichen Freigaben vor finalem Launch.",
+  },
+  {
+    q: "Woran erkenne ich, dass Premium zu früh wäre?",
+    a: "Wenn du noch keine Resonanz spürst, nur aus Angst upgraden würdest oder gerade eine Diagnose, Therapie oder Entscheidungsgarantie suchst. Dann ist Warten sinnvoller.",
+  },
+  {
+    q: "Welche Premium-Funktion liefert den meisten Wert?",
+    a: "Das hängt vom Nutzungsverhalten ab. Leser profitieren vom Vollprofil-Buch, Alltagsnutzer von Tagesimpulsen und Journaling, Fragende vom Companion und Beziehungsmenschen von Consent-basierten Beziehungsauswertungen.",
+  },
+  {
+    q: "Warum ist der kostenlose Einstieg wichtig für Vertrauen?",
+    a: "Weil Hermetia mit sensiblen Profilthemen arbeitet. Nutzer sollten Sprache, Grenzen, Datenschutz und erste Kernthemen erleben, bevor sie bezahlte Tiefe wählen.",
   },
 ];
 
@@ -143,6 +204,27 @@ export default async function FreePremiumPage({ params }: { params: Promise<{ lo
 
         <section className="py-16">
           <div className="wrap">
+            <div className="mb-9 max-w-[820px]">
+              <span className="kicker">Werttreppe</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Von kostenloser Resonanz zu bezahlter Tiefe.</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">
+                Die Preislogik von Hermetia soll nicht als harte Paywall wirken. Sie soll erklären, welche Art von Wert in welchem Nutzungsmoment entsteht und wann ein Upgrade wirklich Sinn ergibt.
+              </p>
+            </div>
+            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+              {valueLadder.map((item) => (
+                <article key={item.title} className="rounded-card border border-sand bg-white p-6 shadow-soft">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-aubergine text-[15px] font-bold text-white">{item.step}</span>
+                  <h3 className="mt-5 text-[21px]">{item.title}</h3>
+                  <p className="muted mt-3 text-[15px] leading-relaxed">{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16">
+          <div className="wrap">
             <div className="mb-8 max-w-[760px]">
               <span className="kicker">Entscheidungshilfe</span>
               <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Nicht jeder sollte sofort upgraden.</h2>
@@ -157,6 +239,50 @@ export default async function FreePremiumPage({ params }: { params: Promise<{ lo
                   <p className="muted mt-3 text-[15px] leading-relaxed">{item.text}</p>
                 </article>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-creme-tief py-16">
+          <div className="wrap grid gap-8 lg:grid-cols-[1fr_.95fr]">
+            <div>
+              <span className="kicker">Premium-Module</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Wofür bezahlte Modelle konkret stehen.</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">
+                Premium ist kein einzelnes Geheimkapitel. Es bündelt die Funktionen, die über Zeit echten Nutzen erzeugen: mehr Kontext, mehr Wiederholung, mehr Sicherheit und mehr persönliche Begleitung.
+              </p>
+              <div className="mt-6 grid gap-4 md:grid-cols-2">
+                {premiumModules.map((item) => (
+                  <article key={item.title} className="rounded-card border border-sand bg-white p-5 shadow-soft">
+                    <h3 className="text-[20px]">{item.title}</h3>
+                    <p className="muted mt-2 text-[15px] leading-relaxed">{item.text}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+            <figure className="m-0 rounded-card border border-sand bg-white p-4 shadow-soft">
+              <img src="/graphics/convergence/abb10-verankert-und-fein.svg" alt="Grafik für verankerte und feine Premium-Tiefe bei Hermetia" className="w-full rounded-[6px]" loading="lazy" />
+              <figcaption className="muted mt-3 text-[14px] leading-relaxed">
+                Bezahlte Tiefe soll verankert in Daten und zugleich fein genug für persönliche Reflexion bleiben.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section className="py-16">
+          <div className="wrap grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
+            <div>
+              <span className="kicker">Fairness</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Ein gutes Upgrade fühlt sich nicht gedrängt an.</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">
+                Hermetia soll wachsen, aber nicht über Angstmarketing. Gerade weil spirituelle Profile sensibel sind, muss die Kaufentscheidung ruhig, transparent und widerrufbar bleiben.
+              </p>
+              <a className="btn btn-ghost mt-6" href={localePath(locale, paths.freigaben)}>Rechtliche Freigaben ansehen</a>
+            </div>
+            <div className="rounded-card border border-sand bg-white p-7 shadow-soft">
+              <ul className="flex list-none flex-col gap-3 text-[15.5px] leading-relaxed text-pflaume/90">
+                {fairnessRules.map((item) => <li key={item}>✓ {item}</li>)}
+              </ul>
             </div>
           </div>
         </section>
