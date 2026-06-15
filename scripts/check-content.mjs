@@ -47,6 +47,7 @@ const esSystems = readOut("es/systeme");
 const plMethod = readOut("pl/so-entsteht-dein-profil");
 const svConvergence = readOut("sv/konvergenz-engine");
 const article = readOut("de/wissen/seelenkarte-erstellen");
+const comparisonHub = readOut("de/vergleiche");
 const comparison = readOut("de/vergleiche/big-five-vs-human-design");
 const glossaryHub = readOut("de/glossar");
 const glossary = readOut("de/glossar/datenminimierung");
@@ -95,6 +96,12 @@ const checks = [
   ["Comparison detail has data fairness block", comparison.includes("Datenquellen und Fairness") && comparison.includes("keine Gewinnerliste")],
   ["Comparison detail has legal limits block", comparison.includes("Rechtliche Grenzen") && comparison.includes("Keine Diagnose")],
   ["Comparison detail has FAQ schema", comparison.includes("FAQPage")],
+  ["Comparison hub has search questions", comparisonHub.includes("Suchfragen") && comparisonHub.includes("Welche Vergleichsfragen beantwortet Hermetia")],
+  ["Comparison hub has comparison families", comparisonHub.includes("Vergleichsfamilien") && comparisonHub.includes("Astrologie, Human Design und Gene Keys") && comparisonHub.includes("Kostenloser Einstieg und Premium-Tiefe")],
+  ["Comparison hub has all comparisons heading", comparisonHub.includes("Alle Vergleiche") && comparisonHub.includes("Systeme, Methoden und Alltag gegenübergestellt")],
+  ["Comparison hub has fairness block", comparisonHub.includes("Fairness") && comparisonHub.includes("Warum Hermetia nicht nach Gewinnern sucht")],
+  ["Comparison hub has structured data", comparisonHub.includes("Article") && comparisonHub.includes("BreadcrumbList")],
+  ["Comparison hub has tracked CTAs", comparisonHub.includes("utm_content=comparisons-hero") && comparisonHub.includes("utm_content=comparisons-fairness") && comparisonHub.includes("utm_content=comparisons-final")],
   ["Glossary detail has Hermetia meaning block", glossary.includes("Bedeutung in Hermetia")],
   ["Glossary detail has search question block", glossary.includes("Suchfrage") && glossary.includes("Wann ist")],
   ["Glossary detail has fictional example", glossary.includes("Beispiel, fiktiv") && glossary.includes("in einer Deutung auftauchen könnte")],
