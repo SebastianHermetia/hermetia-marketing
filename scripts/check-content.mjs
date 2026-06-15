@@ -50,6 +50,7 @@ const article = readOut("de/wissen/seelenkarte-erstellen");
 const comparison = readOut("de/vergleiche/big-five-vs-human-design");
 const glossary = readOut("de/glossar/datenminimierung");
 const convergence = readOut("de/konvergenz-engine");
+const systemDetail = readOut("de/systeme/human-design");
 const languages = readOut("de/sprachen");
 const launchReview = readOut("de/freigaben");
 const about = readOut("de/ueber-hermetia");
@@ -93,6 +94,10 @@ const checks = [
   ["Glossary detail has limits block", glossary.includes("Grenzen der Deutung")],
   ["Glossary detail has FAQ schema", glossary.includes("FAQPage")],
   ["Convergence page embeds explainer graphics", convergence.includes("/graphics/convergence/abb1-familien-modell.svg") && convergence.includes("/graphics/convergence/abb5-algorithmus-funnel.svg")],
+  ["System detail has data basis block", systemDetail.includes("Datenbasis") && systemDetail.includes("Welche Angaben Hermetia")],
+  ["System detail has fictional example", systemDetail.includes("Beispiel, fiktiv") && systemDetail.includes("Wie eine Deutung klingen könnte")],
+  ["System detail has pro and contra block", systemDetail.includes("Pro und Contra") && systemDetail.includes("verantwortungsvoll lesen")],
+  ["System detail has tracked CTAs", systemDetail.includes("utm_content=system-human-design-midpage") && systemDetail.includes("utm_content=system-human-design-final")],
   ["Language status page exists", languages.includes("Hermetia in europäischen Sprachen")],
   ["Language status page reports 24 live routes", languages.includes("Sprachrouten live") && languages.includes(">24<")],
   ["Language status page reports editorial locales", languages.includes("Redaktionell freigegeben") && languages.includes(">2<")],

@@ -36,6 +36,18 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
   const related = systems.filter((s) => s.slug !== slug).slice(0, 4);
   const pageUrl = `${siteUrl}/${locale}${paths.systeme}/${slug}/`;
   const imageUrl = `${siteUrl}/images/art/${sys.art}`;
+  const dataNeed =
+    sys.slug === "big-five" ||
+    sys.slug === "riasec" ||
+    sys.slug === "chronotyp" ||
+    sys.slug === "tcm-konstitution" ||
+    sys.slug === "via-staerken" ||
+    sys.slug === "spiral-dynamics" ||
+    sys.slug === "sixteen-types"
+      ? "Dieses System braucht ausdrückliche Selbstauskunft. Hermetia nutzt dafür eigene, lizenzsaubere Fragen oder bewusst bereitgestellte Werte. Ohne aktive Antwort wird daraus kein heimliches Profil abgeleitet."
+      : sys.slug === "numerologie" || sys.slug === "lo-shu-grid" || sys.slug === "tarot-geburtskarten" || sys.slug === "cards-of-destiny"
+        ? "Dieses System arbeitet vor allem mit Geburtsdatum und, wenn sinnvoll, mit dem Geburtsnamen. Hermetia erklärt, welche Angaben nötig sind und welche Aussagen auch ohne Namensdaten möglich bleiben."
+        : "Dieses System nutzt vor allem Geburtsdatum, Geburtsort und, je nach Detailtiefe, die Geburtszeit. Hermetia kennzeichnet, welche Aussagen ohne exakte Uhrzeit stabil bleiben und welche vorsichtiger gelesen werden sollten.";
   const extendedFaq = [
     ...c.faq,
     {
@@ -109,6 +121,14 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
               <span className="kicker">{c.howTitle}</span>
               <p className="muted mt-2 text-[16.5px] leading-relaxed">{c.how}</p>
             </div>
+            <div className="rounded-card border border-sand bg-white p-6 shadow-soft">
+              <span className="kicker">Datenbasis</span>
+              <h2 className="mt-2 text-[24px]">Welche Angaben Hermetia für {c.name} braucht</h2>
+              <p className="muted mt-2 text-[16.5px] leading-relaxed">{dataNeed}</p>
+              <p className="muted mt-3 text-[16.5px] leading-relaxed">
+                Wichtig ist die Trennung zwischen Berechnung und Deutung: Aus den Eingaben entstehen zuerst strukturierte Signale. Erst danach werden sie mit anderen Systemen verglichen und in verständliche Reflexionssprache übersetzt.
+              </p>
+            </div>
             <div>
               <h2 className="text-[24px]">{c.revealsTitle}</h2>
               <p className="muted mt-2 text-[16.5px] leading-relaxed">{c.reveals}</p>
@@ -135,6 +155,35 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
               <p className="muted mt-2 text-[16.5px] leading-relaxed">
                 Hermetia fragt nicht nur, was {c.name} allein sagt. Die relevantere Frage ist, ob dieselben Themen auch in anderen Familien auftauchen: etwa in astrologischen Systemen, Zahlensystemen, Fragebögen oder körpernahen Typologien. Wenn mehrere unabhängige Quellen dasselbe Thema stützen, wird daraus ein stärkeres Kernthema deiner Seelenkarte.
               </p>
+            </div>
+            <div className="rounded-card border border-sand bg-creme-tief p-6">
+              <span className="kicker">Beispiel, fiktiv</span>
+              <h2 className="mt-2 text-[24px]">Wie eine Deutung klingen könnte</h2>
+              <p className="muted mt-2 text-[16.5px] leading-relaxed">
+                Eine fiktive Person sieht in {c.name} ein deutliches Motiv für innere Ausrichtung, zugleich zeigen andere Systeme mehr Ruhe, Erdung oder Beziehungssensibilität. Hermetia würde daraus nicht ableiten, wer diese Person wirklich ist. Stattdessen würde die App fragen: Wo hilft dir dieses Motiv im Alltag, wo wird es zu eng, und welche anderen Signale gleichen es aus?
+              </p>
+            </div>
+            <div>
+              <span className="kicker">Pro und Contra</span>
+              <h2 className="mt-2 text-[24px]">{c.name} verantwortungsvoll lesen</h2>
+              <div className="mt-4 grid gap-4 md:grid-cols-2">
+                <div className="rounded-card border border-sand bg-white p-5 shadow-soft">
+                  <h3 className="text-[19px]">Pro</h3>
+                  <ul className="mt-3 flex list-none flex-col gap-2 text-[15.5px] leading-relaxed text-pflaume/90">
+                    <li>Hilft, eine spezifische Perspektive auf Profilthemen zu öffnen.</li>
+                    <li>Wird stärker, wenn unabhängige Systeme ähnliche Motive zeigen.</li>
+                    <li>Kann konkrete Reflexionsfragen für Seelenkarte, Journaling und Companion liefern.</li>
+                  </ul>
+                </div>
+                <div className="rounded-card border border-sand bg-white p-5 shadow-soft">
+                  <h3 className="text-[19px]">Contra</h3>
+                  <ul className="mt-3 flex list-none flex-col gap-2 text-[15.5px] leading-relaxed text-pflaume/90">
+                    <li>Kann missverständlich werden, wenn es isoliert oder absolut gelesen wird.</li>
+                    <li>Braucht klare Grenzen bei Gesundheit, Beziehung, Therapie und Vorhersage.</li>
+                    <li>Darf keine geschützten Originaltexte, fremden Fragebogenitems oder fremden Reportpassagen übernehmen.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <AppCta
               locale={locale}
