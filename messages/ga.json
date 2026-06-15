@@ -1,0 +1,6 @@
+{
+  "site": { "tagline": "Mar atá thuas, mar sin thíos", "claim": "Mapa de d'anam, ó gach rud a dhéanann tusa tú." },
+  "nav": { "leistungen": "Gnéithe", "systeme": "Córais", "methodik": "Modh", "preise": "Praghsanna", "login": "Logáil isteach", "start": "Tosaigh próifíl" },
+  "cta": { "startFree": "Tosaigh saor in aisce", "seeChart": "Féach ar mo mhapa anama saor in aisce", "howItWorks": "Conas a oibríonn sé", "comparePrices": "Cuir praghsanna i gcomparáid", "allServices": "Féach ar na gnéithe uile", "exploreSystems": "Fiosraigh na córais uile", "methodDetail": "Féach ar an modh go mion", "more": "Tuilleadh eolais" },
+  "footer": { "blurb": "Mapa de d'anam, ó gach rud a dhéanann tusa tú. Mar atá thuas, mar sin thíos.", "product": "Táirge", "discover": "Fiosraigh", "legal": "Dlíthiúil", "magazin": "Iris", "glossar": "Gluais", "faq": "FAQ", "datenschutz": "Príobháideachas", "kiTransparenz": "Trédhearcacht AI", "agb": "Téarmaí", "widerruf": "Cealú", "impressum": "Fógra dlíthiúil", "disclaimer": "Spreagadh don fhéinmhachnamh, ní comhairle leighis ná theiripeach. Tá cuid den ábhar tacaithe ag AI." }
+}

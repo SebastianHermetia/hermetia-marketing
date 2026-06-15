@@ -38,7 +38,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
             <div className="mt-8 grid gap-4 sm:grid-cols-4">
               <Metric label="Sprachrouten live" value={summary.total.toString()} />
               <Metric label="Redaktionell freigegeben" value={summary.editorial.toString()} />
-              <Metric label="UI lokalisiert" value={summary.ui.toString()} />
+              <Metric label="UI lokalisiert, Longform offen" value={summary.ui.toString()} />
               <Metric label="Technischer Fallback" value={summary.fallback.toString()} />
             </div>
           </div>

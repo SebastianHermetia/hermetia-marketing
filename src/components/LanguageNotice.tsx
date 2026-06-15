@@ -33,6 +33,22 @@ const copy = {
     title: "Versão editorial em preparação",
     body: "Este idioma já está tecnicamente disponível. Até à revisão final, algumas áreas ainda usam o conteúdo mestre alemão.",
   },
+  bg: { title: "Редакционната версия е в подготовка", body: "Този език вече е технически наличен. До окончателната редакция някои области все още използват немското основно съдържание." },
+  hr: { title: "Urednička verzija je u pripremi", body: "Ovaj jezik je već tehnički dostupan. Do završne redakcije neki dijelovi još koriste njemački master sadržaj." },
+  cs: { title: "Redakční verze se připravuje", body: "Tento jazyk je již technicky dostupný. Do finální redakce některé části stále používají německý master obsah." },
+  da: { title: "Redaktionel version under forberedelse", body: "Dette sprog er allerede teknisk tilgængeligt. Indtil den endelige redaktion bruger nogle områder stadig det tyske masterindhold." },
+  et: { title: "Toimetatud versioon on ettevalmistamisel", body: "See keel on tehniliselt juba saadaval. Kuni lõpliku toimetuseni kasutavad mõned osad veel saksa põhisisu." },
+  fi: { title: "Toimituksellinen versio on valmisteilla", body: "Tämä kieli on jo teknisesti saatavilla. Lopulliseen toimitukseen asti osa alueista käyttää vielä saksankielistä pääsisältöä." },
+  el: { title: "Η επιμελημένη έκδοση προετοιμάζεται", body: "Αυτή η γλώσσα είναι ήδη τεχνικά διαθέσιμη. Μέχρι την τελική επιμέλεια, ορισμένες ενότητες χρησιμοποιούν ακόμη το γερμανικό κύριο περιεχόμενο." },
+  hu: { title: "A szerkesztett verzió előkészítés alatt", body: "Ez a nyelv technikailag már elérhető. A végleges szerkesztésig egyes részek még a német mesteranyagot használják." },
+  ga: { title: "Tá an leagan eagarthóireachta á ullmhú", body: "Tá an teanga seo ar fáil go teicniúil cheana. Go dtí an t-athbhreithniú deiridh, úsáideann cuid de na réimsí an máistirábhar Gearmáinise fós." },
+  lv: { title: "Redakcionālā versija tiek gatavota", body: "Šī valoda jau ir tehniski pieejama. Līdz galīgajai redakcijai dažas sadaļas joprojām izmanto vācu pamattekstu." },
+  lt: { title: "Redakcinė versija ruošiama", body: "Ši kalba jau techniškai prieinama. Iki galutinės redakcijos kai kurios sritys vis dar naudoja vokišką pagrindinį turinį." },
+  mt: { title: "Il-verżjoni editorjali qed titħejja", body: "Din il-lingwa hija diġà disponibbli teknikament. Sal-verżjoni finali, xi oqsma għadhom jużaw il-kontenut ewlieni Ġermaniż." },
+  ro: { title: "Versiunea editorială este în pregătire", body: "Această limbă este deja disponibilă tehnic. Până la revizuirea finală, unele zone folosesc încă conținutul master german." },
+  sk: { title: "Redakčná verzia sa pripravuje", body: "Tento jazyk je už technicky dostupný. Do finálnej redakcie niektoré časti stále používajú nemecký master obsah." },
+  sl: { title: "Uredniška različica je v pripravi", body: "Ta jezik je že tehnično na voljo. Do končne redakcije nekateri deli še uporabljajo nemško glavno vsebino." },
+  sv: { title: "Redaktionell version förbereds", body: "Detta språk är redan tekniskt tillgängligt. Fram till slutlig redaktion använder vissa delar fortfarande det tyska masterinnehållet." },
 };
 
 export function LanguageNotice({ locale }: { locale: Locale }) {

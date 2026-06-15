@@ -1,0 +1,6 @@
+{
+  "site": { "tagline": "Kaip viršuje, taip ir apačioje", "claim": "Jūsų sielos žemėlapis iš visko, kas jus sudaro." },
+  "nav": { "leistungen": "Funkcijos", "systeme": "Sistemos", "methodik": "Metodas", "preise": "Kainos", "login": "Prisijungti", "start": "Pradėti profilį" },
+  "cta": { "startFree": "Pradėti nemokamai", "seeChart": "Nemokamai pamatyti mano sielos žemėlapį", "howItWorks": "Kaip tai veikia", "comparePrices": "Palyginti kainas", "allServices": "Peržiūrėti visas funkcijas", "exploreSystems": "Tyrinėti visas sistemas", "methodDetail": "Peržiūrėti metodą išsamiai", "more": "Sužinoti daugiau" },
+  "footer": { "blurb": "Jūsų sielos žemėlapis iš visko, kas jus sudaro. Kaip viršuje, taip ir apačioje.", "product": "Produktas", "discover": "Atrasti", "legal": "Teisinė informacija", "magazin": "Žurnalas", "glossar": "Žodynas", "faq": "FAQ", "datenschutz": "Privatumas", "kiTransparenz": "AI skaidrumas", "agb": "Sąlygos", "widerruf": "Atsisakymas", "impressum": "Teisinė pastaba", "disclaimer": "Įkvėpimas savirefleksijai, ne medicininė ar terapinė konsultacija. Dalis turinio yra paremta AI." }
+}

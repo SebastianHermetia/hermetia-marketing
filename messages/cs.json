@@ -1,0 +1,6 @@
+{
+  "site": { "tagline": "Jak nahoře, tak dole", "claim": "Mapa vaší duše, ze všeho, co vás tvoří." },
+  "nav": { "leistungen": "Funkce", "systeme": "Systémy", "methodik": "Metoda", "preise": "Ceny", "login": "Přihlášení", "start": "Začít profil" },
+  "cta": { "startFree": "Začít zdarma", "seeChart": "Zobrazit mapu duše zdarma", "howItWorks": "Jak to funguje", "comparePrices": "Porovnat ceny", "allServices": "Zobrazit všechny funkce", "exploreSystems": "Prozkoumat všechny systémy", "methodDetail": "Zobrazit metodu podrobně", "more": "Zjistit více" },
+  "footer": { "blurb": "Mapa vaší duše, ze všeho, co vás tvoří. Jak nahoře, tak dole.", "product": "Produkt", "discover": "Objevovat", "legal": "Právní", "magazin": "Magazín", "glossar": "Glosář", "faq": "FAQ", "datenschutz": "Soukromí", "kiTransparenz": "Transparentnost AI", "agb": "Podmínky", "widerruf": "Odstoupení", "impressum": "Impressum", "disclaimer": "Inspirace k sebereflexi, nikoli lékařské nebo terapeutické poradenství. Část obsahu je podporována AI." }
+}

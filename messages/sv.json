@@ -1,0 +1,6 @@
+{
+  "site": { "tagline": "Så som ovan, så också nedan", "claim": "En karta över din själ, av allt som gör dig till dig." },
+  "nav": { "leistungen": "Funktioner", "systeme": "System", "methodik": "Metod", "preise": "Priser", "login": "Logga in", "start": "Starta profil" },
+  "cta": { "startFree": "Starta gratis", "seeChart": "Se min själskarta gratis", "howItWorks": "Så fungerar det", "comparePrices": "Jämför priser", "allServices": "Se alla funktioner", "exploreSystems": "Utforska alla system", "methodDetail": "Se metoden i detalj", "more": "Läs mer" },
+  "footer": { "blurb": "En karta över din själ, av allt som gör dig till dig. Så som ovan, så också nedan.", "product": "Produkt", "discover": "Upptäck", "legal": "Juridiskt", "magazin": "Magasin", "glossar": "Ordlista", "faq": "FAQ", "datenschutz": "Integritet", "kiTransparenz": "AI-transparens", "agb": "Villkor", "widerruf": "Ångerrätt", "impressum": "Impressum", "disclaimer": "Inspiration för självreflektion, inte medicinsk eller terapeutisk rådgivning. En del innehåll är AI-stött." }
+}

@@ -8,6 +8,22 @@ import it from "../../messages/it.json";
 import nl from "../../messages/nl.json";
 import pl from "../../messages/pl.json";
 import pt from "../../messages/pt.json";
+import bg from "../../messages/bg.json";
+import hr from "../../messages/hr.json";
+import cs from "../../messages/cs.json";
+import da from "../../messages/da.json";
+import et from "../../messages/et.json";
+import fi from "../../messages/fi.json";
+import el from "../../messages/el.json";
+import hu from "../../messages/hu.json";
+import ga from "../../messages/ga.json";
+import lv from "../../messages/lv.json";
+import lt from "../../messages/lt.json";
+import mt from "../../messages/mt.json";
+import ro from "../../messages/ro.json";
+import sk from "../../messages/sk.json";
+import sl from "../../messages/sl.json";
+import sv from "../../messages/sv.json";
 
 export type Dictionary = typeof de;
 type PartialDictionary = {
@@ -32,6 +48,22 @@ const partialDictionaries: Partial<Record<Locale, PartialDictionary>> = {
   nl,
   pl,
   pt,
+  bg,
+  hr,
+  cs,
+  da,
+  et,
+  fi,
+  el,
+  hu,
+  ga,
+  lv,
+  lt,
+  mt,
+  ro,
+  sk,
+  sl,
+  sv,
 };
 
 export function getDictionary(locale: Locale): Dictionary {

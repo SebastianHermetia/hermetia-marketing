@@ -1,0 +1,6 @@
+{
+  "site": { "tagline": "Kuten ylhäällä, niin alhaalla", "claim": "Sielusi kartta kaikesta, mikä tekee sinusta sinut." },
+  "nav": { "leistungen": "Ominaisuudet", "systeme": "Järjestelmät", "methodik": "Menetelmä", "preise": "Hinnat", "login": "Kirjaudu", "start": "Aloita profiili" },
+  "cta": { "startFree": "Aloita ilmaiseksi", "seeChart": "Näe sielukarttani ilmaiseksi", "howItWorks": "Miten se toimii", "comparePrices": "Vertaa hintoja", "allServices": "Katso kaikki ominaisuudet", "exploreSystems": "Tutki kaikkia järjestelmiä", "methodDetail": "Katso menetelmä tarkemmin", "more": "Lue lisää" },
+  "footer": { "blurb": "Sielusi kartta kaikesta, mikä tekee sinusta sinut. Kuten ylhäällä, niin alhaalla.", "product": "Tuote", "discover": "Tutustu", "legal": "Oikeudellinen", "magazin": "Lehti", "glossar": "Sanasto", "faq": "UKK", "datenschutz": "Tietosuoja", "kiTransparenz": "AI-läpinäkyvyys", "agb": "Ehdot", "widerruf": "Peruuttaminen", "impressum": "Julkaisutiedot", "disclaimer": "Inspiraatiota itsereflektioon, ei lääketieteellistä tai terapeuttista neuvontaa. Osa sisällöstä on AI-avusteista." }
+}

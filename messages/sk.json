@@ -1,0 +1,6 @@
+{
+  "site": { "tagline": "Ako hore, tak dole", "claim": "Mapa vašej duše zo všetkého, čo vás tvorí." },
+  "nav": { "leistungen": "Funkcie", "systeme": "Systémy", "methodik": "Metóda", "preise": "Ceny", "login": "Prihlásenie", "start": "Začať profil" },
+  "cta": { "startFree": "Začať zadarmo", "seeChart": "Zobraziť moju mapu duše zadarmo", "howItWorks": "Ako to funguje", "comparePrices": "Porovnať ceny", "allServices": "Zobraziť všetky funkcie", "exploreSystems": "Preskúmať všetky systémy", "methodDetail": "Zobraziť metódu podrobne", "more": "Zistiť viac" },
+  "footer": { "blurb": "Mapa vašej duše zo všetkého, čo vás tvorí. Ako hore, tak dole.", "product": "Produkt", "discover": "Objavovať", "legal": "Právne", "magazin": "Magazín", "glossar": "Glosár", "faq": "FAQ", "datenschutz": "Súkromie", "kiTransparenz": "Transparentnosť AI", "agb": "Podmienky", "widerruf": "Odstúpenie", "impressum": "Impressum", "disclaimer": "Inšpirácia na sebareflexiu, nie lekárske alebo terapeutické poradenstvo. Časť obsahu je podporovaná AI." }
+}

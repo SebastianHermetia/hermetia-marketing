@@ -1,0 +1,6 @@
+{
+  "site": { "tagline": "Kā augšā, tā apakšā", "claim": "Jūsu dvēseles karte no visa, kas veido jūs." },
+  "nav": { "leistungen": "Funkcijas", "systeme": "Sistēmas", "methodik": "Metode", "preise": "Cenas", "login": "Pieteikties", "start": "Sākt profilu" },
+  "cta": { "startFree": "Sākt bez maksas", "seeChart": "Skatīt manu dvēseles karti bez maksas", "howItWorks": "Kā tas darbojas", "comparePrices": "Salīdzināt cenas", "allServices": "Skatīt visas funkcijas", "exploreSystems": "Izpētīt visas sistēmas", "methodDetail": "Skatīt metodi detalizēti", "more": "Uzzināt vairāk" },
+  "footer": { "blurb": "Jūsu dvēseles karte no visa, kas veido jūs. Kā augšā, tā apakšā.", "product": "Produkts", "discover": "Atklāt", "legal": "Juridiski", "magazin": "Žurnāls", "glossar": "Glosārijs", "faq": "FAQ", "datenschutz": "Privātums", "kiTransparenz": "AI caurspīdīgums", "agb": "Noteikumi", "widerruf": "Atteikums", "impressum": "Juridiska informācija", "disclaimer": "Iedvesma pašrefleksijai, nevis medicīniska vai terapeitiska konsultācija. Daļa satura ir AI atbalstīta." }
+}

@@ -1,0 +1,6 @@
+{
+  "site": { "tagline": "Kakor zgoraj, tako spodaj", "claim": "Zemljevid vaše duše iz vsega, kar vas sestavlja." },
+  "nav": { "leistungen": "Funkcije", "systeme": "Sistemi", "methodik": "Metoda", "preise": "Cene", "login": "Prijava", "start": "Začni profil" },
+  "cta": { "startFree": "Začni brezplačno", "seeChart": "Brezplačno poglej moj zemljevid duše", "howItWorks": "Kako deluje", "comparePrices": "Primerjaj cene", "allServices": "Oglej si vse funkcije", "exploreSystems": "Razišči vse sisteme", "methodDetail": "Oglej si metodo podrobno", "more": "Izvedi več" },
+  "footer": { "blurb": "Zemljevid vaše duše iz vsega, kar vas sestavlja. Kakor zgoraj, tako spodaj.", "product": "Izdelek", "discover": "Odkrij", "legal": "Pravno", "magazin": "Magazin", "glossar": "Glosar", "faq": "FAQ", "datenschutz": "Zasebnost", "kiTransparenz": "Transparentnost AI", "agb": "Pogoji", "widerruf": "Odstop", "impressum": "Impresum", "disclaimer": "Navdih za samorefleksijo, ne medicinski ali terapevtski nasvet. Del vsebine podpira AI." }
+}

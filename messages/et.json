@@ -1,0 +1,6 @@
+{
+  "site": { "tagline": "Nagu ülal, nii ka all", "claim": "Sinu hinge kaart kõigest, mis teeb sinust sinu." },
+  "nav": { "leistungen": "Funktsioonid", "systeme": "Süsteemid", "methodik": "Meetod", "preise": "Hinnad", "login": "Logi sisse", "start": "Alusta profiili" },
+  "cta": { "startFree": "Alusta tasuta", "seeChart": "Vaata oma hingekaarti tasuta", "howItWorks": "Kuidas see töötab", "comparePrices": "Võrdle hindu", "allServices": "Vaata kõiki funktsioone", "exploreSystems": "Avasta kõik süsteemid", "methodDetail": "Vaata meetodit täpsemalt", "more": "Loe edasi" },
+  "footer": { "blurb": "Sinu hinge kaart kõigest, mis teeb sinust sinu. Nagu ülal, nii ka all.", "product": "Toode", "discover": "Avasta", "legal": "Õiguslik", "magazin": "Ajakiri", "glossar": "Sõnastik", "faq": "KKK", "datenschutz": "Privaatsus", "kiTransparenz": "AI läbipaistvus", "agb": "Tingimused", "widerruf": "Taganemine", "impressum": "Impressum", "disclaimer": "Inspiratsioon eneserefleksiooniks, mitte meditsiiniline ega terapeutiline nõuanne. Osa sisust on AI-toega." }
+}

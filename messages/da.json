@@ -1,0 +1,6 @@
+{
+  "site": { "tagline": "Som foroven, således forneden", "claim": "Et kort over din sjæl, ud fra alt det, der gør dig til dig." },
+  "nav": { "leistungen": "Funktioner", "systeme": "Systemer", "methodik": "Metode", "preise": "Priser", "login": "Log ind", "start": "Start profil" },
+  "cta": { "startFree": "Start gratis", "seeChart": "Se mit sjælekort gratis", "howItWorks": "Sådan fungerer det", "comparePrices": "Sammenlign priser", "allServices": "Se alle funktioner", "exploreSystems": "Udforsk alle systemer", "methodDetail": "Se metoden i detaljer", "more": "Læs mere" },
+  "footer": { "blurb": "Et kort over din sjæl, ud fra alt det, der gør dig til dig. Som foroven, således forneden.", "product": "Produkt", "discover": "Opdag", "legal": "Juridisk", "magazin": "Magasin", "glossar": "Ordliste", "faq": "FAQ", "datenschutz": "Privatliv", "kiTransparenz": "AI-transparens", "agb": "Vilkår", "widerruf": "Fortrydelse", "impressum": "Kolofon", "disclaimer": "Inspiration til selvrefleksion, ikke medicinsk eller terapeutisk rådgivning. Noget indhold er AI-understøttet." }
+}

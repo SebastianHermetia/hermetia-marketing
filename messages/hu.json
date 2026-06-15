@@ -1,0 +1,6 @@
+{
+  "site": { "tagline": "Ahogy fent, úgy lent", "claim": "Lelked térképe mindabból, ami téged alkot." },
+  "nav": { "leistungen": "Funkciók", "systeme": "Rendszerek", "methodik": "Módszer", "preise": "Árak", "login": "Bejelentkezés", "start": "Profil indítása" },
+  "cta": { "startFree": "Kezdés ingyen", "seeChart": "Lelki térképem ingyenes megtekintése", "howItWorks": "Hogyan működik", "comparePrices": "Árak összehasonlítása", "allServices": "Összes funkció", "exploreSystems": "Összes rendszer felfedezése", "methodDetail": "A módszer részletei", "more": "Tudj meg többet" },
+  "footer": { "blurb": "Lelked térképe mindabból, ami téged alkot. Ahogy fent, úgy lent.", "product": "Termék", "discover": "Felfedezés", "legal": "Jogi", "magazin": "Magazin", "glossar": "Fogalomtár", "faq": "FAQ", "datenschutz": "Adatvédelem", "kiTransparenz": "AI-átláthatóság", "agb": "Feltételek", "widerruf": "Elállás", "impressum": "Impresszum", "disclaimer": "Inspiráció önreflexióhoz, nem orvosi vagy terápiás tanács. Egyes tartalmak AI-támogatással készülnek." }
+}
