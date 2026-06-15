@@ -42,6 +42,10 @@ for (const [label, actual, expected] of expectations) {
 const deHome = readOut("de");
 const enHome = readOut("en");
 const frHome = readOut("fr");
+const frPricing = readOut("fr/preise");
+const esSystems = readOut("es/systeme");
+const plMethod = readOut("pl/so-entsteht-dein-profil");
+const svConvergence = readOut("sv/konvergenz-engine");
 const article = readOut("de/wissen/seelenkarte-erstellen");
 const comparison = readOut("de/vergleiche/big-five-vs-human-design");
 const glossary = readOut("de/glossar/datenminimierung");
@@ -58,6 +62,8 @@ const checks = [
   ["DE has no fallback language notice", !deHome.includes("Sprachfassung in redaktioneller Vorbereitung")],
   ["EN has no fallback language notice", !enHome.includes("Editorial translation in progress")],
   ["FR has localized fallback language notice", frHome.includes("Version éditoriale en préparation")],
+  ["Fallback locales have localized SEO titles", frPricing.includes("<title>Tarifs | Hermetia</title>") && esSystems.includes("<title>Sistemas | Hermetia</title>")],
+  ["Fallback locales have localized SEO descriptions", plMethod.includes("Pełna wersja redakcyjna jest w przygotowaniu") && svConvergence.includes("Den fullständiga redaktionella versionen förbereds")],
   ["EN references 31 systems", enHome.includes("31 interpretive systems")],
   ["EN no longer references 25 systems", !enHome.includes("25 interpretive systems")],
   ["Article detail has longform section", article.includes("Warum dieses Thema")],
