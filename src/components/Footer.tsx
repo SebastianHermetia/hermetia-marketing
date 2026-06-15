@@ -32,6 +32,7 @@ export function Footer({ locale }: { locale: Locale }) {
             <FootLink href={L(paths.glossar)}>{t.footer.glossar}</FootLink>
             <FootLink href={L(paths.wissen)}>{t.footer.magazin}</FootLink>
             <FootLink href={L(paths.vergleiche)}>Vergleiche</FootLink>
+            <FootLink href={L(paths.anwendungsfaelle)}>Anwendungsfälle</FootLink>
             <FootLink href={L(paths.about)}>{t.footer.about}</FootLink>
             <FootLink href={L(paths.tagesimpulse)}>Tagesimpulse</FootLink>
             <FootLink href={L(paths.beziehungen)}>Beziehungen</FootLink>

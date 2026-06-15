@@ -51,6 +51,7 @@ export const paths = {
   glossar: "/glossar",
   wissen: "/wissen",
   vergleiche: "/vergleiche",
+  anwendungsfaelle: "/anwendungsfaelle",
   about: "/ueber-hermetia",
   sprachen: "/sprachen",
   freigaben: "/freigaben",

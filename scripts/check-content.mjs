@@ -54,6 +54,8 @@ const languages = readOut("de/sprachen");
 const launchReview = readOut("de/freigaben");
 const about = readOut("de/ueber-hermetia");
 const frAbout = readOut("fr/ueber-hermetia");
+const useCases = readOut("de/anwendungsfaelle");
+const esUseCases = readOut("es/anwendungsfaelle");
 const pricing = readOut("de/preise");
 const services = readOut("de/leistungen");
 const systemsHub = readOut("de/systeme");
@@ -96,6 +98,11 @@ const checks = [
   ["About Hermetia page has tracked CTAs", about.includes("utm_content=about-hero") && about.includes("utm_content=about-paid-depth")],
   ["About Hermetia page is linked in footer", deHome.includes("/de/ueber-hermetia/")],
   ["About Hermetia has localized fallback SEO", frAbout.includes("<title>À propos de Hermetia | Hermetia</title>")],
+  ["Use cases page exists", useCases.includes("Wofür Hermetia besonders gut geeignet ist") && useCases.includes("Hermetia passt gut, wenn")],
+  ["Use cases page has limits and FAQ schema", useCases.includes("Hermetia passt nicht, wenn") && useCases.includes("FAQPage")],
+  ["Use cases page has tracked CTAs", useCases.includes("utm_content=use-cases-hero") && useCases.includes("utm_content=use-cases-final")],
+  ["Use cases page is linked in footer", deHome.includes("/de/anwendungsfaelle/")],
+  ["Use cases page has localized fallback SEO", esUseCases.includes("<title>Casos de uso | Hermetia</title>")],
   ["Header CTAs are source tagged", deHome.includes("utm_content=header-start") && deHome.includes("utm_content=header-login")],
   ["Home CTAs are source tagged", deHome.includes("utm_content=home-hero") && deHome.includes("utm_content=home-final")],
   ["Pricing CTAs are source tagged", pricing.includes("utm_content=pricing-tier-1") && pricing.includes("utm_content=pricing-tier-2") && pricing.includes("utm_content=pricing-tier-3") && pricing.includes("utm_content=pricing-final")],
