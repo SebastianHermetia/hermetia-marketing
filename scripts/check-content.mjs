@@ -62,6 +62,8 @@ const useCases = readOut("de/anwendungsfaelle");
 const esUseCases = readOut("es/anwendungsfaelle");
 const freePremium = readOut("de/kostenlos-vs-premium");
 const frFreePremium = readOut("fr/kostenlos-vs-premium");
+const privacyPolicy = readOut("de/datenschutz");
+const frPrivacyPolicy = readOut("fr/datenschutz");
 const dataSecurity = readOut("de/daten-und-sicherheit");
 const frDataSecurity = readOut("fr/daten-und-sicherheit");
 const aiTransparency = readOut("de/ki-transparenz");
@@ -187,6 +189,14 @@ const checks = [
   ["Data security page has expanded FAQ and tracked CTAs", dataSecurity.includes("Werden meine Daten für Werbung verkauft") && dataSecurity.includes("Warum bleibt die Website vor dem Launch auf noindex/nofollow") && dataSecurity.includes("utm_content=data-security-hero") && dataSecurity.includes("utm_content=data-security-final")],
   ["Data security page is linked in footer", deHome.includes("/de/daten-und-sicherheit/")],
   ["Data security page has localized fallback SEO", frDataSecurity.includes("<title>Données et sécurité | Hermetia</title>")],
+  ["Privacy policy has extended sensitive data framing", privacyPolicy.includes("nicht wie gewöhnliche Marketingdaten") && privacyPolicy.includes("besondere Kategorien personenbezogener Daten")],
+  ["Privacy policy covers AI and data minimization", privacyPolicy.includes("AI-Verarbeitung") && privacyPolicy.includes("Rohdaten reduziert, pseudonymisiert")],
+  ["Privacy policy covers third-country transfers and processors", privacyPolicy.includes("Drittlandübermittlung und Dienstleister") && privacyPolicy.includes("Transfer-Risiko-Prüfung")],
+  ["Privacy policy covers relationship data consent", privacyPolicy.includes("Beziehungen und Daten anderer Personen") && privacyPolicy.includes("niemand heimlich spirituell")],
+  ["Privacy policy covers export deletion and security", privacyPolicy.includes("Speicherdauer, Löschung und Export") && privacyPolicy.includes("verschlüsselte Übertragung")],
+  ["Privacy policy covers advertising limits and final review", privacyPolicy.includes("Keine Weitergabe zu Werbezwecken") && privacyPolicy.includes("anwaltlich freigegeben")],
+  ["Privacy policy is linked in footer", deHome.includes("/de/datenschutz/")],
+  ["Privacy policy has localized fallback SEO", frPrivacyPolicy.includes("<title>Datenschutzerklärung</title>") && frPrivacyPolicy.includes("Version éditoriale en préparation")],
   ["AI transparency page exists", aiTransparency.includes("Warum Hermetia KI-Transparenz offenlegt") && aiTransparency.includes("EU AI Act")],
   ["AI transparency page separates calculation and wording", aiTransparency.includes("Berechnung, Konvergenz und Formulierung sind getrennt") && aiTransparency.includes("Erst danach kommt AI als Formulierungsebene hinzu")],
   ["AI transparency page explains data minimization", aiTransparency.includes("Welche Daten AI verarbeitet") && aiTransparency.includes("Prinzip der Datenminimierung")],
