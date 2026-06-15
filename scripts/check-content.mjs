@@ -61,6 +61,7 @@ const frImprint = readOut("fr/impressum");
 const about = readOut("de/ueber-hermetia");
 const frAbout = readOut("fr/ueber-hermetia");
 const useCases = readOut("de/anwendungsfaelle");
+const enUseCases = readOut("en/anwendungsfaelle");
 const esUseCases = readOut("es/anwendungsfaelle");
 const terms = readOut("de/agb");
 const frTerms = readOut("fr/agb");
@@ -192,6 +193,8 @@ const checks = [
   ["Use cases page has legal frame", useCases.includes("Rechtlicher Rahmen") && useCases.includes("Eigene Sprache statt geschützter Deutungstexte")],
   ["Use cases page has graphics", useCases.includes("/graphics/convergence/abb5-algorithmus-funnel.svg")],
   ["Use cases page has expanded tracked CTAs", useCases.includes("utm_content=use-cases-hero") && useCases.includes("utm_content=use-cases-journey") && useCases.includes("utm_content=use-cases-identity") && useCases.includes("utm_content=use-cases-relationships") && useCases.includes("utm_content=use-cases-final")],
+  ["EN use cases page has localized conversion longform", enUseCases.includes("Where Hermetia is especially useful") && enUseCases.includes("From first interest to paid depth") && enUseCases.includes("Curiosity should lead to signup")],
+  ["EN use cases page has no German core headings", !enUseCases.includes("Wofür Hermetia besonders gut geeignet ist") && !enUseCases.includes("Nutzerreise") && !enUseCases.includes("Conversion-Prinzip")],
   ["Use cases page is linked in footer", deHome.includes("/de/anwendungsfaelle/")],
   ["Use cases page has localized fallback SEO", esUseCases.includes("<title>Casos de uso | Hermetia</title>")],
   ["Terms page covers paid models", terms.includes("bezahlte Modelle") && terms.includes("Vollprofil-Buch") && terms.includes("Premium soll zusätzliche Tiefe schaffen")],
