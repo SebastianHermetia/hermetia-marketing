@@ -206,6 +206,22 @@ export const pillarPages: Record<string, LocalizedPage> = Object.fromEntries(
   Object.entries(dePages).map(([key, de]) => [key, { de, en: enPages[key as keyof typeof dePages] }]),
 ) as Record<string, LocalizedPage>;
 
+function glossaryTerm(input: {
+  slug: string;
+  term: string;
+  definition: string;
+  why: string;
+  hermetia: string;
+}) {
+  return {
+    slug: input.slug,
+    term: input.term,
+    seoTitle: `${input.term} erklärt — Bedeutung bei Hermetia`,
+    definition: input.definition,
+    sections: [input.why, input.hermetia],
+  };
+}
+
 export const glossaryTerms = [
   {
     slug: "seelenkarte",
@@ -383,6 +399,251 @@ export const glossaryTerms = [
       "Marketing-Beispiele bleiben fiktiv. Echte Profile, Geburtsdaten oder Beziehungsauswertungen werden nicht öffentlich verwendet.",
     ],
   },
+  glossaryTerm({
+    slug: "radix",
+    term: "Radix",
+    definition: "Die Radix ist das Geburtshoroskop einer Person und zeigt berechnete Planetenpositionen zum Zeitpunkt der Geburt.",
+    why: "In Hermetia ist die Radix eine wichtige Datenquelle, aber nicht das ganze Profil. Sie liefert Zeichen, Häuser, Aspekte und Achsen als Ausgangspunkt.",
+    hermetia: "Hermetia verbindet Radix-Signale mit anderen Systemfamilien, damit astrologische Aussagen nicht isoliert übergewichtet werden.",
+  }),
+  glossaryTerm({
+    slug: "aszendent",
+    term: "Aszendent",
+    definition: "Der Aszendent ist das Tierkreiszeichen, das zum Geburtszeitpunkt am östlichen Horizont aufsteigt.",
+    why: "Er braucht eine möglichst genaue Geburtszeit und beeinflusst Häuser, Auftreten und die Perspektive, aus der ein Horoskop gelesen wird.",
+    hermetia: "Hermetia kennzeichnet die Sicherheit von Aszendent-Aussagen, wenn die Geburtszeit ungenau ist.",
+  }),
+  glossaryTerm({
+    slug: "haeuser",
+    term: "Astrologische Häuser",
+    definition: "Astrologische Häuser ordnen Horoskopfaktoren verschiedenen Lebensbereichen zu, etwa Beziehung, Berufung oder Rückzug.",
+    why: "Häuser machen astrologische Aussagen konkreter, hängen aber stark von Geburtszeit, Ort und gewähltem Häusersystem ab.",
+    hermetia: "Hermetia nutzt Häuser transparent und vorsichtig, besonders wenn Eingabedaten weniger exakt sind.",
+  }),
+  glossaryTerm({
+    slug: "aspekt",
+    term: "Aspekt",
+    definition: "Ein Aspekt beschreibt den Winkel zwischen zwei Horoskopfaktoren und damit eine Beziehung zwischen zwei Themen.",
+    why: "Aspekte zeigen Harmonie, Spannung oder Aktivierung. Sie sind wichtig, um innere Dynamiken nicht nur einzeln, sondern relational zu lesen.",
+    hermetia: "Hermetia fasst Aspekte als Theme-Signale zusammen und prüft, ob andere Systeme ähnliche Dynamiken spiegeln.",
+  }),
+  glossaryTerm({
+    slug: "orb",
+    term: "Orb",
+    definition: "Der Orb ist der erlaubte Abstand von einem exakten astrologischen Winkel oder Punkt.",
+    why: "Ein enger Orb gilt meist als stärker, ein weiter Orb als weicher. Ohne klare Orben werden astrologische Aussagen schnell beliebig.",
+    hermetia: "Hermetia verwendet definierte Orben und macht Gewichtungen nachvollziehbar.",
+  }),
+  glossaryTerm({
+    slug: "transit",
+    term: "Transit",
+    definition: "Ein Transit beschreibt die aktuelle Position eines Himmelskörpers im Verhältnis zum Geburtshoroskop.",
+    why: "Transite werden häufig genutzt, um Zeitqualität zu beschreiben. Sie sind keine Ereignisgarantie, sondern ein Timing-Signal.",
+    hermetia: "Hermetia nutzt Transite zurückhaltend für Tagesimpulse und Monatsrückblicke.",
+  }),
+  glossaryTerm({
+    slug: "progression",
+    term: "Progression",
+    definition: "Progressionen sind astrologische Timing-Techniken, die eine symbolische innere Entwicklung über Zeit beschreiben.",
+    why: "Sie unterscheiden sich von Transiten, weil sie weniger äußere Auslöser und mehr innere Reifung darstellen.",
+    hermetia: "Hermetia kann Progressionen als langsames Hintergrundsignal für Seelenweg und Entwicklung nutzen.",
+  }),
+  glossaryTerm({
+    slug: "profection",
+    term: "Profection",
+    definition: "Eine Profection ist eine klassische astrologische Technik, die jedem Lebensjahr ein Haus oder Thema zuordnet.",
+    why: "Sie ist einfach, aber wirkungsvoll, um Jahresfokus und Lebensbereiche im Zeitverlauf zu betrachten.",
+    hermetia: "Hermetia nutzt Profections als erklärbares Timing-Signal, nicht als Vorhersage fester Ereignisse.",
+  }),
+  glossaryTerm({
+    slug: "typ",
+    term: "Human-Design-Typ",
+    definition: "Der Human-Design-Typ beschreibt eine Grundlogik von Energie, Handlung und Austausch.",
+    why: "Typen sind populär, können aber schnell zu starren Labels werden. Entscheidend ist die praktische Selbstbeobachtung.",
+    hermetia: "Hermetia liest den Typ als ein Signal unter mehreren und verbindet ihn mit Autorität, Zentren und anderen Systemen.",
+  }),
+  glossaryTerm({
+    slug: "profil-linien",
+    term: "Profil-Linien",
+    definition: "Profil-Linien sind im Human Design eine Kombination zweier Linien, die Lernstil, Rolle und Entwicklungsmuster symbolisiert.",
+    why: "Sie geben Sprache für soziale Rolle, Rückzug, Experiment, Führung oder Erfahrung.",
+    hermetia: "Hermetia nutzt Profil-Linien nur mit eigener Sprache und ordnet sie in größere Kernthemen ein.",
+  }),
+  glossaryTerm({
+    slug: "zentren",
+    term: "Zentren",
+    definition: "Zentren sind im Bodygraph Felder, die mit Energie, Wahrnehmung und Ausdruck verbunden werden.",
+    why: "Definierte und offene Zentren werden oft als stabile oder empfängliche Bereiche gelesen.",
+    hermetia: "Hermetia vermeidet Absolutheiten und formuliert Zentren als Beobachtungsimpulse für Alltag und Beziehung.",
+  }),
+  glossaryTerm({
+    slug: "kanal",
+    term: "Kanal",
+    definition: "Ein Kanal verbindet im Human Design zwei Tore und wird als durchgängiges Motiv im Bodygraph gelesen.",
+    why: "Kanäle können starke Themen anzeigen, sollten aber nicht ohne Kontext interpretiert werden.",
+    hermetia: "Hermetia gruppiert Kanalsignale mit verwandten Themen aus Gene Keys, Astrologie und Fragebögen.",
+  }),
+  glossaryTerm({
+    slug: "tor",
+    term: "Tor",
+    definition: "Ein Tor ist im Human Design und in verwandten Systemen eine spezifische Position mit eigener Symbolqualität.",
+    why: "Tore sind feiner als Typen und Zentren und ermöglichen differenziertere Aussagen.",
+    hermetia: "Hermetia nutzt Tore als Theme-Signale und prüft, welche Themen in anderen Systemen wiederkehren.",
+  }),
+  glossaryTerm({
+    slug: "inkarnationskreuz",
+    term: "Inkarnationskreuz",
+    definition: "Das Inkarnationskreuz ist im Human Design ein übergeordnetes Motiv aus vier zentralen Torpositionen.",
+    why: "Es wird oft als Lebens- oder Richtungsthema verstanden, braucht aber besonders vorsichtige Sprache.",
+    hermetia: "Hermetia behandelt es als mögliches Seelenweg-Signal, nicht als festgelegten Lebensauftrag.",
+  }),
+  glossaryTerm({
+    slug: "sequenzen",
+    term: "Gene-Keys-Sequenzen",
+    definition: "Gene-Keys-Sequenzen beschreiben Entwicklungswege rund um Berufung, Beziehung und Wohlstand.",
+    why: "Sie sind kontemplativ angelegt und arbeiten mit wiederkehrenden Fragen statt schnellen Aussagen.",
+    hermetia: "Hermetia nutzt keine geschützten Originaltexte, sondern eigene, rechtlich vorsichtige Reflexionssprache.",
+  }),
+  glossaryTerm({
+    slug: "goldener-pfad",
+    term: "Goldener Pfad",
+    definition: "Der Goldene Pfad ist eine Gene-Keys-inspirierte Reise durch zentrale persönliche Themen.",
+    why: "Er bündelt Fragen zu Bestimmung, Beziehung und Reifung in einer geführten Struktur.",
+    hermetia: "Hermetia übernimmt keine proprietären Texte, sondern nutzt nur eigene Struktur- und Reflexionslogik.",
+  }),
+  glossaryTerm({
+    slug: "enneagramm-typ",
+    term: "Enneagramm-Typ",
+    definition: "Ein Enneagramm-Typ beschreibt ein wiederkehrendes Motiv aus Aufmerksamkeit, Schutzstrategie und Grundsehnsucht.",
+    why: "Der Wert liegt nicht im Label, sondern darin, automatische Muster bewusster zu erkennen.",
+    hermetia: "Hermetia nutzt Enneagramm-Typen als Motivationssprache und verbindet sie mit Werten, Beziehung und Schattenarbeit.",
+  }),
+  glossaryTerm({
+    slug: "fluegel",
+    term: "Flügel",
+    definition: "Ein Flügel ist im Enneagramm ein benachbarter Typ, der den Haupttyp färben kann.",
+    why: "Flügel erklären, warum Menschen mit demselben Haupttyp sehr unterschiedlich wirken können.",
+    hermetia: "Hermetia verwendet Flügel nur als weiche Nuance und nicht als starre Unterkategorie.",
+  }),
+  glossaryTerm({
+    slug: "tritype",
+    term: "Tritype",
+    definition: "Tritype beschreibt eine Kombination aus drei Enneagramm-Mustern aus verschiedenen Zentren.",
+    why: "Das Modell kann differenzieren, ist aber spekulativer als einfache Selbstauskunft.",
+    hermetia: "Hermetia kennzeichnet Tritype als optionale Vertiefung und gewichtet es niedriger als klarere Signale.",
+  }),
+  glossaryTerm({
+    slug: "lebensweg",
+    term: "Lebensweg",
+    definition: "Der Lebensweg ist eine numerologische Kernzahl aus dem Geburtsdatum.",
+    why: "Er wird oft als Grundthema der persönlichen Entwicklung gelesen.",
+    hermetia: "Hermetia behandelt den Lebensweg als leicht nachvollziehbares Zahlen-Signal innerhalb der Konvergenz.",
+  }),
+  glossaryTerm({
+    slug: "namenszahl",
+    term: "Namenszahl",
+    definition: "Die Namenszahl entsteht aus einer Zuordnung von Buchstaben zu Zahlen.",
+    why: "Sie ergänzt geburtsdatumsbasierte Numerologie um Sprache, Name und Ausdruck.",
+    hermetia: "Hermetia nutzt Namenszahlen nur optional und erklärt, welche Schreibweise verwendet wurde.",
+  }),
+  glossaryTerm({
+    slug: "pinnacle",
+    term: "Pinnacle",
+    definition: "Pinnacles sind numerologische Lebensphasen, die längere Entwicklungsabschnitte beschreiben.",
+    why: "Sie liefern einen anderen Zeithorizont als Tages- oder Jahresimpulse.",
+    hermetia: "Hermetia nutzt Pinnacles als Hintergrundthema für Seelenweg und langfristige Reflexion.",
+  }),
+  glossaryTerm({
+    slug: "tzolkin",
+    term: "Tzolkin",
+    definition: "Der Tzolkin ist ein Kalenderzyklus mit Tagesenergien, Zahlen und Siegeln.",
+    why: "Er wird in spirituellen Kontexten als Symbolsystem für Rhythmus und Archetypen genutzt.",
+    hermetia: "Hermetia kennzeichnet Tzolkin-Deutungen als kulturell sensibles Symbolmodell und formuliert eigene Texte.",
+  }),
+  glossaryTerm({
+    slug: "kin",
+    term: "Kin",
+    definition: "Ein Kin ist im Tzolkin eine Kombination aus Zahl und Siegel innerhalb des 260-Tage-Zyklus.",
+    why: "Es bietet ein kompaktes Bild für Tagesqualität und persönliches Motiv.",
+    hermetia: "Hermetia nutzt Kin-Signale als zusätzliche Perspektive und vermeidet absolute Aussagen über Identität.",
+  }),
+  glossaryTerm({
+    slug: "bazi",
+    term: "BaZi",
+    definition: "BaZi, auch Vier Säulen genannt, ist ein System aus Jahr, Monat, Tag und Stunde der Geburt.",
+    why: "Es arbeitet mit Elementen, Stämmen, Zweigen und zyklischer Zeitlogik.",
+    hermetia: "Hermetia nutzt BaZi als eigenes Systemfamilien-Signal und grenzt kulturelle Deutung vorsichtig ab.",
+  }),
+  glossaryTerm({
+    slug: "fuenf-elemente",
+    term: "Fünf Elemente",
+    definition: "Die Fünf Elemente beschreiben symbolische Qualitäten wie Holz, Feuer, Erde, Metall und Wasser.",
+    why: "Sie tauchen in mehreren Systemen auf und eignen sich gut, um Rhythmus, Ausdruck und Balance zu beschreiben.",
+    hermetia: "Hermetia zählt Element-Echos nicht mehrfach, sondern prüft, aus welchen Systemfamilien sie stammen.",
+  }),
+  glossaryTerm({
+    slug: "nakshatra",
+    term: "Nakshatra",
+    definition: "Nakshatras sind Mondhäuser der vedischen Astrologie.",
+    why: "Sie geben eine feinere Mondperspektive und werden oft für Temperament, Rhythmus und Motivation genutzt.",
+    hermetia: "Hermetia verwendet Nakshatras mit eigener, vorsichtiger Sprache und ohne traditionelle Fachtexte zu kopieren.",
+  }),
+  glossaryTerm({
+    slug: "dasha",
+    term: "Dasha",
+    definition: "Dasha-Systeme beschreiben in der vedischen Astrologie längere Zeitphasen.",
+    why: "Sie eignen sich für biografische Reflexion, dürfen aber nicht als Ereigniszwang verstanden werden.",
+    hermetia: "Hermetia nutzt Dashas optional als Timing-Hintergrund und kennzeichnet Unsicherheiten klar.",
+  }),
+  glossaryTerm({
+    slug: "hexagramm",
+    term: "Hexagramm",
+    definition: "Ein Hexagramm ist im I Ging eine Figur aus sechs Linien mit symbolischer Bedeutung.",
+    why: "Hexagramme beschreiben Wandel, Spannung, Richtung und Entscheidungssituationen.",
+    hermetia: "Hermetia nutzt I-Ging-Bezüge als Reflexionsmuster und nicht als Orakelentscheidung.",
+  }),
+  glossaryTerm({
+    slug: "linie",
+    term: "Linie",
+    definition: "Eine Linie ist eine einzelne Position innerhalb eines Hexagramms oder verwandten Symbolsystems.",
+    why: "Linien machen ein Thema konkreter und zeigen, an welcher Stelle eines Prozesses ein Motiv gelesen wird.",
+    hermetia: "Hermetia nutzt Linien als feine Nuance, wenn sie rechnerisch eindeutig bestimmbar sind.",
+  }),
+  glossaryTerm({
+    slug: "resonanz",
+    term: "Resonanz",
+    definition: "Resonanz beschreibt, dass eine Aussage, ein Symbol oder ein Muster subjektiv spürbar anschließt.",
+    why: "Resonanz ist wertvoll, aber kein Beweis. Sie zeigt, wo Reflexion beginnen kann.",
+    hermetia: "Hermetia verbindet Resonanz mit erklärbarer Berechnung und Nutzerfeedback.",
+  }),
+  glossaryTerm({
+    slug: "selbstreflexion",
+    term: "Selbstreflexion",
+    definition: "Selbstreflexion ist die bewusste Betrachtung eigener Muster, Entscheidungen und Reaktionen.",
+    why: "Sie ist das eigentliche Ziel von Hermetia, wichtiger als perfekte Typen oder endgültige Antworten.",
+    hermetia: "Hermetia übersetzt komplexe Systeme in Fragen, Sprache und Impulse für diese Selbstreflexion.",
+  }),
+  glossaryTerm({
+    slug: "journaling",
+    term: "Journaling",
+    definition: "Journaling ist das schriftliche Festhalten von Beobachtungen, Gefühlen und Erkenntnissen.",
+    why: "Es macht aus einem Impuls eine eigene Erfahrung und hilft, Muster über Zeit zu erkennen.",
+    hermetia: "Hermetia verbindet Tagesimpulse mit Journaling-Fragen, Feedback und Monatsrückblicken.",
+  }),
+  glossaryTerm({
+    slug: "einwilligung",
+    term: "Einwilligung",
+    definition: "Einwilligung bedeutet, dass eine Person informiert und freiwillig zustimmt, bevor sensible Daten verarbeitet werden.",
+    why: "Spirituelle Profile und Beziehungsanalysen können intime Rückschlüsse enthalten.",
+    hermetia: "Hermetia baut Einwilligung als Produktprinzip ein, besonders bei Beziehungsauswertungen und besonderen Daten.",
+  }),
+  glossaryTerm({
+    slug: "datenminimierung",
+    term: "Datenminimierung",
+    definition: "Datenminimierung bedeutet, nur die Daten zu erfassen, die für einen klaren Zweck notwendig sind.",
+    why: "Je sensibler ein Profil ist, desto wichtiger wird ein sparsamer Umgang mit Rohdaten und Ableitungen.",
+    hermetia: "Hermetia trennt Eingaben, Berechnung und Deutung und soll unnötige Datenpunkte vermeiden.",
+  }),
 ] as const;
 
 export const articles = [
@@ -434,6 +695,118 @@ export const articles = [
     body:
       "Ein Tageshoroskop richtet sich meist an ein Sternzeichen und damit an Millionen Menschen. Ein persönlicher Tagesimpuls beginnt bei deinem eigenen Profil und nutzt Tagesdaten nur als Färbung. Dadurch entsteht kein allgemeiner Spruch, sondern ein Reflexionsangebot, das zu deinen Kernthemen, deinem Rhythmus und deinen wiederkehrenden Mustern passt.",
   },
+  {
+    slug: "seelenkarte-erstellen",
+    title: "Seelenkarte erstellen: was Hermetia anders macht",
+    seoTitle: "Seelenkarte erstellen — Systeme, Konvergenz und persönlicher Einstieg",
+    description: "Wie aus Geburtsdaten, Selbstauskunft und Systemsignalen eine verständliche Seelenkarte entsteht.",
+    body:
+      "Eine Seelenkarte entsteht bei Hermetia nicht aus einem einzigen Test. Sie verbindet berechenbare Systeme, vorsichtige Selbstauskunft und die Konvergenz-Engine. Dadurch wird sichtbar, welche Themen mehrfach auftauchen und welche nur leise Nebenmotive sind. Der Einstieg soll neugierig machen: erst verstehen, dann entscheiden, welche Tiefe im bezahlten Modell sinnvoll ist.",
+  },
+  {
+    slug: "konvergenz-statt-beliebigkeit",
+    title: "Konvergenz statt Beliebigkeit",
+    seoTitle: "Konvergenz statt Beliebigkeit — warum Hermetia Systeme gewichtet",
+    description: "Warum mehrere ähnliche Aussagen nicht automatisch mehr Wahrheit bedeuten.",
+    body:
+      "Viele spirituelle Systeme wirken überzeugend, weil sie starke Sprache verwenden. Hermetia fragt zusätzlich: Kommt dieses Thema aus wirklich unabhängigen Quellen oder nur aus derselben Datenfamilie? Konvergenz schützt vor Doppelzählung und macht die Deutung belastbarer. Das Ergebnis bleibt Reflexion, wird aber nachvollziehbarer.",
+  },
+  {
+    slug: "was-kostet-spirituelles-profil",
+    title: "Was kostet ein gutes spirituelles Profil?",
+    seoTitle: "Was kostet ein spirituelles Profil? — kostenloser Einstieg und Premium-Tiefe",
+    description: "Warum Hermetia mit einem kostenlosen Einstieg arbeitet und welche Tiefe bezahlte Modelle schaffen.",
+    body:
+      "Ein gutes Profil braucht Datenqualität, Berechnung, verständliche Texte und verantwortungsvolle Grenzen. Hermetia soll deshalb kostenlos neugierig machen, aber tiefe Ebenen, Beziehungsauswertungen, Tagesbegleitung und langfristige Rückblicke in bezahlten Modellen bündeln. Der Nutzer soll erst Resonanz erleben und dann bewusst entscheiden.",
+  },
+  {
+    slug: "warum-geburtsdaten-sensibel-sind",
+    title: "Warum Geburtsdaten sensibel sind",
+    seoTitle: "Geburtsdaten im spirituellen Profil — Datenschutz, Einwilligung und Grenzen",
+    description: "Warum Geburtsdatum, Ort und Uhrzeit mehr sind als harmlose Formularfelder.",
+    body:
+      "Geburtsdaten wirken neutral, können aber sehr genaue Profilableitungen ermöglichen. In Verbindung mit spirituellen Deutungen entstehen sensible Aussagen über Identität, Weltbild und Beziehung. Hermetia behandelt diese Daten deshalb zweckgebunden, erklärbar und mit klaren Lösch- und Einwilligungswegen.",
+  },
+  {
+    slug: "human-design-ohne-label",
+    title: "Human Design ohne starre Labels lesen",
+    seoTitle: "Human Design ohne starre Labels — Hermetias vorsichtiger Ansatz",
+    description: "Warum Typ, Autorität und Zentren hilfreich sein können, aber nie die ganze Person erklären.",
+    body:
+      "Human Design kann starke Aha-Momente erzeugen. Gleichzeitig besteht die Gefahr, Menschen auf Typ, Autorität oder offene Zentren zu reduzieren. Hermetia nutzt Human Design deshalb als eine Systemfamilie unter mehreren. Was wirklich wichtig wird, zeigt sich erst, wenn andere Perspektiven ähnliche Themen bestätigen.",
+  },
+  {
+    slug: "gene-keys-ohne-kopierte-texte",
+    title: "Gene Keys ohne kopierte Texte nutzen",
+    seoTitle: "Gene Keys rechtlich sauber nutzen — eigene Sprache, eigene Deutung",
+    description: "Wie Hermetia Gene-Keys-inspirierte Muster verwendet, ohne geschützte Originaltexte zu übernehmen.",
+    body:
+      "Gene Keys sind als kontemplative Sprache wertvoll, aber viele Originalformulierungen sind geschützt. Hermetia übernimmt deshalb keine proprietären Texte. Die Plattform nutzt rechnerische Positionen und formuliert eigene, vorsichtige Reflexionssprache. So bleibt der Nutzen erhalten, ohne rechtlich geschützte Inhalte zu kopieren.",
+  },
+  {
+    slug: "astrologie-mit-erklärbarkeit",
+    title: "Astrologie mit Erklärbarkeit",
+    seoTitle: "Astrologie erklärbar nutzen — Berechnung, Gewichtung und Grenzen",
+    description: "Warum Hermetia astrologische Aussagen berechnet, gewichtet und in Systemfamilien einordnet.",
+    body:
+      "Astrologie wird stärker, wenn sie nicht nur poetisch, sondern nachvollziehbar ist. Hermetia trennt Berechnung, Gewichtung und Deutung. Planeten, Häuser und Aspekte werden erst technisch bestimmt, dann als Signale übersetzt und schließlich mit anderen Systemen verglichen.",
+  },
+  {
+    slug: "frageboegen-als-erdung",
+    title: "Warum Fragebögen Hermetia erden",
+    seoTitle: "Fragebögen in Hermetia — Selbstauskunft als Erdung spiritueller Systeme",
+    description: "Wie Big Five, RIASEC, Chronotyp und Dosha-Fragen die Seelenkarte alltagsnäher machen.",
+    body:
+      "Geburtsbasierte Systeme kennen den Alltag eines Menschen nicht. Fragebögen bringen Selbstauskunft hinein: Energie, Interessen, Werte, Rhythmus und Verhalten. Hermetia nutzt diese Antworten nicht als absolute Wahrheit, sondern als Erdung. Dadurch wird die Seelenkarte praktischer und weniger abgehoben.",
+  },
+  {
+    slug: "beziehungsprofil-mit-consent",
+    title: "Beziehungsprofil nur mit Consent",
+    seoTitle: "Beziehungsprofil mit Consent — warum Hermetia Einwilligung verlangt",
+    description: "Warum Beziehungsauswertungen besonders sensibel sind und nicht heimlich erstellt werden sollten.",
+    body:
+      "Eine Beziehungsauswertung sagt nicht nur etwas über den Nutzer, sondern auch über eine zweite Person. Deshalb braucht sie besondere Sorgfalt. Hermetia setzt auf informierte Einwilligung, transparente Zwecke und klare Grenzen. Resonanz und Reibung können hilfreich sein, aber niemals ohne Respekt vor der anderen Person.",
+  },
+  {
+    slug: "spirituelle-app-ohne-angstmarketing",
+    title: "Spirituelle App ohne Angstmarketing",
+    seoTitle: "Spirituelle App ohne Angstmarketing — Hermetias Produktethik",
+    description: "Warum Hermetia keine Angst, Abhängigkeit oder FOMO als Conversion-Hebel nutzen soll.",
+    body:
+      "Viele spirituelle Produkte verkaufen Dringlichkeit: verpasste Chancen, Schicksal, Warnungen oder karmische Angst. Hermetia soll anders funktionieren. Die Website darf neugierig machen und zur Anmeldung führen, aber nicht manipulieren. Gute Conversion entsteht durch Klarheit, Resonanz und Vertrauen.",
+  },
+  {
+    slug: "seo-fuer-spirituelle-systeme",
+    title: "SEO für spirituelle Systeme",
+    seoTitle: "SEO für spirituelle Systeme — warum Hermetia Glossar, Wissen und Vergleiche baut",
+    description: "Warum Longtail-Seiten zu Systemen, Begriffen und Vergleichen nachhaltige Reichweite schaffen.",
+    body:
+      "Menschen suchen selten sofort nach einer neuen Plattform. Sie suchen nach Begriffen: Was ist Human Design? Was bedeutet innere Autorität? Was ist der Unterschied zu Astrologie? Hermetia baut deshalb ein Wissensfundament aus Systemseiten, Glossar, Artikeln und Vergleichen. Jede Seite soll helfen und zugleich elegant zur Anmeldung führen.",
+  },
+  {
+    slug: "aeo-geo-und-ai-suche",
+    title: "AEO, GEO und AI-Suche für Hermetia",
+    seoTitle: "AEO und GEO für Hermetia — Inhalte für Suchmaschinen und AI-Antworten",
+    description: "Wie klare Antworten, FAQ-Struktur und Begriffserklärungen Hermetia in AI-Suchen sichtbarer machen.",
+    body:
+      "AI-Suchsysteme bevorzugen klare, gut strukturierte Antworten. Hermetia braucht deshalb Seiten, die Begriffe direkt erklären, Grenzen benennen und interne Zusammenhänge sauber verlinken. Glossar, FAQ, Vergleichsseiten und Pillar-Content liefern genau diese Antwortbausteine.",
+  },
+  {
+    slug: "premium-modell-sinnvoll-waehlen",
+    title: "Welches Hermetia-Modell passt zu mir?",
+    seoTitle: "Hermetia Premium-Modell wählen — wann sich bezahlte Tiefe lohnt",
+    description: "Welche Nutzer vom kostenlosen Einstieg profitieren und wann ein bezahltes Modell sinnvoll wird.",
+    body:
+      "Der kostenlose Einstieg zeigt, ob Hermetia resoniert. Ein bezahltes Modell wird sinnvoll, wenn Nutzer mehr Tiefe wollen: zusätzliche Ebenen, Beziehungsauswertungen, Tagesimpulse, Journaling-Verlauf oder langfristige Rückblicke. Die Website sollte diese Entscheidung nicht erzwingen, sondern gut erklären.",
+  },
+  {
+    slug: "warum-hermetia-keine-therapie-ist",
+    title: "Warum Hermetia keine Therapie ist",
+    seoTitle: "Hermetia ist keine Therapie — klare Grenzen für spirituelle Selbstreflexion",
+    description: "Warum Hermetia inspirieren kann, aber keine medizinische, psychologische oder therapeutische Behandlung ersetzt.",
+    body:
+      "Hermetia kann Sprache für Muster geben, aber keine Therapie ersetzen. Die Plattform stellt keine Diagnosen, behandelt keine Erkrankungen und trifft keine Entscheidungen für Nutzer. Diese Grenze ist rechtlich und ethisch wichtig. Gerade deshalb kann Hermetia als Reflexionsraum wertvoll sein.",
+  },
 ] as const;
 
 export const comparisons = [
@@ -468,6 +841,70 @@ export const comparisons = [
     description: "Warum Hermetias Tagesimpulse vom persönlichen Profil ausgehen und nicht nur vom Sternzeichen.",
     body:
       "Das Tageshoroskop startet meist beim Sonnenzeichen. Hermetia startet beim ganzen Profil: Kernthemen, Konvergenz, Rhythmus und optional Tagesdaten. Deshalb ist der Impuls weniger plakativ, aber persönlicher. Er soll nicht vorhersagen, sondern eine sinnvolle Reflexionsfrage für den Tag anbieten.",
+  },
+  {
+    slug: "astrologie-vs-numerologie",
+    title: "Astrologie vs. Numerologie",
+    seoTitle: "Astrologie vs. Numerologie — Himmelssprache und Zahlenmuster im Vergleich",
+    description: "Astrologie arbeitet mit Himmelspositionen, Numerologie mit Zahlen aus Datum und Name. Hermetia verbindet beide vorsichtig.",
+    body:
+      "Astrologie ist zeit- und ortsbezogen, Numerologie arbeitet stärker mit einfachen Zahlenmustern. Beide können persönliche Themen beleuchten, aber aus sehr unterschiedlichen Datenquellen. Hermetia nutzt genau diesen Unterschied: Wenn beide unabhängig ähnliche Motive zeigen, steigt die Konvergenz eines Kernthemas.",
+  },
+  {
+    slug: "enneagramm-vs-human-design",
+    title: "Enneagramm vs. Human Design",
+    seoTitle: "Enneagramm vs. Human Design — Motivation und Energie im Vergleich",
+    description: "Das Enneagramm fragt nach innerer Motivation, Human Design nach Energie, Autorität und Bodygraph.",
+    body:
+      "Das Enneagramm ist stark, wenn es um Schutzstrategien, Sehnsüchte und automatische Muster geht. Human Design beschreibt Energiefluss, Entscheidung und Zentren. Hermetia nutzt beide Systeme unterschiedlich: Motivation und Energie werden getrennt gelesen und erst danach miteinander verbunden.",
+  },
+  {
+    slug: "bazi-vs-astrologie",
+    title: "BaZi vs. westliche Astrologie",
+    seoTitle: "BaZi vs. westliche Astrologie — Vier Säulen und Horoskop im Vergleich",
+    description: "BaZi und westliche Astrologie nutzen Geburtszeit, lesen Zeitqualität aber mit unterschiedlicher Logik.",
+    body:
+      "BaZi arbeitet mit Säulen, Elementen und zyklischer Kalenderlogik. Westliche Astrologie berechnet Planetenpositionen, Häuser und Aspekte. Beide sind zeitbasierte Systeme, aber sie sprechen verschiedene Sprachen. Hermetia behandelt sie deshalb als getrennte Familien, damit echte Überschneidungen sichtbar werden.",
+  },
+  {
+    slug: "big-five-vs-human-design",
+    title: "Big Five vs. Human Design",
+    seoTitle: "Big Five vs. Human Design — Selbstauskunft und Geburtsdaten im Vergleich",
+    description: "Big Five basiert auf Selbstauskunft, Human Design auf Geburtsdaten. Hermetia nutzt beide als unterschiedliche Evidenzarten.",
+    body:
+      "Big Five fragt nach erlebtem Verhalten. Human Design berechnet ein symbolisches Profil aus Geburtsdaten. Hermetia verbindet beide, weil sie unterschiedliche Perspektiven liefern: Was zeigt sich im Alltag, und welches Symbolmuster wiederholt sich rechnerisch?",
+  },
+  {
+    slug: "tagesimpuls-vs-journaling-app",
+    title: "Hermetia Tagesimpuls vs. Journaling-App",
+    seoTitle: "Hermetia Tagesimpuls vs. Journaling-App — Impuls und Reflexion verbinden",
+    description: "Klassische Journaling-Apps speichern Gedanken, Hermetia gibt zusätzlich profilbasierte Reflexionsimpulse.",
+    body:
+      "Eine Journaling-App beginnt meist mit einer leeren Seite. Hermetia beginnt mit einem persönlichen Impuls aus Profil, Rhythmus und Tagesqualität. Der Wert entsteht in der Kombination: ein stimmiger Fokus, eine gute Frage und die Möglichkeit, über Zeit Muster zu erkennen.",
+  },
+  {
+    slug: "seelenkarte-vs-persoenlichkeitstest",
+    title: "Seelenkarte vs. Persönlichkeitstest",
+    seoTitle: "Seelenkarte vs. Persönlichkeitstest — warum Hermetia mehrschichtig arbeitet",
+    description: "Persönlichkeitstests messen Antworten. Eine Seelenkarte verbindet Antworten, Geburtsdaten und Systemkonvergenz.",
+    body:
+      "Ein Persönlichkeitstest ist oft schnell und klar, aber auf Selbstauskunft begrenzt. Eine Seelenkarte kombiniert Selbstauskunft mit berechneten Systemen und Konvergenz. Dadurch entsteht kein objektives Urteil, sondern ein mehrschichtiges Reflexionsbild.",
+  },
+  {
+    slug: "kostenloses-horoskop-vs-hermetia",
+    title: "Kostenloses Horoskop vs. Hermetia",
+    seoTitle: "Kostenloses Horoskop vs. Hermetia — warum ein Profil mehr kann",
+    description: "Kostenlose Horoskope liefern schnelle Deutung. Hermetia baut daraus eine langfristige, erklärbare Profilreise.",
+    body:
+      "Ein kostenloses Horoskop kann ein guter Einstieg sein. Hermetia geht weiter: Es verbindet viele Systeme, erklärt Konvergenz, nutzt Feedback und baut daraus eine fortlaufende Reise. Deshalb ist der kostenlose Einstieg nur der Anfang, während bezahlte Modelle echte Tiefe freischalten.",
+  },
+  {
+    slug: "oracle-cards-vs-tagesimpuls",
+    title: "Oracle Cards vs. Hermetia Tagesimpuls",
+    seoTitle: "Oracle Cards vs. Hermetia Tagesimpuls — Intuition und Profilbezug im Vergleich",
+    description: "Oracle Cards arbeiten intuitiv, Hermetia Tagesimpulse verbinden Intuition mit Profil- und Timingdaten.",
+    body:
+      "Oracle Cards können einen guten Tagesfokus geben, bleiben aber oft zufällig oder deckabhängig. Hermetia nutzt intuitive Motive nur als eine Schicht. Der eigentliche Tagesimpuls entsteht aus deinem Profil, wiederkehrenden Kernthemen und aktuellen Signalen.",
   },
 ] as const;
 
