@@ -56,6 +56,8 @@ const about = readOut("de/ueber-hermetia");
 const frAbout = readOut("fr/ueber-hermetia");
 const useCases = readOut("de/anwendungsfaelle");
 const esUseCases = readOut("es/anwendungsfaelle");
+const freePremium = readOut("de/kostenlos-vs-premium");
+const frFreePremium = readOut("fr/kostenlos-vs-premium");
 const pricing = readOut("de/preise");
 const services = readOut("de/leistungen");
 const systemsHub = readOut("de/systeme");
@@ -103,6 +105,11 @@ const checks = [
   ["Use cases page has tracked CTAs", useCases.includes("utm_content=use-cases-hero") && useCases.includes("utm_content=use-cases-final")],
   ["Use cases page is linked in footer", deHome.includes("/de/anwendungsfaelle/")],
   ["Use cases page has localized fallback SEO", esUseCases.includes("<title>Casos de uso | Hermetia</title>")],
+  ["Free vs Premium page exists", freePremium.includes("Erst Resonanz prüfen") && freePremium.includes("Nicht jeder sollte sofort upgraden")],
+  ["Free vs Premium page has FAQ schema", freePremium.includes("FAQPage")],
+  ["Free vs Premium page has tracked CTAs", freePremium.includes("utm_content=free-premium-hero") && freePremium.includes("utm_content=free-premium-final")],
+  ["Free vs Premium page is linked in footer", deHome.includes("/de/kostenlos-vs-premium/")],
+  ["Free vs Premium page has localized fallback SEO", frFreePremium.includes("<title>Gratuit ou Premium | Hermetia</title>")],
   ["Header CTAs are source tagged", deHome.includes("utm_content=header-start") && deHome.includes("utm_content=header-login")],
   ["Home CTAs are source tagged", deHome.includes("utm_content=home-hero") && deHome.includes("utm_content=home-final")],
   ["Pricing CTAs are source tagged", pricing.includes("utm_content=pricing-tier-1") && pricing.includes("utm_content=pricing-tier-2") && pricing.includes("utm_content=pricing-tier-3") && pricing.includes("utm_content=pricing-final")],

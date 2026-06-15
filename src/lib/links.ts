@@ -52,6 +52,7 @@ export const paths = {
   wissen: "/wissen",
   vergleiche: "/vergleiche",
   anwendungsfaelle: "/anwendungsfaelle",
+  freePremium: "/kostenlos-vs-premium",
   about: "/ueber-hermetia",
   sprachen: "/sprachen",
   freigaben: "/freigaben",

@@ -27,6 +27,7 @@ export function Footer({ locale }: { locale: Locale }) {
             <FootLink href={L(paths.konvergenz)}>Konvergenz-Engine</FootLink>
             <FootLink href={L(paths.seelenkarte)}>Seelenkarte</FootLink>
             <FootLink href={L(paths.preise)}>{t.nav.preise}</FootLink>
+            <FootLink href={L(paths.freePremium)}>Kostenlos vs Premium</FootLink>
           </FootCol>
           <FootCol title={t.footer.discover}>
             <FootLink href={L(paths.glossar)}>{t.footer.glossar}</FootLink>
