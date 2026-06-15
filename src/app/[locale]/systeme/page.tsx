@@ -6,7 +6,7 @@ import { buildMetadata } from "@/lib/seo";
 import { startUrl, localePath, paths } from "@/lib/links";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { systems } from "@/content/systems";
+import { systems, systemText } from "@/content/systems";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -66,7 +66,7 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
           </div>
           <div className="grid gap-5 md:grid-cols-3">
             {core.map((s) => {
-              const c = s[locale] ?? s.de;
+              const c = systemText(s, locale);
               return (
                 <Link key={s.slug} href={localePath(locale, `${paths.systeme}/${s.slug}`)} className="card no-underline transition-transform hover:-translate-y-1">
                   <div className="ic" aria-hidden>{s.glyph}</div>
@@ -89,7 +89,7 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
           </div>
           <div className="grid gap-5 md:grid-cols-2">
             {more.map((s) => {
-              const c = s[locale] ?? s.de;
+              const c = systemText(s, locale);
               return (
                 <Link key={s.slug} href={localePath(locale, `${paths.systeme}/${s.slug}`)} className="card no-underline transition-transform hover:-translate-y-1">
                   <h3 className="text-[19px]">{c.name}</h3>

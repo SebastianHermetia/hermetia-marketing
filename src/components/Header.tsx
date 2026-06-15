@@ -10,6 +10,8 @@ export function Header({ locale, current }: { locale: Locale; current?: string }
     { href: localePath(locale, paths.leistungen), label: t.nav.leistungen, key: "leistungen" },
     { href: localePath(locale, paths.systeme), label: t.nav.systeme, key: "systeme" },
     { href: localePath(locale, paths.methodik), label: t.nav.methodik, key: "methodik" },
+    { href: localePath(locale, paths.konvergenz), label: "Konvergenz", key: "konvergenz" },
+    { href: localePath(locale, paths.glossar), label: t.footer.glossar, key: "glossar" },
     { href: localePath(locale, paths.preise), label: t.nav.preise, key: "preise" },
   ];
 

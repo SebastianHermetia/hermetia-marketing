@@ -40,18 +40,18 @@
   },
   "home": {
     "seoTitle": "Hermetia — Deine Seelenkarte. Ein Bild, das dich versteht.",
-    "seoDescription": "Hermetia verwandelt deine Geburtsdaten in eine Seelenkarte aus 25 Deutungssystemen und begleitet dich Tag für Tag. Jetzt kostenlos dein Profil entdecken.",
+    "seoDescription": "Hermetia verwandelt deine Geburtsdaten in eine Seelenkarte aus 31 Systemen und begleitet dich Tag für Tag. Jetzt kostenlos dein Profil entdecken.",
     "hero": {
       "eyebrow": "Wie oben, so unten",
       "title": "Ein Bild deiner Seele – aus allem, was dich ausmacht.",
-      "lead": "Hermetia liest deine Geburtsdaten und webt aus bis zu 25 Deutungssystemen eine einzige, klare Seelenkarte – und begleitet dich Tag für Tag. Kein Datenblatt. Eine Reise zu dir.",
+      "lead": "Hermetia liest deine Geburtsdaten und webt aus bis zu 31 Systemen eine einzige, klare Seelenkarte – und begleitet dich Tag für Tag. Kein Datenblatt. Eine Reise zu dir.",
       "trustline": "Kostenlos starten · keine Kreditkarte · EU-Hosting & verschlüsselt",
       "quote": "Deine Sensibilität ist ein Kompass – keine Schwäche.",
       "chips": ["Tiefe Wahrnehmung", "Schöpferische Ruhe", "Mut zur Klarheit"]
     },
     "trust": {
       "kicker": "Für Menschen, die sich gesehen fühlen wollen – nicht vermessen",
-      "items": ["25 Deutungssysteme", "DSGVO & Art. 9 by design", "KI transparent gekennzeichnet", "Einladend, nie bestimmend"]
+      "items": ["31 Systeme", "DSGVO & Art. 9 by design", "KI transparent gekennzeichnet", "Einladend, nie bestimmend"]
     },
     "features": {
       "kicker": "Was Hermetia für dich tut",
@@ -77,9 +77,9 @@
     },
     "systems": {
       "kicker": "Die eingebetteten Systeme",
-      "title": "25 Traditionen. Eine Stimme.",
+      "title": "31 Perspektiven. Eine Stimme.",
       "text": "Astrologie, Human Design, Gene Keys, Numerologie, BaZi, Enneagramm und mehr – Hermetia liest sie nicht nebeneinander, sondern zusammen. Wo viele Wege auf denselben Punkt zeigen, wird daraus Gewissheit.",
-      "chips": ["Astrologie", "Human Design", "Gene Keys", "Numerologie", "BaZi · Vier Säulen", "Enneagramm", "Maya Tzolk’in", "Nakshatra", "I Ching", "Ayurveda", "+ 15 weitere"]
+      "chips": ["Astrologie", "Human Design", "Gene Keys", "Numerologie", "BaZi · Vier Säulen", "Enneagramm", "Maya Tzolk’in", "Nakshatra", "I Ching", "Ayurveda", "+ 21 weitere"]
     },
     "voices": {
       "kicker": "Stimmen",
@@ -99,7 +99,7 @@
       "kicker": "Häufige Fragen",
       "title": "Gut zu wissen",
       "items": [
-        { "q": "Was ist eine Seelenkarte?", "a": "Deine Seelenkarte ist ein integriertes Persönlichkeitsbild, das Hermetia aus deinen Geburtsdaten und bis zu 25 Deutungssystemen berechnet und zu einer verständlichen, schönen Darstellung verbindet." },
+        { "q": "Was ist eine Seelenkarte?", "a": "Deine Seelenkarte ist ein integriertes Persönlichkeitsbild, das Hermetia aus deinen Geburtsdaten und bis zu 31 Systemen berechnet und zu einer verständlichen, schönen Darstellung verbindet." },
         { "q": "Brauche ich meine genaue Geburtszeit?", "a": "Nein. Hermetia funktioniert auch ohne exakte Uhrzeit – du wählst dann eine Tageszeit. Wir sagen dir transparent, welcher Teil deines Profils auch ohne Uhrzeit gesichert ist." },
         { "q": "Ist das eine Diagnose oder Vorhersage?", "a": "Nein. Hermetia ist Inspiration zur Selbstreflexion – keine medizinische, psychologische oder therapeutische Beratung und keine Schicksalsvorhersage." },
         { "q": "Was passiert mit meinen Daten?", "a": "Deine Daten liegen verschlüsselt in der EU. Spirituell-weltanschauliche Profile sind besondere Daten (DSGVO Art. 9) – wir holen dafür deine ausdrückliche Einwilligung und du kannst alles jederzeit exportieren oder löschen." }
@@ -133,10 +133,10 @@
     "cta": { "title": "Fang mit deiner Seelenkarte an.", "lead": "Kostenlos, in zwei Minuten." }
   },
   "systeme": {
-    "seoTitle": "Die Systeme hinter Hermetia — 25 Traditionen, eine Seelenkarte",
-    "seoDescription": "Astrologie, Human Design, Gene Keys, Numerologie, BaZi und mehr: So funktionieren die 25 Deutungssysteme in Hermetia – und wie die Konvergenz-Engine sie verbindet.",
+    "seoTitle": "Die Systeme hinter Hermetia — 31 Perspektiven, eine Seelenkarte",
+    "seoDescription": "Astrologie, Human Design, Gene Keys, Numerologie, BaZi und mehr: So funktionieren die 31 Systeme in Hermetia – und wie die Konvergenz-Engine sie verbindet.",
     "kicker": "Die eingebetteten Systeme",
-    "title": "25 Traditionen der Menschheit – für ein Bild von dir.",
+    "title": "31 Perspektiven der Menschheit – für ein Bild von dir.",
     "lead": "Jedes System ist ein Fenster. Hermetia öffnet viele auf einmal und zeigt dir, wo sie auf dasselbe blicken.",
     "convergence": { "tag": "Das Herz von Hermetia", "title": "Die Konvergenz-Engine", "text": "Kein anderer Rechner tut das: Hermetia legt alle Systeme übereinander und misst, wo sie sich bestätigen – das wird zu deiner Stärke – und wo sie sich widersprechen – das wird zu deiner Frage. Aus vielen Stimmen wird eine." },
     "coreKicker": "Die fünf Kernsysteme",
@@ -290,3 +290,4 @@
     }
   }
 }
+

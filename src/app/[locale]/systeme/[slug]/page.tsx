@@ -9,7 +9,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Faq } from "@/components/Faq";
 import { JsonLd, faqSchema, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
-import { systems, systemSlugs, getSystem } from "@/content/systems";
+import { systems, systemSlugs, getSystem, systemText } from "@/content/systems";
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale, slug } = await params;
   const sys = getSystem(slug);
   if (!sys) return {};
-  const c = sys[locale as Locale] ?? sys.de;
+  const c = systemText(sys, locale);
   return buildMetadata({ locale: locale as Locale, path: `${paths.systeme}/${slug}`, title: c.seoTitle, description: c.seoDescription });
 }
 
@@ -31,7 +31,7 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
   const sys = getSystem(slug);
   if (!sys) notFound();
   const t = getDictionary(locale);
-  const c = sys[locale] ?? sys.de;
+  const c = systemText(sys, locale);
   const related = systems.filter((s) => s.slug !== slug).slice(0, 4);
   const pageUrl = `${siteUrl}/${locale}${paths.systeme}/${slug}/`;
   const imageUrl = `${siteUrl}/images/art/${sys.art}`;
@@ -113,7 +113,7 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
           <h2 className="mb-6 text-center text-[24px]">{t.systeme.moreKicker}</h2>
           <div className="grid gap-4 md:grid-cols-4">
             {related.map((r) => {
-              const rc = r[locale] ?? r.de;
+              const rc = systemText(r, locale);
               return (
                 <Link key={r.slug} href={localePath(locale, `${paths.systeme}/${r.slug}`)} className="card no-underline transition-transform hover:-translate-y-1">
                   <div className="ic" aria-hidden>{r.glyph}</div>

@@ -1,0 +1,52 @@
+<svg viewBox="0 0 860 650" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect x="0" y="0" width="860" height="650" rx="18" fill="#FBF7F0"/>
+  <text x="40" y="48" font-size="24" font-weight="700" fill="#3E2C39">Was fest verankert ist — und was eine feine Note</text>
+  <text x="40" y="76" font-size="14.5" fill="#6B4A5E">Je weiter innen ein Thema liegt, desto mehr unabhängige Sichtweisen bestätigen es.</text>
+
+  <!-- rings -->
+  <circle cx="290" cy="362" r="242" fill="#EFE6EC" stroke="#DCC9D5"/>
+  <circle cx="290" cy="362" r="162" fill="#EAF0E6" stroke="#CFDDC6"/>
+  <circle cx="290" cy="362" r="82" fill="#F6EBCF" stroke="#E6D29C"/>
+
+  <!-- inner: verankert -->
+  <text x="290" y="356" font-size="16.5" font-weight="700" fill="#B0892F" text-anchor="middle">Verbundenheit</text>
+  <text x="290" y="382" font-size="16.5" font-weight="700" fill="#B0892F" text-anchor="middle">Stille &amp; Tiefe</text>
+
+  <!-- middle: tragend -->
+  <text x="290" y="248" font-size="14" font-weight="600" fill="#5C7A55" text-anchor="middle">Mut zur Sichtbarkeit</text>
+  <text x="196" y="430" font-size="14" font-weight="600" fill="#5C7A55" text-anchor="middle">Kontrolle loslassen</text>
+  <text x="392" y="430" font-size="13" font-weight="600" fill="#5C7A55" text-anchor="middle">eigener Rhythmus</text>
+
+  <!-- outer: feine note -->
+  <text x="168" y="214" font-size="13" fill="#8B6F84" text-anchor="middle">Die Freude</text>
+  <text x="420" y="220" font-size="13" fill="#8B6F84" text-anchor="middle">Selbstausdruck</text>
+  <text x="120" y="372" font-size="13" fill="#8B6F84" text-anchor="middle">Timing</text>
+  <text x="290" y="572" font-size="13" fill="#8B6F84" text-anchor="middle">Grenzen setzen</text>
+
+  <!-- legend -->
+  <text x="560" y="150" font-size="16" font-weight="700" fill="#3E2C39">Wie tief verankert?</text>
+  <circle cx="572" cy="190" r="9" fill="#C2A14D"/>
+  <text x="592" y="187" font-size="14" font-weight="700" fill="#3E2C39">Verankert</text>
+  <text x="592" y="207" font-size="12" fill="#5E4257">Viele unabhängige Sichtweisen</text>
+  <text x="592" y="224" font-size="12" fill="#5E4257">bestätigen es — beschreibt dich verlässlich.</text>
+
+  <circle cx="572" cy="262" r="9" fill="#97AD8E"/>
+  <text x="592" y="259" font-size="14" font-weight="700" fill="#3E2C39">Tragend</text>
+  <text x="592" y="279" font-size="12" fill="#5E4257">Mehrere Sichtweisen stützen es.</text>
+
+  <circle cx="572" cy="316" r="9" fill="#C2AEBC"/>
+  <text x="592" y="313" font-size="14" font-weight="700" fill="#3E2C39">Feine Note</text>
+  <text x="592" y="333" font-size="12" fill="#5E4257">Eine einzelne Stimme — eher</text>
+  <text x="592" y="350" font-size="12" fill="#5E4257">Nuance oder situativ.</text>
+
+  <rect x="560" y="392" width="262" height="150" rx="12" fill="#FFFFFF" stroke="#E4D9CB"/>
+  <text x="578" y="420" font-size="13" font-weight="700" fill="#6B4A5E">Warum das hilft</text>
+  <text x="578" y="444" font-size="12.5" fill="#5E4257">Du musst nicht jedem Ergebnis gleich</text>
+  <text x="578" y="462" font-size="12.5" fill="#5E4257">viel Gewicht geben. Was im Zentrum</text>
+  <text x="578" y="480" font-size="12.5" fill="#5E4257">liegt, trägt dich; die feinen Noten am</text>
+  <text x="578" y="498" font-size="12.5" fill="#5E4257">Rand sind Farbtupfer, keine Säulen.</text>
+  <text x="578" y="524" font-size="11.5" font-style="italic" fill="#8A6B7C">Genau das leistet die Familien-</text>
+  <text x="578" y="540" font-size="11.5" font-style="italic" fill="#8A6B7C">Konvergenz im Hintergrund.</text>
+
+  <text x="40" y="624" font-size="10.5" fill="#A38FA0" font-style="italic">Beispielprofil, schematisch · „Verankerung“ = Anzahl unabhängiger Familien, die das Thema stützen · Hermetia</text>
+</svg>

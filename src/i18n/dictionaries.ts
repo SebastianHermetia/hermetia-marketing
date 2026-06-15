@@ -9,11 +9,11 @@ export type Dictionary = typeof de;
 // zwischen de.json und en.json (wichtig beim Hinzufügen weiterer Sprachen).
 const enTyped: Dictionary = en;
 
-const dictionaries: Record<Locale, Dictionary> = {
+const dictionaries: Partial<Record<Locale, Dictionary>> = {
   de,
   en: enTyped,
 };
 
 export function getDictionary(locale: Locale): Dictionary {
-  return dictionaries[locale] ?? dictionaries.de;
+  return dictionaries[locale] ?? de;
 }

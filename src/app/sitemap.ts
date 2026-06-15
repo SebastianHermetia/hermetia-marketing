@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { locales, siteUrl } from "@/i18n/config";
 import { paths } from "@/lib/links";
 import { systemSlugs } from "@/content/systems";
+import { articles, comparisons, glossaryTerms } from "@/content/marketing";
 
 export const dynamic = "force-static";
 
@@ -22,6 +23,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${siteUrl}/${locale}${paths.systeme}/${slug}/`,
         changeFrequency: "monthly",
         priority: 0.6,
+      });
+    }
+    for (const term of glossaryTerms) {
+      entries.push({
+        url: `${siteUrl}/${locale}${paths.glossar}/${term.slug}/`,
+        changeFrequency: "monthly",
+        priority: 0.55,
+      });
+    }
+    for (const article of articles) {
+      entries.push({
+        url: `${siteUrl}/${locale}${paths.wissen}/${article.slug}/`,
+        changeFrequency: "monthly",
+        priority: 0.55,
+      });
+    }
+    for (const comparison of comparisons) {
+      entries.push({
+        url: `${siteUrl}/${locale}${paths.vergleiche}/${comparison.slug}/`,
+        changeFrequency: "monthly",
+        priority: 0.55,
       });
     }
   }

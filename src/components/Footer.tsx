@@ -24,12 +24,17 @@ export function Footer({ locale }: { locale: Locale }) {
             <FootLink href={L(paths.leistungen)}>{t.nav.leistungen}</FootLink>
             <FootLink href={L(paths.systeme)}>{t.nav.systeme}</FootLink>
             <FootLink href={L(paths.methodik)}>{t.nav.methodik}</FootLink>
+            <FootLink href={L(paths.konvergenz)}>Konvergenz-Engine</FootLink>
+            <FootLink href={L(paths.seelenkarte)}>Seelenkarte</FootLink>
             <FootLink href={L(paths.preise)}>{t.nav.preise}</FootLink>
           </FootCol>
           <FootCol title={t.footer.discover}>
+            <FootLink href={L(paths.glossar)}>{t.footer.glossar}</FootLink>
+            <FootLink href={L(paths.wissen)}>{t.footer.magazin}</FootLink>
+            <FootLink href={L(paths.vergleiche)}>Vergleiche</FootLink>
+            <FootLink href={L(paths.tagesimpulse)}>Tagesimpulse</FootLink>
+            <FootLink href={L(paths.beziehungen)}>Beziehungen</FootLink>
             <FootLink href={L(paths.faq)}>{t.footer.faq}</FootLink>
-            <FootLink href={L(paths.systeme)}>{t.nav.systeme}</FootLink>
-            <FootLink href={L(paths.leistungen)}>{t.nav.leistungen}</FootLink>
           </FootCol>
           <FootCol title={t.footer.legal}>
             <FootLink href={L(paths.datenschutz)}>{t.footer.datenschutz}</FootLink>

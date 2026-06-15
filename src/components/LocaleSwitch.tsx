@@ -16,19 +16,25 @@ export function LocaleSwitch({ locale, current }: { locale: Locale; current?: st
   }
 
   return (
-    <div className="hidden items-center gap-1 text-[13px] sm:flex" aria-label="Sprache wählen">
-      {locales.map((l, idx) => (
-        <span key={l} className="flex items-center gap-1">
-          {idx > 0 && <span className="text-sand">·</span>}
-          {l === locale ? (
-            <span className="font-semibold text-aubergine" aria-current="true">{l.toUpperCase()}</span>
-          ) : (
-            <Link href={swap(l)} className="text-tinte/60 no-underline hover:text-aubergine" hrefLang={l} title={localeNames[l]}>
-              {l.toUpperCase()}
-            </Link>
-          )}
-        </span>
-      ))}
-    </div>
+    <details className="group relative hidden text-[13px] sm:block" aria-label="Sprache wählen">
+      <summary className="flex cursor-pointer list-none items-center gap-1 rounded-full border border-sand bg-white/60 px-3 py-2 font-semibold text-aubergine">
+        {locale.toUpperCase()}
+        <span className="text-tinte/50">▾</span>
+      </summary>
+      <div className="absolute right-0 top-11 z-50 grid max-h-[420px] w-[220px] grid-cols-2 gap-1 overflow-auto rounded-card border border-sand bg-white p-2 shadow-soft">
+        {locales.map((l) => (
+          <Link
+            key={l}
+            href={swap(l)}
+            className={`rounded-[10px] px-2.5 py-2 no-underline hover:bg-creme-tief ${l === locale ? "bg-creme-tief font-semibold text-aubergine" : "text-tinte/70"}`}
+            hrefLang={l}
+            title={localeNames[l]}
+          >
+            <span className="block text-[12px] uppercase">{l}</span>
+            <span className="block truncate text-[11px]">{localeNames[l]}</span>
+          </Link>
+        ))}
+      </div>
+    </details>
   );
 }

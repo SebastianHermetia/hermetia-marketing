@@ -560,3 +560,7 @@ export const systemSlugs = systems.map((s) => s.slug);
 export function getSystem(slug: string): SystemEntry | undefined {
   return systems.find((s) => s.slug === slug);
 }
+
+export function systemText(system: SystemEntry, locale: string): SystemText {
+  return locale === "en" ? system.en : system.de;
+}

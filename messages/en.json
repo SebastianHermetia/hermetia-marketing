@@ -77,9 +77,9 @@
     },
     "systems": {
       "kicker": "The embedded systems",
-      "title": "25 traditions. One voice.",
+      "title": "31 perspectives. One voice.",
       "text": "Astrology, Human Design, Gene Keys, numerology, BaZi, the Enneagram and more — Hermetia doesn’t read them side by side, it reads them together. Where many paths point to the same place, that becomes certainty.",
-      "chips": ["Astrology", "Human Design", "Gene Keys", "Numerology", "BaZi · Four Pillars", "Enneagram", "Maya Tzolk’in", "Nakshatra", "I Ching", "Ayurveda", "+ 15 more"]
+      "chips": ["Astrology", "Human Design", "Gene Keys", "Numerology", "BaZi · Four Pillars", "Enneagram", "Maya Tzolk’in", "Nakshatra", "I Ching", "Ayurveda", "+ 21 more"]
     },
     "voices": {
       "kicker": "Voices",
@@ -133,10 +133,10 @@
     "cta": { "title": "Begin with your soul map.", "lead": "Free, in two minutes." }
   },
   "systeme": {
-    "seoTitle": "The systems behind Hermetia — 25 traditions, one soul map",
-    "seoDescription": "Astrology, Human Design, Gene Keys, numerology, BaZi and more: how the 25 interpretive systems in Hermetia work — and how the convergence engine connects them.",
+    "seoTitle": "The systems behind Hermetia — 31 perspectives, one soul map",
+    "seoDescription": "Astrology, Human Design, Gene Keys, numerology, BaZi and more: how the 31 systems in Hermetia work — and how the convergence engine connects them.",
     "kicker": "The embedded systems",
-    "title": "25 traditions of humanity — for one portrait of you.",
+    "title": "31 perspectives of humanity — for one portrait of you.",
     "lead": "Each system is a window. Hermetia opens many at once and shows you where they look at the same thing.",
     "convergence": { "tag": "The heart of Hermetia", "title": "The convergence engine", "text": "No other calculator does this: Hermetia overlays all systems and measures where they confirm one another — that becomes your strength — and where they disagree — that becomes your question. Many voices become one." },
     "coreKicker": "The five core systems",
@@ -290,3 +290,4 @@
     }
   }
 }
+
