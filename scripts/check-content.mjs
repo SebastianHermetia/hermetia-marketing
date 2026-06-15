@@ -62,6 +62,8 @@ const useCases = readOut("de/anwendungsfaelle");
 const esUseCases = readOut("es/anwendungsfaelle");
 const terms = readOut("de/agb");
 const frTerms = readOut("fr/agb");
+const withdrawal = readOut("de/widerruf");
+const frWithdrawal = readOut("fr/widerruf");
 const freePremium = readOut("de/kostenlos-vs-premium");
 const frFreePremium = readOut("fr/kostenlos-vs-premium");
 const privacyPolicy = readOut("de/datenschutz");
@@ -178,6 +180,12 @@ const checks = [
   ["Terms page covers rights and final review", terms.includes("Rechte an Inhalten und Nutzungsrechte") && terms.includes("rechtlich final geprüft")],
   ["Terms page is linked in footer", deHome.includes("/de/agb/")],
   ["Terms page has localized fallback SEO", frTerms.includes("<title>Allgemeine Geschäftsbedingungen</title>") && frTerms.includes("Version éditoriale en préparation")],
+  ["Withdrawal page covers digital products", withdrawal.includes("digitale Leistungen von Hermetia") && withdrawal.includes("Vollprofil-Buch als digitales Produkt")],
+  ["Withdrawal page covers immediate access", withdrawal.includes("Digitale Inhalte und Sofortzugriff") && withdrawal.includes("Zustimmung muss im Bestellprozess klar und getrennt erfolgen")],
+  ["Withdrawal page separates subscriptions and cancellation", withdrawal.includes("Abonnements und laufende Verträge") && withdrawal.includes("Widerruf und Kündigung unterscheiden")],
+  ["Withdrawal page has model form and final review", withdrawal.includes("Muster-Widerrufsformular") && withdrawal.includes("anwaltlich final geprüft")],
+  ["Withdrawal page is linked in footer", deHome.includes("/de/widerruf/")],
+  ["Withdrawal page has localized fallback SEO", frWithdrawal.includes("<title>Widerrufsbelehrung</title>") && frWithdrawal.includes("Version éditoriale en préparation")],
   ["Free vs Premium page exists", freePremium.includes("Erst Resonanz prüfen") && freePremium.includes("Nicht jeder sollte sofort upgraden")],
   ["Free vs Premium page has FAQ schema", freePremium.includes("FAQPage")],
   ["Free vs Premium page has value ladder", freePremium.includes("Werttreppe") && freePremium.includes("Von kostenloser Resonanz zu bezahlter Tiefe")],
