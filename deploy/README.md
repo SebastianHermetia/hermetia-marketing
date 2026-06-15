@@ -30,6 +30,7 @@ ssh -i $SSHK root@95.216.218.48 'cd /opt/hermetia-marketing && docker compose up
 npm run build
 npm run check:assets
 npm run check:content
+npm run check:compliance
 SSHK=~/.ssh/codex_cx33
 tar czf - out | ssh -i $SSHK root@95.216.218.48 \
   'cd /opt/hermetia-marketing && find out -mindepth 1 -delete && tar xzf -'
@@ -44,10 +45,12 @@ Vor jedem Live-Upload:
 npm run build
 npm run check:assets
 npm run check:content
+npm run check:compliance
 ```
 
 - `check:assets` prüft, ob alle referenzierten Bilder und Grafiken in `public/` existieren.
-- `check:content` prüft Mindestumfang, Sprachhinweise, 31-Systeme-Konsistenz, Longform-Resource-Seiten, FAQ-Schema und Konvergenz-Grafiken im statischen Export.
+- `check:content` prüft Mindestumfang, Sprachhinweise, 31-Systeme-Konsistenz, Longform-Resource-Seiten, FAQ-Schema, CTA-Quellen und Konvergenz-Grafiken im statischen Export.
+- `check:compliance` prüft Launch-Gates, Asset-Rechtehinweise, noindex-Testphase, externe Bildquellen und datensparsame CTA-Quellen.
 
 > **WICHTIG:** Niemals `rm -rf out` verwenden — das löscht das vom Container
 > gemountete Verzeichnis und entkoppelt den Bind-Mount (Container liefert dann 404).
