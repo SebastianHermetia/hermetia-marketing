@@ -77,6 +77,7 @@ const aiTransparency = readOut("de/ki-transparenz");
 const frAiTransparency = readOut("fr/ki-transparenz");
 const relationships = readOut("de/beziehungen");
 const onboarding = readOut("de/profil-starten");
+const enOnboarding = readOut("en/profil-starten");
 const frOnboarding = readOut("fr/profil-starten");
 const journaling = readOut("de/journaling");
 const frJournaling = readOut("fr/journaling");
@@ -256,6 +257,8 @@ const checks = [
   ["Onboarding guide page has pre-start trust", onboarding.includes("Was vor dem App-Absprung klar sein sollte") && onboarding.includes("Kostenlos vor Kauf")],
   ["Onboarding guide page has app handoff", onboarding.includes("App-Handoff") && onboarding.includes("Website erklärt") && onboarding.includes("App berechnet")],
   ["Onboarding guide page has after-start path", onboarding.includes("Was du nach der ersten Seelenkarte tun kannst") && onboarding.includes("erst danach Premium-Modelle vergleichen")],
+  ["EN onboarding page has localized longform sections", enOnboarding.includes("How you move from the website") && enOnboarding.includes("Before you start") && enOnboarding.includes("Start with the soul map")],
+  ["EN onboarding page has no German core headings", !enOnboarding.includes("Profil starten</span>") && !enOnboarding.includes("Vor dem Start") && !enOnboarding.includes("Was du nach der ersten Seelenkarte tun kannst")],
   ["Onboarding guide page has graphic", onboarding.includes("/graphics/convergence/abb4-pipeline-einordnung.svg")],
   ["Onboarding guide page has expanded FAQ and tracked CTAs", onboarding.includes("Werde ich direkt zu einem Kauf gedrängt") && onboarding.includes("Kann ich meine Daten später korrigieren") && onboarding.includes("utm_content=onboarding-guide-hero") && onboarding.includes("utm_content=onboarding-guide-final")],
   ["Onboarding guide page is linked in footer", deHome.includes("/de/profil-starten/")],

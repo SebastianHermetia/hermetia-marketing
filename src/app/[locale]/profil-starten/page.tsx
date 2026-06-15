@@ -107,20 +107,166 @@ const faq = [
   },
 ];
 
+const onboardingCopy = {
+  de: {
+    seoTitle: "Hermetia Profil starten - Ablauf, Geburtsdaten, Einwilligung und Seelenkarte",
+    seoDescription:
+      "So funktioniert der kostenlose Profilstart bei Hermetia: Sprache, Konto, Geburtsdaten, Einwilligung, Seelenkarte und nächste Schritte.",
+    articleHeadline: "Hermetia Profil starten",
+    articleDescription: "Ablauf, benötigte Daten, Einwilligung und kostenlose Seelenkarte.",
+    breadcrumb: "Profil starten",
+    heroKicker: "Profil starten",
+    heroTitle: "So kommst du von der Website in deine persönliche Seelenkarte.",
+    heroLead:
+      "Das Onboarding soll ruhig und verständlich sein: Du gibst nur ein, was für die Berechnung nötig ist, verstehst vorher die Datenlogik und siehst zuerst kostenlos, ob Hermetia für dich resoniert.",
+    heroCta: "Jetzt Profil starten",
+    dataCta: "Datenlogik prüfen",
+    heroAlt: "Abstrakter Geburtsmoment als Bild für den Hermetia Profilstart",
+    heroCaption: "Der Profilstart verbindet Sprache, Geburtsdaten, Einwilligung und die erste Seelenkarte.",
+    beforeKicker: "Vor dem Start",
+    beforeTitle: "Was vor dem App-Absprung klar sein sollte.",
+    beforeText:
+      "Die Profilstart-Seite hat eine klare Aufgabe: Sie soll Neugier in Handlung verwandeln, aber nur mit genug Vertrauen. Nutzer sollen nicht blind in ein Formular fallen, sondern wissen, warum der nächste Schritt sinnvoll ist.",
+    flowKicker: "Ablauf",
+    flowTitle: "Vier Schritte, bevor du Tiefe freischaltest.",
+    flowText:
+      "Hermetia soll nicht mit einem Formular überfallen. Der Ablauf erklärt, warum Daten gebraucht werden und was du schon kostenlos sehen kannst.",
+    handoffKicker: "App-Handoff",
+    handoffTitle: "Was die Website erklärt und was die App übernimmt.",
+    handoffText:
+      "Der Übergang von Marketing-Website zur Hermetia-App muss sich wie ein einziger ruhiger Weg anfühlen. Die Website bereitet vor, die App berechnet, der Nutzer entscheidet.",
+    handoffAlt: "Pipeline von Website-Fragen zu App-Onboarding und Profilberechnung",
+    handoffCaption: "Der App-Handoff folgt derselben Logik wie die Methode: Eingaben verstehen, sauber einordnen, erst dann deuten.",
+    prepareKicker: "Vorbereitung",
+    prepareTitle: "Was du bereithalten kannst.",
+    prepareText:
+      "Du kannst auch spontan starten. Wenn du die folgenden Informationen griffbereit hast, wird deine erste Seelenkarte genauer und der Einstieg ruhiger.",
+    afterKicker: "Nach dem Start",
+    afterTitle: "Was du nach der ersten Seelenkarte tun kannst.",
+    afterText:
+      "Der wichtigste Conversion-Moment kommt nicht vor dem Profil, sondern danach: Wenn die ersten Themen Resonanz haben, wird bezahlte Tiefe erklärbar.",
+    freePremiumCta: "Kostenlos vs Premium verstehen",
+    finalKicker: "Kostenloser Einstieg",
+    finalTitle: "Starte mit der Seelenkarte, nicht mit einer Kaufentscheidung.",
+    finalText:
+      "Der erste Schritt soll zeigen, ob Hermetia für dich stimmt. Bezahlte Modelle sind für spätere Tiefe gedacht: Ebenen, Tagesimpulse, Journaling, Buch und Beziehungsauswertungen.",
+    finalCta: "Profil kostenlos starten",
+    finalSecondaryCta: "Kostenlos vs Premium",
+    uncertaintyTitle: "Wenn etwas unsicher ist",
+    uncertaintyText:
+      "Keine genaue Uhrzeit? Kein Problem. Hermetia kennzeichnet Sicherheit und Unsicherheit, statt so zu tun, als wäre jede Aussage gleich belastbar.",
+    faqKicker: "FAQ",
+    faqTitle: "Häufige Fragen zum Profilstart",
+    checkLabel: "Check",
+    steps,
+    prepare,
+    trustBeforeStart,
+    appHandoff,
+    afterStart,
+    faq,
+  },
+  en: {
+    seoTitle: "Start your Hermetia profile - flow, birth data, consent and soul map",
+    seoDescription:
+      "How the free Hermetia profile start works: language, account, birth data, consent, soul map and next steps.",
+    articleHeadline: "Start your Hermetia profile",
+    articleDescription: "Flow, required data, consent and free soul map.",
+    breadcrumb: "Start profile",
+    heroKicker: "Start profile",
+    heroTitle: "How you move from the website into your personal soul map.",
+    heroLead:
+      "Onboarding should feel calm and understandable: you enter only what is needed for calculation, understand the data logic first and see for free whether Hermetia resonates with you.",
+    heroCta: "Start profile now",
+    dataCta: "Check data logic",
+    heroAlt: "Abstract birth moment as an image for starting a Hermetia profile",
+    heroCaption: "The profile start connects language, birth data, consent and the first soul map.",
+    beforeKicker: "Before you start",
+    beforeTitle: "What should be clear before entering the app.",
+    beforeText:
+      "The profile-start page has a clear job: turn curiosity into action, but only with enough trust. Users should not fall blindly into a form; they should understand why the next step makes sense.",
+    flowKicker: "Flow",
+    flowTitle: "Four steps before you unlock depth.",
+    flowText:
+      "Hermetia should not overwhelm people with a form. The flow explains why data is needed and what you can already see for free.",
+    handoffKicker: "App handoff",
+    handoffTitle: "What the website explains and what the app takes over.",
+    handoffText:
+      "The move from the marketing website to the Hermetia app should feel like one calm path. The website prepares, the app calculates, the user decides.",
+    handoffAlt: "Pipeline from website questions to app onboarding and profile calculation",
+    handoffCaption: "The app handoff follows the same logic as the method: understand inputs, classify them carefully, then interpret.",
+    prepareKicker: "Preparation",
+    prepareTitle: "What you can have ready.",
+    prepareText:
+      "You can also start spontaneously. If you have the following information ready, your first soul map becomes more precise and the entry feels calmer.",
+    afterKicker: "After the start",
+    afterTitle: "What you can do after your first soul map.",
+    afterText:
+      "The most important conversion moment does not happen before the profile, but afterwards: when the first themes resonate, paid depth becomes explainable.",
+    freePremiumCta: "Understand Free vs Premium",
+    finalKicker: "Free start",
+    finalTitle: "Start with the soul map, not with a purchase decision.",
+    finalText:
+      "The first step should show whether Hermetia fits you. Paid models are for later depth: levels, daily impulses, journaling, book and relationship readings.",
+    finalCta: "Start profile for free",
+    finalSecondaryCta: "Free vs Premium",
+    uncertaintyTitle: "If something is uncertain",
+    uncertaintyText:
+      "No exact birth time? No problem. Hermetia marks certainty and uncertainty instead of pretending every statement is equally reliable.",
+    faqKicker: "FAQ",
+    faqTitle: "Frequently asked questions about starting a profile",
+    checkLabel: "Check",
+    steps: [
+      { n: "01", title: "Choose language and account", text: "You start with your preferred language and an account. The language is passed to the app so the entry does not begin from zero." },
+      { n: "02", title: "Enter birth data", text: "Hermetia needs date of birth, place of birth and, if available, birth time. If you do not know the exact time, you can still continue." },
+      { n: "03", title: "Understand consent", text: "Before sensitive profile content is created, it must be clear which data is processed, why GDPR Art. 9 is relevant and which rights you have." },
+      { n: "04", title: "View your soul map", text: "The free start shows the first soul map and core themes. Only afterwards do you decide whether paid depth makes sense." },
+    ],
+    prepare: ["date of birth", "place of birth", "birth time, if known", "an email address for your account", "a few quiet minutes to actually read the first themes"],
+    trustBeforeStart: [
+      { title: "Free before purchase", text: "The first profile start should test resonance before a plan is chosen. That reduces pressure and makes later Premium decisions more conscious." },
+      { title: "Data logic before input", text: "Users should understand in advance why birth data, consent and derived profile content are sensitive and which rights they have." },
+      { title: "Uncertainty stays visible", text: "If birth time is missing or an input is approximate, Hermetia must mark that instead of making every statement feel equally certain." },
+    ],
+    appHandoff: [
+      { title: "Website explains", text: "The marketing page answers questions about method, data, limits, costs and value before the handoff." },
+      { title: "App calculates", text: "Onboarding collects the necessary inputs, handles consent and creates the first personal soul map from them." },
+      { title: "User decides", text: "After the free start, users consciously check whether full profile, daily impulses, journaling, Companion or relationships make sense." },
+    ],
+    afterStart: [
+      "read first soul map and core themes",
+      "understand data quality and uncertain areas",
+      "test resonance for free, without a credit card",
+      "add birth time or feedback later if needed",
+      "compare Premium models only afterwards",
+    ],
+    faq: [
+      { q: "Can I start without an exact birth time?", a: "Yes. Hermetia works without an exact time, but marks which systems become less certain. You can add the birth time later." },
+      { q: "Do I need a credit card to start?", a: "No. The first profile start is designed as a free entry without a credit card. Paid models are chosen consciously later." },
+      { q: "Why do I need to consent to sensitive processing?", a: "Birth data and systems can create spiritual or worldview-related profile content. Hermetia treats this content as sensitive and explains consent and rights before processing." },
+      { q: "What happens after the first soul map?", a: "You can read the first themes, review the method and decide whether you want to use further levels, daily impulses, journaling or relationship readings." },
+      { q: "Will I be pushed directly into a purchase?", a: "No. The profile start is designed as a free resonance test. Premium becomes useful only if you truly want more depth after the first soul map." },
+      { q: "What happens if I leave the app after starting?", a: "The product promise is that an account and clear return paths exist. The website explains the path; the app must implement it cleanly." },
+      { q: "Can I correct my data later?", a: "Yes. Profile refinement is part of the concept: birth time, feedback, settings and later additions should be traceably adjustable." },
+    ],
+  },
+} as const;
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
+  const copy = locale === "en" ? onboardingCopy.en : onboardingCopy.de;
   return buildMetadata({
     locale: locale as Locale,
     path: paths.onboarding,
-    title: "Hermetia Profil starten - Ablauf, Geburtsdaten, Einwilligung und Seelenkarte",
-    description:
-      "So funktioniert der kostenlose Profilstart bei Hermetia: Sprache, Konto, Geburtsdaten, Einwilligung, Seelenkarte und nächste Schritte.",
+    title: copy.seoTitle,
+    description: copy.seoDescription,
   });
 }
 
 export default async function OnboardingPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  const copy = locale === "en" ? onboardingCopy.en : onboardingCopy.de;
+  const localizedFaq = copy.faq.map(({ q, a }) => ({ q, a }));
   const pageUrl = `${siteUrl}/${locale}${paths.onboarding}/`;
 
   return (
@@ -128,17 +274,17 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
       <JsonLd
         data={[
           articleSchema({
-            headline: "Hermetia Profil starten",
-            description: "Ablauf, benötigte Daten, Einwilligung und kostenlose Seelenkarte.",
+            headline: copy.articleHeadline,
+            description: copy.articleDescription,
             locale,
             url: pageUrl,
             about: "Hermetia Onboarding",
             image: `${siteUrl}/images/hermetia/birth-moment-meridian.png`,
           }),
-          faqSchema(faq),
+          faqSchema(localizedFaq),
           breadcrumbSchema([
             { name: "Hermetia", url: `${siteUrl}/${locale}/` },
-            { name: "Profil starten", url: pageUrl },
+            { name: copy.breadcrumb, url: pageUrl },
           ]),
         ]}
       />
@@ -147,20 +293,18 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
         <section className="pb-10 pt-16">
           <div className="wrap grid items-center gap-10 lg:grid-cols-[1fr_.95fr]">
             <div>
-              <span className="kicker">Profil starten</span>
-              <h1 className="mt-3 text-[clamp(34px,5.5vw,54px)] leading-[1.08]">So kommst du von der Website in deine persönliche Seelenkarte.</h1>
-              <p className="lead mt-5 max-w-[720px]">
-                Das Onboarding soll ruhig und verständlich sein: Du gibst nur ein, was für die Berechnung nötig ist, verstehst vorher die Datenlogik und siehst zuerst kostenlos, ob Hermetia für dich resoniert.
-              </p>
+              <span className="kicker">{copy.heroKicker}</span>
+              <h1 className="mt-3 text-[clamp(34px,5.5vw,54px)] leading-[1.08]">{copy.heroTitle}</h1>
+              <p className="lead mt-5 max-w-[720px]">{copy.heroLead}</p>
               <div className="mt-7 flex flex-wrap gap-3">
-                <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "onboarding-guide-hero" })}>Jetzt Profil starten</a>
-                <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.datenSicherheit)}>Datenlogik prüfen</a>
+                <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "onboarding-guide-hero" })}>{copy.heroCta}</a>
+                <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.datenSicherheit)}>{copy.dataCta}</a>
               </div>
             </div>
             <figure className="m-0 overflow-hidden rounded-card border border-sand bg-white shadow-soft">
-              <img src="/images/hermetia/birth-moment-meridian.png" alt="Abstrakter Geburtsmoment als Bild für den Hermetia Profilstart" className="aspect-[4/3] w-full object-cover" />
+              <img src="/images/hermetia/birth-moment-meridian.png" alt={copy.heroAlt} className="aspect-[4/3] w-full object-cover" />
               <figcaption className="px-5 py-4 text-[14px] text-pflaume/80">
-                Der Profilstart verbindet Sprache, Geburtsdaten, Einwilligung und die erste Seelenkarte.
+                {copy.heroCaption}
               </figcaption>
             </figure>
           </div>
@@ -169,14 +313,12 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
         <section className="py-16">
           <div className="wrap">
             <div className="mb-9 max-w-[820px]">
-              <span className="kicker">Vor dem Start</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Was vor dem App-Absprung klar sein sollte.</h2>
-              <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Die Profilstart-Seite hat eine klare Aufgabe: Sie soll Neugier in Handlung verwandeln, aber nur mit genug Vertrauen. Nutzer sollen nicht blind in ein Formular fallen, sondern wissen, warum der nächste Schritt sinnvoll ist.
-              </p>
+              <span className="kicker">{copy.beforeKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.beforeTitle}</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">{copy.beforeText}</p>
             </div>
             <div className="grid gap-5 md:grid-cols-3">
-              {trustBeforeStart.map((item) => (
+              {copy.trustBeforeStart.map((item) => (
                 <article key={item.title} className="card">
                   <h3 className="text-[21px]">{item.title}</h3>
                   <p className="muted mt-3 text-[15.5px] leading-relaxed">{item.text}</p>
@@ -189,14 +331,12 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
         <section className="bg-creme-tief py-16">
           <div className="wrap">
             <div className="mb-9 max-w-[760px]">
-              <span className="kicker">Ablauf</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Vier Schritte, bevor du Tiefe freischaltest.</h2>
-              <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Hermetia soll nicht mit einem Formular überfallen. Der Ablauf erklärt, warum Daten gebraucht werden und was du schon kostenlos sehen kannst.
-              </p>
+              <span className="kicker">{copy.flowKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.flowTitle}</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">{copy.flowText}</p>
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-              {steps.map((step) => (
+              {copy.steps.map((step) => (
                 <article key={step.n} className="card">
                   <span className="kicker">{step.n}</span>
                   <h3 className="mt-2 text-[21px]">{step.title}</h3>
@@ -210,13 +350,11 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
         <section className="py-16">
           <div className="wrap grid gap-8 lg:grid-cols-[1fr_.95fr]">
             <div>
-              <span className="kicker">App-Handoff</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Was die Website erklärt und was die App übernimmt.</h2>
-              <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Der Übergang von Marketing-Website zur Hermetia-App muss sich wie ein einziger ruhiger Weg anfühlen. Die Website bereitet vor, die App berechnet, der Nutzer entscheidet.
-              </p>
+              <span className="kicker">{copy.handoffKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.handoffTitle}</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">{copy.handoffText}</p>
               <div className="mt-6 grid gap-4">
-                {appHandoff.map((item) => (
+                {copy.appHandoff.map((item) => (
                   <article key={item.title} className="rounded-card border border-sand bg-white p-5 shadow-soft">
                     <h3 className="text-[20px]">{item.title}</h3>
                     <p className="muted mt-2 text-[15px] leading-relaxed">{item.text}</p>
@@ -225,9 +363,9 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
               </div>
             </div>
             <figure className="m-0 rounded-card border border-sand bg-white p-4 shadow-soft">
-              <img src="/graphics/convergence/abb4-pipeline-einordnung.svg" alt="Pipeline von Website-Fragen zu App-Onboarding und Profilberechnung" className="w-full rounded-[6px]" loading="lazy" />
+              <img src="/graphics/convergence/abb4-pipeline-einordnung.svg" alt={copy.handoffAlt} className="w-full rounded-[6px]" loading="lazy" />
               <figcaption className="muted mt-3 text-[14px] leading-relaxed">
-                Der App-Handoff folgt derselben Logik wie die Methode: Eingaben verstehen, sauber einordnen, erst dann deuten.
+                {copy.handoffCaption}
               </figcaption>
             </figure>
           </div>
@@ -236,15 +374,13 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
         <section className="py-16">
           <div className="wrap grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
             <div>
-              <span className="kicker">Vorbereitung</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Was du bereithalten kannst.</h2>
-              <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Du kannst auch spontan starten. Wenn du die folgenden Informationen griffbereit hast, wird deine erste Seelenkarte genauer und der Einstieg ruhiger.
-              </p>
+              <span className="kicker">{copy.prepareKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.prepareTitle}</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">{copy.prepareText}</p>
             </div>
             <div className="rounded-card border border-sand bg-white p-7 shadow-soft">
               <ul className="flex list-none flex-col gap-3 text-[15.5px] leading-relaxed text-pflaume/90">
-                {prepare.map((item) => <li key={item}>Check: {item}</li>)}
+                {copy.prepare.map((item) => <li key={item}>{copy.checkLabel}: {item}</li>)}
               </ul>
             </div>
           </div>
@@ -253,16 +389,14 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
         <section className="bg-creme-tief py-16">
           <div className="wrap grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
             <div>
-              <span className="kicker">Nach dem Start</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Was du nach der ersten Seelenkarte tun kannst.</h2>
-              <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Der wichtigste Conversion-Moment kommt nicht vor dem Profil, sondern danach: Wenn die ersten Themen Resonanz haben, wird bezahlte Tiefe erklärbar.
-              </p>
-              <a className="btn btn-ghost mt-6" href={localePath(locale, paths.freePremium)}>Kostenlos vs Premium verstehen</a>
+              <span className="kicker">{copy.afterKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">{copy.afterTitle}</h2>
+              <p className="muted mt-4 text-[17px] leading-[1.85]">{copy.afterText}</p>
+              <a className="btn btn-ghost mt-6" href={localePath(locale, paths.freePremium)}>{copy.freePremiumCta}</a>
             </div>
             <div className="rounded-card border border-sand bg-white p-7 shadow-soft">
               <ul className="flex list-none flex-col gap-3 text-[15.5px] leading-relaxed text-pflaume/90">
-                {afterStart.map((item) => <li key={item}>Check: {item}</li>)}
+                {copy.afterStart.map((item) => <li key={item}>{copy.checkLabel}: {item}</li>)}
               </ul>
             </div>
           </div>
@@ -271,20 +405,18 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
         <section className="bg-aubergine py-16 text-white">
           <div className="wrap grid items-center gap-8 lg:grid-cols-[1fr_.9fr]">
             <div>
-              <span className="kicker text-gold-weich">Kostenloser Einstieg</span>
-              <h2 className="mt-3 text-[clamp(28px,4vw,40px)] text-white">Starte mit der Seelenkarte, nicht mit einer Kaufentscheidung.</h2>
-              <p className="mt-4 max-w-[640px] text-[17px] leading-[1.85] text-[#e9dcf2]">
-                Der erste Schritt soll zeigen, ob Hermetia für dich stimmt. Bezahlte Modelle sind für spätere Tiefe gedacht: Ebenen, Tagesimpulse, Journaling, Buch und Beziehungsauswertungen.
-              </p>
+              <span className="kicker text-gold-weich">{copy.finalKicker}</span>
+              <h2 className="mt-3 text-[clamp(28px,4vw,40px)] text-white">{copy.finalTitle}</h2>
+              <p className="mt-4 max-w-[640px] text-[17px] leading-[1.85] text-[#e9dcf2]">{copy.finalText}</p>
               <div className="mt-7 flex flex-wrap gap-3">
-                <a className="btn btn-on-dark btn-lg" href={startUrl(locale, { source: "onboarding-guide-final" })}>Profil kostenlos starten</a>
-                <a className="btn btn-ghost btn-lg border-white/30 text-white hover:bg-white/10" href={localePath(locale, paths.freePremium)}>Kostenlos vs Premium</a>
+                <a className="btn btn-on-dark btn-lg" href={startUrl(locale, { source: "onboarding-guide-final" })}>{copy.finalCta}</a>
+                <a className="btn btn-ghost btn-lg border-white/30 text-white hover:bg-white/10" href={localePath(locale, paths.freePremium)}>{copy.finalSecondaryCta}</a>
               </div>
             </div>
             <div className="rounded-card border border-gold-weich/20 bg-white/8 p-6">
-              <h3 className="text-[24px] text-white">Wenn etwas unsicher ist</h3>
+              <h3 className="text-[24px] text-white">{copy.uncertaintyTitle}</h3>
               <p className="mt-3 text-[15px] leading-relaxed text-[#e9dcf2]">
-                Keine genaue Uhrzeit? Kein Problem. Hermetia kennzeichnet Sicherheit und Unsicherheit, statt so zu tun, als wäre jede Aussage gleich belastbar.
+                {copy.uncertaintyText}
               </p>
             </div>
           </div>
@@ -293,10 +425,10 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
         <section className="py-16">
           <div className="wrap">
             <div className="mb-8 text-center">
-              <span className="kicker">FAQ</span>
-              <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">Häufige Fragen zum Profilstart</h2>
+              <span className="kicker">{copy.faqKicker}</span>
+              <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">{copy.faqTitle}</h2>
             </div>
-            <Faq items={faq} />
+            <Faq items={localizedFaq} />
           </div>
         </section>
       </main>
