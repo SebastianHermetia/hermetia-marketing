@@ -4,10 +4,11 @@ import Link from "next/link";
 import { locales, siteUrl, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { buildMetadata } from "@/lib/seo";
-import { startUrl, localePath, paths } from "@/lib/links";
+import { localePath, paths } from "@/lib/links";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Faq } from "@/components/Faq";
+import { AppCta } from "@/components/AppCta";
 import { JsonLd, faqSchema, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { systems, systemSlugs, getSystem, systemText } from "@/content/systems";
 
@@ -35,12 +36,27 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
   const related = systems.filter((s) => s.slug !== slug).slice(0, 4);
   const pageUrl = `${siteUrl}/${locale}${paths.systeme}/${slug}/`;
   const imageUrl = `${siteUrl}/images/art/${sys.art}`;
+  const extendedFaq = [
+    ...c.faq,
+    {
+      q: `Warum nutzt Hermetia ${c.name} nicht isoliert?`,
+      a: `${c.name} ist eine wertvolle Perspektive, aber Hermetia liest Systeme nicht als einzelne Wahrheiten. Erst im Zusammenspiel mit anderen Quellen wird sichtbar, ob ein Thema mehrfach getragen wird oder nur eine Nuance bleibt.`,
+    },
+    {
+      q: `Ist die Deutung von ${c.name} rechtlich geschützter Originaltext?`,
+      a: "Nein. Hermetia verwendet eigene Erklärungen und eigene Deutungssprache. Geschützte Originaltexte, fremde Reportpassagen und proprietäre Fragebogenitems werden nicht übernommen.",
+    },
+    {
+      q: `Kann ${c.name} eine Diagnose oder Beratung ersetzen?`,
+      a: "Nein. Hermetia ist Inspiration zur Selbstreflexion. Die Inhalte ersetzen keine medizinische, psychologische, therapeutische, rechtliche oder finanzielle Beratung.",
+    },
+  ];
 
   return (
     <>
       <JsonLd
         data={[
-          faqSchema(c.faq),
+          faqSchema(extendedFaq),
           articleSchema({ headline: c.seoTitle, description: c.seoDescription, locale, url: pageUrl, about: c.name, image: imageUrl }),
           breadcrumbSchema([
             { name: "Hermetia", url: `${siteUrl}/${locale}/` },
@@ -77,6 +93,13 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
         <div className="wrap max-w-[800px]">
           <p className="lead">{c.intro}</p>
 
+          <div className="mt-8 rounded-card border border-gold/30 bg-gold-weich/25 p-6">
+            <span className="kicker">Kurz gesagt</span>
+            <p className="mt-2 text-[18px] leading-relaxed text-aubergine">
+              {c.name} ist bei Hermetia ein Baustein deiner Seelenkarte. Das System wird berechnet oder über einen Fragebogen erfasst, anschließend mit anderen Perspektiven verglichen und erst dann in eine warme, verständliche Deutung übersetzt.
+            </p>
+          </div>
+
           <div className="mt-10 flex flex-col gap-9">
             <div>
               <h2 className="text-[24px]">{c.whatTitle}</h2>
@@ -90,19 +113,46 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
               <h2 className="text-[24px]">{c.revealsTitle}</h2>
               <p className="muted mt-2 text-[16.5px] leading-relaxed">{c.reveals}</p>
             </div>
+            <div className="grid gap-5 md:grid-cols-2">
+              <div className="card">
+                <span className="kicker">Stärken</span>
+                <h2 className="mt-2 text-[23px]">Wofür {c.name} besonders nützlich ist</h2>
+                <p className="muted mt-2 text-[16.5px] leading-relaxed">
+                  Dieses System gibt deinem Profil eine eigene Blickrichtung. Es kann Muster sichtbar machen, die in anderen Systemen weniger deutlich erscheinen, und liefert dadurch wertvolle Signale für Hermetias Konvergenz-Engine. Besonders hilfreich ist es, wenn seine Aussagen mit anderen unabhängigen Perspektiven zusammenfallen.
+                </p>
+              </div>
+              <div className="card">
+                <span className="kicker">Grenzen</span>
+                <h2 className="mt-2 text-[23px]">Was {c.name} nicht leisten soll</h2>
+                <p className="muted mt-2 text-[16.5px] leading-relaxed">
+                  Kein einzelnes System sollte dich festlegen. Hermetia verwendet {c.name} nicht als Diagnose, Schicksalsurteil oder alleinige Wahrheit. Die Deutung bleibt eine Einladung zur Selbstreflexion und wird bewusst mit Datenschutz-, AI- und IP-Leitplanken formuliert.
+                </p>
+              </div>
+            </div>
+            <div className="rounded-card border border-sand bg-white p-6 shadow-soft">
+              <span className="kicker">Konvergenz</span>
+              <h2 className="mt-2 text-[24px]">Wie {c.name} mit anderen Systemen zusammenwirkt</h2>
+              <p className="muted mt-2 text-[16.5px] leading-relaxed">
+                Hermetia fragt nicht nur, was {c.name} allein sagt. Die relevantere Frage ist, ob dieselben Themen auch in anderen Familien auftauchen: etwa in astrologischen Systemen, Zahlensystemen, Fragebögen oder körpernahen Typologien. Wenn mehrere unabhängige Quellen dasselbe Thema stützen, wird daraus ein stärkeres Kernthema deiner Seelenkarte.
+              </p>
+            </div>
+            <AppCta
+              locale={locale}
+              title={`Sieh, ob ${c.name} bei dir ein Kernthema stützt.`}
+              text="Starte dein Profil kostenlos und entdecke, welche Systeme bei dir wirklich zusammenlaufen."
+              source={`system-${sys.slug}-midpage`}
+            />
           </div>
 
           {/* FAQ */}
           <div className="mt-12">
             <h2 className="mb-2 text-[24px]">{t.home.faq.kicker}</h2>
-            <Faq items={c.faq} />
+            <Faq items={extendedFaq} />
           </div>
 
           {/* CTA */}
-          <div className="mt-12 rounded-card bg-gradient-to-br from-aubergine to-pflaume px-8 py-12 text-center">
-            <h2 className="text-[26px] text-white">{t.systeme.cta.title}</h2>
-            <p className="mx-auto my-3 max-w-[460px] text-[#e9dcf2]">{t.systeme.cta.lead}</p>
-            <a className="btn btn-on-dark btn-lg" href={startUrl(locale)}>{t.cta.startFree}</a>
+          <div className="mt-12">
+            <AppCta locale={locale} title={t.systeme.cta.title} text={t.systeme.cta.lead} source={`system-${sys.slug}-final`} />
           </div>
         </div>
       </section>

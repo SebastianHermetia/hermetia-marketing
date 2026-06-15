@@ -251,6 +251,138 @@ export const glossaryTerms = [
       "Die AI bekommt nur abgeleitete Fakten und formuliert daraus Reflexionsimpulse. Sie ersetzt keine medizinische, therapeutische oder rechtliche Beratung.",
     ],
   },
+  {
+    slug: "kernthema",
+    term: "Kernthema",
+    seoTitle: "Kernthema bei Hermetia — was dein Profil wirklich trägt",
+    definition:
+      "Ein Kernthema ist ein zentrales Muster deiner Seelenkarte, das von mehreren Systemen oder starken Signalen getragen wird.",
+    sections: [
+      "Kernthemen entstehen nicht aus einem einzelnen Satz. Hermetia prüft, welche Themen wiederkehren und welche Perspektiven sie stützen.",
+      "Ein Kernthema ist keine Festlegung. Es ist ein Orientierungspunkt für Reflexion, Journaling und die persönliche Reise durch deine Ebenen.",
+    ],
+  },
+  {
+    slug: "spannungsfeld",
+    term: "Spannungsfeld",
+    seoTitle: "Spannungsfeld erklärt — wenn zwei innere Pole gleichzeitig aktiv sind",
+    definition:
+      "Ein Spannungsfeld beschreibt zwei gleichzeitig wirksame Themen, die sich reiben und dadurch Entwicklungspotenzial sichtbar machen.",
+    sections: [
+      "Hermetia behandelt Widersprüche nicht als Fehler. Wenn zwei Pole stark sind, kann daraus eine produktive innere Frage entstehen.",
+      "Ein Spannungsfeld kann zum Beispiel zwischen Rückzug und Sichtbarkeit, Freiheit und Bindung oder Kontrolle und Hingabe liegen.",
+    ],
+  },
+  {
+    slug: "theme-signal",
+    term: "Theme-Signal",
+    seoTitle: "Theme-Signal — wie Hermetia Systemdaten vergleichbar macht",
+    definition:
+      "Ein Theme-Signal ist ein standardisiertes Thema, das aus einem System berechnet wird und mit Signalen anderer Systeme verglichen werden kann.",
+    sections: [
+      "Systeme sprechen unterschiedliche Sprachen. Theme-Signale übersetzen sie in eine gemeinsame Themen-Landkarte.",
+      "Dadurch kann Hermetia erkennen, ob verschiedene Systeme auf Beziehung, Ausdruck, Rhythmus, Grenzen oder Wachstum zeigen.",
+    ],
+  },
+  {
+    slug: "ephemeride",
+    term: "Ephemeride",
+    seoTitle: "Ephemeride einfach erklärt — Grundlage astrologischer Berechnung",
+    definition:
+      "Eine Ephemeride enthält astronomische Positionen von Himmelskörpern und ermöglicht reproduzierbare Berechnungen von Horoskopen und verwandten Systemen.",
+    sections: [
+      "Hermetia nutzt Ephemeriden für Systeme, die Himmelspositionen brauchen. Dadurch wird die Berechnung nachvollziehbar und nicht geraten.",
+      "Die spätere Deutung ist davon getrennt: Erst wird gerechnet, dann werden die Ergebnisse sprachlich eingeordnet.",
+    ],
+  },
+  {
+    slug: "bodygraph",
+    term: "Bodygraph",
+    seoTitle: "Bodygraph im Human Design — Bedeutung bei Hermetia",
+    definition:
+      "Der Bodygraph ist die zentrale Human-Design-Grafik mit Zentren, Kanälen, Toren, Typ und innerer Autorität.",
+    sections: [
+      "Bei Hermetia ist der Bodygraph eine Datenquelle, nicht das ganze Ergebnis. Seine Signale werden mit anderen Systemen verbunden.",
+      "Geschützte Originaltexte werden dabei nicht übernommen. Hermetia formuliert mit eigener Sprache und rechtlich geprüften Leitplanken.",
+    ],
+  },
+  {
+    slug: "innere-autoritaet",
+    term: "Innere Autorität",
+    seoTitle: "Innere Autorität im Human Design — Entscheidungskompass erklärt",
+    definition:
+      "Die innere Autorität beschreibt im Human Design, über welchen inneren Kompass Entscheidungen besonders stimmig getroffen werden.",
+    sections: [
+      "Hermetia liest innere Autorität nicht als starre Regel, sondern als Reflexionsangebot: Wie fühlt sich ein klares Ja oder Nein bei dir an?",
+      "Die Aussage wird mit anderen Systemen verbunden, etwa mit Rhythmus, Nervensystem, Werten oder Beziehungsmustern.",
+    ],
+  },
+  {
+    slug: "schatten-gabe-siddhi",
+    term: "Schatten, Gabe und Siddhi",
+    seoTitle: "Schatten, Gabe und Siddhi — Gene-Keys-Triade verständlich erklärt",
+    definition:
+      "Schatten, Gabe und Siddhi beschreiben eine Entwicklungsbewegung von Herausforderung über Potenzial zu reifer Qualität.",
+    sections: [
+      "Hermetia nutzt diese Triade mit eigener Sprache und ohne geschützte Originaltexte. Sie ist ein Wachstumsbild, keine Diagnose.",
+      "Besonders wertvoll wird sie, wenn ähnliche Themen auch in anderen Systemen auftauchen und dadurch ein Kernthema stützen.",
+    ],
+  },
+  {
+    slug: "lebenszahl",
+    term: "Lebenszahl",
+    seoTitle: "Lebenszahl berechnen — numerologischer Lebensweg bei Hermetia",
+    definition:
+      "Die Lebenszahl ist eine numerologische Kernzahl aus dem Geburtsdatum und beschreibt ein Grundthema des Lebenswegs.",
+    sections: [
+      "Die Berechnung ist einfache Arithmetik. Hermetia nutzt die Lebenszahl nicht isoliert, sondern als Signal innerhalb einer größeren Seelenkarte.",
+      "Dadurch bleibt die Zahl ein nützlicher Hinweis, ohne zur alleinigen Wahrheit über eine Person zu werden.",
+    ],
+  },
+  {
+    slug: "dosha",
+    term: "Dosha",
+    seoTitle: "Dosha im Ayurveda — Vata, Pitta, Kapha als Reflexionsmodell",
+    definition:
+      "Doshas sind im Ayurveda Grundprinzipien von Bewegung, Umwandlung und Struktur. Hermetia nutzt sie nicht-medizinisch als Reflexionssignal.",
+    sections: [
+      "Dosha-Aussagen dürfen nicht als Diagnose verstanden werden. In Hermetia dienen sie der Selbstfürsorge und alltagsnahen Reflexion.",
+      "Die Bestimmung erfolgt über eigene Fragebogenitems und nicht über geschützte medizinische oder therapeutische Texte.",
+    ],
+  },
+  {
+    slug: "chronotyp",
+    term: "Chronotyp",
+    seoTitle: "Chronotyp — Tagesrhythmus und Energie bei Hermetia",
+    definition:
+      "Der Chronotyp beschreibt, zu welchen Tageszeiten Energie, Fokus und Ruhe natürlicherweise stärker oder schwächer sein können.",
+    sections: [
+      "Hermetia nutzt den Chronotyp als praktisches Alltagssignal, besonders für Tagesimpulse und Journaling.",
+      "Auch hier gilt: Die Auswertung ist kein medizinischer Befund, sondern ein sanfter Hinweis auf Rhythmus und Selbstbeobachtung.",
+    ],
+  },
+  {
+    slug: "composite",
+    term: "Composite",
+    seoTitle: "Composite Chart — die Beziehung als eigenes Feld erklärt",
+    definition:
+      "Ein Composite betrachtet eine Beziehung als eigenes drittes Feld, das aus zwei Profilen oder Horoskopen abgeleitet wird.",
+    sections: [
+      "Während Synastrie fragt, wie zwei Menschen aufeinander wirken, fragt Composite, welches gemeinsame Thema zwischen ihnen entsteht.",
+      "Hermetia behandelt Composite-Deutungen nur mit klarer Einwilligung und ohne Erfolgs- oder Trennungsversprechen.",
+    ],
+  },
+  {
+    slug: "art-9-dsgvo",
+    term: "Art. 9 DSGVO",
+    seoTitle: "Art. 9 DSGVO bei Hermetia — besondere Daten verständlich erklärt",
+    definition:
+      "Art. 9 DSGVO schützt besondere Kategorien personenbezogener Daten, zu denen auch sensible weltanschauliche oder spirituelle Ableitungen gehören können.",
+    sections: [
+      "Hermetia behandelt spirituelle Profilinhalte deshalb besonders vorsichtig und arbeitet mit ausdrücklicher Einwilligung.",
+      "Marketing-Beispiele bleiben fiktiv. Echte Profile, Geburtsdaten oder Beziehungsauswertungen werden nicht öffentlich verwendet.",
+    ],
+  },
 ] as const;
 
 export const articles = [
@@ -278,6 +410,30 @@ export const articles = [
     body:
       "AI kann komplexe Muster verständlich machen. Sie kann erklären, verdichten und Beispiele formulieren. Gleichzeitig darf sie nicht als unfehlbare Stimme auftreten. Hermetia trennt deshalb Berechnung, Konvergenz und AI-Deutung. Das Modell schreibt auf Grundlage berechneter Fakten, nicht aus freier Spekulation.",
   },
+  {
+    slug: "warum-ein-system-nicht-reicht",
+    title: "Warum ein einzelnes System selten reicht",
+    seoTitle: "Warum ein einzelnes System selten reicht — Hermetias Konvergenz-Ansatz",
+    description: "Warum Hermetia Astrologie, Human Design, Fragebögen und weitere Systeme nicht einzeln, sondern im Zusammenspiel liest.",
+    body:
+      "Ein einzelnes System kann tief wirken, aber es bleibt in seiner eigenen Sprache gefangen. Astrologie sieht Himmelsrhythmen, Numerologie sieht Zahlenmuster, Fragebögen erfassen Selbstauskunft. Hermetia verbindet diese Perspektiven, weil tragfähige Selbsterkenntnis stärker wird, wenn unabhängige Quellen auf ähnliche Themen zeigen.",
+  },
+  {
+    slug: "sensible-spirituelle-daten",
+    title: "Warum spirituelle Profildaten sensibel sind",
+    seoTitle: "Spirituelle Profildaten und Datenschutz — warum Hermetia Art. 9 ernst nimmt",
+    description: "Warum weltanschauliche und spirituelle Ableitungen datenschutzrechtlich besonders sorgfältig behandelt werden müssen.",
+    body:
+      "Ein spirituelles Profil kann intime Aussagen über Weltbild, Selbstverständnis und Beziehungsmuster enthalten. Deshalb behandelt Hermetia diese Inhalte nicht wie harmlose Marketingdaten. Einwilligung, Verschlüsselung, Export und Löschung sind Teil des Produkts. Besonders bei Beziehungsprofilen gilt: Daten einer zweiten Person brauchen eine eigene, informierte Einwilligung.",
+  },
+  {
+    slug: "tageshoroskop-vs-tagesimpuls",
+    title: "Tageshoroskop vs. persönlicher Tagesimpuls",
+    seoTitle: "Tageshoroskop vs. Tagesimpuls — warum Hermetia persönlicher arbeitet",
+    description: "Der Unterschied zwischen allgemeinen Horoskopen und persönlichen Hermetia-Impulsen.",
+    body:
+      "Ein Tageshoroskop richtet sich meist an ein Sternzeichen und damit an Millionen Menschen. Ein persönlicher Tagesimpuls beginnt bei deinem eigenen Profil und nutzt Tagesdaten nur als Färbung. Dadurch entsteht kein allgemeiner Spruch, sondern ein Reflexionsangebot, das zu deinen Kernthemen, deinem Rhythmus und deinen wiederkehrenden Mustern passt.",
+  },
 ] as const;
 
 export const comparisons = [
@@ -296,6 +452,22 @@ export const comparisons = [
     description: "Wie sich Horoskop und Bodygraph unterscheiden und warum Hermetia beide nutzt.",
     body:
       "Astrologie zeigt Himmelspositionen als Charakter-, Timing- und Beziehungssprache. Human Design übersetzt ähnliche Rohdaten in Typ, Autorität und Energiezentren. Hermetia nutzt beide Perspektiven, achtet aber darauf, gemeinsame Datenquellen nicht naiv doppelt zu zählen.",
+  },
+  {
+    slug: "big-five-vs-enneagramm",
+    title: "Big Five vs. Enneagramm",
+    seoTitle: "Big Five vs. Enneagramm — Psychologie und Motivation im Vergleich",
+    description: "Big Five misst Persönlichkeitseigenschaften, Enneagramm deutet Motivationsmuster. Hermetia nutzt beide unterschiedlich.",
+    body:
+      "Big Five beschreibt Persönlichkeitsdimensionen wie Offenheit, Gewissenhaftigkeit oder Neurotizismus. Das Enneagramm fragt stärker nach Motivation und innerem Grundmuster. Hermetia nutzt Big Five als wissenschaftlicheren Erdungsanker und das Enneagramm als reflektierende Typologie, ohne eines der beiden Systeme als alleinige Wahrheit zu behandeln.",
+  },
+  {
+    slug: "tageshoroskop-vs-hermetia",
+    title: "Tageshoroskop vs. Hermetia Tagesimpuls",
+    seoTitle: "Tageshoroskop vs. Hermetia Tagesimpuls — allgemein oder persönlich?",
+    description: "Warum Hermetias Tagesimpulse vom persönlichen Profil ausgehen und nicht nur vom Sternzeichen.",
+    body:
+      "Das Tageshoroskop startet meist beim Sonnenzeichen. Hermetia startet beim ganzen Profil: Kernthemen, Konvergenz, Rhythmus und optional Tagesdaten. Deshalb ist der Impuls weniger plakativ, aber persönlicher. Er soll nicht vorhersagen, sondern eine sinnvolle Reflexionsfrage für den Tag anbieten.",
   },
 ] as const;
 
