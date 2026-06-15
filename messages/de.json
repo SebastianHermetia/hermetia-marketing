@@ -192,8 +192,8 @@
     "seoDescription": "Hermetia hat nur drei klare Tarife: Entdecken (kostenlos), Begleitung (49 €/Jahr, alle Ebenen) und Tiefe (99 €/Jahr). Jederzeit kündbar, EU-gehostet.",
     "kicker": "Preise",
     "title": "Klar, fair, ohne Kleingedrucktes.",
-    "lead": "Beginne kostenlos. Öffne alle Ebenen für 49 € im Jahr – das sind 4 Cent am Tag.",
-    "toggleYear": "Jährlich · spare 2 Monate",
+    "lead": "Beginne kostenlos. Öffne alle Ebenen für 49 € im Jahr, das sind rund 13 Cent am Tag.",
+    "toggleYear": "Jährlich · bester Preis",
     "toggleMonth": "Monatlich",
     "popular": "⭐ Beliebteste Wahl",
     "perYear": "/ Jahr",
@@ -202,7 +202,7 @@
       { "name": "Begleitung", "price": "49 €", "per": "/ Jahr", "note": "≈ 4,08 € / Monat · jederzeit kündbar", "cta": "Begleitung wählen", "featured": true, "features": ["Alle Ebenen vollständig", "Täglicher Impuls & Tagesweisheit", "Journaling & Monatsreflexion", "Dein Buch als PDF", "Profil verfeinern (Geburtszeit nachtragen)", "Alle freischaltbaren Systeme"] },
       { "name": "Tiefe", "price": "99 €", "per": "/ Jahr", "note": "≈ 8,25 € / Monat · jederzeit kündbar", "cta": "Tiefe wählen", "featured": false, "features": ["Alles aus Begleitung", "Orakel & Companion-Dialog (Kontingent)", "Beziehungs- & Kompatibilitätsprofile", "Mehrere Profile", "Vertiefte Module & Jahresvorschau"] }
     ],
-    "smallprint": "Alle Preise inkl. MwSt. · Zahlung sicher über Stripe · EU-Hosting",
+    "smallprint": "Alle Preise inkl. MwSt. · Zahlung sicher über Stripe · EU-Hosting · verbindlich ist immer die Bestellübersicht in der App",
     "trust": [
       { "icon": "⟲", "title": "Jederzeit kündbar", "text": "Ein Klick im Profil – kein Anruf, keine Frist. So verlangt es das Gesetz, so machen wir es." },
       { "icon": "🔒", "title": "Verschlüsselt in der EU", "text": "Deine sensiblen Daten liegen verschlüsselt auf EU-Servern – mit ausdrücklicher Einwilligung (Art. 9)." },
@@ -212,7 +212,7 @@
     "faqTitle": "Häufige Fragen zu den Tarifen",
     "faq": [
       { "q": "Was kostet Hermetia wirklich?", "a": "Der Einstieg ist dauerhaft kostenlos. Der beliebteste Tarif „Begleitung“ kostet 49 € pro Jahr und öffnet alle Ebenen, den täglichen Impuls, Journaling und dein Buch. „Tiefe“ für 99 € ergänzt Orakel, Beziehungsprofile und mehrere Profile." },
-      { "q": "Kann ich monatlich zahlen?", "a": "Ja. Begleitung gibt es auch monatlich; im Jahresabo sparst du rund zwei Monate." },
+      { "q": "Kann ich monatlich zahlen?", "a": "Falls eine monatliche Zahlung angeboten wird, zeigt die Bestellübersicht vor dem Kauf Preis, Laufzeit und Kündigung klar an. Der hier dargestellte Jahrespreis ist der transparent berechnete Referenzpreis." },
       { "q": "Wie kündige ich?", "a": "Mit einem Klick im Profil über den Kündigungsbutton – ohne Frist und ohne Begründung. Dein Zugang bleibt bis zum Ende der bezahlten Periode aktiv." },
       { "q": "Brauche ich für den kostenlosen Tarif eine Kreditkarte?", "a": "Nein. Du siehst deine Seelenkarte und dein erstes Kernthema ohne jede Zahlungsangabe." }
     ],

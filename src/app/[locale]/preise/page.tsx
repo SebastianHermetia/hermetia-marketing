@@ -58,6 +58,11 @@ const trustNotes = [
   "Digitale Inhalte, Widerruf und Leistungsbeginn werden rechtlich sauber erklärt.",
 ];
 
+const priceTruthRows = [
+  ["Begleitung", "49 € / Jahr", "ca. 4,08 € / Monat", "rund 13 Cent am Tag"],
+  ["Tiefe", "99 € / Jahr", "ca. 8,25 € / Monat", "rund 27 Cent am Tag"],
+];
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = getDictionary(locale as Locale);
@@ -115,6 +120,32 @@ export default async function PreisePage({ params }: { params: Promise<{ locale:
             ))}
           </div>
           <p className="note mt-6 text-center">{p.smallprint}</p>
+        </div>
+      </section>
+
+      <section className="py-14">
+        <div className="wrap grid items-start gap-8 lg:grid-cols-[.9fr_1.1fr]">
+          <div>
+            <span className="kicker">Preiswahrheit</span>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Was bedeutet der Jahrespreis im Alltag?</h2>
+            <p className="muted mt-4 text-[17px] leading-[1.85]">
+              Hermetia rechnet Jahrespreise offen herunter, ohne daraus ein künstlich kleines Versprechen zu machen. Vor dem Kauf zählt immer die Bestellübersicht in der App: Dort stehen Preis, Laufzeit, Zahlungsart, Leistungsbeginn und Kündigung verbindlich.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "pricing-integrity" })}>Preis prüfen und starten</a>
+              <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.widerruf)}>Widerruf lesen</a>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-card border border-sand bg-white shadow-soft">
+            {priceTruthRows.map(([plan, yearly, monthly, daily], index) => (
+              <div key={plan} className={`grid gap-3 p-4 text-[14.5px] md:grid-cols-4 ${index ? "border-t border-sand" : "bg-creme-tief font-semibold text-aubergine"}`}>
+                <span>{plan}</span>
+                <span>{yearly}</span>
+                <span>{monthly}</span>
+                <span>{daily}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

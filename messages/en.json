@@ -192,8 +192,8 @@
     "seoDescription": "Hermetia has just three clear plans: Discover (free), Companion (€49/year, all levels) and Depth (€99/year). Cancel anytime, EU-hosted.",
     "kicker": "Pricing",
     "title": "Clear, fair, no fine print.",
-    "lead": "Begin for free. Open every level for €49 a year — that’s 4 cents a day.",
-    "toggleYear": "Yearly · save 2 months",
+    "lead": "Begin for free. Open every level for €49 a year, about 13 cents a day.",
+    "toggleYear": "Yearly · best value",
     "toggleMonth": "Monthly",
     "popular": "⭐ Most popular",
     "perYear": "/ year",
@@ -202,7 +202,7 @@
       { "name": "Companion", "price": "€49", "per": "/ year", "note": "≈ €4.08 / month · cancel anytime", "cta": "Choose Companion", "featured": true, "features": ["All levels in full", "Daily impulse & daily wisdom", "Journaling & monthly review", "Your book as PDF", "Refine your profile (add birth time)", "All unlockable systems"] },
       { "name": "Depth", "price": "€99", "per": "/ year", "note": "≈ €8.25 / month · cancel anytime", "cta": "Choose Depth", "featured": false, "features": ["Everything in Companion", "Oracle & Companion dialogue (quota)", "Relationship & compatibility profiles", "Multiple profiles", "Deeper modules & yearly outlook"] }
     ],
-    "smallprint": "All prices incl. VAT · Secure payment via Stripe · EU-hosted",
+    "smallprint": "All prices incl. VAT · secure payment via Stripe · EU-hosted · the in-app order summary is always binding",
     "trust": [
       { "icon": "⟲", "title": "Cancel anytime", "text": "One click in your profile — no call, no notice period. As the law requires, as we do it." },
       { "icon": "🔒", "title": "Encrypted in the EU", "text": "Your sensitive data is stored encrypted on EU servers — with explicit consent (Art. 9)." },
@@ -212,7 +212,7 @@
     "faqTitle": "Frequently asked about the plans",
     "faq": [
       { "q": "What does Hermetia really cost?", "a": "Getting started is free forever. The most popular plan, “Companion”, costs €49 a year and opens all levels, the daily impulse, journaling and your book. “Depth” at €99 adds the oracle, relationship profiles and multiple profiles." },
-      { "q": "Can I pay monthly?", "a": "Yes. Companion is also available monthly; with the yearly plan you save about two months." },
+      { "q": "Can I pay monthly?", "a": "If a monthly option is offered, the order summary clearly shows price, term and cancellation before purchase. The yearly price shown here is the transparent reference price." },
       { "q": "How do I cancel?", "a": "With one click in your profile via the cancellation button — no notice period, no reason needed. Your access stays active until the end of the paid period." },
       { "q": "Do I need a credit card for the free plan?", "a": "No. You see your soul map and your first core theme without any payment details." }
     ],
