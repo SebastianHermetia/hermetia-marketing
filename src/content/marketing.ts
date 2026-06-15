@@ -845,6 +845,67 @@ enPages.companion = {
   ctaText: "The Companion becomes useful once your own profile is the foundation.",
 };
 
+enPages.journaling = {
+  ...dePages.journaling,
+  title: "Journaling with Hermetia: turning impulses into self-knowledge",
+  seoTitle: "Journaling with Hermetia - connecting profile, daily impulses and reflection",
+  seoDescription:
+    "How Hermetia uses journaling to connect daily impulses, soul map, feedback and long-term patterns into a calm reflection practice.",
+  eyebrow: "Daily life · Reflection",
+  lead:
+    "Journaling in Hermetia is not just an empty text field. It is the bridge between your profile, your daily impulses and what you actually notice in everyday life.",
+  answer:
+    "Hermetia journaling connects personal impulses with your own notes, feedback and recurring themes. The app should not claim to know you better than you know yourself, but help you see resonance, doubt, patterns and development more consciously over time.",
+  imageAlt: "A quiet library of inner notes as an image for Hermetia journaling",
+  sections: [
+    {
+      title: "Why journaling grounds the soul map",
+      body:
+        "A soul map can be moving, but it becomes truly valuable when you connect it with lived everyday life. Journaling is that grounding. You can note which statements resonate, which questions remain open and which patterns repeat. Hermetia therefore does not remain a one-time reading, but becomes a learning reflection space. Important: your notes are not evidence against you and not diagnostic data. They are your own language for what you observe.",
+    },
+    {
+      title: "From daily impulse to personal observation",
+      body:
+        "A daily impulse gives focus. The journal asks what you make of it. Did the impulse reveal something, was there a situation where a core theme became tangible, did the sentence feel wrong, too strong or surprisingly accurate? This feedback matters because it makes interpretation more human. Hermetia should not only send, but give you room to answer back. That is how a daily hint becomes a personal trail.",
+    },
+    {
+      title: "Recognizing patterns over weeks and months",
+      body:
+        "A single entry is often only a moment. It becomes interesting when themes gather over weeks: withdrawal, visibility, decision, relationship, creativity, overwhelm or calm. Hermetia can make these repetitions visible in review without turning them into rigid truths. This is where premium depth emerges: not more text for its own sake, but a clearer view of personal development.",
+    },
+    {
+      title: "Privacy and sensitive notes",
+      body:
+        "Journaling can be deeply personal. The website therefore needs to explain clearly that such content is treated as sensitive. Users should understand what is stored, how deletion and export are intended and what role AI plays in summaries. Hermetia must not derive medical, therapeutic or legal claims from journal texts. The feature remains a reflection tool, not a substitute for professional advice.",
+    },
+    {
+      title: "Start free, understand paid depth",
+      body:
+        "The free start can enable first impulses and simple reflection. Paid models become useful when users want history, reviews, more levels, deeper questions and long-term patterns. This is exactly why journaling belongs on the marketing website: it explains why Hermetia is not only a profile calculator, but an ongoing companion that unfolds over time.",
+    },
+  ],
+  faq: [
+    {
+      q: "Is Hermetia journaling a normal diary?",
+      a: "It can be used like a diary, but it is more closely connected with profile, daily impulses and recurring themes. The focus is self-reflection, not performance or perfect documentation.",
+    },
+    {
+      q: "Does AI read my journal texts?",
+      a: "AI-assisted summaries may happen only transparently and for a defined purpose. Users must understand when AI is involved and which content is used for it.",
+    },
+    {
+      q: "Can I delete journal entries?",
+      a: "Yes. The product goal is that personal content can be exported and deleted. The marketing website intentionally describes this as part of the data-protection line.",
+    },
+    {
+      q: "Is journaling therapy?",
+      a: "No. Hermetia journaling is a reflection tool and does not replace medical, psychological or therapeutic advice.",
+    },
+  ],
+  ctaTitle: "Start with your soul map and keep what truly resonates.",
+  ctaText: "The journal becomes valuable once your own profile opens the first questions.",
+};
+
 export const pillarPages: Record<string, LocalizedPage> = Object.fromEntries(
   Object.entries(dePages).map(([key, de]) => [key, { de, en: enPages[key as keyof typeof dePages] }]),
 ) as Record<string, LocalizedPage>;

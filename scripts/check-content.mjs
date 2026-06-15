@@ -84,6 +84,7 @@ const onboarding = readOut("de/profil-starten");
 const enOnboarding = readOut("en/profil-starten");
 const frOnboarding = readOut("fr/profil-starten");
 const journaling = readOut("de/journaling");
+const enJournaling = readOut("en/journaling");
 const frJournaling = readOut("fr/journaling");
 const profileBook = readOut("de/vollprofil-buch");
 const frProfileBook = readOut("fr/vollprofil-buch");
@@ -286,6 +287,8 @@ const checks = [
   ["Journaling page exists", journaling.includes("Journaling mit Hermetia") && journaling.includes("aus Impulsen wird Selbsterkenntnis")],
   ["Journaling page has FAQ schema", journaling.includes("FAQPage")],
   ["Journaling page has tracked CTAs", journaling.includes("utm_content=journaling-inline-1") && journaling.includes("utm_content=journaling-final")],
+  ["EN Journaling page has localized reflection sections", enJournaling.includes("Why journaling grounds the soul map") && enJournaling.includes("Recognizing patterns over weeks and months") && enJournaling.includes("Privacy and sensitive notes")],
+  ["EN Journaling page has no German core headings", !enJournaling.includes("Warum Journaling die Seelenkarte erdet") && !enJournaling.includes("Muster über Wochen und Monate erkennen") && !enJournaling.includes("Privatsphäre und sensible Notizen")],
   ["Journaling page is linked in footer", deHome.includes("/de/journaling/")],
   ["Journaling page has localized fallback SEO", frJournaling.includes("<title>Journal | Hermetia</title>")],
   ["Profile book page exists", profileBook.includes("Das Vollprofil-Buch") && profileBook.includes("Premium-Tiefe")],
