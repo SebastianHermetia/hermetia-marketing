@@ -31,6 +31,7 @@ export const paths = {
   wissen: "/wissen",
   vergleiche: "/vergleiche",
   sprachen: "/sprachen",
+  freigaben: "/freigaben",
   preise: "/preise",
   faq: "/faq",
   datenschutz: "/datenschutz",

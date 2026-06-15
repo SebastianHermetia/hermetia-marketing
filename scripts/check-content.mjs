@@ -47,6 +47,7 @@ const comparison = readOut("de/vergleiche/big-five-vs-human-design");
 const glossary = readOut("de/glossar/datenminimierung");
 const convergence = readOut("de/konvergenz-engine");
 const languages = readOut("de/sprachen");
+const launchReview = readOut("de/freigaben");
 
 const checks = [
   ["DE has no fallback language notice", !deHome.includes("Sprachfassung in redaktioneller Vorbereitung")],
@@ -68,6 +69,10 @@ const checks = [
   ["Language status page reports editorial locales", languages.includes("Redaktionell freigegeben") && languages.includes(">2<")],
   ["Language status page reports fallback locales", languages.includes("In Übersetzung") && languages.includes(">22<")],
   ["Language status page is linked in footer", deHome.includes("/de/sprachen/")],
+  ["Launch review page exists", launchReview.includes("Legal-, IP- und Launch-Freigaben")],
+  ["Launch review page states external legal review", launchReview.includes("keine anwaltliche Endfreigabe")],
+  ["Launch review page lists indexing gate", launchReview.includes("Indexing und Domain-Launch")],
+  ["Launch review page is linked in footer", deHome.includes("/de/freigaben/")],
 ];
 
 for (const [label, ok] of checks) {
