@@ -11,6 +11,7 @@ import { Faq } from "@/components/Faq";
 import { AppCta } from "@/components/AppCta";
 import { JsonLd, faqSchema, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { systems, systemSlugs, getSystem, systemText } from "@/content/systems";
+import { bookSearchUrl, bookText, getBooksForSystem } from "@/content/bookRecommendations";
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
@@ -34,6 +35,7 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
   const t = getDictionary(locale);
   const c = systemText(sys, locale);
   const related = systems.filter((s) => s.slug !== slug).slice(0, 4);
+  const books = getBooksForSystem(sys.slug);
   const pageUrl = `${siteUrl}/${locale}${paths.systeme}/${slug}/`;
   const imageUrl = `${siteUrl}/images/art/${sys.art}`;
   const dataNeed =
@@ -75,6 +77,22 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
             { name: t.nav.systeme, url: `${siteUrl}/${locale}${paths.systeme}/` },
             { name: c.name, url: pageUrl },
           ]),
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: locale === "en" ? `Books about ${c.name}` : `Bücher zu ${c.name}`,
+            itemListElement: books.map((book, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              item: {
+                "@type": "Book",
+                name: book.title,
+                author: book.authors,
+                inLanguage: book.languages.join(", "),
+                url: bookSearchUrl(book, locale),
+              },
+            })),
+          },
         ]}
       />
       <Header locale={locale} current="systeme" />
@@ -154,6 +172,38 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
               <h2 className="mt-2 text-[24px]">Wie {c.name} mit anderen Systemen zusammenwirkt</h2>
               <p className="muted mt-2 text-[16.5px] leading-relaxed">
                 Hermetia fragt nicht nur, was {c.name} allein sagt. Die relevantere Frage ist, ob dieselben Themen auch in anderen Familien auftauchen: etwa in astrologischen Systemen, Zahlensystemen, Fragebögen oder körpernahen Typologien. Wenn mehrere unabhängige Quellen dasselbe Thema stützen, wird daraus ein stärkeres Kernthema deiner Seelenkarte.
+              </p>
+            </div>
+            <div className="rounded-card border border-sand bg-white p-6 shadow-soft">
+              <span className="kicker">{locale === "en" ? "Further reading" : "Literatur"}</span>
+              <h2 className="mt-2 text-[24px]">
+                {locale === "en" ? `Books about ${c.name}` : `Bücher zu ${c.name}`}
+              </h2>
+              <p className="muted mt-2 text-[16.5px] leading-relaxed">
+                {locale === "en"
+                  ? "These recommendations help you understand the tradition behind this system. The links currently use neutral book searches and can later be replaced by approved affiliate links."
+                  : "Diese Empfehlungen helfen, die Tradition hinter diesem System besser zu verstehen. Die Links nutzen aktuell neutrale Buchsuchen und können später durch freigegebene Affiliate-Links ersetzt werden."}
+              </p>
+              <div className="mt-5 grid gap-4 md:grid-cols-3">
+                {books.map((book) => {
+                  const text = bookText(book, locale);
+                  return (
+                    <article key={book.id} className="rounded-card border border-sand bg-creme-tief p-5">
+                      <span className="chip chip-gold">{text.level}</span>
+                      <h3 className="mt-4 text-[19px]">{book.title}</h3>
+                      <p className="note mt-1">{book.authors} · {book.languages.join(", ")}</p>
+                      <p className="muted mt-3 text-[14.5px] leading-relaxed">{text.description}</p>
+                      <a className="note mt-4 inline-block font-semibold text-gold" href={bookSearchUrl(book, locale)} rel="nofollow noopener noreferrer" target="_blank">
+                        {locale === "en" ? "Search book" : "Buch suchen"} →
+                      </a>
+                    </article>
+                  );
+                })}
+              </div>
+              <p className="note mt-4">
+                {locale === "en"
+                  ? "Some links may later become partner links. Hermetia does not display prices or availability until a compliant partner integration is active."
+                  : "Einige Links können später Partnerlinks werden. Hermetia zeigt Preise und Verfügbarkeit erst, wenn eine regelkonforme Partnerintegration aktiv ist."}
               </p>
             </div>
             <div className="rounded-card border border-sand bg-creme-tief p-6">

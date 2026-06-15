@@ -9,6 +9,7 @@ import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { systems, systemText } from "@/content/systems";
+import { bookSearchUrl, bookText, featuredBooks } from "@/content/bookRecommendations";
 
 type SystemSlug = (typeof systems)[number]["slug"];
 
@@ -64,6 +65,7 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
   const p = t.systeme;
   const core = systems.filter((s) => s.core);
   const more = systems.filter((s) => !s.core);
+  const books = featuredBooks();
   const pageUrl = `${siteUrl}/${locale}${paths.systeme}/`;
   const bySlug = new Map(systems.map((system) => [system.slug, system]));
 
@@ -83,6 +85,22 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
             { name: "Hermetia", url: `${siteUrl}/${locale}/` },
             { name: "Systeme", url: pageUrl },
           ]),
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: locale === "en" ? "Books about Hermetia systems" : "Bücher zu den Hermetia-Systemen",
+            itemListElement: books.map((book, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              item: {
+                "@type": "Book",
+                name: book.title,
+                author: book.authors,
+                inLanguage: book.languages.join(", "),
+                url: bookSearchUrl(book, locale),
+              },
+            })),
+          },
         ]}
       />
       <Header locale={locale} current="systeme" />
@@ -252,6 +270,43 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
               Aus Einzelsignalen entstehen erst vergleichbare Themenmarker und dann verständliche Kernthemen.
             </figcaption>
           </figure>
+        </div>
+      </section>
+
+      <section className="bg-creme-tief py-20">
+        <div className="wrap">
+          <div className="mb-9 max-w-[780px]">
+            <span className="kicker">{locale === "en" ? "Further reading" : "Weiterlesen"}</span>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">
+              {locale === "en" ? "Books that help you understand the systems." : "Bücher, die die Systeme verständlicher machen."}
+            </h2>
+            <p className="muted mt-4 text-[17px] leading-[1.85]">
+              {locale === "en"
+                ? "These recommendations are editorially selected and openly visible so search engines can understand which sources and traditions Hermetia relates to. Affiliate links can be added later through the same data layer."
+                : "Diese Empfehlungen sind redaktionell ausgewählt und öffentlich sichtbar, damit Suchmaschinen die Quellen- und Traditionsnähe von Hermetia einordnen können. Affiliate-Links können später über dieselbe Datenebene ergänzt werden."}
+            </p>
+          </div>
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {books.map((book) => {
+              const text = bookText(book, locale);
+              return (
+                <article key={book.id} className="card">
+                  <span className="chip chip-gold">{text.level}</span>
+                  <h3 className="mt-4 text-[21px]">{book.title}</h3>
+                  <p className="note mt-1">{book.authors} · {book.languages.join(", ")}</p>
+                  <p className="muted mt-3 text-[15.5px] leading-relaxed">{text.description}</p>
+                  <a className="note mt-4 inline-block font-semibold text-gold" href={bookSearchUrl(book, locale)} rel="nofollow noopener noreferrer" target="_blank">
+                    {locale === "en" ? "Search book" : "Buch suchen"} →
+                  </a>
+                </article>
+              );
+            })}
+          </div>
+          <p className="note mt-6 text-center">
+            {locale === "en"
+              ? "Some links may later become partner links. Prices and availability are not shown because they can change."
+              : "Einige Links können später Partnerlinks werden. Preise und Verfügbarkeit werden bewusst nicht angezeigt, weil sie sich ändern können."}
+          </p>
         </div>
       </section>
 
