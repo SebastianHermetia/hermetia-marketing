@@ -54,6 +54,7 @@ export const paths = {
   anwendungsfaelle: "/anwendungsfaelle",
   freePremium: "/kostenlos-vs-premium",
   datenSicherheit: "/daten-und-sicherheit",
+  onboarding: "/profil-starten",
   about: "/ueber-hermetia",
   sprachen: "/sprachen",
   freigaben: "/freigaben",

@@ -13,6 +13,7 @@ const files = [
   "src/app/[locale]/anwendungsfaelle/page.tsx",
   "src/app/[locale]/kostenlos-vs-premium/page.tsx",
   "src/app/[locale]/daten-und-sicherheit/page.tsx",
+  "src/app/[locale]/profil-starten/page.tsx",
 ];
 
 const refs = new Set();

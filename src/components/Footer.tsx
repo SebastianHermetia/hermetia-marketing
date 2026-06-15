@@ -22,6 +22,7 @@ export function Footer({ locale }: { locale: Locale }) {
           </div>
           <FootCol title={t.footer.product}>
             <FootLink href={L(paths.leistungen)}>{t.nav.leistungen}</FootLink>
+            <FootLink href={L(paths.onboarding)}>Profil starten</FootLink>
             <FootLink href={L(paths.systeme)}>{t.nav.systeme}</FootLink>
             <FootLink href={L(paths.methodik)}>{t.nav.methodik}</FootLink>
             <FootLink href={L(paths.konvergenz)}>Konvergenz-Engine</FootLink>

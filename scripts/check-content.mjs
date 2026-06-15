@@ -60,6 +60,8 @@ const freePremium = readOut("de/kostenlos-vs-premium");
 const frFreePremium = readOut("fr/kostenlos-vs-premium");
 const dataSecurity = readOut("de/daten-und-sicherheit");
 const frDataSecurity = readOut("fr/daten-und-sicherheit");
+const onboarding = readOut("de/profil-starten");
+const frOnboarding = readOut("fr/profil-starten");
 const pricing = readOut("de/preise");
 const services = readOut("de/leistungen");
 const systemsHub = readOut("de/systeme");
@@ -117,6 +119,11 @@ const checks = [
   ["Data security page has tracked CTAs", dataSecurity.includes("utm_content=data-security-hero") && dataSecurity.includes("utm_content=data-security-final")],
   ["Data security page is linked in footer", deHome.includes("/de/daten-und-sicherheit/")],
   ["Data security page has localized fallback SEO", frDataSecurity.includes("<title>Données et sécurité | Hermetia</title>")],
+  ["Onboarding guide page exists", onboarding.includes("So kommst du von der Website") && onboarding.includes("Vier Schritte")],
+  ["Onboarding guide page has FAQ schema", onboarding.includes("FAQPage")],
+  ["Onboarding guide page has tracked CTAs", onboarding.includes("utm_content=onboarding-guide-hero") && onboarding.includes("utm_content=onboarding-guide-final")],
+  ["Onboarding guide page is linked in footer", deHome.includes("/de/profil-starten/")],
+  ["Onboarding guide page has localized fallback SEO", frOnboarding.includes("<title>Commencer le profil | Hermetia</title>")],
   ["Header CTAs are source tagged", deHome.includes("utm_content=header-start") && deHome.includes("utm_content=header-login")],
   ["Home CTAs are source tagged", deHome.includes("utm_content=home-hero") && deHome.includes("utm_content=home-final")],
   ["Pricing CTAs are source tagged", pricing.includes("utm_content=pricing-tier-1") && pricing.includes("utm_content=pricing-tier-2") && pricing.includes("utm_content=pricing-tier-3") && pricing.includes("utm_content=pricing-final")],
