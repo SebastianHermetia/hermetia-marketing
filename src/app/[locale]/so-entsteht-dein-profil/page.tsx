@@ -1,10 +1,71 @@
 import type { Metadata } from "next";
-import { type Locale } from "@/i18n/config";
+import { type Locale, siteUrl } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { buildMetadata } from "@/lib/seo";
-import { startUrl, paths } from "@/lib/links";
+import { startUrl, paths, localePath } from "@/lib/links";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Faq } from "@/components/Faq";
+import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
+
+const methodFaq = [
+  {
+    q: "Wie entsteht mein Hermetia-Profil?",
+    a: "Hermetia berechnet zuerst die technischen Grundlagen aus Geburtsdaten, Ort, Zeit und optionalen Selbstauskünften. Danach werden Systemsignale in Themen übersetzt, in Familien gruppiert und über die Konvergenz-Engine verdichtet.",
+  },
+  {
+    q: "Was macht die Konvergenz-Engine anders als eine normale Auswertung?",
+    a: "Sie zählt Systeme nicht einfach zusammen. Verwandte Quellen werden gebündelt, damit ähnliche Daten nicht doppelt als unabhängige Bestätigung erscheinen. Stark wird ein Thema erst, wenn mehrere unterschiedliche Perspektiven darauf zeigen.",
+  },
+  {
+    q: "Welche Rolle spielt AI in Hermetia?",
+    a: "AI formuliert verständliche Deutungstexte auf Grundlage berechneter Fakten und Themen. Sie entscheidet nicht frei, welche Themen wichtig sind, und ersetzt keine medizinische, psychologische oder therapeutische Beratung.",
+  },
+  {
+    q: "Warum fragt Hermetia nach Selbstauskunft?",
+    a: "Geburtsbasierte Systeme kennen den Alltag eines Menschen nicht. Selbstauskünfte erden die Deutung und helfen, Symbolsprache mit erlebtem Verhalten, Interessen, Energie und Rhythmus zu verbinden.",
+  },
+  {
+    q: "Kann ich nachvollziehen, woher eine Aussage kommt?",
+    a: "Das Produktziel ist Erklärbarkeit: Nutzer sollen sehen können, welche Systemfamilien und Datenarten ein Kernthema tragen und wo Unsicherheit besteht.",
+  },
+];
+
+const methodDeepDives = [
+  {
+    title: "Datenbasis: Was Hermetia wirklich verwendet",
+    text: "Ein Profil beginnt nicht mit einer fertigen Deutung, sondern mit Eingaben: Geburtsdatum, Geburtsort, optional Geburtszeit, Spracheinstellung und ergänzende Selbstauskunft. Daraus entstehen technische Berechnungen und vorsichtige Themenmarker. Rohdaten, abgeleitete spirituelle Inhalte und Journalnotizen bleiben klar getrennte Datenbereiche.",
+  },
+  {
+    title: "Systemfamilien: Warum nicht alles gleich zählt",
+    text: "Westliche Astrologie, Fixsterne und Astrokartografie nutzen verwandte Himmelsdaten. Human Design und Gene Keys teilen Grundlagen. Numerologie, Tarot-Geburtskarten und Kabbalah arbeiten mit Datum oder Name. Hermetia gruppiert solche Nähe, damit eine Aussage nicht stärker wirkt, nur weil dieselbe Quelle mehrfach übersetzt wurde.",
+  },
+  {
+    title: "Deutung: Von Signal zu verständlicher Sprache",
+    text: "Aus einzelnen Signalen werden keine absoluten Behauptungen. Hermetia formuliert vorsichtig: als Tendenz, Frage, Muster oder Einladung zur Reflexion. So bleibt die Erfahrung persönlich und warm, ohne Menschen festzulegen oder professionelle Beratung zu ersetzen.",
+  },
+];
+
+const qualityGates = [
+  "Reproduzierbare Berechnung statt zufälliger Deutung.",
+  "Trennung von Systemfamilien statt Doppelzählung.",
+  "Kennzeichnung von Unsicherheit bei fehlender Geburtszeit.",
+  "Eigene Sprache statt kopierter geschützter Systemtexte.",
+  "AI-Transparenz und klare Grenze zu Diagnose, Therapie und Vorhersage.",
+];
+
+const graphics = [
+  {
+    src: "/graphics/convergence/abb1-familien-modell.svg",
+    alt: "Systemfamilien im Hermetia Profilprozess",
+    caption: "Systemfamilien helfen, verwandte Quellen zu bündeln und echte unabhängige Bestätigung sichtbar zu machen.",
+  },
+  {
+    src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
+    alt: "Algorithmus-Funnel von Rohdaten zu Kernthemen",
+    caption: "Aus Eingaben werden berechnete Signale, daraus Themenmarker, Familienbelege und schließlich lesbare Kernthemen.",
+  },
+];
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -17,9 +78,27 @@ export default async function MethodikPage({ params }: { params: Promise<{ local
   const locale = raw as Locale;
   const t = getDictionary(locale);
   const p = t.methodik;
+  const pageUrl = `${siteUrl}/${locale}${paths.methodik}/`;
 
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: p.seoTitle,
+            description: p.seoDescription,
+            locale,
+            url: pageUrl,
+            about: "Hermetia Methodik",
+            image: `${siteUrl}/graphics/convergence/abb5-algorithmus-funnel.svg`,
+          }),
+          faqSchema(methodFaq),
+          breadcrumbSchema([
+            { name: "Hermetia", url: `${siteUrl}/${locale}/` },
+            { name: "So entsteht dein Profil", url: pageUrl },
+          ]),
+        ]}
+      />
       <Header locale={locale} current="methodik" />
 
       <section className="pb-7 pt-16">
@@ -27,6 +106,22 @@ export default async function MethodikPage({ params }: { params: Promise<{ local
           <span className="kicker mb-3.5">{p.kicker}</span>
           <h1 className="max-w-[720px] text-[clamp(32px,5vw,46px)]">{p.title}</h1>
           <p className="lead mt-4 max-w-[640px]">{p.lead}</p>
+          <div className="mt-7 flex flex-wrap justify-center gap-3">
+            <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "method-hero" })}>{t.cta.startFree}</a>
+            <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.konvergenz)}>Konvergenz-Engine ansehen</a>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-creme-tief py-14">
+        <div className="wrap grid gap-6 lg:grid-cols-[.9fr_1.1fr]">
+          <div>
+            <span className="kicker">Kurzantwort</span>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Wie wird aus Daten ein persönliches Profil?</h2>
+          </div>
+          <p className="muted text-[17px] leading-[1.85]">
+            Hermetia erstellt dein Profil in drei Schichten: Zuerst werden berechenbare Grundlagen erzeugt, dann erkennt die Konvergenz-Engine wiederkehrende Themen über Systemfamilien hinweg, anschließend werden diese Themen in verständliche Reflexionssprache übersetzt. Die Methode soll neugierig machen, aber nachvollziehbar bleiben.
+          </p>
         </div>
       </section>
 
@@ -45,6 +140,26 @@ export default async function MethodikPage({ params }: { params: Promise<{ local
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="wrap">
+          <div className="mb-9 max-w-[760px]">
+            <span className="kicker">Methodik im Detail</span>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Drei Fragen, die Vertrauen schaffen.</h2>
+            <p className="muted mt-4 text-[17px] leading-[1.85]">
+              Gute Methodik beantwortet nicht nur, was am Ende sichtbar wird. Sie erklärt, welche Daten genutzt werden, wie Signale gewichtet werden und welche Grenzen bewusst eingebaut sind.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {methodDeepDives.map((item) => (
+              <article key={item.title} className="card">
+                <h3 className="text-[23px]">{item.title}</h3>
+                <p className="muted mt-3 text-[15.5px] leading-relaxed">{item.text}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -67,6 +182,26 @@ export default async function MethodikPage({ params }: { params: Promise<{ local
         </div>
       </section>
 
+      <section className="py-16">
+        <div className="wrap">
+          <div className="mb-8 text-center">
+            <span className="kicker">Grafiken</span>
+            <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">So wird Konvergenz sichtbar.</h2>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-2">
+            {graphics.map((graphic) => (
+              <figure key={graphic.src} className="m-0 rounded-card border border-sand bg-white p-4 shadow-soft">
+                <img src={graphic.src} alt={graphic.alt} className="w-full rounded-[6px]" loading="lazy" />
+                <figcaption className="muted mt-3 text-[14px] leading-relaxed">{graphic.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "method-graphics" })}>Meine Konvergenz sehen</a>
+          </div>
+        </div>
+      </section>
+
       {/* KI tut / tut nicht */}
       <section className="py-20">
         <div className="wrap grid gap-5 md:grid-cols-2">
@@ -85,6 +220,38 @@ export default async function MethodikPage({ params }: { params: Promise<{ local
         </div>
         <div className="wrap mt-8 text-center">
           <p className="note mx-auto max-w-[640px]">{p.privacyNote}</p>
+        </div>
+      </section>
+
+      <section className="bg-creme-tief py-16">
+        <div className="wrap grid gap-8 lg:grid-cols-[1fr_.9fr]">
+          <div>
+            <span className="kicker">Qualität und Grenzen</span>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Hermetia soll tief wirken, aber nicht absolut sprechen.</h2>
+            <p className="muted mt-4 text-[17px] leading-[1.85]">
+              Die Methode ist auf Vertrauen ausgelegt: nachvollziehbare Berechnung, vorsichtige Sprache, Datenschutz und eine klare Trennung zwischen Reflexion und Beratung. Genau diese Grenzen machen das Produkt glaubwürdiger.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "method-quality" })}>Profil nachvollziehbar starten</a>
+              <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.datenSicherheit)}>Daten und Sicherheit</a>
+            </div>
+          </div>
+          <div className="rounded-card border border-sand bg-white p-7 shadow-soft">
+            <h3 className="text-[23px]">Qualitäts-Gates</h3>
+            <ul className="mt-5 flex list-none flex-col gap-3 text-[15.5px] leading-relaxed text-pflaume/90">
+              {qualityGates.map((gate) => <li key={gate}>✓ {gate}</li>)}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="wrap">
+          <div className="mb-8 text-center">
+            <span className="kicker">FAQ</span>
+            <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">Häufige Fragen zur Hermetia Methodik</h2>
+          </div>
+          <Faq items={methodFaq} />
         </div>
       </section>
 
