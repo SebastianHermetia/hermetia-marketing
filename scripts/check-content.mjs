@@ -64,6 +64,8 @@ const freePremium = readOut("de/kostenlos-vs-premium");
 const frFreePremium = readOut("fr/kostenlos-vs-premium");
 const dataSecurity = readOut("de/daten-und-sicherheit");
 const frDataSecurity = readOut("fr/daten-und-sicherheit");
+const aiTransparency = readOut("de/ki-transparenz");
+const frAiTransparency = readOut("fr/ki-transparenz");
 const relationships = readOut("de/beziehungen");
 const onboarding = readOut("de/profil-starten");
 const frOnboarding = readOut("fr/profil-starten");
@@ -185,6 +187,15 @@ const checks = [
   ["Data security page has expanded FAQ and tracked CTAs", dataSecurity.includes("Werden meine Daten für Werbung verkauft") && dataSecurity.includes("Warum bleibt die Website vor dem Launch auf noindex/nofollow") && dataSecurity.includes("utm_content=data-security-hero") && dataSecurity.includes("utm_content=data-security-final")],
   ["Data security page is linked in footer", deHome.includes("/de/daten-und-sicherheit/")],
   ["Data security page has localized fallback SEO", frDataSecurity.includes("<title>Données et sécurité | Hermetia</title>")],
+  ["AI transparency page exists", aiTransparency.includes("Warum Hermetia KI-Transparenz offenlegt") && aiTransparency.includes("EU AI Act")],
+  ["AI transparency page separates calculation and wording", aiTransparency.includes("Berechnung, Konvergenz und Formulierung sind getrennt") && aiTransparency.includes("Erst danach kommt AI als Formulierungsebene hinzu")],
+  ["AI transparency page explains data minimization", aiTransparency.includes("Welche Daten AI verarbeitet") && aiTransparency.includes("Prinzip der Datenminimierung")],
+  ["AI transparency page states advice limits", aiTransparency.includes("Was AI ausdrücklich nicht tut") && aiTransparency.includes("keine Diagnose") && aiTransparency.includes("keine Rechtsberatung")],
+  ["AI transparency page covers Companion and journaling", aiTransparency.includes("Companion, Journaling und persönliche Dialoge") && aiTransparency.includes("Journaltexte dürfen nicht automatisch grenzenlos genutzt werden")],
+  ["AI transparency page covers fair conversion", aiTransparency.includes("Premium-Inhalte und faire Conversion") && aiTransparency.includes("Gute Conversion entsteht durch Klarheit")],
+  ["AI transparency page covers copyright and launch indexing", aiTransparency.includes("Urheberrecht, Quellen und eigene Sprache") && aiTransparency.includes("noindex/nofollow")],
+  ["AI transparency page is linked in footer", deHome.includes("/de/ki-transparenz/")],
+  ["AI transparency page has localized fallback SEO", frAiTransparency.includes("<title>KI-Transparenz</title>") && frAiTransparency.includes("Version éditoriale en préparation")],
   ["Relationships page has consent framing", relationships.includes("Warum Einwilligung unverzichtbar ist") && relationships.includes("Wer andere heimlich auswerten will")],
   ["Relationships page has use questions", relationships.includes("Welche Beziehungsfragen Hermetia beantworten kann") && relationships.includes("Partnerschaft, Freundschaft, Familie")],
   ["Relationships page has resonance model", relationships.includes("Resonanz, Reibung und Entwicklungsfeld") && relationships.includes("Harmoniepunkte")],
