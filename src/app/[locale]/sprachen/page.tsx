@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { type Locale } from "@/i18n/config";
-import { getLocaleStatuses, translationSummary } from "@/i18n/translation-status";
+import { getLocaleStatuses, translationBacklog, translationBacklogSummary, translationSummary } from "@/i18n/translation-status";
 import { buildMetadata } from "@/lib/seo";
 import { localePath, paths, startUrl } from "@/lib/links";
 import { Header } from "@/components/Header";
@@ -22,6 +22,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const locale = raw as Locale;
   const statuses = getLocaleStatuses();
   const summary = translationSummary();
+  const backlog = translationBacklogSummary();
 
   return (
     <>
@@ -96,6 +97,38 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
                 </p>
                 <a className="btn btn-primary mt-5" href={startUrl(locale)}>Profil kostenlos starten</a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-8">
+          <div className="wrap max-w-[980px]">
+            <span className="kicker">Redaktions-Backlog</span>
+            <h2 className="mt-3 text-[clamp(24px,3vw,32px)]">Was noch übersetzt und geprüft wird</h2>
+            <p className="muted mt-3 max-w-[760px] text-[17px] leading-[1.85]">
+              Die UI ist in allen 24 EU-Sprachen nutzbar. Die vollständige Longform-Übersetzung wird nach Priorität ausgerollt, damit rechtliche Inhalte, Conversion-Seiten und Kernmethode vor breiten SEO-Clustern geprüft werden.
+            </p>
+            <div className="mt-6 grid gap-4 sm:grid-cols-4">
+              <Metric label="Backlog-Gruppen" value={backlog.pageTypes.toString()} />
+              <Metric label="Seiten im Longform-Backlog" value={backlog.pages.toString()} />
+              <Metric label="P0-Gruppen" value={backlog.p0.toString()} />
+              <Metric label="P1/P2-Gruppen" value={`${backlog.p1}/${backlog.p2}`} />
+            </div>
+            <div className="mt-6 grid gap-4">
+              {translationBacklog.map((item) => (
+                <article key={item.key} className="rounded-card border border-sand bg-white p-5 shadow-soft">
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                    <div>
+                      <h3 className="text-[22px]">{item.label}</h3>
+                      <p className="muted mt-2 text-[15px] leading-relaxed">{item.status}</p>
+                    </div>
+                    <span className={item.priority === "P0" ? "chip chip-rose" : item.priority === "P1" ? "chip chip-gold" : "chip"}>{item.priority}</span>
+                  </div>
+                  <p className="note mt-4">
+                    {item.pages} Seiten · Zielumfang je Seite: {item.wordsPerPage} Wörter
+                  </p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
