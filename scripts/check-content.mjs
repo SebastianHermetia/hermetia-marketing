@@ -74,6 +74,7 @@ const companion = readOut("de/companion");
 const frCompanion = readOut("fr/companion");
 const profileRefinement = readOut("de/profil-verfeinern");
 const frProfileRefinement = readOut("fr/profil-verfeinern");
+const dailyImpulses = readOut("de/tagesimpulse");
 const pricing = readOut("de/preise");
 const services = readOut("de/leistungen");
 const systemsHub = readOut("de/systeme");
@@ -178,6 +179,12 @@ const checks = [
   ["Onboarding guide page has tracked CTAs", onboarding.includes("utm_content=onboarding-guide-hero") && onboarding.includes("utm_content=onboarding-guide-final")],
   ["Onboarding guide page is linked in footer", deHome.includes("/de/profil-starten/")],
   ["Onboarding guide page has localized fallback SEO", frOnboarding.includes("<title>Commencer le profil | Hermetia</title>")],
+  ["Daily impulses page has personal logic", dailyImpulses.includes("Wie ein persönlicher Tagesimpuls entsteht") && dailyImpulses.includes("stabile Profilthemen")],
+  ["Daily impulses page has impulse structure", dailyImpulses.includes("Beispielhafte Struktur eines Impulses") && dailyImpulses.includes("eine Journaling-Frage")],
+  ["Daily impulses page has rhythm and premium value", dailyImpulses.includes("Rhythmus statt Dauerbeschallung") && dailyImpulses.includes("Warum Tagesimpulse Premium-Wert schaffen")],
+  ["Daily impulses page has legal limits", dailyImpulses.includes("Rechtliche Grenzen und sensible Sprache") && dailyImpulses.includes("keine sichere Zukunft behaupten")],
+  ["Daily impulses page has graphics", dailyImpulses.includes("/graphics/convergence/abb8-deine-kernthemen.svg") && dailyImpulses.includes("/graphics/convergence/abb9-deine-innere-spannung.svg")],
+  ["Daily impulses page has expanded FAQ and CTAs", dailyImpulses.includes("FAQPage") && dailyImpulses.includes("Was unterscheidet Hermetia-Tagesimpulse von Tageshoroskopen") && dailyImpulses.includes("utm_content=tagesimpulse-inline-1") && dailyImpulses.includes("utm_content=tagesimpulse-final")],
   ["Journaling page exists", journaling.includes("Journaling mit Hermetia") && journaling.includes("aus Impulsen wird Selbsterkenntnis")],
   ["Journaling page has FAQ schema", journaling.includes("FAQPage")],
   ["Journaling page has tracked CTAs", journaling.includes("utm_content=journaling-inline-1") && journaling.includes("utm_content=journaling-final")],

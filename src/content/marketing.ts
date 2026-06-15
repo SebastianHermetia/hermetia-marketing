@@ -183,23 +183,64 @@ const dePages = {
       {
         title: "Der Unterschied zum Tageshoroskop",
         body:
-          "Ein Tageshoroskop spricht meist für ein Sternzeichen und damit für sehr viele Menschen gleichzeitig. Hermetia arbeitet enger: Dein persönliches Profil bleibt die Grundlage, Tagesdaten färben nur den Fokus. Dadurch entsteht kein lauter Anspruch, sondern ein persönlicher Reflexionsrahmen.",
+          "Ein Tageshoroskop spricht meist für ein Sternzeichen und damit für sehr viele Menschen gleichzeitig. Hermetia arbeitet enger: Dein persönliches Profil bleibt die Grundlage, Tagesdaten färben nur den Fokus. Dadurch entsteht kein lauter Anspruch, sondern ein persönlicher Reflexionsrahmen. Der Impuls soll nicht behaupten, was passieren wird. Er fragt, welche Qualität heute zu deinen Kernthemen passen könnte und welche Beobachtung daraus sinnvoll wird.",
+      },
+      {
+        title: "Wie ein persönlicher Tagesimpuls entsteht",
+        body:
+          "Ein Tagesimpuls kombiniert stabile Profilthemen mit zeitbezogenen Signalen. Stabil sind etwa Kernthemen, wiederkehrende Spannungsfelder, bevorzugte Energieformen oder persönliche Reflexionsmotive. Zeitbezogene Signale können aus Tageszyklen, Transiten, numerologischen Rhythmen oder anderen vorsichtig gewichteten Systemen kommen. Hermetia macht daraus keinen Befehl, sondern eine kurze, verständliche Fokussierung: ein Thema, eine Einordnung, eine Frage.",
+      },
+      {
+        title: "Beispielhafte Struktur eines Impulses",
+        body:
+          "Ein guter Impuls braucht Klarheit. Sinnvoll ist eine wiedererkennbare Struktur: zuerst ein kurzer Fokus, dann die Verbindung zu deinem Profil, anschließend eine Alltagssituation, in der das Thema auftauchen könnte, und zum Schluss eine Journaling-Frage. So bleibt der Impuls leicht genug für den Morgen, aber tief genug, um mehr zu sein als ein schöner Satz. Diese Struktur unterstützt auch AEO und GEO, weil sie Fragen direkt beantwortet und Begriffe konsistent verwendet.",
       },
       {
         title: "Journaling als zweite Hälfte",
         body:
-          "Der Impuls wird erst wertvoll, wenn du ihn mit deinem Alltag verbindest. Deshalb gehören Journaling-Fragen, Feedback und Monatsrückblicke zum Konzept. Hermetia fragt nicht nur „Was sagt das System?“, sondern auch: Hat das heute für dich gestimmt? Was hast du bemerkt? Was wiederholt sich?",
+          "Der Impuls wird erst wertvoll, wenn du ihn mit deinem Alltag verbindest. Deshalb gehören Journaling-Fragen, Feedback und Monatsrückblicke zum Konzept. Hermetia fragt nicht nur „Was sagt das System?“, sondern auch: Hat das heute für dich gestimmt? Was hast du bemerkt? Was wiederholt sich? Genau hier entsteht die Brücke zur bezahlten Tiefe: Wer regelmäßig reflektiert, profitiert von Verlauf, Rückblicken, Profilverfeinerung und einem System, das nicht nur sendet, sondern Resonanz sammelt.",
+      },
+      {
+        title: "Rhythmus statt Dauerbeschallung",
+        body:
+          "Tagesimpulse sollten nicht wie ein weiterer Feed funktionieren. Hermetia ist stärker, wenn der Nutzer Frequenz und Tiefe bewusst wählen kann: täglich, mehrmals pro Woche, nur zu bestimmten Themen oder pausiert. Diese Produktlogik schützt vor FOMO und macht die Begleitung wertvoller. Ein guter Impuls darf auch leise sein. Er muss nicht jeden Tag dramatisch wirken, sondern soll Aufmerksamkeit so bündeln, dass sie im Alltag tragbar bleibt.",
+      },
+      {
+        title: "Warum Tagesimpulse Premium-Wert schaffen",
+        body:
+          "Der kostenlose Profilstart beantwortet die Frage: Erkenne ich mich in Hermetia wieder? Tagesimpulse beantworten eine andere Frage: Kann Hermetia mich über Zeit sinnvoll begleiten? Genau deshalb sind sie ein starker Grund für ein bezahltes Modell. Nicht weil sie geheimnisvolle Vorhersagen liefern, sondern weil sie Profil, Timing, Journaling und Rückblick zu einer wiederkehrenden Praxis verbinden.",
       },
       {
         title: "Bewusst anti-süchtig",
         body:
-          "Hermetia soll keine FOMO-Schleife erzeugen. Tagesimpulse sind ruhig, pausierbar und nicht als Pflicht gedacht. Die App soll Begleitung sein, kein weiterer Strom aus Push-Reizen. Diese Haltung ist Teil der Produktethik.",
+          "Hermetia soll keine FOMO-Schleife erzeugen. Tagesimpulse sind ruhig, pausierbar und nicht als Pflicht gedacht. Die App soll Begleitung sein, kein weiterer Strom aus Push-Reizen. Diese Haltung ist Teil der Produktethik. Marketingtexte dürfen deshalb Neugier erzeugen, aber keine Angst: kein verpasster Schicksalstag, keine Warnung vor falschen Entscheidungen, kein Druck, jeden Impuls zu lesen. Conversion entsteht durch Vertrauen, nicht durch Abhängigkeit.",
+      },
+      {
+        title: "Rechtliche Grenzen und sensible Sprache",
+        body:
+          "Ein Tagesimpuls ist keine medizinische, therapeutische, rechtliche oder finanzielle Empfehlung. Er darf keine sichere Zukunft behaupten und keine Entscheidung für den Nutzer treffen. Hermetia formuliert deshalb in eigener Sprache, benennt Unsicherheit und bleibt bei Reflexion. Gerade bei täglichen Inhalten ist diese Grenze wichtig, weil Wiederholung schnell Autorität erzeugen kann. Die App soll eine Stimme neben der eigenen bleiben, nicht die eigene Stimme ersetzen.",
+      },
+    ],
+    graphics: [
+      {
+        src: "/graphics/convergence/abb8-deine-kernthemen.svg",
+        alt: "Kernthemen als Grundlage persönlicher Tagesimpulse",
+        caption: "Tagesimpulse starten nicht beim Sternzeichen, sondern bei den Kernthemen deines persönlichen Profils.",
+      },
+      {
+        src: "/graphics/convergence/abb9-deine-innere-spannung.svg",
+        alt: "Innere Spannung als Reflexionsfeld eines Tagesimpulses",
+        caption: "Ein guter Impuls kann Spannungen sichtbar machen, ohne daraus eine Diagnose oder Vorhersage abzuleiten.",
       },
     ],
     faq: [
       { q: "Bekomme ich jeden Tag einen Impuls?", a: "Je nach Einstellung ja. Hermetia ist aber bewusst so gedacht, dass du Frequenz und Pausen selbst bestimmen kannst." },
       { q: "Kann ein Tagesimpuls falsch sein?", a: "Ja, und das ist okay. Der Impuls ist eine Einladung zur Reflexion, kein Urteil. Dein Feedback hilft, wiederkehrende Themen besser einzuordnen." },
       { q: "Sind Tagesimpulse medizinische Empfehlungen?", a: "Nein. Sie sind keine medizinische, psychologische oder therapeutische Beratung." },
+      { q: "Was unterscheidet Hermetia-Tagesimpulse von Tageshoroskopen?", a: "Hermetia beginnt beim persönlichen Profil und nutzt Tagesdaten nur als Färbung. Ein Tageshoroskop spricht meist sehr viele Menschen über ein Sternzeichen an." },
+      { q: "Warum sind Tagesimpulse ein Premium-Feature?", a: "Weil sie erst über Zeit ihren vollen Wert entfalten: Verlauf, Journaling, Rückblicke, Profilbezug und feinere Impulse brauchen eine fortlaufende Begleitung." },
+      { q: "Kann ich Tagesimpulse pausieren?", a: "Ja. Das Produktprinzip ist, dass Tagesimpulse eine freiwillige Begleitung bleiben. Sie sollen keine Pflicht, keine FOMO und keinen Druck erzeugen." },
+      { q: "Treffen Tagesimpulse Entscheidungen für mich?", a: "Nein. Sie bieten Fragen und Fokus an. Entscheidungen, professionelle Beratung und Verantwortung bleiben beim Nutzer." },
     ],
     ctaTitle: "Erlebe, wie dein Profil den Tag färbt.",
     ctaText: "Starte kostenlos und öffne deine ersten persönlichen Impulse.",
