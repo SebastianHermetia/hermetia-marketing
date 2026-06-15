@@ -75,6 +75,7 @@ const pricing = readOut("de/preise");
 const services = readOut("de/leistungen");
 const systemsHub = readOut("de/systeme");
 const method = readOut("de/so-entsteht-dein-profil");
+const knowledgeHub = readOut("de/wissen");
 const faqPage = readOut("de/faq");
 
 const checks = [
@@ -184,6 +185,11 @@ const checks = [
   ["Method page has quality gates", method.includes("Qualitäts-Gates") && method.includes("Eigene Sprache statt kopierter geschützter Systemtexte")],
   ["Method page has FAQ schema", method.includes("FAQPage") && method.includes("Häufige Fragen zur Hermetia Methodik")],
   ["Method page has expanded tracked CTAs", method.includes("utm_content=method-hero") && method.includes("utm_content=method-graphics") && method.includes("utm_content=method-quality")],
+  ["Knowledge hub has search intents", knowledgeHub.includes("Suchfragen") && knowledgeHub.includes("Welche Fragen beantwortet dieser Bereich")],
+  ["Knowledge hub has topic clusters", knowledgeHub.includes("Themencluster") && knowledgeHub.includes("Seelenkarte und Profilstart") && knowledgeHub.includes("AI, Datenschutz und rechtliche Grenzen")],
+  ["Knowledge hub has article list heading", knowledgeHub.includes("Alle Ratgeber") && knowledgeHub.includes("Grundlagen, Grenzen und nächste Schritte")],
+  ["Knowledge hub has structured data", knowledgeHub.includes("Article") && knowledgeHub.includes("BreadcrumbList")],
+  ["Knowledge hub has tracked CTAs", knowledgeHub.includes("utm_content=knowledge-hero") && knowledgeHub.includes("utm_content=knowledge-final")],
   ["FAQ page has answer categories", faqPage.includes("Antwortbereiche") && faqPage.includes("Die wichtigsten Fragen vor dem ersten Profil")],
   ["FAQ page has expanded questions", faqPage.includes("Was ist Hermetia in einem Satz") && faqPage.includes("Was bedeutet Konvergenz in Hermetia")],
   ["FAQ page has legal and IP answers", faqPage.includes("Verwendet Hermetia fremde geschützte Deutungstexte") && faqPage.includes("keine proprietären Systemtexte")],
