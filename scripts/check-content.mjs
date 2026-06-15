@@ -60,6 +60,8 @@ const about = readOut("de/ueber-hermetia");
 const frAbout = readOut("fr/ueber-hermetia");
 const useCases = readOut("de/anwendungsfaelle");
 const esUseCases = readOut("es/anwendungsfaelle");
+const terms = readOut("de/agb");
+const frTerms = readOut("fr/agb");
 const freePremium = readOut("de/kostenlos-vs-premium");
 const frFreePremium = readOut("fr/kostenlos-vs-premium");
 const privacyPolicy = readOut("de/datenschutz");
@@ -169,6 +171,13 @@ const checks = [
   ["Use cases page has expanded tracked CTAs", useCases.includes("utm_content=use-cases-hero") && useCases.includes("utm_content=use-cases-journey") && useCases.includes("utm_content=use-cases-identity") && useCases.includes("utm_content=use-cases-relationships") && useCases.includes("utm_content=use-cases-final")],
   ["Use cases page is linked in footer", deHome.includes("/de/anwendungsfaelle/")],
   ["Use cases page has localized fallback SEO", esUseCases.includes("<title>Casos de uso | Hermetia</title>")],
+  ["Terms page covers paid models", terms.includes("bezahlte Modelle") && terms.includes("Vollprofil-Buch") && terms.includes("Premium soll zusätzliche Tiefe schaffen")],
+  ["Terms page covers advice limits and AI", terms.includes("Kein Ersatz für Fachberatung") && terms.includes("AI-Inhalte und Kennzeichnung")],
+  ["Terms page covers withdrawal and cancellation", terms.includes("Widerrufsrecht") && terms.includes("Kündigungsbutton im Profil")],
+  ["Terms page covers user duties and relationship data", terms.includes("Nutzerpflichten und faire Nutzung") && terms.includes("heimlichen Bewertung")],
+  ["Terms page covers rights and final review", terms.includes("Rechte an Inhalten und Nutzungsrechte") && terms.includes("rechtlich final geprüft")],
+  ["Terms page is linked in footer", deHome.includes("/de/agb/")],
+  ["Terms page has localized fallback SEO", frTerms.includes("<title>Allgemeine Geschäftsbedingungen</title>") && frTerms.includes("Version éditoriale en préparation")],
   ["Free vs Premium page exists", freePremium.includes("Erst Resonanz prüfen") && freePremium.includes("Nicht jeder sollte sofort upgraden")],
   ["Free vs Premium page has FAQ schema", freePremium.includes("FAQPage")],
   ["Free vs Premium page has value ladder", freePremium.includes("Werttreppe") && freePremium.includes("Von kostenloser Resonanz zu bezahlter Tiefe")],
