@@ -56,6 +56,8 @@ const soulMap = readOut("de/seelenkarte");
 const systemDetail = readOut("de/systeme/human-design");
 const languages = readOut("de/sprachen");
 const launchReview = readOut("de/freigaben");
+const imprint = readOut("de/impressum");
+const frImprint = readOut("fr/impressum");
 const about = readOut("de/ueber-hermetia");
 const frAbout = readOut("fr/ueber-hermetia");
 const useCases = readOut("de/anwendungsfaelle");
@@ -158,6 +160,13 @@ const checks = [
   ["Launch review page states external legal review", launchReview.includes("keine anwaltliche Endfreigabe")],
   ["Launch review page lists indexing gate", launchReview.includes("Indexing und Domain-Launch")],
   ["Launch review page is linked in footer", deHome.includes("/de/freigaben/")],
+  ["Imprint page covers provider placeholders", imprint.includes("Angaben gemäß § 5 DDG") && imprint.includes("Launch-Entwurf")],
+  ["Imprint page removes outdated ODR link", imprint.includes("zum 20. Juli 2025 eingestellt") && !imprint.includes("ec.europa.eu/consumers/odr")],
+  ["Imprint page covers content and advice limits", imprint.includes("Verantwortlichkeit für Inhalte") && imprint.includes("keine medizinische, therapeutische")],
+  ["Imprint page covers copyright and image rights", imprint.includes("Urheberrecht und Bildrechte") && imprint.includes("Geschützte Deutungstexte")],
+  ["Imprint page has final launch check", imprint.includes("Finaler Launch-Check") && imprint.includes("noindex/nofollow")],
+  ["Imprint page is linked in footer", deHome.includes("/de/impressum/")],
+  ["Imprint page has localized fallback SEO", frImprint.includes("<title>Impressum</title>") && frImprint.includes("Version éditoriale en préparation")],
   ["About Hermetia page exists", about.includes("Ein System für Menschen") && about.includes("FAQPage")],
   ["About Hermetia page has tracked CTAs", about.includes("utm_content=about-hero") && about.includes("utm_content=about-paid-depth")],
   ["About Hermetia page is linked in footer", deHome.includes("/de/ueber-hermetia/")],
