@@ -57,6 +57,7 @@ const externalAssetRefs = generatedHtml.flatMap((file) => {
 
 const checks = [
   ["Test phase keeps noindex/nofollow header", headers.includes("X-Robots-Tag: noindex, nofollow")],
+  ["Generated HTML keeps noindex/nofollow meta", deHome.includes('name="robots"') && deHome.includes("noindex") && deHome.includes("nofollow")],
   ["Noindex header is explicitly marked as launch-only", headers.includes("ENTFERNEN bzw. anpassen zum echten Launch")],
   ["Launch review includes legal and asset gates", launchReview.includes("data-protection") && launchReview.includes("asset-rights")],
   ["Launch review keeps external legal review visible", launchReview.includes("anwaltliche Endprüfung bleibt vor Launch erforderlich")],

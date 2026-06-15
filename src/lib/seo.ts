@@ -311,6 +311,14 @@ export function buildMetadata({
   return {
     title: meta.title,
     description: meta.description,
+    robots: {
+      index: false,
+      follow: false,
+      googleBot: {
+        index: false,
+        follow: false,
+      },
+    },
     alternates: { canonical, languages },
     openGraph: {
       title: meta.title,
