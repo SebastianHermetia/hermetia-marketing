@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { type Locale } from "@/i18n/config";
-import { getLocaleStatuses, translationBacklog, translationBacklogSummary, translationSummary } from "@/i18n/translation-status";
+import { getLocaleStatuses, translationBacklog, translationBacklogSummary, translationQaGates, translationQaSummary, translationSummary } from "@/i18n/translation-status";
 import { buildMetadata } from "@/lib/seo";
 import { localePath, paths, startUrl } from "@/lib/links";
 import { Header } from "@/components/Header";
@@ -23,6 +23,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const statuses = getLocaleStatuses();
   const summary = translationSummary();
   const backlog = translationBacklogSummary();
+  const qa = translationQaSummary();
 
   return (
     <>
@@ -127,6 +128,31 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
                   <p className="note mt-4">
                     {item.pages} Seiten · Zielumfang je Seite: {item.wordsPerPage} Wörter
                   </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-8">
+          <div className="wrap max-w-[980px]">
+            <span className="kicker">Translation QA</span>
+            <h2 className="mt-3 text-[clamp(24px,3vw,32px)]">Freigabe-Gates für lokale Longform-Inhalte</h2>
+            <p className="muted mt-3 max-w-[760px] text-[17px] leading-[1.85]">
+              Eine Sprache gilt erst dann als redaktionell freigegeben, wenn diese Gates erfüllt sind. Dadurch bleiben rechtliche Aussagen, Terminologie, AI-Grenzen und Conversion-Versprechen auch in lokalen Fassungen konsistent.
+            </p>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <Metric label="QA-Gates" value={qa.gates.toString()} />
+              <Metric label="Legal/Safety-kritisch" value={qa.legalCritical.toString()} />
+            </div>
+            <div className="mt-6 grid gap-4">
+              {translationQaGates.map((gate) => (
+                <article key={gate.id} className="rounded-card border border-sand bg-white p-5 shadow-soft">
+                  <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                    <h3 className="text-[22px]">{gate.title}</h3>
+                    <span className="chip chip-gold">{gate.appliesTo}</span>
+                  </div>
+                  <p className="muted mt-3 text-[15px] leading-relaxed">{gate.requirement}</p>
                 </article>
               ))}
             </div>

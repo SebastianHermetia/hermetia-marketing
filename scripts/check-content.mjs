@@ -71,6 +71,8 @@ const checks = [
   ["Language status page reports fallback locales", languages.includes("Technischer Fallback") && languages.includes(">0<")],
   ["Language status page exposes translation backlog", languages.includes("Redaktions-Backlog") && languages.includes("Seiten im Longform-Backlog") && languages.includes(">127<")],
   ["Language status page prioritizes legal translations", languages.includes("Rechtstexte, Datenschutz, AI-Transparenz") && languages.includes("P0")],
+  ["Language status page exposes QA gates", languages.includes("Translation QA") && languages.includes("QA-Gates") && languages.includes(">6<")],
+  ["Language status page includes legal/safety QA", languages.includes("Rechtliche Sinngleichheit") && languages.includes("Keine Diagnose, Therapie oder Vorhersage")],
   ["Language status page is linked in footer", deHome.includes("/de/sprachen/")],
   ["FR UI navigation is localized", frHome.includes("Fonctionnalités") && frHome.includes("Commencer le profil")],
   ["Launch review page exists", launchReview.includes("Legal-, IP- und Launch-Freigaben")],
