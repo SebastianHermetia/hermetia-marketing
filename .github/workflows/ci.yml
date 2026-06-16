@@ -32,3 +32,6 @@ jobs:
 
       - name: Check launch compliance
         run: npm run check:compliance
+
+      - name: Check i18n export scope
+        run: npm run check:i18n:export

@@ -58,6 +58,7 @@ const soulMap = readOut("de/seelenkarte");
 const systemDetail = readOut("de/systeme/human-design");
 const languages = readOut("de/sprachen");
 const launchReview = readOut("de/freigaben");
+const enLaunchReview = readOut("en/freigaben");
 const imprint = readOut("de/impressum");
 const frImprint = readOut("fr/impressum");
 const about = readOut("de/ueber-hermetia");
@@ -179,6 +180,8 @@ const checks = [
   ["Launch review page exists", launchReview.includes("Legal-, IP- und Launch-Freigaben")],
   ["Launch review page states external legal review", launchReview.includes("keine anwaltliche Endfreigabe")],
   ["Launch review page lists indexing gate", launchReview.includes("Indexing und Domain-Launch")],
+  ["EN launch review page has localized P0 governance copy", enLaunchReview.includes("Legal, IP and launch approvals") && enLaunchReview.includes("Important: no final legal sign-off") && enLaunchReview.includes("Before final launch")],
+  ["EN launch review page has no German P0 governance headings", !enLaunchReview.includes("Legal-, IP- und Launch-Freigaben") && !enLaunchReview.includes("keine anwaltliche Endfreigabe") && !enLaunchReview.includes("Vor finalem Launch")],
   ["Launch review page is linked in footer", deHome.includes("/de/freigaben/")],
   ["Imprint page covers provider placeholders", imprint.includes("Angaben gemäß § 5 DDG") && imprint.includes("Launch-Entwurf")],
   ["Imprint page removes outdated ODR link", imprint.includes("zum 20. Juli 2025 eingestellt") && !imprint.includes("ec.europa.eu/consumers/odr")],

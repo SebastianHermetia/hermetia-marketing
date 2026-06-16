@@ -9,6 +9,8 @@
     "check:assets": "node scripts/check-assets.mjs",
     "check:content": "node scripts/check-content.mjs",
     "check:compliance": "node scripts/check-compliance.mjs",
+    "check:i18n:export": "node scripts/check-i18n-export.mjs --changed",
+    "check:i18n:live": "node scripts/check-i18n-live.mjs",
     "start": "next start",
     "lint": "next lint"
   },
