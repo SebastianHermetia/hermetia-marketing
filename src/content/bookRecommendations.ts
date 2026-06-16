@@ -16,6 +16,18 @@ export type BookRecommendation = {
   searchQuery: string;
 };
 
+const localeSearchHosts: Partial<Record<Locale | string, string>> = {
+  de: "https://www.amazon.de/s?k=",
+  en: "https://www.amazon.co.uk/s?k=",
+  fr: "https://www.amazon.fr/s?k=",
+  es: "https://www.amazon.es/s?k=",
+  it: "https://www.amazon.it/s?k=",
+  nl: "https://www.bol.com/nl/nl/s/?searchtext=",
+  pl: "https://www.amazon.pl/s?k=",
+  pt: "https://www.wook.pt/pesquisa/",
+  sv: "https://www.adlibris.com/se/sok?q=",
+};
+
 const books: BookRecommendation[] = [
   // ── Westliche Astrologie ───────────────────────────────────────────────────
   {
@@ -28,8 +40,21 @@ const books: BookRecommendation[] = [
       de: "Ein gut zugänglicher Klassiker der psychologischen Astrologie. Forrest erklärt Planeten, Zeichen und Häuser als Sprache für Entwicklung, Entscheidungen und Lebensmuster.",
       en: "An accessible classic of psychological astrology. Forrest explains planets, signs and houses as a language for growth, choices and life patterns.",
     },
-    systems: ["astrologie", "drakonisches-horoskop"],
+    systems: ["astrologie"],
     searchQuery: "The Inner Sky Steven Forrest",
+  },
+  {
+    id: "astrology-for-yourself",
+    title: "Astrology for Yourself",
+    authors: "Demetra George, Douglas Bloch",
+    languages: ["EN"],
+    level: { de: "Arbeitsbuch", en: "Workbook" },
+    description: {
+      de: "Ein praxisnahes Arbeitsbuch, das Leser Schritt für Schritt durch die Deutung des eigenen Horoskops führt. Gut als Vertiefung nach einer ersten Hermetia-Lesung.",
+      en: "A practical workbook that guides readers step by step through interpreting their own chart. A good follow-up after a first Hermetia reading.",
+    },
+    systems: ["astrologie"],
+    searchQuery: "Astrology for Yourself Demetra George Douglas Bloch",
   },
   {
     id: "hellenistic-astrology-brennan",
@@ -57,6 +82,19 @@ const books: BookRecommendation[] = [
     },
     systems: ["human-design"],
     searchQuery: "Understanding Human Design Karen Curry Parker",
+  },
+  {
+    id: "definitive-human-design",
+    title: "The Definitive Book of Human Design",
+    authors: "Lynda Bunnell, Ra Uru Hu",
+    languages: ["EN"],
+    level: { de: "Quellenwerk", en: "Source text" },
+    description: {
+      de: "Ein umfangreiches Referenzwerk zu BodyGraph, Typen, Zentren, Kanälen, Toren und Profilen. Eher Nachschlagewerk als leichter Einstieg.",
+      en: "An extensive reference on the bodygraph, types, centres, channels, gates and profiles. More reference work than easy introduction.",
+    },
+    systems: ["human-design"],
+    searchQuery: "The Definitive Book of Human Design Lynda Bunnell Ra Uru Hu",
   },
   // ── Gene Keys ─────────────────────────────────────────────────────────────
   {
@@ -100,6 +138,19 @@ const books: BookRecommendation[] = [
     searchQuery: "The Complete Book of Numerology David Phillips",
   },
   {
+    id: "numerology-divine-triangle",
+    title: "Numerology and the Divine Triangle",
+    authors: "Faith Javane, Dusty Bunker",
+    languages: ["EN"],
+    level: { de: "Vertiefung", en: "Depth" },
+    description: {
+      de: "Ein Klassiker, der Numerologie mit Lebenszyklen und Tarot-Archetypen verbindet. Besonders passend für Zahlen-, Zyklus- und Symbolbrücken.",
+      en: "A classic connecting numerology with life cycles and Tarot archetypes. Especially useful for number, cycle and symbol bridges.",
+    },
+    systems: ["numerologie", "persoenliches-jahr", "tarot-geburtskarten"],
+    searchQuery: "Numerology and the Divine Triangle Faith Javane Dusty Bunker",
+  },
+  {
     id: "numerologie-banzhaf",
     title: "Numerologie",
     authors: "Hajo Banzhaf",
@@ -125,6 +176,19 @@ const books: BookRecommendation[] = [
     },
     systems: ["bazi-vier-saeulen"],
     searchQuery: "Four Pillars of Destiny Raymond Lo",
+  },
+  {
+    id: "four-pillars-jerry-king",
+    title: "The Four Pillars of Destiny",
+    authors: "Jerry King",
+    languages: ["EN"],
+    level: { de: "Methodentiefe", en: "Method depth" },
+    description: {
+      de: "Technischere Vertiefung zu BaZi, Himmelsstämmen, Erdzweigen und den vier Säulen. Geeignet für Leser mit methodischem Interesse.",
+      en: "A more technical deepening of BaZi, heavenly stems, earthly branches and the four pillars. Useful for readers interested in method.",
+    },
+    systems: ["bazi-vier-saeulen"],
+    searchQuery: "The Four Pillars of Destiny Jerry King",
   },
   // ── Enneagramm ────────────────────────────────────────────────────────────
   {
@@ -153,6 +217,19 @@ const books: BookRecommendation[] = [
     systems: ["enneagramm"],
     searchQuery: "Das Enneagramm Richard Rohr Andreas Ebert",
   },
+  {
+    id: "complete-enneagram",
+    title: "The Complete Enneagram",
+    authors: "Beatrice Chestnut",
+    languages: ["EN"],
+    level: { de: "Vertiefung", en: "Depth" },
+    description: {
+      de: "Vertieft die neun Typen über Instinkte und Subtypen. Gut, wenn Leser das Enneagramm differenzierter als über einen einzelnen Typ verstehen möchten.",
+      en: "Deepens the nine types through instincts and subtypes. Helpful when readers want to understand the Enneagram beyond a single type label.",
+    },
+    systems: ["enneagramm"],
+    searchQuery: "The Complete Enneagram Beatrice Chestnut",
+  },
   // ── Maya Tzolk'in ─────────────────────────────────────────────────────────
   {
     id: "book-of-destiny-barrios",
@@ -166,6 +243,19 @@ const books: BookRecommendation[] = [
     },
     systems: ["maya-tzolkin"],
     searchQuery: "The Book of Destiny Carlos Barrios",
+  },
+  {
+    id: "mayan-calendar-calleman",
+    title: "The Mayan Calendar",
+    authors: "Carl Johan Calleman",
+    languages: ["EN"],
+    level: { de: "Kontext", en: "Context" },
+    description: {
+      de: "Ein populäres Werk zu Maya-Zeitzyklen. Für Hermetia nur als moderner Deutungskontext, nicht als historische Primärquelle, sinnvoll.",
+      en: "A popular work on Maya time cycles. For Hermetia it is useful only as modern interpretive context, not as a historical primary source.",
+    },
+    systems: ["maya-tzolkin"],
+    searchQuery: "The Mayan Calendar Carl Johan Calleman",
   },
   // ── Vedische Nakshatra ────────────────────────────────────────────────────
   {
@@ -192,7 +282,7 @@ const books: BookRecommendation[] = [
       de: "Eine der einflussreichsten westlichen Ausgaben des Buchs der Wandlungen. Hilfreich, um die 64 Hexagramme als Reflexionssprache zu verstehen.",
       en: "One of the most influential Western editions of the Book of Changes. Helpful for understanding the 64 hexagrams as a language of reflection.",
     },
-    systems: ["i-ching", "oracle-cards", "gene-keys"],
+    systems: ["i-ching"],
     searchQuery: "I Ging Richard Wilhelm",
   },
   // ── Ayurveda ──────────────────────────────────────────────────────────────
@@ -209,6 +299,19 @@ const books: BookRecommendation[] = [
     systems: ["ayurveda-dosha"],
     searchQuery: "Ayurveda The Science of Self-Healing Vasant Lad",
   },
+  {
+    id: "prakriti-svoboda",
+    title: "Prakriti",
+    authors: "Robert Svoboda",
+    languages: ["EN"],
+    level: { de: "Konstitution", en: "Constitution" },
+    description: {
+      de: "Eine Vertiefung zur ayurvedischen Konstitution. Bei Hermetia nur als Reflexionsliteratur mit klarem Gesundheits-Disclaimer passend.",
+      en: "A deepening of Ayurvedic constitution. In Hermetia it fits only as reflective reading with a clear health disclaimer.",
+    },
+    systems: ["ayurveda-dosha"],
+    searchQuery: "Prakriti Robert Svoboda",
+  },
   // ── Mondknoten ────────────────────────────────────────────────────────────
   {
     id: "astrology-soul-spiller",
@@ -222,6 +325,19 @@ const books: BookRecommendation[] = [
     },
     systems: ["mondknoten"],
     searchQuery: "Astrology for the Soul Jan Spiller",
+  },
+  {
+    id: "yesterdays-sky",
+    title: "Yesterday's Sky",
+    authors: "Steven Forrest",
+    languages: ["EN"],
+    level: { de: "Evolutionäre Astrologie", en: "Evolutionary astrology" },
+    description: {
+      de: "Vertieft Mondknoten und karmische Erzählmuster aus evolutionär-astrologischer Perspektive. Passend für Mondknoten und drakonische Karten.",
+      en: "Deepens lunar nodes and karmic narrative patterns from an evolutionary astrology perspective. Useful for lunar nodes and draconic charts.",
+    },
+    systems: ["mondknoten", "drakonisches-horoskop"],
+    searchQuery: "Yesterday's Sky Steven Forrest",
   },
   // ── Nine Star Ki ──────────────────────────────────────────────────────────
   {
@@ -251,6 +367,19 @@ const books: BookRecommendation[] = [
     systems: ["cards-of-destiny"],
     searchQuery: "The Secret Language of Birthdays Gary Goldschneider",
   },
+  {
+    id: "cards-destiny-camp",
+    title: "Cards of Your Destiny",
+    authors: "Robert Lee Camp",
+    languages: ["EN"],
+    level: { de: "Quellenhinweis", en: "Source reference" },
+    description: {
+      de: "Zentrales populäres Werk zum Cards-of-Destiny-System. Wegen IP-Nähe nur als externe Empfehlung, nicht als Content-Basis für Hermetia.",
+      en: "A central popular work on the Cards of Destiny system. Because of IP proximity it is only an external recommendation, not a content source for Hermetia.",
+    },
+    systems: ["cards-of-destiny"],
+    searchQuery: "Cards of Your Destiny Robert Lee Camp",
+  },
   // ── Tarot ─────────────────────────────────────────────────────────────────
   {
     id: "seventy-eight-degrees",
@@ -264,6 +393,19 @@ const books: BookRecommendation[] = [
     },
     systems: ["tarot-geburtskarten", "oracle-cards"],
     searchQuery: "78 Degrees of Wisdom Rachel Pollack",
+  },
+  {
+    id: "tarot-banzhaf",
+    title: "Tarot-Handbuch",
+    authors: "Hajo Banzhaf",
+    languages: ["DE", "EN"],
+    level: { de: "Einstieg (DE)", en: "Introduction (DE)" },
+    description: {
+      de: "Kompakte Einführung in Tarot-Symbolik, Deutungsmuster und Legesysteme. Besonders passend für deutschsprachige Leser.",
+      en: "A compact introduction to Tarot symbolism, interpretation patterns and spreads. Especially useful for German-speaking readers.",
+    },
+    systems: ["tarot-geburtskarten"],
+    searchQuery: "Tarot Handbuch Hajo Banzhaf",
   },
   // ── Sabian Symbols ────────────────────────────────────────────────────────
   {
@@ -307,6 +449,19 @@ const books: BookRecommendation[] = [
     systems: ["fixsterne-chiron-lilith"],
     searchQuery: "Chiron and the Healing Journey Melanie Reinhart",
   },
+  {
+    id: "brady-fixed-stars",
+    title: "Brady's Book of Fixed Stars",
+    authors: "Bernadette Brady",
+    languages: ["EN"],
+    level: { de: "Quellenwerk", en: "Source text" },
+    description: {
+      de: "Modernes Referenzwerk zu Fixsternen und astrologischer Deutung. Fachlich deutlich belastbarer als oberflächliche Listen.",
+      en: "A modern reference work on fixed stars and astrological interpretation. More robust than superficial lists.",
+    },
+    systems: ["fixsterne-chiron-lilith"],
+    searchQuery: "Brady's Book of Fixed Stars Bernadette Brady",
+  },
   // ── Big Five / Persönlichkeitspsychologie ──────────────────────────────────
   {
     id: "personality-nettle",
@@ -320,6 +475,47 @@ const books: BookRecommendation[] = [
     },
     systems: ["big-five", "sixteen-types"],
     searchQuery: "Personality What Makes You the Way You Are Daniel Nettle",
+  },
+  {
+    id: "me-myself-us",
+    title: "Me, Myself, and Us",
+    authors: "Brian R. Little",
+    languages: ["EN"],
+    level: { de: "Praxisnah", en: "Practical" },
+    description: {
+      de: "Verbindet Persönlichkeitsmerkmale mit persönlichen Projekten und Alltag. Gut als menschlich lesbare Ergänzung zu Big-Five-Dimensionen.",
+      en: "Connects personality traits with personal projects and everyday life. A readable complement to Big Five dimensions.",
+    },
+    systems: ["big-five"],
+    searchQuery: "Me Myself and Us Brian Little",
+  },
+  // ── RIASEC / Laufbahninteressen ───────────────────────────────────────────
+  {
+    id: "making-vocational-choices",
+    title: "Making Vocational Choices",
+    authors: "John L. Holland",
+    languages: ["EN"],
+    level: { de: "Grundlagenwerk", en: "Foundational" },
+    description: {
+      de: "Grundlagenwerk hinter dem RIASEC-Modell beruflicher Interessen. Für Hermetia als Berufungs- und Interessenkontext geeignet, nicht als starre Einstufung.",
+      en: "The foundational work behind the RIASEC model of vocational interests. Useful for vocation and interest context, not as rigid categorization.",
+    },
+    systems: ["riasec"],
+    searchQuery: "Making Vocational Choices John Holland",
+  },
+  // ── Chronotyp ─────────────────────────────────────────────────────────────
+  {
+    id: "power-of-when",
+    title: "The Power of When",
+    authors: "Michael J. Breus",
+    languages: ["EN"],
+    level: { de: "Alltagspraxis", en: "Everyday practice" },
+    description: {
+      de: "Populärwissenschaftliche Einführung in Chronotypen und Tagesrhythmus. Bei Hermetia passend als Reflexionshilfe, nicht als Schlafdiagnostik.",
+      en: "A popular-science introduction to chronotypes and daily rhythm. In Hermetia it fits as reflection support, not sleep diagnostics.",
+    },
+    systems: ["chronotyp"],
+    searchQuery: "The Power of When Michael Breus",
   },
   // ── 16 Types ──────────────────────────────────────────────────────────────
   {
@@ -335,6 +531,19 @@ const books: BookRecommendation[] = [
     systems: ["sixteen-types"],
     searchQuery: "Gifts Differing Isabel Briggs Myers",
   },
+  {
+    id: "please-understand-me-2",
+    title: "Please Understand Me II",
+    authors: "David Keirsey",
+    languages: ["EN"],
+    level: { de: "Typologie-Kontext", en: "Typology context" },
+    description: {
+      de: "Populäre Typologie nach Temperamenten. Für Hermetia nur als allgemeiner Kontext, nicht als exakte methodische Grundlage.",
+      en: "A popular temperament-based typology. For Hermetia it is general context only, not an exact methodological basis.",
+    },
+    systems: ["sixteen-types"],
+    searchQuery: "Please Understand Me II David Keirsey",
+  },
   // ── TCM ────────────────────────────────────────────────────────────────────
   {
     id: "web-no-weaver",
@@ -346,8 +555,21 @@ const books: BookRecommendation[] = [
       de: "Ein Klassiker zum Denkmodell der chinesischen Medizin. Für Hermetia nur mit klarem Hinweis: Reflexionsmodell, keine Diagnose.",
       en: "A classic on the thinking model of Chinese medicine. In Hermetia this requires a clear frame: reflection model, not diagnosis.",
     },
-    systems: ["tcm-konstitution", "ayurveda-dosha"],
+    systems: ["tcm-konstitution"],
     searchQuery: "The Web That Has No Weaver Ted Kaptchuk",
+  },
+  {
+    id: "between-heaven-earth",
+    title: "Between Heaven and Earth",
+    authors: "Harriet Beinfield, Efrem Korngold",
+    languages: ["EN"],
+    level: { de: "Elemente-Kontext", en: "Element context" },
+    description: {
+      de: "Lesbare Einführung in chinesische Medizin und Fünf-Elemente-Denken. Für Hermetia nur nicht-diagnostisch und als Selbstbeobachtung passend.",
+      en: "A readable introduction to Chinese medicine and Five Element thinking. In Hermetia it fits only non-diagnostically as self-observation.",
+    },
+    systems: ["tcm-konstitution"],
+    searchQuery: "Between Heaven and Earth Harriet Beinfield Efrem Korngold",
   },
   // ── VIA-Stärken ────────────────────────────────────────────────────────────
   {
@@ -363,6 +585,19 @@ const books: BookRecommendation[] = [
     systems: ["via-staerken"],
     searchQuery: "The Power of Character Strengths Niemiec McGrath",
   },
+  {
+    id: "character-strengths-virtues",
+    title: "Character Strengths and Virtues",
+    authors: "Christopher Peterson, Martin E. P. Seligman",
+    languages: ["EN"],
+    level: { de: "Grundlagenwerk", en: "Foundational" },
+    description: {
+      de: "Wissenschaftliches Grundlagenwerk zur VIA-Klassifikation. Gut als redaktioneller Anker für die ressourcenorientierte Seite von Hermetia.",
+      en: "The research foundation of the VIA classification. A good editorial anchor for Hermetia's resource-oriented layer.",
+    },
+    systems: ["via-staerken"],
+    searchQuery: "Character Strengths and Virtues Peterson Seligman",
+  },
   // ── Spiral Dynamics ────────────────────────────────────────────────────────
   {
     id: "spiral-dynamics",
@@ -376,6 +611,19 @@ const books: BookRecommendation[] = [
     },
     systems: ["spiral-dynamics"],
     searchQuery: "Spiral Dynamics Beck Cowan",
+  },
+  {
+    id: "never-ending-quest",
+    title: "The Never Ending Quest",
+    authors: "Clare W. Graves",
+    languages: ["EN"],
+    level: { de: "Fachliche Vertiefung", en: "Scholarly depth" },
+    description: {
+      de: "Originalnaher Zugang zu Graves' Theorie menschlicher Werte- und Bewusstseinsentwicklung. Gut als Kontext hinter Spiral Dynamics.",
+      en: "A close-to-source view of Graves' theory of human value and consciousness development. Useful context behind Spiral Dynamics.",
+    },
+    systems: ["spiral-dynamics"],
+    searchQuery: "The Never Ending Quest Clare Graves",
   },
   // ── Kabbala ────────────────────────────────────────────────────────────────
   {
@@ -391,6 +639,19 @@ const books: BookRecommendation[] = [
     systems: ["kabbalah-tree"],
     searchQuery: "The Mystical Qabalah Dion Fortune",
   },
+  {
+    id: "garden-pomegranates",
+    title: "A Garden of Pomegranates",
+    authors: "Israel Regardie",
+    languages: ["EN"],
+    level: { de: "Hermetischer Kontext", en: "Hermetic context" },
+    description: {
+      de: "Klassisches Werk zur hermetischen Kabbala mit Fokus auf Sephiroth, Pfade und symbolische Korrespondenzen.",
+      en: "A classic work on Hermetic Qabalah with a focus on sephiroth, paths and symbolic correspondences.",
+    },
+    systems: ["kabbalah-tree"],
+    searchQuery: "A Garden of Pomegranates Israel Regardie",
+  },
   // ── Symbolkunde / Oracle ────────────────────────────────────────────────────
   {
     id: "book-of-symbols",
@@ -405,9 +666,23 @@ const books: BookRecommendation[] = [
     systems: ["oracle-cards", "tarot-geburtskarten", "kabbalah-tree"],
     searchQuery: "The Book of Symbols Taschen ARAS",
   },
+  // ── Mahabote / burmesischer Kalenderkontext ───────────────────────────────
+  {
+    id: "folk-elements-burmese-buddhism",
+    title: "Folk Elements in Burmese Buddhism",
+    authors: "Maung Htin Aung",
+    languages: ["EN"],
+    level: { de: "Kulturkontext", en: "Cultural context" },
+    description: {
+      de: "Kulturhistorischer Kontext zu burmesischen Volks- und Kalendersymbolen. Für Hermetia besser als vorsichtiger Hintergrund geeignet als ein modernes Deutungsmanual.",
+      en: "Cultural-historical context for Burmese folk and calendar symbols. Better suited to Hermetia as careful background than as a modern reading manual.",
+    },
+    systems: ["mahabote"],
+    searchQuery: "Folk Elements in Burmese Buddhism Maung Htin Aung",
+  },
 ];
 
-const fallbackIds = ["inner-sky", "wisdom-enneagram", "book-of-symbols"];
+const fallbackIds: string[] = [];
 
 // Curated selection spanning all major system families — explicit IDs so array order doesn't matter.
 const featuredBookIds = [
@@ -446,6 +721,6 @@ export function featuredBooks(limit = 6) {
 
 export function bookSearchUrl(book: BookRecommendation, locale: Locale | string) {
   const q = encodeURIComponent(book.searchQuery);
-  if (locale === "en") return `https://www.amazon.co.uk/s?k=${q}`;
-  return `https://www.amazon.de/s?k=${q}`;
+  const host = localeSearchHosts[locale] ?? localeSearchHosts.en;
+  return `${host}${q}`;
 }
