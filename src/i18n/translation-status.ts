@@ -130,8 +130,8 @@ export function getLocaleStatuses(): LocaleStatus[] {
       description: editorial
         ? "Diese Sprachfassung ist redaktionell gepflegt und ohne Fallback-Hinweis live."
         : ui
-          ? "Navigation, CTAs und globale UI-Texte sind lokalisiert. Lange Inhalte bleiben bis zur finalen Redaktion sichtbar als Mastercontent gekennzeichnet."
-          : "Diese Sprachroute ist technisch live. Bis zur finalen Übersetzung zeigt sie teilweise deutschen Mastercontent mit sichtbarem Hinweis.",
+          ? "Navigation, CTAs und globale UI-Texte sind lokalisiert. Lange Inhalte nutzen bis zur finalen Redaktion sichtbar gekennzeichneten englischen Editorial-Content."
+          : "Diese Sprachroute ist technisch live. Bis zur finalen Übersetzung nutzt sie teilweise englischen Editorial-Content mit sichtbarem Hinweis.",
     };
   });
 }
