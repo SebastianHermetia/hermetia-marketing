@@ -3,9 +3,43 @@ import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localePath, paths } from "@/lib/links";
 
+const footerLabels = {
+  de: {
+    onboarding: "Profil starten",
+    convergence: "Konvergenz-Engine",
+    soulMap: "Seelenkarte",
+    freePremium: "Kostenlos vs Premium",
+    comparisons: "Vergleiche",
+    useCases: "Anwendungsfälle",
+    dailyImpulses: "Tagesimpulse",
+    profileBook: "Vollprofil-Buch",
+    refineProfile: "Profil verfeinern",
+    relationships: "Beziehungen",
+    languages: "Sprachen",
+    dataSecurity: "Daten & Sicherheit",
+    approvals: "Freigaben",
+  },
+  en: {
+    onboarding: "Start profile",
+    convergence: "Convergence engine",
+    soulMap: "Soul map",
+    freePremium: "Free vs Premium",
+    comparisons: "Comparisons",
+    useCases: "Use cases",
+    dailyImpulses: "Daily impulses",
+    profileBook: "Full profile book",
+    refineProfile: "Refine profile",
+    relationships: "Relationships",
+    languages: "Languages",
+    dataSecurity: "Data & security",
+    approvals: "Launch approvals",
+  },
+} as const;
+
 export function Footer({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
   const L = (p: string) => localePath(locale, p);
+  const labels = locale === "de" ? footerLabels.de : footerLabels.en;
 
   return (
     <footer className="bg-aubergine py-14 text-[14px] text-gold-weich">
@@ -22,34 +56,34 @@ export function Footer({ locale }: { locale: Locale }) {
           </div>
           <FootCol title={t.footer.product}>
             <FootLink href={L(paths.leistungen)}>{t.nav.leistungen}</FootLink>
-            <FootLink href={L(paths.onboarding)}>Profil starten</FootLink>
+            <FootLink href={L(paths.onboarding)}>{labels.onboarding}</FootLink>
             <FootLink href={L(paths.systeme)}>{t.nav.systeme}</FootLink>
             <FootLink href={L(paths.methodik)}>{t.nav.methodik}</FootLink>
-            <FootLink href={L(paths.konvergenz)}>Konvergenz-Engine</FootLink>
-            <FootLink href={L(paths.seelenkarte)}>Seelenkarte</FootLink>
+            <FootLink href={L(paths.konvergenz)}>{labels.convergence}</FootLink>
+            <FootLink href={L(paths.seelenkarte)}>{labels.soulMap}</FootLink>
             <FootLink href={L(paths.preise)}>{t.nav.preise}</FootLink>
-            <FootLink href={L(paths.freePremium)}>Kostenlos vs Premium</FootLink>
+            <FootLink href={L(paths.freePremium)}>{labels.freePremium}</FootLink>
           </FootCol>
           <FootCol title={t.footer.discover}>
             <FootLink href={L(paths.glossar)}>{t.footer.glossar}</FootLink>
             <FootLink href={L(paths.wissen)}>{t.footer.magazin}</FootLink>
-            <FootLink href={L(paths.vergleiche)}>Vergleiche</FootLink>
-            <FootLink href={L(paths.anwendungsfaelle)}>Anwendungsfälle</FootLink>
+            <FootLink href={L(paths.vergleiche)}>{labels.comparisons}</FootLink>
+            <FootLink href={L(paths.anwendungsfaelle)}>{labels.useCases}</FootLink>
             <FootLink href={L(paths.about)}>{t.footer.about}</FootLink>
-            <FootLink href={L(paths.tagesimpulse)}>Tagesimpulse</FootLink>
+            <FootLink href={L(paths.tagesimpulse)}>{labels.dailyImpulses}</FootLink>
             <FootLink href={L(paths.journaling)}>Journaling</FootLink>
-            <FootLink href={L(paths.profilBuch)}>Vollprofil-Buch</FootLink>
+            <FootLink href={L(paths.profilBuch)}>{labels.profileBook}</FootLink>
             <FootLink href={L(paths.companion)}>Companion</FootLink>
-            <FootLink href={L(paths.profilVerfeinern)}>Profil verfeinern</FootLink>
-            <FootLink href={L(paths.beziehungen)}>Beziehungen</FootLink>
-            <FootLink href={L(paths.sprachen)}>Sprachen</FootLink>
+            <FootLink href={L(paths.profilVerfeinern)}>{labels.refineProfile}</FootLink>
+            <FootLink href={L(paths.beziehungen)}>{labels.relationships}</FootLink>
+            <FootLink href={L(paths.sprachen)}>{labels.languages}</FootLink>
             <FootLink href={L(paths.faq)}>{t.footer.faq}</FootLink>
           </FootCol>
           <FootCol title={t.footer.legal}>
             <FootLink href={L(paths.datenschutz)}>{t.footer.datenschutz}</FootLink>
-            <FootLink href={L(paths.datenSicherheit)}>Daten & Sicherheit</FootLink>
+            <FootLink href={L(paths.datenSicherheit)}>{labels.dataSecurity}</FootLink>
             <FootLink href={L(paths.ki)}>{t.footer.kiTransparenz}</FootLink>
-            <FootLink href={L(paths.freigaben)}>Freigaben</FootLink>
+            <FootLink href={L(paths.freigaben)}>{labels.approvals}</FootLink>
             <FootLink href={L(paths.agb)}>{t.footer.agb}</FootLink>
             <FootLink href={L(paths.widerruf)}>{t.footer.widerruf}</FootLink>
             <FootLink href={L(paths.impressum)}>{t.footer.impressum}</FootLink>

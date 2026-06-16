@@ -1,0 +1,89 @@
+{
+  "locales": {
+    "en": {
+      "name": "English",
+      "phases": {
+        "p0": {
+          "routes": [
+            "/",
+            "/leistungen/",
+            "/preise/",
+            "/profil-starten/",
+            "/kostenlos-vs-premium/",
+            "/datenschutz/",
+            "/daten-und-sicherheit/",
+            "/ki-transparenz/",
+            "/agb/",
+            "/widerruf/",
+            "/impressum/",
+            "/freigaben/"
+          ],
+          "requiredMarkers": {
+            "/": [
+              "A portrait of your soul",
+              "Six ways to understand yourself better"
+            ],
+            "/leistungen/": [
+              "Feature areas",
+              "Legal and editorial guardrails"
+            ],
+            "/preise/": [
+              "Price clarity",
+              "A good reason to buy is clarity"
+            ],
+            "/profil-starten/": [
+              "How you move from the website into your personal soul map",
+              "Understand consent"
+            ],
+            "/kostenlos-vs-premium/": [
+              "Test resonance first",
+              "Legal texts, withdrawal, cancellation, data protection and AI limits"
+            ],
+            "/datenschutz/": [
+              "personal data",
+              "consent",
+              "GDPR"
+            ],
+            "/daten-und-sicherheit/": [
+              "Personal depth needs understandable data protection",
+              "explicit consent for sensitive profile processing"
+            ],
+            "/ki-transparenz/": [
+              "Why Hermetia discloses AI transparency",
+              "Calculation, convergence and wording are separate"
+            ],
+            "/agb/": [
+              "Prices, payment and paid models",
+              "AI content and labelling"
+            ],
+            "/widerruf/": [
+              "Right of withdrawal",
+              "Digital content and immediate access"
+            ],
+            "/impressum/": [
+              "Information pursuant to",
+              "Final launch check"
+            ],
+            "/freigaben/": [
+              "Legal, IP and launch approvals",
+              "Important: no final legal sign-off"
+            ]
+          },
+          "forbiddenMarkers": [
+            "Ein Bild deiner Seele",
+            "Sechs Wege, dich besser zu verstehen",
+            "Datenschutzerklärung",
+            "Rechtliche Freigaben ansehen",
+            "Legal-, IP- und Launch-Freigaben",
+            "Wichtig: keine anwaltliche Endfreigabe",
+            "Preise vergleichen",
+            "Profil kostenlos starten",
+            "Geburtsdaten eingeben",
+            "Einwilligung verstehen",
+            "Kündigungsbutton im Profil"
+          ]
+        }
+      }
+    }
+  }
+}
