@@ -41,11 +41,11 @@ const prepare = [
 const trustBeforeStart = [
   {
     title: "Kostenlos vor Kauf",
-    text: "Der erste Profilstart soll Resonanz prüfen, bevor ein Tarif gewählt wird. Das reduziert Druck und macht spätere Premium-Entscheidungen bewusster.",
+    text: "Der erste Profilstart prüft Resonanz, bevor ein Tarif gewählt wird. Das reduziert Druck und macht spätere Premium-Entscheidungen bewusster.",
   },
   {
     title: "Datenlogik vor Eingabe",
-    text: "Nutzer sollen vorab verstehen, warum Geburtsdaten, Einwilligung und abgeleitete Profilinhalte sensibel sind und welche Rechte sie haben.",
+    text: "Du verstehst vorab, warum Geburtsdaten, Einwilligung und abgeleitete Profilinhalte sensibel sind und welche Rechte du hast.",
   },
   {
     title: "Unsicherheit sichtbar",
@@ -63,8 +63,8 @@ const appHandoff = [
     text: "Das Onboarding sammelt die notwendigen Eingaben, verarbeitet Einwilligung und erzeugt daraus die erste persönliche Seelenkarte.",
   },
   {
-    title: "Nutzer entscheidet",
-    text: "Nach dem kostenlosen Einstieg wird bewusst geprüft, ob Vollprofil, Tagesimpulse, Journaling, Companion oder Beziehungen Sinn ergeben.",
+    title: "Du entscheidest",
+    text: "Nach dem kostenlosen Einstieg prüfst du bewusst, ob Vollprofil, Tagesimpulse, Journaling, Companion oder Beziehungen Sinn ergeben.",
   },
 ];
 
@@ -99,11 +99,11 @@ const faq = [
   },
   {
     q: "Was passiert, wenn ich die App nach dem Start verlasse?",
-    a: "Der Produktanspruch ist, dass ein Konto und klare Wiederaufnahmewege bestehen. Die Website erklärt den Weg, die App muss ihn technisch sauber abbilden.",
+    a: "Dein Konto bleibt der Wiederaufnahmeweg. Du kannst zurückkehren und dort weitermachen, wo dein Profilstand gespeichert ist.",
   },
   {
     q: "Kann ich meine Daten später korrigieren?",
-    a: "Ja. Profilverfeinerung ist Teil des Konzepts: Geburtszeit, Feedback, Einstellungen und spätere Ergänzungen sollen nachvollziehbar nachgetragen werden können.",
+    a: "Ja. Du kannst Geburtszeit, Feedback, Einstellungen und spätere Ergänzungen nachvollziehbar nachtragen, wenn du dein Profil verfeinern möchtest.",
   },
 ];
 
@@ -118,7 +118,7 @@ const onboardingCopy = {
     heroKicker: "Profil starten",
     heroTitle: "So kommst du von der Website in deine persönliche Seelenkarte.",
     heroLead:
-      "Das Onboarding soll ruhig und verständlich sein: Du gibst nur ein, was für die Berechnung nötig ist, verstehst vorher die Datenlogik und siehst zuerst kostenlos, ob Hermetia für dich resoniert.",
+      "Das Onboarding ist ruhig und verständlich: Du gibst nur ein, was für die Berechnung nötig ist, verstehst vorher die Datenlogik und siehst zuerst kostenlos, ob Hermetia für dich resoniert.",
     heroCta: "Jetzt Profil starten",
     dataCta: "Datenlogik prüfen",
     heroAlt: "Abstrakter Geburtsmoment als Bild für den Hermetia Profilstart",
@@ -126,15 +126,15 @@ const onboardingCopy = {
     beforeKicker: "Vor dem Start",
     beforeTitle: "Was vor dem App-Absprung klar sein sollte.",
     beforeText:
-      "Die Profilstart-Seite hat eine klare Aufgabe: Sie soll Neugier in Handlung verwandeln, aber nur mit genug Vertrauen. Nutzer sollen nicht blind in ein Formular fallen, sondern wissen, warum der nächste Schritt sinnvoll ist.",
+      "Vor dem App-Start bekommst du die wichtigsten Antworten zu Daten, Methode und Kosten. So gehst du nicht blind in ein Formular, sondern weißt, warum der nächste Schritt sinnvoll ist.",
     flowKicker: "Ablauf",
     flowTitle: "Vier Schritte, bevor du Tiefe freischaltest.",
     flowText:
-      "Hermetia soll nicht mit einem Formular überfallen. Der Ablauf erklärt, warum Daten gebraucht werden und was du schon kostenlos sehen kannst.",
+      "Hermetia beginnt nicht mit einem überrumpelnden Formular. Der Ablauf erklärt, warum Daten gebraucht werden und was du schon kostenlos sehen kannst.",
     handoffKicker: "App-Handoff",
     handoffTitle: "Was die Website erklärt und was die App übernimmt.",
     handoffText:
-      "Der Übergang von Marketing-Website zur Hermetia-App muss sich wie ein einziger ruhiger Weg anfühlen. Die Website bereitet vor, die App berechnet, der Nutzer entscheidet.",
+      "Der Übergang von Website zur Hermetia-App folgt einem ruhigen Weg: Die Website bereitet vor, die App berechnet, du entscheidest.",
     handoffAlt: "Pipeline von Website-Fragen zu App-Onboarding und Profilberechnung",
     handoffCaption: "Der App-Handoff folgt derselben Logik wie die Methode: Eingaben verstehen, sauber einordnen, erst dann deuten.",
     prepareKicker: "Vorbereitung",
@@ -149,7 +149,7 @@ const onboardingCopy = {
     finalKicker: "Kostenloser Einstieg",
     finalTitle: "Starte mit der Seelenkarte, nicht mit einer Kaufentscheidung.",
     finalText:
-      "Der erste Schritt soll zeigen, ob Hermetia für dich stimmt. Bezahlte Modelle sind für spätere Tiefe gedacht: Ebenen, Tagesimpulse, Journaling, Buch und Beziehungsauswertungen.",
+      "Der erste Schritt zeigt, ob Hermetia für dich stimmt. Bezahlte Modelle sind für spätere Tiefe gedacht: Ebenen, Tagesimpulse, Journaling, Buch und Beziehungsauswertungen.",
     finalCta: "Profil kostenlos starten",
     finalSecondaryCta: "Kostenlos vs Premium",
     uncertaintyTitle: "Wenn etwas unsicher ist",
@@ -175,7 +175,7 @@ const onboardingCopy = {
     heroKicker: "Start profile",
     heroTitle: "How you move from the website into your personal soul map.",
     heroLead:
-      "Onboarding should feel calm and understandable: you enter only what is needed for calculation, understand the data logic first and see for free whether Hermetia resonates with you.",
+      "Onboarding is calm and understandable: you enter only what is needed for calculation, understand the data logic first and see for free whether Hermetia resonates with you.",
     heroCta: "Start profile now",
     dataCta: "Check data logic",
     heroAlt: "Abstract birth moment as an image for starting a Hermetia profile",
@@ -183,15 +183,15 @@ const onboardingCopy = {
     beforeKicker: "Before you start",
     beforeTitle: "What should be clear before entering the app.",
     beforeText:
-      "The profile-start page has a clear job: turn curiosity into action, but only with enough trust. Users should not fall blindly into a form; they should understand why the next step makes sense.",
+      "Before entering the app, you get the key answers about data, method and cost. You do not fall blindly into a form; you understand why the next step makes sense.",
     flowKicker: "Flow",
     flowTitle: "Four steps before you unlock depth.",
     flowText:
-      "Hermetia should not overwhelm people with a form. The flow explains why data is needed and what you can already see for free.",
+      "Hermetia does not start with an overwhelming form. The flow explains why data is needed and what you can already see for free.",
     handoffKicker: "App handoff",
     handoffTitle: "What the website explains and what the app takes over.",
     handoffText:
-      "The move from the marketing website to the Hermetia app should feel like one calm path. The website prepares, the app calculates, the user decides.",
+      "The move from the website to the Hermetia app follows one calm path: the website prepares, the app calculates, you decide.",
     handoffAlt: "Pipeline from website questions to app onboarding and profile calculation",
     handoffCaption: "The app handoff follows the same logic as the method: understand inputs, classify them carefully, then interpret.",
     prepareKicker: "Preparation",
@@ -206,7 +206,7 @@ const onboardingCopy = {
     finalKicker: "Free start",
     finalTitle: "Start with the soul map, not with a purchase decision.",
     finalText:
-      "The first step should show whether Hermetia fits you. Paid models are for later depth: levels, daily impulses, journaling, book and relationship readings.",
+      "The first step shows whether Hermetia fits you. Paid models are for later depth: levels, daily impulses, journaling, book and relationship readings.",
     finalCta: "Start profile for free",
     finalSecondaryCta: "Free vs Premium",
     uncertaintyTitle: "If something is uncertain",
@@ -223,14 +223,14 @@ const onboardingCopy = {
     ],
     prepare: ["date of birth", "place of birth", "birth time, if known", "an email address for your account", "a few quiet minutes to actually read the first themes"],
     trustBeforeStart: [
-      { title: "Free before purchase", text: "The first profile start should test resonance before a plan is chosen. That reduces pressure and makes later Premium decisions more conscious." },
-      { title: "Data logic before input", text: "Users should understand in advance why birth data, consent and derived profile content are sensitive and which rights they have." },
+      { title: "Free before purchase", text: "The first profile start tests resonance before a plan is chosen. That reduces pressure and makes later Premium decisions more conscious." },
+      { title: "Data logic before input", text: "You understand in advance why birth data, consent and derived profile content are sensitive and which rights you have." },
       { title: "Uncertainty stays visible", text: "If birth time is missing or an input is approximate, Hermetia must mark that instead of making every statement feel equally certain." },
     ],
     appHandoff: [
       { title: "Website explains", text: "The marketing page answers questions about method, data, limits, costs and value before the handoff." },
       { title: "App calculates", text: "Onboarding collects the necessary inputs, handles consent and creates the first personal soul map from them." },
-      { title: "User decides", text: "After the free start, users consciously check whether full profile, daily impulses, journaling, Companion or relationships make sense." },
+      { title: "You decide", text: "After the free start, you consciously check whether full profile, daily impulses, journaling, Companion or relationships make sense." },
     ],
     afterStart: [
       "read first soul map and core themes",
@@ -245,15 +245,15 @@ const onboardingCopy = {
       { q: "Why do I need to consent to sensitive processing?", a: "Birth data and systems can create spiritual or worldview-related profile content. Hermetia treats this content as sensitive and explains consent and rights before processing." },
       { q: "What happens after the first soul map?", a: "You can read the first themes, review the method and decide whether you want to use further levels, daily impulses, journaling or relationship readings." },
       { q: "Will I be pushed directly into a purchase?", a: "No. The profile start is designed as a free resonance test. Premium becomes useful only if you truly want more depth after the first soul map." },
-      { q: "What happens if I leave the app after starting?", a: "The product promise is that an account and clear return paths exist. The website explains the path; the app must implement it cleanly." },
-      { q: "Can I correct my data later?", a: "Yes. Profile refinement is part of the concept: birth time, feedback, settings and later additions should be traceably adjustable." },
+      { q: "What happens if I leave the app after starting?", a: "Your account is the return path. You can come back and continue from the profile state that has been saved." },
+      { q: "Can I correct my data later?", a: "Yes. You can add birth time, feedback, settings and later additions traceably when you want to refine your profile." },
     ],
   },
 } as const;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const copy = locale === "en" ? onboardingCopy.en : onboardingCopy.de;
+  const copy = locale === "de" ? onboardingCopy.de : onboardingCopy.en;
   return buildMetadata({
     locale: locale as Locale,
     path: paths.onboarding,
@@ -265,7 +265,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function OnboardingPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  const copy = locale === "en" ? onboardingCopy.en : onboardingCopy.de;
+  const copy = locale === "de" ? onboardingCopy.de : onboardingCopy.en;
   const localizedFaq = copy.faq.map(({ q, a }) => ({ q, a }));
   const pageUrl = `${siteUrl}/${locale}${paths.onboarding}/`;
 

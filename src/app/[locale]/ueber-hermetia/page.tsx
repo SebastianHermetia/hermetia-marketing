@@ -37,7 +37,7 @@ const principles = [
   },
   {
     title: "Einladend statt bestimmend",
-    text: "Die Texte sollen Resonanz ermöglichen, nicht Identität festschreiben. Nutzer dürfen widersprechen, pausieren, nachfragen und ihre eigene Erfahrung wichtiger nehmen als jede Auswertung.",
+    text: "Die Texte ermöglichen Resonanz, ohne Identität festzuschreiben. Du darfst widersprechen, pausieren, nachfragen und deine eigene Erfahrung wichtiger nehmen als jede Auswertung.",
   },
   {
     title: "Tiefe mit Grenzen",
@@ -45,7 +45,7 @@ const principles = [
   },
   {
     title: "Transparenz vor Mystifizierung",
-    text: "Wo etwas berechnet wird, soll es nachvollziehbar sein. Wo AI formuliert, wird AI benannt. Wo eine Übersetzung noch nicht final ist, wird der Status sichtbar gemacht.",
+    text: "Wo etwas berechnet wird, bleibt es nachvollziehbar. Wo AI formuliert, wird AI benannt. Wo eine Übersetzung noch nicht final ist, wird der Status sichtbar gemacht.",
   },
 ];
 
@@ -187,7 +187,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               <span className="kicker">Vom ersten Blick zur bezahlten Tiefe</span>
               <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Kostenlos beginnen, bewusst vertiefen.</h2>
               <p className="muted mt-4 text-[17px] leading-[1.85]">
-                Hermetia soll erst Vertrauen aufbauen. Deshalb beginnt der Einstieg kostenlos: Seelenkarte, erste Kernthemen und ein Gefühl für die Sprache. Bezahlte Modelle öffnen mehr Ebenen, tägliche Begleitung, Journaling, Beziehungsauswertungen und exportierbare Inhalte. Die Grenze zwischen kostenlos und bezahlt soll klar sein, nicht manipulativ.
+                Hermetia baut zuerst Vertrauen auf. Deshalb beginnt der Einstieg kostenlos: Seelenkarte, erste Kernthemen und ein Gefühl für die Sprache. Bezahlte Modelle öffnen mehr Ebenen, tägliche Begleitung, Journaling, Beziehungsauswertungen und exportierbare Inhalte. Die Grenze zwischen kostenlos und bezahlt bleibt klar, nicht manipulativ.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "about-paid-depth" })}>Profil kostenlos starten</a>
@@ -195,7 +195,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               </div>
             </div>
             <div className="rounded-card border border-gold/30 bg-gold-weich/25 p-6">
-              <h3 className="text-[24px]">Was Nutzer spüren sollen</h3>
+              <h3 className="text-[24px]">Was du spüren kannst</h3>
               <ul className="mt-4 flex list-none flex-col gap-3 text-[15px] leading-relaxed text-pflaume/90">
                 <li>Eine klare erste Antwort auf die Frage: Was macht Hermetia mit meinen Daten?</li>
                 <li>Ein Gefühl von Tiefe, ohne Angstmarketing oder Schicksalsdruck.</li>

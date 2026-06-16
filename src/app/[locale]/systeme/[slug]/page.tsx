@@ -80,7 +80,7 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
           {
             "@context": "https://schema.org",
             "@type": "ItemList",
-            name: locale === "en" ? `Books about ${c.name}` : `Bücher zu ${c.name}`,
+            name: locale === "de" ? `Bücher zu ${c.name}` : `Books about ${c.name}`,
             itemListElement: books.map((book, index) => ({
               "@type": "ListItem",
               position: index + 1,
@@ -175,14 +175,14 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
               </p>
             </div>
             <div className="rounded-card border border-sand bg-white p-6 shadow-soft">
-              <span className="kicker">{locale === "en" ? "Further reading" : "Literatur"}</span>
+              <span className="kicker">{locale === "de" ? "Literatur" : "Further reading"}</span>
               <h2 className="mt-2 text-[24px]">
-                {locale === "en" ? `Books about ${c.name}` : `Bücher zu ${c.name}`}
+                {locale === "de" ? `Bücher zu ${c.name}` : `Books about ${c.name}`}
               </h2>
               <p className="muted mt-2 text-[16.5px] leading-relaxed">
-                {locale === "en"
-                  ? "These recommendations help you understand the tradition behind this system. The links currently use neutral book searches and can later be replaced by approved affiliate links."
-                  : "Diese Empfehlungen helfen, die Tradition hinter diesem System besser zu verstehen. Die Links nutzen aktuell neutrale Buchsuchen und können später durch freigegebene Affiliate-Links ersetzt werden."}
+                {locale === "de"
+                  ? "Diese Empfehlungen helfen dir, die Tradition hinter diesem System besser zu verstehen. Die Links öffnen neutrale Buchsuchen, damit du Ausgaben und Anbieter selbst vergleichen kannst."
+                  : "These recommendations help you understand the tradition behind this system. The links open neutral book searches so you can compare editions and providers yourself."}
               </p>
               <div className="mt-5 grid gap-4 md:grid-cols-3">
                 {books.map((book) => {
@@ -194,16 +194,16 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
                       <p className="note mt-1">{book.authors} · {book.languages.join(", ")}</p>
                       <p className="muted mt-3 text-[14.5px] leading-relaxed">{text.description}</p>
                       <a className="note mt-4 inline-block font-semibold text-gold" href={bookSearchUrl(book, locale)} rel="nofollow noopener noreferrer" target="_blank">
-                        {locale === "en" ? "Search book" : "Buch suchen"} →
+                        {locale === "de" ? "Buch suchen" : "Search book"} →
                       </a>
                     </article>
                   );
                 })}
               </div>
               <p className="note mt-4">
-                {locale === "en"
-                  ? "Some links may later become partner links. Hermetia does not display prices or availability until a compliant partner integration is active."
-                  : "Einige Links können später Partnerlinks werden. Hermetia zeigt Preise und Verfügbarkeit erst, wenn eine regelkonforme Partnerintegration aktiv ist."}
+                {locale === "de"
+                  ? "Hermetia zeigt hier keine Preise oder Verfügbarkeit, weil sie sich ändern können. Bitte prüfe den verlinkten Anbieter vor dem Kauf."
+                  : "Hermetia does not display prices or availability here because they can change. Please check the linked provider before buying."}
               </p>
             </div>
             <div className="rounded-card border border-sand bg-creme-tief p-6">

@@ -88,7 +88,7 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
           {
             "@context": "https://schema.org",
             "@type": "ItemList",
-            name: locale === "en" ? "Books about Hermetia systems" : "Bücher zu den Hermetia-Systemen",
+            name: locale === "de" ? "Bücher zu den Hermetia-Systemen" : "Books about Hermetia systems",
             itemListElement: books.map((book, index) => ({
               "@type": "ListItem",
               position: index + 1,
@@ -276,14 +276,14 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
       <section className="bg-creme-tief py-20">
         <div className="wrap">
           <div className="mb-9 max-w-[780px]">
-            <span className="kicker">{locale === "en" ? "Further reading" : "Weiterlesen"}</span>
+            <span className="kicker">{locale === "de" ? "Weiterlesen" : "Further reading"}</span>
             <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">
-              {locale === "en" ? "Books that help you understand the systems." : "Bücher, die die Systeme verständlicher machen."}
+              {locale === "de" ? "Bücher, die die Systeme verständlicher machen." : "Books that help you understand the systems."}
             </h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
-              {locale === "en"
-                ? "These recommendations are editorially selected and openly visible so search engines can understand which sources and traditions Hermetia relates to. Affiliate links can be added later through the same data layer."
-                : "Diese Empfehlungen sind redaktionell ausgewählt und öffentlich sichtbar, damit Suchmaschinen die Quellen- und Traditionsnähe von Hermetia einordnen können. Affiliate-Links können später über dieselbe Datenebene ergänzt werden."}
+              {locale === "de"
+                ? "Diese Empfehlungen sind redaktionell ausgewählt, damit du Quellen, Traditionen und Perspektiven hinter den Hermetia-Systemen besser einordnen kannst."
+                : "These recommendations are editorially selected to help you understand the sources, traditions and perspectives behind Hermetia's systems."}
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -296,16 +296,16 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
                   <p className="note mt-1">{book.authors} · {book.languages.join(", ")}</p>
                   <p className="muted mt-3 text-[15.5px] leading-relaxed">{text.description}</p>
                   <a className="note mt-4 inline-block font-semibold text-gold" href={bookSearchUrl(book, locale)} rel="nofollow noopener noreferrer" target="_blank">
-                    {locale === "en" ? "Search book" : "Buch suchen"} →
+                    {locale === "de" ? "Buch suchen" : "Search book"} →
                   </a>
                 </article>
               );
             })}
           </div>
           <p className="note mt-6 text-center">
-            {locale === "en"
-              ? "Some links may later become partner links. Prices and availability are not shown because they can change."
-              : "Einige Links können später Partnerlinks werden. Preise und Verfügbarkeit werden bewusst nicht angezeigt, weil sie sich ändern können."}
+            {locale === "de"
+              ? "Preise und Verfügbarkeit werden hier nicht angezeigt, weil sie sich ändern können. Die Links öffnen eine neutrale Buchsuche."
+              : "Prices and availability are not shown here because they can change. The links open a neutral book search."}
           </p>
         </div>
       </section>

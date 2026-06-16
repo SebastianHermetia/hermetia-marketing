@@ -25,7 +25,7 @@ const pricingPageCopy = {
     decisionKicker: "Entscheidungshilfe",
     decisionTitle: "Welches Modell passt zu welchem Moment?",
     decisionText:
-      "Die Preis-Seite soll nicht drängen. Sie soll erklären, wann der kostenlose Einstieg genügt und wann ein bezahltes Modell echten Mehrwert schafft. So wird der Wechsel in die App nachvollziehbar und vertrauensvoll.",
+      "Du siehst zuerst, wann der kostenlose Einstieg genügt und ab welchem Moment ein bezahltes Modell echten Mehrwert schafft. So bleibt der Wechsel in die App nachvollziehbar und vertrauensvoll.",
     stepLabel: "Schritt",
     decisionPrimaryCta: "Kostenlos prüfen",
     decisionSecondaryCta: "Kostenlos vs. Premium",
@@ -49,7 +49,7 @@ const pricingPageCopy = {
     comparisonKicker: "Vergleich",
     comparisonTitle: "Was öffnet sich in welchem Tarif?",
     comparisonText:
-      "Nutzer müssen nicht alle Featuredetails auswendig lesen. Entscheidend ist die Logik: kostenlos zeigt Resonanz, Begleitung öffnet die fortlaufende Praxis, Tiefe ergänzt sensible Zusatzmodule.",
+      "Du musst nicht jedes Featuredetail auswendig kennen. Entscheidend ist die Logik: Kostenlos zeigt Resonanz, Begleitung öffnet die fortlaufende Praxis, Tiefe ergänzt sensible Zusatzmodule.",
     comparisonCta: "Mit meinem Profil starten",
     comparisonRows: [
       ["Funktion", "Entdecken", "Begleitung", "Tiefe"],
@@ -77,7 +77,7 @@ const pricingPageCopy = {
     fairnessKicker: "Fairness und Grenzen",
     fairnessTitle: "Ein guter Kaufgrund ist Klarheit, nicht Angst.",
     fairnessText:
-      "Hermetia soll bezahlte Modelle verkaufen, aber ohne FOMO, Schicksalsdruck oder Heilsversprechen. Die Tarife erklären Tiefe, Komfort und Begleitung. Sie ersetzen keine Therapie, keine medizinische Beratung und keine sichere Zukunftsaussage.",
+      "Bezahlte Modelle stehen bei Hermetia für mehr Tiefe, Komfort und Begleitung, nicht für FOMO, Schicksalsdruck oder Heilsversprechen. Sie ersetzen keine Therapie, keine medizinische Beratung und keine sichere Zukunftsaussage.",
     fairnessCta: "Fair starten",
     dataCta: "Daten und Sicherheit",
     beforePurchaseTitle: "Vor dem Kauf wichtig",
@@ -104,7 +104,7 @@ const pricingPageCopy = {
     decisionKicker: "Decision help",
     decisionTitle: "Which plan fits which moment?",
     decisionText:
-      "The pricing page should not pressure people. It should explain when the free start is enough and when a paid plan creates real value. That makes the move into the app understandable and trustworthy.",
+      "You first see when the free start is enough and when a paid plan creates real value. That keeps the move into the app understandable and trustworthy.",
     stepLabel: "Step",
     decisionPrimaryCta: "Test for free",
     decisionSecondaryCta: "Free vs. Premium",
@@ -128,7 +128,7 @@ const pricingPageCopy = {
     comparisonKicker: "Comparison",
     comparisonTitle: "What opens up in each plan?",
     comparisonText:
-      "Users should not have to memorize every feature detail. The logic matters: free shows resonance, Companion opens ongoing practice, Depth adds sensitive extra modules.",
+      "You do not have to memorize every feature detail. The logic matters: Free shows resonance, Companion opens ongoing practice, Depth adds sensitive extra modules.",
     comparisonCta: "Start with my profile",
     comparisonRows: [
       ["Feature", "Discover", "Companion", "Depth"],
@@ -156,7 +156,7 @@ const pricingPageCopy = {
     fairnessKicker: "Fairness and limits",
     fairnessTitle: "A good reason to buy is clarity, not fear.",
     fairnessText:
-      "Hermetia should sell paid plans, but without FOMO, destiny pressure or healing promises. The plans explain depth, comfort and guidance. They do not replace therapy, medical advice or a guaranteed prediction.",
+      "Paid plans at Hermetia stand for more depth, comfort and guidance, not FOMO, destiny pressure or healing promises. They do not replace therapy, medical advice or a guaranteed prediction.",
     fairnessCta: "Start fairly",
     dataCta: "Data and security",
     beforePurchaseTitle: "Important before purchase",
@@ -180,7 +180,7 @@ export default async function PreisePage({ params }: { params: Promise<{ locale:
   const locale = raw as Locale;
   const t = getDictionary(locale);
   const p = t.preise;
-  const copy = locale === "en" ? pricingPageCopy.en : pricingPageCopy.de;
+  const copy = locale === "de" ? pricingPageCopy.de : pricingPageCopy.en;
   const pageUrl = `${siteUrl}/${locale}${paths.preise}/`;
   const offers = p.tiers.map((tier) => ({ name: tier.name, price: tier.price.match(/\d+/)?.[0] ?? "0" }));
 

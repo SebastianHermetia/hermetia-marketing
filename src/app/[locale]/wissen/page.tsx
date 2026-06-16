@@ -86,7 +86,7 @@ export default async function WissenPage({ params }: { params: Promise<{ locale:
           <figure className="m-0 overflow-hidden rounded-card border border-sand bg-white shadow-soft">
             <img src="/images/hermetia/library-of-self-profile.png" alt="Ruhige Bibliothek als Bild für Hermetia Wissen und Selbstreflexion" className="aspect-[4/3] w-full object-cover" />
             <figcaption className="px-5 py-4 text-[14px] text-pflaume/80">
-              Wissen soll Orientierung geben und den Weg zur eigenen Seelenkarte verständlicher machen.
+              Wissen gibt Orientierung und macht den Weg zur eigenen Seelenkarte verständlicher.
             </figcaption>
           </figure>
         </div>
@@ -98,7 +98,7 @@ export default async function WissenPage({ params }: { params: Promise<{ locale:
             <span className="kicker">Suchfragen</span>
             <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Welche Fragen beantwortet dieser Bereich?</h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Der Wissensbereich ist für Menschen gebaut, die Hermetia noch nicht kennen, aber nach Seelenkarte, Human Design, AI-Deutung, Datenschutz oder spirituellem Profiling suchen. Jede Antwort soll helfen und bei passender Resonanz zum Profilstart führen.
+              Der Wissensbereich ist für Menschen gebaut, die Hermetia noch nicht kennen, aber nach Seelenkarte, Human Design, AI-Deutung, Datenschutz oder spirituellem Profiling suchen. Jede Antwort hilft konkret und führt bei passender Resonanz zum Profilstart.
             </p>
           </div>
           <div className="rounded-card border border-sand bg-white p-7 shadow-soft">

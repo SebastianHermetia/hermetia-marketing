@@ -47,7 +47,7 @@ const valueLadder = [
   {
     step: "2",
     title: "Tiefe öffnen",
-    text: "Premium wird sinnvoll, wenn Nutzer mehr Ebenen, längere Kapitel, Systembelege und eine wiederlesbare Profilstruktur wünschen.",
+    text: "Premium wird sinnvoll, wenn du mehr Ebenen, längere Kapitel, Systembelege und eine wiederlesbare Profilstruktur wünschst.",
   },
   {
     step: "3",
@@ -81,10 +81,10 @@ const premiumModules = [
 ];
 
 const fairnessRules = [
-  "Premium darf nicht mit Angst, Schicksalsdruck oder künstlicher Verknappung verkauft werden.",
-  "Kostenlos muss genug zeigen, damit Nutzer Resonanz, Datenschutzgefühl und Ton prüfen können.",
+  "Premium verzichtet auf Angst, Schicksalsdruck und künstliche Verknappung.",
+  "Kostenlos zeigt genug, damit du Resonanz, Datenschutzgefühl und Ton prüfen kannst.",
   "Ein Upgrade ist sinnvoll, wenn Nutzung über Zeit entsteht: lesen, journaln, fragen, verfeinern, zurückkehren.",
-  "Rechtstexte, Widerruf, Kündigung, Datenschutz und AI-Grenzen müssen vor Kauf verständlich erreichbar bleiben.",
+  "Rechtstexte, Widerruf, Kündigung, Datenschutz und AI-Grenzen bleiben vor Kauf verständlich erreichbar.",
 ];
 
 const faq = [
@@ -98,11 +98,11 @@ const faq = [
   },
   {
     q: "Wann sollte ich nicht upgraden?",
-    a: "Wenn du nur aus Angst, Druck oder dem Wunsch nach sicheren Vorhersagen upgraden würdest. Hermetia soll keine FOMO erzeugen, sondern bewusste Reflexion unterstützen.",
+    a: "Wenn du nur aus Angst, Druck oder dem Wunsch nach sicheren Vorhersagen upgraden würdest. Hermetia erzeugt keine FOMO, sondern unterstützt bewusste Reflexion.",
   },
   {
     q: "Kann ich später kündigen?",
-    a: "Ja. Laufende Abonnements sollen transparent kündbar sein. Die Website verweist zusätzlich auf AGB, Widerruf und die rechtlichen Freigaben vor finalem Launch.",
+    a: "Ja. Laufende Abonnements sind transparent kündbar. Die Website verweist zusätzlich auf AGB, Widerruf und die rechtlichen Freigaben vor finalem Launch.",
   },
   {
     q: "Woran erkenne ich, dass Premium zu früh wäre?",
@@ -114,7 +114,7 @@ const faq = [
   },
   {
     q: "Warum ist der kostenlose Einstieg wichtig für Vertrauen?",
-    a: "Weil Hermetia mit sensiblen Profilthemen arbeitet. Nutzer sollten Sprache, Grenzen, Datenschutz und erste Kernthemen erleben, bevor sie bezahlte Tiefe wählen.",
+    a: "Weil Hermetia mit sensiblen Profilthemen arbeitet. Du erlebst Sprache, Grenzen, Datenschutz und erste Kernthemen, bevor du bezahlte Tiefe wählst.",
   },
 ];
 
@@ -129,7 +129,7 @@ const freePremiumCopy = {
     heroKicker: "Kostenlos vs Premium",
     heroTitle: "Erst Resonanz prüfen. Dann bewusst Tiefe wählen.",
     heroLead:
-      "Hermetia soll nicht über Druck verkaufen. Der kostenlose Einstieg zeigt dir, ob deine Seelenkarte, die Sprache und die Methode stimmig wirken. Premium wird erst dann sinnvoll, wenn du mehr Tiefe, Alltag und Beziehungsebene wirklich nutzen möchtest.",
+      "Hermetia verkauft nicht über Druck. Der kostenlose Einstieg zeigt dir, ob deine Seelenkarte, die Sprache und die Methode stimmig wirken. Premium wird erst dann sinnvoll, wenn du mehr Tiefe, Alltag und Beziehungsebene wirklich nutzen möchtest.",
     startCta: "Kostenlos starten",
     pricingCta: "Tarife ansehen",
     heroAlt: "Abstrakte Ebenen als Bild für kostenlosen Einstieg und Premium-Tiefe bei Hermetia",
@@ -145,21 +145,21 @@ const freePremiumCopy = {
     valueKicker: "Werttreppe",
     valueTitle: "Von kostenloser Resonanz zu bezahlter Tiefe.",
     valueText:
-      "Die Preislogik von Hermetia soll nicht als harte Paywall wirken. Sie soll erklären, welche Art von Wert in welchem Nutzungsmoment entsteht und wann ein Upgrade wirklich Sinn ergibt.",
+      "Die Preislogik von Hermetia wirkt nicht wie eine harte Paywall. Sie zeigt, welche Art von Wert in welchem Nutzungsmoment entsteht und wann ein Upgrade wirklich Sinn ergibt.",
     decisionKicker: "Entscheidungshilfe",
     decisionTitle: "Nicht jeder sollte sofort upgraden.",
     decisionText:
-      "Gute Conversion heißt bei Hermetia nicht, möglichst schnell Druck aufzubauen. Gute Conversion heißt: Nutzer verstehen, welcher Schritt wirklich passt.",
+      "Bei Hermetia geht es nicht darum, möglichst schnell Druck aufzubauen. Du sollst verstehen, welcher Schritt wirklich passt.",
     modulesKicker: "Premium-Module",
     modulesTitle: "Wofür bezahlte Modelle konkret stehen.",
     modulesText:
       "Premium ist kein einzelnes Geheimkapitel. Es bündelt die Funktionen, die über Zeit echten Nutzen erzeugen: mehr Kontext, mehr Wiederholung, mehr Sicherheit und mehr persönliche Begleitung.",
     moduleAlt: "Grafik für verankerte und feine Premium-Tiefe bei Hermetia",
-    moduleCaption: "Bezahlte Tiefe soll verankert in Daten und zugleich fein genug für persönliche Reflexion bleiben.",
+    moduleCaption: "Bezahlte Tiefe bleibt verankert in Daten und zugleich fein genug für persönliche Reflexion.",
     fairnessKicker: "Fairness",
     fairnessTitle: "Ein gutes Upgrade fühlt sich nicht gedrängt an.",
     fairnessText:
-      "Hermetia soll wachsen, aber nicht über Angstmarketing. Gerade weil spirituelle Profile sensibel sind, muss die Kaufentscheidung ruhig, transparent und widerrufbar bleiben.",
+      "Hermetia wächst über Vertrauen, nicht über Angstmarketing. Gerade weil spirituelle Profile sensibel sind, bleibt die Kaufentscheidung ruhig, transparent und widerrufbar.",
     approvalsCta: "Rechtliche Freigaben ansehen",
     nextKicker: "Nächster Schritt",
     nextTitle: "Beginne dort, wo Vertrauen entsteht: kostenlos.",
@@ -168,7 +168,7 @@ const freePremiumCopy = {
     useCasesCta: "Anwendungsfälle lesen",
     fairnessRuleTitle: "Fairness-Regel",
     fairnessRuleText:
-      "Premium sollte sich wie eine bewusste Vertiefung anfühlen, nicht wie eine Angstreaktion. Deshalb benennt Hermetia Grenzen, Kündigung, Widerruf und Datenschutz sichtbar.",
+      "Premium fühlt sich wie eine bewusste Vertiefung an, nicht wie eine Angstreaktion. Deshalb benennt Hermetia Grenzen, Kündigung, Widerruf und Datenschutz sichtbar.",
     faqKicker: "FAQ",
     faqTitle: "Häufige Fragen zu kostenlos und Premium",
     freeItems,
@@ -189,7 +189,7 @@ const freePremiumCopy = {
     heroKicker: "Free vs Premium",
     heroTitle: "Test resonance first. Then choose depth consciously.",
     heroLead:
-      "Hermetia should not sell through pressure. The free start shows whether your soul map, the language and the method feel coherent. Premium becomes useful only when you truly want more depth, daily practice and relationship layers.",
+      "Hermetia does not sell through pressure. The free start shows whether your soul map, the language and the method feel coherent. Premium becomes useful only when you truly want more depth, daily practice and relationship layers.",
     startCta: "Start free",
     pricingCta: "View plans",
     heroAlt: "Abstract layers as an image for Hermetia's free start and Premium depth",
@@ -205,21 +205,21 @@ const freePremiumCopy = {
     valueKicker: "Value ladder",
     valueTitle: "From free resonance to paid depth.",
     valueText:
-      "Hermetia's pricing logic should not feel like a hard paywall. It should explain what kind of value emerges at which moment of use and when an upgrade genuinely makes sense.",
+      "Hermetia's pricing logic does not feel like a hard paywall. It explains what kind of value emerges at which moment of use and when an upgrade genuinely makes sense.",
     decisionKicker: "Decision help",
     decisionTitle: "Not everyone should upgrade immediately.",
     decisionText:
-      "Good conversion in Hermetia does not mean creating pressure as quickly as possible. It means helping users understand which step truly fits.",
+      "Hermetia does not try to create pressure as quickly as possible. It helps you understand which step truly fits.",
     modulesKicker: "Premium modules",
     modulesTitle: "What paid models stand for in practice.",
     modulesText:
       "Premium is not a single secret chapter. It bundles the functions that create value over time: more context, more repetition, more safety and more personal guidance.",
     moduleAlt: "Graphic for grounded and subtle Premium depth in Hermetia",
-    moduleCaption: "Paid depth should remain grounded in data and subtle enough for personal reflection.",
+    moduleCaption: "Paid depth remains grounded in data and subtle enough for personal reflection.",
     fairnessKicker: "Fairness",
     fairnessTitle: "A good upgrade does not feel forced.",
     fairnessText:
-      "Hermetia should grow, but not through fear marketing. Precisely because spiritual profiles are sensitive, the purchase decision must remain calm, transparent and withdrawable.",
+      "Hermetia grows through trust, not fear marketing. Precisely because spiritual profiles are sensitive, the purchase decision remains calm, transparent and withdrawable.",
     approvalsCta: "View legal approvals",
     nextKicker: "Next step",
     nextTitle: "Begin where trust starts: free.",
@@ -228,7 +228,7 @@ const freePremiumCopy = {
     useCasesCta: "Read use cases",
     fairnessRuleTitle: "Fairness rule",
     fairnessRuleText:
-      "Premium should feel like conscious deepening, not a fear response. That is why Hermetia makes limits, cancellation, withdrawal and data protection visible.",
+      "Premium feels like conscious deepening, not a fear response. That is why Hermetia makes limits, cancellation, withdrawal and data protection visible.",
     faqKicker: "FAQ",
     faqTitle: "Frequently asked questions about Free and Premium",
     freeItems: [
@@ -261,7 +261,7 @@ const freePremiumCopy = {
     ],
     valueLadder: [
       { step: "1", title: "Test resonance", text: "The free start answers the first question: do I recognize myself in the language, method and soul map at all?" },
-      { step: "2", title: "Open depth", text: "Premium becomes useful when users want more levels, longer chapters, system references and a rereadable profile structure." },
+      { step: "2", title: "Open depth", text: "Premium becomes useful when you want more levels, longer chapters, system references and a rereadable profile structure." },
       { step: "3", title: "Support daily life", text: "Daily impulses, journaling, reviews and Companion turn a profile into an ongoing reflection practice." },
       { step: "4", title: "Relationships and history", text: "Relationship profiles, profile refinement and longer histories need consent, safety, calculation logic and more context." },
     ],
@@ -272,10 +272,10 @@ const freePremiumCopy = {
       { title: "Relationship profiles", text: "For conscious relationship readings with consent, resonance, friction, conversation prompts and data protection logic." },
     ],
     fairnessRules: [
-      "Premium must not be sold through fear, destiny pressure or artificial scarcity.",
-      "Free must show enough for users to test resonance, data protection feeling and tone.",
+      "Premium is not sold through fear, destiny pressure or artificial scarcity.",
+      "Free shows enough for you to test resonance, data protection feeling and tone.",
       "An upgrade makes sense when use develops over time: reading, journaling, asking, refining and returning.",
-      "Legal texts, withdrawal, cancellation, data protection and AI limits must remain understandable before purchase.",
+      "Legal texts, withdrawal, cancellation, data protection and AI limits remain understandable before purchase.",
     ],
     faq: [
       {
@@ -288,11 +288,11 @@ const freePremiumCopy = {
       },
       {
         q: "When should I not upgrade?",
-        a: "If you would upgrade only from fear, pressure or a wish for guaranteed predictions. Hermetia should not create FOMO, but support conscious reflection.",
+        a: "If you would upgrade only from fear, pressure or a wish for guaranteed predictions. Hermetia does not create FOMO, but supports conscious reflection.",
       },
       {
         q: "Can I cancel later?",
-        a: "Yes. Running subscriptions should be transparently cancellable. The website also links to terms, withdrawal information and legal approvals before final launch.",
+        a: "Yes. Running subscriptions are transparently cancellable. The website also links to terms, withdrawal information and legal approvals before final launch.",
       },
       {
         q: "How do I know Premium would be too early?",
@@ -304,7 +304,7 @@ const freePremiumCopy = {
       },
       {
         q: "Why is the free start important for trust?",
-        a: "Because Hermetia works with sensitive profile themes. Users should experience language, limits, data protection and first core themes before choosing paid depth.",
+        a: "Because Hermetia works with sensitive profile themes. You experience language, limits, data protection and first core themes before choosing paid depth.",
       },
     ],
   },
@@ -312,7 +312,7 @@ const freePremiumCopy = {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const copy = locale === "en" ? freePremiumCopy.en : freePremiumCopy.de;
+  const copy = locale === "de" ? freePremiumCopy.de : freePremiumCopy.en;
   return buildMetadata({
     locale: locale as Locale,
     path: paths.freePremium,
@@ -324,7 +324,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function FreePremiumPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  const copy = locale === "en" ? freePremiumCopy.en : freePremiumCopy.de;
+  const copy = locale === "de" ? freePremiumCopy.de : freePremiumCopy.en;
   const localizedFaq = copy.faq.map(({ q, a }) => ({ q, a }));
   const pageUrl = `${siteUrl}/${locale}${paths.freePremium}/`;
 

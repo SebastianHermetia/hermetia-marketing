@@ -6,17 +6,8 @@ import { AppCta } from "@/components/AppCta";
 import type { ContentPage } from "@/content/marketing";
 
 export function MarketingContentPage({ locale, page }: { locale: Locale; page: ContentPage }) {
-  const labels = locale === "en"
+  const labels = locale === "de"
     ? {
-        start: "Start profile",
-        read: "Read content",
-        toc: "On this page",
-        short: "In short",
-        graphics: "Graphics",
-        graphicsTitle: "How the method works in the background",
-        faq: "Frequently asked questions",
-      }
-    : {
         start: "Profil starten",
         read: "Inhalt lesen",
         toc: "Auf dieser Seite",
@@ -24,6 +15,15 @@ export function MarketingContentPage({ locale, page }: { locale: Locale; page: C
         graphics: "Grafiken",
         graphicsTitle: "So arbeitet die Methode im Hintergrund",
         faq: "Häufige Fragen",
+      }
+    : {
+        start: "Start profile",
+        read: "Read content",
+        toc: "On this page",
+        short: "In short",
+        graphics: "Graphics",
+        graphicsTitle: "How the method works in the background",
+        faq: "Frequently asked questions",
       };
 
   return (

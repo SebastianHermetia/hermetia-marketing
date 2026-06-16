@@ -8,11 +8,11 @@ import { Footer } from "@/components/Footer";
 import { Faq } from "@/components/Faq";
 import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
 
-const questionGroups = [
+const questionGroupsDe = [
   {
     kicker: "Einstieg",
     title: "Fragen vor der Anmeldung",
-    text: "Diese Antworten helfen Nutzern, den kostenlosen Start richtig einzuordnen: Was passiert im Onboarding, welche Daten werden gebraucht und wann entsteht der erste persönliche Aha-Moment?",
+    text: "Diese Antworten helfen dir, den kostenlosen Start richtig einzuordnen: Was passiert im Onboarding, welche Daten werden gebraucht und wann entsteht der erste persönliche Aha-Moment?",
     href: paths.onboarding,
     cta: "Onboarding ansehen",
   },
@@ -26,13 +26,37 @@ const questionGroups = [
   {
     kicker: "Vertrauen",
     title: "Fragen zu Datenschutz, AI und Grenzen",
-    text: "Spirituelle Profildaten sind sensibel. Nutzer brauchen klare Antworten zu Einwilligung, Löschung, AI-Transparenz, IP-Schutz, fehlenden Diagnosen und rechtlich vorsichtiger Sprache.",
+    text: "Spirituelle Profildaten sind sensibel. Du bekommst klare Antworten zu Einwilligung, Löschung, AI-Transparenz, IP-Schutz, fehlenden Diagnosen und rechtlich vorsichtiger Sprache.",
     href: paths.datenSicherheit,
     cta: "Datenschutz lesen",
   },
 ];
 
-const extraFaq = [
+const questionGroupsEn = [
+  {
+    kicker: "Start",
+    title: "Questions before signup",
+    text: "These answers help you understand the free start: what happens in onboarding, which data is needed and when the first personal aha moment appears.",
+    href: paths.onboarding,
+    cta: "View onboarding",
+  },
+  {
+    kicker: "Method",
+    title: "Questions about systems and convergence",
+    text: "Hermetia connects 31 systems through system families, weighting and convergence, not as a loose collection. The FAQ explains why several perspectives are stronger than one label.",
+    href: paths.methodik,
+    cta: "Understand method",
+  },
+  {
+    kicker: "Trust",
+    title: "Questions about privacy, AI and limits",
+    text: "Spiritual profile data is sensitive. You get clear answers about consent, deletion, AI transparency, IP care, no diagnoses and legally careful language.",
+    href: paths.datenSicherheit,
+    cta: "Read data protection",
+  },
+];
+
+const extraFaqDe = [
   {
     q: "Was ist Hermetia in einem Satz?",
     a: "Hermetia ist eine Plattform für spirituelle und psychologische Selbstreflexion, die aus Geburtsdaten, Selbstauskunft und 31 Systemperspektiven eine persönliche Seelenkarte und begleitende Impulse erstellt.",
@@ -47,7 +71,7 @@ const extraFaq = [
   },
   {
     q: "Kann ich Hermetia ohne genaue Geburtszeit nutzen?",
-    a: "Ja. Einige Systeme werden mit exakter Geburtszeit präziser, aber viele Bereiche bleiben nutzbar. Hermetia sollte transparent anzeigen, welche Aussagen sicherer und welche vorsichtiger zu lesen sind.",
+    a: "Ja. Einige Systeme werden mit exakter Geburtszeit präziser, aber viele Bereiche bleiben nutzbar. Hermetia kennzeichnet transparent, welche Aussagen sicherer und welche vorsichtiger zu lesen sind.",
   },
   {
     q: "Was bedeutet Konvergenz in Hermetia?",
@@ -67,15 +91,15 @@ const extraFaq = [
   },
   {
     q: "Kann ich meine Daten löschen oder exportieren?",
-    a: "Das Produktziel ist, persönliche Daten exportierbar und löschbar zu machen. Gerade bei sensiblen spirituellen Profilen sind klare Einwilligung, Zweckbindung und Löschwege zentrale Anforderungen.",
+    a: "Persönliche Daten bleiben exportierbar und löschbar. Gerade bei sensiblen spirituellen Profilen sind klare Einwilligung, Zweckbindung und Löschwege zentrale Anforderungen.",
   },
   {
     q: "Verwendet Hermetia fremde geschützte Deutungstexte?",
-    a: "Die Marketing-Website verwendet eigene Formulierungen und keine proprietären Systemtexte, Kartentexte oder Fragebogenitems Dritter. Systembezüge werden beschreibend und transformativ formuliert.",
+    a: "Hermetia verwendet eigene Formulierungen und keine proprietären Systemtexte, Kartentexte oder Fragebogenitems Dritter. Systembezüge werden beschreibend und transformativ formuliert.",
   },
   {
     q: "Sind Beziehungsprofile heimlich möglich?",
-    a: "Nein. Beziehungsauswertungen betreffen eine zweite Person und brauchen informierte Einwilligung. Hermetia sollte solche Profile nur mit klarer Zustimmung und transparenter Zweckbindung ermöglichen.",
+    a: "Nein. Beziehungsauswertungen betreffen eine zweite Person und brauchen informierte Einwilligung. Solche Profile gehören nur in einen Kontext mit klarer Zustimmung und transparenter Zweckbindung.",
   },
   {
     q: "Ist Hermetia Therapie oder psychologische Beratung?",
@@ -83,15 +107,66 @@ const extraFaq = [
   },
 ];
 
-const allFaq = (baseItems: { q: string; a: string }[]) => [...baseItems, ...extraFaq];
+const extraFaqEn = [
+  {
+    q: "What is Hermetia in one sentence?",
+    a: "Hermetia is a platform for spiritual and psychological self-reflection that creates a personal soul map and guiding impulses from birth data, self-reporting and 31 system perspectives.",
+  },
+  {
+    q: "Why should I sign up if the website already explains so much?",
+    a: "The website explains method, systems and limits in general. Only onboarding creates your personal soul map from your data. That is where you see whether the language and first core themes truly resonate with you.",
+  },
+  {
+    q: "Which data do I need to start?",
+    a: "The start typically uses date of birth, place of birth and, if available, birth time. Additional self-reporting can ground the profile. Hermetia marks when an imprecise birth time makes statements less certain.",
+  },
+  {
+    q: "Can I use Hermetia without an exact birth time?",
+    a: "Yes. Some systems become more precise with exact birth time, but many areas remain usable. Hermetia clearly marks which statements are more reliable and which should be read more carefully.",
+  },
+  {
+    q: "What does convergence mean in Hermetia?",
+    a: "Convergence means that several independent system families point to similar themes. Hermetia does not simply count related sources twice, but checks whether a theme is supported from different perspectives.",
+  },
+  {
+    q: "Is Hermetia scientifically proven?",
+    a: "Hermetia combines psychological questionnaires, symbolic systems and spiritual interpretation language. It is not a scientific diagnostic tool, but a reflection offer with transparent limits.",
+  },
+  {
+    q: "Does Hermetia make decisions for me?",
+    a: "No. Hermetia can make patterns, questions and fields of tension visible. Decisions remain yours and should be professionally supported for important medical, psychological, legal or financial topics.",
+  },
+  {
+    q: "Why are there paid models?",
+    a: "The free start shows first resonance. Paid models open more layers, daily impulses, journaling, the full profile book, Companion dialogues or relationship profiles. The value lies in depth and long-term companionship.",
+  },
+  {
+    q: "Can I delete or export my data?",
+    a: "Personal data remains exportable and deletable. Clear consent, purpose limitation and deletion paths are central requirements, especially for sensitive spiritual profiles.",
+  },
+  {
+    q: "Does Hermetia use protected third-party interpretation texts?",
+    a: "Hermetia uses original wording and no proprietary system texts, card texts or questionnaire items from third parties. System references are descriptive and transformative.",
+  },
+  {
+    q: "Are secret relationship profiles possible?",
+    a: "No. Relationship readings concern a second person and need informed consent. Such profiles belong only in a context with clear permission and transparent purpose limitation.",
+  },
+  {
+    q: "Is Hermetia therapy or psychological counselling?",
+    a: "No. Hermetia is inspiration for self-reflection. The platform does not diagnose, treat illnesses or replace medical, psychological or therapeutic counselling.",
+  },
+];
+
+const allFaq = (baseItems: { q: string; a: string }[], locale: Locale) => [...baseItems, ...(locale === "de" ? extraFaqDe : extraFaqEn)];
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = getDictionary(locale as Locale);
-  const title = locale === "en" ? "FAQ — All your questions about Hermetia" : "FAQ — Alle Fragen zu Hermetia";
-  const desc = locale === "en"
-    ? "Soul map, birth time, privacy, pricing and cancellation: all frequently asked questions about Hermetia, answered clearly."
-    : "Seelenkarte, Geburtszeit, Datenschutz, Preise und Kündigung: alle häufigen Fragen zu Hermetia, klar beantwortet.";
+  const title = locale === "de" ? "FAQ — Alle Fragen zu Hermetia" : "FAQ — All your questions about Hermetia";
+  const desc = locale === "de"
+    ? "Seelenkarte, Geburtszeit, Datenschutz, Preise und Kündigung: alle häufigen Fragen zu Hermetia, klar beantwortet."
+    : "Soul map, birth time, privacy, pricing and cancellation: all frequently asked questions about Hermetia, answered clearly.";
   return buildMetadata({ locale: locale as Locale, path: paths.faq, title, description: desc });
 }
 
@@ -99,8 +174,9 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: st
   const { locale: raw } = await params;
   const locale = raw as Locale;
   const t = getDictionary(locale);
-  const items = allFaq([...t.home.faq.items, ...t.preise.faq]);
+  const items = allFaq([...t.home.faq.items, ...t.preise.faq], locale);
   const pageUrl = `${siteUrl}/${locale}${paths.faq}/`;
+  const questionGroups = locale === "de" ? questionGroupsDe : questionGroupsEn;
 
   return (
     <>
@@ -143,7 +219,7 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: st
             <span className="kicker">Antwortbereiche</span>
             <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">Die wichtigsten Fragen vor dem ersten Profil.</h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Die FAQ ist als Entscheidungsseite gedacht. Sie soll Suchfragen direkt beantworten, Vertrauen aufbauen und Nutzer dann an die richtige Stelle führen: Start, Methode, Datenschutz oder Preise.
+              Die FAQ beantwortet Suchfragen direkt, baut Vertrauen auf und führt dich dann an die richtige Stelle: Start, Methode, Datenschutz oder Preise.
             </p>
           </div>
           <div className="grid gap-5 lg:grid-cols-3">

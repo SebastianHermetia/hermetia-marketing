@@ -32,7 +32,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
             <span className="kicker">Launch-Governance</span>
             <h1 className="mt-3 text-[clamp(32px,5vw,50px)]">Legal-, IP- und Launch-Freigaben</h1>
             <p className="lead mt-5 max-w-[820px]">
-              Hermetia soll Reichweite aufbauen, ohne rechtliche Grauzonen zu verstecken. Diese Seite zeigt, welche Leitplanken technisch und redaktionell bereits eingebaut sind und welche Punkte vor dem finalen Domain-Launch noch extern freigegeben werden müssen.
+              Hermetia baut Reichweite mit sichtbaren Leitplanken auf. Diese Seite zeigt, welche Schutzmaßnahmen technisch und redaktionell bereits eingebaut sind und welche Punkte vor dem finalen Domain-Launch noch extern freigegeben werden.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-4">
@@ -91,7 +91,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
               <div className="rounded-card border border-altrosa/25 bg-altrosa/10 p-6">
                 <h2 className="text-[clamp(24px,3vw,32px)]">Warum das conversion-relevant ist</h2>
                 <p className="muted mt-3 text-[17px] leading-[1.85]">
-                  Vertrauen ist Teil der Conversion. Nutzer sollen neugierig werden, sich anmelden und ein bezahltes Modell wählen können, ohne dass sensible Daten, AI-Deutung, Beziehungsprofile oder Preise unklar wirken.
+                  Vertrauen ist Teil der Conversion. Besucher sollen neugierig werden, sich anmelden und ein bezahltes Modell wählen können, ohne dass sensible Daten, AI-Deutung, Beziehungsprofile oder Preise unklar wirken.
                 </p>
               </div>
             </div>
