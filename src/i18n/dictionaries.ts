@@ -68,8 +68,9 @@ const partialDictionaries: Partial<Record<Locale, PartialDictionary>> = {
 
 export function getDictionary(locale: Locale): Dictionary {
   const dictionary = partialDictionaries[locale];
-  if (!dictionary) return de;
-  return deepMerge(de, dictionary);
+  if (!dictionary) return enTyped;
+  const base = locale === "de" ? de : enTyped;
+  return deepMerge(base, dictionary);
 }
 
 function deepMerge<T extends Record<string, unknown>>(base: T, override: DeepPartial<T>): T {

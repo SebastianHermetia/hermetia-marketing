@@ -1,6 +1,7 @@
 // Offizielle EU-Sprachen. Nicht vollständig redaktionell übersetzte Locales
-// fallen im Dictionary-Layer auf den deutschen Mastercontent zurück, bleiben
-// aber technisch mit eigener URL, hreflang und Sprachwahl erreichbar.
+// nutzen lokalisierte UI-Texte und fallen für fehlende Longform-Inhalte auf
+// den englischen Editorial-Content zurück. So bleiben Sprachrouten nutzbar,
+// ohne deutschen Body-Text in anderen Locales auszuspielen.
 export const locales = [
   "de",
   "en",

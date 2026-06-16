@@ -5,7 +5,7 @@ Konvergenz-Engine, Systeme, Wissen, Vergleiche, Preise und rechtliche Grenzen
 und führt Nutzer in Onboarding und Login der bestehenden Hermetia-App.
 
 - **Stack:** Next.js 16 (App Router), **statischer Export** (`output: "export"` → `/out`), Tailwind, TypeScript.
-- **i18n:** 24 offizielle EU-Sprachrouten. DE und EN sind redaktionell gepflegt, alle weiteren Sprachen haben lokalisierte UI-Texte und sichtbare Longform-Hinweise bis zur finalen Redaktion.
+- **i18n:** 24 offizielle EU-Sprachrouten. DE und EN sind redaktionell gepflegt, alle weiteren Sprachen haben lokalisierte UI-Texte und nutzen für fehlende Longform-Inhalte einen sichtbaren englischen Editorial-Fallback bis zur finalen Redaktion.
 - **SEO/GEO/AEO:** pro Seite canonical + hreflang, Schema.org JSON-LD (`Organization`, `FAQPage`, Content-/Produktdaten), `sitemap.xml`, `robots.txt`, OG-Bild.
 - **Contentumfang:** 31 Systemseiten, 51 Glossarbegriffe, 20 Wissensartikel, 12 Vergleichsseiten plus Pillar-, Preis-, Rechts-, Sprachstatus- und Freigabeseiten.
 - **Launch-Sicherheit:** noindex/nofollow in der Testphase, Asset-Inventar, Freigabe-Gates und CI-Prüfungen für Content, Assets und Compliance.

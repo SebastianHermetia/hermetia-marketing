@@ -42,6 +42,7 @@ for (const [label, actual, expected] of expectations) {
 const deHome = readOut("de");
 const enHome = readOut("en");
 const frHome = readOut("fr");
+const fiHome = readOut("fi");
 const frPricing = readOut("fr/preise");
 const esSystems = readOut("es/systeme");
 const plMethod = readOut("pl/so-entsteht-dein-profil");
@@ -172,6 +173,7 @@ const checks = [
   ["Language status page includes legal/safety QA", languages.includes("Rechtliche Sinngleichheit") && languages.includes("Keine Diagnose, Therapie oder Vorhersage")],
   ["Language status page is linked in footer", deHome.includes("/de/sprachen/")],
   ["FR UI navigation is localized", frHome.includes("Fonctionnalités") && frHome.includes("Commencer le profil")],
+  ["FI home uses localized UI and non-German body fallback", fiHome.includes("Ominaisuudet") && fiHome.includes("A portrait of your soul") && !fiHome.includes("Ein Bild deiner Seele") && !fiHome.includes("Sechs Wege, dich besser zu verstehen")],
   ["Launch review page exists", launchReview.includes("Legal-, IP- und Launch-Freigaben")],
   ["Launch review page states external legal review", launchReview.includes("keine anwaltliche Endfreigabe")],
   ["Launch review page lists indexing gate", launchReview.includes("Indexing und Domain-Launch")],
@@ -182,7 +184,7 @@ const checks = [
   ["Imprint page covers copyright and image rights", imprint.includes("Urheberrecht und Bildrechte") && imprint.includes("Geschützte Deutungstexte")],
   ["Imprint page has final launch check", imprint.includes("Finaler Launch-Check") && imprint.includes("noindex/nofollow")],
   ["Imprint page is linked in footer", deHome.includes("/de/impressum/")],
-  ["Imprint page has localized fallback SEO", frImprint.includes("<title>Impressum</title>") && frImprint.includes("Version éditoriale en préparation")],
+  ["Imprint page has localized fallback SEO", frImprint.includes("<title>Imprint</title>") && frImprint.includes("Version éditoriale en préparation")],
   ["About Hermetia page exists", about.includes("Ein System für Menschen") && about.includes("FAQPage")],
   ["About Hermetia page has tracked CTAs", about.includes("utm_content=about-hero") && about.includes("utm_content=about-paid-depth")],
   ["About Hermetia page is linked in footer", deHome.includes("/de/ueber-hermetia/")],
@@ -206,13 +208,13 @@ const checks = [
   ["Terms page covers user duties and relationship data", terms.includes("Nutzerpflichten und faire Nutzung") && terms.includes("heimlichen Bewertung")],
   ["Terms page covers rights and final review", terms.includes("Rechte an Inhalten und Nutzungsrechte") && terms.includes("rechtlich final geprüft")],
   ["Terms page is linked in footer", deHome.includes("/de/agb/")],
-  ["Terms page has localized fallback SEO", frTerms.includes("<title>Allgemeine Geschäftsbedingungen</title>") && frTerms.includes("Version éditoriale en préparation")],
+  ["Terms page has localized fallback SEO", frTerms.includes("<title>Terms and conditions</title>") && frTerms.includes("Version éditoriale en préparation")],
   ["Withdrawal page covers digital products", withdrawal.includes("digitale Leistungen von Hermetia") && withdrawal.includes("Vollprofil-Buch als digitales Produkt")],
   ["Withdrawal page covers immediate access", withdrawal.includes("Digitale Inhalte und Sofortzugriff") && withdrawal.includes("Zustimmung muss im Bestellprozess klar und getrennt erfolgen")],
   ["Withdrawal page separates subscriptions and cancellation", withdrawal.includes("Abonnements und laufende Verträge") && withdrawal.includes("Widerruf und Kündigung unterscheiden")],
   ["Withdrawal page has model form and final review", withdrawal.includes("Muster-Widerrufsformular") && withdrawal.includes("anwaltlich final geprüft")],
   ["Withdrawal page is linked in footer", deHome.includes("/de/widerruf/")],
-  ["Withdrawal page has localized fallback SEO", frWithdrawal.includes("<title>Widerrufsbelehrung</title>") && frWithdrawal.includes("Version éditoriale en préparation")],
+  ["Withdrawal page has localized fallback SEO", frWithdrawal.includes("<title>Right of withdrawal</title>") && frWithdrawal.includes("Version éditoriale en préparation")],
   ["Free vs Premium page exists", freePremium.includes("Erst Resonanz prüfen") && freePremium.includes("Nicht jeder sollte sofort upgraden")],
   ["Free vs Premium page has FAQ schema", freePremium.includes("FAQPage")],
   ["Free vs Premium page has value ladder", freePremium.includes("Werttreppe") && freePremium.includes("Von kostenloser Resonanz zu bezahlter Tiefe")],
@@ -244,7 +246,7 @@ const checks = [
   ["Privacy policy covers export deletion and security", privacyPolicy.includes("Speicherdauer, Löschung und Export") && privacyPolicy.includes("verschlüsselte Übertragung")],
   ["Privacy policy covers advertising limits and final review", privacyPolicy.includes("Keine Weitergabe zu Werbezwecken") && privacyPolicy.includes("anwaltlich freigegeben")],
   ["Privacy policy is linked in footer", deHome.includes("/de/datenschutz/")],
-  ["Privacy policy has localized fallback SEO", frPrivacyPolicy.includes("<title>Datenschutzerklärung</title>") && frPrivacyPolicy.includes("Version éditoriale en préparation")],
+  ["Privacy policy has localized fallback SEO", frPrivacyPolicy.includes("<title>Privacy policy</title>") && frPrivacyPolicy.includes("Version éditoriale en préparation")],
   ["AI transparency page exists", aiTransparency.includes("Warum Hermetia KI-Transparenz offenlegt") && aiTransparency.includes("EU AI Act")],
   ["AI transparency page separates calculation and wording", aiTransparency.includes("Berechnung, Konvergenz und Formulierung sind getrennt") && aiTransparency.includes("Erst danach kommt AI als Formulierungsebene hinzu")],
   ["AI transparency page explains data minimization", aiTransparency.includes("Welche Daten AI verarbeitet") && aiTransparency.includes("Prinzip der Datenminimierung")],
@@ -255,7 +257,7 @@ const checks = [
   ["EN AI transparency page has localized longform sections", enAiTransparency.includes("Why Hermetia discloses AI transparency") && enAiTransparency.includes("Calculation, convergence and wording are separate") && enAiTransparency.includes("Premium content and fair conversion")],
   ["EN AI transparency page has no German core headings", !enAiTransparency.includes("Warum Hermetia KI-Transparenz offenlegt") && !enAiTransparency.includes("Berechnung, Konvergenz und Formulierung sind getrennt") && !enAiTransparency.includes("Premium-Inhalte und faire Conversion")],
   ["AI transparency page is linked in footer", deHome.includes("/de/ki-transparenz/")],
-  ["AI transparency page has localized fallback SEO", frAiTransparency.includes("<title>KI-Transparenz</title>") && frAiTransparency.includes("Version éditoriale en préparation")],
+  ["AI transparency page has localized fallback SEO", frAiTransparency.includes("<title>AI transparency</title>") && frAiTransparency.includes("Version éditoriale en préparation")],
   ["Relationships page has consent framing", relationships.includes("Warum Einwilligung unverzichtbar ist") && relationships.includes("Wer andere heimlich auswerten will")],
   ["Relationships page has use questions", relationships.includes("Welche Beziehungsfragen Hermetia beantworten kann") && relationships.includes("Partnerschaft, Freundschaft, Familie")],
   ["Relationships page has resonance model", relationships.includes("Resonanz, Reibung und Entwicklungsfeld") && relationships.includes("Harmoniepunkte")],
