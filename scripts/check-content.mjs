@@ -41,6 +41,7 @@ for (const [label, actual, expected] of expectations) {
 
 const deHome = readOut("de");
 const enHome = readOut("en");
+const bgHome = readOut("bg");
 const frHome = readOut("fr");
 const fiHome = readOut("fi");
 const frPricing = readOut("fr/preise");
@@ -173,6 +174,7 @@ const checks = [
   ["Language status page includes legal/safety QA", languages.includes("Rechtliche Sinngleichheit") && languages.includes("Keine Diagnose, Therapie oder Vorhersage")],
   ["Language status page is linked in footer", deHome.includes("/de/sprachen/")],
   ["FR UI navigation is localized", frHome.includes("Fonctionnalités") && frHome.includes("Commencer le profil")],
+  ["BG home has localized body copy", bgHome.includes("Функции") && bgHome.includes("Образ на вашата душа") && bgHome.includes("Шест начина да разберете себе си по-добре") && !bgHome.includes("A portrait of your soul")],
   ["FI home uses localized UI and non-German body fallback", fiHome.includes("Ominaisuudet") && fiHome.includes("A portrait of your soul") && !fiHome.includes("Ein Bild deiner Seele") && !fiHome.includes("Sechs Wege, dich besser zu verstehen")],
   ["Launch review page exists", launchReview.includes("Legal-, IP- und Launch-Freigaben")],
   ["Launch review page states external legal review", launchReview.includes("keine anwaltliche Endfreigabe")],
