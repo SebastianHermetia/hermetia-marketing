@@ -47,7 +47,7 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
             </div>
             <div className="rounded-card border border-altrosa/25 bg-altrosa/10 p-5">
               <span className="kicker">Grenzen</span>
-              <p className="muted mt-2 leading-relaxed">Keines der Systeme sollte allein über eine Person entscheiden. Hermetia nutzt Vergleiche als Orientierung, nicht als endgültiges Urteil.</p>
+              <p className="muted mt-2 leading-relaxed">Keines der Systeme entscheidet allein über eine Person. Hermetia nutzt Vergleiche als Orientierung, nicht als endgültiges Urteil.</p>
             </div>
           </div>
           <div className="mt-8 rounded-card border border-sand bg-creme-tief p-6">
@@ -140,7 +140,7 @@ function comparisonFaq(comparison: (typeof comparisons)[number]) {
     },
     {
       q: "Kann ich den Vergleich kostenlos auf mein Profil anwenden?",
-      a: "Der Einstieg ins Profil ist kostenlos. Tiefere Ebenen und zusätzliche Auswertungen können später Teil eines bezahlten Modells sein.",
+      a: "Der Einstieg ins Profil ist kostenlos. Tiefere Ebenen und zusätzliche Auswertungen gehören zur bewussten Premium-Entscheidung.",
     },
   ];
 }

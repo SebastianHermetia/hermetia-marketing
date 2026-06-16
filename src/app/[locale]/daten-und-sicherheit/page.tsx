@@ -22,7 +22,7 @@ const dataTypes = [
   },
   {
     title: "Nutzungs- und Zahlungsdaten",
-    text: "Journaling, Feedback, Tarifstatus und Zahlungsabwicklung. Vollständige Kartendaten sollen nicht bei Hermetia gespeichert werden.",
+    text: "Journaling, Feedback, Tarifstatus und Zahlungsabwicklung. Vollständige Kartendaten liegen beim spezialisierten Zahlungsdienstleister, nicht in der Profilauswertung.",
   },
 ];
 
@@ -46,7 +46,7 @@ const trustQuestions = [
   },
   {
     title: "Was macht AI mit meinen Daten?",
-    text: "AI soll bei Hermetia nicht frei über rohe Identitätsdaten spekulieren. Die Produktlogik trennt Berechnung, Konvergenz und Formulierung. AI nutzt nur notwendige, freigegebene Kontexte, um berechnete Ergebnisse verständlicher zu machen.",
+    text: "AI spekuliert bei Hermetia nicht frei über rohe Identitätsdaten. Die Produktlogik trennt Berechnung, Konvergenz und Formulierung. AI nutzt nur notwendige, freigegebene Kontexte, um berechnete Ergebnisse verständlicher zu machen.",
   },
 ];
 
@@ -69,14 +69,14 @@ const lifecycle = [
   {
     step: "4",
     title: "Kontrollieren",
-    text: "Nutzer brauchen Export, Löschung, Widerruf, Tarifkontrolle und klare Grenzen für Journal- und Beziehungskontexte.",
+    text: "Du brauchst Export, Löschung, Widerruf, Tarifkontrolle und klare Grenzen für Journal- und Beziehungskontexte.",
   },
 ];
 
 const riskControls = [
   {
     title: "Beziehungsdaten",
-    text: "Profile anderer Menschen sind besonders schutzbedürftig. Hermetia sollte Consent-Flows, getrennte Einwilligung und klare Sichtbarkeit der geteilten Daten vorsehen.",
+    text: "Profile anderer Menschen sind besonders schutzbedürftig. Beziehungsauswertungen brauchen deshalb Consent-Flows, getrennte Einwilligung und klare Sichtbarkeit der geteilten Daten.",
   },
   {
     title: "Journaltexte",
@@ -88,7 +88,7 @@ const riskControls = [
   },
   {
     title: "Launch und Indexierung",
-    text: "Vor Domainumzug und finaler Freigabe bleibt noindex/nofollow sinnvoll. Erst nach externer Legal/IP-Prüfung sollte die Reichweitenmaschine vollständig geöffnet werden.",
+    text: "Bis Domain, Rechtstexte und Freigaben final sind, schützt noindex/nofollow vor verfrühter Indexierung. Danach kann die Website gezielt für Suchmaschinen geöffnet werden.",
   },
 ];
 
@@ -103,7 +103,7 @@ const faq = [
   },
   {
     q: "Sieht die AI mein rohes Geburtsdatum?",
-    a: "Das Produktkonzept trennt Rechenkern, Konvergenz und AI-Formulierung. AI soll mit abgeleiteten Signalen arbeiten und nicht als Autorität über rohe Identitätsdaten auftreten.",
+    a: "Hermetia trennt Rechenkern, Konvergenz und AI-Formulierung. AI arbeitet mit abgeleiteten Signalen und tritt nicht als Autorität über rohe Identitätsdaten auf.",
   },
   {
     q: "Kann ich meine Daten löschen?",
@@ -115,7 +115,7 @@ const faq = [
   },
   {
     q: "Werden meine Daten für Werbung verkauft?",
-    a: "Nein. Die Website rahmt keine Weitergabe zu Werbezwecken als Produktprinzip. Für den finalen Launch müssen die formalen Rechtstexte diese Linie verbindlich abbilden.",
+    a: "Nein. Hermetia rahmt keine Weitergabe zu Werbezwecken als Produktprinzip. Für den finalen Launch bilden die formalen Rechtstexte diese Linie verbindlich ab.",
   },
   {
     q: "Warum sind Beziehungsauswertungen anders geregelt?",
@@ -138,7 +138,7 @@ const dataSecurityCopy = {
     heroKicker: "Daten und Sicherheit",
     heroTitle: "Persönliche Tiefe braucht verständlichen Datenschutz.",
     heroLead:
-      "Hermetia arbeitet mit Geburtsdaten und abgeleiteten Profilinhalten. Das kann sehr persönlich werden. Deshalb müssen Einwilligung, Datenminimierung, Export, Löschung, Zahlung und AI-Transparenz nicht irgendwo versteckt sein, sondern vor dem Profilstart klar werden.",
+      "Hermetia arbeitet mit Geburtsdaten und abgeleiteten Profilinhalten. Das kann sehr persönlich werden. Deshalb werden Einwilligung, Datenminimierung, Export, Löschung, Zahlung und AI-Transparenz vor dem Profilstart klar erklärt.",
     startCta: "Profil kostenlos starten",
     privacyCta: "Datenschutzerklärung lesen",
     heroAlt: "Abstrakte Datentopografie als Bild für Hermetia Datenschutz und Sicherheit",
@@ -146,24 +146,24 @@ const dataSecurityCopy = {
     dataKicker: "Welche Daten?",
     dataTitle: "Vier Datenbereiche, klar getrennt.",
     dataText:
-      "Nutzer sollen verstehen, welche Informationen wofür gebraucht werden. So entsteht Vertrauen vor der Anmeldung und vor jedem bezahlten Modell.",
+      "Du siehst, welche Informationen wofür gebraucht werden. So entsteht Vertrauen vor der Anmeldung und vor jedem bezahlten Modell.",
     trustKicker: "Trust-Fragen",
     trustTitle: "Die drei wichtigsten Sicherheitsfragen vor dem Profilstart.",
     trustText:
-      "Hermetia soll Nutzer neugierig machen, aber nicht dazu bringen, sensible Daten unüberlegt einzugeben. Deshalb beantwortet die Seite früh, warum die Daten besonders sind, wofür Einwilligung gebraucht wird und wie AI begrenzt bleibt.",
+      "Hermetia macht neugierig, ohne dich zu unüberlegter Dateneingabe zu drängen. Deshalb beantwortet die Seite früh, warum die Daten besonders sind, wofür Einwilligung gebraucht wird und wie AI begrenzt bleibt.",
     safeguardsKicker: "Schutzprinzipien",
-    safeguardsTitle: "Was vor dem Onboarding klar sein soll.",
+    safeguardsTitle: "Was vor dem Onboarding klar ist.",
     safeguardsText:
-      "Hermetia soll Neugier erzeugen, aber keine blinde Dateneingabe. Die folgenden Prinzipien sind deshalb Teil der Website, der Freigabe-Gates und der Produktlogik.",
+      "Hermetia weckt Neugier, aber keine blinde Dateneingabe. Die folgenden Prinzipien zeigen, worauf du dich vor dem Profilstart verlassen kannst.",
     approvalsCta: "Launch-Freigaben ansehen",
     lifecycleKicker: "Daten-Lebenszyklus",
     lifecycleTitle: "Von der Eingabe bis zur Kontrolle.",
     lifecycleText:
-      "Datenschutz wird verständlicher, wenn Nutzer sehen, an welcher Stelle welche Verarbeitung passiert. Diese Struktur hilft auch intern: Content, App, Rechtstexte und Freigabe-Gates müssen dieselbe Logik erzählen.",
+      "Datenschutz wird verständlicher, wenn du siehst, an welcher Stelle welche Verarbeitung passiert: von der Eingabe über Berechnung und Formulierung bis zu Export, Löschung und Widerruf.",
     risksKicker: "Risikobereiche",
-    risksTitle: "Wo Hermetia besonders vorsichtig sein muss.",
+    risksTitle: "Wo Hermetia besonders vorsichtig ist.",
     risksText:
-      "Nicht alle Daten haben dasselbe Risiko. Beziehungsauswertungen, Journaltexte, Zahlungsstatus und Launch-Indexierung brauchen besonders klare Regeln, weil hier Vertrauen schnell gewonnen oder verloren wird.",
+      "Nicht alle Daten haben dasselbe Risiko. Beziehungsauswertungen, Journaltexte, Zahlungsstatus und öffentliche Indexierung brauchen besonders klare Regeln, weil hier Vertrauen schnell gewonnen oder verloren wird.",
     pipelineAlt: "Pipeline-Grafik für Verarbeitung und Einordnung von Hermetia-Daten",
     pipelineCaption: "Die Pipeline macht sichtbar, dass Rohdaten, Einordnung, Konvergenz und Sprache getrennte Schritte sind.",
     funnelAlt: "Algorithmus-Funnel von Daten zu Kernthemen und verständlicher Sprache",
@@ -195,7 +195,7 @@ const dataSecurityCopy = {
     heroKicker: "Data and security",
     heroTitle: "Personal depth needs understandable data protection.",
     heroLead:
-      "Hermetia works with birth data and derived profile content. That can become very personal. Consent, data minimization, export, deletion, payment and AI transparency must therefore be clear before profile start, not hidden somewhere else.",
+      "Hermetia works with birth data and derived profile content. That can become very personal. Consent, data minimization, export, deletion, payment and AI transparency are therefore clear before profile start, not hidden somewhere else.",
     startCta: "Start profile for free",
     privacyCta: "Read privacy policy",
     heroAlt: "Abstract data topography as an image for Hermetia data protection and security",
@@ -203,26 +203,26 @@ const dataSecurityCopy = {
     dataKicker: "Which data?",
     dataTitle: "Four data areas, clearly separated.",
     dataText:
-      "Users should understand which information is needed for which purpose. That creates trust before signup and before every paid model.",
+      "You can see which information is needed for which purpose. That creates trust before signup and before every paid model.",
     dataTypes: [
       { title: "Account data", text: "For example email, password hash, language setting and technical session information. These data make account and login usable." },
       { title: "Birth and profile data", text: "Date of birth, optional birth time, place of birth and calculated system signals. These data are the core of the soul map." },
       { title: "Derived interpretations", text: "Texts, levels, core themes and reflection content may touch worldview-related or spiritual statements and are therefore handled with special care." },
-      { title: "Usage and payment data", text: "Journaling, feedback, plan status and payment processing. Full card data should not be stored by Hermetia." },
+      { title: "Usage and payment data", text: "Journaling, feedback, plan status and payment processing. Full card data stays with the specialized payment provider, not in profile interpretation." },
     ],
     trustKicker: "Trust questions",
     trustTitle: "The three most important security questions before profile start.",
     trustText:
-      "Hermetia should make users curious, but not make them enter sensitive data without thought. The page therefore explains early why the data is special, what consent is needed for and how AI remains limited.",
+      "Hermetia makes you curious without pushing you into careless data entry. The page therefore explains early why the data is special, what consent is needed for and how AI remains limited.",
     trustQuestions: [
       { title: "Why are spiritual profiles especially sensitive?", text: "Birth data may look neutral at first. Combined with interpretation systems, it can produce statements about worldview, identity, relationships, calling, inner conflicts or spiritual orientation. Hermetia therefore does not treat these derivations like harmless marketing data." },
       { title: "What role does consent play?", text: "Profile start needs understandable consent for processing sensitive profile information. For relationship readings, the consent of one person is not enough because statements about a second person may also be created." },
-      { title: "What does AI do with my data?", text: "AI in Hermetia should not freely speculate about raw identity data. The product logic separates calculation, convergence and wording. AI uses only necessary, approved contexts to make calculated results easier to understand." },
+      { title: "What does AI do with my data?", text: "AI in Hermetia does not freely speculate about raw identity data. Hermetia separates calculation, convergence and wording. AI uses only necessary, approved contexts to make calculated results easier to understand." },
     ],
     safeguardsKicker: "Protection principles",
-    safeguardsTitle: "What should be clear before onboarding.",
+    safeguardsTitle: "What is clear before onboarding.",
     safeguardsText:
-      "Hermetia should create curiosity, but not blind data entry. The following principles are therefore part of the website, approval gates and product logic.",
+      "Hermetia creates curiosity, but not blind data entry. The following principles show what you can rely on before profile start.",
     approvalsCta: "View launch approvals",
     safeguards: [
       "explicit consent for sensitive profile processing",
@@ -235,22 +235,22 @@ const dataSecurityCopy = {
     lifecycleKicker: "Data lifecycle",
     lifecycleTitle: "From input to control.",
     lifecycleText:
-      "Data protection becomes easier to understand when users see where processing happens. This structure also helps internally: content, app, legal texts and approval gates must tell the same logic.",
+      "Data protection becomes easier to understand when you can see where processing happens: from input through calculation and wording to export, deletion and withdrawal.",
     lifecycle: [
       { step: "1", title: "Collect", text: "Ask only for data needed for account, profile, security, payment or selected functions." },
       { step: "2", title: "Calculate", text: "Translate birth and profile data into reproducible signals before understandable interpretation texts are created." },
       { step: "3", title: "Phrase", text: "AI and editorial logic may explain, but not diagnose, decide or copy protected third-party texts." },
-      { step: "4", title: "Control", text: "Users need export, deletion, withdrawal, plan control and clear limits for journal and relationship contexts." },
+      { step: "4", title: "Control", text: "You need export, deletion, withdrawal, plan control and clear limits for journal and relationship contexts." },
     ],
     risksKicker: "Risk areas",
-    risksTitle: "Where Hermetia must be especially careful.",
+    risksTitle: "Where Hermetia is especially careful.",
     risksText:
-      "Not all data has the same risk. Relationship readings, journal texts, payment status and launch indexing need especially clear rules because trust can be won or lost quickly here.",
+      "Not all data has the same risk. Relationship readings, journal texts, payment status and public indexing need especially clear rules because trust can be won or lost quickly here.",
     riskControls: [
-      { title: "Relationship data", text: "Profiles of other people need special protection. Hermetia should provide consent flows, separate permission and clear visibility of shared data." },
+      { title: "Relationship data", text: "Profiles of other people need special protection. Relationship readings therefore require consent flows, separate permission and clear visibility of shared data." },
       { title: "Journal texts", text: "Journaling can contain intimate experiences. AI summaries may happen only transparently, purpose-bound and with data minimization." },
-      { title: "Payments", text: "Plan status and invoice data must be processed cleanly. Full payment data belongs to specialized payment providers, not into profile interpretation." },
-      { title: "Launch and indexing", text: "Before domain move and final approval, noindex/nofollow remains useful. Only after external legal and IP review should the reach engine be fully opened." },
+      { title: "Payments", text: "Plan status and invoice data are processed separately from profile interpretation. Full payment data belongs to specialized payment providers." },
+      { title: "Launch and indexing", text: "Until domain, legal texts and approvals are final, noindex/nofollow protects against premature indexing. Afterwards the website can be opened deliberately for search engines." },
     ],
     pipelineAlt: "Pipeline graphic for processing and classifying Hermetia data",
     pipelineCaption: "The pipeline shows that raw data, classification, convergence and language are separate steps.",
@@ -269,11 +269,11 @@ const dataSecurityCopy = {
     faq: [
       { q: "Why does Hermetia talk about sensitive data?", a: "Hermetia can derive spiritual or worldview-related profile content from birth data and systems. Such statements can be very personal and are therefore explained and processed with special care." },
       { q: "Does Hermetia need my exact birth time?", a: "Not necessarily. An exact birth time improves certain systems. Without exact time, Hermetia marks which statements are less certain." },
-      { q: "Does AI see my raw birth date?", a: "The product concept separates calculation core, convergence and AI wording. AI should work with derived signals and not appear as an authority over raw identity data." },
+      { q: "Does AI see my raw birth date?", a: "Hermetia separates calculation core, convergence and AI wording. AI works with derived signals and does not appear as an authority over raw identity data." },
       { q: "Can I delete my data?", a: "Yes, deletion and export are intended as core rights. The formal privacy policy describes rights to access, rectification, deletion, portability and withdrawal." },
-      { q: "Is this page legal advice?", a: "No. This page explains the product logic in understandable language. Formal legal texts and external data-protection/legal review remain decisive for final launch." },
-      { q: "Will my data be sold for advertising?", a: "No. The website frames no disclosure for advertising purposes as a product principle. For final launch, the formal legal texts must make this binding." },
-      { q: "Why are relationship readings regulated differently?", a: "Because they can create data and derivations about at least two people. Hermetia therefore needs clear consent from the affected person and must not normalize secret readings." },
+      { q: "Is this page legal advice?", a: "No. This page explains the data logic in understandable language. Formal legal texts and external data-protection/legal review remain decisive for final launch." },
+      { q: "Will my data be sold for advertising?", a: "No. Hermetia frames no disclosure for advertising purposes as a product principle. For final launch, the formal legal texts make this binding." },
+      { q: "Why are relationship readings regulated differently?", a: "Because they can create data and derivations about at least two people. Hermetia therefore needs clear consent from the affected person and does not normalize secret readings." },
       { q: "Why does the website remain noindex/nofollow before launch?", a: "As long as domain move, final legal texts and external legal/IP approval are not complete, noindex/nofollow is useful protection against premature indexing." },
     ],
   },
@@ -281,7 +281,7 @@ const dataSecurityCopy = {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const copy = locale === "en" ? dataSecurityCopy.en : dataSecurityCopy.de;
+  const copy = locale === "de" ? dataSecurityCopy.de : dataSecurityCopy.en;
   return buildMetadata({
     locale: locale as Locale,
     path: paths.datenSicherheit,
@@ -293,7 +293,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function DataSecurityPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  const copy = locale === "en" ? dataSecurityCopy.en : dataSecurityCopy.de;
+  const copy = locale === "de" ? dataSecurityCopy.de : dataSecurityCopy.en;
   const localizedFaq = copy.faq.map(({ q, a }) => ({ q, a }));
   const pageUrl = `${siteUrl}/${locale}${paths.datenSicherheit}/`;
 

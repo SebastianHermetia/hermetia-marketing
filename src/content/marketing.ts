@@ -108,22 +108,22 @@ const dePages = {
       {
         title: "Ebenen statt Informationswand",
         body:
-          "Hermetia gliedert dein Profil in Ebenen: Wesenskern, Gaben, Schatten, Beziehung, Berufung, Rhythmus und Seelenweg. Jede Ebene kann für sich gelesen werden. Dadurch entsteht eine geführte Reise. Du musst nicht alles auf einmal verstehen, sondern kannst nach und nach tiefer gehen. Für die Website ist diese Struktur wichtig, weil sie den Unterschied zwischen kostenlosem Einstieg und bezahlter Tiefe erklärt: Der erste Blick zeigt Resonanz, die vollständigen Ebenen machen aus einem Aha-Moment eine langfristig nutzbare Ressource.",
+          "Hermetia gliedert dein Profil in Ebenen: Wesenskern, Gaben, Schatten, Beziehung, Berufung, Rhythmus und Seelenweg. Jede Ebene kann für sich gelesen werden. Dadurch entsteht eine geführte Reise. Du musst nicht alles auf einmal verstehen, sondern kannst nach und nach tiefer gehen. Der erste Blick zeigt Resonanz, die vollständigen Ebenen machen aus einem Aha-Moment eine langfristig nutzbare Ressource.",
       },
       {
         title: "Welche Daten in die Seelenkarte einfließen",
         body:
-          "Die Seelenkarte kann Geburtsdatum, Geburtsort, Geburtszeit, Namen, Selbstauskunft und spätere Profilverfeinerungen nutzen. Nicht jede Angabe ist für jedes System gleich wichtig. Eine genaue Geburtszeit verbessert zeit- und ortsabhängige Systeme, während Fragebögen Alltag, Verhalten und Selbstwahrnehmung erden. Hermetia muss deshalb transparent zeigen, welche Aussagen auf welchen Eingaben beruhen und wo Unsicherheit besteht. Das stärkt Vertrauen, verhindert Überdeutung und unterstützt eine informierte Entscheidung im Onboarding.",
+          "Die Seelenkarte kann Geburtsdatum, Geburtsort, Geburtszeit, Namen, Selbstauskunft und spätere Profilverfeinerungen nutzen. Nicht jede Angabe ist für jedes System gleich wichtig. Eine genaue Geburtszeit verbessert zeit- und ortsabhängige Systeme, während Fragebögen Alltag, Verhalten und Selbstwahrnehmung erden. Hermetia zeigt transparent, welche Aussagen auf welchen Eingaben beruhen und wo Unsicherheit besteht. Das stärkt Vertrauen, verhindert Überdeutung und unterstützt eine informierte Entscheidung im Onboarding.",
       },
       {
         title: "Von Systemsignalen zu Kernthemen",
         body:
-          "Die Seelenkarte entsteht nicht dadurch, dass Hermetia 31 Systeme nacheinander ausgibt. Zuerst werden Rohsignale berechnet, dann in Themen übersetzt, in Systemfamilien gruppiert und über die Konvergenz-Engine gewichtet. So wird sichtbar, ob ein Motiv nur aus einer Datenfamilie kommt oder ob unabhängige Perspektiven dasselbe Thema tragen. Nutzer sollen dadurch verstehen: Eine starke Aussage ist bei Hermetia nicht lauter, weil sie dramatisch klingt, sondern belastbarer, weil sie nachvollziehbar hergeleitet wird.",
+          "Die Seelenkarte entsteht nicht dadurch, dass Hermetia 31 Systeme nacheinander ausgibt. Zuerst werden Rohsignale berechnet, dann in Themen übersetzt, in Systemfamilien gruppiert und über die Konvergenz-Engine gewichtet. So wird sichtbar, ob ein Motiv nur aus einer Datenfamilie kommt oder ob unabhängige Perspektiven dasselbe Thema tragen. Eine starke Aussage ist bei Hermetia nicht lauter, weil sie dramatisch klingt, sondern belastbarer, weil sie nachvollziehbar hergeleitet wird.",
       },
       {
         title: "Was kostenlos sichtbar wird",
         body:
-          "Der kostenlose Profilstart soll genug zeigen, um eine echte Entscheidung zu ermöglichen: erste Kernthemen, eine verständliche Grundresonanz und ein Gefühl dafür, ob Sprache, Ton und Datenschutz stimmig sind. Dieser Bereich darf nicht künstlich leer wirken. Er soll neugierig machen, aber fair bleiben. Wer nach dem kostenlosen Einstieg merkt, dass Hermetia nicht passt, hat trotzdem Orientierung gewonnen. Wer Resonanz spürt, versteht klarer, warum Premium-Tiefe sinnvoll werden kann.",
+          "Der kostenlose Profilstart zeigt genug für eine echte Entscheidung: erste Kernthemen, eine verständliche Grundresonanz und ein Gefühl dafür, ob Sprache, Ton und Datenschutz stimmig sind. Der Einstieg wirkt nicht künstlich leer, sondern neugierig und fair. Wer nach dem kostenlosen Einstieg merkt, dass Hermetia nicht passt, hat trotzdem Orientierung gewonnen. Wer Resonanz spürt, versteht klarer, warum Premium-Tiefe sinnvoll werden kann.",
       },
       {
         title: "Was Premium an der Seelenkarte vertieft",
@@ -133,7 +133,7 @@ const dePages = {
       {
         title: "Der persönliche Nutzen",
         body:
-          "Die Seelenkarte soll dich neugierig machen, ohne dich zu vereinnahmen. Sie kann Worte für Muster geben, die du schon lange spürst, aber schwer greifen konntest. Gleichzeitig bleibt sie offen: Wenn etwas nicht resoniert, ist das ein wertvoller Hinweis. Hermetia ist Reflexion, keine Festlegung. Der Nutzen liegt nicht darin, eine neue Identität zu behaupten, sondern bessere Fragen zu ermöglichen: Wo erkenne ich mich? Wo widerspreche ich? Was möchte ich beobachten? Was verändert sich, wenn ich dieses Muster nicht bekämpfe, sondern verstehe?",
+          "Die Seelenkarte macht dich neugierig, ohne dich zu vereinnahmen. Sie kann Worte für Muster geben, die du schon lange spürst, aber schwer greifen konntest. Gleichzeitig bleibt sie offen: Wenn etwas nicht resoniert, ist das ein wertvoller Hinweis. Hermetia ist Reflexion, keine Festlegung. Der Nutzen liegt nicht darin, eine neue Identität zu behaupten, sondern bessere Fragen zu ermöglichen: Wo erkenne ich mich? Wo widerspreche ich? Was möchte ich beobachten? Was verändert sich, wenn ich dieses Muster nicht bekämpfe, sondern verstehe?",
       },
       {
         title: "Rechtliche und ethische Grenzen",
@@ -176,14 +176,14 @@ const dePages = {
     lead:
       "Hermetia begleitet nicht mit Druck, sondern mit einem ruhigen Fokus: ein Satz, eine Frage, ein kleiner Blick auf das, was heute in dir anklingen könnte.",
     answer:
-      "Ein Hermetia-Tagesimpuls ist kein allgemeines Horoskop. Er verbindet dein dauerhaftes Profil mit aktuellen Zyklen und formuliert daraus einen reflektierenden Tagesfokus. Der Impuls soll nicht vorhersagen, sondern Aufmerksamkeit bündeln.",
+      "Ein Hermetia-Tagesimpuls ist kein allgemeines Horoskop. Er verbindet dein dauerhaftes Profil mit aktuellen Zyklen und formuliert daraus einen reflektierenden Tagesfokus. Der Impuls sagt nicht die Zukunft voraus, sondern bündelt Aufmerksamkeit.",
     image: "/images/hermetia/dawn-clock-of-becoming.png",
     imageAlt: "Ein abstrakter Tagesmechanismus als Symbol für Hermetia Tagesimpulse",
     sections: [
       {
         title: "Der Unterschied zum Tageshoroskop",
         body:
-          "Ein Tageshoroskop spricht meist für ein Sternzeichen und damit für sehr viele Menschen gleichzeitig. Hermetia arbeitet enger: Dein persönliches Profil bleibt die Grundlage, Tagesdaten färben nur den Fokus. Dadurch entsteht kein lauter Anspruch, sondern ein persönlicher Reflexionsrahmen. Der Impuls soll nicht behaupten, was passieren wird. Er fragt, welche Qualität heute zu deinen Kernthemen passen könnte und welche Beobachtung daraus sinnvoll wird.",
+          "Ein Tageshoroskop spricht meist für ein Sternzeichen und damit für sehr viele Menschen gleichzeitig. Hermetia arbeitet enger: Dein persönliches Profil bleibt die Grundlage, Tagesdaten färben nur den Fokus. Dadurch entsteht kein lauter Anspruch, sondern ein persönlicher Reflexionsrahmen. Der Impuls behauptet nicht, was passieren wird. Er fragt, welche Qualität heute zu deinen Kernthemen passen könnte und welche Beobachtung daraus sinnvoll wird.",
       },
       {
         title: "Wie ein persönlicher Tagesimpuls entsteht",
@@ -203,7 +203,7 @@ const dePages = {
       {
         title: "Rhythmus statt Dauerbeschallung",
         body:
-          "Tagesimpulse sollten nicht wie ein weiterer Feed funktionieren. Hermetia ist stärker, wenn der Nutzer Frequenz und Tiefe bewusst wählen kann: täglich, mehrmals pro Woche, nur zu bestimmten Themen oder pausiert. Diese Produktlogik schützt vor FOMO und macht die Begleitung wertvoller. Ein guter Impuls darf auch leise sein. Er muss nicht jeden Tag dramatisch wirken, sondern soll Aufmerksamkeit so bündeln, dass sie im Alltag tragbar bleibt.",
+          "Tagesimpulse funktionieren nicht wie ein weiterer Feed. Hermetia wird stärker, wenn du Frequenz und Tiefe bewusst wählen kannst: täglich, mehrmals pro Woche, nur zu bestimmten Themen oder pausiert. Diese Logik schützt vor FOMO und macht die Begleitung wertvoller. Ein guter Impuls darf auch leise sein. Er muss nicht jeden Tag dramatisch wirken, sondern bündelt Aufmerksamkeit so, dass sie im Alltag tragbar bleibt.",
       },
       {
         title: "Warum Tagesimpulse Premium-Wert schaffen",
@@ -213,12 +213,12 @@ const dePages = {
       {
         title: "Bewusst anti-süchtig",
         body:
-          "Hermetia soll keine FOMO-Schleife erzeugen. Tagesimpulse sind ruhig, pausierbar und nicht als Pflicht gedacht. Die App soll Begleitung sein, kein weiterer Strom aus Push-Reizen. Diese Haltung ist Teil der Produktethik. Marketingtexte dürfen deshalb Neugier erzeugen, aber keine Angst: kein verpasster Schicksalstag, keine Warnung vor falschen Entscheidungen, kein Druck, jeden Impuls zu lesen. Conversion entsteht durch Vertrauen, nicht durch Abhängigkeit.",
+          "Hermetia erzeugt keine FOMO-Schleife. Tagesimpulse sind ruhig, pausierbar und nicht als Pflicht gedacht. Die App begleitet dich, statt einen weiteren Strom aus Push-Reizen zu erzeugen. Diese Haltung ist Teil der Produktethik: Neugier ja, Angst nein. Es gibt keinen verpassten Schicksalstag, keine Warnung vor falschen Entscheidungen und keinen Druck, jeden Impuls zu lesen. Vertrauen entsteht durch Klarheit, nicht durch Abhängigkeit.",
       },
       {
         title: "Rechtliche Grenzen und sensible Sprache",
         body:
-          "Ein Tagesimpuls ist keine medizinische, therapeutische, rechtliche oder finanzielle Empfehlung. Er darf keine sichere Zukunft behaupten und keine Entscheidung für den Nutzer treffen. Hermetia formuliert deshalb in eigener Sprache, benennt Unsicherheit und bleibt bei Reflexion. Gerade bei täglichen Inhalten ist diese Grenze wichtig, weil Wiederholung schnell Autorität erzeugen kann. Die App soll eine Stimme neben der eigenen bleiben, nicht die eigene Stimme ersetzen.",
+          "Ein Tagesimpuls ist keine medizinische, therapeutische, rechtliche oder finanzielle Empfehlung. Er darf keine sichere Zukunft behaupten und keine Entscheidung für dich treffen. Hermetia formuliert deshalb in eigener Sprache, benennt Unsicherheit und bleibt bei Reflexion. Gerade bei täglichen Inhalten ist diese Grenze wichtig, weil Wiederholung schnell Autorität erzeugen kann. Die App bleibt eine Stimme neben der eigenen, nicht der Ersatz für die eigene Stimme.",
       },
     ],
     graphics: [
@@ -239,7 +239,7 @@ const dePages = {
       { q: "Sind Tagesimpulse medizinische Empfehlungen?", a: "Nein. Sie sind keine medizinische, psychologische oder therapeutische Beratung." },
       { q: "Was unterscheidet Hermetia-Tagesimpulse von Tageshoroskopen?", a: "Hermetia beginnt beim persönlichen Profil und nutzt Tagesdaten nur als Färbung. Ein Tageshoroskop spricht meist sehr viele Menschen über ein Sternzeichen an." },
       { q: "Warum sind Tagesimpulse ein Premium-Feature?", a: "Weil sie erst über Zeit ihren vollen Wert entfalten: Verlauf, Journaling, Rückblicke, Profilbezug und feinere Impulse brauchen eine fortlaufende Begleitung." },
-      { q: "Kann ich Tagesimpulse pausieren?", a: "Ja. Das Produktprinzip ist, dass Tagesimpulse eine freiwillige Begleitung bleiben. Sie sollen keine Pflicht, keine FOMO und keinen Druck erzeugen." },
+      { q: "Kann ich Tagesimpulse pausieren?", a: "Ja. Tagesimpulse bleiben eine freiwillige Begleitung. Sie erzeugen keine Pflicht, keine FOMO und keinen Druck." },
       { q: "Treffen Tagesimpulse Entscheidungen für mich?", a: "Nein. Sie bieten Fragen und Fokus an. Entscheidungen, professionelle Beratung und Verantwortung bleiben beim Nutzer." },
     ],
     ctaTitle: "Erlebe, wie dein Profil den Tag färbt.",
@@ -256,7 +256,7 @@ const dePages = {
     lead:
       "Journaling ist bei Hermetia nicht einfach ein leeres Textfeld. Es ist die Brücke zwischen deinem Profil, deinen Tagesimpulsen und dem, was du wirklich in deinem Alltag bemerkst.",
     answer:
-      "Hermetia-Journaling verbindet persönliche Impulse mit eigenen Notizen, Feedback und wiederkehrenden Themen. Die App soll nicht behaupten, dich besser zu kennen als du selbst, sondern dir helfen, Resonanz, Zweifel, Muster und Entwicklung über Zeit bewusster zu sehen.",
+      "Hermetia-Journaling verbindet persönliche Impulse mit eigenen Notizen, Feedback und wiederkehrenden Themen. Die App behauptet nicht, dich besser zu kennen als du selbst, sondern hilft dir, Resonanz, Zweifel, Muster und Entwicklung über Zeit bewusster zu sehen.",
     image: "/images/hermetia/library-of-self-profile.png",
     imageAlt: "Eine ruhige Bibliothek innerer Notizen als Bild für Hermetia Journaling",
     sections: [
@@ -268,7 +268,7 @@ const dePages = {
       {
         title: "Vom Tagesimpuls zur eigenen Beobachtung",
         body:
-          "Ein Tagesimpuls gibt einen Fokus. Das Journal fragt danach, was du daraus machst. Hat der Impuls etwas sichtbar gemacht? Gab es eine Situation, in der ein Kernthema spürbar wurde? War der Satz unpassend, zu stark oder überraschend genau? Diese Rückmeldung ist wichtig, weil sie die Deutung menschlicher macht. Hermetia soll nicht nur senden, sondern dir Raum geben, zurückzusprechen. So entsteht aus einem täglichen Hinweis eine persönliche Spur.",
+          "Ein Tagesimpuls gibt einen Fokus. Das Journal fragt danach, was du daraus machst. Hat der Impuls etwas sichtbar gemacht? Gab es eine Situation, in der ein Kernthema spürbar wurde? War der Satz unpassend, zu stark oder überraschend genau? Diese Rückmeldung macht die Deutung menschlicher. Hermetia sendet nicht nur, sondern gibt dir Raum, zurückzusprechen. So entsteht aus einem täglichen Hinweis eine persönliche Spur.",
       },
       {
         title: "Muster über Wochen und Monate erkennen",
@@ -278,18 +278,18 @@ const dePages = {
       {
         title: "Privatsphäre und sensible Notizen",
         body:
-          "Journaling kann sehr persönlich sein. Deshalb muss die Website klar erklären, dass solche Inhalte sensibel behandelt werden. Nutzer sollen verstehen, was gespeichert wird, wie Löschung und Export gedacht sind und welche Rolle AI bei Zusammenfassungen spielt. Hermetia darf aus Journaltexten keine medizinischen, therapeutischen oder rechtlichen Aussagen ableiten. Die Funktion bleibt ein Reflexionswerkzeug, kein Ersatz für professionelle Beratung.",
+          "Journaling kann sehr persönlich sein. Deshalb erklärt Hermetia klar, dass solche Inhalte sensibel behandelt werden. Du siehst, was gespeichert wird, wie Löschung und Export funktionieren und welche Rolle AI bei Zusammenfassungen spielt. Hermetia leitet aus Journaltexten keine medizinischen, therapeutischen oder rechtlichen Aussagen ab. Die Funktion bleibt ein Reflexionswerkzeug, kein Ersatz für professionelle Beratung.",
       },
       {
         title: "Kostenlos starten, bezahlte Tiefe verstehen",
         body:
-          "Der kostenlose Einstieg kann erste Impulse und einfache Reflexion ermöglichen. Bezahlte Modelle werden sinnvoll, wenn Nutzer Verlauf, Rückblicke, mehr Ebenen, tiefere Fragen und langfristige Muster nutzen möchten. Genau deshalb gehört Journaling auf die Marketing-Website: Es erklärt, warum Hermetia nicht nur ein Profilrechner ist, sondern eine fortlaufende Begleitung, die sich mit der Zeit entfaltet.",
+          "Der kostenlose Einstieg kann erste Impulse und einfache Reflexion ermöglichen. Bezahlte Modelle werden sinnvoll, wenn du Verlauf, Rückblicke, mehr Ebenen, tiefere Fragen und langfristige Muster nutzen möchtest. Genau deshalb gehört Journaling zur Hermetia-Erfahrung: Es zeigt, warum Hermetia nicht nur ein Profilrechner ist, sondern eine fortlaufende Begleitung, die sich mit der Zeit entfaltet.",
       },
     ],
     faq: [
       { q: "Ist Hermetia-Journaling ein normales Tagebuch?", a: "Es kann wie ein Tagebuch genutzt werden, ist aber stärker mit Profil, Tagesimpulsen und wiederkehrenden Themen verbunden. Der Fokus liegt auf Selbstreflexion, nicht auf Leistung oder perfekter Dokumentation." },
-      { q: "Liest die AI meine Journaltexte?", a: "AI-gestützte Zusammenfassungen dürfen nur transparent und zweckgebunden erfolgen. Nutzer müssen verstehen, wann AI beteiligt ist und welche Inhalte dafür verwendet werden." },
-      { q: "Kann ich Journal-Einträge löschen?", a: "Ja. Das Produktziel ist, dass persönliche Inhalte exportierbar und löschbar sind. Die Marketing-Website beschreibt diese Erwartung bewusst als Teil der Datenschutzlinie." },
+      { q: "Liest die AI meine Journaltexte?", a: "AI-gestützte Zusammenfassungen erfolgen transparent und zweckgebunden. Du siehst, wann AI beteiligt ist und welche Inhalte dafür verwendet werden." },
+      { q: "Kann ich Journal-Einträge löschen?", a: "Ja. Persönliche Inhalte bleiben exportierbar und löschbar. Hermetia behandelt das als Teil der Datenschutzlinie." },
       { q: "Ist Journaling Therapie?", a: "Nein. Hermetia-Journaling ist ein Reflexionswerkzeug und ersetzt keine medizinische, psychologische oder therapeutische Beratung." },
     ],
     ctaTitle: "Starte mit deiner Seelenkarte und halte fest, was wirklich resoniert.",
@@ -313,37 +313,37 @@ const dePages = {
       {
         title: "Warum ein Buch mehr ist als eine Ergebnisansicht",
         body:
-          "Eine Ergebnisansicht ist schnell, ein Buch erlaubt Tiefe. Das Hermetia-Vollprofil soll deine wichtigsten Themen nicht nur anzeigen, sondern in eine lesbare Dramaturgie bringen: Wesenskern, Gaben, Schatten, Beziehungsmuster, Berufung, Rhythmus, Seelenweg und praktische Reflexionsfragen. Dadurch entsteht ein Dokument, das man nicht hektisch konsumiert, sondern in Etappen liest. Genau hier liegt ein zentraler Premium-Wert: Das Buch verwandelt einen ersten Profilmoment in eine Ressource, zu der Nutzer zurückkehren können.",
+          "Eine Ergebnisansicht ist schnell, ein Buch erlaubt Tiefe. Das Hermetia-Vollprofil zeigt deine wichtigsten Themen nicht nur an, sondern bringt sie in eine lesbare Dramaturgie: Wesenskern, Gaben, Schatten, Beziehungsmuster, Berufung, Rhythmus, Seelenweg und praktische Reflexionsfragen. Dadurch entsteht ein Dokument, das man nicht hektisch konsumiert, sondern in Etappen liest. Genau hier liegt ein zentraler Premium-Wert: Das Buch verwandelt einen ersten Profilmoment in eine Ressource, zu der du zurückkehren kannst.",
       },
       {
         title: "Wie das Vollprofil aus der Konvergenz entsteht",
         body:
-          "Das Buch sollte nicht einfach alle Systeme nacheinander abdrucken. Hermetia verdichtet zuerst, welche Themen wirklich tragen, welche nur Nebenmotive sind und welche Spannungsfelder sich zeigen. Erst danach entsteht die Kapitelstruktur. Dadurch wird das Profil ruhiger und relevanter: Nutzer lesen nicht eine Sammlung einzelner Deutungsschnipsel, sondern eine begründete Synthese ihrer Seelenkarte. Jedes Kapitel sollte zeigen, welche Systemfamilien ein Motiv stützen und wo Hermetia bewusst vorsichtig bleibt.",
+          "Das Buch druckt nicht einfach alle Systeme nacheinander ab. Hermetia verdichtet zuerst, welche Themen wirklich tragen, welche nur Nebenmotive sind und welche Spannungsfelder sich zeigen. Erst danach entsteht die Kapitelstruktur. Dadurch wird das Profil ruhiger und relevanter: Du liest keine Sammlung einzelner Deutungsschnipsel, sondern eine begründete Synthese deiner Seelenkarte. Jedes Kapitel zeigt, welche Systemfamilien ein Motiv stützen und wo Hermetia bewusst vorsichtig bleibt.",
       },
       {
         title: "Kapitel, die Nutzer wirklich erwarten",
         body:
-          "Ein gutes Vollprofil braucht Orientierung. Sinnvoll sind Kapitel zu Kernthemen, Gaben, Schatten und Wachstum, Entscheidung und Energie, Beziehung, Arbeit und Berufung, Rhythmus, Timing, persönliche Fragen und nächste Schritte. Jedes Kapitel sollte erklären, welche Systeme die Aussage tragen, wo Unsicherheit besteht und wie der Nutzer damit reflektieren kann. Das macht die Auswertung wertvoller und rechtlich sauberer als absolute Behauptungen. Besonders wichtig sind Kapitelzusammenfassungen, damit Nutzer nach dem Lesen nicht verloren gehen, sondern konkrete Reflexionsfragen behalten.",
+          "Ein gutes Vollprofil braucht Orientierung. Kapitel zu Kernthemen, Gaben, Schatten und Wachstum, Entscheidung und Energie, Beziehung, Arbeit und Berufung, Rhythmus, Timing, persönlichen Fragen und nächsten Schritten machen die Seelenkarte lesbar. Jedes Kapitel erklärt, welche Systeme eine Aussage tragen, wo Unsicherheit besteht und wie du damit reflektieren kannst. Das macht die Auswertung wertvoller als absolute Behauptungen. Kapitelzusammenfassungen helfen, nach dem Lesen konkrete Reflexionsfragen mitzunehmen.",
       },
       {
         title: "Leseerlebnis, Export und Wiederlesen",
         body:
-          "Das Vollprofil-Buch sollte sich nicht wie ein technischer Report anfühlen. Es braucht Kapitel, Zwischenübersichten, kleine Reflexionsfragen, visuelle Marker und einen ruhigen Lesefluss. Gleichzeitig ist Export ein Vertrauenssignal: Wer für Tiefe bezahlt, möchte Inhalte später wiederfinden, speichern oder in Etappen lesen können. Ob als PDF, buchartiger Lesemodus oder exportierbare Zusammenfassung: Der Wert liegt darin, dass die Seelenkarte dauerhaft zugänglich und wiederlesbar wird.",
+          "Das Vollprofil-Buch fühlt sich nicht wie ein technischer Report an. Kapitel, Zwischenübersichten, kleine Reflexionsfragen, visuelle Marker und ein ruhiger Lesefluss machen es wiederlesbar. Gleichzeitig ist Export ein Vertrauenssignal: Wer für Tiefe bezahlt, möchte Inhalte später wiederfinden, speichern oder in Etappen lesen können. Ob als PDF, buchartiger Lesemodus oder exportierbare Zusammenfassung: Der Wert liegt darin, dass die Seelenkarte dauerhaft zugänglich bleibt.",
       },
       {
         title: "Beispielkapitel nur fiktiv und transparent",
         body:
-          "Für Marketing und Produktdemo sind Beispielkapitel sinnvoll, aber sie müssen klar fiktiv sein. Hermetia sollte keine echten Nutzerprofile ohne Einwilligung zeigen und keine geschützten Deutungstexte anderer Systeme übernehmen. Gute Beispiele zeigen Struktur, Ton und Grenzen: So könnte ein Kapitel klingen, so wird ein Kernthema erklärt, so bleibt eine Aussage offen genug für Selbstreflexion. Das schützt rechtlich und macht das Produkt greifbarer.",
+          "Beispielkapitel sind hilfreich, wenn sie klar fiktiv bleiben. Hermetia zeigt keine echten Nutzerprofile ohne Einwilligung und übernimmt keine geschützten Deutungstexte anderer Systeme. Gute Beispiele zeigen Struktur, Ton und Grenzen: So kann ein Kapitel klingen, so wird ein Kernthema erklärt, so bleibt eine Aussage offen genug für Selbstreflexion. Das macht das Produkt greifbar und rechtlich sauber.",
       },
       {
         title: "Wie das Buch mit Journaling und Companion zusammenhängt",
         body:
-          "Das Vollprofil-Buch ist nicht das Ende der Reise. Es kann die Grundlage für Journaling, Tagesimpulse und den Companion werden. Nutzer lesen ein Kapitel, markieren Resonanz, schreiben eigene Beobachtungen und stellen später Fragen an den Companion. Dadurch entsteht ein Ökosystem: Das Buch gibt Tiefe, Journaling erdet sie im Alltag, Tagesimpulse halten Themen lebendig und der Companion erklärt Zusammenhänge bei Bedarf.",
+          "Das Vollprofil-Buch ist nicht das Ende der Reise. Es kann die Grundlage für Journaling, Tagesimpulse und den Companion werden. Du liest ein Kapitel, markierst Resonanz, schreibst eigene Beobachtungen und stellst später Fragen an den Companion. Dadurch entsteht ein Ökosystem: Das Buch gibt Tiefe, Journaling erdet sie im Alltag, Tagesimpulse halten Themen lebendig und der Companion erklärt Zusammenhänge bei Bedarf.",
       },
       {
         title: "Bezahlte Tiefe ohne Druck",
         body:
-          "Das Vollprofil-Buch ist ein natürlicher Grund für ein bezahltes Modell, aber es darf nicht mit Angst verkauft werden. Die Website sollte klar machen: Der kostenlose Einstieg zeigt Resonanz. Das Buch lohnt sich, wenn jemand tiefer lesen, Zusammenhänge verstehen und seine Themen langfristig begleiten möchte. Keine künstliche Dringlichkeit, keine Schicksalsversprechen, keine Heilsprache. Der Kaufgrund ist Tiefe, nicht Druck. Genau diese Fairness macht die Conversion stärker, weil Nutzer den Wert nachvollziehen können.",
+          "Das Vollprofil-Buch ist ein natürlicher Grund für ein bezahltes Modell, aber nicht für Angstdruck. Der kostenlose Einstieg zeigt Resonanz. Das Buch lohnt sich, wenn du tiefer lesen, Zusammenhänge verstehen und deine Themen langfristig begleiten möchtest. Keine künstliche Dringlichkeit, keine Schicksalsversprechen, keine Heilsprache. Der Kaufgrund ist Tiefe, nicht Druck. Genau diese Fairness macht den Wert nachvollziehbar.",
       },
       {
         title: "Rechtliche und redaktionelle Leitplanken",
@@ -364,12 +364,12 @@ const dePages = {
       },
     ],
     faq: [
-      { q: "Ist das Vollprofil-Buch ein PDF?", a: "Das Produktziel kann ein exportierbares Dokument oder ein buchartiger Lesemodus sein. Wichtig ist die strukturierte, wiederlesbare Tiefe, nicht das Dateiformat allein." },
+      { q: "Ist das Vollprofil-Buch ein PDF?", a: "Es kann als exportierbares Dokument oder buchartiger Lesemodus erscheinen. Wichtig ist die strukturierte, wiederlesbare Tiefe, nicht das Dateiformat allein." },
       { q: "Ist das Buch im kostenlosen Einstieg enthalten?", a: "Der kostenlose Einstieg zeigt die erste Seelenkarte und Kernthemen. Das ausführliche Vollprofil-Buch ist als Premium-Tiefe gedacht." },
-      { q: "Schreibt AI das ganze Profil frei?", a: "Nein. AI soll berechnete, kuratierte und konvergenzgeprüfte Informationen lesbar formulieren. Die Grundlage bleibt die Profilberechnung." },
+      { q: "Schreibt AI das ganze Profil frei?", a: "Nein. AI formuliert berechnete, kuratierte und konvergenzgeprüfte Informationen lesbar. Die Grundlage bleibt die Profilberechnung." },
       { q: "Kann ich das Vollprofil als Wahrheit über mich lesen?", a: "Nein. Das Vollprofil ist ein Reflexionsangebot. Es kann Sprache für Muster geben, ersetzt aber keine eigene Entscheidung und keine professionelle Beratung." },
-      { q: "Welche Kapitel sollte ein Vollprofil enthalten?", a: "Sinnvoll sind Kernthemen, Gaben, Schatten, Beziehung, Arbeit, Berufung, Rhythmus, Timing, Reflexionsfragen und nächste Schritte. Die genaue Struktur sollte aus der Konvergenz der Seelenkarte entstehen." },
-      { q: "Kann ich das Vollprofil später wieder öffnen oder exportieren?", a: "Das Produktziel ist ein wiederlesbarer, gut strukturierter Premium-Inhalt. Export oder buchartiger Lesemodus sind wichtige Vertrauens- und Nutzensignale." },
+      { q: "Welche Kapitel enthält ein Vollprofil?", a: "Sinnvoll sind Kernthemen, Gaben, Schatten, Beziehung, Arbeit, Berufung, Rhythmus, Timing, Reflexionsfragen und nächste Schritte. Die genaue Struktur entsteht aus der Konvergenz der Seelenkarte." },
+      { q: "Kann ich das Vollprofil später wieder öffnen oder exportieren?", a: "Ja. Wiederlesbarkeit, Export und ein gut strukturierter Lesemodus sind wichtige Vertrauens- und Nutzensignale." },
       { q: "Warum ist das Vollprofil Premium und nicht komplett kostenlos?", a: "Weil lange, strukturierte, geprüfte Profiltexte, AI-Formulierung, Sicherheit, Exportlogik und redaktionelle Qualität laufenden Aufwand erzeugen. Der kostenlose Einstieg zeigt zuerst Resonanz." },
       { q: "Darf Hermetia Beispielprofile zeigen?", a: "Ja, wenn sie fiktiv, klar gekennzeichnet und rechtlich sauber formuliert sind. Echte Nutzerprofile brauchen ausdrückliche Einwilligung." },
     ],
@@ -385,56 +385,56 @@ const dePages = {
       "Wie der Hermetia Companion persönliche Fragen zur Seelenkarte beantwortet, Tagesimpulse vertieft und dabei klare Grenzen für AI, Datenschutz und Beratung einhält.",
     eyebrow: "AI · Begleitung",
     lead:
-      "Der Companion soll kein Orakel sein, das dir sagt, was du tun musst. Er ist als ruhiger Gesprächsraum gedacht, der deine Seelenkarte erklärt, gute Fragen stellt und Grenzen respektiert.",
+      "Der Companion ist kein Orakel, das dir sagt, was du tun musst. Er ist ein ruhiger Gesprächsraum, der deine Seelenkarte erklärt, gute Fragen stellt und Grenzen respektiert.",
     answer:
-      "Der Hermetia Companion ist ein AI-gestützter Begleiter, der berechnete Profilinformationen, Kernthemen und freigegebene Reflexionen in verständliche Antworten übersetzt. Er ersetzt keine Beratung, trifft keine Entscheidungen und soll immer sichtbar machen, worauf eine Antwort basiert.",
+      "Der Hermetia Companion ist ein AI-gestützter Begleiter, der berechnete Profilinformationen, Kernthemen und freigegebene Reflexionen in verständliche Antworten übersetzt. Er ersetzt keine Beratung, trifft keine Entscheidungen und macht sichtbar, worauf eine Antwort basiert.",
     image: "/images/hermetia/resonance-instrument.png",
     imageAlt: "Ein Resonanzinstrument als Bild für den Hermetia Companion",
     sections: [
       {
-        title: "Was ein Companion leisten soll",
+        title: "Was der Companion leistet",
         body:
-          "Viele Nutzer verstehen ihr Profil nicht in einem einzigen Durchgang. Sie lesen einen Satz, spüren Resonanz und haben danach Fragen. Der Companion soll genau dort helfen: Was bedeutet dieses Kernthema? Warum taucht es in mehreren Systemen auf? Welche Journaling-Frage passt dazu? Die Antwort soll warm und verständlich sein, aber nicht so tun, als hätte die AI eine höhere Wahrheit über den Menschen. Der Companion ist damit kein Ersatz für das eigene Spüren, sondern ein Übersetzer zwischen Profil, Methode und Alltag.",
+          "Viele Menschen verstehen ihr Profil nicht in einem einzigen Durchgang. Du liest einen Satz, spürst Resonanz und hast danach Fragen. Der Companion hilft genau dort: Was bedeutet dieses Kernthema? Warum taucht es in mehreren Systemen auf? Welche Journaling-Frage passt dazu? Die Antwort bleibt warm und verständlich, ohne so zu tun, als hätte die AI eine höhere Wahrheit über dich. Der Companion ist kein Ersatz für das eigene Spüren, sondern ein Übersetzer zwischen Profil, Methode und Alltag.",
       },
       {
         title: "Berechnungsbasiert statt freier Spekulation",
         body:
-          "Der Companion darf nicht einfach mystisch improvisieren. Seine Stärke entsteht, wenn er auf berechneten Profilfakten, Konvergenzsignalen, freigegebenen Notizen und klaren Produktgrenzen arbeitet. Nutzer sollen nachvollziehen können, ob eine Antwort aus Astrologie, Human Design, Numerologie, Fragebogenwerten, Journaling oder allgemeinen Reflexionsfragen abgeleitet wurde. Dadurch bleibt das Erlebnis persönlicher, ohne beliebig zu werden. Die AI formuliert, verbindet und erklärt, aber die Profilgrundlage entsteht aus der Hermetia-Berechnung.",
+          "Der Companion improvisiert nicht mystisch ins Blaue. Seine Stärke entsteht, wenn er auf berechneten Profilfakten, Konvergenzsignalen, freigegebenen Notizen und klaren Produktgrenzen arbeitet. Du kannst nachvollziehen, ob eine Antwort aus Astrologie, Human Design, Numerologie, Fragebogenwerten, Journaling oder allgemeinen Reflexionsfragen abgeleitet wurde. Dadurch bleibt das Erlebnis persönlich, ohne beliebig zu werden. Die AI formuliert, verbindet und erklärt, aber die Profilgrundlage entsteht aus der Hermetia-Berechnung.",
       },
       {
         title: "Antwortlogik: Quelle, Kontext, Frage",
         body:
-          "Eine gute Companion-Antwort sollte nicht nur schön klingen, sondern ihre Grundlage zeigen. Sinnvoll ist eine klare Antwortlogik: Welche Profilquelle ist relevant? In welchem Kontext fragt der Nutzer? Welche Unsicherheit bleibt? Welche nächste Reflexionsfrage ist hilfreich? Diese Struktur macht den Companion AEO-stark, weil sie direkte Antworten liefert, und zugleich vertrauenswürdig, weil Nutzer sehen, worauf eine Aussage basiert.",
+          "Eine gute Companion-Antwort klingt nicht nur schön, sondern zeigt ihre Grundlage. Die Antwortlogik bleibt klar: Welche Profilquelle ist relevant? In welchem Kontext fragst du? Welche Unsicherheit bleibt? Welche nächste Reflexionsfrage ist hilfreich? Diese Struktur macht den Companion vertrauenswürdig, weil du siehst, worauf eine Aussage basiert.",
       },
       {
         title: "Transparenz bei AI-Nutzung",
         body:
-          "Hermetia sollte sichtbar machen, wann AI beteiligt ist und wann nicht. Berechnung, Konvergenz und Systemlogik sind nicht dasselbe wie die spätere Formulierung. Nutzer brauchen deshalb eine einfache Erklärung: Die AI schreibt keine freien Wahrheiten über dich, sondern formuliert aus freigegebenen Profilinformationen, redaktionellen Leitplanken und deiner aktuellen Frage. Diese Trennung schützt vor Überhöhung und macht den Companion rechtlich sauberer.",
+          "Hermetia macht sichtbar, wann AI beteiligt ist und wann nicht. Berechnung, Konvergenz und Systemlogik sind nicht dasselbe wie die spätere Formulierung. Die einfache Erklärung lautet: Die AI schreibt keine freien Wahrheiten über dich, sondern formuliert aus freigegebenen Profilinformationen, redaktionellen Leitplanken und deiner aktuellen Frage. Diese Trennung schützt vor Überhöhung.",
       },
       {
         title: "Datenschutz und Datenminimierung im Gespräch",
         body:
-          "Ein Companion kann schnell sehr persönliche Fragen erhalten. Deshalb muss Datenminimierung auch im Gespräch gelten: Nur relevante Profilteile, nur freigegebene Journalnotizen, klare Zwecke, verständliche Lösch- und Exportwege. Gerade bei sensiblen spirituellen Daten darf die Website nicht nur sagen, dass AI hilfreich ist. Sie muss erklären, wie Hermetia verhindert, dass aus Begleitung eine unnötige Datensammlung wird.",
+          "Ein Companion kann schnell sehr persönliche Fragen erhalten. Deshalb gilt Datenminimierung auch im Gespräch: nur relevante Profilteile, nur freigegebene Journalnotizen, klare Zwecke, verständliche Lösch- und Exportwege. Gerade bei sensiblen spirituellen Daten erklärt Hermetia, wie aus Begleitung keine unnötige Datensammlung wird.",
       },
       {
         title: "Beispielhafte Fragen an den Companion",
         body:
-          "Gute Marketing-Inhalte sollten zeigen, welche Fragen sinnvoll sind: Warum taucht mein Kernthema in mehreren Systemen auf? Wie kann ich diesen Tagesimpuls journaln? Welche Spannung zwischen Rückzug und Sichtbarkeit zeigt mein Profil? Wie lese ich ein Kapitel aus dem Vollprofil-Buch? Was ist nur Symbolsprache und was beruht auf berechneten Daten? Solche Beispiele machen den Nutzen konkret, ohne echte Nutzerprofile zu verwenden.",
+          "Beispiele zeigen, welche Fragen sinnvoll sind: Warum taucht mein Kernthema in mehreren Systemen auf? Wie kann ich diesen Tagesimpuls journaln? Welche Spannung zwischen Rückzug und Sichtbarkeit zeigt mein Profil? Wie lese ich ein Kapitel aus dem Vollprofil-Buch? Was ist nur Symbolsprache und was beruht auf berechneten Daten? Solche Beispiele machen den Nutzen konkret, ohne echte Nutzerprofile zu verwenden.",
       },
       {
         title: "Orakel-Moment ohne Schicksalsdruck",
         body:
-          "Ein optionaler Orakel- oder Kartenmoment kann inspirierend sein, wenn er sauber gerahmt ist. Hermetia sollte ihn nicht als Vorhersage verkaufen, sondern als Symbolfrage für den Moment: Worauf könnte ich heute achten? Was will gesehen werden? Welche Perspektive hilft mir, ruhiger zu handeln? Der Companion kann solche Motive erklären, aber niemals Druck, Angst oder Abhängigkeit erzeugen. Die Grenze lautet: Symbolische Impulse dürfen öffnen, aber nicht bestimmen.",
+          "Ein optionaler Orakel- oder Kartenmoment kann inspirierend sein, wenn er sauber gerahmt ist. Hermetia behandelt ihn nicht als Vorhersage, sondern als Symbolfrage für den Moment: Worauf könnte ich heute achten? Was will gesehen werden? Welche Perspektive hilft mir, ruhiger zu handeln? Der Companion kann solche Motive erklären, aber niemals Druck, Angst oder Abhängigkeit erzeugen. Symbolische Impulse dürfen öffnen, aber nicht bestimmen.",
       },
       {
         title: "Grenzen bei Gesundheit, Beziehung und Entscheidung",
         body:
-          "Der Companion darf keine medizinischen, therapeutischen, rechtlichen oder finanziellen Ratschläge geben. Bei Beziehungsthemen muss er respektvoll bleiben und keine Aussagen über eine zweite Person treffen, wenn deren Einwilligung fehlt. Bei psychischer Belastung sollte er klare Hilfsgrenzen benennen. Genau diese Grenzen gehören auf die Marketing-Website, weil sie Vertrauen schaffen. Eine gute Antwort erkennt also auch, wann sie nicht antworten sollte.",
+          "Der Companion gibt keine medizinischen, therapeutischen, rechtlichen oder finanziellen Ratschläge. Bei Beziehungsthemen bleibt er respektvoll und trifft keine Aussagen über eine zweite Person, wenn deren Einwilligung fehlt. Bei psychischer Belastung benennt er klare Hilfsgrenzen. Diese Grenzen schaffen Vertrauen. Eine gute Antwort erkennt also auch, wann sie nicht antworten sollte.",
       },
       {
         title: "Warum der Companion Premium-Wert erzeugt",
         body:
-          "Der kostenlose Einstieg zeigt die Seelenkarte. Der Companion wird wertvoll, wenn Nutzer tiefer fragen, Beispiele wünschen, Journaling vertiefen oder lange Profilkapitel verständlich aufschlüsseln möchten. Das ist ein natürlicher Premium-Nutzen: mehr Begleitung, mehr Kontext, mehr Ruhe. Die Website soll diesen Wert erklären, ohne so zu tun, als bräuchte jeder Mensch dauerhaft eine AI-Stimme. Premium heißt hier nicht Abhängigkeit, sondern Zugang zu besserem Kontext, längeren Gesprächsverläufen und verantwortungsvoller Qualitätssicherung.",
+          "Der kostenlose Einstieg zeigt die Seelenkarte. Der Companion wird wertvoll, wenn du tiefer fragst, Beispiele wünschst, Journaling vertiefst oder lange Profilkapitel verständlich aufschlüsseln möchtest. Das ist ein natürlicher Premium-Nutzen: mehr Begleitung, mehr Kontext, mehr Ruhe. Premium heißt hier nicht Abhängigkeit, sondern Zugang zu besserem Kontext, längeren Gesprächsverläufen und verantwortungsvoller Qualitätssicherung.",
       },
     ],
     graphics: [
@@ -451,12 +451,12 @@ const dePages = {
     ],
     faq: [
       { q: "Ist der Companion ein Orakel?", a: "Nein. Er kann symbolische Impulse erklären, aber er ist kein Vorhersagewerkzeug und keine Autorität über Entscheidungen." },
-      { q: "Kann der Companion mein ganzes Profil sehen?", a: "Er sollte nur die Daten nutzen, die für die jeweilige Antwort nötig und freigegeben sind. Datenminimierung bleibt auch bei AI-Begleitung wichtig." },
+      { q: "Kann der Companion mein ganzes Profil sehen?", a: "Er nutzt nur die Daten, die für die jeweilige Antwort nötig und freigegeben sind. Datenminimierung bleibt auch bei AI-Begleitung wichtig." },
       { q: "Ersetzt der Companion Beratung oder Therapie?", a: "Nein. Er bietet Reflexionsfragen und Erklärungen zur Seelenkarte, aber keine medizinische, psychologische, therapeutische, rechtliche oder finanzielle Beratung." },
       { q: "Warum ist der Companion nicht komplett kostenlos?", a: "Persönliche AI-Begleitung, sichere Infrastruktur, Redaktion, Qualitätssicherung und längere Profilkontexte verursachen laufende Kosten. Deshalb kann Tiefe Teil bezahlter Modelle sein." },
-      { q: "Woher weiß der Companion, worauf seine Antwort basiert?", a: "Er sollte Antworten aus berechneten Profilfakten, Konvergenzsignalen, freigegebenen Notizen und der aktuellen Frage ableiten. Die Grundlage muss für Nutzer nachvollziehbar bleiben." },
+      { q: "Woher weiß der Companion, worauf seine Antwort basiert?", a: "Er leitet Antworten aus berechneten Profilfakten, Konvergenzsignalen, freigegebenen Notizen und der aktuellen Frage ab. Die Grundlage bleibt nachvollziehbar." },
       { q: "Kann ich sensible Themen mit dem Companion besprechen?", a: "Du kannst reflektierende Fragen stellen, aber der Companion ersetzt keine professionelle Hilfe. Bei Gesundheit, Krise, Recht, Finanzen oder akuter Belastung braucht es passende Fachstellen." },
-      { q: "Nutzt der Companion meine Journaltexte automatisch?", a: "Journaltexte sollten nur genutzt werden, wenn sie für den Zweck relevant und freigegeben sind. Datenminimierung und Transparenz bleiben zentrale Produktregeln." },
+      { q: "Nutzt der Companion meine Journaltexte automatisch?", a: "Journaltexte werden nur genutzt, wenn sie für den Zweck relevant und freigegeben sind. Datenminimierung und Transparenz bleiben zentrale Produktregeln." },
       { q: "Warum stärkt der Companion bezahlte Modelle?", a: "Weil längere Kontexte, individuellere Antworten, sichere AI-Infrastruktur, Qualitätssicherung und redaktionelle Leitplanken laufenden Aufwand erzeugen." },
     ],
     ctaTitle: "Öffne deine Seelenkarte und stelle später die Fragen, die wirklich zählen.",
@@ -471,51 +471,51 @@ const dePages = {
       "Wie Nutzer ihr Hermetia-Profil durch Feedback, genauere Geburtsdaten und bewusste Einstellungen verfeinern und dabei Kontrolle über Export und Löschung behalten.",
     eyebrow: "Daten · Kontrolle",
     lead:
-      "Ein gutes Profil darf nicht starr sein. Hermetia soll zeigen, welche Aussagen sicher sind, was du später nachtragen kannst und wie du die Kontrolle über persönliche Inhalte behältst.",
+      "Ein gutes Profil darf nicht starr sein. Hermetia zeigt, welche Aussagen sicher sind, was du später nachtragen kannst und wie du die Kontrolle über persönliche Inhalte behältst.",
     answer:
-      "Profilverfeinerung bedeutet bei Hermetia: Nutzer können Geburtszeit, Selbstauskunft, Resonanzfeedback und Einstellungen nachschärfen, damit die Seelenkarte genauer und nützlicher wird. Gleichzeitig müssen Export, Löschung, Einwilligung und AI-Nutzung transparent bleiben.",
+      "Profilverfeinerung bedeutet bei Hermetia: Du kannst Geburtszeit, Selbstauskunft, Resonanzfeedback und Einstellungen nachschärfen, damit die Seelenkarte genauer und nützlicher wird. Gleichzeitig bleiben Export, Löschung, Einwilligung und AI-Nutzung transparent.",
     image: "/images/hermetia/atmospheric-data-topography.png",
     imageAlt: "Eine feine Datentopografie als Bild für Profilverfeinerung und Datenkontrolle",
     sections: [
       {
         title: "Warum Profile nicht fertig vom Himmel fallen",
         body:
-          "Viele Systeme starten mit Geburtsdaten, aber Menschen sind mehr als ein Datensatz. Hermetia kann sehr viel berechnen, doch Resonanz entsteht erst im Zusammenspiel mit echter Selbstauskunft. Wenn Nutzer später ihre Geburtszeit finden, Interessen nachtragen, Tagesimpulse bewerten oder Journalmuster reflektieren, wird das Profil klarer. Das ist kein Fehler im ersten Profil, sondern Teil eines ehrlichen Produktverständnisses. Die Website sollte deshalb erklären: Ein Profil darf wachsen, ohne den ersten Einstieg zu entwerten.",
+          "Viele Systeme starten mit Geburtsdaten, aber Menschen sind mehr als ein Datensatz. Hermetia kann sehr viel berechnen, doch Resonanz entsteht erst im Zusammenspiel mit echter Selbstauskunft. Wenn du später deine Geburtszeit findest, Interessen nachträgst, Tagesimpulse bewertest oder Journalmuster reflektierst, wird das Profil klarer. Das ist kein Fehler im ersten Profil, sondern Teil eines ehrlichen Produktverständnisses: Ein Profil darf wachsen, ohne den ersten Einstieg zu entwerten.",
       },
       {
         title: "Datenqualität sichtbar machen",
         body:
-          "Profilverfeinerung beginnt mit Transparenz. Nutzer sollten sehen, welche Angaben sicher sind, welche nur grob geschätzt wurden und welche Systeme besonders von Genauigkeit abhängen. Eine bekannte Geburtszeit verbessert andere Aussagen als ein ausgefüllter Fragebogen oder ein Journaling-Verlauf. Hermetia kann daraus eine Datenqualitätslogik machen: Was ist stabil? Was ist unsicher? Was würde sich verbessern, wenn ich freiwillig ergänze?",
+          "Profilverfeinerung beginnt mit Transparenz. Du siehst, welche Angaben sicher sind, welche nur grob geschätzt wurden und welche Systeme besonders von Genauigkeit abhängen. Eine bekannte Geburtszeit verbessert andere Aussagen als ein ausgefüllter Fragebogen oder ein Journaling-Verlauf. Daraus entsteht eine Datenqualitätslogik: Was ist stabil? Was ist unsicher? Was würde sich verbessern, wenn ich freiwillig ergänze?",
       },
       {
         title: "Resonanzfeedback statt blinder Korrektur",
         body:
-          "Wenn ein Nutzer sagt, dass ein Satz nicht passt, sollte Hermetia das nicht als bloßes Nein behandeln. Interessant ist die Frage: War die Aussage zu stark, zu allgemein, zu früh oder fachlich falsch eingeordnet? Gutes Feedback verbessert Sprache, Gewichtung und künftige Reflexion. Gleichzeitig darf die Plattform Nutzer nicht drängen, immer mehr intime Details preiszugeben. Verfeinerung muss freiwillig bleiben. Auch ein Widerspruch ist wertvoll, weil er hilft, die eigene Sprache genauer zu finden.",
+          "Wenn du sagst, dass ein Satz nicht passt, ist das mehr als ein bloßes Nein. Interessant ist die Frage: War die Aussage zu stark, zu allgemein, zu früh oder fachlich falsch eingeordnet? Gutes Feedback verbessert Sprache, Gewichtung und künftige Reflexion. Gleichzeitig drängt Hermetia dich nicht, immer mehr intime Details preiszugeben. Verfeinerung bleibt freiwillig. Auch ein Widerspruch ist wertvoll, weil er hilft, die eigene Sprache genauer zu finden.",
       },
       {
         title: "Sicherheitsstufen statt Absolutheit",
         body:
-          "Nicht jede Aussage im Profil ist gleich belastbar. Hermetia sollte daher mit Sicherheitsstufen arbeiten: hoch, wenn Eingaben vollständig und mehrere unabhängige Systemfamilien beteiligt sind; mittel, wenn gute Hinweise vorliegen, aber eine Quelle fehlt; niedrig, wenn ein Thema poetisch interessant, aber dünn belegt ist. Diese Differenzierung macht die Seelenkarte glaubwürdiger und verhindert, dass Nutzer schöne Formulierungen mit endgültigen Wahrheiten verwechseln.",
+          "Nicht jede Aussage im Profil ist gleich belastbar. Hermetia arbeitet deshalb mit Sicherheitsstufen: hoch, wenn Eingaben vollständig und mehrere unabhängige Systemfamilien beteiligt sind; mittel, wenn gute Hinweise vorliegen, aber eine Quelle fehlt; niedrig, wenn ein Thema poetisch interessant, aber dünn belegt ist. Diese Differenzierung macht die Seelenkarte glaubwürdiger und verhindert, dass schöne Formulierungen wie endgültige Wahrheiten wirken.",
       },
       {
         title: "Export als Vertrauenssignal",
         body:
-          "Wer persönliche Inhalte speichert, sollte sie auch wieder herausgeben können. Ein Export von Profil, Journalnotizen oder wichtigen Einstellungen schafft Vertrauen, besonders bei sensiblen spirituellen Daten. Die Marketing-Seite muss nicht jedes technische Format versprechen, sollte aber deutlich machen: Hermetia denkt Datenportabilität, Transparenz und Nutzersouveränität als Teil des Produkts. Export ist damit nicht nur ein Datenschutzthema, sondern ein Kaufargument für bezahlte Tiefe.",
+          "Wer persönliche Inhalte speichert, kann sie auch wieder herausgeben. Ein Export von Profil, Journalnotizen oder wichtigen Einstellungen schafft Vertrauen, besonders bei sensiblen spirituellen Daten. Hermetia denkt Datenportabilität, Transparenz und Nutzersouveränität als Teil des Produkts. Export ist damit nicht nur ein Datenschutzthema, sondern auch ein Argument für bezahlte Tiefe.",
       },
       {
         title: "Löschung und Einwilligung nicht verstecken",
         body:
-          "Ein spirituelles Profil kann intime Aussagen über Weltbild, Identität und Beziehung enthalten. Deshalb muss Löschung einfach erklärbar sein. Ebenso wichtig ist die Einwilligung: Nutzer sollen wissen, welche Daten für Berechnung, AI-Formulierung, Journaling und Beziehungsauswertungen genutzt werden. Gerade diese Klarheit kann Conversion stärken, weil sie Angst reduziert. Besonders bei Beziehungsprofilen muss Einwilligung getrennt gedacht werden: Meine Daten sind nicht automatisch die Erlaubnis, eine zweite Person zu deuten.",
+          "Ein spirituelles Profil kann intime Aussagen über Weltbild, Identität und Beziehung enthalten. Deshalb ist Löschung einfach erklärbar. Ebenso wichtig ist die Einwilligung: Du siehst, welche Daten für Berechnung, AI-Formulierung, Journaling und Beziehungsauswertungen genutzt werden. Diese Klarheit reduziert Unsicherheit. Besonders bei Beziehungsprofilen gilt: Meine Daten sind nicht automatisch die Erlaubnis, eine zweite Person zu deuten.",
       },
       {
         title: "AI-Nutzung und Profilverfeinerung",
         body:
-          "Wenn AI bei Zusammenfassungen, Companion-Antworten oder Profiltexten hilft, muss Hermetia erklären, welche verfeinerten Daten überhaupt in den Kontext gelangen. Eine gute Regel lautet: nur notwendige Informationen, nur für den angegebenen Zweck und nur mit sichtbarer Grenze. Profilverfeinerung darf die AI nicht zu einer Blackbox machen, sondern sollte genauer zeigen, warum eine Antwort besser wird.",
+          "Wenn AI bei Zusammenfassungen, Companion-Antworten oder Profiltexten hilft, erklärt Hermetia, welche verfeinerten Daten überhaupt in den Kontext gelangen. Eine gute Regel lautet: nur notwendige Informationen, nur für den angegebenen Zweck und nur mit sichtbarer Grenze. Profilverfeinerung macht AI nicht zur Blackbox, sondern zeigt genauer, warum eine Antwort besser wird.",
       },
       {
         title: "Premium-Wert durch bessere Genauigkeit",
         body:
-          "Profilverfeinerung kann ein bezahlter Mehrwert sein, wenn sie echte Tiefe schafft: genauere Ebenen, bessere Rückblicke, differenzierte Companion-Antworten, verfeinerte Beziehungsmuster und klarere Tagesimpulse. Die Grenze muss fair bleiben. Der kostenlose Einstieg zeigt Resonanz, bezahlte Modelle vertiefen und begleiten, ohne Nutzer in Datenabgabe zu drängen. Der Kaufgrund ist nicht, dass vorher alles ungenau war, sondern dass mehr Kontext über Zeit mehr Nutzen schafft.",
+          "Profilverfeinerung kann bezahlten Mehrwert schaffen: genauere Ebenen, bessere Rückblicke, differenzierte Companion-Antworten, verfeinerte Beziehungsmuster und klarere Tagesimpulse. Die Grenze bleibt fair. Der kostenlose Einstieg zeigt Resonanz, bezahlte Modelle vertiefen und begleiten, ohne dich in Datenabgabe zu drängen. Der Kaufgrund ist nicht, dass vorher alles ungenau war, sondern dass mehr Kontext über Zeit mehr Nutzen schafft.",
       },
     ],
     graphics: [
@@ -531,13 +531,13 @@ const dePages = {
       },
     ],
     faq: [
-      { q: "Kann ich meine Geburtszeit später ergänzen?", a: "Ja. Eine spätere Geburtszeit kann bestimmte Systeme genauer machen. Hermetia sollte transparent zeigen, welche Aussagen dadurch belastbarer werden." },
-      { q: "Kann ich mein Profil exportieren?", a: "Das Produktziel ist, dass wichtige persönliche Inhalte exportierbar sind. Die Website rahmt Export bewusst als Vertrauens- und Datenschutzsignal." },
-      { q: "Kann ich Daten löschen lassen?", a: "Ja. Persönliche Profile, sensible Inhalte und Einwilligungen brauchen klare Löschwege. Rechtstexte und Produktlogik müssen das vor Launch verbindlich abbilden." },
-      { q: "Muss ich immer mehr Daten angeben?", a: "Nein. Verfeinerung soll freiwillig bleiben. Hermetia soll erklären, was zusätzliche Angaben verbessern, aber keinen Druck erzeugen." },
+      { q: "Kann ich meine Geburtszeit später ergänzen?", a: "Ja. Eine spätere Geburtszeit kann bestimmte Systeme genauer machen. Hermetia zeigt transparent, welche Aussagen dadurch belastbarer werden." },
+      { q: "Kann ich mein Profil exportieren?", a: "Ja. Wichtige persönliche Inhalte sind exportierbar. Export ist bei Hermetia ein Vertrauens- und Datenschutzsignal." },
+      { q: "Kann ich Daten löschen lassen?", a: "Ja. Persönliche Profile, sensible Inhalte und Einwilligungen brauchen klare Löschwege. Rechtstexte und Produktlogik bilden das vor Launch verbindlich ab." },
+      { q: "Muss ich immer mehr Daten angeben?", a: "Nein. Verfeinerung bleibt freiwillig. Hermetia erklärt, was zusätzliche Angaben verbessern, ohne Druck zu erzeugen." },
       { q: "Was bedeutet Datenqualität in Hermetia?", a: "Datenqualität beschreibt, wie vollständig und belastbar die Eingaben sind. Eine genaue Geburtszeit, gute Selbstauskunft und freiwilliges Feedback können unterschiedliche Profilbereiche verbessern." },
-      { q: "Werden Aussagen nach Sicherheit gekennzeichnet?", a: "Das Produktziel ist, Unsicherheit sichtbar zu machen: starke Konvergenz, vollständige Daten und mehrere Systemfamilien sollten anders gelesen werden als dünn belegte Hinweise." },
-      { q: "Verbessert Feedback die AI-Antworten?", a: "Feedback kann helfen, Kontext und Sprache besser einzuordnen. AI sollte dabei nur notwendige und freigegebene Informationen nutzen." },
+      { q: "Werden Aussagen nach Sicherheit gekennzeichnet?", a: "Hermetia macht Unsicherheit sichtbar: starke Konvergenz, vollständige Daten und mehrere Systemfamilien werden anders gelesen als dünn belegte Hinweise." },
+      { q: "Verbessert Feedback die AI-Antworten?", a: "Feedback kann helfen, Kontext und Sprache besser einzuordnen. AI nutzt dabei nur notwendige und freigegebene Informationen." },
       { q: "Ist Profilverfeinerung nur für Premium sinnvoll?", a: "Nein. Schon kostenloses Feedback kann Orientierung schaffen. Premium wird sinnvoll, wenn Verlauf, Rückblicke, Companion, Journaling und tiefere Ebenen regelmäßig genutzt werden." },
     ],
     ctaTitle: "Starte mit dem, was du weißt, und verfeinere dein Profil später.",
@@ -566,7 +566,7 @@ const dePages = {
       {
         title: "Warum Einwilligung unverzichtbar ist",
         body:
-          "Eine Beziehungsauswertung verarbeitet sensible Aussagen über eine zweite Person. Deshalb reicht es nicht, einfach Daten einzutragen. Vor echter Nutzung braucht die betroffene Person eine eigene, informierte Einwilligung oder einen rechtlich sauberen Guardian-Fall. Das ist kein Hindernis, sondern Respekt. Die Marketing-Website muss diese Haltung deutlich machen, weil Vertrauen hier wichtiger ist als schnelle Conversion: Wer andere heimlich auswerten will, ist nicht der richtige Nutzer für diese Funktion.",
+          "Eine Beziehungsauswertung verarbeitet sensible Aussagen über eine zweite Person. Deshalb reicht es nicht, einfach Daten einzutragen. Vor echter Nutzung braucht die betroffene Person eine eigene, informierte Einwilligung oder einen rechtlich sauberen Guardian-Fall. Das ist kein Hindernis, sondern Respekt. Vertrauen ist hier wichtiger als schnelle Conversion: Wer andere heimlich auswerten will, ist nicht der richtige Nutzer für diese Funktion.",
       },
       {
         title: "Welche Beziehungsfragen Hermetia beantworten kann",
@@ -576,29 +576,29 @@ const dePages = {
       {
         title: "Resonanz, Reibung und Entwicklungsfeld",
         body:
-          "Eine gute Beziehungsauswertung braucht mehr als Harmoniepunkte. Zu viel Übereinstimmung kann beruhigen, aber auch blinde Flecken erzeugen. Reibung kann anstrengend sein, aber Entwicklung ermöglichen. Hermetia sollte deshalb drei Ebenen unterscheiden: Resonanz als Gefühl von Verstandenwerden, Reibung als produktive Differenz und Entwicklungsfeld als Frage, die zwei Menschen gemeinsam reifer machen kann. Genau daraus entsteht eine differenzierte, nicht wertende Beziehungssprache.",
+          "Eine gute Beziehungsauswertung braucht mehr als Harmoniepunkte. Zu viel Übereinstimmung kann beruhigen, aber auch blinde Flecken erzeugen. Reibung kann anstrengend sein, aber Entwicklung ermöglichen. Hermetia unterscheidet deshalb drei Ebenen: Resonanz als Gefühl von Verstandenwerden, Reibung als produktive Differenz und Entwicklungsfeld als Frage, die zwei Menschen gemeinsam reifer machen kann. Genau daraus entsteht eine differenzierte, nicht wertende Beziehungssprache.",
       },
       {
         title: "Datenschutz bei Profilen anderer Menschen",
         body:
-          "Beziehungsprofile sind datenschutzrechtlich besonders sensibel, weil sie Daten und Ableitungen über mindestens zwei Personen verbinden. Hermetia muss erklären, welche Daten benötigt werden, wer sie eingibt, wer Zugriff hat, wie Einwilligung dokumentiert wird und wie Löschung funktioniert. Gerade Geburtsdaten, spirituelle Ableitungen und Beziehungsmuster können intime Rückschlüsse ermöglichen. Deshalb gehört Datenschutz nicht in den Footer allein, sondern in den Content der Beziehungsseite.",
+          "Beziehungsprofile sind datenschutzrechtlich besonders sensibel, weil sie Daten und Ableitungen über mindestens zwei Personen verbinden. Hermetia erklärt, welche Daten benötigt werden, wer sie eingibt, wer Zugriff hat, wie Einwilligung dokumentiert wird und wie Löschung funktioniert. Gerade Geburtsdaten, spirituelle Ableitungen und Beziehungsmuster können intime Rückschlüsse ermöglichen. Deshalb gehört Datenschutz nicht nur in den Footer, sondern direkt in die Beziehungsseite.",
       },
       {
         title: "Warum Beziehungsauswertungen Premium-Tiefe schaffen",
         body:
-          "Beziehungsauswertungen sind ein natürlicher Premium-Bereich, weil sie mehr Rechenlogik, mehr Texttiefe, Consent-Flows und mehr Verantwortung brauchen als ein einzelnes Profil. Der Wert liegt nicht in einem schnellen Kompatibilitätsurteil, sondern in einer lesbaren gemeinsamen Landkarte: Dynamiken, Spannungsfelder, Gesprächsimpulse, Journaling-Fragen und wiederkehrende Themen. Nutzer sollen verstehen, warum diese Tiefe bezahlten Raum braucht.",
+          "Beziehungsauswertungen sind ein natürlicher Premium-Bereich, weil sie mehr Rechenlogik, mehr Texttiefe, Consent-Flows und mehr Verantwortung brauchen als ein einzelnes Profil. Der Wert liegt nicht in einem schnellen Kompatibilitätsurteil, sondern in einer lesbaren gemeinsamen Landkarte: Dynamiken, Spannungsfelder, Gesprächsimpulse, Journaling-Fragen und wiederkehrende Themen. So wird nachvollziehbar, warum diese Tiefe bezahlten Raum braucht.",
       },
       {
         title: "Was Hermetia nicht verspricht",
         body:
-          "Hermetia sagt nicht, ob eine Beziehung halten wird. Es bewertet keine Menschen und ersetzt keine Paarberatung. Die Auswertung soll Sprache für Dynamiken geben: Was fühlt sich leicht an? Wo entsteht Reibung? Welche Entwicklung lädt die Beziehung ein? Sie darf keine Diagnose, keine Schuldzuweisung und keine Entscheidung über Trennung, Bindung oder Zukunft sein. Der Nutzer bleibt verantwortlich, und bei Gewalt, Krise oder psychischer Belastung braucht es professionelle Hilfe.",
+          "Hermetia sagt nicht, ob eine Beziehung halten wird. Es bewertet keine Menschen und ersetzt keine Paarberatung. Die Auswertung gibt Sprache für Dynamiken: Was fühlt sich leicht an? Wo entsteht Reibung? Welche Entwicklung lädt die Beziehung ein? Sie ist keine Diagnose, keine Schuldzuweisung und keine Entscheidung über Trennung, Bindung oder Zukunft. Du bleibst verantwortlich, und bei Gewalt, Krise oder psychischer Belastung braucht es professionelle Hilfe.",
       },
     ],
     graphics: [
       {
         src: "/graphics/convergence/abb6-beispiel-radar.svg",
         alt: "Radar-Grafik für Resonanz, Reibung und Beziehungsthemen",
-        caption: "Beziehungsprofile sollten nicht nur Harmonie zeigen, sondern mehrere Dimensionen wie Resonanz, Spannung und Entwicklung sichtbar machen.",
+        caption: "Beziehungsprofile zeigen nicht nur Harmonie, sondern mehrere Dimensionen wie Resonanz, Spannung und Entwicklung.",
       },
       {
         src: "/graphics/convergence/abb9-deine-innere-spannung.svg",
@@ -611,7 +611,7 @@ const dePages = {
       { q: "Sagt Hermetia, ob wir zusammenpassen?", a: "Nein. Hermetia zeigt Resonanzen, Spannungen und Entwicklungsthemen, aber keine Beziehungsgarantie." },
       { q: "Ist das therapeutische Beratung?", a: "Nein. Beziehungsauswertungen sind Reflexionsimpulse und ersetzen keine professionelle Beratung." },
       { q: "Was ist der Unterschied zwischen Synastrie und Composite?", a: "Synastrie vergleicht zwei Profile direkt miteinander. Composite betrachtet die Beziehung als gemeinsames Feld. Hermetia nutzt beide Perspektiven vorsichtig und nicht als Urteil." },
-      { q: "Warum braucht Hermetia Consent für Beziehungsprofile?", a: "Weil eine Auswertung sensible Aussagen über eine zweite Person ableiten kann. Informierte Einwilligung schützt Privatsphäre, Vertrauen und die spätere rechtliche Produktlogik." },
+      { q: "Warum braucht Hermetia Consent für Beziehungsprofile?", a: "Weil eine Auswertung sensible Aussagen über eine zweite Person ableiten kann. Informierte Einwilligung schützt Privatsphäre, Vertrauen und die rechtliche Grundlage." },
       { q: "Kann Hermetia Beziehungskonflikte lösen?", a: "Nein. Hermetia kann Sprache, Fragen und Muster anbieten. Konfliktlösung, Beratung oder Therapie ersetzt die Plattform nicht." },
       { q: "Wann lohnt sich Premium für Beziehungen?", a: "Premium lohnt sich, wenn beide Personen bewusst mit einer Beziehungsauswertung arbeiten möchten: mit tieferer Analyse, Gesprächsimpulsen, Journaling und klar dokumentierter Einwilligung." },
     ],
@@ -658,7 +658,7 @@ enPages.beziehungen = {
     {
       title: "Why consent is essential",
       body:
-        "A relationship reading processes sensitive statements about a second person. It is therefore not enough to simply enter data. Real use needs the affected person's own informed consent or a legally clean guardian case. This is not an obstacle, but respect. The marketing website has to make this stance clear because trust matters more here than quick conversion: someone who wants to read others secretly is not the right user for this feature.",
+        "A relationship reading processes sensitive statements about a second person. It is therefore not enough to simply enter data. Real use needs the affected person's own informed consent or a legally clean guardian case. This is not an obstacle, but respect. Trust matters more here than quick conversion: someone who wants to read others secretly is not the right user for this feature.",
     },
     {
       title: "Which relationship questions Hermetia can answer",
@@ -668,22 +668,22 @@ enPages.beziehungen = {
     {
       title: "Resonance, friction and growth field",
       body:
-        "A good relationship reading needs more than harmony points. Too much agreement can soothe, but can also create blind spots. Friction can be exhausting, but it can make growth possible. Hermetia should therefore distinguish three layers: resonance as the feeling of being understood, friction as productive difference and growth field as a question that can help two people mature together. This is how a nuanced, non-judgmental relationship language emerges.",
+        "A good relationship reading needs more than harmony points. Too much agreement can soothe, but can also create blind spots. Friction can be exhausting, but it can make growth possible. Hermetia therefore distinguishes three layers: resonance as the feeling of being understood, friction as productive difference and growth field as a question that can help two people mature together. This creates a nuanced, non-judgmental relationship language.",
     },
     {
       title: "Data protection for profiles of other people",
       body:
-        "Relationship profiles are especially sensitive under data-protection logic because they connect data and derivations about at least two people. Hermetia must explain which data is needed, who enters it, who has access, how consent is documented and how deletion works. Birth data, spiritual derivations and relationship patterns can allow intimate inferences. Data protection therefore belongs not only in the footer, but directly in the content of the relationship page.",
+        "Relationship profiles are especially sensitive because they connect data and interpretations about at least two people. Hermetia explains which data is needed, who enters it, who has access, how consent is documented and how deletion works. Birth data, spiritual derivations and relationship patterns can allow intimate inferences. That is why privacy is part of the relationship experience, not a footnote.",
     },
     {
       title: "Why relationship readings create premium depth",
       body:
-        "Relationship readings are a natural premium area because they need more calculation logic, more textual depth, consent flows and more responsibility than a single profile. The value is not a quick compatibility verdict, but a readable shared map: dynamics, fields of tension, conversation impulses, journaling questions and recurring themes. Users should understand why this depth needs paid space.",
+        "Relationship readings create natural premium depth because they need more calculation logic, more textual nuance, consent flows and more responsibility than a single profile. The value is not a quick compatibility verdict, but a readable shared map: dynamics, fields of tension, conversation impulses, journaling questions and recurring themes. You see where the deeper work begins and why it needs more space.",
     },
     {
       title: "What Hermetia does not promise",
       body:
-        "Hermetia does not say whether a relationship will last. It does not judge people and does not replace couples counselling. The reading should give language for dynamics: what feels easy, where friction appears and which growth the relationship invites. It must not be a diagnosis, blame assignment or decision about separation, commitment or the future. The user remains responsible, and violence, crisis or psychological strain require professional support.",
+        "Hermetia does not say whether a relationship will last. It does not judge people and does not replace couples counselling. The reading gives language for dynamics: what feels easy, where friction appears and which growth the relationship invites. It is not a diagnosis, blame assignment or decision about separation, commitment or the future. You remain responsible, and violence, crisis or psychological strain require professional support.",
     },
   ],
   graphics: [
@@ -691,7 +691,7 @@ enPages.beziehungen = {
       src: "/graphics/convergence/abb6-beispiel-radar.svg",
       alt: "Radar graphic for resonance, friction and relationship themes",
       caption:
-        "Relationship profiles should not only show harmony, but several dimensions such as resonance, tension and growth.",
+        "Relationship profiles show more than harmony: resonance, tension, growth and the space between them.",
     },
     {
       src: "/graphics/convergence/abb9-deine-innere-spannung.svg",
@@ -719,7 +719,7 @@ enPages.beziehungen = {
     },
     {
       q: "Why does Hermetia need consent for relationship profiles?",
-      a: "Because a reading can derive sensitive statements about a second person. Informed consent protects privacy, trust and the later legal product logic.",
+      a: "Because a reading can derive sensitive statements about a second person. Informed consent protects privacy, trust and the legal foundation.",
     },
     {
       q: "Can Hermetia solve relationship conflicts?",
@@ -742,55 +742,55 @@ enPages.companion = {
     "How the Hermetia Companion answers personal questions about the soul map, deepens daily impulses and keeps clear limits for AI, data protection and advice.",
   eyebrow: "AI · Companionship",
   lead:
-    "The Companion should not be an oracle that tells you what to do. It is planned as a calm conversation space that explains your soul map, asks useful questions and respects limits.",
+    "The Companion is not an oracle that tells you what to do. It is a calm conversation space that explains your soul map, asks useful questions and respects limits.",
   answer:
-    "The Hermetia Companion is an AI-assisted guide that translates calculated profile information, core themes and approved reflections into understandable answers. It does not replace advice, does not make decisions and should always show what an answer is based on.",
+    "The Hermetia Companion is an AI-assisted guide that translates calculated profile information, core themes and approved reflections into understandable answers. It does not replace advice, does not make decisions and keeps its basis visible.",
   imageAlt: "A resonance instrument as an image for the Hermetia Companion",
   sections: [
     {
-      title: "What a Companion should do",
+      title: "What the Companion does",
       body:
-        "Many users do not understand their profile in a single pass. They read a sentence, feel resonance and then have questions. The Companion should help exactly there: what does this core theme mean, why does it appear in several systems and which journaling question fits? The answer should be warm and understandable, but it must not pretend that AI has a higher truth about the person. The Companion is therefore not a substitute for the user's own sensing, but a translator between profile, method and everyday life.",
+        "Most people do not understand their profile in a single pass. You read a sentence, feel resonance and then have questions. The Companion helps exactly there: what does this core theme mean, why does it appear in several systems and which journaling question fits? The answer stays warm and understandable without pretending that AI has a higher truth about you. The Companion is therefore not a substitute for your own sensing, but a translator between profile, method and everyday life.",
     },
     {
       title: "Calculation-based instead of free speculation",
       body:
-        "The Companion must not simply improvise mystically. Its strength arises when it works from calculated profile facts, convergence signals, approved notes and clear product boundaries. Users should be able to understand whether an answer comes from astrology, Human Design, numerology, questionnaire values, journaling or general reflection questions. This keeps the experience personal without making it arbitrary. AI phrases, connects and explains, but the profile foundation comes from the Hermetia calculation.",
+        "The Companion does not simply improvise mystically. Its strength arises from calculated profile facts, convergence signals, approved notes and clear product boundaries. You can understand whether an answer comes from astrology, Human Design, numerology, questionnaire values, journaling or general reflection questions. This keeps the experience personal without making it arbitrary. AI phrases, connects and explains, but the profile foundation comes from the Hermetia calculation.",
     },
     {
       title: "Answer logic: source, context, question",
       body:
-        "A good Companion answer should not only sound beautiful, but show its basis. A clear answer logic is useful: which profile source is relevant, in which context is the user asking, what uncertainty remains and which next reflection question helps? This structure makes the Companion strong for answer engines because it gives direct answers, and trustworthy because users see what a statement is based on.",
+        "A good Companion answer does more than sound beautiful: it shows its basis. A clear answer logic asks which profile source is relevant, in which context the question appears, what uncertainty remains and which next reflection question helps. This structure makes the Companion useful because it gives direct answers and trustworthy because you can see what a statement is based on.",
     },
     {
       title: "Transparency when AI is used",
       body:
-        "Hermetia should make visible when AI is involved and when it is not. Calculation, convergence and system logic are not the same as later wording. Users therefore need a simple explanation: AI does not write free truths about you, but phrases from approved profile information, editorial guardrails and your current question. This separation protects against overclaiming and makes the Companion legally cleaner.",
+        "Hermetia makes visible when AI is involved and when it is not. Calculation, convergence and system logic are not the same as later wording. The simple rule: AI does not write free truths about you, but phrases from approved profile information, editorial guardrails and your current question. This separation protects against overclaiming and keeps the Companion understandable.",
     },
     {
       title: "Data protection and data minimization in conversation",
       body:
-        "A Companion can quickly receive very personal questions. Data minimization must therefore also apply in conversation: only relevant profile parts, only approved journal notes, clear purposes, understandable deletion and export paths. Especially with sensitive spiritual data, the website must not only say that AI is helpful. It must explain how Hermetia prevents companionship from becoming unnecessary data collection.",
+        "A Companion can quickly receive very personal questions. Data minimization therefore also applies in conversation: only relevant profile parts, only approved journal notes, clear purposes, understandable deletion and export paths. Especially with sensitive spiritual data, Hermetia explains how companionship stays helpful without becoming unnecessary data collection.",
     },
     {
       title: "Example questions for the Companion",
       body:
-        "Good marketing content should show which questions make sense: why does my core theme appear in several systems, how can I journal this daily impulse, which tension between retreat and visibility does my profile show, how do I read a chapter from the full profile book and what is symbolic language versus calculated data? These examples make the value concrete without using real user profiles.",
+        "Useful Companion questions are concrete: why does my core theme appear in several systems, how can I journal this daily impulse, which tension between retreat and visibility does my profile show, how do I read a chapter from the full profile book and what is symbolic language versus calculated data? These examples make the value tangible without using real user profiles.",
     },
     {
       title: "Oracle moment without fate pressure",
       body:
-        "An optional oracle or card moment can be inspiring if it is framed cleanly. Hermetia should not sell it as prediction, but as a symbolic question for the moment: what could I pay attention to today, what wants to be seen and which perspective helps me act more calmly? The Companion can explain such motifs, but must never create pressure, fear or dependency. The boundary is clear: symbolic impulses may open, but not decide.",
+        "An optional oracle or card moment can be inspiring when it is framed cleanly. Hermetia treats it as a symbolic question for the moment, not as prediction: what could I pay attention to today, what wants to be seen and which perspective helps me act more calmly? The Companion can explain such motifs without creating pressure, fear or dependency. The boundary is clear: symbolic impulses may open, but not decide.",
     },
     {
       title: "Limits around health, relationships and decisions",
       body:
-        "The Companion must not give medical, therapeutic, legal or financial advice. In relationship topics, it must remain respectful and not make statements about a second person if that person's consent is missing. In psychological strain, it should name clear support boundaries. These limits belong on the marketing website because they create trust. A good answer also recognizes when it should not answer.",
+        "The Companion gives no medical, therapeutic, legal or financial advice. In relationship topics, it stays respectful and does not make statements about a second person if that person's consent is missing. In psychological strain, it names clear support boundaries. These limits create trust. A good answer also recognizes when silence or professional support is the better next step.",
     },
     {
       title: "Why the Companion creates premium value",
       body:
-        "The free start shows the soul map. The Companion becomes valuable when users ask deeper questions, want examples, deepen journaling or need long profile chapters explained in plain language. That is a natural premium benefit: more companionship, more context and more calm. The website should explain this value without pretending that every person permanently needs an AI voice. Premium here means access to better context, longer conversation histories and responsible quality assurance, not dependency.",
+        "The free start shows the soul map. The Companion becomes valuable when you ask deeper questions, want examples, deepen journaling or need long profile chapters explained in plain language. That is a natural premium benefit: more companionship, more context and more calm. Premium here means access to better context, longer conversation histories and responsible quality assurance, not dependency.",
     },
   ],
   graphics: [
@@ -814,7 +814,7 @@ enPages.companion = {
     },
     {
       q: "Can the Companion see my whole profile?",
-      a: "It should use only the data needed and approved for the specific answer. Data minimization remains important in AI companionship.",
+      a: "It uses only the data needed and approved for the specific answer. Data minimization remains important in AI companionship.",
     },
     {
       q: "Does the Companion replace advice or therapy?",
@@ -826,7 +826,7 @@ enPages.companion = {
     },
     {
       q: "How does the Companion know what its answer is based on?",
-      a: "It should derive answers from calculated profile facts, convergence signals, approved notes and the current question. The basis must remain understandable to users.",
+      a: "It derives answers from calculated profile facts, convergence signals, approved notes and the current question. The basis remains understandable.",
     },
     {
       q: "Can I discuss sensitive topics with the Companion?",
@@ -834,7 +834,7 @@ enPages.companion = {
     },
     {
       q: "Does the Companion use my journal texts automatically?",
-      a: "Journal texts should only be used when they are relevant for the purpose and explicitly approved. Data minimization and transparency remain central product rules.",
+      a: "Journal texts are only used when they are relevant for the purpose and explicitly approved. Data minimization and transparency remain central product rules.",
     },
     {
       q: "Why does the Companion strengthen paid models?",
@@ -855,7 +855,7 @@ enPages.journaling = {
   lead:
     "Journaling in Hermetia is not just an empty text field. It is the bridge between your profile, your daily impulses and what you actually notice in everyday life.",
   answer:
-    "Hermetia journaling connects personal impulses with your own notes, feedback and recurring themes. The app should not claim to know you better than you know yourself, but help you see resonance, doubt, patterns and development more consciously over time.",
+    "Hermetia journaling connects personal impulses with your own notes, feedback and recurring themes. The app does not claim to know you better than you know yourself. It helps you see resonance, doubt, patterns and development more consciously over time.",
   imageAlt: "A quiet library of inner notes as an image for Hermetia journaling",
   sections: [
     {
@@ -866,7 +866,7 @@ enPages.journaling = {
     {
       title: "From daily impulse to personal observation",
       body:
-        "A daily impulse gives focus. The journal asks what you make of it. Did the impulse reveal something, was there a situation where a core theme became tangible, did the sentence feel wrong, too strong or surprisingly accurate? This feedback matters because it makes interpretation more human. Hermetia should not only send, but give you room to answer back. That is how a daily hint becomes a personal trail.",
+        "A daily impulse gives focus. The journal asks what you make of it. Did the impulse reveal something, was there a situation where a core theme became tangible, did the sentence feel wrong, too strong or surprisingly accurate? This feedback matters because it makes interpretation more human. Hermetia gives you room to answer back. That is how a daily hint becomes a personal trail.",
     },
     {
       title: "Recognizing patterns over weeks and months",
@@ -876,12 +876,12 @@ enPages.journaling = {
     {
       title: "Privacy and sensitive notes",
       body:
-        "Journaling can be deeply personal. The website therefore needs to explain clearly that such content is treated as sensitive. Users should understand what is stored, how deletion and export are intended and what role AI plays in summaries. Hermetia must not derive medical, therapeutic or legal claims from journal texts. The feature remains a reflection tool, not a substitute for professional advice.",
+        "Journaling can be deeply personal. Hermetia treats this content as sensitive and explains what is stored, how deletion and export work and what role AI plays in summaries. Hermetia derives no medical, therapeutic or legal claims from journal texts. The feature remains a reflection tool, not a substitute for professional advice.",
     },
     {
       title: "Start free, understand paid depth",
       body:
-        "The free start can enable first impulses and simple reflection. Paid models become useful when users want history, reviews, more levels, deeper questions and long-term patterns. This is exactly why journaling belongs on the marketing website: it explains why Hermetia is not only a profile calculator, but an ongoing companion that unfolds over time.",
+        "The free start can enable first impulses and simple reflection. Paid models become useful when you want history, reviews, more levels, deeper questions and long-term patterns. Journaling shows why Hermetia is not only a profile calculator, but an ongoing companion that unfolds over time.",
     },
   ],
   faq: [
@@ -891,11 +891,11 @@ enPages.journaling = {
     },
     {
       q: "Does AI read my journal texts?",
-      a: "AI-assisted summaries may happen only transparently and for a defined purpose. Users must understand when AI is involved and which content is used for it.",
+      a: "AI-assisted summaries happen transparently and for a defined purpose. You can see when AI is involved and which content is used for it.",
     },
     {
       q: "Can I delete journal entries?",
-      a: "Yes. The product goal is that personal content can be exported and deleted. The marketing website intentionally describes this as part of the data-protection line.",
+      a: "Yes. Personal content can be exported and deleted. Hermetia treats this as part of the data-protection line.",
     },
     {
       q: "Is journaling therapy?",
@@ -1405,7 +1405,7 @@ export const articles = [
     seoTitle: "Seelenkarte erstellen — Systeme, Konvergenz und persönlicher Einstieg",
     description: "Wie aus Geburtsdaten, Selbstauskunft und Systemsignalen eine verständliche Seelenkarte entsteht.",
     body:
-      "Eine Seelenkarte entsteht bei Hermetia nicht aus einem einzigen Test. Sie verbindet berechenbare Systeme, vorsichtige Selbstauskunft und die Konvergenz-Engine. Dadurch wird sichtbar, welche Themen mehrfach auftauchen und welche nur leise Nebenmotive sind. Der Einstieg soll neugierig machen: erst verstehen, dann entscheiden, welche Tiefe im bezahlten Modell sinnvoll ist.",
+      "Eine Seelenkarte entsteht bei Hermetia nicht aus einem einzigen Test. Sie verbindet berechenbare Systeme, vorsichtige Selbstauskunft und die Konvergenz-Engine. Dadurch wird sichtbar, welche Themen mehrfach auftauchen und welche nur leise Nebenmotive sind. Der Einstieg macht neugierig: erst verstehen, dann entscheiden, welche Tiefe im bezahlten Modell sinnvoll ist.",
   },
   {
     slug: "konvergenz-statt-beliebigkeit",
@@ -1421,7 +1421,7 @@ export const articles = [
     seoTitle: "Was kostet ein spirituelles Profil? — kostenloser Einstieg und Premium-Tiefe",
     description: "Warum Hermetia mit einem kostenlosen Einstieg arbeitet und welche Tiefe bezahlte Modelle schaffen.",
     body:
-      "Ein gutes Profil braucht Datenqualität, Berechnung, verständliche Texte und verantwortungsvolle Grenzen. Hermetia soll deshalb kostenlos neugierig machen, aber tiefe Ebenen, Beziehungsauswertungen, Tagesbegleitung und langfristige Rückblicke in bezahlten Modellen bündeln. Der Nutzer soll erst Resonanz erleben und dann bewusst entscheiden.",
+      "Ein gutes Profil braucht Datenqualität, Berechnung, verständliche Texte und verantwortungsvolle Grenzen. Hermetia macht den Einstieg kostenlos erlebbar und bündelt tiefe Ebenen, Beziehungsauswertungen, Tagesbegleitung und langfristige Rückblicke in bezahlten Modellen. Du erlebst erst Resonanz und entscheidest dann bewusst.",
   },
   {
     slug: "warum-geburtsdaten-sensibel-sind",
@@ -1477,7 +1477,7 @@ export const articles = [
     seoTitle: "Spirituelle App ohne Angstmarketing — Hermetias Produktethik",
     description: "Warum Hermetia keine Angst, Abhängigkeit oder FOMO als Conversion-Hebel nutzen soll.",
     body:
-      "Viele spirituelle Produkte verkaufen Dringlichkeit: verpasste Chancen, Schicksal, Warnungen oder karmische Angst. Hermetia soll anders funktionieren. Die Website darf neugierig machen und zur Anmeldung führen, aber nicht manipulieren. Gute Conversion entsteht durch Klarheit, Resonanz und Vertrauen.",
+      "Viele spirituelle Produkte verkaufen Dringlichkeit: verpasste Chancen, Schicksal, Warnungen oder karmische Angst. Hermetia funktioniert anders. Die Website darf neugierig machen und zur Anmeldung führen, aber nicht manipulieren. Gute Conversion entsteht durch Klarheit, Resonanz und Vertrauen.",
   },
   {
     slug: "seo-fuer-spirituelle-systeme",
@@ -1485,7 +1485,7 @@ export const articles = [
     seoTitle: "SEO für spirituelle Systeme — warum Hermetia Glossar, Wissen und Vergleiche baut",
     description: "Warum Longtail-Seiten zu Systemen, Begriffen und Vergleichen nachhaltige Reichweite schaffen.",
     body:
-      "Menschen suchen selten sofort nach einer neuen Plattform. Sie suchen nach Begriffen: Was ist Human Design? Was bedeutet innere Autorität? Was ist der Unterschied zu Astrologie? Hermetia baut deshalb ein Wissensfundament aus Systemseiten, Glossar, Artikeln und Vergleichen. Jede Seite soll helfen und zugleich elegant zur Anmeldung führen.",
+      "Menschen suchen selten sofort nach einer neuen Plattform. Sie suchen nach Begriffen: Was ist Human Design? Was bedeutet innere Autorität? Was ist der Unterschied zu Astrologie? Hermetia baut deshalb ein Wissensfundament aus Systemseiten, Glossar, Artikeln und Vergleichen. Jede Seite hilft konkret und führt bei passender Resonanz elegant zur Anmeldung.",
   },
   {
     slug: "aeo-geo-und-ai-suche",
@@ -1501,7 +1501,7 @@ export const articles = [
     seoTitle: "Hermetia Premium-Modell wählen — wann sich bezahlte Tiefe lohnt",
     description: "Welche Nutzer vom kostenlosen Einstieg profitieren und wann ein bezahltes Modell sinnvoll wird.",
     body:
-      "Der kostenlose Einstieg zeigt, ob Hermetia resoniert. Ein bezahltes Modell wird sinnvoll, wenn Nutzer mehr Tiefe wollen: zusätzliche Ebenen, Beziehungsauswertungen, Tagesimpulse, Journaling-Verlauf oder langfristige Rückblicke. Die Website sollte diese Entscheidung nicht erzwingen, sondern gut erklären.",
+      "Der kostenlose Einstieg zeigt, ob Hermetia resoniert. Ein bezahltes Modell wird sinnvoll, wenn du mehr Tiefe willst: zusätzliche Ebenen, Beziehungsauswertungen, Tagesimpulse, Journaling-Verlauf oder langfristige Rückblicke. Die Entscheidung bleibt bewusst und gut erklärt.",
   },
   {
     slug: "warum-hermetia-keine-therapie-ist",
@@ -1615,6 +1615,6 @@ export const comparisons = [
 export function getPillarPage(key: string, locale: Locale): ContentPage | undefined {
   const page = pillarPages[key];
   if (!page) return undefined;
-  return locale === "en" ? page.en : page.de;
+  return locale === "de" ? page.de : page.en;
 }
 

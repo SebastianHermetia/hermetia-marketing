@@ -867,5 +867,5 @@ export function getSystem(slug: string): SystemEntry | undefined {
 }
 
 export function systemText(system: SystemEntry, locale: string): SystemText {
-  return locale === "en" ? system.en : system.de;
+  return locale === "de" ? system.de : system.en;
 }

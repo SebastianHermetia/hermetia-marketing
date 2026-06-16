@@ -420,7 +420,7 @@ const featuredBookIds = [
 ];
 
 function localize<T extends Localized>(value: T, locale: Locale | string) {
-  return locale === "en" ? value.en : value.de;
+  return locale === "de" ? value.de : value.en;
 }
 
 export function bookText(book: BookRecommendation, locale: Locale | string) {

@@ -145,8 +145,8 @@ const badFit = [
 ];
 
 const conversionPrinciples = [
-  "Jede inhaltliche Seite soll einen passenden Weg zum Profilstart anbieten, aber nicht jede Seite muss hart verkaufen.",
-  "Der kostenlose Einstieg ist der erste Vertrauensmoment: Nutzer sollen Resonanz prüfen, bevor sie ein bezahltes Modell wählen.",
+  "Jede inhaltliche Seite bietet einen passenden Weg zum Profilstart, ohne hart verkaufen zu müssen.",
+  "Der kostenlose Einstieg ist der erste Vertrauensmoment: Du prüfst Resonanz, bevor du ein bezahltes Modell wählst.",
   "Premium-CTAs gehören besonders dort hin, wo Tiefe, Alltag, Journaling, Beziehung oder Vollprofil-Buch erklärt werden.",
   "Rechtliche Grenzen, Datenschutz und IP-Sorgfalt bleiben sichtbar, damit Conversion nicht auf überzogenen Versprechen basiert.",
 ];
@@ -162,7 +162,7 @@ const legalFrames = [
   },
   {
     title: "Einwilligung bei sensiblen Profilen",
-    text: "Beziehungs- und Vergleichsanwendungen werden an klare Zustimmung gebunden. Das schützt Privatsphäre, Vertrauen und die spätere Produktlogik.",
+    text: "Beziehungs- und Vergleichsanwendungen werden an klare Zustimmung gebunden. Das schützt Privatsphäre, Vertrauen und die rechtliche Grundlage.",
   },
 ];
 
@@ -214,7 +214,7 @@ const useCasesCopy = {
     journeyKicker: "Nutzerreise",
     journeyTitle: "Vom ersten Interesse zur bezahlten Tiefe.",
     journeyText:
-      "Das Ziel der Website ist nicht nur Information, sondern ein klarer, vertrauensvoller Weg in die Hermetia-App. Wer neugierig wird, soll jederzeit starten können. Wer tiefer einsteigen will, soll verstehen, warum ein bezahltes Modell sinnvoll ist.",
+      "Die Website ist nicht nur Information, sondern ein klarer, vertrauensvoller Weg in die Hermetia-App. Wer neugierig wird, kann jederzeit starten. Wer tiefer einsteigen will, versteht, warum ein bezahltes Modell sinnvoll ist.",
     journeyCtaTitle: "Teste den wichtigsten Anwendungsfall zuerst: dein eigenes Profil.",
     journeyCtaText:
       "Die beste Erklärung bleibt allgemein. Der kostenlose Profilstart zeigt, ob Hermetia bei dir persönlich Resonanz erzeugt.",
@@ -229,16 +229,16 @@ const useCasesCopy = {
     badFitKicker: "Grenzen",
     badFitTitle: "Hermetia passt nicht, wenn...",
     conversionKicker: "Conversion-Prinzip",
-    conversionTitle: "Neugier soll in Anmeldung übergehen, aber mit Vertrauen.",
+    conversionTitle: "Neugier führt zur Anmeldung, aber mit Vertrauen.",
     conversionText:
-      "Hermetia verkauft am stärksten, wenn Nutzer die eigene Entscheidung als selbstbestimmt erleben. Deshalb verbinden die Inhalte klare Nutzenfelder mit sichtbaren Grenzen, Einwilligung und einem kostenlosen Einstieg.",
+      "Hermetia wirkt am stärksten, wenn deine Entscheidung selbstbestimmt bleibt. Deshalb verbinden die Inhalte klare Nutzenfelder mit sichtbaren Grenzen, Einwilligung und einem kostenlosen Einstieg.",
     funnelAlt: "Grafik zum Weg von Daten über Einordnung zu verständlicher Hermetia-Sprache",
     funnelCaption:
       "Der Funnel zeigt, warum Hermetia nicht einfach Systemtexte addiert, sondern Signale prüft, dämpft und in eigene Sprache übersetzt.",
     legalKicker: "Rechtlicher Rahmen",
     legalTitle: "Was Anwendungsfälle versprechen dürfen und was nicht.",
     legalText:
-      "Für Reichweite, Vertrauen und spätere Paid-Conversion ist entscheidend, dass der Content rechtlich sauber bleibt. Hermetia formuliert Nutzen als Reflexion, nicht als Garantie.",
+      "Hermetia formuliert Nutzen als Reflexion, nicht als Garantie. So bleiben die Anwendungsfälle hilfreich, klar und ohne überzogene Versprechen.",
     finalKicker: "Nächster Schritt",
     finalTitle: "Prüfe Hermetia an deinem eigenen Profil.",
     finalText:
@@ -349,7 +349,7 @@ const useCasesCopy = {
     journeyKicker: "User journey",
     journeyTitle: "From first interest to paid depth.",
     journeyText:
-      "The goal of the website is not only information, but a clear and trustworthy route into the Hermetia app. People who become curious should be able to start at any time. People who want to go deeper should understand why a paid model is useful.",
+      "The website is not only information, but a clear and trustworthy route into the Hermetia app. People who become curious can start at any time. People who want to go deeper understand why a paid model is useful.",
     journey: [
       {
         step: "1",
@@ -432,12 +432,12 @@ const useCasesCopy = {
       "You want to evaluate profiles of other people without their consent.",
     ],
     conversionKicker: "Conversion principle",
-    conversionTitle: "Curiosity should lead to signup, but through trust.",
+    conversionTitle: "Curiosity leads to signup, but through trust.",
     conversionText:
-      "Hermetia sells strongest when users experience their decision as self-determined. The content therefore connects clear fields of value with visible limits, consent and a free start.",
+      "Hermetia is strongest when your decision remains self-determined. The content therefore connects clear fields of value with visible limits, consent and a free start.",
     conversionPrinciples: [
-      "Every content page should offer a fitting path to profile start, but not every page has to sell hard.",
-      "The free start is the first trust moment: users should test resonance before choosing a paid model.",
+      "Every content page offers a fitting path to profile start without having to sell hard.",
+      "The free start is the first trust moment: you test resonance before choosing a paid model.",
       "Premium CTAs belong especially where depth, daily practice, journaling, relationships or the full profile book are explained.",
       "Legal limits, data protection and IP care remain visible so conversion is not based on exaggerated promises.",
     ],
@@ -447,7 +447,7 @@ const useCasesCopy = {
     legalKicker: "Legal frame",
     legalTitle: "What use cases may promise and what they may not.",
     legalText:
-      "For reach, trust and later paid conversion, content must remain legally clean. Hermetia describes value as reflection, not as guarantee.",
+      "Hermetia describes value as reflection, not as guarantee. That keeps the use cases helpful, clear and free from exaggerated promises.",
     legalFrames: [
       {
         title: "No diagnosis and no healing promises",
@@ -459,7 +459,7 @@ const useCasesCopy = {
       },
       {
         title: "Consent for sensitive profiles",
-        text: "Relationship and comparison use cases are tied to clear consent. This protects privacy, trust and the later product logic.",
+        text: "Relationship and comparison use cases are tied to clear consent. This protects privacy, trust and the legal foundation.",
       },
     ],
     finalKicker: "Next step",
@@ -495,7 +495,7 @@ const useCasesCopy = {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const copy = locale === "en" ? useCasesCopy.en : useCasesCopy.de;
+  const copy = locale === "de" ? useCasesCopy.de : useCasesCopy.en;
   return buildMetadata({
     locale: locale as Locale,
     path: paths.anwendungsfaelle,
@@ -507,7 +507,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function UseCasesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  const copy = locale === "en" ? useCasesCopy.en : useCasesCopy.de;
+  const copy = locale === "de" ? useCasesCopy.de : useCasesCopy.en;
   const localizedFaq = copy.faq.map(({ q, a }) => ({ q, a }));
   const pageUrl = `${siteUrl}/${locale}${paths.anwendungsfaelle}/`;
 

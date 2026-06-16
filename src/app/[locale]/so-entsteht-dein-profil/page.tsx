@@ -27,7 +27,7 @@ const methodFaq = [
   },
   {
     q: "Kann ich nachvollziehen, woher eine Aussage kommt?",
-    a: "Das Produktziel ist Erklärbarkeit: Nutzer sollen sehen können, welche Systemfamilien und Datenarten ein Kernthema tragen und wo Unsicherheit besteht.",
+    a: "Ja. Hermetia zeigt, welche Systemfamilien und Datenarten ein Kernthema tragen und wo Unsicherheit besteht.",
   },
 ];
 
@@ -120,7 +120,7 @@ export default async function MethodikPage({ params }: { params: Promise<{ local
             <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Wie wird aus Daten ein persönliches Profil?</h2>
           </div>
           <p className="muted text-[17px] leading-[1.85]">
-            Hermetia erstellt dein Profil in drei Schichten: Zuerst werden berechenbare Grundlagen erzeugt, dann erkennt die Konvergenz-Engine wiederkehrende Themen über Systemfamilien hinweg, anschließend werden diese Themen in verständliche Reflexionssprache übersetzt. Die Methode soll neugierig machen, aber nachvollziehbar bleiben.
+            Hermetia erstellt dein Profil in drei Schichten: Zuerst werden berechenbare Grundlagen erzeugt, dann erkennt die Konvergenz-Engine wiederkehrende Themen über Systemfamilien hinweg, anschließend werden diese Themen in verständliche Reflexionssprache übersetzt. Die Methode macht neugierig und bleibt nachvollziehbar.
           </p>
         </div>
       </section>
@@ -227,7 +227,7 @@ export default async function MethodikPage({ params }: { params: Promise<{ local
         <div className="wrap grid gap-8 lg:grid-cols-[1fr_.9fr]">
           <div>
             <span className="kicker">Qualität und Grenzen</span>
-            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Hermetia soll tief wirken, aber nicht absolut sprechen.</h2>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Hermetia wirkt tief, ohne absolut zu sprechen.</h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
               Die Methode ist auf Vertrauen ausgelegt: nachvollziehbare Berechnung, vorsichtige Sprache, Datenschutz und eine klare Trennung zwischen Reflexion und Beratung. Genau diese Grenzen machen das Produkt glaubwürdiger.
             </p>

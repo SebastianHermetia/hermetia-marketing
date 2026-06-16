@@ -17,12 +17,12 @@ const servicesPageCopy = {
     offerKicker: "Leistungsbereiche",
     offerTitle: "Vom ersten Profil bis zur bezahlten Tiefe.",
     offerText:
-      "Hermetia ist als Funnel gebaut: erst Orientierung, dann persönliche Resonanz, dann eine bewusste Entscheidung für mehr Tiefe. Jede Leistung soll entweder Vertrauen aufbauen, Neugier in Anmeldung verwandeln oder den Wert eines bezahlten Modells verständlich machen.",
+      "Hermetia führt von Orientierung zu persönlicher Resonanz und erst danach zu einer bewussten Entscheidung für mehr Tiefe. Jede Leistung macht entweder den Einstieg verständlicher oder den Wert eines bezahlten Modells greifbar.",
     offerBlocks: [
       {
         tag: "Kostenloser Einstieg",
         title: "Seelenkarte und erste Kernthemen",
-        text: "Der Einstieg soll nicht erklären, warum Hermetia theoretisch spannend ist. Er soll direkt erlebbar machen, ob die Sprache resoniert. Deshalb beginnt Hermetia mit deiner Seelenkarte, ersten Kernthemen und einer verständlichen Einordnung der Systeme, ohne Kreditkarte und ohne Druck zum Upgrade.",
+        text: "Der Einstieg macht direkt erlebbar, ob die Sprache resoniert. Deshalb beginnt Hermetia mit deiner Seelenkarte, ersten Kernthemen und einer verständlichen Einordnung der Systeme, ohne Kreditkarte und ohne Druck zum Upgrade.",
         href: paths.seelenkarte,
         cta: "Seelenkarte verstehen",
       },
@@ -75,7 +75,7 @@ const servicesPageCopy = {
     legalKicker: "Rechtliche und redaktionelle Leitplanken",
     legalTitle: "Eigene Inhalte, klare Grenzen, keine versteckten Versprechen.",
     legalText:
-      "Die Leistungsseite muss verkaufen, aber sauber verkaufen. Deshalb werden Nutzen und Grenzen gemeinsam erklärt: keine Therapie, keine medizinische Beratung, keine Schicksalsversprechen, keine Profile anderer Personen ohne Einwilligung und keine übernommenen proprietären Deutungstexte. Diese Klarheit stärkt Vertrauen und schützt die Marke.",
+      "Nutzen und Grenzen gehören bei Hermetia zusammen: keine Therapie, keine medizinische Beratung, keine Schicksalsversprechen, keine Profile anderer Personen ohne Einwilligung und keine übernommenen proprietären Deutungstexte. Diese Klarheit stärkt Vertrauen.",
     legalCta: "Sicher starten",
     aiCta: "AI-Transparenz lesen",
     faqKicker: "FAQ",
@@ -83,7 +83,7 @@ const servicesPageCopy = {
     servicesFaq: [
       {
         q: "Welche Leistung bekomme ich direkt nach der Anmeldung?",
-        a: "Nach dem Onboarding entsteht deine persönliche Seelenkarte mit ersten Kernthemen. Der kostenlose Einstieg soll zeigen, ob die Deutungssprache resoniert, bevor du ein bezahltes Modell auswählst.",
+        a: "Nach dem Onboarding entsteht deine persönliche Seelenkarte mit ersten Kernthemen. Der kostenlose Einstieg zeigt, ob die Deutungssprache resoniert, bevor du ein bezahltes Modell auswählst.",
       },
       {
         q: "Was unterscheidet Hermetia von einem normalen Persönlichkeitstest?",
@@ -99,7 +99,7 @@ const servicesPageCopy = {
       },
       {
         q: "Nutzt Hermetia geschützte Texte aus Astrologie, Human Design oder Gene Keys?",
-        a: "Die Marketing-Website verwendet eigene Sprache und keine proprietären Deutungstexte, Kartentexte oder Fragebogenitems Dritter. Systembezüge werden beschreibend, transformativ und vorsichtig formuliert.",
+        a: "Hermetia verwendet eigene Sprache und keine proprietären Deutungstexte, Kartentexte oder Fragebogenitems Dritter. Systembezüge werden beschreibend, transformativ und vorsichtig formuliert.",
       },
     ],
   },
@@ -110,12 +110,12 @@ const servicesPageCopy = {
     offerKicker: "Feature areas",
     offerTitle: "From the first profile to paid depth.",
     offerText:
-      "Hermetia is built as a funnel: orientation first, then personal resonance, then a conscious decision for more depth. Every feature should either build trust, turn curiosity into signup or make the value of a paid model understandable.",
+      "Hermetia leads from orientation to personal resonance and only then to a conscious decision for more depth. Each feature either makes the start clearer or makes the value of a paid model tangible.",
     offerBlocks: [
       {
         tag: "Free start",
         title: "Soul map and first core themes",
-        text: "The entry point should not explain why Hermetia is theoretically interesting. It should let users feel whether the language resonates. That is why Hermetia starts with your soul map, first core themes and an understandable framing of the systems, without a credit card and without upgrade pressure.",
+        text: "The entry point lets you feel directly whether the language resonates. That is why Hermetia starts with your soul map, first core themes and an understandable framing of the systems, without a credit card and without upgrade pressure.",
         href: paths.seelenkarte,
         cta: "Understand the soul map",
       },
@@ -168,7 +168,7 @@ const servicesPageCopy = {
     legalKicker: "Legal and editorial guardrails",
     legalTitle: "Original content, clear limits, no hidden promises.",
     legalText:
-      "The feature page should sell, but it should sell cleanly. That is why value and limits are explained together: no therapy, no medical advice, no destiny promises, no profiles of other people without consent and no copied proprietary interpretation texts. This clarity builds trust and protects the brand.",
+      "Value and limits belong together at Hermetia: no therapy, no medical advice, no destiny promises, no profiles of other people without consent and no copied proprietary interpretation texts. This clarity builds trust.",
     legalCta: "Start safely",
     aiCta: "Read AI transparency",
     faqKicker: "FAQ",
@@ -176,7 +176,7 @@ const servicesPageCopy = {
     servicesFaq: [
       {
         q: "Which feature do I get right after signup?",
-        a: "After onboarding, your personal soul map with first core themes is created. The free start should show whether the interpretation language resonates before you choose a paid model.",
+        a: "After onboarding, your personal soul map with first core themes is created. The free start shows whether the interpretation language resonates before you choose a paid model.",
       },
       {
         q: "How is Hermetia different from a normal personality test?",
@@ -209,7 +209,7 @@ export default async function LeistungenPage({ params }: { params: Promise<{ loc
   const locale = raw as Locale;
   const t = getDictionary(locale);
   const p = t.leistungen;
-  const copy = locale === "en" ? servicesPageCopy.en : servicesPageCopy.de;
+  const copy = locale === "de" ? servicesPageCopy.de : servicesPageCopy.en;
   const localizedFaq = copy.servicesFaq.map(({ q, a }) => ({ q, a }));
   const pageUrl = `${siteUrl}/${locale}${paths.leistungen}/`;
 

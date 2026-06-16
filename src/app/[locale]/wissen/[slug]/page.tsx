@@ -72,7 +72,7 @@ function articleSections(article: (typeof articles)[number]) {
   return [
     {
       title: "Warum dieses Thema für Hermetia wichtig ist",
-      body: `${article.title} ist mehr als ein einzelner Suchbegriff. Das Thema berührt die zentrale Frage, wie Menschen spirituelle Systeme, Selbstauskunft und AI-Deutung nutzen können, ohne sich selbst in ein starres Label zu pressen. Hermetia behandelt solche Themen deshalb immer als Orientierung: hilfreich genug, um Sprache für Muster zu finden, aber offen genug, damit der Nutzer die Deutung prüfen, verwerfen oder vertiefen kann.`,
+      body: `${article.title} ist mehr als ein einzelner Suchbegriff. Das Thema berührt die zentrale Frage, wie Menschen spirituelle Systeme, Selbstauskunft und AI-Deutung nutzen können, ohne sich selbst in ein starres Label zu pressen. Hermetia behandelt solche Themen deshalb immer als Orientierung: hilfreich genug, um Sprache für Muster zu finden, aber offen genug, damit du die Deutung prüfen, verwerfen oder vertiefen kannst.`,
     },
     {
       title: "Wie Hermetia daraus eine persönliche Erfahrung macht",
@@ -80,7 +80,7 @@ function articleSections(article: (typeof articles)[number]) {
     },
     {
       title: "Chancen, Grenzen und verantwortungsvolle Nutzung",
-      body: `Der Nutzen entsteht, wenn ein Thema Resonanz auslöst und zu einer besseren Frage führt: Was erkenne ich wieder? Was stimmt nicht? Was will ich im Alltag anders beobachten? Die Grenze ist ebenso wichtig: Hermetia ersetzt keine medizinische, psychologische, therapeutische, rechtliche oder finanzielle Beratung. Die Inhalte sollen Neugier wecken, aber keine Abhängigkeit erzeugen und keine Angst als Conversion-Hebel nutzen.`,
+      body: `Der Nutzen entsteht, wenn ein Thema Resonanz auslöst und zu einer besseren Frage führt: Was erkenne ich wieder? Was stimmt nicht? Was will ich im Alltag anders beobachten? Die Grenze ist ebenso wichtig: Hermetia ersetzt keine medizinische, psychologische, therapeutische, rechtliche oder finanzielle Beratung. Die Inhalte wecken Neugier, ohne Abhängigkeit zu erzeugen oder Angst als Conversion-Hebel zu nutzen.`,
     },
     {
       title: "Der nächste sinnvolle Schritt",
