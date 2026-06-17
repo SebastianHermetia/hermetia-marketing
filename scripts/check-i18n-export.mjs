@@ -8,10 +8,14 @@ const locales = config.locales;
 const localizedLocales = new Set(config.localizedLocales);
 const fallbackMarkers = config.forbiddenLocalizedMarkers;
 
+function isPublicRouteDir(name) {
+  return !name.startsWith(".") && !name.startsWith("_") && !name.includes("$");
+}
+
 function htmlFiles(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
     const full = join(dir, entry.name);
-    if (entry.isDirectory()) return htmlFiles(full);
+    if (entry.isDirectory()) return isPublicRouteDir(entry.name) ? htmlFiles(full) : [];
     return entry.name === "index.html" ? [full] : [];
   });
 }
@@ -93,7 +97,7 @@ for (const locale of locales) {
   }
   for (const [prefix, expected] of Object.entries(config.detailCounts)) {
     const dir = join(out, locale, ...prefix.split("/").filter(Boolean));
-    const actual = existsSync(dir) ? readdirSync(dir, { withFileTypes: true }).filter((entry) => entry.isDirectory()).length : 0;
+    const actual = existsSync(dir) ? readdirSync(dir, { withFileTypes: true }).filter((entry) => entry.isDirectory() && isPublicRouteDir(entry.name)).length : 0;
     if (actual < expected) {
       console.error(`Missing detail exports for ${locale}${prefix}: expected at least ${expected}, got ${actual}`);
       failures += 1;
