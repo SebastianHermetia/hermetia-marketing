@@ -178,7 +178,7 @@ function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function createScriptReplacers(cache, locale, strings) {
+function createJsStringReplacers(cache, locale, strings, embeddedInJsString = false) {
   const skipped = new Set([
     "width=device-width, initial-scale=1",
     "noindex, nofollow",
@@ -190,8 +190,10 @@ function createScriptReplacers(cache, locale, strings) {
     if (skipped.has(source)) continue;
     const target = cache[locale]?.[source];
     if (!target || target === source) continue;
-    const sourceJs = JSON.stringify(source).slice(1, -1);
-    const targetJs = JSON.stringify(target).slice(1, -1);
+    const sourceJson = JSON.stringify(source);
+    const targetJson = JSON.stringify(target);
+    const sourceJs = embeddedInJsString ? JSON.stringify(sourceJson).slice(1, -1) : sourceJson;
+    const targetJs = embeddedInJsString ? JSON.stringify(targetJson).slice(1, -1) : targetJson;
     if (sourceJs) replacements.set(sourceJs, targetJs);
   }
 
@@ -207,29 +209,85 @@ function createScriptReplacers(cache, locale, strings) {
   return replacers;
 }
 
-function applyScriptStringTranslations(html, replacers) {
-  if (!replacers.length) return html;
-  return html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, (script) => {
-    let translated = script;
-    for (const { regex, replacements } of replacers) {
-      translated = translated.replace(regex, (source) => replacements.get(source) ?? source);
-    }
-    return translated;
-  });
-}
-
-function applyPayloadTranslations(payload, replacers) {
-  let translated = payload;
+function applyReplacers(value, replacers) {
+  let translated = value;
   for (const { regex, replacements } of replacers) {
     translated = translated.replace(regex, (source) => replacements.get(source) ?? source);
   }
   return translated;
 }
 
-function applyTranslations(cache, locale, html, scriptReplacers) {
+function offsetByUtf8Bytes(value, start, byteLength) {
+  let offset = start;
+  let consumed = 0;
+  while (offset < value.length && consumed < byteLength) {
+    const codePoint = value.codePointAt(offset);
+    const char = String.fromCodePoint(codePoint);
+    consumed += Buffer.byteLength(char, "utf8");
+    offset += char.length;
+  }
+  return { offset, consumed };
+}
+
+function applyPayloadTranslations(payload, replacers, state = { pendingTextBytes: 0 }) {
+  if (!replacers.length) return payload;
+
+  let translated = "";
+  let cursor = 0;
+  const textChunkPattern = /(^|\n)([0-9a-f]+):T([0-9a-f]+),/gi;
+
+  if (state.pendingTextBytes > 0) {
+    const protectedEnd = offsetByUtf8Bytes(payload, 0, state.pendingTextBytes);
+    translated += payload.slice(0, protectedEnd.offset);
+    state.pendingTextBytes -= protectedEnd.consumed;
+    cursor = protectedEnd.offset;
+  }
+
+  let match;
+  while ((match = textChunkPattern.exec(payload))) {
+    const markerStart = match.index + match[1].length;
+    const payloadStart = textChunkPattern.lastIndex;
+    const declaredBytes = parseInt(match[3], 16);
+    const protectedEnd = offsetByUtf8Bytes(payload, payloadStart, declaredBytes);
+
+    translated += applyReplacers(payload.slice(cursor, markerStart), replacers);
+    translated += payload.slice(markerStart, protectedEnd.offset);
+    state.pendingTextBytes = declaredBytes - protectedEnd.consumed;
+    cursor = protectedEnd.offset;
+    textChunkPattern.lastIndex = protectedEnd.offset;
+  }
+
+  translated += applyReplacers(payload.slice(cursor), replacers);
+  return translated;
+}
+
+function applyInlineFlightTranslations(html, replacers) {
+  const state = { pendingTextBytes: 0 };
+  return html.replace(/(self\.__next_f\.push\(\[1,)((?:"(?:\\.|[^"\\])*"))(\]\))/g, (match, prefix, encoded, suffix) => {
+    try {
+      const payload = JSON.parse(encoded);
+      return `${prefix}${JSON.stringify(applyPayloadTranslations(payload, replacers, state))}${suffix}`;
+    } catch {
+      return match;
+    }
+  });
+}
+
+function applyScriptStringTranslations(html, rawReplacers, embeddedReplacers) {
+  if (!rawReplacers.length && !embeddedReplacers.length) return html;
+  return html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, (script) => {
+    if (/type=["']application\/ld\+json["']/i.test(script)) {
+      return applyReplacers(script, rawReplacers);
+    }
+    return script;
+  });
+}
+
+function applyTranslations(cache, locale, html, rawScriptReplacers, embeddedScriptReplacers) {
   let translated = html.replace(/>([^<>]+)</g, (match, value) => `>${translateText(cache, locale, value)}<`);
   translated = applyAttributeTranslations(cache, locale, translated);
-  translated = applyScriptStringTranslations(translated, scriptReplacers);
+  translated = applyScriptStringTranslations(translated, rawScriptReplacers, embeddedScriptReplacers);
+  translated = applyInlineFlightTranslations(translated, rawScriptReplacers);
   return translated;
 }
 
@@ -252,16 +310,17 @@ let rewritten = 0;
 let rewrittenPayloads = 0;
 let missing = 0;
 for (const locale of locales) {
-  const scriptReplacers = createScriptReplacers(cache, locale, stringsByLocale[locale]);
+  const rawScriptReplacers = createJsStringReplacers(cache, locale, stringsByLocale[locale]);
+  const embeddedScriptReplacers = createJsStringReplacers(cache, locale, stringsByLocale[locale], true);
   for (const file of htmlFiles(join(outDir, locale))) {
     const html = readFileSync(file, "utf8");
-    const translated = applyTranslations(cache, locale, html, scriptReplacers);
+    const translated = applyTranslations(cache, locale, html, rawScriptReplacers, embeddedScriptReplacers);
     writeFileSync(file, translated);
     rewritten += 1;
   }
   for (const file of payloadFiles(join(outDir, locale))) {
     const payload = readFileSync(file, "utf8");
-    const translated = applyPayloadTranslations(payload, scriptReplacers);
+    const translated = applyPayloadTranslations(payload, rawScriptReplacers);
     writeFileSync(file, translated);
     rewrittenPayloads += 1;
   }
