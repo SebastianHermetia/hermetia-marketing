@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { type Locale, siteUrl } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { localizeCopy } from "@/i18n/localized-content";
 import { buildMetadata } from "@/lib/seo";
 import { startUrl, paths, localePath } from "@/lib/links";
 import { Header } from "@/components/Header";
@@ -180,7 +181,7 @@ export default async function PreisePage({ params }: { params: Promise<{ locale:
   const locale = raw as Locale;
   const t = getDictionary(locale);
   const p = t.preise;
-  const copy = locale === "de" ? pricingPageCopy.de : pricingPageCopy.en;
+  const copy = localizeCopy(locale, pricingPageCopy);
   const pageUrl = `${siteUrl}/${locale}${paths.preise}/`;
   const offers = p.tiers.map((tier) => ({ name: tier.name, price: tier.price.match(/\d+/)?.[0] ?? "0" }));
 

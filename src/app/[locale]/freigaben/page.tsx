@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { type Locale } from "@/i18n/config";
+import { localizeCopy } from "@/i18n/localized-content";
 import { reviewGates, reviewSummary, type ReviewGateStatus } from "@/content/launch-review";
 import { buildMetadata } from "@/lib/seo";
 import { paths } from "@/lib/links";
@@ -171,7 +172,7 @@ function localizeGate(gate: (typeof reviewGates)[number], locale: Locale) {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const copy = locale === "de" ? launchReviewCopy.de : launchReviewCopy.en;
+  const copy = localizeCopy(locale as Locale, launchReviewCopy);
   return buildMetadata({
     locale: locale as Locale,
     path: paths.freigaben,
@@ -184,7 +185,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const { locale: raw } = await params;
   const locale = raw as Locale;
   const summary = reviewSummary();
-  const copy = locale === "de" ? launchReviewCopy.de : launchReviewCopy.en;
+  const copy = localizeCopy(locale, launchReviewCopy);
 
   return (
     <>

@@ -1,4 +1,5 @@
 import { type Locale } from "@/i18n/config";
+import { localizedUi } from "@/i18n/localized-content";
 
 type Localized = {
   de: string;
@@ -695,7 +696,9 @@ const featuredBookIds = [
 ];
 
 function localize<T extends Localized>(value: T, locale: Locale | string) {
-  return locale === "de" ? value.de : value.en;
+  if (locale === "de") return value.de;
+  if (locale === "en") return value.en;
+  return localizedUi(locale as Locale).body;
 }
 
 export function bookText(book: BookRecommendation, locale: Locale | string) {

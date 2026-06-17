@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { comparisons } from "@/content/marketing";
+import { localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
 
 type ComparisonSlug = (typeof comparisons)[number]["slug"];
 
@@ -57,8 +58,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function VergleichePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  const ui = localizedUi(locale);
+  const localizedComparisons = comparisons.map((comparison) => localizeKnowledgeItem(comparison, locale, "comparison"));
   const pageUrl = `${siteUrl}/${locale}${paths.vergleiche}/`;
-  const bySlug = new Map(comparisons.map((comparison) => [comparison.slug, comparison]));
+  const bySlug = new Map(localizedComparisons.map((comparison) => [comparison.slug, comparison]));
 
   return (
     <>
@@ -82,12 +85,12 @@ export default async function VergleichePage({ params }: { params: Promise<{ loc
       <section className="py-16">
         <div className="wrap grid items-center gap-9 lg:grid-cols-[1fr_.85fr]">
           <div>
-            <span className="kicker">Vergleiche</span>
-            <h1 className="mt-3 max-w-[760px] text-[clamp(32px,5vw,48px)]">Welche Systeme zeigen was?</h1>
-            <p className="lead mt-5 max-w-[700px]">Vergleichsseiten holen typische Suchfragen ab und zeigen, warum Hermetia Systeme nicht gegeneinander ausspielt, sondern verantwortungsvoll verbindet.</p>
+            <span className="kicker">{ui.comparison}</span>
+            <h1 className="mt-3 max-w-[760px] text-[clamp(32px,5vw,48px)]">{locale === "de" || locale === "en" ? "Welche Systeme zeigen was?" : ui.title}</h1>
+            <p className="lead mt-5 max-w-[700px]">{locale === "de" || locale === "en" ? "Vergleichsseiten holen typische Suchfragen ab und zeigen, warum Hermetia Systeme nicht gegeneinander ausspielt, sondern verantwortungsvoll verbindet." : ui.lead}</p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "comparisons-hero" })}>Profil kostenlos starten</a>
-              <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.systeme)}>Alle Systeme ansehen</a>
+              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "comparisons-hero" })}>{ui.startFree}</a>
+              <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.systeme)}>{ui.overview}</a>
             </div>
           </div>
           <figure className="m-0 overflow-hidden rounded-card border border-sand bg-white shadow-soft">
@@ -154,11 +157,11 @@ export default async function VergleichePage({ params }: { params: Promise<{ loc
             <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">Systeme, Methoden und Alltag gegenübergestellt</h2>
           </div>
           <div className="grid gap-5 md:grid-cols-2">
-            {comparisons.map((comparison) => (
+            {localizedComparisons.map((comparison) => (
               <Link key={comparison.slug} href={localePath(locale, `${paths.vergleiche}/${comparison.slug}`)} className="card no-underline transition-transform hover:-translate-y-1">
                 <h2 className="text-[22px]">{comparison.title}</h2>
                 <p className="muted mt-2">{comparison.description}</p>
-                <span className="note mt-3 inline-block font-semibold text-gold">Vergleich lesen →</span>
+                <span className="note mt-3 inline-block font-semibold text-gold">{ui.comparison} →</span>
               </Link>
             ))}
           </div>

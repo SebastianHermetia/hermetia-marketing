@@ -24,6 +24,7 @@ import ro from "../../messages/ro.json";
 import sk from "../../messages/sk.json";
 import sl from "../../messages/sl.json";
 import sv from "../../messages/sv.json";
+import { localizeDictionary } from "./localized-content";
 
 export type Dictionary = typeof de;
 type PartialDictionary = {
@@ -69,7 +70,7 @@ const partialDictionaries: Partial<Record<Locale, PartialDictionary>> = {
 export function getDictionary(locale: Locale): Dictionary {
   const dictionary = partialDictionaries[locale];
   if (!dictionary) return enTyped;
-  const base = locale === "de" ? de : enTyped;
+  const base = locale === "de" ? de : localizeDictionary(locale, enTyped);
   return deepMerge(base, dictionary);
 }
 

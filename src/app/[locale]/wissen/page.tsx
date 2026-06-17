@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { articles } from "@/content/marketing";
+import { localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
 
 type ArticleSlug = (typeof articles)[number]["slug"];
 
@@ -50,8 +51,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function WissenPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  const ui = localizedUi(locale);
+  const localizedArticles = articles.map((article) => localizeKnowledgeItem(article, locale, "article"));
   const pageUrl = `${siteUrl}/${locale}${paths.wissen}/`;
-  const bySlug = new Map(articles.map((article) => [article.slug, article]));
+  const bySlug = new Map(localizedArticles.map((article) => [article.slug, article]));
 
   return (
     <>
@@ -75,12 +78,12 @@ export default async function WissenPage({ params }: { params: Promise<{ locale:
       <section className="py-16">
         <div className="wrap grid items-center gap-9 lg:grid-cols-[1fr_.85fr]">
           <div>
-            <span className="kicker">Wissen</span>
-            <h1 className="mt-3 max-w-[780px] text-[clamp(32px,5vw,48px)]">Ratgeber für spirituelles Profiling, AI und Selbstreflexion</h1>
-            <p className="lead mt-5 max-w-[700px]">Vertiefende Artikel, die Suchfragen beantworten und gleichzeitig zeigen, wie Hermetia verantwortungsvoll mit komplexen Systemen arbeitet.</p>
+            <span className="kicker">{ui.overview}</span>
+            <h1 className="mt-3 max-w-[780px] text-[clamp(32px,5vw,48px)]">{locale === "de" || locale === "en" ? "Ratgeber für spirituelles Profiling, AI und Selbstreflexion" : ui.title}</h1>
+            <p className="lead mt-5 max-w-[700px]">{locale === "de" || locale === "en" ? "Vertiefende Artikel, die Suchfragen beantworten und gleichzeitig zeigen, wie Hermetia verantwortungsvoll mit komplexen Systemen arbeitet." : ui.lead}</p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "knowledge-hero" })}>Profil kostenlos starten</a>
-              <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.glossar)}>Glossar öffnen</a>
+              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "knowledge-hero" })}>{ui.startFree}</a>
+              <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.glossar)}>{ui.glossary}</a>
             </div>
           </div>
           <figure className="m-0 overflow-hidden rounded-card border border-sand bg-white shadow-soft">
@@ -147,11 +150,11 @@ export default async function WissenPage({ params }: { params: Promise<{ locale:
             <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">Grundlagen, Grenzen und nächste Schritte</h2>
           </div>
           <div className="grid gap-5 md:grid-cols-3">
-            {articles.map((article) => (
+            {localizedArticles.map((article) => (
               <Link key={article.slug} href={localePath(locale, `${paths.wissen}/${article.slug}`)} className="card no-underline transition-transform hover:-translate-y-1">
                 <h2 className="text-[22px]">{article.title}</h2>
                 <p className="muted mt-2">{article.description}</p>
-                <span className="note mt-3 inline-block font-semibold text-gold">Artikel lesen →</span>
+                <span className="note mt-3 inline-block font-semibold text-gold">{ui.article} →</span>
               </Link>
             ))}
           </div>

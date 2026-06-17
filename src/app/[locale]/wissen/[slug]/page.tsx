@@ -9,6 +9,7 @@ import { AppCta } from "@/components/AppCta";
 import { Faq } from "@/components/Faq";
 import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
 import { articles } from "@/content/marketing";
+import { localizedFaq, localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => articles.map((article) => ({ locale, slug: article.slug })));
@@ -18,27 +19,37 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale, slug } = await params;
   const article = articles.find((a) => a.slug === slug);
   if (!article) return {};
-  return buildMetadata({ locale: locale as Locale, path: `${paths.wissen}/${slug}`, title: article.seoTitle, description: article.description });
+  const localizedArticle = localizeKnowledgeItem(article, locale as Locale, "article");
+  return buildMetadata({ locale: locale as Locale, path: `${paths.wissen}/${slug}`, title: localizedArticle.seoTitle, description: localizedArticle.description });
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale: raw, slug } = await params;
   const locale = raw as Locale;
-  const article = articles.find((a) => a.slug === slug);
-  if (!article) notFound();
-  const sections = articleSections(article);
-  const faq = articleFaq(article);
+  const ui = localizedUi(locale);
+  const rawArticle = articles.find((a) => a.slug === slug);
+  if (!rawArticle) notFound();
+  const article = localizeKnowledgeItem(rawArticle, locale, "article");
+  const sections = locale === "de" || locale === "en"
+    ? articleSections(article)
+    : [
+        { title: ui.method, body: ui.body },
+        { title: ui.strengths, body: ui.ctaText },
+        { title: ui.limits, body: ui.safeNote },
+        { title: ui.overview, body: ui.lead },
+      ];
+  const faq = localizedFaq(locale, articleFaq(article));
   return (
     <>
       <JsonLd data={[articleSchema({ headline: article.seoTitle, description: article.description, locale, url: `${siteUrl}/${locale}${paths.wissen}/${article.slug}/`, about: article.title, image: `${siteUrl}/images/hermetia/alchemical-listening-room.png` }), faqSchema(faq)]} />
       <Header locale={locale} current="wissen" />
       <article className="py-16">
         <div className="wrap max-w-[820px]">
-          <span className="kicker">Wissen</span>
+          <span className="kicker">{ui.article}</span>
           <h1 className="mt-3 text-[clamp(32px,5vw,46px)]">{article.title}</h1>
           <p className="lead mt-5">{article.description}</p>
           <div className="mt-8 rounded-card border border-gold/30 bg-gold-weich/25 p-6">
-            <span className="kicker">Kurz gesagt</span>
+            <span className="kicker">{ui.overview}</span>
             <p className="mt-2 text-[18px] leading-relaxed text-aubergine">{article.body}</p>
           </div>
           <div className="mt-10 flex flex-col gap-10">
@@ -55,7 +66,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
             ))}
           </div>
           <div className="mt-12">
-            <h2 className="mb-4 text-[clamp(24px,3vw,32px)]">Häufige Fragen</h2>
+            <h2 className="mb-4 text-[clamp(24px,3vw,32px)]">{ui.faq}</h2>
             <Faq items={faq} />
           </div>
           <div className="mt-12">

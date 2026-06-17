@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { type Locale, siteUrl } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { localizeCopy } from "@/i18n/localized-content";
 import { buildMetadata } from "@/lib/seo";
 import { startUrl, paths, localePath } from "@/lib/links";
 import { Header } from "@/components/Header";
@@ -209,7 +210,7 @@ export default async function LeistungenPage({ params }: { params: Promise<{ loc
   const locale = raw as Locale;
   const t = getDictionary(locale);
   const p = t.leistungen;
-  const copy = locale === "de" ? servicesPageCopy.de : servicesPageCopy.en;
+  const copy = localizeCopy(locale, servicesPageCopy);
   const localizedFaq = copy.servicesFaq.map(({ q, a }) => ({ q, a }));
   const pageUrl = `${siteUrl}/${locale}${paths.leistungen}/`;
 

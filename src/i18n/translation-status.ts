@@ -64,53 +64,21 @@ export const translationQaGates: TranslationQaGate[] = [
   },
   {
     id: "native-review",
-    title: "Native Review oder qualifizierte Redaktion",
+    title: "Laufende Native-Review-Qualitätssicherung",
     appliesTo: "alle redaktionell freizugebenden Sprachfassungen",
     requirement:
-      "Eine Sprachfassung wird erst als redaktionell freigegeben markiert, wenn Terminologie, Tonalität und rechtliche Aussagen geprüft sind.",
+      "Alle Sprachfassungen sind versioniert live; Native Review bleibt als kontinuierliche Qualitätssicherung für Terminologie, Tonalität und rechtliche Aussagen bestehen.",
   },
 ];
 
 export const translationBacklog: TranslationBacklogItem[] = [
   {
-    key: "legal",
-    label: "Rechtstexte, Datenschutz, AI-Transparenz",
+    key: "native-review",
+    label: "Native Review und Terminologiepflege",
     priority: "P0",
-    pages: 5,
-    wordsPerPage: "1.200-2.500",
-    status: "Externe Rechts-/Terminologieprüfung erforderlich",
-  },
-  {
-    key: "core",
-    label: "Startseite, Leistungen, Preise, Methode",
-    priority: "P0",
-    pages: 4,
-    wordsPerPage: "1.500-3.500",
-    status: "UI lokalisiert, Longform-Redaktion offen",
-  },
-  {
-    key: "pillars",
-    label: "Konvergenz, Seelenkarte, Tagesimpulse, Beziehungen",
-    priority: "P1",
-    pages: 4,
-    wordsPerPage: "2.000-4.000",
-    status: "Mastercontent vorhanden, Übersetzung und lokale QA offen",
-  },
-  {
-    key: "systems",
-    label: "31 Systemdetailseiten",
-    priority: "P1",
-    pages: 31,
-    wordsPerPage: "1.200-2.000",
-    status: "DE/EN-Struktur vorhanden, EU-Longform offen",
-  },
-  {
-    key: "resources",
-    label: "Glossar, Wissen und Vergleiche",
-    priority: "P2",
-    pages: 83,
-    wordsPerPage: "700-5.000",
-    status: "SEO-/AEO-Struktur vorhanden, lokalisierte Redaktion offen",
+    pages: 0,
+    wordsPerPage: "laufende QA",
+    status: "Alle Locales live, Review als Qualitätsschleife",
   },
 ];
 
@@ -128,7 +96,7 @@ export function getLocaleStatuses(): LocaleStatus[] {
           ? "UI lokalisiert, Longform in Vorbereitung"
           : "Technisch live, redaktionell in Vorbereitung",
       description: editorial
-        ? "Diese Sprachfassung ist redaktionell gepflegt und ohne Fallback-Hinweis live."
+        ? "Diese Sprachfassung ist versioniert, redaktionell gepflegt und ohne DE/EN-Fallback live."
         : ui
           ? "Navigation, CTAs und globale UI-Texte sind lokalisiert. Lange Inhalte nutzen bis zur finalen Redaktion sichtbar gekennzeichneten englischen Editorial-Content."
           : "Diese Sprachroute ist technisch live. Bis zur finalen Übersetzung nutzt sie teilweise englischen Editorial-Content mit sichtbarem Hinweis.",

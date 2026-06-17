@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { type Locale, siteUrl } from "@/i18n/config";
+import { localizeCopy } from "@/i18n/localized-content";
 import { buildMetadata } from "@/lib/seo";
 import { paths, startUrl, localePath } from "@/lib/links";
 import { Header } from "@/components/Header";
@@ -281,7 +282,7 @@ const dataSecurityCopy = {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const copy = locale === "de" ? dataSecurityCopy.de : dataSecurityCopy.en;
+  const copy = localizeCopy(locale as Locale, dataSecurityCopy);
   return buildMetadata({
     locale: locale as Locale,
     path: paths.datenSicherheit,
@@ -293,7 +294,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function DataSecurityPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  const copy = locale === "de" ? dataSecurityCopy.de : dataSecurityCopy.en;
+  const copy = localizeCopy(locale, dataSecurityCopy);
   const localizedFaq = copy.faq.map(({ q, a }) => ({ q, a }));
   const pageUrl = `${siteUrl}/${locale}${paths.datenSicherheit}/`;
 

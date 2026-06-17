@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { glossaryTerms } from "@/content/marketing";
+import { localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
 
 type GlossarySlug = (typeof glossaryTerms)[number]["slug"];
 
@@ -50,8 +51,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function GlossarPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  const ui = localizedUi(locale);
+  const terms = glossaryTerms.map((term) => localizeKnowledgeItem(term, locale, "glossary"));
   const pageUrl = `${siteUrl}/${locale}${paths.glossar}/`;
-  const bySlug = new Map(glossaryTerms.map((term) => [term.slug, term]));
+  const bySlug = new Map(terms.map((term) => [term.slug, term]));
 
   return (
     <>
@@ -75,12 +78,12 @@ export default async function GlossarPage({ params }: { params: Promise<{ locale
       <section className="py-16">
         <div className="wrap grid items-center gap-8 md:grid-cols-[1fr_.8fr]">
           <div>
-            <span className="kicker">Wissen · AEO</span>
-            <h1 className="mt-3 text-[clamp(32px,5vw,48px)]">Glossar für Seelenkarte, Systeme und AI-Deutung</h1>
-            <p className="lead mt-5">Kurze, klare Antworten auf die Begriffe, die Hermetia ausmachen. Jede Erklärung führt tiefer in die Methode und bei Bedarf direkt zur eigenen Erfahrung.</p>
+            <span className="kicker">{ui.overview}</span>
+            <h1 className="mt-3 text-[clamp(32px,5vw,48px)]">{locale === "de" || locale === "en" ? "Glossar für Seelenkarte, Systeme und AI-Deutung" : ui.title}</h1>
+            <p className="lead mt-5">{locale === "de" || locale === "en" ? "Kurze, klare Antworten auf die Begriffe, die Hermetia ausmachen. Jede Erklärung führt tiefer in die Methode und bei Bedarf direkt zur eigenen Erfahrung." : ui.lead}</p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "glossary-hero" })}>Profil kostenlos starten</a>
-              <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.wissen)}>Ratgeber lesen</a>
+              <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "glossary-hero" })}>{ui.startFree}</a>
+              <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.wissen)}>{ui.readMore}</a>
             </div>
           </div>
           <img src="/images/hermetia/library-of-self-profile.png" alt="Bibliothek des Selbst als Hermetia Glossar-Motiv" className="rounded-card border border-sand object-cover shadow-soft" />
@@ -142,11 +145,11 @@ export default async function GlossarPage({ params }: { params: Promise<{ locale
             <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">Von Seelenkarte bis Datenminimierung</h2>
           </div>
           <div className="grid gap-5 md:grid-cols-2">
-            {glossaryTerms.map((term) => (
+            {terms.map((term) => (
               <Link key={term.slug} href={localePath(locale, `${paths.glossar}/${term.slug}`)} className="card no-underline transition-transform hover:-translate-y-1">
                 <h2 className="text-[22px]">{term.term}</h2>
                 <p className="muted mt-2">{term.definition}</p>
-                <span className="note mt-3 inline-block font-semibold text-gold">Begriff lesen →</span>
+                <span className="note mt-3 inline-block font-semibold text-gold">{ui.glossary} →</span>
               </Link>
             ))}
           </div>
