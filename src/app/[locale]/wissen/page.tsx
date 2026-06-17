@@ -22,7 +22,7 @@ const clusters: { title: string; text: string; slugs: ArticleSlug[] }[] = [
   {
     title: "Systeme, Konvergenz und Methode",
     text: "Für Suchfragen rund um Astrologie, Human Design, Gene Keys, Fragebögen und die Frage, warum ein einzelnes System selten ausreicht.",
-    slugs: ["warum-ein-system-nicht-reicht", "konvergenz-statt-beliebigkeit", "astrologie-mit-erklärbarkeit", "frageboegen-als-erdung"],
+    slugs: ["warum-ein-system-nicht-reicht", "konvergenz-statt-beliebigkeit", "astrologie-mit-erklaerbarkeit", "frageboegen-als-erdung"],
   },
   {
     title: "AI, Datenschutz und rechtliche Grenzen",
