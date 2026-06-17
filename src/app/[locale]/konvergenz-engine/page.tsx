@@ -5,6 +5,7 @@ import { paths } from "@/lib/links";
 import { getPillarPage } from "@/content/marketing";
 import { MarketingContentPage } from "@/components/MarketingContentPage";
 import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
+import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -15,6 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/konvergenz-engine" />;
   const page = getPillarPage("konvergenz", locale)!;
   return (
     <>

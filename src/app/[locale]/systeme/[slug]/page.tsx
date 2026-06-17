@@ -12,6 +12,7 @@ import { AppCta } from "@/components/AppCta";
 import { JsonLd, faqSchema, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { systems, systemSlugs, getSystem, systemText } from "@/content/systems";
 import { bookSearchUrl, bookText, getBooksForSystem } from "@/content/bookRecommendations";
+import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
@@ -30,6 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function SystemDetailPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale: raw, slug } = await params;
   const locale = raw as Locale;
+  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/systeme" detailLabel={slug} />;
   const sys = getSystem(slug);
   if (!sys) notFound();
   const t = getDictionary(locale);

@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const root = process.cwd();
@@ -13,7 +13,15 @@ function option(name, fallback) {
 }
 
 function stripHtml(value) {
-  return value.replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  return value
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&#x27;|&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, "&")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function extractComponents(html) {
@@ -46,12 +54,32 @@ const locale = option("locale", "en");
 const phase = option("phase", "p0");
 const base = option("base", "https://hermetiastart.digital-expert.de").replace(/\/$/, "");
 const auditDir = option("out-dir", join(root, "i18n-audits"));
-const localeConfig = config.locales[locale];
-const phaseConfig = localeConfig?.phases?.[phase];
+const selectedLocales = locale === "all" ? config.locales : locale.split(",").map((item) => item.trim()).filter(Boolean);
+const selectedPhases = phase === "all" ? Object.keys(config.phaseRoutes) : phase.split(",").map((item) => item.trim()).filter(Boolean);
 
-if (!phaseConfig) {
-  console.error(`Missing i18n audit config for ${locale} ${phase}.`);
+if (selectedLocales.some((item) => !config.locales.includes(item))) {
+  console.error(`Unknown locale in --locale=${locale}.`);
   process.exit(1);
+}
+if (selectedPhases.some((item) => !config.phaseRoutes[item])) {
+  console.error(`Unknown phase in --phase=${phase}.`);
+  process.exit(1);
+}
+
+function discoverDetailRoutes(localeName, prefix) {
+  const dir = join(root, "out", localeName, ...prefix.split("/").filter(Boolean));
+  if (!existsSync(dir)) return [];
+  return readdirSync(dir, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => `${prefix}${entry.name}/`);
+}
+
+function routesFor(localeName, phases) {
+  const routes = new Set(phases.flatMap((phaseName) => config.phaseRoutes[phaseName]));
+  for (const prefix of Object.keys(config.detailCounts)) {
+    for (const route of discoverDetailRoutes(localeName, prefix)) routes.add(route);
+  }
+  return [...routes].sort();
 }
 
 const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
@@ -64,44 +92,46 @@ try {
   process.exit(1);
 }
 
-for (const route of phaseConfig.routes) {
-  const url = `${base}/${locale}${route}`;
-  try {
-    const html = await fetchText(url);
-    const text = stripHtml(html);
-    const componentIssues = Object.entries(extractComponents(html)).flatMap(([name, componentHtml]) => {
-      if (name === "graphics") return [];
-      return stripHtml(componentHtml) ? [] : [`empty_${name}`];
-    });
-    const missing = (phaseConfig.requiredMarkers[route] ?? []).filter((marker) => !text.includes(marker));
-    const forbidden = (phaseConfig.forbiddenMarkers ?? []).filter((marker) => text.includes(marker));
-    rows.push({
-      locale,
-      phase,
-      route,
-      url,
-      status: missing.length || forbidden.length || componentIssues.length ? "fail" : "pass",
-      missing,
-      forbidden,
-      componentIssues,
-    });
-  } catch (error) {
-    rows.push({
-      locale,
-      phase,
-      route,
-      url,
-      status: "fail",
-      missing: [],
-      forbidden: [],
-      componentIssues: [`fetch_error: ${error.message}`],
-    });
+for (const localeName of selectedLocales) {
+  for (const route of routesFor(localeName, selectedPhases)) {
+    const url = `${base}/${localeName}${route}`;
+    try {
+      const html = await fetchText(url);
+      const text = stripHtml(html);
+      const componentIssues = Object.entries(extractComponents(html)).flatMap(([name, componentHtml]) => {
+        if (name === "graphics") return [];
+        return stripHtml(componentHtml) ? [] : [`empty_${name}`];
+      });
+      const missing = localeName === "de" || localeName === "en" ? [] : (config.localizedMarkers[localeName] ?? []).filter((marker) => !text.includes(marker));
+      const forbidden = localeName === "de" || localeName === "en" ? [] : config.forbiddenLocalizedMarkers.filter((marker) => text.includes(marker));
+      rows.push({
+        locale: localeName,
+        phase: selectedPhases.join("+"),
+        route,
+        url,
+        status: missing.length || forbidden.length || componentIssues.length ? "fail" : "pass",
+        missing,
+        forbidden,
+        componentIssues,
+      });
+    } catch (error) {
+      rows.push({
+        locale: localeName,
+        phase: selectedPhases.join("+"),
+        route,
+        url,
+        status: "fail",
+        missing: [],
+        forbidden: [],
+        componentIssues: [`fetch_error: ${error.message}`],
+      });
+    }
   }
 }
 
 if (!existsSync(auditDir)) mkdirSync(auditDir, { recursive: true });
 
-const basename = `i18n-live-check-${locale}-${phase}-${timestamp}`;
+const basename = `i18n-live-check-${locale.replace(/,/g, "-")}-${phase.replace(/,/g, "-")}-${timestamp}`;
 const csvPath = join(auditDir, `${basename}.csv`);
 const jsonPath = join(auditDir, `${basename}.json`);
 const mdPath = join(auditDir, `${basename}.md`);

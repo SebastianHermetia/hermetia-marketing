@@ -7,6 +7,7 @@ import { paths } from "@/lib/links";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
+import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 const launchReviewCopy = {
   de: {
@@ -184,6 +185,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/freigaben" />;
   const summary = reviewSummary();
   const copy = localizeCopy(locale, launchReviewCopy);
 

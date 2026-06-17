@@ -3,18 +3,10 @@ import { join, relative } from "node:path";
 
 const root = process.cwd();
 const out = join(root, "out");
-const locales = ["de", "en", "fr", "es", "it", "nl", "pl", "pt", "bg", "hr", "cs", "da", "et", "fi", "el", "hu", "ga", "lv", "lt", "mt", "ro", "sk", "sl", "sv"];
-const fallbackMarkers = [
-  "Sprachfassung in redaktioneller Vorbereitung",
-  "Editorial translation in progress",
-  "Version éditoriale en préparation",
-  "redaktionell in Vorbereitung",
-  "Longform in Vorbereitung",
-  "Technischer Fallback",
-  "englischen Editorial-Content",
-  "A portrait of your soul",
-  "Ein Bild deiner Seele",
-];
+const config = JSON.parse(readFileSync(join(root, "scripts", "i18n-audit-config.json"), "utf8"));
+const locales = config.locales;
+const localizedLocales = new Set(config.localizedLocales);
+const fallbackMarkers = config.forbiddenLocalizedMarkers;
 
 function htmlFiles(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
@@ -29,8 +21,21 @@ function stripHtml(value) {
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
     .replace(/<style[\s\S]*?<\/style>/gi, " ")
     .replace(/<[^>]+>/g, " ")
+    .replace(/&#x27;|&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, "&")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function routeFromFile(locale, file) {
+  const rel = relative(join(out, locale), file).replace(/\\/g, "/");
+  return rel === "index.html" ? "/" : `/${rel.replace(/\/index\.html$/, "/")}`;
+}
+
+function isCoveredRoute(route) {
+  const configuredRoutes = Object.values(config.phaseRoutes).flat();
+  return configuredRoutes.includes(route) || Object.keys(config.detailCounts).some((prefix) => route.startsWith(prefix) && route !== prefix);
 }
 
 if (!existsSync(out)) {
@@ -50,19 +55,48 @@ for (const locale of locales) {
   }
   for (const file of htmlFiles(dir)) {
     checked += 1;
+    const route = routeFromFile(locale, file);
     const html = readFileSync(file, "utf8");
     const text = stripHtml(html);
     if (!text.includes("Hermetia")) {
       console.error(`Missing Hermetia content in ${relative(out, file)}`);
       failures += 1;
     }
-    if (locale !== "de" && locale !== "en") {
+    if (!isCoveredRoute(route) && !["/faq/", "/sprachen/", "/ueber-hermetia/", "/anwendungsfaelle/"].includes(route)) {
+      console.error(`Unmapped exported route in i18n audit config: ${locale}${route}`);
+      failures += 1;
+    }
+    if (localizedLocales.has(locale)) {
       for (const marker of fallbackMarkers) {
         if (text.includes(marker)) {
           console.error(`Fallback marker leaked in ${relative(out, file)}: ${marker}`);
           failures += 1;
         }
       }
+      for (const marker of config.localizedMarkers[locale] ?? []) {
+        if (!text.includes(marker)) {
+          console.error(`Missing localized marker in ${relative(out, file)}: ${marker}`);
+          failures += 1;
+        }
+      }
+    }
+  }
+}
+
+for (const locale of locales) {
+  for (const route of Object.values(config.phaseRoutes).flat()) {
+    const file = join(out, locale, ...route.split("/").filter(Boolean), "index.html");
+    if (!existsSync(file)) {
+      console.error(`Missing configured route export: ${locale}${route}`);
+      failures += 1;
+    }
+  }
+  for (const [prefix, expected] of Object.entries(config.detailCounts)) {
+    const dir = join(out, locale, ...prefix.split("/").filter(Boolean));
+    const actual = existsSync(dir) ? readdirSync(dir, { withFileTypes: true }).filter((entry) => entry.isDirectory()).length : 0;
+    if (actual < expected) {
+      console.error(`Missing detail exports for ${locale}${prefix}: expected at least ${expected}, got ${actual}`);
+      failures += 1;
     }
   }
 }
@@ -72,4 +106,4 @@ if (failures > 0) {
   process.exit(1);
 }
 
-console.log(`i18n export check passed: ${checked} localized HTML pages scanned.`);
+console.log(`i18n export check passed: ${checked} localized HTML pages scanned across ${locales.length} locales.`);

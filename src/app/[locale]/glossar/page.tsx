@@ -9,6 +9,7 @@ import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { glossaryTerms } from "@/content/marketing";
 import { localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
+import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 type GlossarySlug = (typeof glossaryTerms)[number]["slug"];
 
@@ -51,6 +52,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function GlossarPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/glossar" />;
   const ui = localizedUi(locale);
   const terms = glossaryTerms.map((term) => localizeKnowledgeItem(term, locale, "glossary"));
   const pageUrl = `${siteUrl}/${locale}${paths.glossar}/`;

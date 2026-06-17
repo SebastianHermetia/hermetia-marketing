@@ -7,6 +7,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Faq } from "@/components/Faq";
 import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
+import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 const questionGroupsDe = [
   {
@@ -173,6 +174,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function FaqPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/faq" />;
   const t = getDictionary(locale);
   const items = allFaq([...t.home.faq.items, ...t.preise.faq], locale);
   const pageUrl = `${siteUrl}/${locale}${paths.faq}/`;

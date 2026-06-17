@@ -10,6 +10,7 @@ import { Faq } from "@/components/Faq";
 import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
 import { articles } from "@/content/marketing";
 import { localizedFaq, localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
+import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => articles.map((article) => ({ locale, slug: article.slug })));
@@ -26,6 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function ArticlePage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale: raw, slug } = await params;
   const locale = raw as Locale;
+  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/wissen" detailLabel={slug} />;
   const ui = localizedUi(locale);
   const rawArticle = articles.find((a) => a.slug === slug);
   if (!rawArticle) notFound();

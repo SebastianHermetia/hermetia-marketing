@@ -9,6 +9,7 @@ import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { comparisons } from "@/content/marketing";
 import { localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
+import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 type ComparisonSlug = (typeof comparisons)[number]["slug"];
 
@@ -58,6 +59,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function VergleichePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/vergleiche" />;
   const ui = localizedUi(locale);
   const localizedComparisons = comparisons.map((comparison) => localizeKnowledgeItem(comparison, locale, "comparison"));
   const pageUrl = `${siteUrl}/${locale}${paths.vergleiche}/`;
