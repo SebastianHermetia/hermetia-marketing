@@ -46,6 +46,13 @@ async function fetchText(url) {
   return response.text();
 }
 
+async function fetchOptionalText(url) {
+  const response = await fetch(url, { headers: { "user-agent": "Hermetia-i18n-live-check/1.0" } });
+  if (response.status === 404) return "";
+  if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+  return response.text();
+}
+
 function escapeCsv(value) {
   return `"${String(value).replace(/"/g, '""')}"`;
 }
@@ -107,7 +114,15 @@ for (const localeName of selectedLocales) {
         return stripHtml(componentHtml) ? [] : [`empty_${name}`];
       });
       const missing = [];
-      const forbidden = localeName === "de" || localeName === "en" ? [] : config.forbiddenLocalizedMarkers.filter((marker) => text.includes(marker));
+      const payloadTexts = await Promise.all([
+        fetchOptionalText(`${url}index.txt`),
+        fetchOptionalText(`${url}__next._full.txt`),
+      ]);
+      const payloadText = payloadTexts.join("\n");
+      const forbidden =
+        localeName === "de"
+          ? []
+          : config.forbiddenLocalizedMarkers.filter((marker) => text.includes(marker) || payloadText.includes(marker));
       rows.push({
         locale: localeName,
         phase: selectedPhases.join("+"),
