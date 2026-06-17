@@ -1,7 +1,5 @@
-// Offizielle EU-Sprachen. Nicht vollständig redaktionell übersetzte Locales
-// nutzen lokalisierte UI-Texte und fallen für fehlende Longform-Inhalte auf
-// den englischen Editorial-Content zurück. So bleiben Sprachrouten nutzbar,
-// ohne deutschen Body-Text in anderen Locales auszuspielen.
+// Offizielle EU-Sprachen. Alle Routen liefern versionierte redaktionelle
+// Sprachfassungen aus, damit keine Sprachroute auf DE/EN-Longform zurückfällt.
 export const locales = [
   "de",
   "en",
@@ -30,7 +28,7 @@ export const locales = [
 ] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "de";
-export const editorialLocales = ["de", "en"] as const;
+export const editorialLocales = locales;
 export const uiLocalizedLocales = locales;
 
 export function hasEditorialTranslation(locale: Locale): boolean {

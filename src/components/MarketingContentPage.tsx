@@ -4,8 +4,10 @@ import { Footer } from "@/components/Footer";
 import { Faq } from "@/components/Faq";
 import { AppCta } from "@/components/AppCta";
 import type { ContentPage } from "@/content/marketing";
+import { localizedUi } from "@/i18n/localized-content";
 
 export function MarketingContentPage({ locale, page }: { locale: Locale; page: ContentPage }) {
+  const ui = localizedUi(locale);
   const labels = locale === "de"
     ? {
         start: "Profil starten",
@@ -16,7 +18,7 @@ export function MarketingContentPage({ locale, page }: { locale: Locale; page: C
         graphicsTitle: "So arbeitet die Methode im Hintergrund",
         faq: "Häufige Fragen",
       }
-    : {
+    : locale === "en" ? {
         start: "Start profile",
         read: "Read content",
         toc: "On this page",
@@ -24,6 +26,14 @@ export function MarketingContentPage({ locale, page }: { locale: Locale; page: C
         graphics: "Graphics",
         graphicsTitle: "How the method works in the background",
         faq: "Frequently asked questions",
+      } : {
+        start: ui.startFree,
+        read: ui.readMore,
+        toc: ui.overview,
+        short: ui.method,
+        graphics: ui.method,
+        graphicsTitle: ui.strengths,
+        faq: ui.faq,
       };
 
   return (

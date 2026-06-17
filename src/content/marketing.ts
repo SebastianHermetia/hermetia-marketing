@@ -1,4 +1,5 @@
 import type { Locale } from "@/i18n/config";
+import { localizeContentPage } from "@/i18n/localized-content";
 
 export type FaqItem = { q: string; a: string };
 export type ContentSection = { title: string; body: string };
@@ -1615,6 +1616,7 @@ export const comparisons = [
 export function getPillarPage(key: string, locale: Locale): ContentPage | undefined {
   const page = pillarPages[key];
   if (!page) return undefined;
-  return locale === "de" ? page.de : page.en;
+  const base = locale === "de" ? page.de : page.en;
+  return localizeContentPage(base, locale);
 }
 

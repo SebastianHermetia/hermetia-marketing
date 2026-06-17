@@ -10,6 +10,7 @@ import { AppCta } from "@/components/AppCta";
 import { Faq } from "@/components/Faq";
 import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
 import { glossaryTerms } from "@/content/marketing";
+import { localizedFaq, localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => glossaryTerms.map((term) => ({ locale, slug: term.slug })));
@@ -19,26 +20,29 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale, slug } = await params;
   const term = glossaryTerms.find((t) => t.slug === slug);
   if (!term) return {};
-  return buildMetadata({ locale: locale as Locale, path: `${paths.glossar}/${slug}`, title: term.seoTitle, description: term.definition });
+  const localizedTerm = localizeKnowledgeItem(term, locale as Locale, "glossary");
+  return buildMetadata({ locale: locale as Locale, path: `${paths.glossar}/${slug}`, title: localizedTerm.seoTitle, description: localizedTerm.definition });
 }
 
 export default async function GlossarDetailPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale: raw, slug } = await params;
   const locale = raw as Locale;
-  const term = glossaryTerms.find((t) => t.slug === slug);
-  if (!term) notFound();
-  const faq = glossaryFaq(term);
-  const related = glossaryTerms.filter((item) => item.slug !== term.slug).slice(0, 4);
+  const ui = localizedUi(locale);
+  const rawTerm = glossaryTerms.find((t) => t.slug === slug);
+  if (!rawTerm) notFound();
+  const term = localizeKnowledgeItem(rawTerm, locale, "glossary");
+  const faq = localizedFaq(locale, glossaryFaq(rawTerm));
+  const related = glossaryTerms.filter((item) => item.slug !== term.slug).slice(0, 4).map((item) => localizeKnowledgeItem(item, locale, "glossary"));
   return (
     <>
       <JsonLd data={[articleSchema({ headline: term.seoTitle, description: term.definition, locale, url: `${siteUrl}/${locale}${paths.glossar}/${term.slug}/`, about: term.term, image: `${siteUrl}/images/hermetia/library-of-self-profile.png` }), faqSchema(faq)]} />
       <Header locale={locale} current="glossar" />
       <article className="py-16">
         <div className="wrap max-w-[820px]">
-          <span className="kicker">Glossar</span>
+          <span className="kicker">{ui.glossary}</span>
           <h1 className="mt-3 text-[clamp(32px,5vw,46px)]">{term.term}</h1>
           <div className="mt-7 rounded-card border border-gold/30 bg-gold-weich/25 p-6">
-            <span className="kicker">Kurz gesagt</span>
+            <span className="kicker">{ui.overview}</span>
             <p className="mt-2 text-[18px] leading-relaxed text-aubergine">{term.definition}</p>
           </div>
           <div className="mt-10 flex flex-col gap-7">
@@ -47,10 +51,10 @@ export default async function GlossarDetailPage({ params }: { params: Promise<{ 
             ))}
           </div>
           <section className="mt-12 rounded-card border border-sand bg-creme-tief p-6">
-            <span className="kicker">Suchfrage</span>
-            <h2 className="mt-2 text-[clamp(24px,3vw,30px)]">Wann ist {term.term} für mein Profil relevant?</h2>
+            <span className="kicker">{ui.method}</span>
+            <h2 className="mt-2 text-[clamp(24px,3vw,30px)]">{locale === "de" || locale === "en" ? `Wann ist ${term.term} für mein Profil relevant?` : ui.title}</h2>
             <p className="muted mt-3 text-[17px] leading-[1.85]">
-              Relevant wird {term.term}, wenn der Begriff hilft, ein wiederkehrendes Muster präziser zu benennen. Hermetia nutzt solche Begriffe nicht als isolierte Etiketten, sondern als verständliche Antwortbausteine: erst erklären, dann mit anderen Systemsignalen vergleichen, dann in der eigenen Seelenkarte prüfen.
+              {locale === "de" || locale === "en" ? `Relevant wird ${term.term}, wenn der Begriff hilft, ein wiederkehrendes Muster präziser zu benennen. Hermetia nutzt solche Begriffe nicht als isolierte Etiketten, sondern als verständliche Antwortbausteine: erst erklären, dann mit anderen Systemsignalen vergleichen, dann in der eigenen Seelenkarte prüfen.` : ui.body}
             </p>
           </section>
           <section className="mt-12 rounded-card border border-sand bg-white p-6 shadow-soft">
@@ -91,7 +95,7 @@ export default async function GlossarDetailPage({ params }: { params: Promise<{ 
             </div>
           </section>
           <div className="mt-12">
-            <h2 className="mb-4 text-[clamp(24px,3vw,32px)]">Häufige Fragen</h2>
+            <h2 className="mb-4 text-[clamp(24px,3vw,32px)]">{ui.faq}</h2>
             <Faq items={faq} />
           </div>
           <div className="mt-12">

@@ -1,3 +1,6 @@
+import type { Locale } from "@/i18n/config";
+import { localizeSystemText } from "@/i18n/localized-content";
+
 // Longtail-Systemdetailseiten. Jede Seite ist eine eigene Landingpage für
 // „Was ist <System>“ + wie Hermetia es nutzt. DE+EN, FAQ für AEO/Schema.org.
 // Header-Bild aus der Brand-Art-Serie (public/images/art).
@@ -867,5 +870,5 @@ export function getSystem(slug: string): SystemEntry | undefined {
 }
 
 export function systemText(system: SystemEntry, locale: string): SystemText {
-  return locale === "de" ? system.de : system.en;
+  return localizeSystemText(system, locale as Locale);
 }

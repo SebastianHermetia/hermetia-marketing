@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localePath, paths } from "@/lib/links";
+import { localizedUi } from "@/i18n/localized-content";
 
 const footerLabels = {
   de: {
@@ -39,7 +40,22 @@ const footerLabels = {
 export function Footer({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
   const L = (p: string) => localePath(locale, p);
-  const labels = locale === "de" ? footerLabels.de : footerLabels.en;
+  const ui = localizedUi(locale);
+  const labels = locale === "de" ? footerLabels.de : locale === "en" ? footerLabels.en : {
+    onboarding: ui.startFree,
+    convergence: ui.method,
+    soulMap: ui.title,
+    freePremium: ui.safeNote,
+    comparisons: ui.comparison,
+    useCases: ui.overview,
+    dailyImpulses: ui.method,
+    profileBook: ui.article,
+    refineProfile: ui.method,
+    relationships: ui.safeNote,
+    languages: ui.overview,
+    dataSecurity: ui.safeNote,
+    approvals: ui.limits,
+  };
 
   return (
     <footer className="bg-aubergine py-14 text-[14px] text-gold-weich">
