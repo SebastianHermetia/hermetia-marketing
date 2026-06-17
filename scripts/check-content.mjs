@@ -7,6 +7,7 @@ const config = JSON.parse(readFileSync(join(root, "scripts", "i18n-audit-config.
 const locales = config.locales;
 const translatedLocales = new Set(locales.filter((locale) => locale !== "de"));
 const fallbackMarkers = config.forbiddenLocalizedMarkers;
+const protocolCorruptionMarkers = ["justifyContenido", "classNombre", "crossOrigen", "aria-etiqueta"];
 
 function fail(message) {
   console.error(message);
@@ -51,6 +52,11 @@ for (const locale of locales) {
     for (const marker of fallbackMarkers) {
       if (homePayload.includes(marker)) fail(`${locale}: fallback marker leaked in home RSC payload: ${marker}`);
       if (fullPayload.includes(marker)) fail(`${locale}: fallback marker leaked in full RSC payload: ${marker}`);
+    }
+    for (const marker of protocolCorruptionMarkers) {
+      if (home.includes(marker)) fail(`${locale}: translated protocol marker leaked on home: ${marker}`);
+      if (homePayload.includes(marker)) fail(`${locale}: translated protocol marker leaked in home RSC payload: ${marker}`);
+      if (fullPayload.includes(marker)) fail(`${locale}: translated protocol marker leaked in full RSC payload: ${marker}`);
     }
   }
 }
