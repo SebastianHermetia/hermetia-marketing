@@ -57,6 +57,10 @@ const auditDir = option("out-dir", join(root, "i18n-audits"));
 const selectedLocales = locale === "all" ? config.locales : locale.split(",").map((item) => item.trim()).filter(Boolean);
 const selectedPhases = phase === "all" ? Object.keys(config.phaseRoutes) : phase.split(",").map((item) => item.trim()).filter(Boolean);
 
+function isPublicRouteDir(name) {
+  return !name.startsWith(".") && !name.startsWith("_") && !name.includes("$");
+}
+
 if (selectedLocales.some((item) => !config.locales.includes(item))) {
   console.error(`Unknown locale in --locale=${locale}.`);
   process.exit(1);
@@ -70,7 +74,7 @@ function discoverDetailRoutes(localeName, prefix) {
   const dir = join(root, "out", localeName, ...prefix.split("/").filter(Boolean));
   if (!existsSync(dir)) return [];
   return readdirSync(dir, { withFileTypes: true })
-    .filter((entry) => entry.isDirectory())
+    .filter((entry) => entry.isDirectory() && isPublicRouteDir(entry.name))
     .map((entry) => `${prefix}${entry.name}/`);
 }
 
