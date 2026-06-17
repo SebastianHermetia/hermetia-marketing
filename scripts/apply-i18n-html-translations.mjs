@@ -170,32 +170,50 @@ function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function applyScriptStringTranslations(cache, locale, html, strings) {
-  return html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, (script) => {
-    let translated = script;
+function createScriptReplacers(cache, locale, strings) {
+  const skipped = new Set([
+    "width=device-width, initial-scale=1",
+    "noindex, nofollow",
+    "website",
+    "summary_large_image",
+  ]);
+  const replacements = new Map();
   for (const source of strings) {
-    if (
-      source === "width=device-width, initial-scale=1" ||
-      source === "noindex, nofollow" ||
-      source === "website" ||
-      source === "summary_large_image"
-    ) {
-      continue;
-    }
+    if (skipped.has(source)) continue;
     const target = cache[locale]?.[source];
     if (!target || target === source) continue;
     const sourceJs = JSON.stringify(source).slice(1, -1);
     const targetJs = JSON.stringify(target).slice(1, -1);
-    if (sourceJs) translated = translated.replace(new RegExp(escapeRegExp(sourceJs), "g"), targetJs);
+    if (sourceJs) replacements.set(sourceJs, targetJs);
   }
+
+  const keys = [...replacements.keys()].sort((a, b) => b.length - a.length);
+  const replacers = [];
+  for (const batch of chunks(keys, 25000)) {
+    const pattern = batch.map(escapeRegExp).join("|");
+    replacers.push({
+      regex: new RegExp(pattern, "g"),
+      replacements,
+    });
+  }
+  return replacers;
+}
+
+function applyScriptStringTranslations(html, replacers) {
+  if (!replacers.length) return html;
+  return html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, (script) => {
+    let translated = script;
+    for (const { regex, replacements } of replacers) {
+      translated = translated.replace(regex, (source) => replacements.get(source) ?? source);
+    }
     return translated;
   });
 }
 
-function applyTranslations(cache, locale, html) {
+function applyTranslations(cache, locale, html, scriptReplacers) {
   let translated = html.replace(/>([^<>]+)</g, (match, value) => `>${translateText(cache, locale, value)}<`);
   translated = applyAttributeTranslations(cache, locale, translated);
-  translated = applyScriptStringTranslations(cache, locale, translated, stringsByLocale[locale]);
+  translated = applyScriptStringTranslations(translated, scriptReplacers);
   return translated;
 }
 
@@ -217,9 +235,10 @@ await fillCache(cache, stringsByLocale);
 let rewritten = 0;
 let missing = 0;
 for (const locale of locales) {
+  const scriptReplacers = createScriptReplacers(cache, locale, stringsByLocale[locale]);
   for (const file of htmlFiles(join(outDir, locale))) {
     const html = readFileSync(file, "utf8");
-    const translated = applyTranslations(cache, locale, html);
+    const translated = applyTranslations(cache, locale, html, scriptReplacers);
     writeFileSync(file, translated);
     rewritten += 1;
   }
@@ -233,5 +252,5 @@ if (missing > 0) {
   process.exit(1);
 }
 
-saveCache(cache);
+if (generateMissing) saveCache(cache);
 console.log(`Applied i18n HTML translations to ${rewritten} exported pages across ${locales.length} locale(s).`);
