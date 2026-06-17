@@ -1449,7 +1449,7 @@ export const articles = [
       "Gene Keys sind als kontemplative Sprache wertvoll, aber viele Originalformulierungen sind geschützt. Hermetia übernimmt deshalb keine proprietären Texte. Die Plattform nutzt rechnerische Positionen und formuliert eigene, vorsichtige Reflexionssprache. So bleibt der Nutzen erhalten, ohne rechtlich geschützte Inhalte zu kopieren.",
   },
   {
-    slug: "astrologie-mit-erklärbarkeit",
+    slug: "astrologie-mit-erklaerbarkeit",
     title: "Astrologie mit Erklärbarkeit",
     seoTitle: "Astrologie erklärbar nutzen — Berechnung, Gewichtung und Grenzen",
     description: "Warum Hermetia astrologische Aussagen berechnet, gewichtet und in Systemfamilien einordnet.",
