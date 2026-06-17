@@ -9,7 +9,6 @@ import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { articles } from "@/content/marketing";
 import { localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
-import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 type ArticleSlug = (typeof articles)[number]["slug"];
 
@@ -52,7 +51,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function WissenPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/wissen" />;
   const ui = localizedUi(locale);
   const localizedArticles = articles.map((article) => localizeKnowledgeItem(article, locale, "article"));
   const pageUrl = `${siteUrl}/${locale}${paths.wissen}/`;
@@ -81,8 +79,8 @@ export default async function WissenPage({ params }: { params: Promise<{ locale:
         <div className="wrap grid items-center gap-9 lg:grid-cols-[1fr_.85fr]">
           <div>
             <span className="kicker">{ui.overview}</span>
-            <h1 className="mt-3 max-w-[780px] text-[clamp(32px,5vw,48px)]">{locale === "de" || locale === "en" ? "Ratgeber für spirituelles Profiling, AI und Selbstreflexion" : ui.title}</h1>
-            <p className="lead mt-5 max-w-[700px]">{locale === "de" || locale === "en" ? "Vertiefende Artikel, die Suchfragen beantworten und gleichzeitig zeigen, wie Hermetia verantwortungsvoll mit komplexen Systemen arbeitet." : ui.lead}</p>
+            <h1 className="mt-3 max-w-[780px] text-[clamp(32px,5vw,48px)]">Ratgeber für spirituelles Profiling, AI und Selbstreflexion</h1>
+            <p className="lead mt-5 max-w-[700px]">Vertiefende Artikel, die Suchfragen beantworten und gleichzeitig zeigen, wie Hermetia verantwortungsvoll mit komplexen Systemen arbeitet.</p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "knowledge-hero" })}>{ui.startFree}</a>
               <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.glossar)}>{ui.glossary}</a>

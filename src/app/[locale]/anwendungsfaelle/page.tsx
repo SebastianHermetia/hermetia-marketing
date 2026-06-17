@@ -8,7 +8,6 @@ import { Footer } from "@/components/Footer";
 import { Faq } from "@/components/Faq";
 import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
-import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 const useCases = [
   {
@@ -509,7 +508,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function UseCasesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/anwendungsfaelle" />;
   const copy = localizeCopy(locale, useCasesCopy);
   const localizedFaq = copy.faq.map(({ q, a }) => ({ q, a }));
   const pageUrl = `${siteUrl}/${locale}${paths.anwendungsfaelle}/`;

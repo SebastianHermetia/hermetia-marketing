@@ -8,7 +8,6 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Faq } from "@/components/Faq";
 import { JsonLd, faqSchema, productSchema } from "@/components/JsonLd";
-import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 const pricingPageCopy = {
   de: {
@@ -180,7 +179,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function PreisePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/preise" />;
   const t = getDictionary(locale);
   const p = t.preise;
   const copy = localizeCopy(locale, pricingPageCopy);

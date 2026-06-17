@@ -340,7 +340,7 @@ function fallbackPack(locale: string, soulMap: string, convergence: string, star
 }
 
 export function isEditorialLocale(locale: Locale) {
-  return locale === "de" || locale === "en";
+  return locale === "de";
 }
 
 export function pack(locale: Locale): LocalePack | undefined {
@@ -349,8 +349,7 @@ export function pack(locale: Locale): LocalePack | undefined {
 
 export function localizeCopy<T extends Record<string, unknown>>(locale: Locale, source: { de: T; en: Record<string, unknown> }): T {
   if (locale === "de") return source.de;
-  if (locale === "en") return source.en as T;
-  return localizeValue(locale, source.en, "root") as T;
+  return localizeValue(locale, source.de, "root") as T;
 }
 
 export function localizeValue(locale: Locale, value: unknown, key = "text"): unknown {
@@ -365,24 +364,12 @@ export function localizeValue(locale: Locale, value: unknown, key = "text"): unk
 }
 
 export function localizedString(p: LocalePack, original: string, key = "text"): string {
+  void p;
+  void key;
   if (!original.trim()) return original;
   if (original.startsWith("/") || original.startsWith("#") || original.startsWith("http") || original.includes("@")) return original;
   if (/^[\d\s.,:€/%+-]+$/.test(original)) return original;
-  const k = key.toLowerCase();
-  if (k.includes("seo")) return `${p.title} | Hermetia`;
-  if (k.includes("description")) return p.seoDescription;
-  if (k.includes("kicker") || k.includes("eyebrow") || k.includes("tag") || k.includes("label")) return p.section;
-  if (k.includes("title") || k.includes("headline") || k.includes("breadcrumb")) return p.title;
-  if (k.includes("lead")) return p.lead;
-  if (k === "q" || k.includes("question")) return p.question;
-  if (k === "a" || k.includes("answer")) return p.answer;
-  if (k.includes("cta")) return p.startFree;
-  if (k.includes("alt")) return `${p.soulMap} Hermetia`;
-  if (k.includes("caption")) return p.proof;
-  if (k.includes("note")) return p.safeNote;
-  if (k.includes("price") || k.includes("tier") || k.includes("plan")) return p.premium;
-  if (k.includes("privacy") || k.includes("data")) return p.privacy;
-  return p.body;
+  return original;
 }
 
 export function localizeDictionary<T>(locale: Locale, dictionary: T): T {
@@ -391,35 +378,11 @@ export function localizeDictionary<T>(locale: Locale, dictionary: T): T {
 }
 
 export function localizeContentPage(page: ContentPage, locale: Locale): ContentPage {
-  const p = pack(locale);
-  if (!p) return page;
-  return {
-    ...page,
-    title: p.title,
-    seoTitle: `${p.title} | Hermetia`,
-    seoDescription: p.seoDescription,
-    eyebrow: p.section,
-    lead: p.lead,
-    answer: p.body,
-    imageAlt: `${p.soulMap} Hermetia`,
-    sections: page.sections.map((_, index) => ({
-      title: [p.method, p.convergence, p.privacy, p.limits][index % 4],
-      body: [p.body, p.proof, p.consent, p.safeNote][index % 4],
-    })),
-    graphics: page.graphics?.map((graphic) => ({ ...graphic, alt: `${p.soulMap} Hermetia`, caption: p.proof })),
-    faq: localizedFaq(locale, page.faq),
-    ctaTitle: p.ctaTitle,
-    ctaText: p.ctaText,
-  };
+  return localizeValue(locale, page, "contentPage") as ContentPage;
 }
 
 export function localizedFaq(locale: Locale, items: FaqItem[]): FaqItem[] {
-  const p = pack(locale);
-  if (!p) return items;
-  return items.map((_, index) => ({
-    q: index % 2 === 0 ? p.question : `${p.method}: ${p.convergence}?`,
-    a: [p.answer, p.safeNote, p.consent][index % 3],
-  }));
+  return localizeValue(locale, items, "faq") as FaqItem[];
 }
 
 export function localizeKnowledgeItem<T extends { title?: string; term?: string; seoTitle?: string; description?: string; definition?: string; body?: string; slug: string }>(
@@ -427,66 +390,37 @@ export function localizeKnowledgeItem<T extends { title?: string; term?: string;
   locale: Locale,
   kind: "glossary" | "article" | "comparison",
 ): T {
-  const p = pack(locale);
-  if (!p) return item;
-  const intro = kind === "glossary" ? p.glossaryIntro : kind === "article" ? p.articleIntro : p.comparisonIntro;
-  const localized = {
-    ...item,
-    title: item.title ? `${p.title}` : item.title,
-    term: item.term ? `${p.soulMap} · ${p.convergence}` : item.term,
-    seoTitle: `${p.title} | Hermetia`,
-    description: intro,
-    definition: item.definition ? intro : item.definition,
-    body: item.body ? `${intro} ${p.safeNote}` : item.body,
-  } as T & { sections?: string[] };
-  if (Array.isArray((item as { sections?: string[] }).sections)) {
-    localized.sections = [intro, p.body, p.proof, p.safeNote];
-  }
-  return localized as T;
+  void kind;
+  return localizeValue(locale, item, "knowledgeItem") as T;
 }
 
 export function localizeSystemText(system: SystemEntry, locale: Locale): SystemText {
-  const base = locale === "de" ? system.de : system.en;
-  const p = pack(locale);
-  if (!p) return base;
-  return {
-    ...base,
-    tagline: p.systemIntro,
-    seoTitle: `${base.name} | Hermetia`,
-    seoDescription: p.seoDescription,
-    intro: `${base.name}: ${p.systemIntro}`,
-    whatTitle: p.overview,
-    what: p.body,
-    howTitle: p.method,
-    how: p.proof,
-    revealsTitle: p.soulMap,
-    reveals: p.ctaText,
-    faq: localizedFaq(locale, base.faq),
-  };
+  const base = system.de;
+  return localizeValue(locale, base, "systemText") as SystemText;
 }
 
 export function localizedUi(locale: Locale) {
-  const p = pack(locale);
+  void locale;
   return {
-    startFree: p?.startFree ?? (locale === "de" ? "Profil kostenlos starten" : "Start profile for free"),
-    learnMore: p?.learnMore ?? (locale === "de" ? "Mehr erfahren" : "Learn more"),
-    readMore: p?.readMore ?? (locale === "de" ? "Weiterlesen" : "Read more"),
-    faq: p?.faq ?? "FAQ",
-    overview: p?.overview ?? (locale === "de" ? "Überblick" : "Overview"),
-    method: p?.method ?? (locale === "de" ? "Methode" : "Method"),
-    limits: p?.limits ?? (locale === "de" ? "Grenzen" : "Limits"),
-    premium: p?.premium ?? (locale === "de" ? "Premium" : "Premium"),
-    strengths: p?.proof ?? (locale === "de" ? "Stärken und Nutzen" : "Strengths and value"),
-    proof: p?.proof ?? (locale === "de" ? "Mehrere Perspektiven stützen die Aussage." : "Several perspectives support the statement."),
-    comparison: p?.comparisonIntro ?? (locale === "de" ? "Vergleich" : "Comparison"),
-    glossary: p?.glossaryIntro ?? (locale === "de" ? "Begriff lesen" : "Read term"),
-    article: p?.articleIntro ?? (locale === "de" ? "Artikel lesen" : "Read article"),
-    safeNote: p?.safeNote ?? (locale === "de" ? "Inspiration zur Selbstreflexion, keine Beratung." : "Inspiration for self-reflection, not advice."),
-    title: p?.title ?? "",
-    lead: p?.lead ?? "",
-    body: p?.body ?? "",
-    ctaTitle: p?.ctaTitle ?? "",
-    ctaText: p?.ctaText ?? "",
+    startFree: "Profil kostenlos starten",
+    learnMore: "Mehr erfahren",
+    readMore: "Weiterlesen",
+    faq: "FAQ",
+    overview: "Überblick",
+    method: "Methode",
+    limits: "Grenzen",
+    premium: "Premium",
+    strengths: "Stärken und Nutzen",
+    proof: "Mehrere Perspektiven stützen die Aussage.",
+    comparison: "Vergleich",
+    glossary: "Begriff lesen",
+    article: "Artikel lesen",
+    safeNote: "Inspiration zur Selbstreflexion, keine Beratung.",
+    title: "Hermetia",
+    lead: "Eine ruhige, erklärbare Profilerfahrung.",
+    body: "Hermetia verbindet mehrere Perspektiven zu einer vorsichtigen Reflexion.",
+    ctaTitle: "Starte dein Hermetia-Profil.",
+    ctaText: "Beginne kostenlos und entscheide später, ob du mehr Tiefe möchtest.",
   };
 }
 

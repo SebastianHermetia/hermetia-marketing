@@ -9,7 +9,6 @@ import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { glossaryTerms } from "@/content/marketing";
 import { localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
-import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 type GlossarySlug = (typeof glossaryTerms)[number]["slug"];
 
@@ -52,7 +51,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function GlossarPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/glossar" />;
   const ui = localizedUi(locale);
   const terms = glossaryTerms.map((term) => localizeKnowledgeItem(term, locale, "glossary"));
   const pageUrl = `${siteUrl}/${locale}${paths.glossar}/`;
@@ -81,8 +79,8 @@ export default async function GlossarPage({ params }: { params: Promise<{ locale
         <div className="wrap grid items-center gap-8 md:grid-cols-[1fr_.8fr]">
           <div>
             <span className="kicker">{ui.overview}</span>
-            <h1 className="mt-3 text-[clamp(32px,5vw,48px)]">{locale === "de" || locale === "en" ? "Glossar für Seelenkarte, Systeme und AI-Deutung" : ui.title}</h1>
-            <p className="lead mt-5">{locale === "de" || locale === "en" ? "Kurze, klare Antworten auf die Begriffe, die Hermetia ausmachen. Jede Erklärung führt tiefer in die Methode und bei Bedarf direkt zur eigenen Erfahrung." : ui.lead}</p>
+            <h1 className="mt-3 text-[clamp(32px,5vw,48px)]">Glossar für Seelenkarte, Systeme und AI-Deutung</h1>
+            <p className="lead mt-5">Kurze, klare Antworten auf die Begriffe, die Hermetia ausmachen. Jede Erklärung führt tiefer in die Methode und bei Bedarf direkt zur eigenen Erfahrung.</p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "glossary-hero" })}>{ui.startFree}</a>
               <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.wissen)}>{ui.readMore}</a>

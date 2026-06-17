@@ -11,7 +11,6 @@ import { Faq } from "@/components/Faq";
 import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
 import { glossaryTerms } from "@/content/marketing";
 import { localizedFaq, localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
-import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => glossaryTerms.map((term) => ({ locale, slug: term.slug })));
@@ -28,7 +27,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function GlossarDetailPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale: raw, slug } = await params;
   const locale = raw as Locale;
-  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/glossar" detailLabel={slug} />;
   const ui = localizedUi(locale);
   const rawTerm = glossaryTerms.find((t) => t.slug === slug);
   if (!rawTerm) notFound();
@@ -54,9 +52,9 @@ export default async function GlossarDetailPage({ params }: { params: Promise<{ 
           </div>
           <section className="mt-12 rounded-card border border-sand bg-creme-tief p-6">
             <span className="kicker">{ui.method}</span>
-            <h2 className="mt-2 text-[clamp(24px,3vw,30px)]">{locale === "de" || locale === "en" ? `Wann ist ${term.term} für mein Profil relevant?` : ui.title}</h2>
+            <h2 className="mt-2 text-[clamp(24px,3vw,30px)]">Wann ist {term.term} für mein Profil relevant?</h2>
             <p className="muted mt-3 text-[17px] leading-[1.85]">
-              {locale === "de" || locale === "en" ? `Relevant wird ${term.term}, wenn der Begriff hilft, ein wiederkehrendes Muster präziser zu benennen. Hermetia nutzt solche Begriffe nicht als isolierte Etiketten, sondern als verständliche Antwortbausteine: erst erklären, dann mit anderen Systemsignalen vergleichen, dann in der eigenen Seelenkarte prüfen.` : ui.body}
+              Relevant wird {term.term}, wenn der Begriff hilft, ein wiederkehrendes Muster präziser zu benennen. Hermetia nutzt solche Begriffe nicht als isolierte Etiketten, sondern als verständliche Antwortbausteine: erst erklären, dann mit anderen Systemsignalen vergleichen, dann in der eigenen Seelenkarte prüfen.
             </p>
           </section>
           <section className="mt-12 rounded-card border border-sand bg-white p-6 shadow-soft">

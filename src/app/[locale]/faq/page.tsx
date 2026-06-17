@@ -7,7 +7,6 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Faq } from "@/components/Faq";
 import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
-import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 const questionGroupsDe = [
   {
@@ -159,26 +158,26 @@ const extraFaqEn = [
   },
 ];
 
-const allFaq = (baseItems: { q: string; a: string }[], locale: Locale) => [...baseItems, ...(locale === "de" ? extraFaqDe : extraFaqEn)];
+const allFaq = (baseItems: { q: string; a: string }[], locale: Locale) => {
+  void locale;
+  return [...baseItems, ...extraFaqDe];
+};
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = getDictionary(locale as Locale);
-  const title = locale === "de" ? "FAQ — Alle Fragen zu Hermetia" : "FAQ — All your questions about Hermetia";
-  const desc = locale === "de"
-    ? "Seelenkarte, Geburtszeit, Datenschutz, Preise und Kündigung: alle häufigen Fragen zu Hermetia, klar beantwortet."
-    : "Soul map, birth time, privacy, pricing and cancellation: all frequently asked questions about Hermetia, answered clearly.";
+  const title = "FAQ — Alle Fragen zu Hermetia";
+  const desc = "Seelenkarte, Geburtszeit, Datenschutz, Preise und Kündigung: alle häufigen Fragen zu Hermetia, klar beantwortet.";
   return buildMetadata({ locale: locale as Locale, path: paths.faq, title, description: desc });
 }
 
 export default async function FaqPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/faq" />;
   const t = getDictionary(locale);
   const items = allFaq([...t.home.faq.items, ...t.preise.faq], locale);
   const pageUrl = `${siteUrl}/${locale}${paths.faq}/`;
-  const questionGroups = locale === "de" ? questionGroupsDe : questionGroupsEn;
+  const questionGroups = questionGroupsDe;
 
   return (
     <>

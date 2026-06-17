@@ -6,7 +6,6 @@ import { localePath, paths, startUrl } from "@/lib/links";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
-import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -21,7 +20,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/sprachen" />;
   const statuses = getLocaleStatuses();
   const summary = translationSummary();
   const backlog = translationBacklogSummary();
