@@ -21,13 +21,21 @@ function saveCache(cache) {
   writeFileSync(cachePath, `${JSON.stringify(cache, null, 2)}\n`);
 }
 
-function htmlFiles(dir) {
+function filesByName(dir, names) {
   if (!existsSync(dir)) return [];
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
     const full = join(dir, entry.name);
-    if (entry.isDirectory()) return htmlFiles(full);
-    return entry.name === "index.html" ? [full] : [];
+    if (entry.isDirectory()) return filesByName(full, names);
+    return names.has(entry.name) ? [full] : [];
   });
+}
+
+function htmlFiles(dir) {
+  return filesByName(dir, new Set(["index.html"]));
+}
+
+function payloadFiles(dir) {
+  return filesByName(dir, new Set(["index.txt", "__next._full.txt", "__PAGE__.txt"]));
 }
 
 function decodeHtml(value) {
@@ -210,6 +218,14 @@ function applyScriptStringTranslations(html, replacers) {
   });
 }
 
+function applyPayloadTranslations(payload, replacers) {
+  let translated = payload;
+  for (const { regex, replacements } of replacers) {
+    translated = translated.replace(regex, (source) => replacements.get(source) ?? source);
+  }
+  return translated;
+}
+
 function applyTranslations(cache, locale, html, scriptReplacers) {
   let translated = html.replace(/>([^<>]+)</g, (match, value) => `>${translateText(cache, locale, value)}<`);
   translated = applyAttributeTranslations(cache, locale, translated);
@@ -233,6 +249,7 @@ const stringsByLocale = Object.fromEntries(locales.map((locale) => [locale, sour
 await fillCache(cache, stringsByLocale);
 
 let rewritten = 0;
+let rewrittenPayloads = 0;
 let missing = 0;
 for (const locale of locales) {
   const scriptReplacers = createScriptReplacers(cache, locale, stringsByLocale[locale]);
@@ -241,6 +258,12 @@ for (const locale of locales) {
     const translated = applyTranslations(cache, locale, html, scriptReplacers);
     writeFileSync(file, translated);
     rewritten += 1;
+  }
+  for (const file of payloadFiles(join(outDir, locale))) {
+    const payload = readFileSync(file, "utf8");
+    const translated = applyPayloadTranslations(payload, scriptReplacers);
+    writeFileSync(file, translated);
+    rewrittenPayloads += 1;
   }
   for (const text of stringsByLocale[locale]) {
     if (!cache[locale]?.[text]) missing += 1;
@@ -253,4 +276,4 @@ if (missing > 0) {
 }
 
 if (generateMissing) saveCache(cache);
-console.log(`Applied i18n HTML translations to ${rewritten} exported pages across ${locales.length} locale(s).`);
+console.log(`Applied i18n HTML translations to ${rewritten} exported pages and ${rewrittenPayloads} RSC payload(s) across ${locales.length} locale(s).`);

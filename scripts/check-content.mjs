@@ -5,7 +5,7 @@ const root = process.cwd();
 const out = join(root, "out");
 const config = JSON.parse(readFileSync(join(root, "scripts", "i18n-audit-config.json"), "utf8"));
 const locales = config.locales;
-const localizedLocales = new Set(config.localizedLocales);
+const translatedLocales = new Set(locales.filter((locale) => locale !== "de"));
 const fallbackMarkers = config.forbiddenLocalizedMarkers;
 
 function fail(message) {
@@ -22,6 +22,15 @@ function readOut(path) {
   return readFileSync(file, "utf8");
 }
 
+function readOutFile(path, fileName) {
+  const file = join(out, ...path.split("/"), fileName);
+  if (!existsSync(file)) {
+    fail(`Missing generated file: /${path}/${fileName}`);
+    return "";
+  }
+  return readFileSync(file, "utf8");
+}
+
 function countDirs(path) {
   const dir = join(out, ...path.split("/"));
   if (!existsSync(dir)) return 0;
@@ -33,9 +42,15 @@ if (!existsSync(out)) fail("Missing out directory. Run npm run build before npm 
 for (const locale of locales) {
   const home = readOut(locale);
   if (!home.includes("Hermetia")) fail(`${locale}: missing rendered content.`);
-  if (localizedLocales.has(locale)) {
+  if (translatedLocales.has(locale)) {
     for (const marker of fallbackMarkers) {
       if (home.includes(marker)) fail(`${locale}: fallback marker leaked on home: ${marker}`);
+    }
+    const homePayload = readOutFile(locale, "index.txt");
+    const fullPayload = readOutFile(locale, "__next._full.txt");
+    for (const marker of fallbackMarkers) {
+      if (homePayload.includes(marker)) fail(`${locale}: fallback marker leaked in home RSC payload: ${marker}`);
+      if (fullPayload.includes(marker)) fail(`${locale}: fallback marker leaked in full RSC payload: ${marker}`);
     }
   }
 }
