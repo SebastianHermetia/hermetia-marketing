@@ -9,6 +9,7 @@ import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { articles } from "@/content/marketing";
 import { localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
+import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 type ArticleSlug = (typeof articles)[number]["slug"];
 
@@ -51,6 +52,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function WissenPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/wissen" />;
   const ui = localizedUi(locale);
   const localizedArticles = articles.map((article) => localizeKnowledgeItem(article, locale, "article"));
   const pageUrl = `${siteUrl}/${locale}${paths.wissen}/`;

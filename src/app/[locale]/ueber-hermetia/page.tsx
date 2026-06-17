@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Faq } from "@/components/Faq";
 import { JsonLd, faqSchema, orgSchema, breadcrumbSchema } from "@/components/JsonLd";
+import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 const faq = [
   {
@@ -81,6 +82,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/ueber-hermetia" />;
   const pageUrl = `${siteUrl}/${locale}${paths.about}/`;
 
   return (

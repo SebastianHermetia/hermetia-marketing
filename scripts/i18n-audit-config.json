@@ -1,89 +1,129 @@
 {
-  "locales": {
-    "en": {
-      "name": "English",
-      "phases": {
-        "p0": {
-          "routes": [
-            "/",
-            "/leistungen/",
-            "/preise/",
-            "/profil-starten/",
-            "/kostenlos-vs-premium/",
-            "/datenschutz/",
-            "/daten-und-sicherheit/",
-            "/ki-transparenz/",
-            "/agb/",
-            "/widerruf/",
-            "/impressum/",
-            "/freigaben/"
-          ],
-          "requiredMarkers": {
-            "/": [
-              "A portrait of your soul",
-              "Six ways to understand yourself better"
-            ],
-            "/leistungen/": [
-              "Feature areas",
-              "Legal and editorial guardrails"
-            ],
-            "/preise/": [
-              "Price clarity",
-              "A good reason to buy is clarity"
-            ],
-            "/profil-starten/": [
-              "How you move from the website into your personal soul map",
-              "Understand consent"
-            ],
-            "/kostenlos-vs-premium/": [
-              "Test resonance first",
-              "Legal texts, withdrawal, cancellation, data protection and AI limits"
-            ],
-            "/datenschutz/": [
-              "personal data",
-              "consent",
-              "GDPR"
-            ],
-            "/daten-und-sicherheit/": [
-              "Personal depth needs understandable data protection",
-              "explicit consent for sensitive profile processing"
-            ],
-            "/ki-transparenz/": [
-              "Why Hermetia discloses AI transparency",
-              "Calculation, convergence and wording are separate"
-            ],
-            "/agb/": [
-              "Prices, payment and paid models",
-              "AI content and labelling"
-            ],
-            "/widerruf/": [
-              "Right of withdrawal",
-              "Digital content and immediate access"
-            ],
-            "/impressum/": [
-              "Information pursuant to",
-              "Final launch check"
-            ],
-            "/freigaben/": [
-              "Legal, IP and launch approvals",
-              "Important: no final legal sign-off"
-            ]
-          },
-          "forbiddenMarkers": [
-            "Ein Bild deiner Seele",
-            "Sechs Wege, dich besser zu verstehen",
-            "Datenschutzerklärung",
-            "Rechtliche Freigaben ansehen",
-            "Legal-, IP- und Launch-Freigaben",
-            "Wichtig: keine anwaltliche Endfreigabe",
-            "Preise vergleichen",
-            "Profil kostenlos starten",
-            "Geburtsdaten eingeben",
-            "Einwilligung verstehen",
-            "Kündigungsbutton im Profil"
-          ]
-        }
-      }
-    }
-  }
+  "version": 2,
+  "locales": [
+    "de",
+    "en",
+    "fr",
+    "es",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "bg",
+    "hr",
+    "cs",
+    "da",
+    "et",
+    "fi",
+    "el",
+    "hu",
+    "ga",
+    "lv",
+    "lt",
+    "mt",
+    "ro",
+    "sk",
+    "sl",
+    "sv"
+  ],
+  "localizedLocales": [
+    "fr",
+    "es",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "bg",
+    "hr",
+    "cs",
+    "da",
+    "et",
+    "fi",
+    "el",
+    "hu",
+    "ga",
+    "lv",
+    "lt",
+    "mt",
+    "ro",
+    "sk",
+    "sl",
+    "sv"
+  ],
+  "phaseRoutes": {
+    "p0": [
+      "/",
+      "/leistungen/",
+      "/preise/",
+      "/profil-starten/",
+      "/kostenlos-vs-premium/",
+      "/datenschutz/",
+      "/daten-und-sicherheit/",
+      "/ki-transparenz/",
+      "/agb/",
+      "/widerruf/",
+      "/impressum/",
+      "/freigaben/"
+    ],
+    "p1": [
+      "/so-entsteht-dein-profil/",
+      "/konvergenz-engine/",
+      "/seelenkarte/",
+      "/tagesimpulse/",
+      "/journaling/",
+      "/vollprofil-buch/",
+      "/companion/",
+      "/profil-verfeinern/",
+      "/beziehungen/",
+      "/systeme/"
+    ],
+    "p2": [
+      "/glossar/",
+      "/wissen/",
+      "/vergleiche/"
+    ]
+  },
+  "detailCounts": {
+    "/systeme/": 31,
+    "/glossar/": 51,
+    "/wissen/": 20,
+    "/vergleiche/": 12
+  },
+  "localizedMarkers": {
+    "fr": ["Hermetia relie systèmes", "Commencer gratuitement"],
+    "es": ["Hermetia conecta sistemas", "Empezar gratis"],
+    "it": ["Hermetia collega sistemi", "Inizia gratis"],
+    "nl": ["Hermetia verbindt systemen", "Gratis starten"],
+    "pl": ["Hermetia łączy systemy", "Zacznij bezpłatnie"],
+    "pt": ["Hermetia liga sistemas", "Começar grátis"],
+    "bg": ["Hermetia свързва системи", "Започнете безплатно"],
+    "hr": ["Hermetia povezuje sustave", "Započni besplatno"],
+    "cs": ["Hermetia propojuje systémy", "Začít zdarma"],
+    "da": ["Hermetia forbinder systemer", "Start gratis"],
+    "et": ["Hermetia ühendab süsteemid", "Alusta tasuta"],
+    "fi": ["Hermetia yhdistää järjestelmät", "Aloita maksutta"],
+    "el": ["Η Hermetia συνδέει συστήματα", "Ξεκινήστε δωρεάν"],
+    "hu": ["A Hermetia rendszereket", "Indítás ingyen"],
+    "ga": ["Nascann Hermetia córais", "Tosaigh saor in aisce"],
+    "lv": ["Hermetia savieno sistēmas", "Sākt bez maksas"],
+    "lt": ["Hermetia jungia sistemas", "Pradėti nemokamai"],
+    "mt": ["Hermetia tgħaqqad sistemi", "Ibda b'xejn"],
+    "ro": ["Hermetia conectează sisteme", "Începe gratuit"],
+    "sk": ["Hermetia prepája systémy", "Začať zadarmo"],
+    "sl": ["Hermetia povezuje sisteme", "Začni brezplačno"],
+    "sv": ["Hermetia förenar system", "Starta gratis"]
+  },
+  "forbiddenLocalizedMarkers": [
+    "Sprachfassung in redaktioneller Vorbereitung",
+    "Editorial translation in progress",
+    "Version éditoriale en préparation",
+    "versión editorial completa está en preparación",
+    "redaktionell in Vorbereitung",
+    "Longform in Vorbereitung",
+    "Technischer Fallback",
+    "UI lokalisiert",
+    "englischen Editorial-Content",
+    "A portrait of your soul",
+    "Ein Bild deiner Seele"
+  ]
 }

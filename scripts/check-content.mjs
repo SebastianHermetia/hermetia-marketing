@@ -3,18 +3,10 @@ import { join } from "node:path";
 
 const root = process.cwd();
 const out = join(root, "out");
-const locales = ["de", "en", "fr", "es", "it", "nl", "pl", "pt", "bg", "hr", "cs", "da", "et", "fi", "el", "hu", "ga", "lv", "lt", "mt", "ro", "sk", "sl", "sv"];
-const fallbackMarkers = [
-  "Sprachfassung in redaktioneller Vorbereitung",
-  "Editorial translation in progress",
-  "Version éditoriale en préparation",
-  "versión editorial completa está en preparación",
-  "redaktionell in Vorbereitung",
-  "Longform in Vorbereitung",
-  "Technischer Fallback",
-  "UI lokalisiert",
-  "englischen Editorial-Content",
-];
+const config = JSON.parse(readFileSync(join(root, "scripts", "i18n-audit-config.json"), "utf8"));
+const locales = config.locales;
+const localizedLocales = new Set(config.localizedLocales);
+const fallbackMarkers = config.forbiddenLocalizedMarkers;
 
 function fail(message) {
   console.error(message);
@@ -41,19 +33,23 @@ if (!existsSync(out)) fail("Missing out directory. Run npm run build before npm 
 for (const locale of locales) {
   const home = readOut(locale);
   if (!home.includes("Hermetia")) fail(`${locale}: missing rendered content.`);
-  for (const marker of fallbackMarkers) {
-    if (home.includes(marker)) fail(`${locale}: fallback marker leaked on home: ${marker}`);
+  if (localizedLocales.has(locale)) {
+    for (const marker of fallbackMarkers) {
+      if (home.includes(marker)) fail(`${locale}: fallback marker leaked on home: ${marker}`);
+    }
+    for (const marker of config.localizedMarkers[locale] ?? []) {
+      if (!home.includes(marker)) fail(`${locale}: localized home marker missing: ${marker}`);
+    }
   }
 }
 
-const expectations = [
-  ["DE system pages", countDirs("de/systeme"), 31],
-  ["DE glossary pages", countDirs("de/glossar"), 51],
-  ["DE article pages", countDirs("de/wissen"), 20],
-  ["DE comparison pages", countDirs("de/vergleiche"), 12],
-  ["FR glossary pages", countDirs("fr/glossar"), 51],
-  ["SV comparison pages", countDirs("sv/vergleiche"), 12],
-];
+const expectations = locales.flatMap((locale) =>
+  Object.entries(config.detailCounts).map(([prefix, expected]) => [
+    `${locale}${prefix} detail pages`,
+    countDirs(`${locale}${prefix}`.replace(/^\/+|\/+$/g, "")),
+    expected,
+  ]),
+);
 
 for (const [label, actual, expected] of expectations) {
   if (actual < expected) fail(`${label}: expected at least ${expected}, got ${actual}.`);
@@ -64,6 +60,8 @@ const enHome = readOut("en");
 const frHome = readOut("fr");
 const esPricing = readOut("es/preise");
 const svSystem = readOut("sv/systeme/human-design");
+const mtArticle = readOut("mt/wissen/ai-selbstreflexion");
+const elComparison = readOut("el/vergleiche/human-design-vs-gene-keys");
 const languages = readOut("de/sprachen");
 
 const checks = [
@@ -72,6 +70,8 @@ const checks = [
   ["FR localized editorial shell renders", frHome.includes("Hermetia relie systèmes") && frHome.includes("Commencer gratuitement")],
   ["ES localized editorial shell renders on P0", esPricing.includes("Hermetia conecta sistemas") && esPricing.includes("Empezar gratis")],
   ["SV localized editorial shell renders on detail route", svSystem.includes("Hermetia förenar system") && svSystem.includes("Starta gratis")],
+  ["MT localized editorial shell renders on P2 article", mtArticle.includes("Hermetia tgħaqqad sistemi") && mtArticle.includes("Ibda b'xejn")],
+  ["EL localized editorial shell renders on P2 comparison", elComparison.includes("Η Hermetia συνδέει συστήματα") && elComparison.includes("Ξεκινήστε δωρεάν")],
   ["Language status reports all editorial locales", languages.includes("Sprachrouten live") && languages.includes(">24<") && languages.includes("Redaktionell freigegeben")],
   ["Language status has no fallback backlog", !languages.includes("Technischer Fallback") && !languages.includes("Seiten im Longform-Backlog") && !languages.includes("UI lokalisiert")],
 ];

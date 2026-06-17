@@ -10,6 +10,7 @@ import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { systems, systemText } from "@/content/systems";
 import { bookSearchUrl, bookText, featuredBooks } from "@/content/bookRecommendations";
+import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 type SystemSlug = (typeof systems)[number]["slug"];
 
@@ -61,6 +62,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function SystemePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
+  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/systeme" />;
   const t = getDictionary(locale);
   const p = t.systeme;
   const core = systems.filter((s) => s.core);

@@ -11,6 +11,7 @@ import { Faq } from "@/components/Faq";
 import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
 import { glossaryTerms } from "@/content/marketing";
 import { localizedFaq, localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
+import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => glossaryTerms.map((term) => ({ locale, slug: term.slug })));
@@ -27,6 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function GlossarDetailPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale: raw, slug } = await params;
   const locale = raw as Locale;
+  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/glossar" detailLabel={slug} />;
   const ui = localizedUi(locale);
   const rawTerm = glossaryTerms.find((t) => t.slug === slug);
   if (!rawTerm) notFound();
