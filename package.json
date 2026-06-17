@@ -6,6 +6,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:i18n": "next build && node scripts/apply-i18n-html-translations.mjs --generate-missing",
+    "i18n:extract": "node scripts/extract-i18n-source-catalog.mjs",
+    "i18n:apply": "node scripts/apply-i18n-html-translations.mjs",
+    "i18n:parity": "node scripts/check-i18n-content-parity.mjs",
+    "i18n:live-parity": "node scripts/check-i18n-live-parity.mjs",
     "check:assets": "node scripts/check-assets.mjs",
     "check:content": "node scripts/check-content.mjs",
     "check:compliance": "node scripts/check-compliance.mjs",

@@ -10,7 +10,6 @@ import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { systems, systemText } from "@/content/systems";
 import { bookSearchUrl, bookText, featuredBooks } from "@/content/bookRecommendations";
-import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 type SystemSlug = (typeof systems)[number]["slug"];
 
@@ -62,7 +61,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function SystemePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/systeme" />;
   const t = getDictionary(locale);
   const p = t.systeme;
   const core = systems.filter((s) => s.core);
@@ -90,7 +88,7 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
           {
             "@context": "https://schema.org",
             "@type": "ItemList",
-            name: locale === "de" ? "Bücher zu den Hermetia-Systemen" : "Books about Hermetia systems",
+            name: "Bücher zu den Hermetia-Systemen",
             itemListElement: books.map((book, index) => ({
               "@type": "ListItem",
               position: index + 1,
@@ -278,14 +276,12 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
       <section className="bg-creme-tief py-20">
         <div className="wrap">
           <div className="mb-9 max-w-[780px]">
-            <span className="kicker">{locale === "de" ? "Weiterlesen" : "Further reading"}</span>
+            <span className="kicker">Weiterlesen</span>
             <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">
-              {locale === "de" ? "Bücher, die die Systeme verständlicher machen." : "Books that help you understand the systems."}
+              Bücher, die die Systeme verständlicher machen.
             </h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
-              {locale === "de"
-                ? "Diese Empfehlungen sind redaktionell ausgewählt, damit du Quellen, Traditionen und Perspektiven hinter den Hermetia-Systemen besser einordnen kannst."
-                : "These recommendations are editorially selected to help you understand the sources, traditions and perspectives behind Hermetia's systems."}
+              Diese Empfehlungen sind redaktionell ausgewählt, damit du Quellen, Traditionen und Perspektiven hinter den Hermetia-Systemen besser einordnen kannst.
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -298,16 +294,14 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
                   <p className="note mt-1">{book.authors} · {book.languages.join(", ")}</p>
                   <p className="muted mt-3 text-[15.5px] leading-relaxed">{text.description}</p>
                   <a className="note mt-4 inline-block font-semibold text-gold" href={bookSearchUrl(book, locale)} rel="nofollow noopener noreferrer" target="_blank">
-                    {locale === "de" ? "Buch suchen" : "Search book"} →
+                    Buch suchen →
                   </a>
                 </article>
               );
             })}
           </div>
           <p className="note mt-6 text-center">
-            {locale === "de"
-              ? "Preise und Verfügbarkeit werden hier nicht angezeigt, weil sie sich ändern können. Die Links öffnen eine neutrale Buchsuche."
-              : "Prices and availability are not shown here because they can change. The links open a neutral book search."}
+            Preise und Verfügbarkeit werden hier nicht angezeigt, weil sie sich ändern können. Die Links öffnen eine neutrale Buchsuche.
           </p>
         </div>
       </section>

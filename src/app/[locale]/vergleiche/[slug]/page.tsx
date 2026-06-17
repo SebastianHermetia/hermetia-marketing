@@ -10,7 +10,6 @@ import { Faq } from "@/components/Faq";
 import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
 import { comparisons } from "@/content/marketing";
 import { localizedFaq, localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
-import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => comparisons.map((comparison) => ({ locale, slug: comparison.slug })));
@@ -27,19 +26,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function ComparisonPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale: raw, slug } = await params;
   const locale = raw as Locale;
-  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/vergleiche" detailLabel={slug} />;
   const ui = localizedUi(locale);
   const rawComparison = comparisons.find((c) => c.slug === slug);
   if (!rawComparison) notFound();
   const comparison = localizeKnowledgeItem(rawComparison, locale, "comparison");
-  const sections = locale === "de" || locale === "en"
-    ? comparisonSections(comparison)
-    : [
-        { title: ui.comparison, body: ui.body },
-        { title: ui.strengths, body: ui.ctaText },
-        { title: ui.limits, body: ui.safeNote },
-        { title: ui.method, body: ui.lead },
-      ];
+  const sections = comparisonSections(comparison);
   const faq = localizedFaq(locale, comparisonFaq(comparison));
   return (
     <>

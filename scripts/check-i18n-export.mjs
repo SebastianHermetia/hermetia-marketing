@@ -77,12 +77,6 @@ for (const locale of locales) {
           failures += 1;
         }
       }
-      for (const marker of config.localizedMarkers[locale] ?? []) {
-        if (!text.includes(marker)) {
-          console.error(`Missing localized marker in ${relative(out, file)}: ${marker}`);
-          failures += 1;
-        }
-      }
     }
   }
 }

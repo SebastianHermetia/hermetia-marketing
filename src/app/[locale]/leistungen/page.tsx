@@ -9,7 +9,6 @@ import { Footer } from "@/components/Footer";
 import { SoulMap } from "@/components/SoulMap";
 import { Faq } from "@/components/Faq";
 import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
-import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 const servicesPageCopy = {
   de: {
@@ -209,7 +208,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function LeistungenPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/leistungen" />;
   const t = getDictionary(locale);
   const p = t.leistungen;
   const copy = localizeCopy(locale, servicesPageCopy);

@@ -12,7 +12,6 @@ import { AppCta } from "@/components/AppCta";
 import { JsonLd, faqSchema, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { systems, systemSlugs, getSystem, systemText } from "@/content/systems";
 import { bookSearchUrl, bookText, getBooksForSystem } from "@/content/bookRecommendations";
-import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
@@ -31,7 +30,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function SystemDetailPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale: raw, slug } = await params;
   const locale = raw as Locale;
-  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/systeme" detailLabel={slug} />;
   const sys = getSystem(slug);
   if (!sys) notFound();
   const t = getDictionary(locale);
@@ -82,7 +80,7 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
           {
             "@context": "https://schema.org",
             "@type": "ItemList",
-            name: locale === "de" ? `Bücher zu ${c.name}` : `Books about ${c.name}`,
+            name: `Bücher zu ${c.name}`,
             itemListElement: books.map((book, index) => ({
               "@type": "ListItem",
               position: index + 1,
@@ -177,14 +175,12 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
               </p>
             </div>
             <div className="rounded-card border border-sand bg-white p-6 shadow-soft">
-              <span className="kicker">{locale === "de" ? "Literatur" : "Further reading"}</span>
+              <span className="kicker">Literatur</span>
               <h2 className="mt-2 text-[24px]">
-                {locale === "de" ? `Bücher zu ${c.name}` : `Books about ${c.name}`}
+                Bücher zu {c.name}
               </h2>
               <p className="muted mt-2 text-[16.5px] leading-relaxed">
-                {locale === "de"
-                  ? "Diese Empfehlungen helfen dir, die Tradition hinter diesem System besser zu verstehen. Die Links öffnen neutrale Buchsuchen, damit du Ausgaben und Anbieter selbst vergleichen kannst."
-                  : "These recommendations help you understand the tradition behind this system. The links open neutral book searches so you can compare editions and providers yourself."}
+                Diese Empfehlungen helfen dir, die Tradition hinter diesem System besser zu verstehen. Die Links öffnen neutrale Buchsuchen, damit du Ausgaben und Anbieter selbst vergleichen kannst.
               </p>
               <div className="mt-5 grid gap-4 md:grid-cols-3">
                 {books.map((book) => {
@@ -196,16 +192,14 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
                       <p className="note mt-1">{book.authors} · {book.languages.join(", ")}</p>
                       <p className="muted mt-3 text-[14.5px] leading-relaxed">{text.description}</p>
                       <a className="note mt-4 inline-block font-semibold text-gold" href={bookSearchUrl(book, locale)} rel="nofollow noopener noreferrer" target="_blank">
-                        {locale === "de" ? "Buch suchen" : "Search book"} →
+                        Buch suchen →
                       </a>
                     </article>
                   );
                 })}
               </div>
               <p className="note mt-4">
-                {locale === "de"
-                  ? "Hermetia zeigt hier keine Preise oder Verfügbarkeit, weil sie sich ändern können. Bitte prüfe den verlinkten Anbieter vor dem Kauf."
-                  : "Hermetia does not display prices or availability here because they can change. Please check the linked provider before buying."}
+                Hermetia zeigt hier keine Preise oder Verfügbarkeit, weil sie sich ändern können. Bitte prüfe den verlinkten Anbieter vor dem Kauf.
               </p>
             </div>
             <div className="rounded-card border border-sand bg-creme-tief p-6">

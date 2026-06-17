@@ -9,7 +9,6 @@ import { AppCta } from "@/components/AppCta";
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { comparisons } from "@/content/marketing";
 import { localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
-import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 type ComparisonSlug = (typeof comparisons)[number]["slug"];
 
@@ -59,7 +58,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function VergleichePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/vergleiche" />;
   const ui = localizedUi(locale);
   const localizedComparisons = comparisons.map((comparison) => localizeKnowledgeItem(comparison, locale, "comparison"));
   const pageUrl = `${siteUrl}/${locale}${paths.vergleiche}/`;
@@ -88,8 +86,8 @@ export default async function VergleichePage({ params }: { params: Promise<{ loc
         <div className="wrap grid items-center gap-9 lg:grid-cols-[1fr_.85fr]">
           <div>
             <span className="kicker">{ui.comparison}</span>
-            <h1 className="mt-3 max-w-[760px] text-[clamp(32px,5vw,48px)]">{locale === "de" || locale === "en" ? "Welche Systeme zeigen was?" : ui.title}</h1>
-            <p className="lead mt-5 max-w-[700px]">{locale === "de" || locale === "en" ? "Vergleichsseiten holen typische Suchfragen ab und zeigen, warum Hermetia Systeme nicht gegeneinander ausspielt, sondern verantwortungsvoll verbindet." : ui.lead}</p>
+            <h1 className="mt-3 max-w-[760px] text-[clamp(32px,5vw,48px)]">Welche Systeme zeigen was?</h1>
+            <p className="lead mt-5 max-w-[700px]">Vergleichsseiten holen typische Suchfragen ab und zeigen, warum Hermetia Systeme nicht gegeneinander ausspielt, sondern verantwortungsvoll verbindet.</p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "comparisons-hero" })}>{ui.startFree}</a>
               <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.systeme)}>{ui.overview}</a>

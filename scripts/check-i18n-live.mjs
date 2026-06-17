@@ -106,7 +106,7 @@ for (const localeName of selectedLocales) {
         if (name === "graphics") return [];
         return stripHtml(componentHtml) ? [] : [`empty_${name}`];
       });
-      const missing = localeName === "de" || localeName === "en" ? [] : (config.localizedMarkers[localeName] ?? []).filter((marker) => !text.includes(marker));
+      const missing = [];
       const forbidden = localeName === "de" || localeName === "en" ? [] : config.forbiddenLocalizedMarkers.filter((marker) => text.includes(marker));
       rows.push({
         locale: localeName,

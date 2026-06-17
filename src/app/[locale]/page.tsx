@@ -8,7 +8,6 @@ import { Footer } from "@/components/Footer";
 import { SoulMap } from "@/components/SoulMap";
 import { Faq } from "@/components/Faq";
 import { JsonLd, faqSchema, orgSchema } from "@/components/JsonLd";
-import { LocalizedEditorialShell } from "@/components/LocalizedEditorialShell";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -19,7 +18,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  if (locale !== "de" && locale !== "en") return <LocalizedEditorialShell locale={locale} routePath="/" />;
   const t = getDictionary(locale);
   const h = t.home;
 
