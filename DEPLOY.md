@@ -1,38 +1,82 @@
-# Deploy — Hermetia Marketing (Cloudflare Pages)
+# Deploy — Hermetia Marketing (Vercel)
 
-Statischer Export (`output: "export"` → `/out`), deployt über **Cloudflare Pages** auf einer **Subdomain** (App bleibt auf `hermetia.digital-expert.de` unangetastet; Root-Umzug erst zum Launch).
+Statischer Export (`output: "export"` → `/out`), deployt über **Vercel** auf **Subdomain**.
 
-## Einmalig (von dir auf GitHub + Cloudflare)
+> **Warum Vercel statt Cloudflare Pages?**  
+> CF Pages hat ein hartes Limit von 20.000 Dateien. Diese Site erzeugt ~33.665 Dateien  
+> (24 Locales × Seiten × RSC-`.txt`-Payloads). Vercel hat kein File-Limit für statische Exports.
 
-1. **GitHub-Repo anlegen** (privat): `SebastianHermetia/hermetia-marketing`
-   – leer lassen (kein README/gitignore), dann Push (s. u.).
-   – Push-Zugang für mich: entweder `sebastianb1309-cpu` als Collaborator (write) hinzufügen
-     **oder** den Deploy-Key `~/.ssh/hermetia_deploy.pub` als Deploy-Key mit Schreibrecht eintragen.
+## Vercel — Projektdaten
 
-2. **Cloudflare Pages** (Dashboard → Workers & Pages → Create → Pages → Connect to Git):
-   - Repository: `SebastianHermetia/hermetia-marketing`
-   - Framework preset: **None / Next.js (Static HTML Export)**
-   - **Build command:** `npm run build`
-   - **Build output directory:** `out`
-   - **Environment variables:**
-     - `NEXT_PUBLIC_SITE_URL` = `https://hermetiastart.digital-expert.de` (aktuelle Test-Subdomain)
-     - `NEXT_PUBLIC_APP_URL`  = `https://hermetia.digital-expert.de`
-     - `NODE_VERSION` = `22` (oder via `.node-version`)
-   - **Custom domain:** `hermetiastart.digital-expert.de` → CNAME auf das `*.pages.dev`-Ziel (Cloudflare richtet das beim Hinzufügen der Custom Domain automatisch ein).
+| Punkt | Wert |
+|---|---|
+| **Organisation** | Hermetia (GitHub Org) |
+| **Repo** | `github.com/SebastianHermetia/hermetia-marketing` (muss **public** sein) |
+| **Vercel-Framework** | `Other` (**nicht** "Next.js") — statischer Export erzeugt kein `.next/routes-manifest.json` |
+| **Build-Command** | `npm run build` |
+| **Output-Verzeichnis** | `out` |
+| **Deploy-Trigger** | Auto-deploy bei Push auf `main` |
+| **Custom Domain** | `hermetiastart.digital-expert.de` |
 
-> **Noindex in der Testphase:** `public/_headers` setzt `X-Robots-Tag: noindex, nofollow` für die gesamte Seite, damit die Test-Subdomain nicht von Google indexiert wird. robots.txt erlaubt bewusst weiter Crawling (sonst sähe Google den noindex-Header nicht). **Zum echten Launch entfernen/anpassen.**
+## ENV-Variablen in Vercel
 
-3. **Decap CMS** (optional, nach Launch): in `public/admin/config.yml` ist `repo: SebastianHermetia/hermetia-marketing` schon gesetzt; GitHub-OAuth-App für Decap einrichten.
+| Variable | Wert (Testphase) | Beim Launch |
+|---|---|---|
+| `NEXT_PUBLIC_SITE_URL` | `https://hermetiastart.digital-expert.de` | finale Domain |
+| `NEXT_PUBLIC_APP_URL` | `https://hermetia.digital-expert.de` | bleibt gleich |
 
-## Push (sobald Repo existiert)
+ENV-Variablen setzen: Vercel-Dashboard → Project → Settings → Environment Variables.
+
+## Cloudflare DNS — wichtige Regel
+
+Der CNAME `hermetiastart` → `cname.vercel-dns.com` muss **grau** (DNS-only) geschaltet sein,  
+**nicht orange** (Proxied). Wenn Cloudflare als Proxy dazwischensteht, kann Vercel kein  
+SSL-Zertifikat ausstellen → 525-Fehler.
+
+```
+hermetiastart   CNAME   cname.vercel-dns.com   [DNS-only / grau]
+```
+
+## Security-Headers
+
+Headers werden über `vercel.json` (Repo-Root) gesetzt — **nicht** über `public/_headers`  
+(das ist CF-Pages-Format und wird von Vercel ignoriert).
+
+Aktuell in `vercel.json`:
+- `X-Robots-Tag: noindex, nofollow` (in der Testphase — vor Launch entfernen)
+- `X-Content-Type-Options: nosniff`
+- `X-Frame-Options: DENY`
+- `Referrer-Policy: strict-origin-when-cross-origin`
+- `Permissions-Policy: camera=(), microphone=(), geolocation=()`
+
+## Repo muss public bleiben
+
+Vercel Hobby-Plan deployt keine privaten Repos aus GitHub-Organisationen automatisch.  
+Das Repo `SebastianHermetia/hermetia-marketing` muss auf GitHub **öffentlich** bleiben.  
+Sensible Daten (Secrets, API-Keys) gehören ausschließlich in Vercel ENV, nicht ins Repo.
+
+## Workflow (normal)
 
 ```bash
-cd hermetia-marketing
-git push -u origin main
+# lokal entwickeln
+npm run dev
+
+# vor dem Push: Build testen
+npm run build   # → /out/ enthält die statischen Dateien
+
+# Push → Vercel baut und deployt automatisch (~1–2 Min)
+git add -p
+git commit -m "feat: ..."
+git push origin main
 ```
-Remote `origin` ist bereits auf `https://github.com/SebastianHermetia/hermetia-marketing.git` gesetzt.
-(SSH-Alternative über den hermetia-Deploy-Key: `git remote set-url origin git@github-hermetia:SebastianHermetia/hermetia-marketing.git`.)
 
 ## Domain-Umzug zum Launch
 
-Marketing von der Subdomain auf die Root-Domain heben: `NEXT_PUBLIC_SITE_URL` auf die finale Domain ändern, Custom Domain in Cloudflare Pages umstellen, App-Routing (Onboarding/Login) entsprechend anpassen. Kein Code-Umbau am Marketing-Repo nötig außer der ENV.
+`NEXT_PUBLIC_SITE_URL` in Vercel ENV auf die finale Domain setzen und Custom Domain in Vercel  
+umstellen. CNAME in Cloudflare aktualisieren. Kein Code-Umbau nötig.  
+`X-Robots-Tag: noindex, nofollow` aus `vercel.json` entfernen.
+
+## Decap CMS (optional)
+
+`public/admin/config.yml` ist auf `repo: SebastianHermetia/hermetia-marketing` gesetzt.  
+GitHub-OAuth-App für Decap einrichten. Lokal testen: `npx decap-server` + `local_backend: true`.

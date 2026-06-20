@@ -35,6 +35,18 @@ public/admin/            Decap CMS (Inhalte ohne Code bearbeiten)
 content/                 Asset-Inventar und redaktionelle Betriebsdokumente
 ```
 
+## Deploy (Vercel)
+
+Auto-deploy bei Push auf `main`. Details: `DEPLOY.md`.
+
+- **Host:** Vercel (Hobby, Org "Hermetia") — **nicht Hetzner**, nicht Cloudflare Pages
+- **Warum Vercel:** CF Pages hat 20k-Datei-Limit; diese Site erzeugt ~33k Dateien (24 Locales × RSC-Payloads)
+- **Framework-Preset:** `Other` (nicht "Next.js" — statischer Export hat kein `.next/routes-manifest.json`)
+- **Build:** `npm run build` → Output `out`
+- **DNS:** CNAME `hermetiastart.digital-expert.de` → `cname.vercel-dns.com` — muss **DNS-only** (grau) in Cloudflare sein
+- **Repo:** muss **public** bleiben (Vercel Hobby deployt keine privaten Org-Repos automatisch)
+- **Headers:** über `vercel.json` (nicht `public/_headers` — das ist CF-Pages-Format)
+
 ## Domain umziehen (vor Launch)
 
 `NEXT_PUBLIC_SITE_URL` (und ggf. `NEXT_PUBLIC_APP_URL`) auf die neue Domain setzen —
