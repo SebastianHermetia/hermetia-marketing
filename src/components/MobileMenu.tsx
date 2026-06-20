@@ -45,11 +45,19 @@ export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCl
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Prevent background scroll when drawer is open
+  // Prevent background scroll when drawer is open (iOS-compatible)
   useEffect(() => {
     if (!open) return;
-    document.body.style.overflow = "hidden";
-    return () => { document.body.style.overflow = ""; };
+    const scrollY = window.scrollY;
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = "100%";
+    return () => {
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.width = "";
+      window.scrollTo(0, scrollY);
+    };
   }, [open]);
 
   // Focus trap + Escape key when drawer is open
@@ -100,10 +108,10 @@ export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCl
         <span className="block h-0.5 w-5 bg-aubergine" />
       </button>
 
-      {/* Backdrop — closes drawer on click */}
+      {/* Backdrop — closes drawer on click/tap (cursor-pointer required for iOS Safari) */}
       {open && (
         <div
-          className="fixed inset-0 z-40 bg-aubergine/40 lg:hidden"
+          className="fixed inset-0 z-40 cursor-pointer bg-aubergine/40 lg:hidden"
           aria-hidden="true"
           onClick={closeMenu}
         />
