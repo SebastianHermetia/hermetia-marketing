@@ -125,7 +125,7 @@ export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCl
         aria-labelledby="mobile-menu-title"
         // @ts-expect-error — inert is a valid HTML attribute, TS DOM types lag behind
         inert={open ? undefined : ""}
-        className={`fixed inset-y-0 right-0 z-50 flex w-4/5 max-w-xs flex-col bg-creme shadow-soft transition-transform duration-300 lg:hidden ${
+        className={`fixed right-0 top-0 z-50 flex h-[100dvh] w-4/5 max-w-xs flex-col bg-creme shadow-soft transition-transform duration-300 lg:hidden ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -147,7 +147,7 @@ export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCl
         </div>
 
         {/* Navigation links */}
-        <nav className="flex flex-1 flex-col gap-1 overflow-y-auto px-3 py-4" aria-label="Hauptnavigation">
+        <nav className="flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto px-3 py-4" aria-label="Hauptnavigation">
           {items.map((item) => (
             <Link
               key={item.key}
