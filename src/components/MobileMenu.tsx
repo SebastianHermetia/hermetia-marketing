@@ -156,7 +156,7 @@ export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCl
         <div className="shrink-0 border-t border-sand px-4 pb-6 pt-4">
           <div className="mb-3 flex flex-wrap gap-1.5">
             {locales.map((l) => (
-              <Link
+              <a
                 key={l}
                 href={swapLocale(l)}
                 title={localeNames[l]}
@@ -166,10 +166,9 @@ export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCl
                     ? "bg-aubergine text-gold-weich"
                     : "text-tinte/60 hover:bg-sand/40 hover:text-aubergine"
                 }`}
-                onClick={closeMenu}
               >
                 {l}
-              </Link>
+              </a>
             ))}
           </div>
           <a

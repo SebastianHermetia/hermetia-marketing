@@ -23,7 +23,7 @@ export function LocaleSwitch({ locale, current }: { locale: Locale; current?: st
       </summary>
       <div className="absolute right-0 top-11 z-50 grid max-h-[420px] w-[220px] grid-cols-2 gap-1 overflow-auto rounded-card border border-sand bg-white p-2 shadow-soft">
         {locales.map((l) => (
-          <Link
+          <a
             key={l}
             href={swap(l)}
             className={`rounded-[10px] px-2.5 py-2 no-underline hover:bg-creme-tief ${l === locale ? "bg-creme-tief font-semibold text-aubergine" : "text-tinte/70"}`}
@@ -32,7 +32,7 @@ export function LocaleSwitch({ locale, current }: { locale: Locale; current?: st
           >
             <span className="block text-[12px] uppercase">{l}</span>
             <span className="block truncate text-[11px]">{localeNames[l]}</span>
-          </Link>
+          </a>
         ))}
       </div>
     </details>
