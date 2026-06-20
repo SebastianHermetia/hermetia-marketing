@@ -114,10 +114,14 @@ export function Footer({ locale }: { locale: Locale }) {
 
 function FootCol({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div>
-      <h4 className="mb-3.5 font-sans text-[12px] font-bold uppercase tracking-[1.5px] text-gold">{title}</h4>
-      <ul className="flex flex-col gap-2.5 list-none">{children}</ul>
-    </div>
+    /* On mobile: collapsible accordion via native <details>. On md+: always expanded. */
+    <details className="group md:[&>summary]:pointer-events-none md:[&>*:not(summary)]:block">
+      <summary className="flex cursor-pointer list-none items-center justify-between py-2 md:cursor-default md:py-0">
+        <h4 className="font-sans text-[12px] font-bold uppercase tracking-[1.5px] text-gold">{title}</h4>
+        <span className="text-gold/60 transition-transform duration-200 group-open:rotate-180 md:hidden" aria-hidden="true">▾</span>
+      </summary>
+      <ul className="hidden flex-col gap-2.5 list-none pt-1 pb-2 group-open:flex md:flex md:pt-0 md:pb-0 md:mt-3.5">{children}</ul>
+    </details>
   );
 }
 function FootLink({ href, children }: { href: string; children: React.ReactNode }) {

@@ -16,7 +16,7 @@ export function LocaleSwitch({ locale, current }: { locale: Locale; current?: st
   }
 
   return (
-    <details className="group relative hidden text-[13px] sm:block" aria-label="Sprache wählen">
+    <details className="group relative hidden text-[13px] lg:block" aria-label="Sprache wählen">
       <summary className="flex cursor-pointer list-none items-center gap-1 rounded-full border border-sand bg-white/60 px-3 py-2 font-semibold text-aubergine">
         {locale.toUpperCase()}
         <span className="text-tinte/50">▾</span>
