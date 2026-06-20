@@ -3,6 +3,7 @@ import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localePath, loginUrl, startUrl, paths } from "@/lib/links";
 import { LocaleSwitch } from "./LocaleSwitch";
+import { MobileMenu } from "./MobileMenu";
 
 export function Header({ locale, current }: { locale: Locale; current?: string }) {
   const t = getDictionary(locale);
@@ -32,9 +33,19 @@ export function Header({ locale, current }: { locale: Locale; current?: string }
           ))}
         </nav>
         <span className="flex-1" />
+        {/* Desktop: locale switch + login — hidden below lg (covered by MobileMenu drawer) */}
         <LocaleSwitch locale={locale} current={current} />
-        <a className="btn btn-ghost hidden whitespace-nowrap sm:inline-flex" href={loginUrl(locale, { source: "header-login", medium: "nav" })}>{t.nav.login}</a>
+        <a className="btn btn-ghost hidden whitespace-nowrap lg:inline-flex" href={loginUrl(locale, { source: "header-login", medium: "nav" })}>{t.nav.login}</a>
         <a className="btn btn-primary whitespace-nowrap" href={startUrl(locale, { source: "header-start", medium: "nav" })}>{t.nav.start}</a>
+        {/* Mobile hamburger — renders drawer with nav + locale + login */}
+        <MobileMenu
+          items={items}
+          loginLabel={t.nav.login}
+          loginHref={loginUrl(locale, { source: "header-login-mobile", medium: "nav" })}
+          menuOpenLabel={t.nav.menu_open}
+          menuCloseLabel={t.nav.menu_close}
+          locale={locale}
+        />
       </div>
     </header>
   );

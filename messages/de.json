@@ -10,7 +10,9 @@
     "methodik": "Methode",
     "preise": "Preise",
     "login": "Anmelden",
-    "start": "Profil erstellen"
+    "start": "Profil erstellen",
+    "menu_open": "Menü öffnen",
+    "menu_close": "Menü schließen"
   },
   "cta": {
     "startFree": "Profil kostenlos starten",
@@ -47,22 +49,55 @@
       "lead": "Hermetia liest deine Geburtsdaten und webt aus bis zu 31 Systemen eine einzige, klare Seelenkarte – und begleitet dich Tag für Tag. Kein Datenblatt. Eine Reise zu dir.",
       "trustline": "Kostenlos starten · keine Kreditkarte · EU-Hosting & verschlüsselt",
       "quote": "Deine Sensibilität ist ein Kompass – keine Schwäche.",
-      "chips": ["Tiefe Wahrnehmung", "Schöpferische Ruhe", "Mut zur Klarheit"]
+      "chips": [
+        "Tiefe Wahrnehmung",
+        "Schöpferische Ruhe",
+        "Mut zur Klarheit"
+      ]
     },
     "trust": {
       "kicker": "Für Menschen, die sich gesehen fühlen wollen – nicht vermessen",
-      "items": ["31 Systeme", "DSGVO & Art. 9 by design", "KI transparent gekennzeichnet", "Einladend, nie bestimmend"]
+      "items": [
+        "31 Systeme",
+        "DSGVO & Art. 9 by design",
+        "KI transparent gekennzeichnet",
+        "Einladend, nie bestimmend"
+      ]
     },
     "features": {
       "kicker": "Was Hermetia für dich tut",
       "title": "Sechs Wege, dich besser zu verstehen",
       "items": [
-        { "icon": "❂", "title": "Deine Seelenkarte", "text": "Ein schönes, persönliches Gesamtbild – Chart-Wheel und Energiekörper in einem Blick. Dein Aha-Moment." },
-        { "icon": "❧", "title": "Deine Ebenen", "text": "Stärken, Schatten, Beziehungen, Berufung – als Reise freischaltbar, nicht als 10.000-Wort-Wand." },
-        { "icon": "☼", "title": "Tagesimpuls „Heute“", "text": "Ein ruhiger Fokus-Satz pro Tag, gebunden an dein Profil. Beruhigend statt bindend – kein FOMO." },
-        { "icon": "✍", "title": "Journaling & Reflexion", "text": "Reflexionsfragen zum Mitschreiben, Monatsrückblick und wiederkehrende Themen." },
-        { "icon": "❦", "title": "Dein Buch", "text": "Dein vollständiges Profil als gebundenes, gestaltetes PDF zum Behalten und Lesen." },
-        { "icon": "⚭", "title": "Beziehungen", "text": "Lege ein zweites Profil an und sieh Harmonie, Spannung und Entwicklung – mit klarer Einwilligung." }
+        {
+          "icon": "❂",
+          "title": "Deine Seelenkarte",
+          "text": "Ein schönes, persönliches Gesamtbild – Chart-Wheel und Energiekörper in einem Blick. Dein Aha-Moment."
+        },
+        {
+          "icon": "❧",
+          "title": "Deine Ebenen",
+          "text": "Stärken, Schatten, Beziehungen, Berufung – als Reise freischaltbar, nicht als 10.000-Wort-Wand."
+        },
+        {
+          "icon": "☼",
+          "title": "Tagesimpuls „Heute“",
+          "text": "Ein ruhiger Fokus-Satz pro Tag, gebunden an dein Profil. Beruhigend statt bindend – kein FOMO."
+        },
+        {
+          "icon": "✍",
+          "title": "Journaling & Reflexion",
+          "text": "Reflexionsfragen zum Mitschreiben, Monatsrückblick und wiederkehrende Themen."
+        },
+        {
+          "icon": "❦",
+          "title": "Dein Buch",
+          "text": "Dein vollständiges Profil als gebundenes, gestaltetes PDF zum Behalten und Lesen."
+        },
+        {
+          "icon": "⚭",
+          "title": "Beziehungen",
+          "text": "Lege ein zweites Profil an und sieh Harmonie, Spannung und Entwicklung – mit klarer Einwilligung."
+        }
       ]
     },
     "method": {
@@ -70,24 +105,57 @@
       "title": "Wir rechnen exakt. Wir deuten warm.",
       "lead": "Drei Schritte, transparent – damit du verstehst, woher jede Aussage kommt.",
       "steps": [
-        { "step": "Schritt 01", "title": "Berechnen", "text": "Ein deterministischer Rechenkern (Skyfield) bestimmt aus Datum, Zeit und Ort dein finites Fundament je System – immer reproduzierbar, nie geraten." },
-        { "step": "Schritt 02", "title": "Verknüpfen", "text": "Unsere Konvergenz-Engine findet, wo sich Systeme bestätigen (Stärke) und wo sie sich widersprechen (gute Fragen). Das ist Hermetias Herz." },
-        { "step": "Schritt 03", "title": "Begleiten", "text": "Erst hier deutet die KI – einladend, in deiner Sprache. Sichtbar gekennzeichnet, niemals als medizinischer oder schicksalhafter Rat." }
+        {
+          "step": "Schritt 01",
+          "title": "Berechnen",
+          "text": "Ein deterministischer Rechenkern (Skyfield) bestimmt aus Datum, Zeit und Ort dein finites Fundament je System – immer reproduzierbar, nie geraten."
+        },
+        {
+          "step": "Schritt 02",
+          "title": "Verknüpfen",
+          "text": "Unsere Konvergenz-Engine findet, wo sich Systeme bestätigen (Stärke) und wo sie sich widersprechen (gute Fragen). Das ist Hermetias Herz."
+        },
+        {
+          "step": "Schritt 03",
+          "title": "Begleiten",
+          "text": "Erst hier deutet die KI – einladend, in deiner Sprache. Sichtbar gekennzeichnet, niemals als medizinischer oder schicksalhafter Rat."
+        }
       ]
     },
     "systems": {
       "kicker": "Die eingebetteten Systeme",
       "title": "31 Perspektiven. Eine Stimme.",
       "text": "Astrologie, Human Design, Gene Keys, Numerologie, BaZi, Enneagramm und mehr – Hermetia liest sie nicht nebeneinander, sondern zusammen. Wo viele Wege auf denselben Punkt zeigen, wird daraus Gewissheit.",
-      "chips": ["Astrologie", "Human Design", "Gene Keys", "Numerologie", "BaZi · Vier Säulen", "Enneagramm", "Maya Tzolk’in", "Nakshatra", "I Ching", "Ayurveda", "+ 21 weitere"]
+      "chips": [
+        "Astrologie",
+        "Human Design",
+        "Gene Keys",
+        "Numerologie",
+        "BaZi · Vier Säulen",
+        "Enneagramm",
+        "Maya Tzolk’in",
+        "Nakshatra",
+        "I Ching",
+        "Ayurveda",
+        "+ 21 weitere"
+      ]
     },
     "voices": {
       "kicker": "Stimmen",
       "title": "Was Menschen erleben",
       "items": [
-        { "quote": "Zum ersten Mal hat sich Spiritualität nicht kitschig angefühlt, sondern klug.", "name": "Marie K., 34" },
-        { "quote": "Die Seelenkarte war mein Aha-Moment. Ich wollte sofort mehr lesen.", "name": "Lena S., 41" },
-        { "quote": "Der Tagesimpuls begleitet mich morgens – ruhig, nie aufdringlich.", "name": "Anette H., 38" }
+        {
+          "quote": "Zum ersten Mal hat sich Spiritualität nicht kitschig angefühlt, sondern klug.",
+          "name": "Marie K., 34"
+        },
+        {
+          "quote": "Die Seelenkarte war mein Aha-Moment. Ich wollte sofort mehr lesen.",
+          "name": "Lena S., 41"
+        },
+        {
+          "quote": "Der Tagesimpuls begleitet mich morgens – ruhig, nie aufdringlich.",
+          "name": "Anette H., 38"
+        }
       ]
     },
     "pricingTeaser": {
@@ -99,10 +167,22 @@
       "kicker": "Häufige Fragen",
       "title": "Gut zu wissen",
       "items": [
-        { "q": "Was ist eine Seelenkarte?", "a": "Deine Seelenkarte ist ein integriertes Persönlichkeitsbild, das Hermetia aus deinen Geburtsdaten und bis zu 31 Systemen berechnet und zu einer verständlichen, schönen Darstellung verbindet." },
-        { "q": "Brauche ich meine genaue Geburtszeit?", "a": "Nein. Hermetia funktioniert auch ohne exakte Uhrzeit – du wählst dann eine Tageszeit. Wir sagen dir transparent, welcher Teil deines Profils auch ohne Uhrzeit gesichert ist." },
-        { "q": "Ist das eine Diagnose oder Vorhersage?", "a": "Nein. Hermetia ist Inspiration zur Selbstreflexion – keine medizinische, psychologische oder therapeutische Beratung und keine Schicksalsvorhersage." },
-        { "q": "Was passiert mit meinen Daten?", "a": "Deine Daten liegen verschlüsselt in der EU. Spirituell-weltanschauliche Profile sind besondere Daten (DSGVO Art. 9) – wir holen dafür deine ausdrückliche Einwilligung und du kannst alles jederzeit exportieren oder löschen." }
+        {
+          "q": "Was ist eine Seelenkarte?",
+          "a": "Deine Seelenkarte ist ein integriertes Persönlichkeitsbild, das Hermetia aus deinen Geburtsdaten und bis zu 31 Systemen berechnet und zu einer verständlichen, schönen Darstellung verbindet."
+        },
+        {
+          "q": "Brauche ich meine genaue Geburtszeit?",
+          "a": "Nein. Hermetia funktioniert auch ohne exakte Uhrzeit – du wählst dann eine Tageszeit. Wir sagen dir transparent, welcher Teil deines Profils auch ohne Uhrzeit gesichert ist."
+        },
+        {
+          "q": "Ist das eine Diagnose oder Vorhersage?",
+          "a": "Nein. Hermetia ist Inspiration zur Selbstreflexion – keine medizinische, psychologische oder therapeutische Beratung und keine Schicksalsvorhersage."
+        },
+        {
+          "q": "Was passiert mit meinen Daten?",
+          "a": "Deine Daten liegen verschlüsselt in der EU. Spirituell-weltanschauliche Profile sind besondere Daten (DSGVO Art. 9) – wir holen dafür deine ausdrückliche Einwilligung und du kannst alles jederzeit exportieren oder löschen."
+        }
       ]
     },
     "finalCta": {
@@ -116,21 +196,69 @@
     "kicker": "Leistungen",
     "title": "Alles, was dich auf deiner Reise begleitet.",
     "lead": "Von deinem ersten Aha-Moment bis zur täglichen Begleitung – Hermetia wächst mit dir.",
-    "soulmap": { "tag": "Dein Aha-Moment", "title": "Die Seelenkarte", "text": "Ein schönes, persönliches Gesamtbild: dein Chart-Wheel und dein abstrahierter Energiekörper in einem Blick – berechnet, nicht behauptet. Der Moment, in dem du dich zum ersten Mal gesehen fühlst." },
-    "levels": { "tag": "Als Reise, nicht als Wand", "title": "Deine Ebenen", "text": "Zehn seelisch gerahmte Themen – Stärken, Schatten, Beziehungen, Berufung, Seelenweg und mehr. Sie öffnen sich wie Türen, eine nach der anderen. Synthese zuerst, Details zum Aufklappen – nie eine 10.000-Wort-Wand.", "open": "geöffnet", "locked": "Ebene öffnen", "labels": ["Was dich ausmacht", "Stärken & Gaben", "Schatten & Wachstum"] },
+    "soulmap": {
+      "tag": "Dein Aha-Moment",
+      "title": "Die Seelenkarte",
+      "text": "Ein schönes, persönliches Gesamtbild: dein Chart-Wheel und dein abstrahierter Energiekörper in einem Blick – berechnet, nicht behauptet. Der Moment, in dem du dich zum ersten Mal gesehen fühlst."
+    },
+    "levels": {
+      "tag": "Als Reise, nicht als Wand",
+      "title": "Deine Ebenen",
+      "text": "Zehn seelisch gerahmte Themen – Stärken, Schatten, Beziehungen, Berufung, Seelenweg und mehr. Sie öffnen sich wie Türen, eine nach der anderen. Synthese zuerst, Details zum Aufklappen – nie eine 10.000-Wort-Wand.",
+      "open": "geöffnet",
+      "locked": "Ebene öffnen",
+      "labels": [
+        "Was dich ausmacht",
+        "Stärken & Gaben",
+        "Schatten & Wachstum"
+      ]
+    },
     "daily": {
       "kicker": "Tag für Tag",
       "title": "Begleitung, die im Alltag trägt",
       "items": [
-        { "icon": "☼", "title": "Tagesimpuls „Heute“", "text": "Ein ruhiger Fokus-Satz, gebunden an dein Profil und den heutigen Tag. Optional „Warum heute?“. Beruhigend, nie bindend.", "tier": "" },
-        { "icon": "✍", "title": "Journaling", "text": "Reflexionsfrage zum Mitschreiben, „Hat das gestimmt?“-Feedback, Monatsrückblick und wiederkehrende Themen.", "tier": "" },
-        { "icon": "❦", "title": "Dein Buch", "text": "Dein vollständiges Profil als gebundenes, gestaltetes PDF – mit Seelenkarten-Galerie und „Wie wurde das berechnet?“.", "tier": "" },
-        { "icon": "⚭", "title": "Beziehungen", "text": "Zweites Profil anlegen (Partner, Eltern, Kind) und Harmonie, Spannung & Entwicklung sehen – mit klarer Einwilligung.", "tier": "Tiefe" },
-        { "icon": "✶", "title": "Orakel & Companion", "text": "Stell eine Frage und erhalte einen kontemplativen Impuls aus deinem Profil – transparent KI-gestützt.", "tier": "Tiefe" },
-        { "icon": "⟳", "title": "Profil verfeinern", "text": "Geburtszeit nachtragen, Profil neu berechnen, Sprache wechseln, Daten exportieren oder löschen – jederzeit.", "tier": "" }
+        {
+          "icon": "☼",
+          "title": "Tagesimpuls „Heute“",
+          "text": "Ein ruhiger Fokus-Satz, gebunden an dein Profil und den heutigen Tag. Optional „Warum heute?“. Beruhigend, nie bindend.",
+          "tier": ""
+        },
+        {
+          "icon": "✍",
+          "title": "Journaling",
+          "text": "Reflexionsfrage zum Mitschreiben, „Hat das gestimmt?“-Feedback, Monatsrückblick und wiederkehrende Themen.",
+          "tier": ""
+        },
+        {
+          "icon": "❦",
+          "title": "Dein Buch",
+          "text": "Dein vollständiges Profil als gebundenes, gestaltetes PDF – mit Seelenkarten-Galerie und „Wie wurde das berechnet?“.",
+          "tier": ""
+        },
+        {
+          "icon": "⚭",
+          "title": "Beziehungen",
+          "text": "Zweites Profil anlegen (Partner, Eltern, Kind) und Harmonie, Spannung & Entwicklung sehen – mit klarer Einwilligung.",
+          "tier": "Tiefe"
+        },
+        {
+          "icon": "✶",
+          "title": "Orakel & Companion",
+          "text": "Stell eine Frage und erhalte einen kontemplativen Impuls aus deinem Profil – transparent KI-gestützt.",
+          "tier": "Tiefe"
+        },
+        {
+          "icon": "⟳",
+          "title": "Profil verfeinern",
+          "text": "Geburtszeit nachtragen, Profil neu berechnen, Sprache wechseln, Daten exportieren oder löschen – jederzeit.",
+          "tier": ""
+        }
       ]
     },
-    "cta": { "title": "Fang mit deiner Seelenkarte an.", "lead": "Kostenlos, in zwei Minuten." }
+    "cta": {
+      "title": "Fang mit deiner Seelenkarte an.",
+      "lead": "Kostenlos, in zwei Minuten."
+    }
   },
   "systeme": {
     "seoTitle": "Die Systeme hinter Hermetia — 31 Perspektiven, eine Seelenkarte",
@@ -138,29 +266,77 @@
     "kicker": "Die eingebetteten Systeme",
     "title": "31 Perspektiven der Menschheit – für ein Bild von dir.",
     "lead": "Jedes System ist ein Fenster. Hermetia öffnet viele auf einmal und zeigt dir, wo sie auf dasselbe blicken.",
-    "convergence": { "tag": "Das Herz von Hermetia", "title": "Die Konvergenz-Engine", "text": "Kein anderer Rechner tut das: Hermetia legt alle Systeme übereinander und misst, wo sie sich bestätigen – das wird zu deiner Stärke – und wo sie sich widersprechen – das wird zu deiner Frage. Aus vielen Stimmen wird eine." },
+    "convergence": {
+      "tag": "Das Herz von Hermetia",
+      "title": "Die Konvergenz-Engine",
+      "text": "Kein anderer Rechner tut das: Hermetia legt alle Systeme übereinander und misst, wo sie sich bestätigen – das wird zu deiner Stärke – und wo sie sich widersprechen – das wird zu deiner Frage. Aus vielen Stimmen wird eine."
+    },
     "coreKicker": "Die fünf Kernsysteme",
     "coreTitle": "Das Fundament jeder Seelenkarte",
     "core": [
-      { "icon": "♋", "title": "Astrologie", "text": "Sonne, Mond und Planeten zur Geburt – das vertrauteste Sprachbild für Charakter, Rhythmus und Lebensthemen." },
-      { "icon": "⬡", "title": "Human Design", "text": "Typ, innere Autorität und Energiezentren – wie du Entscheidungen triffst und deine Energie sich am stimmigsten entfaltet." },
-      { "icon": "✦", "title": "Gene Keys", "text": "64 Archetypen mit dem Weg von Schatten über Gabe zur höchsten Frequenz – eine Landkarte für Wachstum." },
-      { "icon": "№", "title": "Numerologie", "text": "Aus Name und Geburtsdatum abgeleitete Kernzahlen – Lebensweg, Berufung und persönliche Zyklen." },
-      { "icon": "䷀", "title": "BaZi · Vier Säulen", "text": "Das chinesische Geburtsdiagramm aus Jahr, Monat, Tag und Stunde – ein fein aufgelöstes Lebenszeit-Bild." }
+      {
+        "icon": "♋",
+        "title": "Astrologie",
+        "text": "Sonne, Mond und Planeten zur Geburt – das vertrauteste Sprachbild für Charakter, Rhythmus und Lebensthemen."
+      },
+      {
+        "icon": "⬡",
+        "title": "Human Design",
+        "text": "Typ, innere Autorität und Energiezentren – wie du Entscheidungen triffst und deine Energie sich am stimmigsten entfaltet."
+      },
+      {
+        "icon": "✦",
+        "title": "Gene Keys",
+        "text": "64 Archetypen mit dem Weg von Schatten über Gabe zur höchsten Frequenz – eine Landkarte für Wachstum."
+      },
+      {
+        "icon": "№",
+        "title": "Numerologie",
+        "text": "Aus Name und Geburtsdatum abgeleitete Kernzahlen – Lebensweg, Berufung und persönliche Zyklen."
+      },
+      {
+        "icon": "䷀",
+        "title": "BaZi · Vier Säulen",
+        "text": "Das chinesische Geburtsdiagramm aus Jahr, Monat, Tag und Stunde – ein fein aufgelöstes Lebenszeit-Bild."
+      }
     ],
-    "moreCard": { "title": "… und 20 weitere", "text": "Enneagramm, Maya Tzolk’in, Nakshatra, I Ching, Ayurveda u.v.m. – freischaltbar je nach Tarif." },
+    "moreCard": {
+      "title": "… und 20 weitere",
+      "text": "Enneagramm, Maya Tzolk’in, Nakshatra, I Ching, Ayurveda u.v.m. – freischaltbar je nach Tarif."
+    },
     "moreKicker": "Weitere Perspektiven",
     "moreTitle": "Jedes bringt einen eigenen Blickwinkel",
     "more": [
-      { "title": "Enneagramm", "text": "Neun Typen der Tiefenmotivation – warum du tust, was du tust. (Fragebogen)" },
-      { "title": "Maya Tzolk’in", "text": "260 Tageszeichen aus dem Maya-Kalender – ein fremder, reicher Archetyp-Raum." },
-      { "title": "Vedische Nakshatra", "text": "27 Mondhäuser der indischen Astrologie – feine Nuancen deiner Gefühlswelt." },
-      { "title": "I Ching", "text": "64 Hexagramme als Spiegel für den heutigen Tag – ruhige Kontemplation." },
-      { "title": "Ayurveda · Doshas", "text": "Dein körperlich-energetischer Typ – ideal für alltagsnahe Impulse. (Fragebogen)" },
-      { "title": "Hellenistische Astrologie · Mondknoten · Persönliches Jahr · u. a.", "text": "Klassische Vertiefungen und Zyklen, die deine Karte über die Zeit lebendig halten." }
+      {
+        "title": "Enneagramm",
+        "text": "Neun Typen der Tiefenmotivation – warum du tust, was du tust. (Fragebogen)"
+      },
+      {
+        "title": "Maya Tzolk’in",
+        "text": "260 Tageszeichen aus dem Maya-Kalender – ein fremder, reicher Archetyp-Raum."
+      },
+      {
+        "title": "Vedische Nakshatra",
+        "text": "27 Mondhäuser der indischen Astrologie – feine Nuancen deiner Gefühlswelt."
+      },
+      {
+        "title": "I Ching",
+        "text": "64 Hexagramme als Spiegel für den heutigen Tag – ruhige Kontemplation."
+      },
+      {
+        "title": "Ayurveda · Doshas",
+        "text": "Dein körperlich-energetischer Typ – ideal für alltagsnahe Impulse. (Fragebogen)"
+      },
+      {
+        "title": "Hellenistische Astrologie · Mondknoten · Persönliches Jahr · u. a.",
+        "text": "Klassische Vertiefungen und Zyklen, die deine Karte über die Zeit lebendig halten."
+      }
     ],
     "note": "Hermetia integriert ausschließlich lizenz- und kultursensibel geprüfte Systeme. Berechnungen sind erlaubt; geschützte Originaltexte verwenden wir nie.",
-    "cta": { "title": "Sieh, was deine Systeme über dich sagen.", "lead": "Dein Kernprofil ist kostenlos. Die Tiefe öffnest du, wenn du willst." }
+    "cta": {
+      "title": "Sieh, was deine Systeme über dich sagen.",
+      "lead": "Dein Kernprofil ist kostenlos. Die Tiefe öffnest du, wenn du willst."
+    }
   },
   "methodik": {
     "seoTitle": "So entsteht dein Profil — Wie Hermetia rechnet und deutet",
@@ -169,23 +345,61 @@
     "title": "Wir rechnen exakt. Wir deuten warm.",
     "lead": "Vertrauen entsteht durch Transparenz. Darum zeigen wir dir genau, woher jede Aussage kommt – und wo eine KI mitschreibt.",
     "steps": [
-      { "n": "01", "title": "Berechnen — der feste Boden", "text": "Aus Geburtsdatum, -zeit und -ort bestimmt ein deterministischer Rechenkern (die quelloffene Ephemeride Skyfield) die exakten Positionen von Sonne, Mond und Planeten und das finite Fundament jedes Systems. Gleiche Daten → gleiches Ergebnis. Nichts wird geraten.", "tag": "" },
-      { "n": "02", "title": "Verknüpfen — die Konvergenz-Engine", "text": "Alle Systeme speisen eine gemeinsame Themen-Landkarte. Eine reine Rechen-Engine (keine KI) misst, wo sich Systeme bestätigen – das wird zu deiner Stärke – und wo sie auseinandergehen – das wird zu einer guten Frage. So wird aus vielen Stimmen eine.", "tag": "Das Herz von Hermetia" },
-      { "n": "03", "title": "Begleiten — die warme Stimme", "text": "Erst jetzt formuliert eine KI deine Deutung – in deiner Sprache, einladend statt bestimmend. Sie liest nur die berechneten Fakten und die Themen-Landkarte, niemals dein rohes Geburtsdatum. Jeder KI-Text ist sichtbar gekennzeichnet.", "tag": "" }
+      {
+        "n": "01",
+        "title": "Berechnen — der feste Boden",
+        "text": "Aus Geburtsdatum, -zeit und -ort bestimmt ein deterministischer Rechenkern (die quelloffene Ephemeride Skyfield) die exakten Positionen von Sonne, Mond und Planeten und das finite Fundament jedes Systems. Gleiche Daten → gleiches Ergebnis. Nichts wird geraten.",
+        "tag": ""
+      },
+      {
+        "n": "02",
+        "title": "Verknüpfen — die Konvergenz-Engine",
+        "text": "Alle Systeme speisen eine gemeinsame Themen-Landkarte. Eine reine Rechen-Engine (keine KI) misst, wo sich Systeme bestätigen – das wird zu deiner Stärke – und wo sie auseinandergehen – das wird zu einer guten Frage. So wird aus vielen Stimmen eine.",
+        "tag": "Das Herz von Hermetia"
+      },
+      {
+        "n": "03",
+        "title": "Begleiten — die warme Stimme",
+        "text": "Erst jetzt formuliert eine KI deine Deutung – in deiner Sprache, einladend statt bestimmend. Sie liest nur die berechneten Fakten und die Themen-Landkarte, niemals dein rohes Geburtsdatum. Jeder KI-Text ist sichtbar gekennzeichnet.",
+        "tag": ""
+      }
     ],
     "layersKicker": "Drei Schichten",
     "layersTitle": "Vom Fundament zum Tagesimpuls",
     "layers": [
-      { "label": "Schicht A", "title": "Grundlagen je System", "text": "Pro System ein vollständiges, dauerhaftes Grundlagenprofil – die Basis für alles." },
-      { "label": "Schicht B", "title": "Kernprofil & Ebenen", "text": "Aus der Synergie aller Systeme entstehen deine zehn navigierbaren Ebenen." },
-      { "label": "Schicht C", "title": "Tägliche Ableitung", "text": "Aus deinem Kernprofil + Tagesdaten (Transite, Mondphase) wird dein sanfter Tagesimpuls." }
+      {
+        "label": "Schicht A",
+        "title": "Grundlagen je System",
+        "text": "Pro System ein vollständiges, dauerhaftes Grundlagenprofil – die Basis für alles."
+      },
+      {
+        "label": "Schicht B",
+        "title": "Kernprofil & Ebenen",
+        "text": "Aus der Synergie aller Systeme entstehen deine zehn navigierbaren Ebenen."
+      },
+      {
+        "label": "Schicht C",
+        "title": "Tägliche Ableitung",
+        "text": "Aus deinem Kernprofil + Tagesdaten (Transite, Mondphase) wird dein sanfter Tagesimpuls."
+      }
     ],
     "aiDoTitle": "Was die KI tut",
-    "aiDo": ["berechnete Fakten in warme, lesbare Sprache übersetzen", "deine Ebenen-Texte und Tagesimpulse formulieren", "in deiner Sprache schreiben, einladend und nicht-deterministisch"],
+    "aiDo": [
+      "berechnete Fakten in warme, lesbare Sprache übersetzen",
+      "deine Ebenen-Texte und Tagesimpulse formulieren",
+      "in deiner Sprache schreiben, einladend und nicht-deterministisch"
+    ],
     "aiDontTitle": "Was die KI nicht tut",
-    "aiDont": ["keine Diagnosen, keine medizinische/therapeutische Beratung", "keine Schicksals- oder Angst-Aussagen", "dein rohes Geburtsdatum sieht das KI-Modell nie"],
+    "aiDont": [
+      "keine Diagnosen, keine medizinische/therapeutische Beratung",
+      "keine Schicksals- oder Angst-Aussagen",
+      "dein rohes Geburtsdatum sieht das KI-Modell nie"
+    ],
     "privacyNote": "Deine Daten liegen verschlüsselt in der EU. Spirituell-weltanschauliche Profile sind besondere Daten nach DSGVO Art. 9 – wir holen dafür deine ausdrückliche, getrennte Einwilligung. KI-Inhalte kennzeichnen wir gemäß EU AI Act Art. 50.",
-    "cta": { "title": "Sieh die Methode an deinem eigenen Profil.", "lead": "Kostenlos und transparent – du entscheidest, wie tief du gehst." }
+    "cta": {
+      "title": "Sieh die Methode an deinem eigenen Profil.",
+      "lead": "Kostenlos und transparent – du entscheidest, wie tief du gehst."
+    }
   },
   "preise": {
     "seoTitle": "Preise — Hermetia kostenlos starten, ab 49 € / Jahr alle Ebenen",
@@ -198,23 +412,90 @@
     "popular": "⭐ Beliebteste Wahl",
     "perYear": "/ Jahr",
     "tiers": [
-      { "name": "Entdecken", "price": "Kostenlos", "per": "", "note": "für immer · keine Karte nötig", "cta": "Kostenlos starten", "featured": false, "features": ["Deine Seelenkarte", "2 Kernthemen", "Ebene 1 vollständig", "Ebenen 2–6 als Vorschau", "Wöchentlicher Impuls (7-Tage-Schnupper)"] },
-      { "name": "Begleitung", "price": "49 €", "per": "/ Jahr", "note": "≈ 4,08 € / Monat · jederzeit kündbar", "cta": "Begleitung wählen", "featured": true, "features": ["Alle Ebenen vollständig", "Täglicher Impuls & Tagesweisheit", "Journaling & Monatsreflexion", "Dein Buch als PDF", "Profil verfeinern (Geburtszeit nachtragen)", "Alle freischaltbaren Systeme"] },
-      { "name": "Tiefe", "price": "99 €", "per": "/ Jahr", "note": "≈ 8,25 € / Monat · jederzeit kündbar", "cta": "Tiefe wählen", "featured": false, "features": ["Alles aus Begleitung", "Orakel & Companion-Dialog (Kontingent)", "Beziehungs- & Kompatibilitätsprofile", "Mehrere Profile", "Vertiefte Module & Jahresvorschau"] }
+      {
+        "name": "Entdecken",
+        "price": "Kostenlos",
+        "per": "",
+        "note": "für immer · keine Karte nötig",
+        "cta": "Kostenlos starten",
+        "featured": false,
+        "features": [
+          "Deine Seelenkarte",
+          "2 Kernthemen",
+          "Ebene 1 vollständig",
+          "Ebenen 2–6 als Vorschau",
+          "Wöchentlicher Impuls (7-Tage-Schnupper)"
+        ]
+      },
+      {
+        "name": "Begleitung",
+        "price": "49 €",
+        "per": "/ Jahr",
+        "note": "≈ 4,08 € / Monat · jederzeit kündbar",
+        "cta": "Begleitung wählen",
+        "featured": true,
+        "features": [
+          "Alle Ebenen vollständig",
+          "Täglicher Impuls & Tagesweisheit",
+          "Journaling & Monatsreflexion",
+          "Dein Buch als PDF",
+          "Profil verfeinern (Geburtszeit nachtragen)",
+          "Alle freischaltbaren Systeme"
+        ]
+      },
+      {
+        "name": "Tiefe",
+        "price": "99 €",
+        "per": "/ Jahr",
+        "note": "≈ 8,25 € / Monat · jederzeit kündbar",
+        "cta": "Tiefe wählen",
+        "featured": false,
+        "features": [
+          "Alles aus Begleitung",
+          "Orakel & Companion-Dialog (Kontingent)",
+          "Beziehungs- & Kompatibilitätsprofile",
+          "Mehrere Profile",
+          "Vertiefte Module & Jahresvorschau"
+        ]
+      }
     ],
     "smallprint": "Alle Preise inkl. MwSt. · Zahlung sicher über Stripe · EU-Hosting · verbindlich ist immer die Bestellübersicht in der App",
     "trust": [
-      { "icon": "⟲", "title": "Jederzeit kündbar", "text": "Ein Klick im Profil – kein Anruf, keine Frist. So verlangt es das Gesetz, so machen wir es." },
-      { "icon": "🔒", "title": "Verschlüsselt in der EU", "text": "Deine sensiblen Daten liegen verschlüsselt auf EU-Servern – mit ausdrücklicher Einwilligung (Art. 9)." },
-      { "icon": "↩", "title": "14 Tage Widerruf", "text": "Faire Widerrufsbelehrung für digitale Inhalte. Kein Risiko beim Ausprobieren." }
+      {
+        "icon": "⟲",
+        "title": "Jederzeit kündbar",
+        "text": "Ein Klick im Profil – kein Anruf, keine Frist. So verlangt es das Gesetz, so machen wir es."
+      },
+      {
+        "icon": "🔒",
+        "title": "Verschlüsselt in der EU",
+        "text": "Deine sensiblen Daten liegen verschlüsselt auf EU-Servern – mit ausdrücklicher Einwilligung (Art. 9)."
+      },
+      {
+        "icon": "↩",
+        "title": "14 Tage Widerruf",
+        "text": "Faire Widerrufsbelehrung für digitale Inhalte. Kein Risiko beim Ausprobieren."
+      }
     ],
     "faqKicker": "Abo-Fragen",
     "faqTitle": "Häufige Fragen zu den Tarifen",
     "faq": [
-      { "q": "Was kostet Hermetia wirklich?", "a": "Der Einstieg ist dauerhaft kostenlos. Der beliebteste Tarif „Begleitung“ kostet 49 € pro Jahr und öffnet alle Ebenen, den täglichen Impuls, Journaling und dein Buch. „Tiefe“ für 99 € ergänzt Orakel, Beziehungsprofile und mehrere Profile." },
-      { "q": "Kann ich monatlich zahlen?", "a": "Falls eine monatliche Zahlung angeboten wird, zeigt die Bestellübersicht vor dem Kauf Preis, Laufzeit und Kündigung klar an. Der hier dargestellte Jahrespreis ist der transparent berechnete Referenzpreis." },
-      { "q": "Wie kündige ich?", "a": "Mit einem Klick im Profil über den Kündigungsbutton – ohne Frist und ohne Begründung. Dein Zugang bleibt bis zum Ende der bezahlten Periode aktiv." },
-      { "q": "Brauche ich für den kostenlosen Tarif eine Kreditkarte?", "a": "Nein. Du siehst deine Seelenkarte und dein erstes Kernthema ohne jede Zahlungsangabe." }
+      {
+        "q": "Was kostet Hermetia wirklich?",
+        "a": "Der Einstieg ist dauerhaft kostenlos. Der beliebteste Tarif „Begleitung“ kostet 49 € pro Jahr und öffnet alle Ebenen, den täglichen Impuls, Journaling und dein Buch. „Tiefe“ für 99 € ergänzt Orakel, Beziehungsprofile und mehrere Profile."
+      },
+      {
+        "q": "Kann ich monatlich zahlen?",
+        "a": "Falls eine monatliche Zahlung angeboten wird, zeigt die Bestellübersicht vor dem Kauf Preis, Laufzeit und Kündigung klar an. Der hier dargestellte Jahrespreis ist der transparent berechnete Referenzpreis."
+      },
+      {
+        "q": "Wie kündige ich?",
+        "a": "Mit einem Klick im Profil über den Kündigungsbutton – ohne Frist und ohne Begründung. Dein Zugang bleibt bis zum Ende der bezahlten Periode aktiv."
+      },
+      {
+        "q": "Brauche ich für den kostenlosen Tarif eine Kreditkarte?",
+        "a": "Nein. Du siehst deine Seelenkarte und dein erstes Kernthema ohne jede Zahlungsangabe."
+      }
     ],
     "cta": "Jetzt kostenlos deine Seelenkarte sehen"
   },
@@ -226,87 +507,263 @@
     "impressum": {
       "title": "Impressum",
       "sections": [
-        { "heading": "1 · Angaben gemäß § 5 DDG", "body": "[Anbieter / Firmenname]\n[Straße und Hausnummer]\n[PLZ und Ort]\n[Land]\n\nDieses Impressum ist ein Launch-Entwurf. Vor Veröffentlichung müssen Anbieter, Rechtsform, ladungsfähige Anschrift und weitere Pflichtangaben vollständig ergänzt und geprüft werden." },
-        { "heading": "2 · Vertreten durch", "body": "[Name der vertretungsberechtigten Person]\n[Position / Rolle]\n\nFalls Hermetia über eine Gesellschaft betrieben wird, sind Rechtsform, Registergericht, Registernummer und vertretungsberechtigte Personen entsprechend zu ergänzen." },
-        { "heading": "3 · Kontakt", "body": "E-Mail: hallo@hermetia.de\nTelefon: [Telefonnummer]\nSupport / Datenschutz: datenschutz@hermetia.de\nWiderruf: widerruf@hermetia.de\n\nFür rechtlich relevante Anfragen sollte eine dauerhaft erreichbare Kontaktadresse verwendet werden. Reine Social-Media-Kanäle ersetzen diese Angaben nicht." },
-        { "heading": "4 · Register und Umsatzsteuer", "body": "Handelsregister / Vereinsregister / sonstiges Register: [Registergericht und Registernummer, falls vorhanden]\nUSt-IdNr. gemäß § 27a Umsatzsteuergesetz: [USt-IdNr., falls vorhanden]\n\nFalls die Kleinunternehmerregelung nach § 19 UStG genutzt wird, ist die Preis- und Rechnungslogik entsprechend abzustimmen. Diese Angabe muss mit Zahlungsanbieter, Rechnungsstellung und Preisseite übereinstimmen." },
-        { "heading": "5 · Redaktionell verantwortlich (§ 18 Abs. 2 MStV)", "body": "[Name]\n[Anschrift wie oben]\n\nDiese Angabe betrifft journalistisch-redaktionelle Inhalte. Da Hermetia Ratgeber-, Glossar-, Vergleichs- und Wissensinhalte veröffentlicht, sollte die redaktionelle Verantwortlichkeit vor dem Launch eindeutig benannt werden." },
-        { "heading": "6 · Verbraucherstreitbeilegung", "body": "Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen, sofern keine gesetzliche Pflicht besteht.\n\nHinweis: Die frühere EU-Plattform zur Online-Streitbeilegung wurde zum 20. Juli 2025 eingestellt. Ein veralteter Link auf diese Plattform sollte deshalb nicht mehr im Impressum oder in den AGB verwendet werden." },
-        { "heading": "7 · Verantwortlichkeit für Inhalte", "body": "Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Die Inhalte von Hermetia dienen der Information und Selbstreflexion. Sie ersetzen keine medizinische, therapeutische, psychologische, rechtliche oder finanzielle Beratung.\n\nSoweit Inhalte AI-gestützt formuliert werden, gelten die Hinweise auf der Seite KI-Transparenz. Rechtstexte, Datenschutzinformationen und Produktversprechen müssen vor dem öffentlichen Launch fachlich und rechtlich final geprüft werden." },
-        { "heading": "8 · Externe Links", "body": "Diese Website kann Links zu externen Websites enthalten. Für die Inhalte verlinkter Seiten sind ausschließlich deren Betreiber verantwortlich. Zum Zeitpunkt der Verlinkung waren keine rechtswidrigen Inhalte erkennbar. Bei Bekanntwerden von Rechtsverletzungen entfernen wir solche Links zeitnah.\n\nExterne Quellen, Tools oder Dienstleister werden nur genannt, soweit dies für Transparenz, technische Funktion oder rechtliche Einordnung sinnvoll ist." },
-        { "heading": "9 · Urheberrecht und Bildrechte", "body": "Die durch uns erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Dazu gehören Texte, Grafiken, Seitenstrukturen, Markenbestandteile, UI-Elemente, eigene Modelle und redaktionelle Systematisierungen.\n\nBildmaterial, Grafiken und generierte Assets dürfen nur verwendet werden, wenn sie aus eigenen Projektordnern stammen, selbst erstellt wurden oder eine passende Lizenz bzw. Freigabe vorliegt. Beiträge Dritter sind als solche zu kennzeichnen. Geschützte Deutungstexte, proprietäre Systembeschreibungen oder fremde Werke dürfen nicht ohne Berechtigung übernommen werden." },
-        { "heading": "10 · Finaler Launch-Check", "body": "Vor Live-Schaltung auf der finalen Domain müssen alle Platzhalter entfernt, Anbieterangaben ergänzt, Kontaktwege getestet, Register- und Steuerangaben geprüft, Streitbeilegung aktualisiert, Bildrechte dokumentiert und Rechtstexte anwaltlich freigegeben werden.\n\nBis dahin bleibt die Website bewusst auf noindex/nofollow, damit unfertige rechtliche Pflichtangaben nicht in Suchmaschinen aufgebaut werden." }
+        {
+          "heading": "1 · Angaben gemäß § 5 DDG",
+          "body": "[Anbieter / Firmenname]\n[Straße und Hausnummer]\n[PLZ und Ort]\n[Land]\n\nDieses Impressum ist ein Launch-Entwurf. Vor Veröffentlichung müssen Anbieter, Rechtsform, ladungsfähige Anschrift und weitere Pflichtangaben vollständig ergänzt und geprüft werden."
+        },
+        {
+          "heading": "2 · Vertreten durch",
+          "body": "[Name der vertretungsberechtigten Person]\n[Position / Rolle]\n\nFalls Hermetia über eine Gesellschaft betrieben wird, sind Rechtsform, Registergericht, Registernummer und vertretungsberechtigte Personen entsprechend zu ergänzen."
+        },
+        {
+          "heading": "3 · Kontakt",
+          "body": "E-Mail: hallo@hermetia.de\nTelefon: [Telefonnummer]\nSupport / Datenschutz: datenschutz@hermetia.de\nWiderruf: widerruf@hermetia.de\n\nFür rechtlich relevante Anfragen sollte eine dauerhaft erreichbare Kontaktadresse verwendet werden. Reine Social-Media-Kanäle ersetzen diese Angaben nicht."
+        },
+        {
+          "heading": "4 · Register und Umsatzsteuer",
+          "body": "Handelsregister / Vereinsregister / sonstiges Register: [Registergericht und Registernummer, falls vorhanden]\nUSt-IdNr. gemäß § 27a Umsatzsteuergesetz: [USt-IdNr., falls vorhanden]\n\nFalls die Kleinunternehmerregelung nach § 19 UStG genutzt wird, ist die Preis- und Rechnungslogik entsprechend abzustimmen. Diese Angabe muss mit Zahlungsanbieter, Rechnungsstellung und Preisseite übereinstimmen."
+        },
+        {
+          "heading": "5 · Redaktionell verantwortlich (§ 18 Abs. 2 MStV)",
+          "body": "[Name]\n[Anschrift wie oben]\n\nDiese Angabe betrifft journalistisch-redaktionelle Inhalte. Da Hermetia Ratgeber-, Glossar-, Vergleichs- und Wissensinhalte veröffentlicht, sollte die redaktionelle Verantwortlichkeit vor dem Launch eindeutig benannt werden."
+        },
+        {
+          "heading": "6 · Verbraucherstreitbeilegung",
+          "body": "Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen, sofern keine gesetzliche Pflicht besteht.\n\nHinweis: Die frühere EU-Plattform zur Online-Streitbeilegung wurde zum 20. Juli 2025 eingestellt. Ein veralteter Link auf diese Plattform sollte deshalb nicht mehr im Impressum oder in den AGB verwendet werden."
+        },
+        {
+          "heading": "7 · Verantwortlichkeit für Inhalte",
+          "body": "Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Die Inhalte von Hermetia dienen der Information und Selbstreflexion. Sie ersetzen keine medizinische, therapeutische, psychologische, rechtliche oder finanzielle Beratung.\n\nSoweit Inhalte AI-gestützt formuliert werden, gelten die Hinweise auf der Seite KI-Transparenz. Rechtstexte, Datenschutzinformationen und Produktversprechen müssen vor dem öffentlichen Launch fachlich und rechtlich final geprüft werden."
+        },
+        {
+          "heading": "8 · Externe Links",
+          "body": "Diese Website kann Links zu externen Websites enthalten. Für die Inhalte verlinkter Seiten sind ausschließlich deren Betreiber verantwortlich. Zum Zeitpunkt der Verlinkung waren keine rechtswidrigen Inhalte erkennbar. Bei Bekanntwerden von Rechtsverletzungen entfernen wir solche Links zeitnah.\n\nExterne Quellen, Tools oder Dienstleister werden nur genannt, soweit dies für Transparenz, technische Funktion oder rechtliche Einordnung sinnvoll ist."
+        },
+        {
+          "heading": "9 · Urheberrecht und Bildrechte",
+          "body": "Die durch uns erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Dazu gehören Texte, Grafiken, Seitenstrukturen, Markenbestandteile, UI-Elemente, eigene Modelle und redaktionelle Systematisierungen.\n\nBildmaterial, Grafiken und generierte Assets dürfen nur verwendet werden, wenn sie aus eigenen Projektordnern stammen, selbst erstellt wurden oder eine passende Lizenz bzw. Freigabe vorliegt. Beiträge Dritter sind als solche zu kennzeichnen. Geschützte Deutungstexte, proprietäre Systembeschreibungen oder fremde Werke dürfen nicht ohne Berechtigung übernommen werden."
+        },
+        {
+          "heading": "10 · Finaler Launch-Check",
+          "body": "Vor Live-Schaltung auf der finalen Domain müssen alle Platzhalter entfernt, Anbieterangaben ergänzt, Kontaktwege getestet, Register- und Steuerangaben geprüft, Streitbeilegung aktualisiert, Bildrechte dokumentiert und Rechtstexte anwaltlich freigegeben werden.\n\nBis dahin bleibt die Website bewusst auf noindex/nofollow, damit unfertige rechtliche Pflichtangaben nicht in Suchmaschinen aufgebaut werden."
+        }
       ]
     },
     "datenschutz": {
       "title": "Datenschutzerklärung",
       "sections": [
-        { "heading": "1 · Verantwortlicher", "body": "Verantwortlich für die Datenverarbeitung ist [Anbieter / Firmenname], [Anschrift], E-Mail: datenschutz@hermetia.de. [Sofern bestellt:] Datenschutzbeauftragte/r: [Name, Kontakt]." },
-        { "heading": "2 · Kurzüberblick", "body": "Hermetia erstellt aus deinen Eingaben und berechneten Systemmerkmalen ein persönliches Reflexionsprofil. Dazu gehören die Seelenkarte, Tagesimpulse, optionale Journalfunktionen, Beziehungs- und Resonanzmodule, Profilverfeinerung, Exportfunktionen, ein mögliches Vollprofil-Buch und AI-gestützte Begleittexte. Diese Inhalte können sehr persönlich sein, auch wenn sie nicht als Diagnose, Therapie oder verbindliche Beratung gedacht sind.\n\nWir behandeln diese Daten deshalb nicht wie gewöhnliche Marketingdaten. Datensparsamkeit, Zweckbindung, klare Einwilligungen, EU-orientiertes Hosting, Verschlüsselung, Rollenrechte, Export und Löschbarkeit sind Teil des Datenschutzkonzepts. Diese Erklärung ist ein sorgfältiger Arbeitsstand für den Launch und muss vor öffentlicher Freigabe anwaltlich final geprüft und mit den tatsächlich eingesetzten Dienstleistern abgeglichen werden." },
-        { "heading": "3 · Welche Daten wir verarbeiten", "body": "Je nach Nutzung verarbeiten wir folgende Datenkategorien:\n\n• Kontodaten: E-Mail-Adresse, Passwort-Hash, Spracheinstellung, Login-Status, Tarif- und Profilstatus.\n• Profil- und Geburtsdaten: Geburtsname oder Anzeigename, Geburtsdatum, optionale Geburtszeit, Geburtsort, Zeitzonen- und Ortsauflösung sowie daraus abgeleitete Berechnungen.\n• Abgeleitete Profilinhalte: Seelenkarte, Systemmarker, Konvergenzwerte, Themencluster, Tagesimpulse, Profilbuch-Abschnitte und Beziehungsdeutungen.\n• Freiwillige Kontextdaten: Journaling-Einträge, Reflexionsantworten, Profilverfeinerungen, Vorlieben, Notizen und freigegebene Companion-Kontexte.\n• Beziehungsdaten: Eingaben zu weiteren Personen nur, wenn hierfür eine belastbare Einwilligungs- und Nutzungslogik besteht.\n• Nutzungs- und Sicherheitsdaten: technische Logs, Session-Informationen, Fehlerdaten, Missbrauchsschutz, Consent-Status und grundlegende Interaktionsdaten.\n• Zahlungsdaten: Abwicklung über Zahlungsdienstleister; vollständige Kartendaten speichern wir nicht selbst." },
-        { "heading": "4 · Besondere Kategorien personenbezogener Daten", "body": "Hermetia arbeitet mit spirituellen, weltanschaulichen und persönlichkeitsnahen Deutungen. Solche abgeleiteten Inhalte können je nach konkreter Ausgestaltung besondere Kategorien personenbezogener Daten im Sinne von Art. 9 DSGVO berühren. Wir behandeln diese Inhalte daher besonders vorsichtig und stützen die Verarbeitung, soweit erforderlich, auf eine ausdrückliche, getrennte Einwilligung.\n\nDiese Einwilligung muss klar, freiwillig, informiert und widerrufbar sein. Sie darf nicht in allgemeinen Nutzungsbedingungen versteckt werden. Nutzerinnen und Nutzer müssen verstehen, dass Hermetia aus Eingaben persönliche Deutungen ableitet und diese für Profilfunktionen, Premium-Inhalte, Tagesimpulse, Export oder Companion-Funktionen verwenden kann. Ein Widerruf wirkt für die Zukunft; bis dahin rechtmäßig erfolgte Verarbeitung bleibt unberührt." },
-        { "heading": "5 · Zwecke und Rechtsgrundlagen", "body": "Wir verarbeiten Daten nur für definierte Zwecke:\n\n• Konto, Login, Sprache, Tarif und technische Bereitstellung: Vertragserfüllung oder vorvertragliche Maßnahmen.\n• Profilberechnung, Seelenkarte, Systemauswertung und Konvergenz: Vertragserfüllung und, soweit besondere Kategorien betroffen sind, ausdrückliche Einwilligung.\n• Tagesimpulse, Journaling, Companion, Vollprofil-Buch und Profilverfeinerung: Vertragserfüllung, Einwilligung für sensible Inhalte und berechtigtes Interesse an einer sicheren Produktfunktion.\n• Zahlungsabwicklung, Rechnungen und steuerliche Aufbewahrung: Vertragserfüllung und gesetzliche Pflichten.\n• Sicherheit, Fehleranalyse, Missbrauchsvermeidung und Zugriffsschutz: berechtigtes Interesse.\n• Newsletter, E-Mail-Impulse und optionale Produktkommunikation: Einwilligung, sofern keine gesetzliche Ausnahme greift.\n• Reichweitenmessung und Marketinganalyse: nur mit Einwilligung, soweit nicht rein technisch erforderlich." },
-        { "heading": "6 · AI-Verarbeitung", "body": "Hermetia kann AI einsetzen, um berechnete Profilmerkmale, Themencluster und freigegebene Kontexte sprachlich verständlich zu formulieren. Die Berechnung der Systemwerte soll getrennt von der AI-Formulierung erfolgen. Die AI soll keine eigenständige Diagnose, keine Therapie, keine Rechts- oder Finanzberatung und keine verbindliche Entscheidung erzeugen.\n\nAn AI-Dienste sollen nur die Informationen übermittelt werden, die für den konkreten Zweck erforderlich sind. Wo möglich, werden Rohdaten reduziert, pseudonymisiert oder durch berechnete Merkmale ersetzt. Besonders sensible Inhalte wie Journaltexte oder Beziehungsdaten dürfen nicht grenzenlos oder automatisch als AI-Kontext genutzt werden. Weitere Details stehen auf der Seite KI-Transparenz." },
-        { "heading": "7 · Drittlandübermittlung und Dienstleister", "body": "Wir setzen technische Dienstleister nur ein, soweit dies für Betrieb, Sicherheit, Zahlung, Kommunikation, Analyse oder AI-Funktionen erforderlich ist. Dazu können Hosting-Provider, Zahlungsdienstleister, E-Mail-Dienste, Fehleranalyse, Consent-Management und AI-Anbieter gehören. Soweit Dienstleister als Auftragsverarbeiter handeln, werden Vereinbarungen nach Art. 28 DSGVO geschlossen.\n\nWenn personenbezogene Daten außerhalb der EU oder des EWR verarbeitet werden, muss dies auf einer zulässigen Grundlage erfolgen. Dazu können ein Angemessenheitsbeschluss, EU-Standardvertragsklauseln, zusätzliche Schutzmaßnahmen und eine Transfer-Risiko-Prüfung gehören. Vor dem Launch muss die konkrete Dienstleisterliste mit Anbietername, Zweck, Standort, Rechtsgrundlage und Vertragsstatus final dokumentiert werden." },
-        { "heading": "8 · Beziehungen und Daten anderer Personen", "body": "Beziehungs- und Resonanzfunktionen können Daten weiterer Personen betreffen. Solche Funktionen brauchen besondere Sorgfalt, weil niemand heimlich spirituell oder persönlichkeitsnah ausgewertet werden sollte. Hermetia darf Beziehungsprofile daher nur so gestalten, dass Einwilligung, Transparenz und Zweckbindung praktisch umsetzbar bleiben.\n\nWenn Daten einer zweiten Person eingegeben werden, muss klar sein, auf welcher Grundlage dies geschieht, wer die Verantwortung trägt und welche Informationen gespeichert werden. Funktionen für Partnerschaft, Freundschaft, Familie oder berufliche Resonanz dürfen keine verdeckte Bewertung anderer Menschen fördern. Die rechtliche und ethische Ausgestaltung dieser Module sollte vor dem Launch gesondert geprüft werden." },
-        { "heading": "9 · Speicherdauer, Löschung und Export", "body": "Wir speichern personenbezogene Daten nur so lange, wie sie für die genannten Zwecke erforderlich sind, eine Einwilligung besteht, ein Vertrag läuft oder gesetzliche Aufbewahrungsfristen gelten. Profilinhalte, Journaltexte und abgeleitete Deutungen sind löschbar, soweit keine gesetzlichen Pflichten entgegenstehen.\n\nNutzerinnen und Nutzer können ihre wesentlichen Profildaten exportieren. Das stärkt Datenportabilität, Vertrauen und Kontrolle. Bei Löschung eines Kontos werden Profil, abgeleitete Inhalte und freiwillige Kontextdaten gelöscht oder anonymisiert, soweit dies technisch und rechtlich möglich ist. Backups können aus Sicherheitsgründen für eine begrenzte Zeit fortbestehen, werden aber nicht aktiv weiterverwendet." },
-        { "heading": "10 · Deine Rechte", "body": "Du hast nach Maßgabe der DSGVO Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerspruch und Widerruf erteilter Einwilligungen. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren.\n\nHermetia soll diese Rechte nicht nur formal nennen, sondern im Produkt praktisch erreichbar machen. Dazu gehören Profil-Export, Löschung, Einwilligungsverwaltung, transparente AI-Hinweise und verständliche Einstellungen für freiwillige Daten. Wenn du Fragen zu deinen Daten hast, kannst du dich an die oben genannte Kontaktadresse wenden." },
-        { "heading": "11 · Cookies, Consent und Reichweitenmessung", "body": "Die Marketing-Website kommt mit möglichst wenigen technisch notwendigen Cookies oder vergleichbaren Technologien aus. Technisch notwendige Elemente dienen zum Beispiel Sprache, Sicherheit, Consent-Status oder stabiler Seitenauslieferung. Optionale Analyse, Retargeting oder Conversion-Messung werden nur eingesetzt, wenn hierfür eine wirksame Einwilligung vorliegt.\n\nAktuell bleibt die Website bis zum finalen Domainumzug und Launch auf noindex/nofollow. Das schützt vor einer zu frühen Suchmaschinenindexierung unfertiger Inhalte. Nach dem Launch wird Reichweitenaufbau, SEO, GEO und AEO möglich, ohne sensible Profilinhalte für Werbung zu verkaufen oder unnötig an Dritte weiterzugeben." },
-        { "heading": "12 · Sicherheit", "body": "Hermetia soll technische und organisatorische Maßnahmen einsetzen, die dem Risiko persönlicher Profilinhalte angemessen sind. Dazu gehören verschlüsselte Übertragung, sichere Passwortspeicherung, rollenbasierte Zugriffe, Protokollierung sicherheitsrelevanter Ereignisse, Backups, Update-Prozesse, Zugriffsbeschränkungen, getrennte Umgebungen und Löschkonzepte.\n\nBesonders wichtig ist, dass produktive Profilinhalte nicht unkontrolliert in Testsysteme, Prompt-Experimente, Screenshots, Support-Tools oder Analyseumgebungen gelangen. Für sensible AI-Funktionen sollten zusätzlich Prompt-Logging, Zugriff auf Journaltexte und Debug-Ausgaben streng begrenzt werden." },
-        { "heading": "13 · Keine Weitergabe zu Werbezwecken", "body": "Wir verkaufen keine persönlichen Profilinhalte, Journaltexte, Beziehungsdaten oder abgeleiteten Deutungen an Werbepartner. Daten dürfen nicht dazu genutzt werden, Menschen aufgrund sensibler spiritueller oder persönlichkeitsnaher Aussagen manipulativ anzusprechen.\n\nMarketing darf auf aggregierten, technischen oder einwilligungsbasierten Signalen beruhen, nicht auf der Ausbeutung privater Reflexionsinhalte. Diese Trennung ist für Hermetia zentral: Die Website kann wachsen, ohne die Vertraulichkeit persönlicher Profile zu gefährden." },
-        { "heading": "14 · Minderjährige und sensible Nutzungssituationen", "body": "Hermetia richtet sich nicht an Kinder. Falls Funktionen für jüngere Nutzerinnen und Nutzer, Familienkontexte oder besonders vulnerable Situationen geplant werden, braucht es gesonderte Alters-, Einwilligungs- und Schutzkonzepte. Spirituelle oder persönlichkeitsnahe Inhalte können in Krisen, Trauer, Trennung oder gesundheitlichen Belastungen besonders stark wirken.\n\nHermetia sollte daher klare Hinweise, Grenzen und Eskalationslogiken vorsehen. Das Produkt darf keine Notfallhilfe ersetzen und soll Nutzerinnen und Nutzer in akuten Krisen an geeignete professionelle Stellen verweisen." },
-        { "heading": "15 · Änderungen und finaler Review", "body": "Wir passen diese Datenschutzerklärung an, wenn sich Funktionen, Dienstleister, Rechtsgrundlagen, Datenflüsse oder die Rechtslage ändern. Die jeweils aktuelle Fassung findest du auf dieser Seite.\n\nVor dem öffentlichen Launch müssen Platzhalter entfernt, Dienstleister konkret benannt, Auftragsverarbeitungsverträge geprüft, Drittlandtransfers bewertet, Consent-Flows getestet und die gesamte Erklärung anwaltlich freigegeben werden. Diese Seite ist ein umfangreicher Datenschutzentwurf, aber keine abschließende Rechtsberatung." }
+        {
+          "heading": "1 · Verantwortlicher",
+          "body": "Verantwortlich für die Datenverarbeitung ist [Anbieter / Firmenname], [Anschrift], E-Mail: datenschutz@hermetia.de. [Sofern bestellt:] Datenschutzbeauftragte/r: [Name, Kontakt]."
+        },
+        {
+          "heading": "2 · Kurzüberblick",
+          "body": "Hermetia erstellt aus deinen Eingaben und berechneten Systemmerkmalen ein persönliches Reflexionsprofil. Dazu gehören die Seelenkarte, Tagesimpulse, optionale Journalfunktionen, Beziehungs- und Resonanzmodule, Profilverfeinerung, Exportfunktionen, ein mögliches Vollprofil-Buch und AI-gestützte Begleittexte. Diese Inhalte können sehr persönlich sein, auch wenn sie nicht als Diagnose, Therapie oder verbindliche Beratung gedacht sind.\n\nWir behandeln diese Daten deshalb nicht wie gewöhnliche Marketingdaten. Datensparsamkeit, Zweckbindung, klare Einwilligungen, EU-orientiertes Hosting, Verschlüsselung, Rollenrechte, Export und Löschbarkeit sind Teil des Datenschutzkonzepts. Diese Erklärung ist ein sorgfältiger Arbeitsstand für den Launch und muss vor öffentlicher Freigabe anwaltlich final geprüft und mit den tatsächlich eingesetzten Dienstleistern abgeglichen werden."
+        },
+        {
+          "heading": "3 · Welche Daten wir verarbeiten",
+          "body": "Je nach Nutzung verarbeiten wir folgende Datenkategorien:\n\n• Kontodaten: E-Mail-Adresse, Passwort-Hash, Spracheinstellung, Login-Status, Tarif- und Profilstatus.\n• Profil- und Geburtsdaten: Geburtsname oder Anzeigename, Geburtsdatum, optionale Geburtszeit, Geburtsort, Zeitzonen- und Ortsauflösung sowie daraus abgeleitete Berechnungen.\n• Abgeleitete Profilinhalte: Seelenkarte, Systemmarker, Konvergenzwerte, Themencluster, Tagesimpulse, Profilbuch-Abschnitte und Beziehungsdeutungen.\n• Freiwillige Kontextdaten: Journaling-Einträge, Reflexionsantworten, Profilverfeinerungen, Vorlieben, Notizen und freigegebene Companion-Kontexte.\n• Beziehungsdaten: Eingaben zu weiteren Personen nur, wenn hierfür eine belastbare Einwilligungs- und Nutzungslogik besteht.\n• Nutzungs- und Sicherheitsdaten: technische Logs, Session-Informationen, Fehlerdaten, Missbrauchsschutz, Consent-Status und grundlegende Interaktionsdaten.\n• Zahlungsdaten: Abwicklung über Zahlungsdienstleister; vollständige Kartendaten speichern wir nicht selbst."
+        },
+        {
+          "heading": "4 · Besondere Kategorien personenbezogener Daten",
+          "body": "Hermetia arbeitet mit spirituellen, weltanschaulichen und persönlichkeitsnahen Deutungen. Solche abgeleiteten Inhalte können je nach konkreter Ausgestaltung besondere Kategorien personenbezogener Daten im Sinne von Art. 9 DSGVO berühren. Wir behandeln diese Inhalte daher besonders vorsichtig und stützen die Verarbeitung, soweit erforderlich, auf eine ausdrückliche, getrennte Einwilligung.\n\nDiese Einwilligung muss klar, freiwillig, informiert und widerrufbar sein. Sie darf nicht in allgemeinen Nutzungsbedingungen versteckt werden. Nutzerinnen und Nutzer müssen verstehen, dass Hermetia aus Eingaben persönliche Deutungen ableitet und diese für Profilfunktionen, Premium-Inhalte, Tagesimpulse, Export oder Companion-Funktionen verwenden kann. Ein Widerruf wirkt für die Zukunft; bis dahin rechtmäßig erfolgte Verarbeitung bleibt unberührt."
+        },
+        {
+          "heading": "5 · Zwecke und Rechtsgrundlagen",
+          "body": "Wir verarbeiten Daten nur für definierte Zwecke:\n\n• Konto, Login, Sprache, Tarif und technische Bereitstellung: Vertragserfüllung oder vorvertragliche Maßnahmen.\n• Profilberechnung, Seelenkarte, Systemauswertung und Konvergenz: Vertragserfüllung und, soweit besondere Kategorien betroffen sind, ausdrückliche Einwilligung.\n• Tagesimpulse, Journaling, Companion, Vollprofil-Buch und Profilverfeinerung: Vertragserfüllung, Einwilligung für sensible Inhalte und berechtigtes Interesse an einer sicheren Produktfunktion.\n• Zahlungsabwicklung, Rechnungen und steuerliche Aufbewahrung: Vertragserfüllung und gesetzliche Pflichten.\n• Sicherheit, Fehleranalyse, Missbrauchsvermeidung und Zugriffsschutz: berechtigtes Interesse.\n• Newsletter, E-Mail-Impulse und optionale Produktkommunikation: Einwilligung, sofern keine gesetzliche Ausnahme greift.\n• Reichweitenmessung und Marketinganalyse: nur mit Einwilligung, soweit nicht rein technisch erforderlich."
+        },
+        {
+          "heading": "6 · AI-Verarbeitung",
+          "body": "Hermetia kann AI einsetzen, um berechnete Profilmerkmale, Themencluster und freigegebene Kontexte sprachlich verständlich zu formulieren. Die Berechnung der Systemwerte soll getrennt von der AI-Formulierung erfolgen. Die AI soll keine eigenständige Diagnose, keine Therapie, keine Rechts- oder Finanzberatung und keine verbindliche Entscheidung erzeugen.\n\nAn AI-Dienste sollen nur die Informationen übermittelt werden, die für den konkreten Zweck erforderlich sind. Wo möglich, werden Rohdaten reduziert, pseudonymisiert oder durch berechnete Merkmale ersetzt. Besonders sensible Inhalte wie Journaltexte oder Beziehungsdaten dürfen nicht grenzenlos oder automatisch als AI-Kontext genutzt werden. Weitere Details stehen auf der Seite KI-Transparenz."
+        },
+        {
+          "heading": "7 · Drittlandübermittlung und Dienstleister",
+          "body": "Wir setzen technische Dienstleister nur ein, soweit dies für Betrieb, Sicherheit, Zahlung, Kommunikation, Analyse oder AI-Funktionen erforderlich ist. Dazu können Hosting-Provider, Zahlungsdienstleister, E-Mail-Dienste, Fehleranalyse, Consent-Management und AI-Anbieter gehören. Soweit Dienstleister als Auftragsverarbeiter handeln, werden Vereinbarungen nach Art. 28 DSGVO geschlossen.\n\nWenn personenbezogene Daten außerhalb der EU oder des EWR verarbeitet werden, muss dies auf einer zulässigen Grundlage erfolgen. Dazu können ein Angemessenheitsbeschluss, EU-Standardvertragsklauseln, zusätzliche Schutzmaßnahmen und eine Transfer-Risiko-Prüfung gehören. Vor dem Launch muss die konkrete Dienstleisterliste mit Anbietername, Zweck, Standort, Rechtsgrundlage und Vertragsstatus final dokumentiert werden."
+        },
+        {
+          "heading": "8 · Beziehungen und Daten anderer Personen",
+          "body": "Beziehungs- und Resonanzfunktionen können Daten weiterer Personen betreffen. Solche Funktionen brauchen besondere Sorgfalt, weil niemand heimlich spirituell oder persönlichkeitsnah ausgewertet werden sollte. Hermetia darf Beziehungsprofile daher nur so gestalten, dass Einwilligung, Transparenz und Zweckbindung praktisch umsetzbar bleiben.\n\nWenn Daten einer zweiten Person eingegeben werden, muss klar sein, auf welcher Grundlage dies geschieht, wer die Verantwortung trägt und welche Informationen gespeichert werden. Funktionen für Partnerschaft, Freundschaft, Familie oder berufliche Resonanz dürfen keine verdeckte Bewertung anderer Menschen fördern. Die rechtliche und ethische Ausgestaltung dieser Module sollte vor dem Launch gesondert geprüft werden."
+        },
+        {
+          "heading": "9 · Speicherdauer, Löschung und Export",
+          "body": "Wir speichern personenbezogene Daten nur so lange, wie sie für die genannten Zwecke erforderlich sind, eine Einwilligung besteht, ein Vertrag läuft oder gesetzliche Aufbewahrungsfristen gelten. Profilinhalte, Journaltexte und abgeleitete Deutungen sind löschbar, soweit keine gesetzlichen Pflichten entgegenstehen.\n\nNutzerinnen und Nutzer können ihre wesentlichen Profildaten exportieren. Das stärkt Datenportabilität, Vertrauen und Kontrolle. Bei Löschung eines Kontos werden Profil, abgeleitete Inhalte und freiwillige Kontextdaten gelöscht oder anonymisiert, soweit dies technisch und rechtlich möglich ist. Backups können aus Sicherheitsgründen für eine begrenzte Zeit fortbestehen, werden aber nicht aktiv weiterverwendet."
+        },
+        {
+          "heading": "10 · Deine Rechte",
+          "body": "Du hast nach Maßgabe der DSGVO Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerspruch und Widerruf erteilter Einwilligungen. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren.\n\nHermetia soll diese Rechte nicht nur formal nennen, sondern im Produkt praktisch erreichbar machen. Dazu gehören Profil-Export, Löschung, Einwilligungsverwaltung, transparente AI-Hinweise und verständliche Einstellungen für freiwillige Daten. Wenn du Fragen zu deinen Daten hast, kannst du dich an die oben genannte Kontaktadresse wenden."
+        },
+        {
+          "heading": "11 · Cookies, Consent und Reichweitenmessung",
+          "body": "Die Marketing-Website kommt mit möglichst wenigen technisch notwendigen Cookies oder vergleichbaren Technologien aus. Technisch notwendige Elemente dienen zum Beispiel Sprache, Sicherheit, Consent-Status oder stabiler Seitenauslieferung. Optionale Analyse, Retargeting oder Conversion-Messung werden nur eingesetzt, wenn hierfür eine wirksame Einwilligung vorliegt.\n\nAktuell bleibt die Website bis zum finalen Domainumzug und Launch auf noindex/nofollow. Das schützt vor einer zu frühen Suchmaschinenindexierung unfertiger Inhalte. Nach dem Launch wird Reichweitenaufbau, SEO, GEO und AEO möglich, ohne sensible Profilinhalte für Werbung zu verkaufen oder unnötig an Dritte weiterzugeben."
+        },
+        {
+          "heading": "12 · Sicherheit",
+          "body": "Hermetia soll technische und organisatorische Maßnahmen einsetzen, die dem Risiko persönlicher Profilinhalte angemessen sind. Dazu gehören verschlüsselte Übertragung, sichere Passwortspeicherung, rollenbasierte Zugriffe, Protokollierung sicherheitsrelevanter Ereignisse, Backups, Update-Prozesse, Zugriffsbeschränkungen, getrennte Umgebungen und Löschkonzepte.\n\nBesonders wichtig ist, dass produktive Profilinhalte nicht unkontrolliert in Testsysteme, Prompt-Experimente, Screenshots, Support-Tools oder Analyseumgebungen gelangen. Für sensible AI-Funktionen sollten zusätzlich Prompt-Logging, Zugriff auf Journaltexte und Debug-Ausgaben streng begrenzt werden."
+        },
+        {
+          "heading": "13 · Keine Weitergabe zu Werbezwecken",
+          "body": "Wir verkaufen keine persönlichen Profilinhalte, Journaltexte, Beziehungsdaten oder abgeleiteten Deutungen an Werbepartner. Daten dürfen nicht dazu genutzt werden, Menschen aufgrund sensibler spiritueller oder persönlichkeitsnaher Aussagen manipulativ anzusprechen.\n\nMarketing darf auf aggregierten, technischen oder einwilligungsbasierten Signalen beruhen, nicht auf der Ausbeutung privater Reflexionsinhalte. Diese Trennung ist für Hermetia zentral: Die Website kann wachsen, ohne die Vertraulichkeit persönlicher Profile zu gefährden."
+        },
+        {
+          "heading": "14 · Minderjährige und sensible Nutzungssituationen",
+          "body": "Hermetia richtet sich nicht an Kinder. Falls Funktionen für jüngere Nutzerinnen und Nutzer, Familienkontexte oder besonders vulnerable Situationen geplant werden, braucht es gesonderte Alters-, Einwilligungs- und Schutzkonzepte. Spirituelle oder persönlichkeitsnahe Inhalte können in Krisen, Trauer, Trennung oder gesundheitlichen Belastungen besonders stark wirken.\n\nHermetia sollte daher klare Hinweise, Grenzen und Eskalationslogiken vorsehen. Das Produkt darf keine Notfallhilfe ersetzen und soll Nutzerinnen und Nutzer in akuten Krisen an geeignete professionelle Stellen verweisen."
+        },
+        {
+          "heading": "15 · Änderungen und finaler Review",
+          "body": "Wir passen diese Datenschutzerklärung an, wenn sich Funktionen, Dienstleister, Rechtsgrundlagen, Datenflüsse oder die Rechtslage ändern. Die jeweils aktuelle Fassung findest du auf dieser Seite.\n\nVor dem öffentlichen Launch müssen Platzhalter entfernt, Dienstleister konkret benannt, Auftragsverarbeitungsverträge geprüft, Drittlandtransfers bewertet, Consent-Flows getestet und die gesamte Erklärung anwaltlich freigegeben werden. Diese Seite ist ein umfangreicher Datenschutzentwurf, aber keine abschließende Rechtsberatung."
+        }
       ]
     },
     "agb": {
       "title": "Allgemeine Geschäftsbedingungen",
       "sections": [
-        { "heading": "1 · Geltungsbereich und Anbieter", "body": "Diese AGB gelten für die Nutzung von Hermetia, angeboten von [Anbieter / Firmenname], [Anschrift] („wir“). Maßgeblich ist die bei Vertragsschluss gültige Fassung." },
-        { "heading": "2 · Leistungsgegenstand", "body": "Hermetia ist ein digitales Angebot zur Selbstreflexion. Aus Eingaben wie Geburtsdaten, optionaler Geburtszeit, Geburtsort und freiwilligen Kontexten können persönliche Profilinhalte entstehen: Seelenkarte, Systemauswertungen, Konvergenz-Engine, Tagesimpulse, Journaling, Beziehungs- und Resonanzmodule, Profilverfeinerung, AI-gestützter Companion, Export und ein mögliches Vollprofil-Buch.\n\nHermetia bietet kostenlose Einstiege und kostenpflichtige Modelle mit erweitertem Umfang. Kostenpflichtige Leistungen können insbesondere mehr Profiltiefe, längere Texte, gespeicherte Verläufe, Companion-Dialoge, erweiterte Tagesimpulse, Beziehungsauswertungen, Exportfunktionen oder besondere Profilbuch-Inhalte umfassen. Die konkrete Leistung ergibt sich aus der jeweiligen Tarifbeschreibung zum Zeitpunkt der Bestellung." },
-        { "heading": "3 · Kein Ersatz für Fachberatung", "body": "Hermetia erstellt Reflexionsinhalte. Die Inhalte sind keine medizinische, psychologische, psychotherapeutische, rechtliche, steuerliche, finanzielle oder sonstige fachliche Beratung. Hermetia stellt keine Diagnose, verspricht keine Heilung, trifft keine Lebensentscheidung und garantiert keine Vorhersage.\n\nWenn du dich in einer akuten Krise befindest, gesundheitliche Beschwerden hast, rechtliche Fragen klären musst, finanzielle Entscheidungen treffen willst oder psychische Belastung spürst, wende dich bitte an qualifizierte Fachpersonen oder geeignete Notfallstellen. Hermetia kann Sprache für Selbstbeobachtung geben, ersetzt aber keine professionelle Unterstützung." },
-        { "heading": "4 · Registrierung und Vertragsschluss", "body": "Mit der Registrierung kommt ein kostenloser Nutzungsvertrag zustande. Ein kostenpflichtiges Modell schließt du ab, indem du einen Tarif auswählst, die Bestellübersicht prüfst, die erforderlichen Erklärungen abgibst und den Zahlungsvorgang abschließt. Vor Abschluss werden wesentliche Informationen wie Preis, Laufzeit, Leistungsumfang, Verlängerung und Kündigungsmöglichkeit angezeigt.\n\nFür digitale Inhalte kann der Zugriff unmittelbar nach Vertragsschluss beginnen, wenn du dem ausdrücklich zustimmst. Soweit gesetzlich erforderlich, wirst du darauf hingewiesen, dass ein Widerrufsrecht bei sofortigem Beginn und vollständiger Bereitstellung digitaler Inhalte vorzeitig erlöschen kann." },
-        { "heading": "5 · Preise, Zahlung und bezahlte Modelle", "body": "Es gelten die zum Zeitpunkt der Bestellung angezeigten Preise inklusive gesetzlicher Umsatzsteuer, sofern diese ausgewiesen wird. Die Zahlung erfolgt über den eingebundenen Zahlungsdienstleister und die dort angebotenen Zahlungsarten. Wir speichern keine vollständigen Kartendaten.\n\nKostenpflichtige Modelle können monatlich, jährlich oder als einmalige digitale Leistung angeboten werden. Jahresmodelle werden grundsätzlich im Voraus abgerechnet. Rabattaktionen, Launch-Angebote oder Testphasen gelten nur zu den jeweils angegebenen Bedingungen. Ein kostenloser Zugang kann funktional begrenzt sein; Premium soll zusätzliche Tiefe schaffen, nicht künstlichen Druck." },
-        { "heading": "6 · Laufzeit, Verlängerung und Kündigung", "body": "Abonnements laufen für die gewählte Periode und verlängern sich um die angezeigte Folgeperiode, sofern sie nicht rechtzeitig gekündigt werden. Du kannst laufende Verbraucher-Abonnements jederzeit über den Kündigungsbutton im Profil beenden. Die Kündigung wirkt zum Ende der bereits bezahlten Periode, soweit zwingendes Recht nichts anderes vorsieht.\n\nNach der Kündigung kann der Zugriff auf Premium-Funktionen am Periodenende entfallen. Bereits erstellte Inhalte können je nach Tarif, technischer Umsetzung und gesetzlicher Pflicht weiter einsehbar, exportierbar oder löschbar bleiben. Details hierzu müssen im Produkt klar angezeigt werden." },
-        { "heading": "7 · Widerrufsrecht", "body": "Verbraucherinnen und Verbraucher haben ein gesetzliches Widerrufsrecht. Einzelheiten, Fristen und das Muster-Widerrufsformular findest du in unserer Widerrufsbelehrung.\n\nBei digitalen Inhalten oder digitalen Dienstleistungen kann das Widerrufsrecht unter den gesetzlichen Voraussetzungen vorzeitig erlöschen, wenn du ausdrücklich zustimmst, dass wir vor Ablauf der Widerrufsfrist mit der Leistung beginnen, und du bestätigst, dass du den möglichen Verlust des Widerrufsrechts kennst. Diese Erklärung darf nicht versteckt erfolgen und muss vor dem Kauf verständlich angezeigt werden." },
-        { "heading": "8 · Nutzerpflichten und faire Nutzung", "body": "Du bist verpflichtet, deine Zugangsdaten vertraulich zu behandeln und dein Konto nicht missbräuchlich zu nutzen. Es ist nicht erlaubt, Hermetia automatisiert auszulesen, Sicherheitsmechanismen zu umgehen, rechtswidrige Inhalte einzustellen, fremde Rechte zu verletzen oder Profile anderer Personen ohne geeignete Grundlage zu erstellen.\n\nFür Beziehungs- und Resonanzfunktionen gilt besondere Sorgfalt. Wenn Daten anderer Menschen eingegeben werden, muss dies rechtlich und ethisch verantwortbar sein. Hermetia darf nicht zur heimlichen Bewertung, Manipulation oder Kontrolle anderer Personen genutzt werden." },
-        { "heading": "9 · AI-Inhalte und Kennzeichnung", "body": "Teile der Inhalte können mithilfe von AI formuliert werden. AI-gestützte Inhalte werden nach Maßgabe der anwendbaren Transparenzpflichten gekennzeichnet. Die Berechnung von Profilmerkmalen, die Konvergenzlogik und die sprachliche Formulierung sollen getrennt behandelt werden.\n\nAI-Ausgaben können unvollständig, missverständlich oder nicht passend sein. Sie sind eine Einladung zur Reflexion und keine objektive Wahrheit. Wenn ein Inhalt nicht zu dir passt, darfst du ihn verwerfen. Weitere Informationen findest du auf der Seite KI-Transparenz." },
-        { "heading": "10 · Rechte an Inhalten und Nutzungsrechte", "body": "Die Website, Texte, Grafiken, Strukturen, Marken, Designs, Systematisierungen und Softwarebestandteile von Hermetia sind geschützt. Du erhältst ein einfaches, nicht übertragbares Nutzungsrecht für die persönliche Nutzung innerhalb des vereinbarten Leistungsumfangs.\n\nVon dir eingegebene Inhalte wie Journaltexte oder Reflexionsantworten bleiben deine Inhalte. Du räumst uns nur die Rechte ein, die notwendig sind, um die gewählte Funktion bereitzustellen, Inhalte zu speichern, anzuzeigen, zu verarbeiten, zu exportieren oder AI-gestützt für deinen Nutzungskontext zu formulieren. Eine Weitergabe persönlicher Profilinhalte zu Werbezwecken erfolgt nicht." },
-        { "heading": "11 · Verfügbarkeit und Weiterentwicklung", "body": "Wir bemühen uns um eine stabile Verfügbarkeit, können aber keine unterbrechungsfreie Erreichbarkeit garantieren. Wartung, Sicherheitsupdates, technische Störungen, Änderungen bei Dienstleistern oder höhere Gewalt können den Zugriff zeitweise einschränken.\n\nHermetia befindet sich in einer aktiven Produktentwicklung. Funktionen können weiterentwickelt, verbessert, umbenannt, ergänzt oder ersetzt werden, sofern der vereinbarte Kernnutzen kostenpflichtiger Leistungen nicht unangemessen beeinträchtigt wird. Wesentliche Änderungen werden transparent kommuniziert." },
-        { "heading": "12 · Mindestalter", "body": "Die Nutzung setzt grundsätzlich ein Mindestalter von 16 Jahren voraus. Kostenpflichtige Modelle setzen ein Mindestalter von 18 Jahren oder die wirksame Zustimmung gesetzlicher Vertreter voraus.\n\nHermetia richtet sich nicht an Kinder. Wenn künftig Funktionen für Familien, Jugendliche oder besonders vulnerable Gruppen geplant werden, braucht es gesonderte Schutz-, Einwilligungs- und Alterskonzepte." },
-        { "heading": "13 · Sperrung und Beendigung", "body": "Wir können Konten vorübergehend sperren oder Verträge aus wichtigem Grund beenden, wenn Nutzerpflichten erheblich verletzt werden, Zahlungen ausbleiben, Sicherheitsrisiken entstehen oder das Angebot rechtswidrig genutzt wird. Vor einer dauerhaften Sperrung berücksichtigen wir die Umstände des Einzelfalls und geben, soweit möglich und zumutbar, Gelegenheit zur Klärung.\n\nDein Recht zur ordentlichen Kündigung und deine gesetzlichen Rechte bleiben unberührt." },
-        { "heading": "14 · Haftung", "body": "Wir haften unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei Verletzung von Leben, Körper und Gesundheit. Bei leicht fahrlässiger Verletzung wesentlicher Vertragspflichten haften wir begrenzt auf den vertragstypischen, vorhersehbaren Schaden. Wesentliche Vertragspflichten sind Pflichten, deren Erfüllung die ordnungsgemäße Durchführung des Vertrags überhaupt erst ermöglicht und auf deren Einhaltung du regelmäßig vertrauen darfst.\n\nFür inhaltliche Entscheidungen, die du aufgrund von Reflexionsinhalten triffst, übernimmst du eigene Verantwortung. Zwingende gesetzliche Haftung, insbesondere nach Produkthaftungsrecht, bleibt unberührt." },
-        { "heading": "15 · Änderungen der AGB", "body": "Wir können diese AGB aus sachlichem Grund ändern, etwa bei neuen Funktionen, geänderter Rechtslage, technischen Anpassungen, Sicherheitsanforderungen oder neuen Zahlungs- und Tarifmodellen. Über wesentliche Änderungen informieren wir mit angemessener Frist.\n\nSoweit eine Zustimmung erforderlich ist, holen wir diese ein. Soweit ein Widerspruchsmodell zulässig ist, weisen wir ausdrücklich auf Frist, Widerspruchsmöglichkeit und Folgen ausbleibenden Widerspruchs hin." },
-        { "heading": "16 · Schlussbestimmungen und finaler Review", "body": "Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts. Zwingende Verbraucherschutzvorschriften des Staates, in dem du deinen gewöhnlichen Aufenthalt hast, bleiben unberührt. Sollte eine Bestimmung unwirksam sein, bleibt der übrige Vertrag wirksam.\n\nDiese AGB sind ein sorgfältiger Launch-Entwurf. Vor öffentlicher Freigabe müssen Anbieterangaben, Preislogik, Widerrufsprozess, Kündigungsbutton, digitale Inhalte, Verbraucherinformationen, Datenschutzverweise und EU-Sprachfassungen rechtlich final geprüft werden." }
+        {
+          "heading": "1 · Geltungsbereich und Anbieter",
+          "body": "Diese AGB gelten für die Nutzung von Hermetia, angeboten von [Anbieter / Firmenname], [Anschrift] („wir“). Maßgeblich ist die bei Vertragsschluss gültige Fassung."
+        },
+        {
+          "heading": "2 · Leistungsgegenstand",
+          "body": "Hermetia ist ein digitales Angebot zur Selbstreflexion. Aus Eingaben wie Geburtsdaten, optionaler Geburtszeit, Geburtsort und freiwilligen Kontexten können persönliche Profilinhalte entstehen: Seelenkarte, Systemauswertungen, Konvergenz-Engine, Tagesimpulse, Journaling, Beziehungs- und Resonanzmodule, Profilverfeinerung, AI-gestützter Companion, Export und ein mögliches Vollprofil-Buch.\n\nHermetia bietet kostenlose Einstiege und kostenpflichtige Modelle mit erweitertem Umfang. Kostenpflichtige Leistungen können insbesondere mehr Profiltiefe, längere Texte, gespeicherte Verläufe, Companion-Dialoge, erweiterte Tagesimpulse, Beziehungsauswertungen, Exportfunktionen oder besondere Profilbuch-Inhalte umfassen. Die konkrete Leistung ergibt sich aus der jeweiligen Tarifbeschreibung zum Zeitpunkt der Bestellung."
+        },
+        {
+          "heading": "3 · Kein Ersatz für Fachberatung",
+          "body": "Hermetia erstellt Reflexionsinhalte. Die Inhalte sind keine medizinische, psychologische, psychotherapeutische, rechtliche, steuerliche, finanzielle oder sonstige fachliche Beratung. Hermetia stellt keine Diagnose, verspricht keine Heilung, trifft keine Lebensentscheidung und garantiert keine Vorhersage.\n\nWenn du dich in einer akuten Krise befindest, gesundheitliche Beschwerden hast, rechtliche Fragen klären musst, finanzielle Entscheidungen treffen willst oder psychische Belastung spürst, wende dich bitte an qualifizierte Fachpersonen oder geeignete Notfallstellen. Hermetia kann Sprache für Selbstbeobachtung geben, ersetzt aber keine professionelle Unterstützung."
+        },
+        {
+          "heading": "4 · Registrierung und Vertragsschluss",
+          "body": "Mit der Registrierung kommt ein kostenloser Nutzungsvertrag zustande. Ein kostenpflichtiges Modell schließt du ab, indem du einen Tarif auswählst, die Bestellübersicht prüfst, die erforderlichen Erklärungen abgibst und den Zahlungsvorgang abschließt. Vor Abschluss werden wesentliche Informationen wie Preis, Laufzeit, Leistungsumfang, Verlängerung und Kündigungsmöglichkeit angezeigt.\n\nFür digitale Inhalte kann der Zugriff unmittelbar nach Vertragsschluss beginnen, wenn du dem ausdrücklich zustimmst. Soweit gesetzlich erforderlich, wirst du darauf hingewiesen, dass ein Widerrufsrecht bei sofortigem Beginn und vollständiger Bereitstellung digitaler Inhalte vorzeitig erlöschen kann."
+        },
+        {
+          "heading": "5 · Preise, Zahlung und bezahlte Modelle",
+          "body": "Es gelten die zum Zeitpunkt der Bestellung angezeigten Preise inklusive gesetzlicher Umsatzsteuer, sofern diese ausgewiesen wird. Die Zahlung erfolgt über den eingebundenen Zahlungsdienstleister und die dort angebotenen Zahlungsarten. Wir speichern keine vollständigen Kartendaten.\n\nKostenpflichtige Modelle können monatlich, jährlich oder als einmalige digitale Leistung angeboten werden. Jahresmodelle werden grundsätzlich im Voraus abgerechnet. Rabattaktionen, Launch-Angebote oder Testphasen gelten nur zu den jeweils angegebenen Bedingungen. Ein kostenloser Zugang kann funktional begrenzt sein; Premium soll zusätzliche Tiefe schaffen, nicht künstlichen Druck."
+        },
+        {
+          "heading": "6 · Laufzeit, Verlängerung und Kündigung",
+          "body": "Abonnements laufen für die gewählte Periode und verlängern sich um die angezeigte Folgeperiode, sofern sie nicht rechtzeitig gekündigt werden. Du kannst laufende Verbraucher-Abonnements jederzeit über den Kündigungsbutton im Profil beenden. Die Kündigung wirkt zum Ende der bereits bezahlten Periode, soweit zwingendes Recht nichts anderes vorsieht.\n\nNach der Kündigung kann der Zugriff auf Premium-Funktionen am Periodenende entfallen. Bereits erstellte Inhalte können je nach Tarif, technischer Umsetzung und gesetzlicher Pflicht weiter einsehbar, exportierbar oder löschbar bleiben. Details hierzu müssen im Produkt klar angezeigt werden."
+        },
+        {
+          "heading": "7 · Widerrufsrecht",
+          "body": "Verbraucherinnen und Verbraucher haben ein gesetzliches Widerrufsrecht. Einzelheiten, Fristen und das Muster-Widerrufsformular findest du in unserer Widerrufsbelehrung.\n\nBei digitalen Inhalten oder digitalen Dienstleistungen kann das Widerrufsrecht unter den gesetzlichen Voraussetzungen vorzeitig erlöschen, wenn du ausdrücklich zustimmst, dass wir vor Ablauf der Widerrufsfrist mit der Leistung beginnen, und du bestätigst, dass du den möglichen Verlust des Widerrufsrechts kennst. Diese Erklärung darf nicht versteckt erfolgen und muss vor dem Kauf verständlich angezeigt werden."
+        },
+        {
+          "heading": "8 · Nutzerpflichten und faire Nutzung",
+          "body": "Du bist verpflichtet, deine Zugangsdaten vertraulich zu behandeln und dein Konto nicht missbräuchlich zu nutzen. Es ist nicht erlaubt, Hermetia automatisiert auszulesen, Sicherheitsmechanismen zu umgehen, rechtswidrige Inhalte einzustellen, fremde Rechte zu verletzen oder Profile anderer Personen ohne geeignete Grundlage zu erstellen.\n\nFür Beziehungs- und Resonanzfunktionen gilt besondere Sorgfalt. Wenn Daten anderer Menschen eingegeben werden, muss dies rechtlich und ethisch verantwortbar sein. Hermetia darf nicht zur heimlichen Bewertung, Manipulation oder Kontrolle anderer Personen genutzt werden."
+        },
+        {
+          "heading": "9 · AI-Inhalte und Kennzeichnung",
+          "body": "Teile der Inhalte können mithilfe von AI formuliert werden. AI-gestützte Inhalte werden nach Maßgabe der anwendbaren Transparenzpflichten gekennzeichnet. Die Berechnung von Profilmerkmalen, die Konvergenzlogik und die sprachliche Formulierung sollen getrennt behandelt werden.\n\nAI-Ausgaben können unvollständig, missverständlich oder nicht passend sein. Sie sind eine Einladung zur Reflexion und keine objektive Wahrheit. Wenn ein Inhalt nicht zu dir passt, darfst du ihn verwerfen. Weitere Informationen findest du auf der Seite KI-Transparenz."
+        },
+        {
+          "heading": "10 · Rechte an Inhalten und Nutzungsrechte",
+          "body": "Die Website, Texte, Grafiken, Strukturen, Marken, Designs, Systematisierungen und Softwarebestandteile von Hermetia sind geschützt. Du erhältst ein einfaches, nicht übertragbares Nutzungsrecht für die persönliche Nutzung innerhalb des vereinbarten Leistungsumfangs.\n\nVon dir eingegebene Inhalte wie Journaltexte oder Reflexionsantworten bleiben deine Inhalte. Du räumst uns nur die Rechte ein, die notwendig sind, um die gewählte Funktion bereitzustellen, Inhalte zu speichern, anzuzeigen, zu verarbeiten, zu exportieren oder AI-gestützt für deinen Nutzungskontext zu formulieren. Eine Weitergabe persönlicher Profilinhalte zu Werbezwecken erfolgt nicht."
+        },
+        {
+          "heading": "11 · Verfügbarkeit und Weiterentwicklung",
+          "body": "Wir bemühen uns um eine stabile Verfügbarkeit, können aber keine unterbrechungsfreie Erreichbarkeit garantieren. Wartung, Sicherheitsupdates, technische Störungen, Änderungen bei Dienstleistern oder höhere Gewalt können den Zugriff zeitweise einschränken.\n\nHermetia befindet sich in einer aktiven Produktentwicklung. Funktionen können weiterentwickelt, verbessert, umbenannt, ergänzt oder ersetzt werden, sofern der vereinbarte Kernnutzen kostenpflichtiger Leistungen nicht unangemessen beeinträchtigt wird. Wesentliche Änderungen werden transparent kommuniziert."
+        },
+        {
+          "heading": "12 · Mindestalter",
+          "body": "Die Nutzung setzt grundsätzlich ein Mindestalter von 16 Jahren voraus. Kostenpflichtige Modelle setzen ein Mindestalter von 18 Jahren oder die wirksame Zustimmung gesetzlicher Vertreter voraus.\n\nHermetia richtet sich nicht an Kinder. Wenn künftig Funktionen für Familien, Jugendliche oder besonders vulnerable Gruppen geplant werden, braucht es gesonderte Schutz-, Einwilligungs- und Alterskonzepte."
+        },
+        {
+          "heading": "13 · Sperrung und Beendigung",
+          "body": "Wir können Konten vorübergehend sperren oder Verträge aus wichtigem Grund beenden, wenn Nutzerpflichten erheblich verletzt werden, Zahlungen ausbleiben, Sicherheitsrisiken entstehen oder das Angebot rechtswidrig genutzt wird. Vor einer dauerhaften Sperrung berücksichtigen wir die Umstände des Einzelfalls und geben, soweit möglich und zumutbar, Gelegenheit zur Klärung.\n\nDein Recht zur ordentlichen Kündigung und deine gesetzlichen Rechte bleiben unberührt."
+        },
+        {
+          "heading": "14 · Haftung",
+          "body": "Wir haften unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei Verletzung von Leben, Körper und Gesundheit. Bei leicht fahrlässiger Verletzung wesentlicher Vertragspflichten haften wir begrenzt auf den vertragstypischen, vorhersehbaren Schaden. Wesentliche Vertragspflichten sind Pflichten, deren Erfüllung die ordnungsgemäße Durchführung des Vertrags überhaupt erst ermöglicht und auf deren Einhaltung du regelmäßig vertrauen darfst.\n\nFür inhaltliche Entscheidungen, die du aufgrund von Reflexionsinhalten triffst, übernimmst du eigene Verantwortung. Zwingende gesetzliche Haftung, insbesondere nach Produkthaftungsrecht, bleibt unberührt."
+        },
+        {
+          "heading": "15 · Änderungen der AGB",
+          "body": "Wir können diese AGB aus sachlichem Grund ändern, etwa bei neuen Funktionen, geänderter Rechtslage, technischen Anpassungen, Sicherheitsanforderungen oder neuen Zahlungs- und Tarifmodellen. Über wesentliche Änderungen informieren wir mit angemessener Frist.\n\nSoweit eine Zustimmung erforderlich ist, holen wir diese ein. Soweit ein Widerspruchsmodell zulässig ist, weisen wir ausdrücklich auf Frist, Widerspruchsmöglichkeit und Folgen ausbleibenden Widerspruchs hin."
+        },
+        {
+          "heading": "16 · Schlussbestimmungen und finaler Review",
+          "body": "Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts. Zwingende Verbraucherschutzvorschriften des Staates, in dem du deinen gewöhnlichen Aufenthalt hast, bleiben unberührt. Sollte eine Bestimmung unwirksam sein, bleibt der übrige Vertrag wirksam.\n\nDiese AGB sind ein sorgfältiger Launch-Entwurf. Vor öffentlicher Freigabe müssen Anbieterangaben, Preislogik, Widerrufsprozess, Kündigungsbutton, digitale Inhalte, Verbraucherinformationen, Datenschutzverweise und EU-Sprachfassungen rechtlich final geprüft werden."
+        }
       ]
     },
     "widerruf": {
       "title": "Widerrufsbelehrung",
       "sections": [
-        { "heading": "1 · Widerrufsrecht", "body": "Wenn du Verbraucher:in bist, hast du grundsätzlich das Recht, binnen vierzehn Tagen ohne Angabe von Gründen einen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsschlusses.\n\nDiese Belehrung gilt für kostenpflichtige digitale Leistungen von Hermetia, soweit gesetzlich ein Widerrufsrecht besteht. Dazu können Abonnements, Premium-Funktionen, digitale Profilinhalte, ein Vollprofil-Buch als digitales Produkt oder andere digitale Zusatzleistungen gehören." },
-        { "heading": "2 · Ausübung des Widerrufs", "body": "Um dein Widerrufsrecht auszuüben, musst du uns ([Anbieter], [Anschrift], E-Mail: widerruf@hermetia.de) mittels einer eindeutigen Erklärung über deinen Entschluss informieren. Das kann zum Beispiel per E-Mail erfolgen. Du kannst dafür das untenstehende Muster-Widerrufsformular verwenden, vorgeschrieben ist das aber nicht.\n\nZur Wahrung der Frist genügt es, dass du die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absendest. Bitte nutze möglichst die E-Mail-Adresse, mit der du dein Hermetia-Konto erstellt hast, damit wir die Bestellung eindeutig zuordnen können." },
-        { "heading": "3 · Folgen des Widerrufs", "body": "Wenn du diesen Vertrag widerrufst, erstatten wir dir alle Zahlungen, die wir von dir erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag, an dem die Mitteilung über deinen Widerruf bei uns eingegangen ist. Für diese Rückzahlung verwenden wir grundsätzlich dasselbe Zahlungsmittel, das du bei der ursprünglichen Transaktion eingesetzt hast, sofern nichts anderes vereinbart wurde.\n\nFür die Rückzahlung berechnen wir keine Entgelte. Wenn eine Leistung bereits anteilig erbracht wurde und gesetzlich ein Wertersatz vorgesehen ist, kann dieser berücksichtigt werden. Die konkrete Anwendung muss vor dem Launch rechtlich final geprüft und mit dem Zahlungsprozess abgestimmt werden." },
-        { "heading": "4 · Digitale Inhalte und Sofortzugriff", "body": "Hermetia stellt digitale Inhalte und digitale Dienstleistungen bereit. Dazu gehören zum Beispiel Premium-Profile, AI-gestützte Deutungstexte, Tagesimpulse, Companion-Funktionen, Exportinhalte oder ein digitales Vollprofil-Buch. Viele dieser Inhalte können unmittelbar nach dem Kauf erzeugt oder freigeschaltet werden.\n\nDein Widerrufsrecht kann vorzeitig erlöschen, wenn wir mit der Bereitstellung digitaler Inhalte begonnen haben, nachdem du ausdrücklich zugestimmt hast, dass wir vor Ablauf der Widerrufsfrist beginnen, und du bestätigt hast, dass du dadurch dein Widerrufsrecht verlieren kannst. Diese Zustimmung muss im Bestellprozess klar und getrennt erfolgen." },
-        { "heading": "5 · Abonnements und laufende Verträge", "body": "Der Widerruf betrifft den ursprünglichen Vertragsschluss innerhalb der gesetzlichen Frist. Davon zu unterscheiden ist die Kündigung eines laufenden Abonnements. Ein Abo kannst du unabhängig vom Widerrufsrecht jederzeit über den Kündigungsbutton im Profil beenden. Die Kündigung wirkt grundsätzlich zum Ende der bereits bezahlten Laufzeit.\n\nWenn du ein Abonnement widerrufst, prüfen wir, ob und in welchem Umfang bereits digitale Leistungen bereitgestellt wurden und ob das Widerrufsrecht noch besteht. Wenn du ein Abonnement kündigst, bleibt die bezahlte Laufzeit in der Regel bestehen, sofern zwingendes Recht oder Kulanzregelungen nichts anderes vorsehen." },
-        { "heading": "6 · Kostenlose Nutzung und Upgrades", "body": "Für die kostenlose Nutzung von Hermetia fallen keine Zahlungen an, die im Rahmen eines Widerrufs erstattet werden müssten. Wenn du von einem kostenlosen Zugang auf ein bezahltes Modell wechselst, beginnt für den kostenpflichtigen Vertrag grundsätzlich eine eigene Widerrufsfrist, soweit das Widerrufsrecht nicht nach den gesetzlichen Regeln ausgeschlossen oder vorzeitig erloschen ist.\n\nLaunch-Angebote, Testphasen, Gutscheine oder vergünstigte Jahresmodelle müssen im Bestellprozess eindeutig beschrieben werden. Entscheidend ist, welche kostenpflichtige Leistung du tatsächlich buchst und wann die digitale Bereitstellung beginnt." },
-        { "heading": "7 · Muster-Widerrufsformular", "body": "(Wenn du den Vertrag widerrufen willst, kannst du dieses Formular verwenden und an uns senden.)\n\n— An [Anbieter], [Anschrift], widerruf@hermetia.de:\n— Hiermit widerrufe ich den von mir abgeschlossenen Vertrag über die folgende digitale Dienstleistung: Hermetia [Tarif / Produkt]\n— Bestellt am: __________\n— E-Mail-Adresse des Hermetia-Kontos: __________\n— Name der/des Verbraucher:in: __________\n— Anschrift: __________\n— Datum: __________\n— Unterschrift nur bei Mitteilung auf Papier: __________" },
-        { "heading": "8 · Finaler rechtlicher Hinweis", "body": "Diese Widerrufsbelehrung ist ein sorgfältiger Launch-Entwurf. Vor dem öffentlichen Start müssen Anbieterangaben, Bestellstrecke, Sofortzugriffs-Erklärung, Checkbox-Texte, Zahlungsprozess, E-Mail-Bestätigung, digitale Inhalte und Abo-Kündigung anwaltlich final geprüft werden.\n\nBesonders wichtig ist, dass Nutzerinnen und Nutzer vor dem Kauf klar verstehen, wann sie ein Widerrufsrecht haben, wann es bei digitalen Inhalten erlöschen kann und wie sich Widerruf und Kündigung unterscheiden." }
+        {
+          "heading": "1 · Widerrufsrecht",
+          "body": "Wenn du Verbraucher:in bist, hast du grundsätzlich das Recht, binnen vierzehn Tagen ohne Angabe von Gründen einen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsschlusses.\n\nDiese Belehrung gilt für kostenpflichtige digitale Leistungen von Hermetia, soweit gesetzlich ein Widerrufsrecht besteht. Dazu können Abonnements, Premium-Funktionen, digitale Profilinhalte, ein Vollprofil-Buch als digitales Produkt oder andere digitale Zusatzleistungen gehören."
+        },
+        {
+          "heading": "2 · Ausübung des Widerrufs",
+          "body": "Um dein Widerrufsrecht auszuüben, musst du uns ([Anbieter], [Anschrift], E-Mail: widerruf@hermetia.de) mittels einer eindeutigen Erklärung über deinen Entschluss informieren. Das kann zum Beispiel per E-Mail erfolgen. Du kannst dafür das untenstehende Muster-Widerrufsformular verwenden, vorgeschrieben ist das aber nicht.\n\nZur Wahrung der Frist genügt es, dass du die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absendest. Bitte nutze möglichst die E-Mail-Adresse, mit der du dein Hermetia-Konto erstellt hast, damit wir die Bestellung eindeutig zuordnen können."
+        },
+        {
+          "heading": "3 · Folgen des Widerrufs",
+          "body": "Wenn du diesen Vertrag widerrufst, erstatten wir dir alle Zahlungen, die wir von dir erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag, an dem die Mitteilung über deinen Widerruf bei uns eingegangen ist. Für diese Rückzahlung verwenden wir grundsätzlich dasselbe Zahlungsmittel, das du bei der ursprünglichen Transaktion eingesetzt hast, sofern nichts anderes vereinbart wurde.\n\nFür die Rückzahlung berechnen wir keine Entgelte. Wenn eine Leistung bereits anteilig erbracht wurde und gesetzlich ein Wertersatz vorgesehen ist, kann dieser berücksichtigt werden. Die konkrete Anwendung muss vor dem Launch rechtlich final geprüft und mit dem Zahlungsprozess abgestimmt werden."
+        },
+        {
+          "heading": "4 · Digitale Inhalte und Sofortzugriff",
+          "body": "Hermetia stellt digitale Inhalte und digitale Dienstleistungen bereit. Dazu gehören zum Beispiel Premium-Profile, AI-gestützte Deutungstexte, Tagesimpulse, Companion-Funktionen, Exportinhalte oder ein digitales Vollprofil-Buch. Viele dieser Inhalte können unmittelbar nach dem Kauf erzeugt oder freigeschaltet werden.\n\nDein Widerrufsrecht kann vorzeitig erlöschen, wenn wir mit der Bereitstellung digitaler Inhalte begonnen haben, nachdem du ausdrücklich zugestimmt hast, dass wir vor Ablauf der Widerrufsfrist beginnen, und du bestätigt hast, dass du dadurch dein Widerrufsrecht verlieren kannst. Diese Zustimmung muss im Bestellprozess klar und getrennt erfolgen."
+        },
+        {
+          "heading": "5 · Abonnements und laufende Verträge",
+          "body": "Der Widerruf betrifft den ursprünglichen Vertragsschluss innerhalb der gesetzlichen Frist. Davon zu unterscheiden ist die Kündigung eines laufenden Abonnements. Ein Abo kannst du unabhängig vom Widerrufsrecht jederzeit über den Kündigungsbutton im Profil beenden. Die Kündigung wirkt grundsätzlich zum Ende der bereits bezahlten Laufzeit.\n\nWenn du ein Abonnement widerrufst, prüfen wir, ob und in welchem Umfang bereits digitale Leistungen bereitgestellt wurden und ob das Widerrufsrecht noch besteht. Wenn du ein Abonnement kündigst, bleibt die bezahlte Laufzeit in der Regel bestehen, sofern zwingendes Recht oder Kulanzregelungen nichts anderes vorsehen."
+        },
+        {
+          "heading": "6 · Kostenlose Nutzung und Upgrades",
+          "body": "Für die kostenlose Nutzung von Hermetia fallen keine Zahlungen an, die im Rahmen eines Widerrufs erstattet werden müssten. Wenn du von einem kostenlosen Zugang auf ein bezahltes Modell wechselst, beginnt für den kostenpflichtigen Vertrag grundsätzlich eine eigene Widerrufsfrist, soweit das Widerrufsrecht nicht nach den gesetzlichen Regeln ausgeschlossen oder vorzeitig erloschen ist.\n\nLaunch-Angebote, Testphasen, Gutscheine oder vergünstigte Jahresmodelle müssen im Bestellprozess eindeutig beschrieben werden. Entscheidend ist, welche kostenpflichtige Leistung du tatsächlich buchst und wann die digitale Bereitstellung beginnt."
+        },
+        {
+          "heading": "7 · Muster-Widerrufsformular",
+          "body": "(Wenn du den Vertrag widerrufen willst, kannst du dieses Formular verwenden und an uns senden.)\n\n— An [Anbieter], [Anschrift], widerruf@hermetia.de:\n— Hiermit widerrufe ich den von mir abgeschlossenen Vertrag über die folgende digitale Dienstleistung: Hermetia [Tarif / Produkt]\n— Bestellt am: __________\n— E-Mail-Adresse des Hermetia-Kontos: __________\n— Name der/des Verbraucher:in: __________\n— Anschrift: __________\n— Datum: __________\n— Unterschrift nur bei Mitteilung auf Papier: __________"
+        },
+        {
+          "heading": "8 · Finaler rechtlicher Hinweis",
+          "body": "Diese Widerrufsbelehrung ist ein sorgfältiger Launch-Entwurf. Vor dem öffentlichen Start müssen Anbieterangaben, Bestellstrecke, Sofortzugriffs-Erklärung, Checkbox-Texte, Zahlungsprozess, E-Mail-Bestätigung, digitale Inhalte und Abo-Kündigung anwaltlich final geprüft werden.\n\nBesonders wichtig ist, dass Nutzerinnen und Nutzer vor dem Kauf klar verstehen, wann sie ein Widerrufsrecht haben, wann es bei digitalen Inhalten erlöschen kann und wie sich Widerruf und Kündigung unterscheiden."
+        }
       ]
     },
     "ki": {
       "title": "KI-Transparenz",
       "sections": [
-        { "heading": "Warum Hermetia KI-Transparenz offenlegt", "body": "Hermetia verbindet deterministische Berechnungen aus mehreren Deutungssystemen mit sprachlicher Aufbereitung durch AI. Diese Kombination kann sehr persönlich wirken, weil sie Themen wie Selbstbild, Beziehung, Lebensrhythmus, Resonanz und innere Muster berührt. Genau deshalb erklären wir offen, wo AI beteiligt ist, welche Daten sie verarbeitet, welche Grenzen gelten und welche Verantwortung beim Menschen bleibt.\n\nDie Transparenzseite ist Teil der rechtlichen und redaktionellen Grundstruktur der Website. Sie unterstützt die Anforderungen aus dem EU AI Act, insbesondere die Kennzeichnung AI-generierter oder AI-gestützter Inhalte, und sie soll Nutzerinnen und Nutzern eine klare Entscheidungsgrundlage geben, bevor sie ein Profil starten, Premium-Inhalte kaufen oder mit Companion, Journaling und Vollprofil-Buch arbeiten." },
-        { "heading": "Wo AI in Hermetia eingesetzt wird", "body": "AI wird in Hermetia vor allem für Formulierung, Verdichtung und Dialog eingesetzt. Dazu gehören persönliche Deutungstexte, Ebenen-Texte, Tagesimpulse, erklärende Abschnitte im Vollprofil-Buch, Reflexionsfragen, Companion-Antworten und redaktionelle Varianten für unterschiedliche Nutzungsfälle. Die AI hilft also dabei, berechnete Muster verständlich, ruhig und anschlussfähig zu formulieren.\n\nDie AI entscheidet nicht, welches System recht hat, welche Aussage wahr ist oder welche Zukunft eintreten wird. Sie schreibt aus vorbereiteten Kontexten, Regelwerken und berechneten Profilmerkmalen heraus. Wenn eine Seite, ein Profilbereich oder ein Dialog AI-gestützt formuliert wurde, soll dies erkennbar sein. Hermetia nutzt AI nicht als unsichtbare Autorität, sondern als sprachliches Werkzeug innerhalb klarer Grenzen." },
-        { "heading": "Berechnung, Konvergenz und Formulierung sind getrennt", "body": "Ein wichtiger Schutzmechanismus von Hermetia ist die Trennung von drei Ebenen: Berechnung, Konvergenz und Formulierung. Die Berechnung ordnet Eingaben wie Geburtsdaten, Systemparameter und optionale Kontextangaben nach definierten Regeln aus den eingebundenen Systemen ein. Die Konvergenz-Engine prüft anschließend, welche Motive über mehrere Systeme hinweg wiederkehren, welche Aussagen stark, mittel oder vorsichtig zu behandeln sind und wo Widersprüche sichtbar gemacht werden sollten.\n\nErst danach kommt AI als Formulierungsebene hinzu. Sie erhält nicht den Auftrag, eine neue Wahrheit zu erfinden, sondern die bereits strukturierten Ergebnisse verständlich auszudrücken. Diese Trennung reduziert das Risiko, dass ein Sprachmodell scheinbar sichere Aussagen erzeugt, die fachlich oder methodisch nicht aus den zugrunde liegenden Systemen ableitbar sind." },
-        { "heading": "Welche Daten AI verarbeitet", "body": "Das AI-Modell erhält nur die Informationen, die für den jeweiligen Inhalt notwendig sind. Je nach Funktion können das berechnete Profilmarker, Themencluster, Sicherheitsstufen, freigegebene Journalnotizen, ausgewählte Companion-Kontexte oder bereits verdichtete Profilabschnitte sein. Hermetia verfolgt dabei das Prinzip der Datenminimierung: so viel Kontext wie nötig, so wenig Rohdaten wie möglich.\n\nDie AI soll nicht unnötig mit vollständigen Klarnamen, direkten Kontaktdaten, Zahlungsinformationen oder frei verfügbaren Rohprofilen arbeiten. Besonders sensible Inhalte wie Journaltexte oder Angaben zu Beziehungen werden nur dann in AI-gestützte Funktionen einbezogen, wenn sie für die Funktion erforderlich und vom Nutzungskontext gedeckt sind. Ziel ist ein hilfreicher persönlicher Dialog, ohne aus jedem Detail automatisch Trainings- oder Analysekontext zu machen." },
-        { "heading": "Was AI ausdrücklich nicht tut", "body": "AI-Inhalte in Hermetia sind keine Diagnose, keine Therapie, keine medizinische Beratung, keine psychologische Behandlung, keine Rechtsberatung, keine Finanzberatung und keine verbindliche Lebensentscheidung. Hermetia sagt nicht, ob eine Beziehung geführt oder beendet werden soll, ob eine Person eine Krankheit hat, ob ein Beruf gewählt werden muss oder ob ein finanzieller Schritt richtig ist.\n\nDie Inhalte dienen der Selbstreflexion. Sie können Worte für Muster geben, Fragen öffnen und innere Beobachtung erleichtern. Sie ersetzen aber keine qualifizierte Fachperson und keine eigene Verantwortung. Wenn Inhalte emotional stark wirken, unerwartet belastend sind oder konkrete Risiken berühren, sollte externe professionelle Hilfe Vorrang haben." },
-        { "heading": "Companion, Journaling und persönliche Dialoge", "body": "Der Hermetia Companion ist als ruhiger AI-Begleiter geplant, der innerhalb des eigenen Profils antwortet. Er soll keine allgemeine Chat-AI sein, sondern auf freigegebene Hermetia-Kontexte zugreifen: Profilbuch, Tagesimpulse, Journaling-Reflexionen, Beziehungsdeutungen und persönliche Entwicklungsfelder. Dadurch kann er anschlussfähiger antworten als ein allgemeines Sprachmodell.\n\nGleichzeitig braucht diese Funktion klare Grenzen. Der Companion soll transparent machen, aus welcher Quelle eine Antwort abgeleitet wird, ob eine Aussage stark oder vorsichtig formuliert ist und wann er nicht weiterhelfen sollte. Journaltexte dürfen nicht automatisch grenzenlos genutzt werden. Nutzerinnen und Nutzer müssen verstehen können, welcher Kontext verwendet wird und wie sie sensible Inhalte kontrollieren, löschen oder nicht freigeben." },
-        { "heading": "Premium-Inhalte und faire Conversion", "body": "AI kann Premium-Inhalte besser lesbar, persönlicher und kontinuierlicher machen. Ein Vollprofil-Buch, tiefere Tagesimpulse oder Companion-Dialoge erzeugen Wert, weil sie berechnete Muster in längere, differenzierte Sprache übersetzen. Trotzdem darf AI nicht eingesetzt werden, um künstlichen Druck aufzubauen, Angst zu erzeugen oder Nutzerinnen und Nutzer in ein bezahltes Modell zu drängen.\n\nHermetia soll neugierig machen und zur Anmeldung einladen, aber die Entscheidung für ein bezahltes Modell muss nachvollziehbar bleiben. Gute Conversion entsteht durch Klarheit, Nutzen, Vertrauen und echte Tiefe, nicht durch manipulative Knappheit oder scheinbar absolute Aussagen. Deshalb müssen Kaufargumente erklären, was Premium erweitert: Umfang, Kontext, Verlauf, Dialogtiefe, Export, Vergleich und langfristige Arbeit mit dem Profil." },
-        { "heading": "Urheberrecht, Quellen und eigene Sprache", "body": "Die AI-Texte von Hermetia müssen in eigener Sprache entstehen. Sie dürfen keine geschützten Werke, keine kopierten Systembeschreibungen, keine langen fremden Textpassagen und keine markenrechtlich problematischen Formulierungen übernehmen. Wenn Deutungssysteme erwähnt werden, geschieht dies beschreibend, vergleichend und mit eigenständiger redaktioneller Einordnung.\n\nFür Bilder, Grafiken und Modelle gilt dasselbe Prinzip: Nur eigenes Material, lizenzierte Assets, selbst erzeugte Grafiken oder eindeutig freigegebene Projektmaterialien dürfen produktiv verwendet werden. Vor dem öffentlichen Launch sollte zusätzlich geprüft werden, ob verwendete Begriffe, Produktnamen, Systemnamen, Bildrechte und Markenhinweise rechtlich sauber eingeordnet sind." },
-        { "heading": "Menschliche Aufsicht und redaktionelle Kontrolle", "body": "AI-Ausgaben werden nicht als unfehlbar betrachtet. Prompts, Systemregeln, Sicherheitsgrenzen, Tonalität und Inhaltslogik müssen redaktionell gepflegt werden. Besonders sensible Themen wie Gesundheit, Beziehung, Krise, Trauer, Sexualität, Minderjährige, finanzielle Entscheidungen oder rechtliche Fragen brauchen zusätzliche Schranken und klare Hinweise.\n\nVor dem Launch sollten zentrale AI-Textmuster, Onboarding-Strecken, Premium-Argumente und Companion-Antwortlogiken durch Fachreview geprüft werden. Das betrifft nicht nur rechtliche Risiken, sondern auch Tonalität, Verständlichkeit, ethische Wirkung und die Frage, ob Nutzerinnen und Nutzer ausreichend erkennen, was Inspiration ist und was nicht." },
-        { "heading": "Aktueller Launch-Status", "body": "Während der Vorbereitungsphase bleibt die Website bewusst auf noindex/nofollow, weil die URL noch umziehen und der gesamte Content vor dem finalen Start weiter geprüft werden soll. Diese Einstellung verhindert, dass unfertige Inhalte frühzeitig in Suchmaschinen aufgebaut werden. Nach Domainumzug, redaktioneller Endabnahme, rechtlichem Review und technischer Qualitätssicherung kann die Indexierung gezielt geöffnet werden.\n\nDie AI-Transparenz wird mit dem Produkt wachsen. Wenn neue Funktionen wie erweiterte Companion-Gespräche, Beziehungsmodule, Profilverfeinerung, Export oder zusätzliche EU-Sprachfassungen live gehen, muss diese Seite entsprechend aktualisiert werden." }
+        {
+          "heading": "Warum Hermetia KI-Transparenz offenlegt",
+          "body": "Hermetia verbindet deterministische Berechnungen aus mehreren Deutungssystemen mit sprachlicher Aufbereitung durch AI. Diese Kombination kann sehr persönlich wirken, weil sie Themen wie Selbstbild, Beziehung, Lebensrhythmus, Resonanz und innere Muster berührt. Genau deshalb erklären wir offen, wo AI beteiligt ist, welche Daten sie verarbeitet, welche Grenzen gelten und welche Verantwortung beim Menschen bleibt.\n\nDie Transparenzseite ist Teil der rechtlichen und redaktionellen Grundstruktur der Website. Sie unterstützt die Anforderungen aus dem EU AI Act, insbesondere die Kennzeichnung AI-generierter oder AI-gestützter Inhalte, und sie soll Nutzerinnen und Nutzern eine klare Entscheidungsgrundlage geben, bevor sie ein Profil starten, Premium-Inhalte kaufen oder mit Companion, Journaling und Vollprofil-Buch arbeiten."
+        },
+        {
+          "heading": "Wo AI in Hermetia eingesetzt wird",
+          "body": "AI wird in Hermetia vor allem für Formulierung, Verdichtung und Dialog eingesetzt. Dazu gehören persönliche Deutungstexte, Ebenen-Texte, Tagesimpulse, erklärende Abschnitte im Vollprofil-Buch, Reflexionsfragen, Companion-Antworten und redaktionelle Varianten für unterschiedliche Nutzungsfälle. Die AI hilft also dabei, berechnete Muster verständlich, ruhig und anschlussfähig zu formulieren.\n\nDie AI entscheidet nicht, welches System recht hat, welche Aussage wahr ist oder welche Zukunft eintreten wird. Sie schreibt aus vorbereiteten Kontexten, Regelwerken und berechneten Profilmerkmalen heraus. Wenn eine Seite, ein Profilbereich oder ein Dialog AI-gestützt formuliert wurde, soll dies erkennbar sein. Hermetia nutzt AI nicht als unsichtbare Autorität, sondern als sprachliches Werkzeug innerhalb klarer Grenzen."
+        },
+        {
+          "heading": "Berechnung, Konvergenz und Formulierung sind getrennt",
+          "body": "Ein wichtiger Schutzmechanismus von Hermetia ist die Trennung von drei Ebenen: Berechnung, Konvergenz und Formulierung. Die Berechnung ordnet Eingaben wie Geburtsdaten, Systemparameter und optionale Kontextangaben nach definierten Regeln aus den eingebundenen Systemen ein. Die Konvergenz-Engine prüft anschließend, welche Motive über mehrere Systeme hinweg wiederkehren, welche Aussagen stark, mittel oder vorsichtig zu behandeln sind und wo Widersprüche sichtbar gemacht werden sollten.\n\nErst danach kommt AI als Formulierungsebene hinzu. Sie erhält nicht den Auftrag, eine neue Wahrheit zu erfinden, sondern die bereits strukturierten Ergebnisse verständlich auszudrücken. Diese Trennung reduziert das Risiko, dass ein Sprachmodell scheinbar sichere Aussagen erzeugt, die fachlich oder methodisch nicht aus den zugrunde liegenden Systemen ableitbar sind."
+        },
+        {
+          "heading": "Welche Daten AI verarbeitet",
+          "body": "Das AI-Modell erhält nur die Informationen, die für den jeweiligen Inhalt notwendig sind. Je nach Funktion können das berechnete Profilmarker, Themencluster, Sicherheitsstufen, freigegebene Journalnotizen, ausgewählte Companion-Kontexte oder bereits verdichtete Profilabschnitte sein. Hermetia verfolgt dabei das Prinzip der Datenminimierung: so viel Kontext wie nötig, so wenig Rohdaten wie möglich.\n\nDie AI soll nicht unnötig mit vollständigen Klarnamen, direkten Kontaktdaten, Zahlungsinformationen oder frei verfügbaren Rohprofilen arbeiten. Besonders sensible Inhalte wie Journaltexte oder Angaben zu Beziehungen werden nur dann in AI-gestützte Funktionen einbezogen, wenn sie für die Funktion erforderlich und vom Nutzungskontext gedeckt sind. Ziel ist ein hilfreicher persönlicher Dialog, ohne aus jedem Detail automatisch Trainings- oder Analysekontext zu machen."
+        },
+        {
+          "heading": "Was AI ausdrücklich nicht tut",
+          "body": "AI-Inhalte in Hermetia sind keine Diagnose, keine Therapie, keine medizinische Beratung, keine psychologische Behandlung, keine Rechtsberatung, keine Finanzberatung und keine verbindliche Lebensentscheidung. Hermetia sagt nicht, ob eine Beziehung geführt oder beendet werden soll, ob eine Person eine Krankheit hat, ob ein Beruf gewählt werden muss oder ob ein finanzieller Schritt richtig ist.\n\nDie Inhalte dienen der Selbstreflexion. Sie können Worte für Muster geben, Fragen öffnen und innere Beobachtung erleichtern. Sie ersetzen aber keine qualifizierte Fachperson und keine eigene Verantwortung. Wenn Inhalte emotional stark wirken, unerwartet belastend sind oder konkrete Risiken berühren, sollte externe professionelle Hilfe Vorrang haben."
+        },
+        {
+          "heading": "Companion, Journaling und persönliche Dialoge",
+          "body": "Der Hermetia Companion ist als ruhiger AI-Begleiter geplant, der innerhalb des eigenen Profils antwortet. Er soll keine allgemeine Chat-AI sein, sondern auf freigegebene Hermetia-Kontexte zugreifen: Profilbuch, Tagesimpulse, Journaling-Reflexionen, Beziehungsdeutungen und persönliche Entwicklungsfelder. Dadurch kann er anschlussfähiger antworten als ein allgemeines Sprachmodell.\n\nGleichzeitig braucht diese Funktion klare Grenzen. Der Companion soll transparent machen, aus welcher Quelle eine Antwort abgeleitet wird, ob eine Aussage stark oder vorsichtig formuliert ist und wann er nicht weiterhelfen sollte. Journaltexte dürfen nicht automatisch grenzenlos genutzt werden. Nutzerinnen und Nutzer müssen verstehen können, welcher Kontext verwendet wird und wie sie sensible Inhalte kontrollieren, löschen oder nicht freigeben."
+        },
+        {
+          "heading": "Premium-Inhalte und faire Conversion",
+          "body": "AI kann Premium-Inhalte besser lesbar, persönlicher und kontinuierlicher machen. Ein Vollprofil-Buch, tiefere Tagesimpulse oder Companion-Dialoge erzeugen Wert, weil sie berechnete Muster in längere, differenzierte Sprache übersetzen. Trotzdem darf AI nicht eingesetzt werden, um künstlichen Druck aufzubauen, Angst zu erzeugen oder Nutzerinnen und Nutzer in ein bezahltes Modell zu drängen.\n\nHermetia soll neugierig machen und zur Anmeldung einladen, aber die Entscheidung für ein bezahltes Modell muss nachvollziehbar bleiben. Gute Conversion entsteht durch Klarheit, Nutzen, Vertrauen und echte Tiefe, nicht durch manipulative Knappheit oder scheinbar absolute Aussagen. Deshalb müssen Kaufargumente erklären, was Premium erweitert: Umfang, Kontext, Verlauf, Dialogtiefe, Export, Vergleich und langfristige Arbeit mit dem Profil."
+        },
+        {
+          "heading": "Urheberrecht, Quellen und eigene Sprache",
+          "body": "Die AI-Texte von Hermetia müssen in eigener Sprache entstehen. Sie dürfen keine geschützten Werke, keine kopierten Systembeschreibungen, keine langen fremden Textpassagen und keine markenrechtlich problematischen Formulierungen übernehmen. Wenn Deutungssysteme erwähnt werden, geschieht dies beschreibend, vergleichend und mit eigenständiger redaktioneller Einordnung.\n\nFür Bilder, Grafiken und Modelle gilt dasselbe Prinzip: Nur eigenes Material, lizenzierte Assets, selbst erzeugte Grafiken oder eindeutig freigegebene Projektmaterialien dürfen produktiv verwendet werden. Vor dem öffentlichen Launch sollte zusätzlich geprüft werden, ob verwendete Begriffe, Produktnamen, Systemnamen, Bildrechte und Markenhinweise rechtlich sauber eingeordnet sind."
+        },
+        {
+          "heading": "Menschliche Aufsicht und redaktionelle Kontrolle",
+          "body": "AI-Ausgaben werden nicht als unfehlbar betrachtet. Prompts, Systemregeln, Sicherheitsgrenzen, Tonalität und Inhaltslogik müssen redaktionell gepflegt werden. Besonders sensible Themen wie Gesundheit, Beziehung, Krise, Trauer, Sexualität, Minderjährige, finanzielle Entscheidungen oder rechtliche Fragen brauchen zusätzliche Schranken und klare Hinweise.\n\nVor dem Launch sollten zentrale AI-Textmuster, Onboarding-Strecken, Premium-Argumente und Companion-Antwortlogiken durch Fachreview geprüft werden. Das betrifft nicht nur rechtliche Risiken, sondern auch Tonalität, Verständlichkeit, ethische Wirkung und die Frage, ob Nutzerinnen und Nutzer ausreichend erkennen, was Inspiration ist und was nicht."
+        },
+        {
+          "heading": "Aktueller Launch-Status",
+          "body": "Während der Vorbereitungsphase bleibt die Website bewusst auf noindex/nofollow, weil die URL noch umziehen und der gesamte Content vor dem finalen Start weiter geprüft werden soll. Diese Einstellung verhindert, dass unfertige Inhalte frühzeitig in Suchmaschinen aufgebaut werden. Nach Domainumzug, redaktioneller Endabnahme, rechtlichem Review und technischer Qualitätssicherung kann die Indexierung gezielt geöffnet werden.\n\nDie AI-Transparenz wird mit dem Produkt wachsen. Wenn neue Funktionen wie erweiterte Companion-Gespräche, Beziehungsmodule, Profilverfeinerung, Export oder zusätzliche EU-Sprachfassungen live gehen, muss diese Seite entsprechend aktualisiert werden."
+        }
       ]
     }
   }
 }
-

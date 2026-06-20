@@ -83,7 +83,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* Methodik */}
-      <section id="methodik" className="py-20">
+      <section id="methodik" className="scroll-mt-[72px] py-20">
         <div className="wrap">
           <div className="mb-12 text-center">
             <span className="kicker">{h.method.kicker}</span>
