@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-creme text-tinte font-sans antialiased;
+    @apply bg-creme text-tinte font-sans antialiased overflow-x-hidden;
     background-image:
       radial-gradient(1200px 600px at 80% -10%, rgba(205, 180, 219, 0.25), transparent 60%),
       radial-gradient(900px 500px at -10% 10%, rgba(156, 174, 139, 0.18), transparent 55%);
