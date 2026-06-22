@@ -71,18 +71,34 @@ function shouldTranslate(value) {
   if (text.length < 3) return false;
   if (text === "Hermetia" || text === "AI" || text === "FAQ" || text === "Premium") return false;
   if (/^[a-z]{2}$/i.test(text)) return false;
-  if (/^https?:\/\//i.test(text) || text.startsWith("/") || text.startsWith("#") || text.includes("@")) return false;
+  if (/^https?:\/\//i.test(text) || text.startsWith("/") || text.startsWith("#")) return false;
+  // A bare email/handle is not translatable, but prose that merely *contains* an address is
+  // (e.g. the Impressum/Datenschutz/Widerruf legal blocks). Skip only when, after removing
+  // contact addresses, there is no real sentence left.
+  if (text.includes("@")) {
+    const withoutContacts = text.replace(/\b[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}\b/g, " ").replace(/\s+/g, " ").trim();
+    if (!/[A-Za-zÄÖÜäöüß].*\s.*[A-Za-zÄÖÜäöüß]/.test(withoutContacts)) return false;
+  }
   if (/^[\d\s.,:;€%/+()[\]\-–—|·→✓]+$/.test(text)) return false;
   if (/^\{\{.*\}\}$/.test(text)) return false;
   return /[A-Za-zÄÖÜäöüß]/.test(text);
 }
+
+// Maps a normalized source string to its raw (newline-bearing) form, so multi-line
+// `whitespace-pre-line` blocks can also be matched inside RSC (.txt) payloads, which
+// store them with literal "\n" rather than collapsed whitespace.
+const rawByNormalized = new Map();
 
 function collectTexts(html) {
   const texts = new Set();
   const withoutScripts = html.replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<style[\s\S]*?<\/style>/gi, " ");
   withoutScripts.replace(/>([^<>]+)</g, (_, value) => {
     const text = normalizedText(value);
-    if (shouldTranslate(text)) texts.add(text);
+    if (shouldTranslate(text)) {
+      texts.add(text);
+      const raw = decodeHtml(value).trim();
+      if (raw !== text) rawByNormalized.set(text, raw);
+    }
     return _;
   });
   withoutScripts.replace(/\b(alt|title|aria-label|content)="([^"]*)"/gi, (_, attr, value) => {
@@ -186,15 +202,22 @@ function createJsStringReplacers(cache, locale, strings, embeddedInJsString = fa
     "summary_large_image",
   ]);
   const replacements = new Map();
-  for (const source of strings) {
-    if (skipped.has(source)) continue;
-    const target = cache[locale]?.[source];
-    if (!target || target === source) continue;
-    const sourceJson = JSON.stringify(source);
+  const register = (sourceText, target) => {
+    const sourceJson = JSON.stringify(sourceText);
     const targetJson = JSON.stringify(target);
     const sourceJs = embeddedInJsString ? JSON.stringify(sourceJson).slice(1, -1) : sourceJson;
     const targetJs = embeddedInJsString ? JSON.stringify(targetJson).slice(1, -1) : targetJson;
     if (sourceJs) replacements.set(sourceJs, targetJs);
+  };
+  for (const source of strings) {
+    if (skipped.has(source)) continue;
+    const target = cache[locale]?.[source];
+    if (!target || target === source) continue;
+    register(source, target);
+    // Multi-line blocks appear in RSC payloads with literal newlines, not collapsed
+    // whitespace — register that raw variant too so the payload gets translated.
+    const raw = rawByNormalized.get(source);
+    if (raw && raw !== source) register(raw, target);
   }
 
   const keys = [...replacements.keys()].sort((a, b) => b.length - a.length);

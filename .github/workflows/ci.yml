@@ -35,3 +35,6 @@ jobs:
 
       - name: Check i18n export scope
         run: npm run check:i18n:export
+
+      - name: Check for untranslated German leakage
+        run: npm run check:i18n:untranslated

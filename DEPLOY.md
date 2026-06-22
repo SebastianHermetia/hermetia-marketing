@@ -13,7 +13,7 @@ Statischer Export (`output: "export"` → `/out`), deployt über **Vercel** auf 
 | **Organisation** | Hermetia (GitHub Org) |
 | **Repo** | `github.com/SebastianHermetia/hermetia-marketing` (muss **public** sein) |
 | **Vercel-Framework** | `Other` (**nicht** "Next.js") — statischer Export erzeugt kein `.next/routes-manifest.json` |
-| **Build-Command** | `npm run build` |
+| **Build-Command** | `npm run build:i18n:cached` ⚠️ **nicht** `npm run build` (sonst keine Übersetzungen) |
 | **Output-Verzeichnis** | `out` |
 | **Deploy-Trigger** | Auto-deploy bei Push auf `main` |
 | **Custom Domain** | `hermetiastart.digital-expert.de` |
@@ -61,8 +61,9 @@ Sensible Daten (Secrets, API-Keys) gehören ausschließlich in Vercel ENV, nicht
 # lokal entwickeln
 npm run dev
 
-# vor dem Push: Build testen
-npm run build   # → /out/ enthält die statischen Dateien
+# vor dem Push: Build testen (inkl. i18n-Übersetzer + Leak-Check)
+npm run build:i18n:cached   # → /out/ enthält die statischen, übersetzten Dateien
+npm run check:i18n:untranslated   # schlägt fehl, wenn deutscher Text in andere Sprachen leakt
 
 # Push → Vercel baut und deployt automatisch (~1–2 Min)
 git add -p
