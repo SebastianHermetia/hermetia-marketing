@@ -29,7 +29,12 @@ function withMarketingParams(url: string, options: MarketingLinkOptions = {}): s
 }
 
 export function startUrl(locale: Locale, options: MarketingLinkOptions = {}): string {
-  return withMarketingParams(`${appUrl}/onboarding?lang=${locale}`, options);
+  return withMarketingParams(`${siteRelativeUrl(localePath(locale, paths.betaAccess))}`, options);
+}
+
+function siteRelativeUrl(path: string): string {
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hermetia.digital-expert.de";
+  return `${base.replace(/\/$/, "")}${path}`;
 }
 export function loginUrl(locale: Locale, options: MarketingLinkOptions = {}): string {
   return withMarketingParams(`${appUrl}/login?lang=${locale}`, {
@@ -59,6 +64,7 @@ export const paths = {
   freePremium: "/kostenlos-vs-premium",
   datenSicherheit: "/daten-und-sicherheit",
   onboarding: "/profil-starten",
+  betaAccess: "/beta-zugang",
   about: "/ueber-hermetia",
   sprachen: "/sprachen",
   freigaben: "/freigaben",
