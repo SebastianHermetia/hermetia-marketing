@@ -89,7 +89,7 @@ const riskControls = [
   },
   {
     title: "Launch und Indexierung",
-    text: "Bis Domain, Rechtstexte und Freigaben final sind, schützt noindex/nofollow vor verfrühter Indexierung. Danach kann die Website gezielt für Suchmaschinen geöffnet werden.",
+    text: "Die öffentliche Marketingseite ist für den Public Launch indexierbar. Die App bleibt getrennt kontrolliert, damit persönliche Onboarding- und Profilbereiche nicht als Marketingseiten erscheinen.",
   },
 ];
 
@@ -123,8 +123,8 @@ const faq = [
     a: "Weil dabei Daten und Ableitungen über mindestens zwei Personen entstehen können. Deshalb braucht Hermetia klare Einwilligung der betroffenen Person und darf keine heimliche Auswertung normalisieren.",
   },
   {
-    q: "Warum bleibt die Website vor dem Launch auf noindex/nofollow?",
-    a: "Solange Domainumzug, finale Rechtstexte und externe Legal/IP-Freigabe nicht abgeschlossen sind, ist noindex/nofollow ein sinnvoller Schutz vor verfrühter Indexierung.",
+    q: "Warum ist die Marketingseite indexierbar, die App aber kontrolliert?",
+    a: "Die Website soll Methode, Grenzen und Beta-Zugang öffentlich erklären. Persönliche App-Flows, Onboarding und Profilbereiche bleiben getrennt geschützt und werden nicht als Marketinginhalte behandelt.",
   },
 ];
 
@@ -251,7 +251,7 @@ const dataSecurityCopy = {
       { title: "Relationship data", text: "Profiles of other people need special protection. Relationship readings therefore require consent flows, separate permission and clear visibility of shared data." },
       { title: "Journal texts", text: "Journaling can contain intimate experiences. AI summaries may happen only transparently, purpose-bound and with data minimization." },
       { title: "Payments", text: "Plan status and invoice data are processed separately from profile interpretation. Full payment data belongs to specialized payment providers." },
-      { title: "Launch and indexing", text: "Until domain, legal texts and approvals are final, noindex/nofollow protects against premature indexing. Afterwards the website can be opened deliberately for search engines." },
+      { title: "Launch and indexing", text: "The public marketing website is prepared for indexing. The app remains separately controlled so personal onboarding and profile areas do not appear as marketing pages." },
     ],
     pipelineAlt: "Pipeline graphic for processing and classifying Hermetia data",
     pipelineCaption: "The pipeline shows that raw data, classification, convergence and language are separate steps.",
@@ -275,7 +275,7 @@ const dataSecurityCopy = {
       { q: "Is this page legal advice?", a: "No. This page explains the data logic in understandable language. Formal legal texts and external data-protection/legal review remain decisive for final launch." },
       { q: "Will my data be sold for advertising?", a: "No. Hermetia frames no disclosure for advertising purposes as a product principle. For final launch, the formal legal texts make this binding." },
       { q: "Why are relationship readings regulated differently?", a: "Because they can create data and derivations about at least two people. Hermetia therefore needs clear consent from the affected person and does not normalize secret readings." },
-      { q: "Why does the website remain noindex/nofollow before launch?", a: "As long as domain move, final legal texts and external legal/IP approval are not complete, noindex/nofollow is useful protection against premature indexing." },
+      { q: "Why is the marketing website indexable while the app remains controlled?", a: "The website should publicly explain method, limits and beta access. Personal app flows, onboarding and profile areas remain separately protected and are not treated as marketing content." },
     ],
   },
 } as const;

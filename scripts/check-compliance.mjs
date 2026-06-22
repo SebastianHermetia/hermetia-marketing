@@ -56,9 +56,9 @@ const externalAssetRefs = generatedHtml.flatMap((file) => {
 });
 
 const checks = [
-  ["Test phase keeps noindex/nofollow header", headers.includes("X-Robots-Tag: noindex, nofollow")],
-  ["Generated HTML keeps noindex/nofollow meta", deHome.includes('name="robots"') && deHome.includes("noindex") && deHome.includes("nofollow")],
-  ["Noindex header is explicitly marked as launch-only", headers.includes("ENTFERNEN bzw. anpassen zum echten Launch")],
+  ["Public launch headers do not block indexing", !headers.includes("X-Robots-Tag: noindex") && !headers.includes("X-Robots-Tag: nofollow")],
+  ["Generated HTML allows indexing", !deHome.includes("noindex") && !deHome.includes("nofollow")],
+  ["Public launch keeps security headers", headers.includes("X-Content-Type-Options: nosniff") && headers.includes("X-Frame-Options: DENY")],
   ["Launch review includes legal and asset gates", launchReview.includes("data-protection") && launchReview.includes("asset-rights")],
   ["Launch review keeps external legal review visible", launchReview.includes("anwaltliche Endprüfung bleibt vor Launch erforderlich")],
   ["Asset inventory forbids third-party protected material", assetInventory.includes("Keine fremden Screenshots, Logos, Marken")],
@@ -80,4 +80,5 @@ if (externalAssetRefs.length > 0) {
 
 if (process.exitCode) process.exit(process.exitCode);
 
-console.log("Compliance check passed: launch gates, asset rights markers, indexing state and CTA sources verified.");
+console.log("Compliance check passed: launch gates, asset rights markers, public indexing state and CTA sources verified.");
+

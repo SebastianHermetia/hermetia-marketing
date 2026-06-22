@@ -35,11 +35,11 @@ export function buildMetadata({
     title: meta.title,
     description: meta.description,
     robots: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
       googleBot: {
-        index: false,
-        follow: false,
+        index: true,
+        follow: true,
       },
     },
     alternates: { canonical, languages },

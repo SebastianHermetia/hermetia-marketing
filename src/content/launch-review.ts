@@ -96,13 +96,13 @@ export const reviewGates: ReviewGate[] = [
   {
     id: "indexing-launch",
     title: "Indexing und Domain-Launch",
-    status: "open",
+    status: "ready",
     summary:
-      "Die Testphase bleibt bewusst auf noindex/nofollow. Zum finalen Domain-Launch müssen nginx-Header, public/_headers, Canonical-URL und App-URL final umgestellt werden.",
+      "Die öffentliche Marketingseite ist für den Public Launch indexierbar vorbereitet. App- und Onboarding-Flows bleiben getrennt kontrolliert und werden nicht als Marketingseiten indexiert.",
     evidence: [
-      "deploy/README.md dokumentiert noindex in der Testphase.",
-      "public/_headers setzt noindex/nofollow für Cloudflare Pages.",
-      "Robots erlaubt Crawling, damit noindex-Header gesehen werden kann.",
+      "buildMetadata() setzt öffentliche Marketingseiten auf index/follow.",
+      "Robots und Sitemap liefern alle öffentlichen Sprachrouten.",
+      "Primäre Start-CTAs führen in der Beta-Phase auf /beta-zugang statt direkt in das App-Onboarding.",
     ],
   },
 ];

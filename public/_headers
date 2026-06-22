@@ -1,11 +1,7 @@
 # Cloudflare Pages headers.
-# Vorschau-/Testphase: gesamte Seite auf noindex — verhindert, dass Google die
-# Test-Subdomain (hermetiastart.digital-expert.de) indexiert (Duplicate-Content
-# vor Launch). robots.txt erlaubt bewusst weiter Crawling, damit Suchmaschinen
-# diesen noindex-Header überhaupt sehen.
-# ENTFERNEN bzw. anpassen zum echten Launch auf der finalen Domain.
+# Public launch: marketing pages are intentionally indexable.
+# Keep security headers here; app/onboarding access is controlled in the app repo.
 /*
-  X-Robots-Tag: noindex, nofollow
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin

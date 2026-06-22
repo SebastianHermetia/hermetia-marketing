@@ -25,11 +25,11 @@ const launchReviewCopy = {
     },
     warningTitle: "Wichtig: keine anwaltliche Endfreigabe",
     warningText:
-      "Diese Übersicht ist ein Produkt- und Content-Gate, keine Rechtsberatung. Sie macht transparent, welche Schutzmaßnahmen im Marketing umgesetzt sind. Vor Bezahlmodell, finalem Domain-Launch, Indexierung und produktiver App-Verknüpfung bleiben Datenschutz-, Verbraucherrechts- und IP-Freigaben extern zu bestätigen.",
+      "Diese Übersicht ist ein Produkt- und Content-Gate, keine Rechtsberatung. Sie macht transparent, welche Schutzmaßnahmen im Marketing umgesetzt sind. Vor echtem Bezahlmodell und produktiver App-Verknüpfung bleiben Datenschutz-, Verbraucherrechts- und IP-Freigaben extern zu bestätigen.",
     gatesTitle: "Freigabe-Gates",
     beforeTitle: "Vor finalem Launch",
     beforeText:
-      "Noindex/nofollow bleibt in der Testphase korrekt. Zum Launch müssen Indexing-Header, finale Canonicals, App-URLs, Zahlungsfluss, Rechtstexte und Übersetzungsstatus gemeinsam freigegeben werden.",
+      "Die Marketingseite ist indexierbar vorbereitet. Für den Launch müssen finale Canonicals, App-URLs, Beta-Zugang, Zahlungsfluss, Rechtstexte und Übersetzungsstatus gemeinsam freigegeben werden.",
     conversionTitle: "Warum das conversion-relevant ist",
     conversionText:
       "Vertrauen ist Teil der Conversion. Besucher sollen neugierig werden, sich anmelden und ein bezahltes Modell wählen können, ohne dass sensible Daten, AI-Deutung, Beziehungsprofile oder Preise unklar wirken.",
@@ -58,11 +58,11 @@ const launchReviewCopy = {
     },
     warningTitle: "Important: no final legal sign-off",
     warningText:
-      "This overview is a product and content gate, not legal advice. It makes transparent which safeguards are implemented in marketing. Before paid plans, final domain launch, indexing and productive app linking, data protection, consumer-law and IP approvals still need external confirmation.",
+      "This overview is a product and content gate, not legal advice. It makes transparent which safeguards are implemented in marketing. Before real paid plans and productive app linking, data protection, consumer-law and IP approvals still need external confirmation.",
     gatesTitle: "Approval gates",
     beforeTitle: "Before final launch",
     beforeText:
-      "Noindex/nofollow remains correct during the test phase. At launch, indexing headers, final canonicals, app URLs, payment flow, legal texts and translation status must be approved together.",
+      "The marketing website is prepared for indexing. For launch, final canonicals, app URLs, beta access, payment flow, legal texts and translation status must be approved together.",
     conversionTitle: "Why this matters for conversion",
     conversionText:
       "Trust is part of conversion. Visitors should become curious, sign up and choose a paid plan without sensitive data, AI interpretation, relationship profiles or pricing feeling unclear.",
@@ -152,11 +152,11 @@ const reviewGateCopy = {
     "indexing-launch": {
       title: "Indexing and domain launch",
       summary:
-        "The test phase deliberately remains on noindex/nofollow. For final domain launch, nginx headers, public/_headers, canonical URL and app URL must be switched finally.",
+        "The public marketing website is prepared for indexing. App and onboarding flows remain separately controlled and are not indexed as marketing pages.",
       evidence: [
-        "deploy/README.md documents noindex in the test phase.",
-        "public/_headers sets noindex/nofollow for Cloudflare Pages.",
-        "Robots allows crawling so noindex headers can be seen.",
+        "buildMetadata() sets public marketing pages to index/follow.",
+        "Robots and sitemap expose all public language routes.",
+        "Primary start CTAs route to /beta-zugang during beta instead of directly into app onboarding.",
       ],
     },
   },
