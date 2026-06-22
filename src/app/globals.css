@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply overflow-x-hidden;
+  }
   body {
     @apply bg-creme text-tinte font-sans antialiased overflow-x-hidden;
     background-image:
