@@ -3,7 +3,7 @@ import { locales, siteUrl, type Locale } from "@/i18n/config";
 import { localizedRouteCopy } from "@/i18n/localized-content";
 
 function localizedFallbackMetadata(locale: Locale, path: string, title: string, description: string) {
-  if (locale === "de" || locale === "en") return { title, description };
+  if (locale === "de" || locale === "en" || path === "/beta-zugang") return { title, description };
   const copy = localizedRouteCopy(locale, path);
   return { title: copy.seoTitle, description: copy.seoDescription };
 }
