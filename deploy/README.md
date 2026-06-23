@@ -50,7 +50,7 @@ npm run check:compliance
 
 - `check:assets` prüft, ob alle referenzierten Bilder und Grafiken in `public/` existieren.
 - `check:content` prüft Mindestumfang, Sprachhinweise, 31-Systeme-Konsistenz, Longform-Resource-Seiten, FAQ-Schema, CTA-Quellen und Konvergenz-Grafiken im statischen Export.
-- `check:compliance` prüft Launch-Gates, Asset-Rechtehinweise, noindex-Testphase, externe Bildquellen und datensparsame CTA-Quellen.
+- `check:compliance` prüft Launch-Gates, Asset-Rechtehinweise, Indexierungsstatus, externe Bildquellen und datensparsame CTA-Quellen.
 
 > **WICHTIG:** Niemals `rm -rf out` verwenden — das löscht das vom Container
 > gemountete Verzeichnis und entkoppelt den Bind-Mount (Container liefert dann 404).

@@ -43,7 +43,6 @@ Headers werden über `vercel.json` (Repo-Root) gesetzt — **nicht** über `publ
 (das ist CF-Pages-Format und wird von Vercel ignoriert).
 
 Aktuell in `vercel.json`:
-- `X-Robots-Tag: noindex, nofollow` (in der Testphase — vor Launch entfernen)
 - `X-Content-Type-Options: nosniff`
 - `X-Frame-Options: DENY`
 - `Referrer-Policy: strict-origin-when-cross-origin`
@@ -74,8 +73,7 @@ git push origin main
 ## Domain-Umzug zum Launch
 
 `NEXT_PUBLIC_SITE_URL` in Vercel ENV auf die finale Domain setzen und Custom Domain in Vercel  
-umstellen. CNAME in Cloudflare aktualisieren. Kein Code-Umbau nötig.  
-`X-Robots-Tag: noindex, nofollow` aus `vercel.json` entfernen.
+umstellen. CNAME in Cloudflare aktualisieren. Kein Code-Umbau nötig.
 
 ## Decap CMS (optional)
 

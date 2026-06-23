@@ -8,7 +8,7 @@ und führt Nutzer in Onboarding und Login der bestehenden Hermetia-App.
 - **i18n:** 24 offizielle EU-Sprachrouten. DE und EN sind redaktionell gepflegt, alle weiteren Sprachen haben lokalisierte UI-Texte und nutzen für fehlende Longform-Inhalte einen sichtbaren englischen Editorial-Fallback bis zur finalen Redaktion.
 - **SEO/GEO/AEO:** pro Seite canonical + hreflang, Schema.org JSON-LD (`Organization`, `FAQPage`, Content-/Produktdaten), `sitemap.xml`, `robots.txt`, OG-Bild.
 - **Contentumfang:** 31 Systemseiten, 51 Glossarbegriffe, 20 Wissensartikel, 12 Vergleichsseiten plus Pillar-, Preis-, Rechts-, Sprachstatus- und Freigabeseiten.
-- **Launch-Sicherheit:** noindex/nofollow in der Testphase, Asset-Inventar, Freigabe-Gates und CI-Prüfungen für Content, Assets und Compliance.
+- **Launch-Sicherheit:** öffentliche Indexierung ist freigeschaltet; Asset-Inventar, Freigabe-Gates und CI-Prüfungen sichern Content, Assets und Compliance.
 - **Brand:** Design-Tokens aus dem Hermetia-Design-Briefing (Creme/Aubergine/Gold, Fraunces + Mulish) in `tailwind.config.ts`.
 
 ## Befehle
@@ -61,5 +61,5 @@ kein Code-Änderung nötig. Siehe `.env.example`.
 - **Magazin-Artikel & Bilder:** über Decap CMS unter `/admin` (Git-basiert, Auto-Rebuild). Lokal testen: `npx decap-server` + `local_backend: true`.
 - **Offen (Folgeschritt):** verlustfreie Einbindung der `messages/*.json`-Felder ins CMS-Formular
   (Teilmapping würde nicht gemappte Schlüssel überschreiben — daher bewusst noch nicht verdrahtet).
-- **Vor finalem Launch:** externe Rechts-/IP-Freigabe, finale Domain-ENV, noindex entfernen, vollständige Longform-Übersetzung der offenen EU-Sprachen.
+- **Vor finalem Launch:** externe Rechts-/IP-Freigabe, finale Domain-ENV und vollständige Longform-Übersetzung der offenen EU-Sprachen prüfen.
 ```

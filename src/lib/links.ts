@@ -1,4 +1,4 @@
-import { appUrl, type Locale } from "@/i18n/config";
+import { appUrl, siteUrl, type Locale } from "@/i18n/config";
 
 type MarketingLinkOptions = {
   source?: string;
@@ -33,8 +33,7 @@ export function startUrl(locale: Locale, options: MarketingLinkOptions = {}): st
 }
 
 function siteRelativeUrl(path: string): string {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hermetia.digital-expert.de";
-  return `${base.replace(/\/$/, "")}${path}`;
+  return `${siteUrl}${path}`;
 }
 export function loginUrl(locale: Locale, options: MarketingLinkOptions = {}): string {
   return withMarketingParams(`${appUrl}/login?lang=${locale}`, {

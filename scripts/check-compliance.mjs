@@ -40,6 +40,7 @@ if (!existsSync(out)) {
 }
 
 const headers = read("public/_headers");
+const vercel = read("vercel.json");
 const launchReview = read("src/content/launch-review.ts");
 const assetInventory = read("content/asset-inventory.md");
 const links = read("src/lib/links.ts");
@@ -54,9 +55,16 @@ const externalAssetRefs = generatedHtml.flatMap((file) => {
     (match) => `${file}: ${match[0]}`,
   );
 });
+const appDomainMarketingLinks = generatedHtml.flatMap((file) => {
+  const html = readFileSync(file, "utf8");
+  return [...html.matchAll(/https:\/\/hermetia\.digital-expert\.de\/(?:de|en|fr|es|it|nl|pl|pt|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|ro|sk|sl|sv)\//g)].map(
+    (match) => `${file}: ${match[0]}`,
+  );
+});
 
 const checks = [
   ["Public launch headers do not block indexing", !headers.includes("X-Robots-Tag: noindex") && !headers.includes("X-Robots-Tag: nofollow")],
+  ["Vercel headers do not block indexing", !vercel.includes("X-Robots-Tag") && !vercel.includes("noindex") && !vercel.includes("nofollow")],
   ["Generated HTML allows indexing", !deHome.includes("noindex") && !deHome.includes("nofollow")],
   ["Public launch keeps security headers", headers.includes("X-Content-Type-Options: nosniff") && headers.includes("X-Frame-Options: DENY")],
   ["Launch review includes legal and asset gates", launchReview.includes("data-protection") && launchReview.includes("asset-rights")],
@@ -67,6 +75,8 @@ const checks = [
   ["Live export exposes launch review page", legalPage.includes("Legal-, IP- und Launch-Freigaben")],
   ["Live export exposes translation QA", languagePage.includes("Translation QA") && languagePage.includes("Rechtliche Sinngleichheit")],
   ["Home export exposes non-PII CTA source", deHome.includes("utm_content=home-hero") && deHome.includes("source=home-hero")],
+  ["Start CTAs point to marketing beta access", deHome.includes("https://hermetiastart.digital-expert.de/de/beta-zugang/")],
+  ["Generated HTML does not send marketing locale paths to app domain", appDomainMarketingLinks.length === 0],
   ["Generated HTML has no external image/poster hosts", externalAssetRefs.length === 0],
 ];
 
@@ -76,6 +86,9 @@ for (const [label, ok] of checks) {
 
 if (externalAssetRefs.length > 0) {
   for (const ref of externalAssetRefs.slice(0, 20)) console.error(ref);
+}
+if (appDomainMarketingLinks.length > 0) {
+  for (const ref of appDomainMarketingLinks.slice(0, 20)) console.error(ref);
 }
 
 if (process.exitCode) process.exit(process.exitCode);
