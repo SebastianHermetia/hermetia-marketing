@@ -67,10 +67,10 @@ export const localeNames: Record<Locale, string> = {
 };
 
 // Basis-URL für canonical / hreflang / Sitemap.
-// Vorerst hermetia.digital-expert.de — vor Launch per ENV auf eigene Domain umziehbar,
+// Vorerst hermetiastart.digital-expert.de — vor Launch per ENV auf eigene Domain umziehbar,
 // ohne Code-Änderung: NEXT_PUBLIC_SITE_URL setzen.
 export const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://hermetia.digital-expert.de"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://hermetiastart.digital-expert.de"
 ).replace(/\/$/, "");
 
 // URL zur App (Onboarding + Login leben in der bestehenden Hermetia-App).
