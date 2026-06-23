@@ -13,14 +13,14 @@ const useCases = [
   {
     tag: "Selbstreflexion",
     title: "Wenn du dich besser verstehen willst",
-    text: "Hermetia hilft, wiederkehrende Muster, Stärken, Schatten und innere Spannungen in eine Sprache zu bringen. Der Einstieg ist besonders stark, wenn du spürst, dass klassische Persönlichkeitsbeschreibungen zu flach bleiben.",
+    text: "Astrakey hilft, wiederkehrende Muster, Stärken, Schatten und innere Spannungen in eine Sprache zu bringen. Der Einstieg ist besonders stark, wenn du spürst, dass klassische Persönlichkeitsbeschreibungen zu flach bleiben.",
     cta: "Mit der Seelenkarte beginnen",
     href: paths.seelenkarte,
   },
   {
     tag: "Entscheidungen",
     title: "Wenn du Klarheit suchst, ohne eine Antwort abzugeben",
-    text: "Hermetia entscheidet nicht für dich. Die Plattform zeigt innere Prioritäten, Timing-Qualitäten und wiederkehrende Fragen, damit du bewusster prüfen kannst, was stimmig ist.",
+    text: "Astrakey entscheidet nicht für dich. Die Plattform zeigt innere Prioritäten, Timing-Qualitäten und wiederkehrende Fragen, damit du bewusster prüfen kannst, was stimmig ist.",
     cta: "Methode verstehen",
     href: paths.methodik,
   },
@@ -34,7 +34,7 @@ const useCases = [
   {
     tag: "Beziehungen",
     title: "Wenn du Resonanz und Reibung besser einordnen willst",
-    text: "Hermetia kann Beziehungsdynamiken als Reflexionsraum sichtbar machen. Entscheidend bleibt klare Einwilligung, denn Profile anderer Menschen sind sensibel.",
+    text: "Astrakey kann Beziehungsdynamiken als Reflexionsraum sichtbar machen. Entscheidend bleibt klare Einwilligung, denn Profile anderer Menschen sind sensibel.",
     cta: "Beziehungen erkunden",
     href: paths.beziehungen,
   },
@@ -48,7 +48,7 @@ const useCases = [
   {
     tag: "Neugier",
     title: "Wenn du mehrere Systeme vergleichbar machen willst",
-    text: "Statt Astrologie, Human Design, Gene Keys oder Numerologie isoliert zu lesen, zeigt Hermetia, wo Perspektiven zusammenlaufen und wo sie sich produktiv widersprechen.",
+    text: "Statt Astrologie, Human Design, Gene Keys oder Numerologie isoliert zu lesen, zeigt Astrakey, wo Perspektiven zusammenlaufen und wo sie sich produktiv widersprechen.",
     cta: "Vergleiche lesen",
     href: paths.vergleiche,
   },
@@ -56,19 +56,19 @@ const useCases = [
 
 const searchQuestions = [
   {
-    q: "Wofür kann ich Hermetia nutzen?",
+    q: "Wofür kann ich Astrakey nutzen?",
     a: "Für Selbstreflexion, Entscheidungsfragen, Beziehungsdynamiken, berufliche Orientierung, tägliche Impulse und die verständliche Einordnung verschiedener Deutungssysteme.",
   },
   {
-    q: "Hilft Hermetia bei Beziehungen?",
-    a: "Hermetia kann Resonanz, Reibung und wiederkehrende Muster als Reflexionsraum sichtbar machen. Profile anderer Menschen gehören aber nur mit klarer Einwilligung in die Auswertung.",
+    q: "Hilft Astrakey bei Beziehungen?",
+    a: "Astrakey kann Resonanz, Reibung und wiederkehrende Muster als Reflexionsraum sichtbar machen. Profile anderer Menschen gehören aber nur mit klarer Einwilligung in die Auswertung.",
   },
   {
     q: "Wann lohnt sich ein bezahltes Modell?",
     a: "Wenn aus dem kostenlosen Aha-Moment eine regelmäßige Praxis werden soll: mehr Ebenen, Journaling, Tagesimpulse, Profilbuch, Beziehungsebene oder längere Begleitung.",
   },
   {
-    q: "Was darf Hermetia nicht ersetzen?",
+    q: "Was darf Astrakey nicht ersetzen?",
     a: "Keine Therapie, keine Diagnose, keine medizinische, rechtliche oder finanzielle Beratung und keine sicheren Zukunftsversprechen.",
   },
 ];
@@ -77,7 +77,7 @@ const journey = [
   {
     step: "1",
     title: "Neugier",
-    text: "Die Website beantwortet Grundfragen: Was ist Hermetia, welche Systeme werden betrachtet, welche Grenzen gelten und welche Anwendungsfälle passen wirklich?",
+    text: "Die Website beantwortet Grundfragen: Was ist Astrakey, welche Systeme werden betrachtet, welche Grenzen gelten und welche Anwendungsfälle passen wirklich?",
   },
   {
     step: "2",
@@ -92,7 +92,7 @@ const journey = [
   {
     step: "4",
     title: "Fortlaufende Praxis",
-    text: "Hermetia wird dann nicht nur gelesen, sondern als ruhige Reflexionsumgebung genutzt: beobachten, schreiben, vergleichen, nachjustieren und Verantwortung behalten.",
+    text: "Astrakey wird dann nicht nur gelesen, sondern als ruhige Reflexionsumgebung genutzt: beobachten, schreiben, vergleichen, nachjustieren und Verantwortung behalten.",
   },
 ];
 
@@ -101,7 +101,7 @@ const deepUseCases = [
     title: "Identität und Selbstbild",
     image: "/images/hermetia/resonance-instrument.png",
     alt: "Ein fein abgestimmtes Resonanzinstrument als Symbol für Selbstbild und persönliche Muster",
-    text: "Viele Nutzer kommen zu Hermetia, weil sie sich in gängigen Persönlichkeitstypen nur teilweise wiederfinden. Die Plattform betrachtet keine einzelne Schublade, sondern wiederkehrende Signale aus mehreren Systemfamilien. Dadurch entsteht eine Sprache für innere Spannungen: Was wirkt stabil? Was zeigt sich zyklisch? Welche Seite möchte gesehen werden, ohne sofort zur neuen Identität zu werden?",
+    text: "Viele Nutzer kommen zu Astrakey, weil sie sich in gängigen Persönlichkeitstypen nur teilweise wiederfinden. Die Plattform betrachtet keine einzelne Schublade, sondern wiederkehrende Signale aus mehreren Systemfamilien. Dadurch entsteht eine Sprache für innere Spannungen: Was wirkt stabil? Was zeigt sich zyklisch? Welche Seite möchte gesehen werden, ohne sofort zur neuen Identität zu werden?",
     goodFor: ["Muster benennen", "Stärken und Schatten sortieren", "Selbstbeschreibung präzisieren"],
     cta: "use-cases-identity",
   },
@@ -109,7 +109,7 @@ const deepUseCases = [
     title: "Entscheidungen und Übergänge",
     image: "/images/hermetia/dawn-clock-of-becoming.png",
     alt: "Eine helle Uhrlandschaft als Bild für Übergänge, Timing und bewusste Entscheidungen",
-    text: "Bei Berufswechsel, Beziehungsklärung, Umzug, Kreativprojekten oder inneren Neuanfängen suchen Menschen häufig nicht nur Fakten, sondern Orientierung. Hermetia liefert keine Anweisung. Es zeigt, welche Themen, Rhythmen und archetypischen Spannungen im eigenen Profil wiederkehren, damit Entscheidungen bewusster geprüft werden können.",
+    text: "Bei Berufswechsel, Beziehungsklärung, Umzug, Kreativprojekten oder inneren Neuanfängen suchen Menschen häufig nicht nur Fakten, sondern Orientierung. Astrakey liefert keine Anweisung. Es zeigt, welche Themen, Rhythmen und archetypischen Spannungen im eigenen Profil wiederkehren, damit Entscheidungen bewusster geprüft werden können.",
     goodFor: ["Fragen strukturieren", "Timing reflektieren", "innere Prioritäten erkennen"],
     cta: "use-cases-decisions",
   },
@@ -117,7 +117,7 @@ const deepUseCases = [
     title: "Beziehungen und Resonanz",
     image: "/images/hermetia/garden-of-agreements.png",
     alt: "Ein ruhiger Garten als Symbol für Beziehung, Grenzen und gegenseitige Einwilligung",
-    text: "Beziehungsarbeit braucht Sorgfalt. Hermetia kann helfen, Unterschiedlichkeit nicht sofort als Fehler zu lesen: Nähe und Autonomie, Tempo und Tiefe, Sicherheit und Abenteuer. Der ethische Rahmen ist dabei klar: Beziehungsauswertungen setzen Einwilligung voraus und bleiben Reflexionshilfe, keine Bewertung eines Menschen.",
+    text: "Beziehungsarbeit braucht Sorgfalt. Astrakey kann helfen, Unterschiedlichkeit nicht sofort als Fehler zu lesen: Nähe und Autonomie, Tempo und Tiefe, Sicherheit und Abenteuer. Der ethische Rahmen ist dabei klar: Beziehungsauswertungen setzen Einwilligung voraus und bleiben Reflexionshilfe, keine Bewertung eines Menschen.",
     goodFor: ["Resonanz verstehen", "Reibung entdramatisieren", "Einwilligung respektieren"],
     cta: "use-cases-relationships",
   },
@@ -155,11 +155,11 @@ const conversionPrinciples = [
 const legalFrames = [
   {
     title: "Keine Diagnose und keine Heilsversprechen",
-    text: "Anwendungsfälle werden als Reflexionsräume formuliert. Hermetia macht keine medizinischen, psychotherapeutischen, rechtlichen oder finanziellen Aussagen und ersetzt keine professionelle Hilfe.",
+    text: "Anwendungsfälle werden als Reflexionsräume formuliert. Astrakey macht keine medizinischen, psychotherapeutischen, rechtlichen oder finanziellen Aussagen und ersetzt keine professionelle Hilfe.",
   },
   {
     title: "Eigene Sprache statt geschützter Deutungstexte",
-    text: "Die Seite beschreibt Systeme, Muster und Hermetias Methodik in eigener redaktioneller Sprache. Proprietäre Texte, Tabellen, Formulierungen oder geschützte Auszüge anderer Anbieter werden nicht übernommen.",
+    text: "Die Seite beschreibt Systeme, Muster und Astrakeys Methodik in eigener redaktioneller Sprache. Proprietäre Texte, Tabellen, Formulierungen oder geschützte Auszüge anderer Anbieter werden nicht übernommen.",
   },
   {
     title: "Einwilligung bei sensiblen Profilen",
@@ -169,15 +169,15 @@ const legalFrames = [
 
 const faq = [
   {
-    q: "Für wen ist Hermetia am besten geeignet?",
-    a: "Hermetia passt zu Menschen, die spirituelle und psychologische Systeme als Reflexionssprache nutzen möchten und dabei Wert auf Transparenz, Datenschutz, klare Grenzen und eine ästhetische Nutzererfahrung legen.",
+    q: "Für wen ist Astrakey am besten geeignet?",
+    a: "Astrakey passt zu Menschen, die spirituelle und psychologische Systeme als Reflexionssprache nutzen möchten und dabei Wert auf Transparenz, Datenschutz, klare Grenzen und eine ästhetische Nutzererfahrung legen.",
   },
   {
-    q: "Kann Hermetia bei wichtigen Lebensentscheidungen helfen?",
-    a: "Hermetia kann Fragen, Muster und innere Prioritäten sichtbar machen. Es entscheidet aber nicht für dich und ersetzt keine professionelle Beratung bei medizinischen, psychologischen, rechtlichen oder finanziellen Themen.",
+    q: "Kann Astrakey bei wichtigen Lebensentscheidungen helfen?",
+    a: "Astrakey kann Fragen, Muster und innere Prioritäten sichtbar machen. Es entscheidet aber nicht für dich und ersetzt keine professionelle Beratung bei medizinischen, psychologischen, rechtlichen oder finanziellen Themen.",
   },
   {
-    q: "Ist Hermetia eher für Anfänger oder Fortgeschrittene?",
+    q: "Ist Astrakey eher für Anfänger oder Fortgeschrittene?",
     a: "Beides. Anfänger erhalten eine verständliche Synthese, ohne Fachwissen zu brauchen. Fortgeschrittene können tiefer in Systeme, Konvergenz und Vergleichsseiten einsteigen.",
   },
   {
@@ -188,66 +188,66 @@ const faq = [
 
 const useCasesCopy = {
   de: {
-    seoTitle: "Hermetia Anwendungsfälle — Selbstreflexion, Beziehungen, Berufung und Alltag",
+    seoTitle: "Astrakey Anwendungsfälle — Selbstreflexion, Beziehungen, Berufung und Alltag",
     seoDescription:
-      "Für wen Hermetia geeignet ist, welche Situationen besonders gut passen und wo die Grenzen liegen: Anwendungsfälle, Pro/Contra und FAQ.",
-    articleHeadline: "Hermetia Anwendungsfälle",
+      "Für wen Astrakey geeignet ist, welche Situationen besonders gut passen und wo die Grenzen liegen: Anwendungsfälle, Pro/Contra und FAQ.",
+    articleHeadline: "Astrakey Anwendungsfälle",
     articleDescription: "Selbstreflexion, Beziehungen, Berufung, Tagesimpulse und klare Grenzen.",
-    articleAbout: "Hermetia Anwendungsfälle",
+    articleAbout: "Astrakey Anwendungsfälle",
     breadcrumb: "Anwendungsfälle",
     heroKicker: "Anwendungsfälle",
-    heroTitle: "Wofür Hermetia besonders gut geeignet ist.",
+    heroTitle: "Wofür Astrakey besonders gut geeignet ist.",
     heroLead:
-      "Hermetia ist kein Orakel, keine Diagnose und kein Ersatz für Beratung. Es ist ein Reflexionssystem für Menschen, die sich selbst, ihre Beziehungen und ihre inneren Muster tiefer verstehen wollen und dafür einen ruhigen, transparenten Einstieg suchen.",
+      "Astrakey ist kein Orakel, keine Diagnose und kein Ersatz für Beratung. Es ist ein Reflexionssystem für Menschen, die sich selbst, ihre Beziehungen und ihre inneren Muster tiefer verstehen wollen und dafür einen ruhigen, transparenten Einstieg suchen.",
     startCta: "Profil kostenlos starten",
     compareCta: "Modelle vergleichen",
-    heroAlt: "Eine ruhige Bibliothek als Bild für Selbstreflexion und Hermetia Anwendungsfälle",
+    heroAlt: "Eine ruhige Bibliothek als Bild für Selbstreflexion und Astrakey Anwendungsfälle",
     heroCaption:
       "Die beste Anwendung beginnt nicht mit einem Versprechen, sondern mit einer guten Frage: Was erkenne ich wieder?",
     searchKicker: "Suchfragen",
-    searchTitle: "Welche Anwendungsfragen beantwortet Hermetia?",
+    searchTitle: "Welche Anwendungsfragen beantwortet Astrakey?",
     searchText:
-      "Diese Seite ist für Menschen gebaut, die noch nicht sicher sind, ob Hermetia nur interessant klingt oder im eigenen Leben wirklich nützlich werden kann. Die wichtigsten Antwortmaschinen-Fragen stehen deshalb direkt am Anfang.",
+      "Diese Seite ist für Menschen gebaut, die noch nicht sicher sind, ob Astrakey nur interessant klingt oder im eigenen Leben wirklich nützlich werden kann. Die wichtigsten Antwortmaschinen-Fragen stehen deshalb direkt am Anfang.",
     situationsKicker: "Situationen",
-    situationsTitle: "Sechs Wege, Hermetia sinnvoll zu nutzen.",
+    situationsTitle: "Sechs Wege, Astrakey sinnvoll zu nutzen.",
     situationsText:
       "Die Website ist als Ressource aufgebaut. Die App macht daraus persönliche Erfahrung: kostenlos starten, erste Kernthemen sehen und danach entscheiden, ob mehr Tiefe sinnvoll ist.",
     journeyKicker: "Nutzerreise",
     journeyTitle: "Vom ersten Interesse zur bezahlten Tiefe.",
     journeyText:
-      "Die Website ist nicht nur Information, sondern ein klarer, vertrauensvoller Weg in die Hermetia-App. Wer neugierig wird, kann jederzeit starten. Wer tiefer einsteigen will, versteht, warum ein bezahltes Modell sinnvoll ist.",
+      "Die Website ist nicht nur Information, sondern ein klarer, vertrauensvoller Weg in die Astrakey-App. Wer neugierig wird, kann jederzeit starten. Wer tiefer einsteigen will, versteht, warum ein bezahltes Modell sinnvoll ist.",
     journeyCtaTitle: "Teste den wichtigsten Anwendungsfall zuerst: dein eigenes Profil.",
     journeyCtaText:
-      "Die beste Erklärung bleibt allgemein. Der kostenlose Profilstart zeigt, ob Hermetia bei dir persönlich Resonanz erzeugt.",
+      "Die beste Erklärung bleibt allgemein. Der kostenlose Profilstart zeigt, ob Astrakey bei dir persönlich Resonanz erzeugt.",
     depthKicker: "Vertiefung",
-    depthTitle: "Vier Anwendungsfelder, in denen Hermetia besonders stark wird.",
+    depthTitle: "Vier Anwendungsfelder, in denen Astrakey besonders stark wird.",
     depthText:
       "Die einzelnen Bereiche können getrennt gelesen werden. In der App laufen sie zusammen: Seelenkarte, Systeme, Tagesimpulse, Journaling, Profilbuch und Beziehungsebene bilden eine fortlaufende Reflexionsumgebung.",
     fieldChip: "Anwendungsfeld",
     profileCheckCta: "Diesen Fall mit meinem Profil prüfen",
     goodFitKicker: "Gute Passung",
-    goodFitTitle: "Hermetia passt gut, wenn...",
+    goodFitTitle: "Astrakey passt gut, wenn...",
     badFitKicker: "Grenzen",
-    badFitTitle: "Hermetia passt nicht, wenn...",
+    badFitTitle: "Astrakey passt nicht, wenn...",
     conversionKicker: "Conversion-Prinzip",
     conversionTitle: "Neugier führt zur Anmeldung, aber mit Vertrauen.",
     conversionText:
-      "Hermetia wirkt am stärksten, wenn deine Entscheidung selbstbestimmt bleibt. Deshalb verbinden die Inhalte klare Nutzenfelder mit sichtbaren Grenzen, Einwilligung und einem kostenlosen Einstieg.",
-    funnelAlt: "Grafik zum Weg von Daten über Einordnung zu verständlicher Hermetia-Sprache",
+      "Astrakey wirkt am stärksten, wenn deine Entscheidung selbstbestimmt bleibt. Deshalb verbinden die Inhalte klare Nutzenfelder mit sichtbaren Grenzen, Einwilligung und einem kostenlosen Einstieg.",
+    funnelAlt: "Grafik zum Weg von Daten über Einordnung zu verständlicher Astrakey-Sprache",
     funnelCaption:
-      "Der Funnel zeigt, warum Hermetia nicht einfach Systemtexte addiert, sondern Signale prüft, dämpft und in eigene Sprache übersetzt.",
+      "Der Funnel zeigt, warum Astrakey nicht einfach Systemtexte addiert, sondern Signale prüft, dämpft und in eigene Sprache übersetzt.",
     legalKicker: "Rechtlicher Rahmen",
     legalTitle: "Was Anwendungsfälle versprechen dürfen und was nicht.",
     legalText:
-      "Hermetia formuliert Nutzen als Reflexion, nicht als Garantie. So bleiben die Anwendungsfälle hilfreich, klar und ohne überzogene Versprechen.",
+      "Astrakey formuliert Nutzen als Reflexion, nicht als Garantie. So bleiben die Anwendungsfälle hilfreich, klar und ohne überzogene Versprechen.",
     finalKicker: "Nächster Schritt",
-    finalTitle: "Prüfe Hermetia an deinem eigenen Profil.",
+    finalTitle: "Prüfe Astrakey an deinem eigenen Profil.",
     finalText:
-      "Allgemeine Inhalte können Orientierung geben. Der Aha-Moment entsteht, wenn Hermetia deine eigenen Daten berechnet und die ersten Themen sichtbar macht. Der Einstieg bleibt kostenlos.",
-    aboutCta: "Über Hermetia lesen",
+      "Allgemeine Inhalte können Orientierung geben. Der Aha-Moment entsteht, wenn Astrakey deine eigenen Daten berechnet und die ersten Themen sichtbar macht. Der Einstieg bleibt kostenlos.",
+    aboutCta: "Über Astrakey lesen",
     finalBoxTitle: "Vom Content zur App",
     finalBoxText:
-      "Diese Seite hilft bei der Entscheidung, ob Hermetia grundsätzlich passt. Das Onboarding macht daraus eine persönliche Seelenkarte. Bezahlte Modelle öffnen erst danach die tiefere Begleitung.",
+      "Diese Seite hilft bei der Entscheidung, ob Astrakey grundsätzlich passt. Das Onboarding macht daraus eine persönliche Seelenkarte. Bezahlte Modelle öffnen erst danach die tiefere Begleitung.",
     faqKicker: "FAQ",
     faqTitle: "Häufige Fragen zu Anwendungsfällen",
     useCases,
@@ -261,60 +261,60 @@ const useCasesCopy = {
     faq,
   },
   en: {
-    seoTitle: "Hermetia use cases — self-reflection, relationships, calling and daily practice",
+    seoTitle: "Astrakey use cases — self-reflection, relationships, calling and daily practice",
     seoDescription:
-      "Who Hermetia is for, which situations fit especially well and where the limits are: use cases, fit checks, legal framing and FAQ.",
-    articleHeadline: "Hermetia use cases",
+      "Who Astrakey is for, which situations fit especially well and where the limits are: use cases, fit checks, legal framing and FAQ.",
+    articleHeadline: "Astrakey use cases",
     articleDescription: "Self-reflection, relationships, calling, daily impulses and clear limits.",
-    articleAbout: "Hermetia use cases",
+    articleAbout: "Astrakey use cases",
     breadcrumb: "Use cases",
     heroKicker: "Use cases",
-    heroTitle: "Where Hermetia is especially useful.",
+    heroTitle: "Where Astrakey is especially useful.",
     heroLead:
-      "Hermetia is not an oracle, not a diagnosis and not a substitute for professional advice. It is a reflection system for people who want to understand themselves, their relationships and their inner patterns more deeply, with a calm and transparent way to start.",
+      "Astrakey is not an oracle, not a diagnosis and not a substitute for professional advice. It is a reflection system for people who want to understand themselves, their relationships and their inner patterns more deeply, with a calm and transparent way to start.",
     startCta: "Start profile for free",
     compareCta: "Compare plans",
-    heroAlt: "A quiet library as an image for self-reflection and Hermetia use cases",
+    heroAlt: "A quiet library as an image for self-reflection and Astrakey use cases",
     heroCaption:
       "The best use case does not start with a promise, but with a good question: what do I recognize in myself?",
     searchKicker: "Search questions",
-    searchTitle: "Which use-case questions does Hermetia answer?",
+    searchTitle: "Which use-case questions does Astrakey answer?",
     searchText:
-      "This page is built for people who are not yet sure whether Hermetia only sounds interesting or can become genuinely useful in their own life. The key answer-engine questions therefore come first.",
+      "This page is built for people who are not yet sure whether Astrakey only sounds interesting or can become genuinely useful in their own life. The key answer-engine questions therefore come first.",
     searchQuestions: [
       {
-        q: "What can I use Hermetia for?",
+        q: "What can I use Astrakey for?",
         a: "For self-reflection, decision questions, relationship dynamics, professional orientation, daily impulses and a clear understanding of different interpretation systems.",
       },
       {
-        q: "Can Hermetia help with relationships?",
-        a: "Hermetia can make resonance, friction and recurring patterns visible as a reflection space. Profiles of other people belong in a reading only with clear consent.",
+        q: "Can Astrakey help with relationships?",
+        a: "Astrakey can make resonance, friction and recurring patterns visible as a reflection space. Profiles of other people belong in a reading only with clear consent.",
       },
       {
         q: "When is a paid model worth it?",
         a: "When the free aha moment should become a regular practice: more levels, journaling, daily impulses, a profile book, relationship depth or longer-term companionship.",
       },
       {
-        q: "What must Hermetia not replace?",
+        q: "What must Astrakey not replace?",
         a: "No therapy, no diagnosis, no medical, legal or financial advice and no certain promises about the future.",
       },
     ],
     situationsKicker: "Situations",
-    situationsTitle: "Six meaningful ways to use Hermetia.",
+    situationsTitle: "Six meaningful ways to use Astrakey.",
     situationsText:
       "The website is built as a resource. The app turns it into personal experience: start free, see the first core themes and then decide whether more depth makes sense.",
     useCases: [
       {
         tag: "Self-reflection",
         title: "When you want to understand yourself better",
-        text: "Hermetia helps put recurring patterns, strengths, shadows and inner tensions into language. The start is especially strong when classic personality descriptions feel too flat.",
+        text: "Astrakey helps put recurring patterns, strengths, shadows and inner tensions into language. The start is especially strong when classic personality descriptions feel too flat.",
         cta: "Begin with the soul map",
         href: paths.seelenkarte,
       },
       {
         tag: "Decisions",
         title: "When you seek clarity without handing over the answer",
-        text: "Hermetia does not decide for you. The platform shows inner priorities, timing qualities and recurring questions so you can test more consciously what feels coherent.",
+        text: "Astrakey does not decide for you. The platform shows inner priorities, timing qualities and recurring questions so you can test more consciously what feels coherent.",
         cta: "Understand the method",
         href: paths.methodik,
       },
@@ -328,7 +328,7 @@ const useCasesCopy = {
       {
         tag: "Relationships",
         title: "When you want to understand resonance and friction",
-        text: "Hermetia can make relationship dynamics visible as a reflection space. Clear consent remains essential because profiles of other people are sensitive.",
+        text: "Astrakey can make relationship dynamics visible as a reflection space. Clear consent remains essential because profiles of other people are sensitive.",
         cta: "Explore relationships",
         href: paths.beziehungen,
       },
@@ -342,7 +342,7 @@ const useCasesCopy = {
       {
         tag: "Curiosity",
         title: "When you want to make several systems comparable",
-        text: "Instead of reading astrology, Human Design, Gene Keys or numerology in isolation, Hermetia shows where perspectives converge and where they productively contradict one another.",
+        text: "Instead of reading astrology, Human Design, Gene Keys or numerology in isolation, Astrakey shows where perspectives converge and where they productively contradict one another.",
         cta: "Read comparisons",
         href: paths.vergleiche,
       },
@@ -350,12 +350,12 @@ const useCasesCopy = {
     journeyKicker: "User journey",
     journeyTitle: "From first interest to paid depth.",
     journeyText:
-      "The website is not only information, but a clear and trustworthy route into the Hermetia app. People who become curious can start at any time. People who want to go deeper understand why a paid model is useful.",
+      "The website is not only information, but a clear and trustworthy route into the Astrakey app. People who become curious can start at any time. People who want to go deeper understand why a paid model is useful.",
     journey: [
       {
         step: "1",
         title: "Curiosity",
-        text: "The website answers basic questions: what Hermetia is, which systems are considered, which limits apply and which use cases really fit.",
+        text: "The website answers basic questions: what Astrakey is, which systems are considered, which limits apply and which use cases really fit.",
       },
       {
         step: "2",
@@ -370,14 +370,14 @@ const useCasesCopy = {
       {
         step: "4",
         title: "Ongoing practice",
-        text: "Hermetia is then not only read, but used as a calm reflection environment: observe, write, compare, refine and keep responsibility.",
+        text: "Astrakey is then not only read, but used as a calm reflection environment: observe, write, compare, refine and keep responsibility.",
       },
     ],
     journeyCtaTitle: "Test the most important use case first: your own profile.",
     journeyCtaText:
-      "The best explanation remains general. The free profile start shows whether Hermetia creates resonance for you personally.",
+      "The best explanation remains general. The free profile start shows whether Astrakey creates resonance for you personally.",
     depthKicker: "Deep dive",
-    depthTitle: "Four fields where Hermetia becomes especially strong.",
+    depthTitle: "Four fields where Astrakey becomes especially strong.",
     depthText:
       "Each area can be read separately. In the app they come together: soul map, systems, daily impulses, journaling, profile book and relationship layer form one ongoing reflection environment.",
     fieldChip: "Use field",
@@ -387,7 +387,7 @@ const useCasesCopy = {
         title: "Identity and self-image",
         image: "/images/hermetia/resonance-instrument.png",
         alt: "A finely tuned resonance instrument as a symbol for self-image and personal patterns",
-        text: "Many users come to Hermetia because they only partly recognize themselves in common personality types. The platform does not look at one category, but at recurring signals from several system families. This creates language for inner tensions: what seems stable, what appears cyclically and which side wants to be seen without becoming a new fixed identity?",
+        text: "Many users come to Astrakey because they only partly recognize themselves in common personality types. The platform does not look at one category, but at recurring signals from several system families. This creates language for inner tensions: what seems stable, what appears cyclically and which side wants to be seen without becoming a new fixed identity?",
         goodFor: ["name patterns", "sort strengths and shadows", "sharpen self-description"],
         cta: "use-cases-identity",
       },
@@ -395,7 +395,7 @@ const useCasesCopy = {
         title: "Decisions and transitions",
         image: "/images/hermetia/dawn-clock-of-becoming.png",
         alt: "A bright clock landscape as an image for transitions, timing and conscious decisions",
-        text: "In career changes, relationship clarification, moving, creative projects or inner new beginnings, people often seek not only facts but orientation. Hermetia does not give instructions. It shows which themes, rhythms and archetypal tensions recur in the profile so decisions can be tested more consciously.",
+        text: "In career changes, relationship clarification, moving, creative projects or inner new beginnings, people often seek not only facts but orientation. Astrakey does not give instructions. It shows which themes, rhythms and archetypal tensions recur in the profile so decisions can be tested more consciously.",
         goodFor: ["structure questions", "reflect timing", "recognize inner priorities"],
         cta: "use-cases-decisions",
       },
@@ -403,7 +403,7 @@ const useCasesCopy = {
         title: "Relationships and resonance",
         image: "/images/hermetia/garden-of-agreements.png",
         alt: "A calm garden as a symbol for relationships, boundaries and mutual consent",
-        text: "Relationship work needs care. Hermetia can help read difference not immediately as failure: closeness and autonomy, tempo and depth, safety and adventure. The ethical frame is clear: relationship readings require consent and remain reflection help, not a judgment of a person.",
+        text: "Relationship work needs care. Astrakey can help read difference not immediately as failure: closeness and autonomy, tempo and depth, safety and adventure. The ethical frame is clear: relationship readings require consent and remain reflection help, not a judgment of a person.",
         goodFor: ["understand resonance", "de-dramatize friction", "respect consent"],
         cta: "use-cases-relationships",
       },
@@ -417,7 +417,7 @@ const useCasesCopy = {
       },
     ],
     goodFitKicker: "Good fit",
-    goodFitTitle: "Hermetia fits well if...",
+    goodFitTitle: "Astrakey fits well if...",
     goodFit: [
       "You want to understand yourself better without locking yourself into a rigid identity.",
       "You like spiritual systems but want transparency, data protection and clear limits.",
@@ -425,7 +425,7 @@ const useCasesCopy = {
       "You want to decide later whether deeper levels, journaling or relationship readings are worth the price.",
     ],
     badFitKicker: "Limits",
-    badFitTitle: "Hermetia does not fit if...",
+    badFitTitle: "Astrakey does not fit if...",
     badFit: [
       "You expect diagnoses, therapy, medical assessment or psychological treatment.",
       "You want certain predictions about future, love, money, health or fate.",
@@ -435,28 +435,28 @@ const useCasesCopy = {
     conversionKicker: "Conversion principle",
     conversionTitle: "Curiosity leads to signup, but through trust.",
     conversionText:
-      "Hermetia is strongest when your decision remains self-determined. The content therefore connects clear fields of value with visible limits, consent and a free start.",
+      "Astrakey is strongest when your decision remains self-determined. The content therefore connects clear fields of value with visible limits, consent and a free start.",
     conversionPrinciples: [
       "Every content page offers a fitting path to profile start without having to sell hard.",
       "The free start is the first trust moment: you test resonance before choosing a paid model.",
       "Premium CTAs belong especially where depth, daily practice, journaling, relationships or the full profile book are explained.",
       "Legal limits, data protection and IP care remain visible so conversion is not based on exaggerated promises.",
     ],
-    funnelAlt: "Graphic showing the path from data through classification to understandable Hermetia language",
+    funnelAlt: "Graphic showing the path from data through classification to understandable Astrakey language",
     funnelCaption:
-      "The funnel shows why Hermetia does not simply add system texts, but checks signals, softens certainty and translates them into its own language.",
+      "The funnel shows why Astrakey does not simply add system texts, but checks signals, softens certainty and translates them into its own language.",
     legalKicker: "Legal frame",
     legalTitle: "What use cases may promise and what they may not.",
     legalText:
-      "Hermetia describes value as reflection, not as guarantee. That keeps the use cases helpful, clear and free from exaggerated promises.",
+      "Astrakey describes value as reflection, not as guarantee. That keeps the use cases helpful, clear and free from exaggerated promises.",
     legalFrames: [
       {
         title: "No diagnosis and no healing promises",
-        text: "Use cases are framed as reflection spaces. Hermetia makes no medical, psychotherapeutic, legal or financial statements and does not replace professional support.",
+        text: "Use cases are framed as reflection spaces. Astrakey makes no medical, psychotherapeutic, legal or financial statements and does not replace professional support.",
       },
       {
         title: "Original language instead of protected interpretation texts",
-        text: "The page describes systems, patterns and Hermetia's method in original editorial language. Proprietary texts, tables, wordings or protected excerpts from other providers are not reused.",
+        text: "The page describes systems, patterns and Astrakey's method in original editorial language. Proprietary texts, tables, wordings or protected excerpts from other providers are not reused.",
       },
       {
         title: "Consent for sensitive profiles",
@@ -464,26 +464,26 @@ const useCasesCopy = {
       },
     ],
     finalKicker: "Next step",
-    finalTitle: "Test Hermetia on your own profile.",
+    finalTitle: "Test Astrakey on your own profile.",
     finalText:
-      "General content can provide orientation. The aha moment happens when Hermetia calculates your own data and the first themes become visible. The start remains free.",
-    aboutCta: "Read about Hermetia",
+      "General content can provide orientation. The aha moment happens when Astrakey calculates your own data and the first themes become visible. The start remains free.",
+    aboutCta: "Read about Astrakey",
     finalBoxTitle: "From content to app",
     finalBoxText:
-      "This page helps decide whether Hermetia fits in principle. Onboarding turns it into a personal soul map. Paid models open deeper companionship only after that.",
+      "This page helps decide whether Astrakey fits in principle. Onboarding turns it into a personal soul map. Paid models open deeper companionship only after that.",
     faqKicker: "FAQ",
     faqTitle: "Frequently asked questions about use cases",
     faq: [
       {
-        q: "Who is Hermetia best suited for?",
-        a: "Hermetia fits people who want to use spiritual and psychological systems as language for reflection while valuing transparency, data protection, clear limits and an aesthetic user experience.",
+        q: "Who is Astrakey best suited for?",
+        a: "Astrakey fits people who want to use spiritual and psychological systems as language for reflection while valuing transparency, data protection, clear limits and an aesthetic user experience.",
       },
       {
-        q: "Can Hermetia help with important life decisions?",
-        a: "Hermetia can make questions, patterns and inner priorities visible. It does not decide for you and does not replace professional advice on medical, psychological, legal or financial topics.",
+        q: "Can Astrakey help with important life decisions?",
+        a: "Astrakey can make questions, patterns and inner priorities visible. It does not decide for you and does not replace professional advice on medical, psychological, legal or financial topics.",
       },
       {
-        q: "Is Hermetia more for beginners or advanced users?",
+        q: "Is Astrakey more for beginners or advanced users?",
         a: "Both. Beginners receive an understandable synthesis without needing specialist knowledge. Advanced users can go deeper into systems, convergence and comparison pages.",
       },
       {
@@ -526,7 +526,7 @@ export default async function UseCasesPage({ params }: { params: Promise<{ local
           }),
           faqSchema(localizedFaq),
           breadcrumbSchema([
-            { name: "Hermetia", url: `${siteUrl}/${locale}/` },
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
             { name: copy.breadcrumb, url: pageUrl },
           ]),
         ]}

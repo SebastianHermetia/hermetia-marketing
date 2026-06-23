@@ -10,39 +10,39 @@ import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components
 
 const methodFaq = [
   {
-    q: "Wie entsteht mein Hermetia-Profil?",
-    a: "Hermetia berechnet zuerst die technischen Grundlagen aus Geburtsdaten, Ort, Zeit und optionalen Selbstauskünften. Danach werden Systemsignale in Themen übersetzt, in Familien gruppiert und über die Konvergenz-Engine verdichtet.",
+    q: "Wie entsteht mein Astrakey-Profil?",
+    a: "Astrakey berechnet zuerst die technischen Grundlagen aus Geburtsdaten, Ort, Zeit und optionalen Selbstauskünften. Danach werden Systemsignale in Themen übersetzt, in Familien gruppiert und über die Konvergenz-Engine verdichtet.",
   },
   {
     q: "Was macht die Konvergenz-Engine anders als eine normale Auswertung?",
     a: "Sie zählt Systeme nicht einfach zusammen. Verwandte Quellen werden gebündelt, damit ähnliche Daten nicht doppelt als unabhängige Bestätigung erscheinen. Stark wird ein Thema erst, wenn mehrere unterschiedliche Perspektiven darauf zeigen.",
   },
   {
-    q: "Welche Rolle spielt AI in Hermetia?",
+    q: "Welche Rolle spielt AI in Astrakey?",
     a: "AI formuliert verständliche Deutungstexte auf Grundlage berechneter Fakten und Themen. Sie entscheidet nicht frei, welche Themen wichtig sind, und ersetzt keine medizinische, psychologische oder therapeutische Beratung.",
   },
   {
-    q: "Warum fragt Hermetia nach Selbstauskunft?",
+    q: "Warum fragt Astrakey nach Selbstauskunft?",
     a: "Geburtsbasierte Systeme kennen den Alltag eines Menschen nicht. Selbstauskünfte erden die Deutung und helfen, Symbolsprache mit erlebtem Verhalten, Interessen, Energie und Rhythmus zu verbinden.",
   },
   {
     q: "Kann ich nachvollziehen, woher eine Aussage kommt?",
-    a: "Ja. Hermetia zeigt, welche Systemfamilien und Datenarten ein Kernthema tragen und wo Unsicherheit besteht.",
+    a: "Ja. Astrakey zeigt, welche Systemfamilien und Datenarten ein Kernthema tragen und wo Unsicherheit besteht.",
   },
 ];
 
 const methodDeepDives = [
   {
-    title: "Datenbasis: Was Hermetia wirklich verwendet",
+    title: "Datenbasis: Was Astrakey wirklich verwendet",
     text: "Ein Profil beginnt nicht mit einer fertigen Deutung, sondern mit Eingaben: Geburtsdatum, Geburtsort, optional Geburtszeit, Spracheinstellung und ergänzende Selbstauskunft. Daraus entstehen technische Berechnungen und vorsichtige Themenmarker. Rohdaten, abgeleitete spirituelle Inhalte und Journalnotizen bleiben klar getrennte Datenbereiche.",
   },
   {
     title: "Systemfamilien: Warum nicht alles gleich zählt",
-    text: "Westliche Astrologie, Fixsterne und Astrokartografie nutzen verwandte Himmelsdaten. Human Design und Gene Keys teilen Grundlagen. Numerologie, Tarot-Geburtskarten und Kabbalah arbeiten mit Datum oder Name. Hermetia gruppiert solche Nähe, damit eine Aussage nicht stärker wirkt, nur weil dieselbe Quelle mehrfach übersetzt wurde.",
+    text: "Westliche Astrologie, Fixsterne und Astrokartografie nutzen verwandte Himmelsdaten. Human Design und Gene Keys teilen Grundlagen. Numerologie, Tarot-Geburtskarten und Kabbalah arbeiten mit Datum oder Name. Astrakey gruppiert solche Nähe, damit eine Aussage nicht stärker wirkt, nur weil dieselbe Quelle mehrfach übersetzt wurde.",
   },
   {
     title: "Deutung: Von Signal zu verständlicher Sprache",
-    text: "Aus einzelnen Signalen werden keine absoluten Behauptungen. Hermetia formuliert vorsichtig: als Tendenz, Frage, Muster oder Einladung zur Reflexion. So bleibt die Erfahrung persönlich und warm, ohne Menschen festzulegen oder professionelle Beratung zu ersetzen.",
+    text: "Aus einzelnen Signalen werden keine absoluten Behauptungen. Astrakey formuliert vorsichtig: als Tendenz, Frage, Muster oder Einladung zur Reflexion. So bleibt die Erfahrung persönlich und warm, ohne Menschen festzulegen oder professionelle Beratung zu ersetzen.",
   },
 ];
 
@@ -57,7 +57,7 @@ const qualityGates = [
 const graphics = [
   {
     src: "/graphics/convergence/abb1-familien-modell.svg",
-    alt: "Systemfamilien im Hermetia Profilprozess",
+    alt: "Systemfamilien im Astrakey Profilprozess",
     caption: "Systemfamilien helfen, verwandte Quellen zu bündeln und echte unabhängige Bestätigung sichtbar zu machen.",
   },
   {
@@ -89,12 +89,12 @@ export default async function MethodikPage({ params }: { params: Promise<{ local
             description: p.seoDescription,
             locale,
             url: pageUrl,
-            about: "Hermetia Methodik",
+            about: "Astrakey Methodik",
             image: `${siteUrl}/graphics/convergence/abb5-algorithmus-funnel.svg`,
           }),
           faqSchema(methodFaq),
           breadcrumbSchema([
-            { name: "Hermetia", url: `${siteUrl}/${locale}/` },
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
             { name: "So entsteht dein Profil", url: pageUrl },
           ]),
         ]}
@@ -120,7 +120,7 @@ export default async function MethodikPage({ params }: { params: Promise<{ local
             <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Wie wird aus Daten ein persönliches Profil?</h2>
           </div>
           <p className="muted text-[17px] leading-[1.85]">
-            Hermetia erstellt dein Profil in drei Schichten: Zuerst werden berechenbare Grundlagen erzeugt, dann erkennt die Konvergenz-Engine wiederkehrende Themen über Systemfamilien hinweg, anschließend werden diese Themen in verständliche Reflexionssprache übersetzt. Die Methode macht neugierig und bleibt nachvollziehbar.
+            Astrakey erstellt dein Profil in drei Schichten: Zuerst werden berechenbare Grundlagen erzeugt, dann erkennt die Konvergenz-Engine wiederkehrende Themen über Systemfamilien hinweg, anschließend werden diese Themen in verständliche Reflexionssprache übersetzt. Die Methode macht neugierig und bleibt nachvollziehbar.
           </p>
         </div>
       </section>
@@ -227,7 +227,7 @@ export default async function MethodikPage({ params }: { params: Promise<{ local
         <div className="wrap grid gap-8 lg:grid-cols-[1fr_.9fr]">
           <div>
             <span className="kicker">Qualität und Grenzen</span>
-            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Hermetia wirkt tief, ohne absolut zu sprechen.</h2>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Astrakey wirkt tief, ohne absolut zu sprechen.</h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
               Die Methode ist auf Vertrauen ausgelegt: nachvollziehbare Berechnung, vorsichtige Sprache, Datenschutz und eine klare Trennung zwischen Reflexion und Beratung. Genau diese Grenzen machen das Produkt glaubwürdiger.
             </p>
@@ -249,7 +249,7 @@ export default async function MethodikPage({ params }: { params: Promise<{ local
         <div className="wrap">
           <div className="mb-8 text-center">
             <span className="kicker">FAQ</span>
-            <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">Häufige Fragen zur Hermetia Methodik</h2>
+            <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">Häufige Fragen zur Astrakey Methodik</h2>
           </div>
           <Faq items={methodFaq} />
         </div>

@@ -132,7 +132,7 @@ export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCl
         {/* Drawer header — title is used as aria-labelledby target */}
         <div className="flex shrink-0 items-center justify-between border-b border-sand px-5 py-4">
           <span id="mobile-menu-title" className="font-serif text-[18px] text-aubergine">
-            Hermetia
+            Astrakey
           </span>
           <button
             type="button"

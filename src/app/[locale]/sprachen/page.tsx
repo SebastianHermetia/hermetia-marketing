@@ -12,8 +12,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return buildMetadata({
     locale: locale as Locale,
     path: paths.sprachen,
-    title: "Hermetia Sprachen — Übersetzungsstatus und EU-Rollout",
-    description: "Welche Hermetia-Sprachen redaktionell freigegeben sind, welche technisch live sind und wie der mehrsprachige EU-Rollout umgesetzt wird.",
+    title: "Astrakey Sprachen — Übersetzungsstatus und EU-Rollout",
+    description: "Welche Astrakey-Sprachen redaktionell freigegeben sind, welche technisch live sind und wie der mehrsprachige EU-Rollout umgesetzt wird.",
   });
 }
 
@@ -32,9 +32,9 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <section className="py-16">
           <div className="wrap max-w-[980px]">
             <span className="kicker">Mehrsprachigkeit</span>
-            <h1 className="mt-3 text-[clamp(32px,5vw,50px)]">Hermetia in europäischen Sprachen</h1>
+            <h1 className="mt-3 text-[clamp(32px,5vw,50px)]">Astrakey in europäischen Sprachen</h1>
             <p className="lead mt-5 max-w-[760px]">
-              Hermetia ist für alle offiziellen EU-Sprachen live. Jede Sprachroute erhält eine versionierte redaktionelle Fassung ohne stillen DE/EN-Fallback; Terminologie, Tonalität und rechtliche Präzision bleiben Teil der laufenden Review-Schleife.
+              Astrakey ist für alle offiziellen EU-Sprachen live. Jede Sprachroute erhält eine versionierte redaktionelle Fassung ohne stillen DE/EN-Fallback; Terminologie, Tonalität und rechtliche Präzision bleiben Teil der laufenden Review-Schleife.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-3">
@@ -162,7 +162,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
             <AppCta
               locale={locale}
               title="Starte in deiner bevorzugten Sprache."
-              text="Hermetia merkt sich deine Sprachwahl für den Profilstart und führt dich transparent durch den aktuellen Übersetzungsstand."
+              text="Astrakey merkt sich deine Sprachwahl für den Profilstart und führt dich transparent durch den aktuellen Übersetzungsstand."
               source="language-status"
             />
           </div>

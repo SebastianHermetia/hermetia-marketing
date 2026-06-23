@@ -15,12 +15,12 @@ type GlossarySlug = (typeof glossaryTerms)[number]["slug"];
 const termFamilies: { title: string; text: string; slugs: GlossarySlug[] }[] = [
   {
     title: "Profil und Seelenkarte",
-    text: "Grundbegriffe für den Einstieg: Was Hermetia berechnet, wie Kernthemen entstehen und warum die Seelenkarte kein einzelnes Chart ist.",
+    text: "Grundbegriffe für den Einstieg: Was Astrakey berechnet, wie Kernthemen entstehen und warum die Seelenkarte kein einzelnes Chart ist.",
     slugs: ["seelenkarte", "kernthema", "spannungsfeld", "theme-signal"],
   },
   {
     title: "Methode und Konvergenz",
-    text: "Begriffe, die erklären, wie Hermetia mehrere Systeme vergleichbar macht und verwandte Quellen nicht doppelt zählt.",
+    text: "Begriffe, die erklären, wie Astrakey mehrere Systeme vergleichbar macht und verwandte Quellen nicht doppelt zählt.",
     slugs: ["konvergenz", "systemfamilie", "gewichtung", "evidenzart"],
   },
   {
@@ -36,7 +36,7 @@ const termFamilies: { title: string; text: string; slugs: GlossarySlug[] }[] = [
 ];
 
 const glossaryQuestions = [
-  "Was bedeutet Seelenkarte bei Hermetia?",
+  "Was bedeutet Seelenkarte bei Astrakey?",
   "Was ist Konvergenz in spirituellen Systemen?",
   "Welche Rolle spielt AI bei Deutungstexten?",
   "Warum sind spirituelle Profildaten sensibel?",
@@ -45,7 +45,7 @@ const glossaryQuestions = [
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  return buildMetadata({ locale: locale as Locale, path: paths.glossar, title: "Hermetia Glossar — Begriffe aus Profiling, Systemen und AI erklärt", description: "Das Hermetia Glossar erklärt Seelenkarte, Konvergenz, Synastrie, AI-Deutung und weitere Begriffe verständlich und rechtssicher." });
+  return buildMetadata({ locale: locale as Locale, path: paths.glossar, title: "Astrakey Glossar — Begriffe aus Profiling, Systemen und AI erklärt", description: "Das Astrakey Glossar erklärt Seelenkarte, Konvergenz, Synastrie, AI-Deutung und weitere Begriffe verständlich und rechtssicher." });
 }
 
 export default async function GlossarPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -61,15 +61,15 @@ export default async function GlossarPage({ params }: { params: Promise<{ locale
       <JsonLd
         data={[
           articleSchema({
-            headline: "Hermetia Glossar",
+            headline: "Astrakey Glossar",
             description: "Begriffe aus Seelenkarte, Konvergenz, spirituellen Systemen, AI-Deutung und Datenschutz verständlich erklärt.",
             locale,
             url: pageUrl,
-            about: "Hermetia Glossar",
+            about: "Astrakey Glossar",
             image: `${siteUrl}/images/hermetia/library-of-self-profile.png`,
           }),
           breadcrumbSchema([
-            { name: "Hermetia", url: `${siteUrl}/${locale}/` },
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
             { name: "Glossar", url: pageUrl },
           ]),
         ]}
@@ -80,13 +80,13 @@ export default async function GlossarPage({ params }: { params: Promise<{ locale
           <div>
             <span className="kicker">{ui.overview}</span>
             <h1 className="mt-3 text-[clamp(32px,5vw,48px)]">Glossar für Seelenkarte, Systeme und AI-Deutung</h1>
-            <p className="lead mt-5">Kurze, klare Antworten auf die Begriffe, die Hermetia ausmachen. Jede Erklärung führt tiefer in die Methode und bei Bedarf direkt zur eigenen Erfahrung.</p>
+            <p className="lead mt-5">Kurze, klare Antworten auf die Begriffe, die Astrakey ausmachen. Jede Erklärung führt tiefer in die Methode und bei Bedarf direkt zur eigenen Erfahrung.</p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "glossary-hero" })}>{ui.startFree}</a>
               <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.wissen)}>{ui.readMore}</a>
             </div>
           </div>
-          <img src="/images/hermetia/library-of-self-profile.png" alt="Bibliothek des Selbst als Hermetia Glossar-Motiv" className="rounded-card border border-sand object-cover shadow-soft" />
+          <img src="/images/hermetia/library-of-self-profile.png" alt="Bibliothek des Selbst als Astrakey Glossar-Motiv" className="rounded-card border border-sand object-cover shadow-soft" />
         </div>
       </section>
 
@@ -96,7 +96,7 @@ export default async function GlossarPage({ params }: { params: Promise<{ locale
             <span className="kicker">Antwortmaschine</span>
             <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Welche Fragen beantwortet das Glossar?</h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Das Glossar ist für kurze, zitierfähige Antworten gebaut. Es hilft Suchmaschinen, AI-Antwortsystemen und neuen Nutzern, Hermetias Sprache schnell einzuordnen.
+              Das Glossar ist für kurze, zitierfähige Antworten gebaut. Es hilft Suchmaschinen, AI-Antwortsystemen und neuen Nutzern, Astrakeys Sprache schnell einzuordnen.
             </p>
           </div>
           <div className="rounded-card border border-sand bg-white p-7 shadow-soft">
@@ -113,7 +113,7 @@ export default async function GlossarPage({ params }: { params: Promise<{ locale
             <span className="kicker">Begriffsfamilien</span>
             <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Begriffe nach Nutzerintention sortiert.</h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Wer Hermetia neu entdeckt, sucht selten alphabetisch. Begriffsfamilien führen deshalb nach Thema: Einstieg, Methode, Vertrauen und Premium-Alltag.
+              Wer Astrakey neu entdeckt, sucht selten alphabetisch. Begriffsfamilien führen deshalb nach Thema: Einstieg, Methode, Vertrauen und Premium-Alltag.
             </p>
           </div>
           <div className="grid gap-5 lg:grid-cols-2">
@@ -155,7 +155,7 @@ export default async function GlossarPage({ params }: { params: Promise<{ locale
           </div>
         </div>
         <div className="wrap mt-10">
-          <AppCta locale={locale} title="Begriffe sind gut. Dein eigenes Profil ist besser." text="Starte kostenlos und sieh, welche Themen Hermetia bei dir erkennt." source="glossary-index" />
+          <AppCta locale={locale} title="Begriffe sind gut. Dein eigenes Profil ist besser." text="Starte kostenlos und sieh, welche Themen Astrakey bei dir erkennt." source="glossary-index" />
         </div>
       </section>
       <Footer locale={locale} />

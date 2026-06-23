@@ -62,8 +62,8 @@ for (const locale of locales) {
     const route = routeFromFile(locale, file);
     const html = readFileSync(file, "utf8");
     const text = stripHtml(html);
-    if (!text.includes("Hermetia")) {
-      console.error(`Missing Hermetia content in ${relative(out, file)}`);
+    if (!text.includes("Astrakey")) {
+      console.error(`Missing Astrakey content in ${relative(out, file)}`);
       failures += 1;
     }
     if (!isCoveredRoute(route) && !["/faq/", "/sprachen/", "/ueber-hermetia/", "/anwendungsfaelle/"].includes(route)) {

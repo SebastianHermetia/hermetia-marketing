@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "Hermetia",
+    "name": "Astrakey",
     "tagline": "As above, so below",
     "claim": "A portrait of your soul — from everything that makes you you."
   },
@@ -32,7 +32,7 @@
     "magazin": "Magazine",
     "glossar": "Glossary",
     "faq": "FAQ",
-    "about": "About Hermetia",
+    "about": "About Astrakey",
     "datenschutz": "Privacy",
     "kiTransparenz": "AI transparency",
     "agb": "Terms",
@@ -41,12 +41,12 @@
     "disclaimer": "Inspiration for self-reflection — not medical or therapeutic advice. Content is partly AI-assisted (EU AI Act Art. 50)."
   },
   "home": {
-    "seoTitle": "Hermetia — Your soul map. A portrait that understands you.",
-    "seoDescription": "Hermetia turns your birth data into a soul map drawn from 31 interpretive systems and walks beside you day by day. Discover your profile for free.",
+    "seoTitle": "Astrakey — Your soul map. A portrait that understands you.",
+    "seoDescription": "Astrakey turns your birth data into a soul map drawn from 31 interpretive systems and walks beside you day by day. Discover your profile for free.",
     "hero": {
       "eyebrow": "As above, so below",
       "title": "A portrait of your soul — from everything that makes you you.",
-      "lead": "Hermetia reads your birth data and weaves a single, clear soul map from up to 31 interpretive systems — and accompanies you day by day. Not a data sheet. A journey to yourself.",
+      "lead": "Astrakey reads your birth data and weaves a single, clear soul map from up to 31 interpretive systems — and accompanies you day by day. Not a data sheet. A journey to yourself.",
       "trustline": "Start free · no credit card · EU-hosted & encrypted",
       "quote": "Your sensitivity is a compass — not a weakness.",
       "chips": [
@@ -65,7 +65,7 @@
       ]
     },
     "features": {
-      "kicker": "What Hermetia does for you",
+      "kicker": "What Astrakey does for you",
       "title": "Six ways to understand yourself better",
       "items": [
         {
@@ -113,7 +113,7 @@
         {
           "step": "Step 02",
           "title": "Connect",
-          "text": "Our convergence engine finds where systems confirm one another (strength) and where they disagree (good questions). This is Hermetia’s heart."
+          "text": "Our convergence engine finds where systems confirm one another (strength) and where they disagree (good questions). This is Astrakey’s heart."
         },
         {
           "step": "Step 03",
@@ -125,7 +125,7 @@
     "systems": {
       "kicker": "The embedded systems",
       "title": "31 perspectives. One voice.",
-      "text": "Astrology, Human Design, Gene Keys, numerology, BaZi, the Enneagram and more — Hermetia doesn’t read them side by side, it reads them together. Where many paths point to the same place, that becomes certainty.",
+      "text": "Astrology, Human Design, Gene Keys, numerology, BaZi, the Enneagram and more — Astrakey doesn’t read them side by side, it reads them together. Where many paths point to the same place, that becomes certainty.",
       "chips": [
         "Astrology",
         "Human Design",
@@ -169,15 +169,15 @@
       "items": [
         {
           "q": "What is a soul map?",
-          "a": "Your soul map is an integrated personality portrait that Hermetia calculates from your birth data and up to 31 interpretive systems, woven into one understandable, beautiful view."
+          "a": "Your soul map is an integrated personality portrait that Astrakey calculates from your birth data and up to 31 interpretive systems, woven into one understandable, beautiful view."
         },
         {
           "q": "Do I need my exact birth time?",
-          "a": "No. Hermetia works without an exact time — you simply pick a time of day. We tell you transparently which part of your profile is reliable even without the time."
+          "a": "No. Astrakey works without an exact time — you simply pick a time of day. We tell you transparently which part of your profile is reliable even without the time."
         },
         {
           "q": "Is this a diagnosis or a prediction?",
-          "a": "No. Hermetia is inspiration for self-reflection — not medical, psychological or therapeutic advice, and not a prediction of fate."
+          "a": "No. Astrakey is inspiration for self-reflection — not medical, psychological or therapeutic advice, and not a prediction of fate."
         },
         {
           "q": "What happens to my data?",
@@ -191,11 +191,11 @@
     }
   },
   "leistungen": {
-    "seoTitle": "Features — What Hermetia does for you | Soul map, levels, daily impulse",
-    "seoDescription": "Soul map, unlockable levels, daily impulse, journaling, your book and relationship readings: all of Hermetia’s features at a glance.",
+    "seoTitle": "Features — What Astrakey does for you | Soul map, levels, daily impulse",
+    "seoDescription": "Soul map, unlockable levels, daily impulse, journaling, your book and relationship readings: all of Astrakey’s features at a glance.",
     "kicker": "Features",
     "title": "Everything that accompanies you on your journey.",
-    "lead": "From your first aha moment to daily companionship — Hermetia grows with you.",
+    "lead": "From your first aha moment to daily companionship — Astrakey grows with you.",
     "soulmap": {
       "tag": "Your aha moment",
       "title": "The soul map",
@@ -261,15 +261,15 @@
     }
   },
   "systeme": {
-    "seoTitle": "The systems behind Hermetia — 31 perspectives, one soul map",
-    "seoDescription": "Astrology, Human Design, Gene Keys, numerology, BaZi and more: how the 31 systems in Hermetia work — and how the convergence engine connects them.",
+    "seoTitle": "The systems behind Astrakey — 31 perspectives, one soul map",
+    "seoDescription": "Astrology, Human Design, Gene Keys, numerology, BaZi and more: how the 31 systems in Astrakey work — and how the convergence engine connects them.",
     "kicker": "The embedded systems",
     "title": "31 perspectives of humanity — for one portrait of you.",
-    "lead": "Each system is a window. Hermetia opens many at once and shows you where they look at the same thing.",
+    "lead": "Each system is a window. Astrakey opens many at once and shows you where they look at the same thing.",
     "convergence": {
-      "tag": "The heart of Hermetia",
+      "tag": "The heart of Astrakey",
       "title": "The convergence engine",
-      "text": "No other calculator does this: Hermetia overlays all systems and measures where they confirm one another — that becomes your strength — and where they disagree — that becomes your question. Many voices become one."
+      "text": "No other calculator does this: Astrakey overlays all systems and measures where they confirm one another — that becomes your strength — and where they disagree — that becomes your question. Many voices become one."
     },
     "coreKicker": "The five core systems",
     "coreTitle": "The foundation of every soul map",
@@ -332,15 +332,15 @@
         "text": "Classic depth and cycles that keep your map alive over time."
       }
     ],
-    "note": "Hermetia integrates only systems vetted for licensing and cultural sensitivity. Calculations are permitted; we never use protected original texts.",
+    "note": "Astrakey integrates only systems vetted for licensing and cultural sensitivity. Calculations are permitted; we never use protected original texts.",
     "cta": {
       "title": "See what your systems say about you.",
       "lead": "Your core profile is free. You open the depth whenever you wish."
     }
   },
   "methodik": {
-    "seoTitle": "How your profile is made — How Hermetia calculates and interprets",
-    "seoDescription": "Transparently explained: how Hermetia calculates a profile from your birth data (Skyfield), connects it with the convergence engine and interprets it warmly — and what the AI does and does not do.",
+    "seoTitle": "How your profile is made — How Astrakey calculates and interprets",
+    "seoDescription": "Transparently explained: how Astrakey calculates a profile from your birth data (Skyfield), connects it with the convergence engine and interprets it warmly — and what the AI does and does not do.",
     "kicker": "How your profile is made",
     "title": "We calculate precisely. We interpret warmly.",
     "lead": "Trust grows from transparency. So we show you exactly where every statement comes from — and where an AI writes along.",
@@ -355,7 +355,7 @@
         "n": "02",
         "title": "Connect — the convergence engine",
         "text": "All systems feed a shared map of themes. A pure calculation engine (no AI) measures where systems confirm one another — that becomes your strength — and where they diverge — that becomes a good question. Many voices become one.",
-        "tag": "The heart of Hermetia"
+        "tag": "The heart of Astrakey"
       },
       {
         "n": "03",
@@ -402,8 +402,8 @@
     }
   },
   "preise": {
-    "seoTitle": "Pricing — Start Hermetia free, from €49 / year for all levels",
-    "seoDescription": "Hermetia has just three clear plans: Discover (free), Companion (€49/year, all levels) and Depth (€99/year). Cancel anytime, EU-hosted.",
+    "seoTitle": "Pricing — Start Astrakey free, from €49 / year for all levels",
+    "seoDescription": "Astrakey has just three clear plans: Discover (free), Companion (€49/year, all levels) and Depth (€99/year). Cancel anytime, EU-hosted.",
     "kicker": "Pricing",
     "title": "Clear, fair, no fine print.",
     "lead": "Begin for free. Open every level for €49 a year, about 13 cents a day.",
@@ -481,7 +481,7 @@
     "faqTitle": "Frequently asked about the plans",
     "faq": [
       {
-        "q": "What does Hermetia really cost?",
+        "q": "What does Astrakey really cost?",
         "a": "Getting started is free forever. The most popular plan, “Companion”, costs €49 a year and opens all levels, the daily impulse, journaling and your book. “Depth” at €99 adds the oracle, relationship profiles and multiple profiles."
       },
       {
@@ -513,11 +513,11 @@
         },
         {
           "heading": "2 · Represented by",
-          "body": "[Name of the authorised representative]\n[Position / role]\n\nIf Hermetia is operated through a company, legal form, register court, registration number and authorised representatives must be added accordingly."
+          "body": "[Name of the authorised representative]\n[Position / role]\n\nIf Astrakey is operated through a company, legal form, register court, registration number and authorised representatives must be added accordingly."
         },
         {
           "heading": "3 · Contact",
-          "body": "Email: hallo@hermetia.de\nPhone: [phone number]\nSupport / privacy: datenschutz@hermetia.de\nWithdrawal: widerruf@hermetia.de\n\nFor legally relevant requests, a permanently reachable contact address should be used. Social media channels alone do not replace these details."
+          "body": "Email: hallo@astrakey.me\nPhone: [phone number]\nSupport / privacy: datenschutz@astrakey.me\nWithdrawal: widerruf@astrakey.me\n\nFor legally relevant requests, a permanently reachable contact address should be used. Social media channels alone do not replace these details."
         },
         {
           "heading": "4 · Register and VAT",
@@ -525,7 +525,7 @@
         },
         {
           "heading": "5 · Responsible for content (§ 18 (2) MStV)",
-          "body": "[Name]\n[Address as above]\n\nThis information concerns journalistic-editorial content. Since Hermetia publishes guide, glossary, comparison and knowledge content, editorial responsibility should be clearly named before launch."
+          "body": "[Name]\n[Address as above]\n\nThis information concerns journalistic-editorial content. Since Astrakey publishes guide, glossary, comparison and knowledge content, editorial responsibility should be clearly named before launch."
         },
         {
           "heading": "6 · Consumer dispute resolution",
@@ -533,7 +533,7 @@
         },
         {
           "heading": "7 · Responsibility for content",
-          "body": "As a service provider, we are responsible for our own content on these pages under general law. Hermetia content is intended for information and self-reflection. It does not replace medical, therapeutic, psychological, legal or financial advice.\n\nWhere content is phrased with AI assistance, the information on the AI transparency page applies. Legal texts, privacy information and product claims must receive final professional and legal review before public launch."
+          "body": "As a service provider, we are responsible for our own content on these pages under general law. Astrakey content is intended for information and self-reflection. It does not replace medical, therapeutic, psychological, legal or financial advice.\n\nWhere content is phrased with AI assistance, the information on the AI transparency page applies. Legal texts, privacy information and product claims must receive final professional and legal review before public launch."
         },
         {
           "heading": "8 · External links",
@@ -554,11 +554,11 @@
       "sections": [
         {
           "heading": "1 · Controller",
-          "body": "The controller for data processing is [Provider / company name], [address], email: datenschutz@hermetia.de. [Where appointed:] Data protection officer: [name, contact]."
+          "body": "The controller for data processing is [Provider / company name], [address], email: datenschutz@astrakey.me. [Where appointed:] Data protection officer: [name, contact]."
         },
         {
           "heading": "2 · Short overview",
-          "body": "Hermetia creates a personal reflection profile from your inputs and calculated system markers. This includes the soul map, daily impulses, optional journaling, relationship and resonance modules, profile refinement, export functions, a possible full profile book and AI-assisted companion texts. These contents can be highly personal, even though they are not intended as diagnosis, therapy or binding advice.\n\nWe therefore do not treat this data like ordinary marketing data. Data minimisation, purpose limitation, clear consent, EU-oriented hosting, encryption, role-based access, export and deletion are part of the privacy concept. This policy is a careful launch draft and must be legally reviewed and aligned with the actual providers used before public release."
+          "body": "Astrakey creates a personal reflection profile from your inputs and calculated system markers. This includes the soul map, daily impulses, optional journaling, relationship and resonance modules, profile refinement, export functions, a possible full profile book and AI-assisted companion texts. These contents can be highly personal, even though they are not intended as diagnosis, therapy or binding advice.\n\nWe therefore do not treat this data like ordinary marketing data. Data minimisation, purpose limitation, clear consent, EU-oriented hosting, encryption, role-based access, export and deletion are part of the privacy concept. This policy is a careful launch draft and must be legally reviewed and aligned with the actual providers used before public release."
         },
         {
           "heading": "3 · Which data we process",
@@ -566,7 +566,7 @@
         },
         {
           "heading": "4 · Special categories of personal data",
-          "body": "Hermetia works with spiritual, worldview-related and personality-adjacent interpretations. Depending on the concrete design, such derived content may touch special categories of personal data under Art. 9 GDPR. We therefore treat this content with particular care and, where required, base processing on explicit, separate consent.\n\nThis consent must be clear, voluntary, informed and withdrawable. It must not be hidden in general terms of use. Users need to understand that Hermetia derives personal interpretations from inputs and may use them for profile functions, premium content, daily impulses, export or Companion features. Withdrawal applies for the future; processing that was lawful before withdrawal remains unaffected."
+          "body": "Astrakey works with spiritual, worldview-related and personality-adjacent interpretations. Depending on the concrete design, such derived content may touch special categories of personal data under Art. 9 GDPR. We therefore treat this content with particular care and, where required, base processing on explicit, separate consent.\n\nThis consent must be clear, voluntary, informed and withdrawable. It must not be hidden in general terms of use. Users need to understand that Astrakey derives personal interpretations from inputs and may use them for profile functions, premium content, daily impulses, export or Companion features. Withdrawal applies for the future; processing that was lawful before withdrawal remains unaffected."
         },
         {
           "heading": "5 · Purposes and legal bases",
@@ -574,7 +574,7 @@
         },
         {
           "heading": "6 · AI processing",
-          "body": "Hermetia may use AI to phrase calculated profile markers, theme clusters and released contexts in understandable language. Calculation of system values should remain separate from AI wording. AI should not produce independent diagnosis, therapy, legal or financial advice, or binding decisions.\n\nOnly the information required for the specific purpose should be sent to AI services. Where possible, raw data is reduced, pseudonymised or replaced with calculated markers. Especially sensitive content such as journal entries or relationship data must not be used as unlimited or automatic AI context. Further details are provided on the AI transparency page."
+          "body": "Astrakey may use AI to phrase calculated profile markers, theme clusters and released contexts in understandable language. Calculation of system values should remain separate from AI wording. AI should not produce independent diagnosis, therapy, legal or financial advice, or binding decisions.\n\nOnly the information required for the specific purpose should be sent to AI services. Where possible, raw data is reduced, pseudonymised or replaced with calculated markers. Especially sensitive content such as journal entries or relationship data must not be used as unlimited or automatic AI context. Further details are provided on the AI transparency page."
         },
         {
           "heading": "7 · Third-country transfers and providers",
@@ -582,7 +582,7 @@
         },
         {
           "heading": "8 · Relationships and data of other people",
-          "body": "Relationship and resonance features may involve data about other people. Such features require particular care because nobody should be secretly evaluated in a spiritual or personality-adjacent way. Hermetia should therefore design relationship profiles so that consent, transparency and purpose limitation remain practical.\n\nIf data about a second person is entered, it must be clear on what basis this happens, who is responsible and which information is stored. Features for partnership, friendship, family or professional resonance must not encourage hidden assessment of other people. The legal and ethical design of these modules should receive a separate review before launch."
+          "body": "Relationship and resonance features may involve data about other people. Such features require particular care because nobody should be secretly evaluated in a spiritual or personality-adjacent way. Astrakey should therefore design relationship profiles so that consent, transparency and purpose limitation remain practical.\n\nIf data about a second person is entered, it must be clear on what basis this happens, who is responsible and which information is stored. Features for partnership, friendship, family or professional resonance must not encourage hidden assessment of other people. The legal and ethical design of these modules should receive a separate review before launch."
         },
         {
           "heading": "9 · Retention, deletion and export",
@@ -590,7 +590,7 @@
         },
         {
           "heading": "10 · Your rights",
-          "body": "Subject to the GDPR, you have rights of access, rectification, erasure, restriction of processing, data portability, objection and withdrawal of consent. You may also lodge a complaint with a data protection supervisory authority.\n\nHermetia should make these rights practically accessible, not merely mention them formally. This includes profile export, deletion, consent management, transparent AI notices and understandable settings for voluntary data. If you have questions about your data, you can contact the address listed above."
+          "body": "Subject to the GDPR, you have rights of access, rectification, erasure, restriction of processing, data portability, objection and withdrawal of consent. You may also lodge a complaint with a data protection supervisory authority.\n\nAstrakey should make these rights practically accessible, not merely mention them formally. This includes profile export, deletion, consent management, transparent AI notices and understandable settings for voluntary data. If you have questions about your data, you can contact the address listed above."
         },
         {
           "heading": "11 · Cookies, consent and analytics",
@@ -598,15 +598,15 @@
         },
         {
           "heading": "12 · Security",
-          "body": "Hermetia should use technical and organisational measures appropriate to the risk of personal profile content. These include encrypted transmission, secure password storage, role-based access, logging of security-relevant events, backups, update processes, access restrictions, separated environments and deletion concepts.\n\nIt is especially important that production profile content does not flow uncontrolled into test systems, prompt experiments, screenshots, support tools or analytics environments. For sensitive AI functions, prompt logging, access to journal texts and debug output should be particularly limited."
+          "body": "Astrakey should use technical and organisational measures appropriate to the risk of personal profile content. These include encrypted transmission, secure password storage, role-based access, logging of security-relevant events, backups, update processes, access restrictions, separated environments and deletion concepts.\n\nIt is especially important that production profile content does not flow uncontrolled into test systems, prompt experiments, screenshots, support tools or analytics environments. For sensitive AI functions, prompt logging, access to journal texts and debug output should be particularly limited."
         },
         {
           "heading": "13 · No disclosure for advertising purposes",
-          "body": "We do not sell personal profile content, journal texts, relationship data or derived interpretations to advertising partners. Data must not be used to address people manipulatively based on sensitive spiritual or personality-adjacent statements.\n\nMarketing may rely on aggregated, technical or consent-based signals, but not on exploiting private reflection content. This separation is central to Hermetia: the website can grow without compromising the confidentiality of personal profiles."
+          "body": "We do not sell personal profile content, journal texts, relationship data or derived interpretations to advertising partners. Data must not be used to address people manipulatively based on sensitive spiritual or personality-adjacent statements.\n\nMarketing may rely on aggregated, technical or consent-based signals, but not on exploiting private reflection content. This separation is central to Astrakey: the website can grow without compromising the confidentiality of personal profiles."
         },
         {
           "heading": "14 · Minors and sensitive situations",
-          "body": "Hermetia is not directed at children. If functions for younger users, family contexts or particularly vulnerable situations are planned, separate age, consent and protection concepts are required. Spiritual or personality-adjacent content can have a stronger effect in crisis, grief, separation or health-related stress.\n\nHermetia should therefore provide clear notices, boundaries and escalation logic. The product must not replace emergency support and should point users in acute crisis situations to suitable professional services."
+          "body": "Astrakey is not directed at children. If functions for younger users, family contexts or particularly vulnerable situations are planned, separate age, consent and protection concepts are required. Spiritual or personality-adjacent content can have a stronger effect in crisis, grief, separation or health-related stress.\n\nAstrakey should therefore provide clear notices, boundaries and escalation logic. The product must not replace emergency support and should point users in acute crisis situations to suitable professional services."
         },
         {
           "heading": "15 · Changes and final review",
@@ -619,15 +619,15 @@
       "sections": [
         {
           "heading": "1 · Scope and provider",
-          "body": "These terms apply to the use of Hermetia, offered by [Provider / company name], [address] (“we”). The version valid at the time the contract is concluded applies."
+          "body": "These terms apply to the use of Astrakey, offered by [Provider / company name], [address] (“we”). The version valid at the time the contract is concluded applies."
         },
         {
           "heading": "2 · Subject of the service",
-          "body": "Hermetia is a digital self-reflection service. Inputs such as birth data, optional birth time, birthplace and voluntary contexts can generate personal profile content: soul map, system evaluations, convergence engine, daily impulses, journaling, relationship and resonance modules, profile refinement, AI-assisted Companion, export and a possible full profile book.\n\nHermetia offers free entry points and paid models with expanded scope. Paid services may include more profile depth, longer texts, saved histories, Companion dialogues, extended daily impulses, relationship evaluations, export functions or special profile book content. The concrete service is defined by the relevant plan description at the time of order."
+          "body": "Astrakey is a digital self-reflection service. Inputs such as birth data, optional birth time, birthplace and voluntary contexts can generate personal profile content: soul map, system evaluations, convergence engine, daily impulses, journaling, relationship and resonance modules, profile refinement, AI-assisted Companion, export and a possible full profile book.\n\nAstrakey offers free entry points and paid models with expanded scope. Paid services may include more profile depth, longer texts, saved histories, Companion dialogues, extended daily impulses, relationship evaluations, export functions or special profile book content. The concrete service is defined by the relevant plan description at the time of order."
         },
         {
           "heading": "3 · No substitute for professional advice",
-          "body": "Hermetia creates reflection content. The content is not medical, psychological, psychotherapeutic, legal, tax, financial or other professional advice. Hermetia does not provide diagnosis, promise healing, make life decisions or guarantee predictions.\n\nIf you are in an acute crisis, have health concerns, need legal clarification, want to make financial decisions or feel psychological strain, please contact qualified professionals or appropriate emergency services. Hermetia can offer language for self-observation, but it does not replace professional support."
+          "body": "Astrakey creates reflection content. The content is not medical, psychological, psychotherapeutic, legal, tax, financial or other professional advice. Astrakey does not provide diagnosis, promise healing, make life decisions or guarantee predictions.\n\nIf you are in an acute crisis, have health concerns, need legal clarification, want to make financial decisions or feel psychological strain, please contact qualified professionals or appropriate emergency services. Astrakey can offer language for self-observation, but it does not replace professional support."
         },
         {
           "heading": "4 · Registration and conclusion of contract",
@@ -647,7 +647,7 @@
         },
         {
           "heading": "8 · User obligations and fair use",
-          "body": "You must keep your access credentials confidential and must not misuse your account. You may not automatically scrape Hermetia, bypass security mechanisms, upload unlawful content, infringe third-party rights or create profiles of other people without a suitable basis.\n\nRelationship and resonance functions require particular care. If data about other people is entered, this must be legally and ethically responsible. Hermetia must not be used for secret evaluation, manipulation or control of other people."
+          "body": "You must keep your access credentials confidential and must not misuse your account. You may not automatically scrape Astrakey, bypass security mechanisms, upload unlawful content, infringe third-party rights or create profiles of other people without a suitable basis.\n\nRelationship and resonance functions require particular care. If data about other people is entered, this must be legally and ethically responsible. Astrakey must not be used for secret evaluation, manipulation or control of other people."
         },
         {
           "heading": "9 · AI content and labelling",
@@ -655,15 +655,15 @@
         },
         {
           "heading": "10 · Content rights and licences",
-          "body": "The website, texts, graphics, structures, marks, designs, systematisations and software components of Hermetia are protected. You receive a simple, non-transferable right to use the service personally within the agreed scope.\n\nContent you enter, such as journal texts or reflection answers, remains your content. You grant us only the rights necessary to provide the selected function, store, display, process, export or phrase content with AI assistance for your usage context. Personal profile content is not disclosed for advertising purposes."
+          "body": "The website, texts, graphics, structures, marks, designs, systematisations and software components of Astrakey are protected. You receive a simple, non-transferable right to use the service personally within the agreed scope.\n\nContent you enter, such as journal texts or reflection answers, remains your content. You grant us only the rights necessary to provide the selected function, store, display, process, export or phrase content with AI assistance for your usage context. Personal profile content is not disclosed for advertising purposes."
         },
         {
           "heading": "11 · Availability and further development",
-          "body": "We strive for stable availability but cannot guarantee uninterrupted access. Maintenance, security updates, technical failures, provider changes or force majeure may temporarily limit access.\n\nHermetia is in active product development. Features may be developed, improved, renamed, supplemented or replaced as long as the agreed core value of paid services is not unreasonably impaired. Material changes will be communicated transparently."
+          "body": "We strive for stable availability but cannot guarantee uninterrupted access. Maintenance, security updates, technical failures, provider changes or force majeure may temporarily limit access.\n\nAstrakey is in active product development. Features may be developed, improved, renamed, supplemented or replaced as long as the agreed core value of paid services is not unreasonably impaired. Material changes will be communicated transparently."
         },
         {
           "heading": "12 · Minimum age",
-          "body": "Use generally requires a minimum age of 16. Paid models require a minimum age of 18 or valid consent from a legal guardian.\n\nHermetia is not directed at children. If future functions are planned for families, young users or particularly vulnerable groups, separate protection, consent and age concepts are required."
+          "body": "Use generally requires a minimum age of 16. Paid models require a minimum age of 18 or valid consent from a legal guardian.\n\nAstrakey is not directed at children. If future functions are planned for families, young users or particularly vulnerable groups, separate protection, consent and age concepts are required."
         },
         {
           "heading": "13 · Suspension and termination",
@@ -688,11 +688,11 @@
       "sections": [
         {
           "heading": "1 · Right of withdrawal",
-          "body": "If you are a consumer, you generally have the right to withdraw from a contract within fourteen days without giving any reason. The withdrawal period is fourteen days from the day the contract is concluded.\n\nThis notice applies to paid digital Hermetia services where a statutory right of withdrawal exists. This may include subscriptions, premium functions, digital profile content, a full profile book as a digital product or other digital add-on services."
+          "body": "If you are a consumer, you generally have the right to withdraw from a contract within fourteen days without giving any reason. The withdrawal period is fourteen days from the day the contract is concluded.\n\nThis notice applies to paid digital Astrakey services where a statutory right of withdrawal exists. This may include subscriptions, premium functions, digital profile content, a full profile book as a digital product or other digital add-on services."
         },
         {
           "heading": "2 · Exercising the right",
-          "body": "To exercise your right of withdrawal, you must inform us ([Provider], [address], email: widerruf@hermetia.de) of your decision by means of a clear statement. This can be done by email, for example. You may use the model withdrawal form below, but it is not mandatory.\n\nTo meet the deadline, it is sufficient to send the notification before the withdrawal period expires. Please use the email address associated with your Hermetia account where possible so that we can identify the order clearly."
+          "body": "To exercise your right of withdrawal, you must inform us ([Provider], [address], email: widerruf@astrakey.me) of your decision by means of a clear statement. This can be done by email, for example. You may use the model withdrawal form below, but it is not mandatory.\n\nTo meet the deadline, it is sufficient to send the notification before the withdrawal period expires. Please use the email address associated with your Astrakey account where possible so that we can identify the order clearly."
         },
         {
           "heading": "3 · Consequences of withdrawal",
@@ -700,7 +700,7 @@
         },
         {
           "heading": "4 · Digital content and immediate access",
-          "body": "Hermetia provides digital content and digital services. These may include premium profiles, AI-assisted interpretation texts, daily impulses, Companion features, export content or a digital full profile book. Many of these contents can be generated or unlocked immediately after purchase.\n\nYour right of withdrawal may expire early if we have begun providing digital content after you expressly consented to us beginning before the withdrawal period ends and confirmed that you may thereby lose your withdrawal right. This consent must be clear and separate in the order flow."
+          "body": "Astrakey provides digital content and digital services. These may include premium profiles, AI-assisted interpretation texts, daily impulses, Companion features, export content or a digital full profile book. Many of these contents can be generated or unlocked immediately after purchase.\n\nYour right of withdrawal may expire early if we have begun providing digital content after you expressly consented to us beginning before the withdrawal period ends and confirmed that you may thereby lose your withdrawal right. This consent must be clear and separate in the order flow."
         },
         {
           "heading": "5 · Subscriptions and ongoing contracts",
@@ -708,11 +708,11 @@
         },
         {
           "heading": "6 · Free use and upgrades",
-          "body": "Free use of Hermetia does not involve payments that would need to be refunded through withdrawal. If you upgrade from a free account to a paid model, a separate withdrawal period generally begins for the paid contract, unless the withdrawal right is excluded or expires early under statutory rules.\n\nLaunch offers, trial phases, vouchers or discounted yearly models must be described clearly in the order process. What matters is which paid service you actually book and when digital provision begins."
+          "body": "Free use of Astrakey does not involve payments that would need to be refunded through withdrawal. If you upgrade from a free account to a paid model, a separate withdrawal period generally begins for the paid contract, unless the withdrawal right is excluded or expires early under statutory rules.\n\nLaunch offers, trial phases, vouchers or discounted yearly models must be described clearly in the order process. What matters is which paid service you actually book and when digital provision begins."
         },
         {
           "heading": "7 · Model withdrawal form",
-          "body": "(If you wish to withdraw from the contract, you may use this form and send it to us.)\n\n— To [Provider], [address], widerruf@hermetia.de:\n— I hereby withdraw from the contract concluded by me for the following digital service: Hermetia [plan / product]\n— Ordered on: __________\n— Email address of Hermetia account: __________\n— Name of consumer: __________\n— Address: __________\n— Date: __________\n— Signature only if notified on paper: __________"
+          "body": "(If you wish to withdraw from the contract, you may use this form and send it to us.)\n\n— To [Provider], [address], widerruf@astrakey.me:\n— I hereby withdraw from the contract concluded by me for the following digital service: Astrakey [plan / product]\n— Ordered on: __________\n— Email address of Astrakey account: __________\n— Name of consumer: __________\n— Address: __________\n— Date: __________\n— Signature only if notified on paper: __________"
         },
         {
           "heading": "8 · Final legal note",
@@ -724,36 +724,36 @@
       "title": "AI transparency",
       "sections": [
         {
-          "heading": "Why Hermetia discloses AI transparency",
-          "body": "Hermetia combines deterministic calculations from several interpretation systems with linguistic refinement supported by AI. This combination can feel highly personal because it touches themes such as self-image, relationships, life rhythm, resonance and inner patterns. For that reason, we explain clearly where AI is involved, which data it processes, which limits apply and where human responsibility remains.\n\nThis transparency page is part of the legal and editorial foundation of the website. It supports the requirements of the EU AI Act, especially the labelling of AI-generated or AI-assisted content, and it gives users a clear basis before starting a profile, buying premium content or using Companion, journaling and the full profile book."
+          "heading": "Why Astrakey discloses AI transparency",
+          "body": "Astrakey combines deterministic calculations from several interpretation systems with linguistic refinement supported by AI. This combination can feel highly personal because it touches themes such as self-image, relationships, life rhythm, resonance and inner patterns. For that reason, we explain clearly where AI is involved, which data it processes, which limits apply and where human responsibility remains.\n\nThis transparency page is part of the legal and editorial foundation of the website. It supports the requirements of the EU AI Act, especially the labelling of AI-generated or AI-assisted content, and it gives users a clear basis before starting a profile, buying premium content or using Companion, journaling and the full profile book."
         },
         {
-          "heading": "Where AI is used in Hermetia",
-          "body": "AI is used in Hermetia primarily for wording, condensation and dialogue. This can include personal interpretation texts, layer descriptions, daily impulses, explanatory sections in the full profile book, reflection questions, Companion answers and editorial variants for different use cases. AI helps to express calculated patterns in a calm, understandable and usable way.\n\nAI does not decide which system is right, which statement is true or which future will happen. It writes from prepared contexts, rules and calculated profile markers. Whenever a page, profile area or dialogue is phrased with AI assistance, this should be recognisable. Hermetia uses AI as a linguistic tool within defined boundaries, not as an invisible authority."
+          "heading": "Where AI is used in Astrakey",
+          "body": "AI is used in Astrakey primarily for wording, condensation and dialogue. This can include personal interpretation texts, layer descriptions, daily impulses, explanatory sections in the full profile book, reflection questions, Companion answers and editorial variants for different use cases. AI helps to express calculated patterns in a calm, understandable and usable way.\n\nAI does not decide which system is right, which statement is true or which future will happen. It writes from prepared contexts, rules and calculated profile markers. Whenever a page, profile area or dialogue is phrased with AI assistance, this should be recognisable. Astrakey uses AI as a linguistic tool within defined boundaries, not as an invisible authority."
         },
         {
           "heading": "Calculation, convergence and wording are separate",
-          "body": "A core safeguard in Hermetia is the separation of three layers: calculation, convergence and wording. The calculation layer classifies inputs such as birth data, system parameters and optional context according to defined rules from the systems used. The convergence engine then checks which motifs repeat across multiple systems, which statements should be treated as strong, medium or cautious, and where contradictions should remain visible.\n\nOnly after that does AI enter as a wording layer. Its task is not to invent a new truth, but to phrase already structured results in accessible language. This separation reduces the risk that a language model produces seemingly certain statements that are not actually supported by the underlying systems or method."
+          "body": "A core safeguard in Astrakey is the separation of three layers: calculation, convergence and wording. The calculation layer classifies inputs such as birth data, system parameters and optional context according to defined rules from the systems used. The convergence engine then checks which motifs repeat across multiple systems, which statements should be treated as strong, medium or cautious, and where contradictions should remain visible.\n\nOnly after that does AI enter as a wording layer. Its task is not to invent a new truth, but to phrase already structured results in accessible language. This separation reduces the risk that a language model produces seemingly certain statements that are not actually supported by the underlying systems or method."
         },
         {
           "heading": "Which data AI processes",
-          "body": "The AI model receives only the information required for the specific feature. Depending on the feature, this may include calculated profile markers, theme clusters, confidence levels, released journal notes, selected Companion contexts or already condensed profile sections. Hermetia follows the principle of data minimisation: as much context as needed, as little raw data as possible.\n\nAI should not unnecessarily process full legal names, direct contact details, payment information or unrestricted raw profiles. Especially sensitive content such as journal entries or relationship information is only used in AI-assisted functions where it is required and covered by the usage context. The goal is a helpful personal dialogue without turning every detail into automatic training or analysis context."
+          "body": "The AI model receives only the information required for the specific feature. Depending on the feature, this may include calculated profile markers, theme clusters, confidence levels, released journal notes, selected Companion contexts or already condensed profile sections. Astrakey follows the principle of data minimisation: as much context as needed, as little raw data as possible.\n\nAI should not unnecessarily process full legal names, direct contact details, payment information or unrestricted raw profiles. Especially sensitive content such as journal entries or relationship information is only used in AI-assisted functions where it is required and covered by the usage context. The goal is a helpful personal dialogue without turning every detail into automatic training or analysis context."
         },
         {
           "heading": "What AI explicitly does not do",
-          "body": "AI content in Hermetia is not a diagnosis, not therapy, not medical advice, not psychological treatment, not legal advice, not financial advice and not a binding life decision. Hermetia does not tell users whether to start or end a relationship, whether they have an illness, which career they must choose or whether a financial step is right.\n\nThe content is intended for self-reflection. It can give language to patterns, open questions and support inner observation. It does not replace qualified professionals or personal responsibility. If content feels emotionally intense, unexpectedly burdensome or touches concrete risks, external professional support should take priority."
+          "body": "AI content in Astrakey is not a diagnosis, not therapy, not medical advice, not psychological treatment, not legal advice, not financial advice and not a binding life decision. Astrakey does not tell users whether to start or end a relationship, whether they have an illness, which career they must choose or whether a financial step is right.\n\nThe content is intended for self-reflection. It can give language to patterns, open questions and support inner observation. It does not replace qualified professionals or personal responsibility. If content feels emotionally intense, unexpectedly burdensome or touches concrete risks, external professional support should take priority."
         },
         {
           "heading": "Companion, journaling and personal dialogues",
-          "body": "The Hermetia Companion is planned as a calm AI guide that answers within the user’s own profile context. It should not be a general chat AI, but should draw on released Hermetia contexts: profile book, daily impulses, journaling reflections, relationship interpretations and personal development fields. This can make its answers more connected than those of a generic language model.\n\nAt the same time, this feature needs clear boundaries. The Companion should make transparent which source an answer is derived from, whether a statement is strong or cautious and when it should not continue. Journal entries must not be used automatically without limits. Users must be able to understand which context is used and how they can control, delete or withhold sensitive material."
+          "body": "The Astrakey Companion is planned as a calm AI guide that answers within the user’s own profile context. It should not be a general chat AI, but should draw on released Astrakey contexts: profile book, daily impulses, journaling reflections, relationship interpretations and personal development fields. This can make its answers more connected than those of a generic language model.\n\nAt the same time, this feature needs clear boundaries. The Companion should make transparent which source an answer is derived from, whether a statement is strong or cautious and when it should not continue. Journal entries must not be used automatically without limits. Users must be able to understand which context is used and how they can control, delete or withhold sensitive material."
         },
         {
           "heading": "Premium content and fair conversion",
-          "body": "AI can make premium content more readable, personal and continuous. A full profile book, deeper daily impulses or Companion dialogues create value because they translate calculated patterns into longer, more differentiated language. Still, AI must not be used to create artificial pressure, fear or urgency in order to push users into a paid model.\n\nHermetia should spark curiosity and invite sign-up, but the decision to choose a paid model must remain understandable. Good conversion comes from clarity, usefulness, trust and real depth, not from manipulative scarcity or apparently absolute claims. Premium arguments should therefore explain what expands: scope, context, continuity, dialogue depth, export, comparison and long-term work with the profile."
+          "body": "AI can make premium content more readable, personal and continuous. A full profile book, deeper daily impulses or Companion dialogues create value because they translate calculated patterns into longer, more differentiated language. Still, AI must not be used to create artificial pressure, fear or urgency in order to push users into a paid model.\n\nAstrakey should spark curiosity and invite sign-up, but the decision to choose a paid model must remain understandable. Good conversion comes from clarity, usefulness, trust and real depth, not from manipulative scarcity or apparently absolute claims. Premium arguments should therefore explain what expands: scope, context, continuity, dialogue depth, export, comparison and long-term work with the profile."
         },
         {
           "heading": "Copyright, sources and original language",
-          "body": "Hermetia’s AI texts must be written in original language. They must not reproduce protected works, copied system descriptions, long third-party passages or trademark-sensitive phrasing. When interpretation systems are mentioned, they are described, compared and editorially contextualised in Hermetia’s own words.\n\nThe same principle applies to images, graphics and models: only proprietary material, licensed assets, self-created graphics or clearly approved project assets should be used in production. Before public launch, terms, product names, system names, image rights and trademark references should receive an additional legal review."
+          "body": "Astrakey’s AI texts must be written in original language. They must not reproduce protected works, copied system descriptions, long third-party passages or trademark-sensitive phrasing. When interpretation systems are mentioned, they are described, compared and editorially contextualised in Astrakey’s own words.\n\nThe same principle applies to images, graphics and models: only proprietary material, licensed assets, self-created graphics or clearly approved project assets should be used in production. Before public launch, terms, product names, system names, image rights and trademark references should receive an additional legal review."
         },
         {
           "heading": "Human oversight and editorial control",

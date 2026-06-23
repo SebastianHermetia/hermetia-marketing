@@ -42,7 +42,7 @@ if (!existsSync(out)) fail("Missing out directory. Run npm run build before npm 
 
 for (const locale of locales) {
   const home = readOut(locale);
-  if (!home.includes("Hermetia")) fail(`${locale}: missing rendered content.`);
+  if (!home.includes("Astrakey")) fail(`${locale}: missing rendered content.`);
   if (translatedLocales.has(locale)) {
     for (const marker of fallbackMarkers) {
       if (home.includes(marker)) fail(`${locale}: fallback marker leaked on home: ${marker}`);
@@ -88,7 +88,7 @@ const checks = [
   ["FR home renders translated full master content", frHome.includes("Une image de votre âme")],
   ["ES pricing renders translated full master content", esPricing.includes("Comienza gratis") || esPricing.includes("Empieza gratis")],
   ["SV system detail renders translated full master content", svSystem.includes("Human Design") && !svSystem.includes("Wofür Human Design besonders nützlich ist")],
-  ["MT article renders translated full master content", mtArticle.includes("AI") && !mtArticle.includes("Warum dieses Thema für Hermetia wichtig ist")],
+  ["MT article renders translated full master content", mtArticle.includes("AI") && !mtArticle.includes("Warum dieses Thema für Astrakey wichtig ist")],
   ["EL comparison renders translated full master content", elComparison.includes("Human Design") && !elComparison.includes("Der wichtigste Unterschied")],
   ["Language status reports all editorial locales", languages.includes("Sprachrouten live") && languages.includes(">24<") && languages.includes("Redaktionell freigegeben")],
   ["Language status has no fallback backlog", !languages.includes("Technischer Fallback") && !languages.includes("Seiten im Longform-Backlog") && !languages.includes("UI lokalisiert")],

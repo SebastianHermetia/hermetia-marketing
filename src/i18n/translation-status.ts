@@ -32,7 +32,7 @@ export const translationQaGates: TranslationQaGate[] = [
     title: "Terminologie und Systembegriffe",
     appliesTo: "alle Longform-Seiten",
     requirement:
-      "Hermetia-Begriffe wie Seelenkarte, Konvergenz, Theme-Signal, Art. 9 und AI-Deutung müssen pro Sprache konsistent verwendet werden.",
+      "Astrakey-Begriffe wie Seelenkarte, Konvergenz, Theme-Signal, Art. 9 und AI-Deutung müssen pro Sprache konsistent verwendet werden.",
   },
   {
     id: "legal",
@@ -46,7 +46,7 @@ export const translationQaGates: TranslationQaGate[] = [
     title: "Keine Diagnose, Therapie oder Vorhersage",
     appliesTo: "Systeme, Glossar, Wissen, Tagesimpulse",
     requirement:
-      "Jede Sprache muss Hermetia als Selbstreflexion rahmen und medizinische, therapeutische, rechtliche oder finanzielle Beratung ausschließen.",
+      "Jede Sprache muss Astrakey als Selbstreflexion rahmen und medizinische, therapeutische, rechtliche oder finanzielle Beratung ausschließen.",
   },
   {
     id: "conversion",

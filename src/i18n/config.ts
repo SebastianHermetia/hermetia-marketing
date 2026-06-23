@@ -67,13 +67,14 @@ export const localeNames: Record<Locale, string> = {
 };
 
 // Basis-URL für canonical / hreflang / Sitemap.
-// Vorerst hermetiastart.digital-expert.de — vor Launch per ENV auf eigene Domain umziehbar,
-// ohne Code-Änderung: NEXT_PUBLIC_SITE_URL setzen.
+// Zielmarke Astrakey: Marketing läuft auf astrakey.me. Per ENV überschreibbar
+// (Preview/Staging): NEXT_PUBLIC_SITE_URL setzen. Beim Domain-Cutover muss die
+// Domain astrakey.me im Vercel-Projekt hinterlegt sein.
 export const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://hermetiastart.digital-expert.de"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://astrakey.me"
 ).replace(/\/$/, "");
 
-// URL zur App (Onboarding + Login leben in der bestehenden Hermetia-App).
+// URL zur App (Onboarding + Login leben in der Astrakey-App).
 export const appUrl = (
-  process.env.NEXT_PUBLIC_APP_URL ?? "https://hermetia.digital-expert.de"
+  process.env.NEXT_PUBLIC_APP_URL ?? "https://app.astrakey.me"
 ).replace(/\/$/, "");

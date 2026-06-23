@@ -21,7 +21,7 @@ const systemFamilies: { title: string; text: string; slugs: SystemSlug[] }[] = [
   },
   {
     title: "Zahlen, Karten und Archetypen",
-    text: "Systeme, die Geburtsdatum, Name oder Symbolkarten in wiederkehrende Motive übersetzen. Hermetia nutzt dafür eigene Deutungssprache.",
+    text: "Systeme, die Geburtsdatum, Name oder Symbolkarten in wiederkehrende Motive übersetzen. Astrakey nutzt dafür eigene Deutungssprache.",
     slugs: ["numerologie", "lo-shu-grid", "tarot-geburtskarten", "cards-of-destiny", "oracle-cards", "sabian-symbols"],
   },
   {
@@ -37,10 +37,10 @@ const systemFamilies: { title: string; text: string; slugs: SystemSlug[] }[] = [
 ];
 
 const systemQuestions = [
-  "Welche 31 Systeme nutzt Hermetia?",
+  "Welche 31 Systeme nutzt Astrakey?",
   "Warum reicht ein einzelnes System selten aus?",
   "Welche Systeme brauchen eine genaue Geburtszeit?",
-  "Wie verhindert Hermetia Doppelzählung verwandter Quellen?",
+  "Wie verhindert Astrakey Doppelzählung verwandter Quellen?",
   "Welche Systeme basieren auf Selbstauskunft statt Geburtsdaten?",
 ];
 
@@ -49,7 +49,7 @@ const systemPrinciples = [
   "Verwandte Systeme werden in Familien gruppiert.",
   "Fehlende Geburtszeit wird transparent markiert.",
   "Fragebögen erden spirituelle Aussagen mit Selbstauskunft.",
-  "Hermetia verwendet eigene Texte, keine geschützten Deutungspassagen.",
+  "Astrakey verwendet eigene Texte, keine geschützten Deutungspassagen.",
 ];
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -78,17 +78,17 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
             description: p.seoDescription,
             locale,
             url: pageUrl,
-            about: "Hermetia Systeme",
+            about: "Astrakey Systeme",
             image: `${siteUrl}/graphics/convergence/abb1-familien-modell.svg`,
           }),
           breadcrumbSchema([
-            { name: "Hermetia", url: `${siteUrl}/${locale}/` },
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
             { name: "Systeme", url: pageUrl },
           ]),
           {
             "@context": "https://schema.org",
             "@type": "ItemList",
-            name: "Bücher zu den Hermetia-Systemen",
+            name: "Bücher zu den Astrakey-Systemen",
             itemListElement: books.map((book, index) => ({
               "@type": "ListItem",
               position: index + 1,
@@ -121,9 +121,9 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
         <div className="wrap grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
           <div>
             <span className="kicker">Suchfragen</span>
-            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Welche Systemfragen beantwortet Hermetia?</h2>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Welche Systemfragen beantwortet Astrakey?</h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Viele Menschen suchen zunächst nach einzelnen Systemen: Astrologie, Human Design, Gene Keys, Numerologie oder Enneagramm. Hermetia beantwortet diese Fragen, zeigt aber gleichzeitig, warum erst die Verbindung mehrerer Perspektiven wirklich interessant wird.
+              Viele Menschen suchen zunächst nach einzelnen Systemen: Astrologie, Human Design, Gene Keys, Numerologie oder Enneagramm. Astrakey beantwortet diese Fragen, zeigt aber gleichzeitig, warum erst die Verbindung mehrerer Perspektiven wirklich interessant wird.
             </p>
           </div>
           <div className="rounded-card border border-sand bg-white p-7 shadow-soft">
@@ -163,7 +163,7 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
             <span className="kicker">Systemfamilien</span>
             <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">31 Systeme, aber nicht 31 Stimmen durcheinander.</h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Hermetia ordnet Systeme in Familien. So bleibt sichtbar, welche Systeme dieselbe Datenquelle teilen und welche Perspektiven wirklich unabhängig auf ein ähnliches Thema zeigen.
+              Astrakey ordnet Systeme in Familien. So bleibt sichtbar, welche Systeme dieselbe Datenquelle teilen und welche Perspektiven wirklich unabhängig auf ein ähnliches Thema zeigen.
             </p>
           </div>
           <div className="grid gap-5 lg:grid-cols-2">
@@ -218,7 +218,7 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
             <span className="kicker">Erklärbarkeit</span>
             <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">So bleibt Vielfalt verständlich.</h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Hermetia nutzt viele Systeme, aber nicht als Überwältigung. Jedes System liefert ein Signal. Erst Konvergenz, Datenqualität und vorsichtige Sprache entscheiden, ob daraus ein Kernthema, ein Nebenthema oder nur eine offene Frage wird.
+              Astrakey nutzt viele Systeme, aber nicht als Überwältigung. Jedes System liefert ein Signal. Erst Konvergenz, Datenqualität und vorsichtige Sprache entscheiden, ob daraus ein Kernthema, ein Nebenthema oder nur eine offene Frage wird.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "systems-explainability" })}>Meine Systeme berechnen</a>
@@ -259,7 +259,7 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
       <section className="py-16">
         <div className="wrap grid gap-6 lg:grid-cols-2">
           <figure className="m-0 rounded-card border border-sand bg-white p-4 shadow-soft">
-            <img src="/graphics/convergence/abb1-familien-modell.svg" alt="Systemfamilien der Hermetia Konvergenz-Engine" className="w-full rounded-[6px]" loading="lazy" />
+            <img src="/graphics/convergence/abb1-familien-modell.svg" alt="Systemfamilien der Astrakey Konvergenz-Engine" className="w-full rounded-[6px]" loading="lazy" />
             <figcaption className="muted mt-3 text-[14px] leading-relaxed">
               Systemfamilien verhindern, dass verwandte Quellen als unabhängige Bestätigung missverstanden werden.
             </figcaption>
@@ -281,7 +281,7 @@ export default async function SystemePage({ params }: { params: Promise<{ locale
               Bücher, die die Systeme verständlicher machen.
             </h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Diese Empfehlungen sind redaktionell ausgewählt, damit du Quellen, Traditionen und Perspektiven hinter den Hermetia-Systemen besser einordnen kannst.
+              Diese Empfehlungen sind redaktionell ausgewählt, damit du Quellen, Traditionen und Perspektiven hinter den Astrakey-Systemen besser einordnen kannst.
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">

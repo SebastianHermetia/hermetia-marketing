@@ -46,23 +46,23 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
     sys.slug === "via-staerken" ||
     sys.slug === "spiral-dynamics" ||
     sys.slug === "sixteen-types"
-      ? "Dieses System braucht ausdrückliche Selbstauskunft. Hermetia nutzt dafür eigene, lizenzsaubere Fragen oder bewusst bereitgestellte Werte. Ohne aktive Antwort wird daraus kein heimliches Profil abgeleitet."
+      ? "Dieses System braucht ausdrückliche Selbstauskunft. Astrakey nutzt dafür eigene, lizenzsaubere Fragen oder bewusst bereitgestellte Werte. Ohne aktive Antwort wird daraus kein heimliches Profil abgeleitet."
       : sys.slug === "numerologie" || sys.slug === "lo-shu-grid" || sys.slug === "tarot-geburtskarten" || sys.slug === "cards-of-destiny"
-        ? "Dieses System arbeitet vor allem mit Geburtsdatum und, wenn sinnvoll, mit dem Geburtsnamen. Hermetia erklärt, welche Angaben nötig sind und welche Aussagen auch ohne Namensdaten möglich bleiben."
-        : "Dieses System nutzt vor allem Geburtsdatum, Geburtsort und, je nach Detailtiefe, die Geburtszeit. Hermetia kennzeichnet, welche Aussagen ohne exakte Uhrzeit stabil bleiben und welche vorsichtiger gelesen werden sollten.";
+        ? "Dieses System arbeitet vor allem mit Geburtsdatum und, wenn sinnvoll, mit dem Geburtsnamen. Astrakey erklärt, welche Angaben nötig sind und welche Aussagen auch ohne Namensdaten möglich bleiben."
+        : "Dieses System nutzt vor allem Geburtsdatum, Geburtsort und, je nach Detailtiefe, die Geburtszeit. Astrakey kennzeichnet, welche Aussagen ohne exakte Uhrzeit stabil bleiben und welche vorsichtiger gelesen werden sollten.";
   const extendedFaq = [
     ...c.faq,
     {
-      q: `Warum nutzt Hermetia ${c.name} nicht isoliert?`,
-      a: `${c.name} ist eine wertvolle Perspektive, aber Hermetia liest Systeme nicht als einzelne Wahrheiten. Erst im Zusammenspiel mit anderen Quellen wird sichtbar, ob ein Thema mehrfach getragen wird oder nur eine Nuance bleibt.`,
+      q: `Warum nutzt Astrakey ${c.name} nicht isoliert?`,
+      a: `${c.name} ist eine wertvolle Perspektive, aber Astrakey liest Systeme nicht als einzelne Wahrheiten. Erst im Zusammenspiel mit anderen Quellen wird sichtbar, ob ein Thema mehrfach getragen wird oder nur eine Nuance bleibt.`,
     },
     {
       q: `Ist die Deutung von ${c.name} rechtlich geschützter Originaltext?`,
-      a: "Nein. Hermetia verwendet eigene Erklärungen und eigene Deutungssprache. Geschützte Originaltexte, fremde Reportpassagen und proprietäre Fragebogenitems werden nicht übernommen.",
+      a: "Nein. Astrakey verwendet eigene Erklärungen und eigene Deutungssprache. Geschützte Originaltexte, fremde Reportpassagen und proprietäre Fragebogenitems werden nicht übernommen.",
     },
     {
       q: `Kann ${c.name} eine Diagnose oder Beratung ersetzen?`,
-      a: "Nein. Hermetia ist Inspiration zur Selbstreflexion. Die Inhalte ersetzen keine medizinische, psychologische, therapeutische, rechtliche oder finanzielle Beratung.",
+      a: "Nein. Astrakey ist Inspiration zur Selbstreflexion. Die Inhalte ersetzen keine medizinische, psychologische, therapeutische, rechtliche oder finanzielle Beratung.",
     },
   ];
 
@@ -73,7 +73,7 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
           faqSchema(extendedFaq),
           articleSchema({ headline: c.seoTitle, description: c.seoDescription, locale, url: pageUrl, about: c.name, image: imageUrl }),
           breadcrumbSchema([
-            { name: "Hermetia", url: `${siteUrl}/${locale}/` },
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
             { name: t.nav.systeme, url: `${siteUrl}/${locale}${paths.systeme}/` },
             { name: c.name, url: pageUrl },
           ]),
@@ -100,7 +100,7 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
       {/* Header-Band mit Brand-Art */}
       <section className="relative">
         <div className="relative h-[260px] w-full overflow-hidden">
-          <img src={`/images/art/${sys.art}`} alt={`${c.name} – Hermetia`} width={1400} height={520} className="h-full w-full object-cover" />
+          <img src={`/images/art/${sys.art}`} alt={`${c.name} – Astrakey`} width={1400} height={520} className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-aubergine/85 via-aubergine/45 to-aubergine/25" />
           <div className="absolute inset-0 flex items-end">
             <div className="wrap pb-7">
@@ -126,7 +126,7 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
           <div className="mt-8 rounded-card border border-gold/30 bg-gold-weich/25 p-6">
             <span className="kicker">Kurz gesagt</span>
             <p className="mt-2 text-[18px] leading-relaxed text-aubergine">
-              {c.name} ist bei Hermetia ein Baustein deiner Seelenkarte. Das System wird berechnet oder über einen Fragebogen erfasst, anschließend mit anderen Perspektiven verglichen und erst dann in eine warme, verständliche Deutung übersetzt.
+              {c.name} ist bei Astrakey ein Baustein deiner Seelenkarte. Das System wird berechnet oder über einen Fragebogen erfasst, anschließend mit anderen Perspektiven verglichen und erst dann in eine warme, verständliche Deutung übersetzt.
             </p>
           </div>
 
@@ -141,7 +141,7 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
             </div>
             <div className="rounded-card border border-sand bg-white p-6 shadow-soft">
               <span className="kicker">Datenbasis</span>
-              <h2 className="mt-2 text-[24px]">Welche Angaben Hermetia für {c.name} braucht</h2>
+              <h2 className="mt-2 text-[24px]">Welche Angaben Astrakey für {c.name} braucht</h2>
               <p className="muted mt-2 text-[16.5px] leading-relaxed">{dataNeed}</p>
               <p className="muted mt-3 text-[16.5px] leading-relaxed">
                 Wichtig ist die Trennung zwischen Berechnung und Deutung: Aus den Eingaben entstehen zuerst strukturierte Signale. Erst danach werden sie mit anderen Systemen verglichen und in verständliche Reflexionssprache übersetzt.
@@ -156,14 +156,14 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
                 <span className="kicker">Stärken</span>
                 <h2 className="mt-2 text-[23px]">Wofür {c.name} besonders nützlich ist</h2>
                 <p className="muted mt-2 text-[16.5px] leading-relaxed">
-                  Dieses System gibt deinem Profil eine eigene Blickrichtung. Es kann Muster sichtbar machen, die in anderen Systemen weniger deutlich erscheinen, und liefert dadurch wertvolle Signale für Hermetias Konvergenz-Engine. Besonders hilfreich ist es, wenn seine Aussagen mit anderen unabhängigen Perspektiven zusammenfallen.
+                  Dieses System gibt deinem Profil eine eigene Blickrichtung. Es kann Muster sichtbar machen, die in anderen Systemen weniger deutlich erscheinen, und liefert dadurch wertvolle Signale für Astrakeys Konvergenz-Engine. Besonders hilfreich ist es, wenn seine Aussagen mit anderen unabhängigen Perspektiven zusammenfallen.
                 </p>
               </div>
               <div className="card">
                 <span className="kicker">Grenzen</span>
                 <h2 className="mt-2 text-[23px]">Was {c.name} nicht leisten soll</h2>
                 <p className="muted mt-2 text-[16.5px] leading-relaxed">
-                  Kein einzelnes System sollte dich festlegen. Hermetia verwendet {c.name} nicht als Diagnose, Schicksalsurteil oder alleinige Wahrheit. Die Deutung bleibt eine Einladung zur Selbstreflexion und wird bewusst mit Datenschutz-, AI- und IP-Leitplanken formuliert.
+                  Kein einzelnes System sollte dich festlegen. Astrakey verwendet {c.name} nicht als Diagnose, Schicksalsurteil oder alleinige Wahrheit. Die Deutung bleibt eine Einladung zur Selbstreflexion und wird bewusst mit Datenschutz-, AI- und IP-Leitplanken formuliert.
                 </p>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
               <span className="kicker">Konvergenz</span>
               <h2 className="mt-2 text-[24px]">Wie {c.name} mit anderen Systemen zusammenwirkt</h2>
               <p className="muted mt-2 text-[16.5px] leading-relaxed">
-                Hermetia fragt nicht nur, was {c.name} allein sagt. Die relevantere Frage ist, ob dieselben Themen auch in anderen Familien auftauchen: etwa in astrologischen Systemen, Zahlensystemen, Fragebögen oder körpernahen Typologien. Wenn mehrere unabhängige Quellen dasselbe Thema stützen, wird daraus ein stärkeres Kernthema deiner Seelenkarte.
+                Astrakey fragt nicht nur, was {c.name} allein sagt. Die relevantere Frage ist, ob dieselben Themen auch in anderen Familien auftauchen: etwa in astrologischen Systemen, Zahlensystemen, Fragebögen oder körpernahen Typologien. Wenn mehrere unabhängige Quellen dasselbe Thema stützen, wird daraus ein stärkeres Kernthema deiner Seelenkarte.
               </p>
             </div>
             <div className="rounded-card border border-sand bg-white p-6 shadow-soft">
@@ -199,14 +199,14 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
                 })}
               </div>
               <p className="note mt-4">
-                Hermetia zeigt hier keine Preise oder Verfügbarkeit, weil sie sich ändern können. Bitte prüfe den verlinkten Anbieter vor dem Kauf.
+                Astrakey zeigt hier keine Preise oder Verfügbarkeit, weil sie sich ändern können. Bitte prüfe den verlinkten Anbieter vor dem Kauf.
               </p>
             </div>
             <div className="rounded-card border border-sand bg-creme-tief p-6">
               <span className="kicker">Beispiel, fiktiv</span>
               <h2 className="mt-2 text-[24px]">Wie eine Deutung klingen könnte</h2>
               <p className="muted mt-2 text-[16.5px] leading-relaxed">
-                Eine fiktive Person sieht in {c.name} ein deutliches Motiv für innere Ausrichtung, zugleich zeigen andere Systeme mehr Ruhe, Erdung oder Beziehungssensibilität. Hermetia würde daraus nicht ableiten, wer diese Person wirklich ist. Stattdessen würde die App fragen: Wo hilft dir dieses Motiv im Alltag, wo wird es zu eng, und welche anderen Signale gleichen es aus?
+                Eine fiktive Person sieht in {c.name} ein deutliches Motiv für innere Ausrichtung, zugleich zeigen andere Systeme mehr Ruhe, Erdung oder Beziehungssensibilität. Astrakey würde daraus nicht ableiten, wer diese Person wirklich ist. Stattdessen würde die App fragen: Wo hilft dir dieses Motiv im Alltag, wo wird es zu eng, und welche anderen Signale gleichen es aus?
               </p>
             </div>
             <div>

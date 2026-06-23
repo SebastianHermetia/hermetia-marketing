@@ -18,7 +18,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const page = getPillarPage("journaling", locale)!;
   return (
     <>
-      <JsonLd data={[faqSchema(page.faq), articleSchema({ headline: page.seoTitle, description: page.seoDescription, locale, url: `${siteUrl}/${locale}${paths.journaling}/`, about: "Hermetia Journaling", image: `${siteUrl}${page.image}` })]} />
+      <JsonLd data={[faqSchema(page.faq), articleSchema({ headline: page.seoTitle, description: page.seoDescription, locale, url: `${siteUrl}/${locale}${paths.journaling}/`, about: "Astrakey Journaling", image: `${siteUrl}${page.image}` })]} />
       <MarketingContentPage locale={locale} page={page} />
     </>
   );

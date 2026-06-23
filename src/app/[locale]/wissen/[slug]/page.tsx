@@ -52,7 +52,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
                 <p className="muted mt-3 text-[17px] leading-[1.9]">{section.body}</p>
                 {idx === 1 ? (
                   <div className="mt-8">
-                    <AppCta locale={locale} title="Mach aus dem Thema dein eigenes Profil." text="Hermetia verbindet Wissen mit deiner Seelenkarte, damit aus Theorie ein persönlicher Aha-Moment wird." source={`article-${article.slug}-inline`} />
+                    <AppCta locale={locale} title="Mach aus dem Thema dein eigenes Profil." text="Astrakey verbindet Wissen mit deiner Seelenkarte, damit aus Theorie ein persönlicher Aha-Moment wird." source={`article-${article.slug}-inline`} />
                   </div>
                 ) : null}
               </section>
@@ -63,7 +63,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
             <Faq items={faq} />
           </div>
           <div className="mt-12">
-            <AppCta locale={locale} title="Mach aus Wissen deinen eigenen Aha-Moment." text="Starte dein Hermetia-Profil und verbinde die Theorie mit deiner persönlichen Seelenkarte." source={`article-${article.slug}`} />
+            <AppCta locale={locale} title="Mach aus Wissen deinen eigenen Aha-Moment." text="Starte dein Astrakey-Profil und verbinde die Theorie mit deiner persönlichen Seelenkarte." source={`article-${article.slug}`} />
           </div>
         </div>
       </article>
@@ -75,20 +75,20 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
 function articleSections(article: (typeof articles)[number]) {
   return [
     {
-      title: "Warum dieses Thema für Hermetia wichtig ist",
-      body: `${article.title} ist mehr als ein einzelner Suchbegriff. Das Thema berührt die zentrale Frage, wie Menschen spirituelle Systeme, Selbstauskunft und AI-Deutung nutzen können, ohne sich selbst in ein starres Label zu pressen. Hermetia behandelt solche Themen deshalb immer als Orientierung: hilfreich genug, um Sprache für Muster zu finden, aber offen genug, damit du die Deutung prüfen, verwerfen oder vertiefen kannst.`,
+      title: "Warum dieses Thema für Astrakey wichtig ist",
+      body: `${article.title} ist mehr als ein einzelner Suchbegriff. Das Thema berührt die zentrale Frage, wie Menschen spirituelle Systeme, Selbstauskunft und AI-Deutung nutzen können, ohne sich selbst in ein starres Label zu pressen. Astrakey behandelt solche Themen deshalb immer als Orientierung: hilfreich genug, um Sprache für Muster zu finden, aber offen genug, damit du die Deutung prüfen, verwerfen oder vertiefen kannst.`,
     },
     {
-      title: "Wie Hermetia daraus eine persönliche Erfahrung macht",
-      body: `Der Unterschied zwischen einem Ratgebertext und Hermetia liegt in der Verbindung mit dem eigenen Profil. Auf der Website erklärt ${article.title} die Grundlagen. In der App werden passende Signale mit Geburtsdaten, Systemfamilien, Fragebogenantworten, Tagesimpulsen und Konvergenz gewichtet. Dadurch wird aus einem allgemeinen Thema eine persönliche Reflexion, die nachvollziehbar bleibt und nicht als Diagnose oder Vorhersage auftritt.`,
+      title: "Wie Astrakey daraus eine persönliche Erfahrung macht",
+      body: `Der Unterschied zwischen einem Ratgebertext und Astrakey liegt in der Verbindung mit dem eigenen Profil. Auf der Website erklärt ${article.title} die Grundlagen. In der App werden passende Signale mit Geburtsdaten, Systemfamilien, Fragebogenantworten, Tagesimpulsen und Konvergenz gewichtet. Dadurch wird aus einem allgemeinen Thema eine persönliche Reflexion, die nachvollziehbar bleibt und nicht als Diagnose oder Vorhersage auftritt.`,
     },
     {
       title: "Chancen, Grenzen und verantwortungsvolle Nutzung",
-      body: `Der Nutzen entsteht, wenn ein Thema Resonanz auslöst und zu einer besseren Frage führt: Was erkenne ich wieder? Was stimmt nicht? Was will ich im Alltag anders beobachten? Die Grenze ist ebenso wichtig: Hermetia ersetzt keine medizinische, psychologische, therapeutische, rechtliche oder finanzielle Beratung. Die Inhalte wecken Neugier, ohne Abhängigkeit zu erzeugen oder Angst als Conversion-Hebel zu nutzen.`,
+      body: `Der Nutzen entsteht, wenn ein Thema Resonanz auslöst und zu einer besseren Frage führt: Was erkenne ich wieder? Was stimmt nicht? Was will ich im Alltag anders beobachten? Die Grenze ist ebenso wichtig: Astrakey ersetzt keine medizinische, psychologische, therapeutische, rechtliche oder finanzielle Beratung. Die Inhalte wecken Neugier, ohne Abhängigkeit zu erzeugen oder Angst als Conversion-Hebel zu nutzen.`,
     },
     {
       title: "Der nächste sinnvolle Schritt",
-      body: `Nach dem Lesen ist der stärkste nächste Schritt nicht, noch mehr abstrakte Definitionen zu sammeln, sondern das Thema am eigenen Profil zu prüfen. Genau dafür führt Hermetia vom Wissensbereich in das Onboarding: kostenlos starten, erste Kernthemen sehen, Vertrauen in Methode und Datenschutz gewinnen und danach bewusst entscheiden, ob ein bezahltes Modell mit tieferen Ebenen, Tagesbegleitung oder Beziehungsauswertungen sinnvoll ist.`,
+      body: `Nach dem Lesen ist der stärkste nächste Schritt nicht, noch mehr abstrakte Definitionen zu sammeln, sondern das Thema am eigenen Profil zu prüfen. Genau dafür führt Astrakey vom Wissensbereich in das Onboarding: kostenlos starten, erste Kernthemen sehen, Vertrauen in Methode und Datenschutz gewinnen und danach bewusst entscheiden, ob ein bezahltes Modell mit tieferen Ebenen, Tagesbegleitung oder Beziehungsauswertungen sinnvoll ist.`,
     },
   ];
 }
@@ -96,8 +96,8 @@ function articleSections(article: (typeof articles)[number]) {
 function articleFaq(article: (typeof articles)[number]) {
   return [
     {
-      q: `Ist ${article.title} bei Hermetia eine feste Wahrheit über mich?`,
-      a: "Nein. Hermetia formuliert Themen als Reflexionsangebot. Entscheidend ist, ob eine Aussage nachvollziehbar ist, Resonanz erzeugt und im Alltag hilfreich geprüft werden kann.",
+      q: `Ist ${article.title} bei Astrakey eine feste Wahrheit über mich?`,
+      a: "Nein. Astrakey formuliert Themen als Reflexionsangebot. Entscheidend ist, ob eine Aussage nachvollziehbar ist, Resonanz erzeugt und im Alltag hilfreich geprüft werden kann.",
     },
     {
       q: "Warum führt der Artikel zur Anmeldung?",
@@ -105,7 +105,7 @@ function articleFaq(article: (typeof articles)[number]) {
     },
     {
       q: "Ist der Inhalt medizinische oder therapeutische Beratung?",
-      a: "Nein. Hermetia bietet Inspiration zur Selbstreflexion und ersetzt keine professionelle Beratung, Diagnose oder Behandlung.",
+      a: "Nein. Astrakey bietet Inspiration zur Selbstreflexion und ersetzt keine professionelle Beratung, Diagnose oder Behandlung.",
     },
   ];
 }

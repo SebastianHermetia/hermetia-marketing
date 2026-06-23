@@ -25,19 +25,19 @@ const comparisonFamilies: { title: string; text: string; slugs: ComparisonSlug[]
   },
   {
     title: "Alltag, Tagesimpulse und Journaling",
-    text: "Für Menschen, die klassische Tageshoroskope, Journaling-Apps oder intuitive Tageskarten mit Hermetias profilbasierter Begleitung vergleichen.",
+    text: "Für Menschen, die klassische Tageshoroskope, Journaling-Apps oder intuitive Tageskarten mit Astrakeys profilbasierter Begleitung vergleichen.",
     slugs: ["tageshoroskop-vs-hermetia", "tagesimpuls-vs-journaling-app", "oracle-cards-vs-tagesimpuls"],
   },
   {
     title: "Kostenloser Einstieg und Premium-Tiefe",
-    text: "Für Conversion-nahe Fragen: Was kann ein kostenloses Horoskop, was kann Hermetia, und wann lohnt sich ein bezahltes Modell?",
+    text: "Für Conversion-nahe Fragen: Was kann ein kostenloses Horoskop, was kann Astrakey, und wann lohnt sich ein bezahltes Modell?",
     slugs: ["kostenloses-horoskop-vs-hermetia", "seelenkarte-vs-persoenlichkeitstest", "astrologie-vs-numerologie"],
   },
 ];
 
 const comparisonQuestions = [
   "Was ist der Unterschied zwischen Human Design und Gene Keys?",
-  "Ist Hermetia eher Astrologie oder Persönlichkeitstest?",
+  "Ist Astrakey eher Astrologie oder Persönlichkeitstest?",
   "Warum reicht ein kostenloses Horoskop oft nicht aus?",
   "Wie unterscheiden sich Tageshoroskop und persönlicher Tagesimpuls?",
   "Wann ist welches System hilfreich und wo liegen die Grenzen?",
@@ -52,7 +52,7 @@ const comparisonPrinciples = [
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  return buildMetadata({ locale: locale as Locale, path: paths.vergleiche, title: "Hermetia Vergleiche — Systeme verständlich gegenübergestellt", description: "Vergleiche zwischen Astrologie, Human Design, Gene Keys, Numerologie und weiteren Systemen." });
+  return buildMetadata({ locale: locale as Locale, path: paths.vergleiche, title: "Astrakey Vergleiche — Systeme verständlich gegenübergestellt", description: "Vergleiche zwischen Astrologie, Human Design, Gene Keys, Numerologie und weiteren Systemen." });
 }
 
 export default async function VergleichePage({ params }: { params: Promise<{ locale: string }> }) {
@@ -68,15 +68,15 @@ export default async function VergleichePage({ params }: { params: Promise<{ loc
       <JsonLd
         data={[
           articleSchema({
-            headline: "Hermetia Vergleiche",
-            description: "Vergleiche zwischen Astrologie, Human Design, Gene Keys, Big Five, Enneagramm, Tageshoroskop und Hermetia.",
+            headline: "Astrakey Vergleiche",
+            description: "Vergleiche zwischen Astrologie, Human Design, Gene Keys, Big Five, Enneagramm, Tageshoroskop und Astrakey.",
             locale,
             url: pageUrl,
-            about: "Hermetia Systemvergleiche",
+            about: "Astrakey Systemvergleiche",
             image: `${siteUrl}/images/hermetia/atmospheric-data-topography.png`,
           }),
           breadcrumbSchema([
-            { name: "Hermetia", url: `${siteUrl}/${locale}/` },
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
             { name: "Vergleiche", url: pageUrl },
           ]),
         ]}
@@ -87,7 +87,7 @@ export default async function VergleichePage({ params }: { params: Promise<{ loc
           <div>
             <span className="kicker">{ui.comparison}</span>
             <h1 className="mt-3 max-w-[760px] text-[clamp(32px,5vw,48px)]">Welche Systeme zeigen was?</h1>
-            <p className="lead mt-5 max-w-[700px]">Vergleichsseiten holen typische Suchfragen ab und zeigen, warum Hermetia Systeme nicht gegeneinander ausspielt, sondern verantwortungsvoll verbindet.</p>
+            <p className="lead mt-5 max-w-[700px]">Vergleichsseiten holen typische Suchfragen ab und zeigen, warum Astrakey Systeme nicht gegeneinander ausspielt, sondern verantwortungsvoll verbindet.</p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "comparisons-hero" })}>{ui.startFree}</a>
               <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.systeme)}>{ui.overview}</a>
@@ -106,7 +106,7 @@ export default async function VergleichePage({ params }: { params: Promise<{ loc
         <div className="wrap grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
           <div>
             <span className="kicker">Suchfragen</span>
-            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Welche Vergleichsfragen beantwortet Hermetia?</h2>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Welche Vergleichsfragen beantwortet Astrakey?</h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
               Viele Nutzer kommen über Gegenüberstellungen: Human Design oder Gene Keys, Horoskop oder Seelenkarte, Persönlichkeitstest oder spirituelles Profil. Der Vergleichs-Hub beantwortet diese Fragen ohne künstliche Rangliste.
             </p>
@@ -172,9 +172,9 @@ export default async function VergleichePage({ params }: { params: Promise<{ loc
         <div className="wrap grid items-start gap-8 lg:grid-cols-[1fr_.9fr]">
           <div>
             <span className="kicker">Fairness</span>
-            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Warum Hermetia nicht nach Gewinnern sucht.</h2>
+            <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Warum Astrakey nicht nach Gewinnern sucht.</h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Ein Vergleich ist hilfreich, wenn er Unterschiede klärt. Er wird gefährlich, wenn er absolute Wahrheiten verspricht. Hermetia nutzt Vergleiche deshalb als Orientierung, nicht als Urteil über Menschen oder Systeme.
+              Ein Vergleich ist hilfreich, wenn er Unterschiede klärt. Er wird gefährlich, wenn er absolute Wahrheiten verspricht. Astrakey nutzt Vergleiche deshalb als Orientierung, nicht als Urteil über Menschen oder Systeme.
             </p>
             <div className="mt-7">
               <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "comparisons-fairness" })}>Eigene Seelenkarte prüfen</a>
@@ -194,7 +194,7 @@ export default async function VergleichePage({ params }: { params: Promise<{ loc
           <AppCta
             locale={locale}
             title="Vergleiche erklären Systeme. Dein Profil zeigt, was bei dir zusammenläuft."
-            text="Starte kostenlos und erlebe, welche Themen Hermetia aus mehreren Perspektiven bei dir erkennt."
+            text="Starte kostenlos und erlebe, welche Themen Astrakey aus mehreren Perspektiven bei dir erkennt."
             source="comparisons-final"
           />
         </div>

@@ -62,7 +62,7 @@ function isPublicRoute(route) {
 function shouldTranslate(value) {
   const text = decodeHtml(value).replace(/\s+/g, " ").trim();
   if (!text) return false;
-  if (text === "Hermetia" || text === "AI" || text === "FAQ" || text === "Premium") return false;
+  if (text === "Astrakey" || text === "AI" || text === "FAQ" || text === "Premium") return false;
   if (/^[a-z]{2}$/i.test(text)) return false;
   if (/^https?:\/\//i.test(text) || text.startsWith("/") || text.startsWith("#") || text.includes("@")) return false;
   if (/^[\d\s.,:;€%/+()[\]\-–—|·→✓]+$/.test(text)) return false;

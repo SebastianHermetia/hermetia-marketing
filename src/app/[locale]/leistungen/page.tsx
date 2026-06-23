@@ -18,12 +18,12 @@ const servicesPageCopy = {
     offerKicker: "Leistungsbereiche",
     offerTitle: "Vom ersten Profil bis zur bezahlten Tiefe.",
     offerText:
-      "Hermetia führt von Orientierung zu persönlicher Resonanz und erst danach zu einer bewussten Entscheidung für mehr Tiefe. Jede Leistung macht entweder den Einstieg verständlicher oder den Wert eines bezahlten Modells greifbar.",
+      "Astrakey führt von Orientierung zu persönlicher Resonanz und erst danach zu einer bewussten Entscheidung für mehr Tiefe. Jede Leistung macht entweder den Einstieg verständlicher oder den Wert eines bezahlten Modells greifbar.",
     offerBlocks: [
       {
         tag: "Kostenloser Einstieg",
         title: "Seelenkarte und erste Kernthemen",
-        text: "Der Einstieg macht direkt erlebbar, ob die Sprache resoniert. Deshalb beginnt Hermetia mit deiner Seelenkarte, ersten Kernthemen und einer verständlichen Einordnung der Systeme, ohne Kreditkarte und ohne Druck zum Upgrade.",
+        text: "Der Einstieg macht direkt erlebbar, ob die Sprache resoniert. Deshalb beginnt Astrakey mit deiner Seelenkarte, ersten Kernthemen und einer verständlichen Einordnung der Systeme, ohne Kreditkarte und ohne Druck zum Upgrade.",
         href: paths.seelenkarte,
         cta: "Seelenkarte verstehen",
       },
@@ -37,7 +37,7 @@ const servicesPageCopy = {
       {
         tag: "Sensible Module",
         title: "Beziehungen, Companion und persönliche Daten",
-        text: "Beziehungsprofile, Companion-Dialoge und Journal-Zusammenfassungen brauchen besondere Sorgfalt. Hermetia erklärt deshalb Einwilligung, AI-Transparenz, Löschung, Export und Grenzen klar. Die Leistung ist nicht nur Inhalt, sondern auch verantwortungsvolle Rahmung.",
+        text: "Beziehungsprofile, Companion-Dialoge und Journal-Zusammenfassungen brauchen besondere Sorgfalt. Astrakey erklärt deshalb Einwilligung, AI-Transparenz, Löschung, Export und Grenzen klar. Die Leistung ist nicht nur Inhalt, sondern auch verantwortungsvolle Rahmung.",
         href: paths.datenSicherheit,
         cta: "Daten und Sicherheit",
       },
@@ -51,7 +51,7 @@ const servicesPageCopy = {
     depthCta: "Profil kostenlos starten",
     depthRows: [
       ["Profil-Grundlage", "Geburtsdaten, Ort, Zeitqualität, Selbstauskunft und Systemfamilien werden getrennt berechnet.", "Kostenlos erlebbar"],
-      ["Konvergenz", "Hermetia erkennt, welche Themen über unabhängige Perspektiven hinweg wiederkehren.", "Kern der Methode"],
+      ["Konvergenz", "Astrakey erkennt, welche Themen über unabhängige Perspektiven hinweg wiederkehren.", "Kern der Methode"],
       ["Ebenen", "Wesenskern, Gaben, Schatten, Beziehung, Berufung, Rhythmus und Entwicklung werden einzeln lesbar.", "Premium-Tiefe"],
       ["Alltag", "Tagesimpulse, Journaling und Rückblicke verbinden Profilwissen mit gelebter Erfahrung.", "Begleitung"],
       ["Ausgabe", "Das Vollprofil-Buch bündelt die wichtigsten Aussagen in einer ruhigen, wiederlesbaren Form.", "Premium-Asset"],
@@ -59,7 +59,7 @@ const servicesPageCopy = {
     decisionCards: [
       {
         title: "Warum kostenlos starten?",
-        text: "Weil Hermetia sehr persönlich wirkt und niemand vorab wissen kann, ob die Sprache passt. Der kostenlose Einstieg senkt die Schwelle, zeigt erste Resonanz und macht die spätere Kaufentscheidung bewusster.",
+        text: "Weil Astrakey sehr persönlich wirkt und niemand vorab wissen kann, ob die Sprache passt. Der kostenlose Einstieg senkt die Schwelle, zeigt erste Resonanz und macht die spätere Kaufentscheidung bewusster.",
       },
       {
         title: "Wann lohnt sich Premium?",
@@ -67,40 +67,40 @@ const servicesPageCopy = {
       },
       {
         title: "Was bleibt bewusst begrenzt?",
-        text: "Hermetia stellt keine Diagnosen, trifft keine Entscheidungen und verspricht keine Zukunft. Die Inhalte sind eigene, rechtlich vorsichtig formulierte Reflexionstexte und keine kopierten Systemauszüge Dritter.",
+        text: "Astrakey stellt keine Diagnosen, trifft keine Entscheidungen und verspricht keine Zukunft. Die Inhalte sind eigene, rechtlich vorsichtig formulierte Reflexionstexte und keine kopierten Systemauszüge Dritter.",
       },
     ],
-    imageAlt: "Eine ruhige Profilbibliothek als Bild für Hermetia Leistungen",
+    imageAlt: "Eine ruhige Profilbibliothek als Bild für Astrakey Leistungen",
     imageCaption:
-      "Leistung bedeutet bei Hermetia: persönliche Tiefe, rechtliche Vorsicht und klare Wege vom Content in die App.",
+      "Leistung bedeutet bei Astrakey: persönliche Tiefe, rechtliche Vorsicht und klare Wege vom Content in die App.",
     legalKicker: "Rechtliche und redaktionelle Leitplanken",
     legalTitle: "Eigene Inhalte, klare Grenzen, keine versteckten Versprechen.",
     legalText:
-      "Nutzen und Grenzen gehören bei Hermetia zusammen: keine Therapie, keine medizinische Beratung, keine Schicksalsversprechen, keine Profile anderer Personen ohne Einwilligung und keine übernommenen proprietären Deutungstexte. Diese Klarheit stärkt Vertrauen.",
+      "Nutzen und Grenzen gehören bei Astrakey zusammen: keine Therapie, keine medizinische Beratung, keine Schicksalsversprechen, keine Profile anderer Personen ohne Einwilligung und keine übernommenen proprietären Deutungstexte. Diese Klarheit stärkt Vertrauen.",
     legalCta: "Sicher starten",
     aiCta: "AI-Transparenz lesen",
     faqKicker: "FAQ",
-    faqTitle: "Häufige Fragen zu Hermetia Leistungen",
+    faqTitle: "Häufige Fragen zu Astrakey Leistungen",
     servicesFaq: [
       {
         q: "Welche Leistung bekomme ich direkt nach der Anmeldung?",
         a: "Nach dem Onboarding entsteht deine persönliche Seelenkarte mit ersten Kernthemen. Der kostenlose Einstieg zeigt, ob die Deutungssprache resoniert, bevor du ein bezahltes Modell auswählst.",
       },
       {
-        q: "Was unterscheidet Hermetia von einem normalen Persönlichkeitstest?",
-        a: "Ein Persönlichkeitstest basiert meist auf Antworten. Hermetia verbindet Selbstauskunft mit berechneten Systemen, Konvergenz, AI-gestützter Formulierung und klaren Grenzen. Es bleibt Reflexion, nicht Diagnose.",
+        q: "Was unterscheidet Astrakey von einem normalen Persönlichkeitstest?",
+        a: "Ein Persönlichkeitstest basiert meist auf Antworten. Astrakey verbindet Selbstauskunft mit berechneten Systemen, Konvergenz, AI-gestützter Formulierung und klaren Grenzen. Es bleibt Reflexion, nicht Diagnose.",
       },
       {
         q: "Sind Beziehungsprofile ohne Einwilligung möglich?",
-        a: "Nein. Beziehungsprofile betreffen immer auch eine zweite Person. Hermetia beschreibt sie deshalb als sensibles Modul, das informierte Einwilligung, transparente Zwecke und respektvolle Grenzen braucht.",
+        a: "Nein. Beziehungsprofile betreffen immer auch eine zweite Person. Astrakey beschreibt sie deshalb als sensibles Modul, das informierte Einwilligung, transparente Zwecke und respektvolle Grenzen braucht.",
       },
       {
         q: "Warum gibt es mehrere bezahlte Modelle?",
         a: "Nicht jeder braucht dieselbe Tiefe. Manche Nutzer wollen nur die Seelenkarte, andere zusätzlich Tagesimpulse, Journaling, Vollprofil-Buch, Companion oder Beziehungsprofile. Die Website erklärt diese Entscheidung offen.",
       },
       {
-        q: "Nutzt Hermetia geschützte Texte aus Astrologie, Human Design oder Gene Keys?",
-        a: "Hermetia verwendet eigene Sprache und keine proprietären Deutungstexte, Kartentexte oder Fragebogenitems Dritter. Systembezüge werden beschreibend, transformativ und vorsichtig formuliert.",
+        q: "Nutzt Astrakey geschützte Texte aus Astrologie, Human Design oder Gene Keys?",
+        a: "Astrakey verwendet eigene Sprache und keine proprietären Deutungstexte, Kartentexte oder Fragebogenitems Dritter. Systembezüge werden beschreibend, transformativ und vorsichtig formuliert.",
       },
     ],
   },
@@ -111,12 +111,12 @@ const servicesPageCopy = {
     offerKicker: "Feature areas",
     offerTitle: "From the first profile to paid depth.",
     offerText:
-      "Hermetia leads from orientation to personal resonance and only then to a conscious decision for more depth. Each feature either makes the start clearer or makes the value of a paid model tangible.",
+      "Astrakey leads from orientation to personal resonance and only then to a conscious decision for more depth. Each feature either makes the start clearer or makes the value of a paid model tangible.",
     offerBlocks: [
       {
         tag: "Free start",
         title: "Soul map and first core themes",
-        text: "The entry point lets you feel directly whether the language resonates. That is why Hermetia starts with your soul map, first core themes and an understandable framing of the systems, without a credit card and without upgrade pressure.",
+        text: "The entry point lets you feel directly whether the language resonates. That is why Astrakey starts with your soul map, first core themes and an understandable framing of the systems, without a credit card and without upgrade pressure.",
         href: paths.seelenkarte,
         cta: "Understand the soul map",
       },
@@ -130,7 +130,7 @@ const servicesPageCopy = {
       {
         tag: "Sensitive modules",
         title: "Relationships, Companion and personal data",
-        text: "Relationship profiles, Companion dialogues and journal summaries need special care. Hermetia therefore explains consent, AI transparency, deletion, export and limits clearly. The feature is not just content, but also responsible framing.",
+        text: "Relationship profiles, Companion dialogues and journal summaries need special care. Astrakey therefore explains consent, AI transparency, deletion, export and limits clearly. The feature is not just content, but also responsible framing.",
         href: paths.datenSicherheit,
         cta: "Data and security",
       },
@@ -144,7 +144,7 @@ const servicesPageCopy = {
     depthCta: "Start profile for free",
     depthRows: [
       ["Profile basis", "Birth data, place, time quality, self-report and system families are calculated separately.", "Available for free"],
-      ["Convergence", "Hermetia recognizes which themes repeat across independent perspectives.", "Core method"],
+      ["Convergence", "Astrakey recognizes which themes repeat across independent perspectives.", "Core method"],
       ["Levels", "Essence, gifts, shadow, relationships, calling, rhythm and development become individually readable.", "Premium depth"],
       ["Daily life", "Daily impulses, journaling and reviews connect profile knowledge with lived experience.", "Companion"],
       ["Output", "The full profile book gathers the most important statements in a calm, rereadable form.", "Premium asset"],
@@ -152,7 +152,7 @@ const servicesPageCopy = {
     decisionCards: [
       {
         title: "Why start free?",
-        text: "Because Hermetia can feel very personal and nobody can know in advance whether the language fits. The free start lowers the threshold, shows first resonance and makes a later purchase decision more conscious.",
+        text: "Because Astrakey can feel very personal and nobody can know in advance whether the language fits. The free start lowers the threshold, shows first resonance and makes a later purchase decision more conscious.",
       },
       {
         title: "When is Premium worth it?",
@@ -160,39 +160,39 @@ const servicesPageCopy = {
       },
       {
         title: "What remains deliberately limited?",
-        text: "Hermetia does not diagnose, make decisions or promise the future. The content is original, legally careful reflection language and not copied excerpts from third-party systems.",
+        text: "Astrakey does not diagnose, make decisions or promise the future. The content is original, legally careful reflection language and not copied excerpts from third-party systems.",
       },
     ],
-    imageAlt: "A calm profile library as an image for Hermetia features",
+    imageAlt: "A calm profile library as an image for Astrakey features",
     imageCaption:
-      "In Hermetia, a feature means personal depth, legal care and clear paths from content into the app.",
+      "In Astrakey, a feature means personal depth, legal care and clear paths from content into the app.",
     legalKicker: "Legal and editorial guardrails",
     legalTitle: "Original content, clear limits, no hidden promises.",
     legalText:
-      "Value and limits belong together at Hermetia: no therapy, no medical advice, no destiny promises, no profiles of other people without consent and no copied proprietary interpretation texts. This clarity builds trust.",
+      "Value and limits belong together at Astrakey: no therapy, no medical advice, no destiny promises, no profiles of other people without consent and no copied proprietary interpretation texts. This clarity builds trust.",
     legalCta: "Start safely",
     aiCta: "Read AI transparency",
     faqKicker: "FAQ",
-    faqTitle: "Frequently asked questions about Hermetia features",
+    faqTitle: "Frequently asked questions about Astrakey features",
     servicesFaq: [
       {
         q: "Which feature do I get right after signup?",
         a: "After onboarding, your personal soul map with first core themes is created. The free start shows whether the interpretation language resonates before you choose a paid model.",
       },
       {
-        q: "How is Hermetia different from a normal personality test?",
-        a: "A personality test is usually based on answers. Hermetia connects self-report with calculated systems, convergence, AI-assisted wording and clear limits. It remains reflection, not diagnosis.",
+        q: "How is Astrakey different from a normal personality test?",
+        a: "A personality test is usually based on answers. Astrakey connects self-report with calculated systems, convergence, AI-assisted wording and clear limits. It remains reflection, not diagnosis.",
       },
       {
         q: "Are relationship profiles possible without consent?",
-        a: "No. Relationship profiles always affect a second person as well. Hermetia therefore frames them as a sensitive module that needs informed consent, transparent purposes and respectful limits.",
+        a: "No. Relationship profiles always affect a second person as well. Astrakey therefore frames them as a sensitive module that needs informed consent, transparent purposes and respectful limits.",
       },
       {
         q: "Why are there several paid models?",
         a: "Not everyone needs the same depth. Some users only want the soul map, while others want daily impulses, journaling, the full profile book, Companion or relationship profiles. The website explains that decision openly.",
       },
       {
-        q: "Does Hermetia use protected texts from astrology, Human Design or Gene Keys?",
+        q: "Does Astrakey use protected texts from astrology, Human Design or Gene Keys?",
         a: "The marketing website uses original language and no proprietary interpretation texts, card texts or questionnaire items from third parties. System references are descriptive, transformative and carefully framed.",
       },
     ],
@@ -223,12 +223,12 @@ export default async function LeistungenPage({ params }: { params: Promise<{ loc
             description: p.seoDescription,
             locale,
             url: pageUrl,
-            about: "Hermetia Leistungen",
+            about: "Astrakey Leistungen",
             image: `${siteUrl}/images/hermetia/library-of-self-profile.png`,
           }),
           faqSchema(localizedFaq),
           breadcrumbSchema([
-            { name: "Hermetia", url: `${siteUrl}/${locale}/` },
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
             { name: "Leistungen", url: pageUrl },
           ]),
         ]}

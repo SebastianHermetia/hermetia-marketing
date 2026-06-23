@@ -17,7 +17,7 @@ const steps = [
   {
     n: "02",
     title: "Geburtsdaten eingeben",
-    text: "Hermetia braucht Geburtsdatum, Geburtsort und, wenn vorhanden, die Geburtszeit. Wenn du die Uhrzeit nicht kennst, geht es trotzdem weiter.",
+    text: "Astrakey braucht Geburtsdatum, Geburtsort und, wenn vorhanden, die Geburtszeit. Wenn du die Uhrzeit nicht kennst, geht es trotzdem weiter.",
   },
   {
     n: "03",
@@ -50,7 +50,7 @@ const trustBeforeStart = [
   },
   {
     title: "Unsicherheit sichtbar",
-    text: "Wenn eine Geburtszeit fehlt oder eine Angabe grob ist, muss Hermetia das kennzeichnen, statt jede Aussage gleich sicher wirken zu lassen.",
+    text: "Wenn eine Geburtszeit fehlt oder eine Angabe grob ist, muss Astrakey das kennzeichnen, statt jede Aussage gleich sicher wirken zu lassen.",
   },
 ];
 
@@ -80,7 +80,7 @@ const afterStart = [
 const faq = [
   {
     q: "Kann ich ohne genaue Geburtszeit starten?",
-    a: "Ja. Hermetia funktioniert auch ohne exakte Uhrzeit, kennzeichnet aber, welche Systeme dadurch weniger sicher sind. Du kannst die Geburtszeit später nachtragen.",
+    a: "Ja. Astrakey funktioniert auch ohne exakte Uhrzeit, kennzeichnet aber, welche Systeme dadurch weniger sicher sind. Du kannst die Geburtszeit später nachtragen.",
   },
   {
     q: "Brauche ich eine Kreditkarte für den Einstieg?",
@@ -88,7 +88,7 @@ const faq = [
   },
   {
     q: "Warum muss ich einer sensiblen Verarbeitung zustimmen?",
-    a: "Aus Geburtsdaten und Systemen können spirituell-weltanschauliche Profilinhalte entstehen. Hermetia behandelt diese Inhalte als sensibel und erklärt Einwilligung und Rechte vor der Verarbeitung.",
+    a: "Aus Geburtsdaten und Systemen können spirituell-weltanschauliche Profilinhalte entstehen. Astrakey behandelt diese Inhalte als sensibel und erklärt Einwilligung und Rechte vor der Verarbeitung.",
   },
   {
     q: "Was passiert nach der ersten Seelenkarte?",
@@ -110,19 +110,19 @@ const faq = [
 
 const onboardingCopy = {
   de: {
-    seoTitle: "Hermetia Profil starten - Ablauf, Geburtsdaten, Einwilligung und Seelenkarte",
+    seoTitle: "Astrakey Profil starten - Ablauf, Geburtsdaten, Einwilligung und Seelenkarte",
     seoDescription:
-      "So funktioniert der kostenlose Profilstart bei Hermetia: Sprache, Konto, Geburtsdaten, Einwilligung, Seelenkarte und nächste Schritte.",
-    articleHeadline: "Hermetia Profil starten",
+      "So funktioniert der kostenlose Profilstart bei Astrakey: Sprache, Konto, Geburtsdaten, Einwilligung, Seelenkarte und nächste Schritte.",
+    articleHeadline: "Astrakey Profil starten",
     articleDescription: "Ablauf, benötigte Daten, Einwilligung und kostenlose Seelenkarte.",
     breadcrumb: "Profil starten",
     heroKicker: "Profil starten",
     heroTitle: "So kommst du von der Website in deine persönliche Seelenkarte.",
     heroLead:
-      "Das Onboarding ist ruhig und verständlich: Du gibst nur ein, was für die Berechnung nötig ist, verstehst vorher die Datenlogik und siehst zuerst kostenlos, ob Hermetia für dich resoniert.",
+      "Das Onboarding ist ruhig und verständlich: Du gibst nur ein, was für die Berechnung nötig ist, verstehst vorher die Datenlogik und siehst zuerst kostenlos, ob Astrakey für dich resoniert.",
     heroCta: "Jetzt Profil starten",
     dataCta: "Datenlogik prüfen",
-    heroAlt: "Abstrakter Geburtsmoment als Bild für den Hermetia Profilstart",
+    heroAlt: "Abstrakter Geburtsmoment als Bild für den Astrakey Profilstart",
     heroCaption: "Der Profilstart verbindet Sprache, Geburtsdaten, Einwilligung und die erste Seelenkarte.",
     beforeKicker: "Vor dem Start",
     beforeTitle: "Was vor dem App-Absprung klar sein sollte.",
@@ -131,11 +131,11 @@ const onboardingCopy = {
     flowKicker: "Ablauf",
     flowTitle: "Vier Schritte, bevor du Tiefe freischaltest.",
     flowText:
-      "Hermetia beginnt nicht mit einem überrumpelnden Formular. Der Ablauf erklärt, warum Daten gebraucht werden und was du schon kostenlos sehen kannst.",
+      "Astrakey beginnt nicht mit einem überrumpelnden Formular. Der Ablauf erklärt, warum Daten gebraucht werden und was du schon kostenlos sehen kannst.",
     handoffKicker: "App-Handoff",
     handoffTitle: "Was die Website erklärt und was die App übernimmt.",
     handoffText:
-      "Der Übergang von Website zur Hermetia-App folgt einem ruhigen Weg: Die Website bereitet vor, die App berechnet, du entscheidest.",
+      "Der Übergang von Website zur Astrakey-App folgt einem ruhigen Weg: Die Website bereitet vor, die App berechnet, du entscheidest.",
     handoffAlt: "Pipeline von Website-Fragen zu App-Onboarding und Profilberechnung",
     handoffCaption: "Der App-Handoff folgt derselben Logik wie die Methode: Eingaben verstehen, sauber einordnen, erst dann deuten.",
     prepareKicker: "Vorbereitung",
@@ -150,12 +150,12 @@ const onboardingCopy = {
     finalKicker: "Kostenloser Einstieg",
     finalTitle: "Starte mit der Seelenkarte, nicht mit einer Kaufentscheidung.",
     finalText:
-      "Der erste Schritt zeigt, ob Hermetia für dich stimmt. Bezahlte Modelle sind für spätere Tiefe gedacht: Ebenen, Tagesimpulse, Journaling, Buch und Beziehungsauswertungen.",
+      "Der erste Schritt zeigt, ob Astrakey für dich stimmt. Bezahlte Modelle sind für spätere Tiefe gedacht: Ebenen, Tagesimpulse, Journaling, Buch und Beziehungsauswertungen.",
     finalCta: "Profil kostenlos starten",
     finalSecondaryCta: "Kostenlos vs Premium",
     uncertaintyTitle: "Wenn etwas unsicher ist",
     uncertaintyText:
-      "Keine genaue Uhrzeit? Kein Problem. Hermetia kennzeichnet Sicherheit und Unsicherheit, statt so zu tun, als wäre jede Aussage gleich belastbar.",
+      "Keine genaue Uhrzeit? Kein Problem. Astrakey kennzeichnet Sicherheit und Unsicherheit, statt so zu tun, als wäre jede Aussage gleich belastbar.",
     faqKicker: "FAQ",
     faqTitle: "Häufige Fragen zum Profilstart",
     checkLabel: "Check",
@@ -167,19 +167,19 @@ const onboardingCopy = {
     faq,
   },
   en: {
-    seoTitle: "Start your Hermetia profile - flow, birth data, consent and soul map",
+    seoTitle: "Start your Astrakey profile - flow, birth data, consent and soul map",
     seoDescription:
-      "How the free Hermetia profile start works: language, account, birth data, consent, soul map and next steps.",
-    articleHeadline: "Start your Hermetia profile",
+      "How the free Astrakey profile start works: language, account, birth data, consent, soul map and next steps.",
+    articleHeadline: "Start your Astrakey profile",
     articleDescription: "Flow, required data, consent and free soul map.",
     breadcrumb: "Start profile",
     heroKicker: "Start profile",
     heroTitle: "How you move from the website into your personal soul map.",
     heroLead:
-      "Onboarding is calm and understandable: you enter only what is needed for calculation, understand the data logic first and see for free whether Hermetia resonates with you.",
+      "Onboarding is calm and understandable: you enter only what is needed for calculation, understand the data logic first and see for free whether Astrakey resonates with you.",
     heroCta: "Start profile now",
     dataCta: "Check data logic",
-    heroAlt: "Abstract birth moment as an image for starting a Hermetia profile",
+    heroAlt: "Abstract birth moment as an image for starting a Astrakey profile",
     heroCaption: "The profile start connects language, birth data, consent and the first soul map.",
     beforeKicker: "Before you start",
     beforeTitle: "What should be clear before entering the app.",
@@ -188,11 +188,11 @@ const onboardingCopy = {
     flowKicker: "Flow",
     flowTitle: "Four steps before you unlock depth.",
     flowText:
-      "Hermetia does not start with an overwhelming form. The flow explains why data is needed and what you can already see for free.",
+      "Astrakey does not start with an overwhelming form. The flow explains why data is needed and what you can already see for free.",
     handoffKicker: "App handoff",
     handoffTitle: "What the website explains and what the app takes over.",
     handoffText:
-      "The move from the website to the Hermetia app follows one calm path: the website prepares, the app calculates, you decide.",
+      "The move from the website to the Astrakey app follows one calm path: the website prepares, the app calculates, you decide.",
     handoffAlt: "Pipeline from website questions to app onboarding and profile calculation",
     handoffCaption: "The app handoff follows the same logic as the method: understand inputs, classify them carefully, then interpret.",
     prepareKicker: "Preparation",
@@ -207,18 +207,18 @@ const onboardingCopy = {
     finalKicker: "Free start",
     finalTitle: "Start with the soul map, not with a purchase decision.",
     finalText:
-      "The first step shows whether Hermetia fits you. Paid models are for later depth: levels, daily impulses, journaling, book and relationship readings.",
+      "The first step shows whether Astrakey fits you. Paid models are for later depth: levels, daily impulses, journaling, book and relationship readings.",
     finalCta: "Start profile for free",
     finalSecondaryCta: "Free vs Premium",
     uncertaintyTitle: "If something is uncertain",
     uncertaintyText:
-      "No exact birth time? No problem. Hermetia marks certainty and uncertainty instead of pretending every statement is equally reliable.",
+      "No exact birth time? No problem. Astrakey marks certainty and uncertainty instead of pretending every statement is equally reliable.",
     faqKicker: "FAQ",
     faqTitle: "Frequently asked questions about starting a profile",
     checkLabel: "Check",
     steps: [
       { n: "01", title: "Choose language and account", text: "You start with your preferred language and an account. The language is passed to the app so the entry does not begin from zero." },
-      { n: "02", title: "Enter birth data", text: "Hermetia needs date of birth, place of birth and, if available, birth time. If you do not know the exact time, you can still continue." },
+      { n: "02", title: "Enter birth data", text: "Astrakey needs date of birth, place of birth and, if available, birth time. If you do not know the exact time, you can still continue." },
       { n: "03", title: "Understand consent", text: "Before sensitive profile content is created, it must be clear which data is processed, why GDPR Art. 9 is relevant and which rights you have." },
       { n: "04", title: "View your soul map", text: "The free start shows the first soul map and core themes. Only afterwards do you decide whether paid depth makes sense." },
     ],
@@ -226,7 +226,7 @@ const onboardingCopy = {
     trustBeforeStart: [
       { title: "Free before purchase", text: "The first profile start tests resonance before a plan is chosen. That reduces pressure and makes later Premium decisions more conscious." },
       { title: "Data logic before input", text: "You understand in advance why birth data, consent and derived profile content are sensitive and which rights you have." },
-      { title: "Uncertainty stays visible", text: "If birth time is missing or an input is approximate, Hermetia must mark that instead of making every statement feel equally certain." },
+      { title: "Uncertainty stays visible", text: "If birth time is missing or an input is approximate, Astrakey must mark that instead of making every statement feel equally certain." },
     ],
     appHandoff: [
       { title: "Website explains", text: "The marketing page answers questions about method, data, limits, costs and value before the handoff." },
@@ -241,9 +241,9 @@ const onboardingCopy = {
       "compare Premium models only afterwards",
     ],
     faq: [
-      { q: "Can I start without an exact birth time?", a: "Yes. Hermetia works without an exact time, but marks which systems become less certain. You can add the birth time later." },
+      { q: "Can I start without an exact birth time?", a: "Yes. Astrakey works without an exact time, but marks which systems become less certain. You can add the birth time later." },
       { q: "Do I need a credit card to start?", a: "No. The first profile start is designed as a free entry without a credit card. Paid models are chosen consciously later." },
-      { q: "Why do I need to consent to sensitive processing?", a: "Birth data and systems can create spiritual or worldview-related profile content. Hermetia treats this content as sensitive and explains consent and rights before processing." },
+      { q: "Why do I need to consent to sensitive processing?", a: "Birth data and systems can create spiritual or worldview-related profile content. Astrakey treats this content as sensitive and explains consent and rights before processing." },
       { q: "What happens after the first soul map?", a: "You can read the first themes, review the method and decide whether you want to use further levels, daily impulses, journaling or relationship readings." },
       { q: "Will I be pushed directly into a purchase?", a: "No. The profile start is designed as a free resonance test. Premium becomes useful only if you truly want more depth after the first soul map." },
       { q: "What happens if I leave the app after starting?", a: "Your account is the return path. You can come back and continue from the profile state that has been saved." },
@@ -279,12 +279,12 @@ export default async function OnboardingPage({ params }: { params: Promise<{ loc
             description: copy.articleDescription,
             locale,
             url: pageUrl,
-            about: "Hermetia Onboarding",
+            about: "Astrakey Onboarding",
             image: `${siteUrl}/images/hermetia/birth-moment-meridian.png`,
           }),
           faqSchema(localizedFaq),
           breadcrumbSchema([
-            { name: "Hermetia", url: `${siteUrl}/${locale}/` },
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
             { name: copy.breadcrumb, url: pageUrl },
           ]),
         ]}

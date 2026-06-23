@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { locales, siteUrl, type Locale } from "@/i18n/config";
 import { localizedRouteCopy } from "@/i18n/localized-content";
+import { brand } from "@/lib/brand";
 
 function localizedFallbackMetadata(locale: Locale, path: string, title: string, description: string) {
   if (locale === "de" || locale === "en" || path === "/beta-zugang") return { title, description };
@@ -47,10 +48,10 @@ export function buildMetadata({
       title: meta.title,
       description: meta.description,
       url: canonical,
-      siteName: "Hermetia",
+      siteName: brand.name,
       locale,
       type: "website",
-      images: [{ url: ogImage, width: 1200, height: 630, alt: "Hermetia" }],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: brand.name }],
     },
     twitter: { card: "summary_large_image", title: meta.title, description: meta.description, images: [ogImage] },
   };

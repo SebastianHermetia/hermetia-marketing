@@ -1,3 +1,5 @@
+import { brand } from "@/lib/brand";
+
 // Schema.org JSON-LD für SEO/AEO/GEO (Antwortmaschinen + LLM-Sichtbarkeit).
 // Härtung: <, >, & und die Line-/Paragraph-Separatoren werden escaped, damit
 // Content (auch künftiger CMS-Content) nicht aus dem <script>-Block ausbricht.
@@ -32,12 +34,12 @@ export function orgSchema(siteUrl: string) {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Hermetia",
+    name: brand.name,
     url: siteUrl,
     logo: `${siteUrl}/og/default.jpg`,
-    slogan: "Wie oben, so unten",
+    slogan: brand.slogan,
     description:
-      "Hermetia verwandelt Geburtsdaten in eine Seelenkarte aus bis zu 31 Deutungssystemen und begleitet Menschen Tag für Tag.",
+      "Astrakey verwandelt Geburtsdaten in eine Seelenkarte aus bis zu 31 Deutungssystemen und begleitet Menschen Tag für Tag.",
   };
 }
 
@@ -71,8 +73,8 @@ export function articleSchema(opts: {
     about: opts.about,
     image: opts.image,
     url: opts.url,
-    author: { "@type": "Organization", name: "Hermetia" },
-    publisher: { "@type": "Organization", name: "Hermetia" },
+    author: { "@type": "Organization", name: brand.name },
+    publisher: { "@type": "Organization", name: brand.name },
   };
 }
 
@@ -87,7 +89,7 @@ export function productSchema(opts: {
     "@type": "Product",
     name: opts.name,
     description: opts.description,
-    brand: { "@type": "Brand", name: "Hermetia" },
+    brand: { "@type": "Brand", name: brand.name },
     url: opts.url,
     offers: opts.offers.map((o) => ({
       "@type": "Offer",

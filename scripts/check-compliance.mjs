@@ -51,13 +51,13 @@ const generatedHtml = walk(out).filter((file) => file.endsWith(".html"));
 
 const externalAssetRefs = generatedHtml.flatMap((file) => {
   const html = readFileSync(file, "utf8");
-  return [...html.matchAll(/<(?:img|source|video)\b[^>]*(?:src|poster)=["']https?:\/\/(?!hermetia\.digital-expert\.de|hermetiastart\.digital-expert\.de)([^"']+)["']/g)].map(
+  return [...html.matchAll(/<(?:img|source|video)\b[^>]*(?:src|poster)=["']https?:\/\/(?!app\.astrakey\.me|astrakey\.me)([^"']+)["']/g)].map(
     (match) => `${file}: ${match[0]}`,
   );
 });
 const appDomainMarketingLinks = generatedHtml.flatMap((file) => {
   const html = readFileSync(file, "utf8");
-  return [...html.matchAll(/https:\/\/hermetia\.digital-expert\.de\/(?:de|en|fr|es|it|nl|pl|pt|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|ro|sk|sl|sv)\//g)].map(
+  return [...html.matchAll(/https:\/\/app\.astrakey\.me\/(?:de|en|fr|es|it|nl|pl|pt|bg|hr|cs|da|et|fi|el|hu|ga|lv|lt|mt|ro|sk|sl|sv)\//g)].map(
     (match) => `${file}: ${match[0]}`,
   );
 });
@@ -75,7 +75,7 @@ const checks = [
   ["Live export exposes launch review page", legalPage.includes("Legal-, IP- und Launch-Freigaben")],
   ["Live export exposes translation QA", languagePage.includes("Translation QA") && languagePage.includes("Rechtliche Sinngleichheit")],
   ["Home export exposes non-PII CTA source", deHome.includes("utm_content=home-hero") && deHome.includes("source=home-hero")],
-  ["Start CTAs point to marketing beta access", deHome.includes("https://hermetiastart.digital-expert.de/de/beta-zugang/")],
+  ["Start CTAs point to marketing beta access", deHome.includes("https://astrakey.me/de/beta-zugang/")],
   ["Generated HTML does not send marketing locale paths to app domain", appDomainMarketingLinks.length === 0],
   ["Generated HTML has no external image/poster hosts", externalAssetRefs.length === 0],
 ];

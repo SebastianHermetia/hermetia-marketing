@@ -19,7 +19,7 @@ const questionGroupsDe = [
   {
     kicker: "Methode",
     title: "Fragen zu Systemen und Konvergenz",
-    text: "Hermetia verbindet 31 Systeme nicht als lose Sammlung, sondern über Systemfamilien, Gewichtung und Konvergenz. Die FAQ erklärt, warum mehrere Perspektiven stärker sind als ein einzelnes Label.",
+    text: "Astrakey verbindet 31 Systeme nicht als lose Sammlung, sondern über Systemfamilien, Gewichtung und Konvergenz. Die FAQ erklärt, warum mehrere Perspektiven stärker sind als ein einzelnes Label.",
     href: paths.methodik,
     cta: "Methode verstehen",
   },
@@ -43,7 +43,7 @@ const questionGroupsEn = [
   {
     kicker: "Method",
     title: "Questions about systems and convergence",
-    text: "Hermetia connects 31 systems through system families, weighting and convergence, not as a loose collection. The FAQ explains why several perspectives are stronger than one label.",
+    text: "Astrakey connects 31 systems through system families, weighting and convergence, not as a loose collection. The FAQ explains why several perspectives are stronger than one label.",
     href: paths.methodik,
     cta: "Understand method",
   },
@@ -58,8 +58,8 @@ const questionGroupsEn = [
 
 const extraFaqDe = [
   {
-    q: "Was ist Hermetia in einem Satz?",
-    a: "Hermetia ist eine Plattform für spirituelle und psychologische Selbstreflexion, die aus Geburtsdaten, Selbstauskunft und 31 Systemperspektiven eine persönliche Seelenkarte und begleitende Impulse erstellt.",
+    q: "Was ist Astrakey in einem Satz?",
+    a: "Astrakey ist eine Plattform für spirituelle und psychologische Selbstreflexion, die aus Geburtsdaten, Selbstauskunft und 31 Systemperspektiven eine persönliche Seelenkarte und begleitende Impulse erstellt.",
   },
   {
     q: "Warum sollte ich mich anmelden, wenn die Website schon viel erklärt?",
@@ -67,23 +67,23 @@ const extraFaqDe = [
   },
   {
     q: "Welche Daten brauche ich für den Start?",
-    a: "Für den Einstieg werden typischerweise Geburtsdatum, Geburtsort und soweit vorhanden Geburtszeit genutzt. Ergänzende Selbstauskünfte können das Profil erden. Hermetia kennzeichnet, wenn eine ungenaue Geburtszeit Aussagen unsicherer macht.",
+    a: "Für den Einstieg werden typischerweise Geburtsdatum, Geburtsort und soweit vorhanden Geburtszeit genutzt. Ergänzende Selbstauskünfte können das Profil erden. Astrakey kennzeichnet, wenn eine ungenaue Geburtszeit Aussagen unsicherer macht.",
   },
   {
-    q: "Kann ich Hermetia ohne genaue Geburtszeit nutzen?",
-    a: "Ja. Einige Systeme werden mit exakter Geburtszeit präziser, aber viele Bereiche bleiben nutzbar. Hermetia kennzeichnet transparent, welche Aussagen sicherer und welche vorsichtiger zu lesen sind.",
+    q: "Kann ich Astrakey ohne genaue Geburtszeit nutzen?",
+    a: "Ja. Einige Systeme werden mit exakter Geburtszeit präziser, aber viele Bereiche bleiben nutzbar. Astrakey kennzeichnet transparent, welche Aussagen sicherer und welche vorsichtiger zu lesen sind.",
   },
   {
-    q: "Was bedeutet Konvergenz in Hermetia?",
-    a: "Konvergenz bedeutet, dass mehrere unabhängige Systemfamilien auf ähnliche Themen zeigen. Hermetia zählt verwandte Quellen nicht einfach doppelt, sondern prüft, ob ein Thema aus unterschiedlichen Blickwinkeln getragen wird.",
+    q: "Was bedeutet Konvergenz in Astrakey?",
+    a: "Konvergenz bedeutet, dass mehrere unabhängige Systemfamilien auf ähnliche Themen zeigen. Astrakey zählt verwandte Quellen nicht einfach doppelt, sondern prüft, ob ein Thema aus unterschiedlichen Blickwinkeln getragen wird.",
   },
   {
-    q: "Ist Hermetia wissenschaftlich bewiesen?",
-    a: "Hermetia verbindet psychologische Fragebögen, symbolische Systeme und spirituelle Deutungssprache. Es ist kein wissenschaftliches Diagnoseinstrument, sondern ein Reflexionsangebot mit transparenten Grenzen.",
+    q: "Ist Astrakey wissenschaftlich bewiesen?",
+    a: "Astrakey verbindet psychologische Fragebögen, symbolische Systeme und spirituelle Deutungssprache. Es ist kein wissenschaftliches Diagnoseinstrument, sondern ein Reflexionsangebot mit transparenten Grenzen.",
   },
   {
-    q: "Trifft Hermetia Entscheidungen für mich?",
-    a: "Nein. Hermetia kann Muster, Fragen und Spannungsfelder sichtbar machen. Entscheidungen bleiben bei dir und sollten bei wichtigen medizinischen, psychologischen, rechtlichen oder finanziellen Themen professionell begleitet werden.",
+    q: "Trifft Astrakey Entscheidungen für mich?",
+    a: "Nein. Astrakey kann Muster, Fragen und Spannungsfelder sichtbar machen. Entscheidungen bleiben bei dir und sollten bei wichtigen medizinischen, psychologischen, rechtlichen oder finanziellen Themen professionell begleitet werden.",
   },
   {
     q: "Warum gibt es bezahlte Modelle?",
@@ -94,23 +94,23 @@ const extraFaqDe = [
     a: "Persönliche Daten bleiben exportierbar und löschbar. Gerade bei sensiblen spirituellen Profilen sind klare Einwilligung, Zweckbindung und Löschwege zentrale Anforderungen.",
   },
   {
-    q: "Verwendet Hermetia fremde geschützte Deutungstexte?",
-    a: "Hermetia verwendet eigene Formulierungen und keine proprietären Systemtexte, Kartentexte oder Fragebogenitems Dritter. Systembezüge werden beschreibend und transformativ formuliert.",
+    q: "Verwendet Astrakey fremde geschützte Deutungstexte?",
+    a: "Astrakey verwendet eigene Formulierungen und keine proprietären Systemtexte, Kartentexte oder Fragebogenitems Dritter. Systembezüge werden beschreibend und transformativ formuliert.",
   },
   {
     q: "Sind Beziehungsprofile heimlich möglich?",
     a: "Nein. Beziehungsauswertungen betreffen eine zweite Person und brauchen informierte Einwilligung. Solche Profile gehören nur in einen Kontext mit klarer Zustimmung und transparenter Zweckbindung.",
   },
   {
-    q: "Ist Hermetia Therapie oder psychologische Beratung?",
-    a: "Nein. Hermetia ist Inspiration zur Selbstreflexion. Die Plattform stellt keine Diagnosen, behandelt keine Erkrankungen und ersetzt keine medizinische, psychologische oder therapeutische Beratung.",
+    q: "Ist Astrakey Therapie oder psychologische Beratung?",
+    a: "Nein. Astrakey ist Inspiration zur Selbstreflexion. Die Plattform stellt keine Diagnosen, behandelt keine Erkrankungen und ersetzt keine medizinische, psychologische oder therapeutische Beratung.",
   },
 ];
 
 const extraFaqEn = [
   {
-    q: "What is Hermetia in one sentence?",
-    a: "Hermetia is a platform for spiritual and psychological self-reflection that creates a personal soul map and guiding impulses from birth data, self-reporting and 31 system perspectives.",
+    q: "What is Astrakey in one sentence?",
+    a: "Astrakey is a platform for spiritual and psychological self-reflection that creates a personal soul map and guiding impulses from birth data, self-reporting and 31 system perspectives.",
   },
   {
     q: "Why should I sign up if the website already explains so much?",
@@ -118,23 +118,23 @@ const extraFaqEn = [
   },
   {
     q: "Which data do I need to start?",
-    a: "The start typically uses date of birth, place of birth and, if available, birth time. Additional self-reporting can ground the profile. Hermetia marks when an imprecise birth time makes statements less certain.",
+    a: "The start typically uses date of birth, place of birth and, if available, birth time. Additional self-reporting can ground the profile. Astrakey marks when an imprecise birth time makes statements less certain.",
   },
   {
-    q: "Can I use Hermetia without an exact birth time?",
-    a: "Yes. Some systems become more precise with exact birth time, but many areas remain usable. Hermetia clearly marks which statements are more reliable and which should be read more carefully.",
+    q: "Can I use Astrakey without an exact birth time?",
+    a: "Yes. Some systems become more precise with exact birth time, but many areas remain usable. Astrakey clearly marks which statements are more reliable and which should be read more carefully.",
   },
   {
-    q: "What does convergence mean in Hermetia?",
-    a: "Convergence means that several independent system families point to similar themes. Hermetia does not simply count related sources twice, but checks whether a theme is supported from different perspectives.",
+    q: "What does convergence mean in Astrakey?",
+    a: "Convergence means that several independent system families point to similar themes. Astrakey does not simply count related sources twice, but checks whether a theme is supported from different perspectives.",
   },
   {
-    q: "Is Hermetia scientifically proven?",
-    a: "Hermetia combines psychological questionnaires, symbolic systems and spiritual interpretation language. It is not a scientific diagnostic tool, but a reflection offer with transparent limits.",
+    q: "Is Astrakey scientifically proven?",
+    a: "Astrakey combines psychological questionnaires, symbolic systems and spiritual interpretation language. It is not a scientific diagnostic tool, but a reflection offer with transparent limits.",
   },
   {
-    q: "Does Hermetia make decisions for me?",
-    a: "No. Hermetia can make patterns, questions and fields of tension visible. Decisions remain yours and should be professionally supported for important medical, psychological, legal or financial topics.",
+    q: "Does Astrakey make decisions for me?",
+    a: "No. Astrakey can make patterns, questions and fields of tension visible. Decisions remain yours and should be professionally supported for important medical, psychological, legal or financial topics.",
   },
   {
     q: "Why are there paid models?",
@@ -145,16 +145,16 @@ const extraFaqEn = [
     a: "Personal data remains exportable and deletable. Clear consent, purpose limitation and deletion paths are central requirements, especially for sensitive spiritual profiles.",
   },
   {
-    q: "Does Hermetia use protected third-party interpretation texts?",
-    a: "Hermetia uses original wording and no proprietary system texts, card texts or questionnaire items from third parties. System references are descriptive and transformative.",
+    q: "Does Astrakey use protected third-party interpretation texts?",
+    a: "Astrakey uses original wording and no proprietary system texts, card texts or questionnaire items from third parties. System references are descriptive and transformative.",
   },
   {
     q: "Are secret relationship profiles possible?",
     a: "No. Relationship readings concern a second person and need informed consent. Such profiles belong only in a context with clear permission and transparent purpose limitation.",
   },
   {
-    q: "Is Hermetia therapy or psychological counselling?",
-    a: "No. Hermetia is inspiration for self-reflection. The platform does not diagnose, treat illnesses or replace medical, psychological or therapeutic counselling.",
+    q: "Is Astrakey therapy or psychological counselling?",
+    a: "No. Astrakey is inspiration for self-reflection. The platform does not diagnose, treat illnesses or replace medical, psychological or therapeutic counselling.",
   },
 ];
 
@@ -166,8 +166,8 @@ const allFaq = (baseItems: { q: string; a: string }[], locale: Locale) => {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = getDictionary(locale as Locale);
-  const title = "FAQ — Alle Fragen zu Hermetia";
-  const desc = "Seelenkarte, Geburtszeit, Datenschutz, Preise und Kündigung: alle häufigen Fragen zu Hermetia, klar beantwortet.";
+  const title = "FAQ — Alle Fragen zu Astrakey";
+  const desc = "Seelenkarte, Geburtszeit, Datenschutz, Preise und Kündigung: alle häufigen Fragen zu Astrakey, klar beantwortet.";
   return buildMetadata({ locale: locale as Locale, path: paths.faq, title, description: desc });
 }
 
@@ -185,15 +185,15 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: st
         data={[
           faqSchema(items),
           articleSchema({
-            headline: "Hermetia FAQ",
+            headline: "Astrakey FAQ",
             description: "Antworten zu Seelenkarte, Onboarding, Systemen, Datenschutz, Preisen, AI und rechtlichen Grenzen.",
             locale,
             url: pageUrl,
-            about: "Hermetia FAQ",
+            about: "Astrakey FAQ",
             image: `${siteUrl}/images/hermetia/library-of-self-profile.png`,
           }),
           breadcrumbSchema([
-            { name: "Hermetia", url: `${siteUrl}/${locale}/` },
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
             { name: "FAQ", url: pageUrl },
           ]),
         ]}
@@ -205,7 +205,7 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: st
           <span className="kicker mb-3.5">{t.footer.faq}</span>
           <h1 className="max-w-[680px] text-[clamp(32px,5vw,44px)]">{t.home.faq.title}</h1>
           <p className="lead mt-4 max-w-[760px]">
-            Klare Antworten für Menschen, die Hermetia verstehen möchten, bevor sie ihr Profil starten: Methode, Datenschutz, Preise, AI, Beziehungsprofile und die bewussten Grenzen der Deutung.
+            Klare Antworten für Menschen, die Astrakey verstehen möchten, bevor sie ihr Profil starten: Methode, Datenschutz, Preise, AI, Beziehungsprofile und die bewussten Grenzen der Deutung.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "faq-hero" })}>{t.cta.startFree}</a>
@@ -240,7 +240,7 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: st
         <div className="wrap">
           <div className="mb-8 text-center">
             <span className="kicker">Alle Antworten</span>
-            <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">FAQ zu Hermetia, Preisen, Daten und Grenzen</h2>
+            <h2 className="mt-3 text-[clamp(27px,4vw,36px)]">FAQ zu Astrakey, Preisen, Daten und Grenzen</h2>
           </div>
           <Faq items={items} />
         </div>
@@ -252,7 +252,7 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: st
             <span className="kicker text-gold-weich">Nächster Schritt</span>
             <h2 className="mt-3 text-[clamp(28px,4vw,40px)] text-white">Die beste Antwort entsteht in deinem eigenen Profil.</h2>
             <p className="mt-4 max-w-[680px] text-[17px] leading-[1.85] text-[#e9dcf2]">
-              Allgemeine FAQ können Orientierung geben. Ob Hermetia wirklich passt, zeigt sich erst, wenn deine Seelenkarte berechnet ist. Der Einstieg bleibt kostenlos und führt erst danach zu einer bewussten Modellwahl.
+              Allgemeine FAQ können Orientierung geben. Ob Astrakey wirklich passt, zeigt sich erst, wenn deine Seelenkarte berechnet ist. Der Einstieg bleibt kostenlos und führt erst danach zu einer bewussten Modellwahl.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a className="btn btn-on-dark btn-lg" href={startUrl(locale, { source: "faq-final" })}>{t.cta.startFree}</a>
@@ -262,7 +262,7 @@ export default async function FaqPage({ params }: { params: Promise<{ locale: st
           <div className="rounded-card border border-gold-weich/20 bg-white/8 p-6">
             <h3 className="text-[24px] text-white">Was die FAQ bewusst nicht tut</h3>
             <p className="mt-3 text-[15px] leading-relaxed text-[#e9dcf2]">
-              Sie ersetzt keine Rechtsberatung, keine Therapie und keine Produkt-Endfreigabe. Sie schafft verständliche Orientierung und macht transparent, wo Hermetia inspiriert und wo professionelle Beratung nötig bleibt.
+              Sie ersetzt keine Rechtsberatung, keine Therapie und keine Produkt-Endfreigabe. Sie schafft verständliche Orientierung und macht transparent, wo Astrakey inspiriert und wo professionelle Beratung nötig bleibt.
             </p>
           </div>
         </div>

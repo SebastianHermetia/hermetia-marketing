@@ -10,7 +10,7 @@ const reportDir = join(
   "..",
   "2.Gehirn",
   "02 Projekte",
-  "Hermetia",
+  "Astrakey",
   "Übersetzungen",
   "Audits",
 );
@@ -44,7 +44,7 @@ function normalizedText(value) {
 function shouldTranslate(value) {
   const text = normalizedText(value);
   if (!text) return false;
-  if (text === "Hermetia" || text === "AI" || text === "FAQ" || text === "Premium") return false;
+  if (text === "Astrakey" || text === "AI" || text === "FAQ" || text === "Premium") return false;
   if (/^https?:\/\//i.test(text) || text.startsWith("/") || text.startsWith("#") || text.includes("@")) return false;
   if (/^[\d\s.,:;€%/+()[\]\-–—|·→✓]+$/.test(text)) return false;
   return /[A-Za-zÄÖÜäöüß]/.test(text);
@@ -112,7 +112,7 @@ const reportPath = join(reportDir, `i18n-source-catalog-${new Date().toISOString
 const largest = catalog.strings.slice(0, 20);
 const busiestRoutes = [...catalog.routes].sort((a, b) => b.words - a.words).slice(0, 20);
 const report = [
-  "# HermetiaStart i18n Source Catalog",
+  "# AstrakeyStart i18n Source Catalog",
   "",
   `- Generated: ${catalog.generatedAt}`,
   "- Source locale: de",
