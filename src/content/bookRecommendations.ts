@@ -340,19 +340,19 @@ const books: BookRecommendation[] = [
     systems: ["mondknoten", "drakonisches-horoskop"],
     searchQuery: "Yesterday's Sky Steven Forrest",
   },
-  // ── Nine Star AI ──────────────────────────────────────────────────────────
+  // ── Nine Star Ki ──────────────────────────────────────────────────────────
   {
-    id: "nine-star-AI-kushi",
-    title: "Nine Star AI",
+    id: "nine-star-ki-kushi",
+    title: "Nine Star Ki",
     authors: "Michio Kushi",
     languages: ["EN"],
     level: { de: "Einstieg", en: "Introduction" },
     description: {
-      de: "Einführung in Nine Star AI als System zyklischer Energien und Charaktertendenzen aus der japanisch-chinesischen Tradition. Verfügbarkeit vorab prüfen.",
-      en: "An introduction to Nine Star AI as a system of cyclical energies and character tendencies from the Japanese-Chinese tradition. Check availability in advance.",
+      de: "Einführung in Nine Star Ki als System zyklischer Energien und Charaktertendenzen aus der japanisch-chinesischen Tradition. Verfügbarkeit vorab prüfen.",
+      en: "An introduction to Nine Star Ki as a system of cyclical energies and character tendencies from the Japanese-Chinese tradition. Check availability in advance.",
     },
-    systems: ["nine-star-AI"],
-    searchQuery: "Nine Star AI Michio Kushi",
+    systems: ["nine-star-ki"],
+    searchQuery: "Nine Star Ki Michio Kushi",
   },
   // ── Cards of Destiny ──────────────────────────────────────────────────────
   {
