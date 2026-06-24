@@ -66,3 +66,4 @@ export function LanguageNotice({ locale }: { locale: Locale }) {
     </div>
   );
 }
+

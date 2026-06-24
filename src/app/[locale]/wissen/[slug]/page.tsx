@@ -52,7 +52,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
                 <p className="muted mt-3 text-[17px] leading-[1.9]">{section.body}</p>
                 {idx === 1 ? (
                   <div className="mt-8">
-                    <AppCta locale={locale} title="Mach aus dem Thema dein eigenes Profil." text="Astrakey verbindet Wissen mit deiner Seelenkarte, damit aus Theorie ein persönlicher Aha-Moment wird." source={`article-${article.slug}-inline`} />
+                    <AppCta locale={locale} title="Mach aus dem Thema dein eigenes Profil." text="Astrakey verbindet Wissen mit deiner Seelenkarte, damit aus Theorie ein persönlicher Resonanzmoment wird." source={`article-${article.slug}-inline`} />
                   </div>
                 ) : null}
               </section>
@@ -63,7 +63,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
             <Faq items={faq} />
           </div>
           <div className="mt-12">
-            <AppCta locale={locale} title="Mach aus Wissen deinen eigenen Aha-Moment." text="Starte dein Astrakey-Profil und verbinde die Theorie mit deiner persönlichen Seelenkarte." source={`article-${article.slug}`} />
+            <AppCta locale={locale} title="Mach aus Wissen deinen eigenen Resonanzmoment." text="Starte dein Astrakey-Profil und verbinde die Theorie mit deiner persönlichen Seelenkarte." source={`article-${article.slug}`} />
           </div>
         </div>
       </article>
@@ -101,7 +101,7 @@ function articleFaq(article: (typeof articles)[number]) {
     },
     {
       q: "Warum führt der Artikel zur Anmeldung?",
-      a: "Weil der eigentliche Nutzen entsteht, wenn das Wissen mit deiner eigenen Seelenkarte verbunden wird. Der Einstieg ist als persönlicher Aha-Moment gedacht, nicht als aggressive Paywall.",
+      a: "Weil der eigentliche Nutzen entsteht, wenn das Wissen mit deiner eigenen Seelenkarte verbunden wird. Der Einstieg ist als persönlicher Resonanzmoment gedacht, nicht als aggressive Paywall.",
     },
     {
       q: "Ist der Inhalt medizinische oder therapeutische Beratung?",
@@ -109,3 +109,4 @@ function articleFaq(article: (typeof articles)[number]) {
     },
   ];
 }
+

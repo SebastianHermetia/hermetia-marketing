@@ -275,3 +275,4 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
     </>
   );
 }
+

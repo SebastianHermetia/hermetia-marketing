@@ -38,3 +38,4 @@ export function LocaleSwitch({ locale, current }: { locale: Locale; current?: st
     </details>
   );
 }
+

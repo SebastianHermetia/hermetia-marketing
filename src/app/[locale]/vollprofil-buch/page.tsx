@@ -6,19 +6,22 @@ import { getPillarPage } from "@/content/marketing";
 import { MarketingContentPage } from "@/components/MarketingContentPage";
 import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
 
+const pageKey = "profilBuch";
+const routePath = paths.profilBuch;
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const page = getPillarPage("profilBuch", locale as Locale)!;
-  return buildMetadata({ locale: locale as Locale, path: paths.profilBuch, title: page.seoTitle, description: page.seoDescription });
+  const page = getPillarPage(pageKey, locale as Locale)!;
+  return buildMetadata({ locale: locale as Locale, path: routePath, title: page.seoTitle, description: page.seoDescription });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
-  const page = getPillarPage("profilBuch", locale)!;
+  const page = getPillarPage(pageKey, locale)!;
   return (
     <>
-      <JsonLd data={[faqSchema(page.faq), articleSchema({ headline: page.seoTitle, description: page.seoDescription, locale, url: `${siteUrl}/${locale}${paths.profilBuch}/`, about: "Astrakey Vollprofil-Buch", image: `${siteUrl}${page.image}` })]} />
+      <JsonLd data={[faqSchema(page.faq), articleSchema({ headline: page.seoTitle, description: page.seoDescription, locale, url: `${siteUrl}/${locale}${routePath}/`, about: page.title, image: `${siteUrl}${page.image}` })]} />
       <MarketingContentPage locale={locale} page={page} />
     </>
   );

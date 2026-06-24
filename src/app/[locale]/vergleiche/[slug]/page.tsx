@@ -59,7 +59,7 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
             <h2 className="mt-2 text-[clamp(24px,3vw,30px)]">Wann welcher Blick hilfreicher ist</h2>
             <div className="mt-5 grid gap-4 md:grid-cols-3">
               <div className="rounded-card border border-sand bg-white p-5">
-                <h3 className="text-[18px]">Für den ersten Aha-Moment</h3>
+                <h3 className="text-[18px]">Für den ersten Resonanzmoment</h3>
                 <p className="muted mt-2 text-[15px] leading-relaxed">Nutze die Perspektive, die schnell Sprache für ein Muster gibt, ohne dich festzulegen.</p>
               </div>
               <div className="rounded-card border border-sand bg-white p-5">
@@ -123,10 +123,10 @@ function comparisonSections(comparison: (typeof comparisons)[number]) {
     },
     {
       title: "Wann welcher Blickwinkel hilfreicher ist",
-      body: `Für schnelle Orientierung kann eine klare Typologie hilfreich sein. Für Alltag, Beziehung und langfristige Entwicklung braucht es oft mehr Nuance. Astrakey nutzt Vergleiche deshalb nicht, um einen Gewinner zu bestimmen, sondern um den passenden Einsatz zu erklären: Was hilft beim ersten Aha-Moment, was bei Entscheidungen, was bei Beziehungsmustern und was bei tieferer Selbstreflexion?`,
+      body: `Für schnelle Orientierung kann eine klare Typologie hilfreich sein. Für Alltag, Beziehung und langfristige Entwicklung braucht es oft mehr Nuance. Astrakey nutzt Vergleiche deshalb nicht, um einen Gewinner zu bestimmen, sondern um den passenden Einsatz zu erklären: Was hilft beim ersten Resonanzmoment, was bei Entscheidungen, was bei Beziehungsmustern und was bei tieferer Selbstreflexion?`,
     },
     {
-      title: "So wird daraus ein persönlicher Aha-Moment",
+      title: "So wird daraus ein persönlicher Resonanzmoment",
       body: `Die Vergleichsseite beantwortet die Suchfrage. Die App beantwortet die persönliche Frage: Welche Seite des Vergleichs ist bei mir wirklich aktiv? Über das Onboarding entsteht zuerst ein kostenloser Einstieg in die Seelenkarte. Danach können Nutzer bewusst entscheiden, ob sie mehr Tiefe, Tagesimpulse, Beziehungsauswertungen oder bezahlte Modelle nutzen möchten.`,
     },
   ];
@@ -148,3 +148,4 @@ function comparisonFaq(comparison: (typeof comparisons)[number]) {
     },
   ];
 }
+

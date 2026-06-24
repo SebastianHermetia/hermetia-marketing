@@ -14,7 +14,7 @@ type Copy = {
   privacy: string;
 };
 
-export function BetaAccessForm({ locale, copy }: { locale: Locale; copy: Copy }) {
+export function AccessForm({ locale, copy }: { locale: Locale; copy: Copy }) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "approved" | "requested" | "error">("idle");
 
@@ -75,3 +75,4 @@ export function BetaAccessForm({ locale, copy }: { locale: Locale; copy: Copy })
     </form>
   );
 }
+

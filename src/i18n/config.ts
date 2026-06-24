@@ -78,3 +78,4 @@ export const siteUrl = (
 export const appUrl = (
   process.env.NEXT_PUBLIC_APP_URL ?? "https://app.astrakey.me"
 ).replace(/\/$/, "");
+

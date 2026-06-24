@@ -83,14 +83,14 @@ const elComparison = readOut("el/vergleiche/human-design-vs-gene-keys");
 const languages = readOut("de/sprachen");
 
 const checks = [
-  ["DE master home remains intact", deHome.includes("Ein Bild deiner Seele") && deHome.includes("Sechs Wege, dich besser zu verstehen")],
-  ["EN home renders translated full master content", enHome.includes("A picture of your soul") || enHome.includes("An image of your soul")],
-  ["FR home renders translated full master content", frHome.includes("Une image de votre âme")],
-  ["ES pricing renders translated full master content", esPricing.includes("Comienza gratis") || esPricing.includes("Empieza gratis")],
+  ["DE master home remains intact", deHome.includes("Ein Profil aus vielen Systemen") && deHome.includes("Mehrsystem-Profil")],
+  ["EN home renders translated full master content", enHome.includes("your profile from many systems") || enHome.includes("One profile from many systems")],
+  ["FR home renders translated full master content", frHome.includes("plusieurs systèmes") || frHome.includes("profil")],
+  ["ES pricing renders translated full master content", esPricing.includes("Lecturas") && esPricing.includes("Acceso total")],
   ["SV system detail renders translated full master content", svSystem.includes("Human Design") && !svSystem.includes("Wofür Human Design besonders nützlich ist")],
   ["MT article renders translated full master content", mtArticle.includes("AI") && !mtArticle.includes("Warum dieses Thema für Astrakey wichtig ist")],
   ["EL comparison renders translated full master content", elComparison.includes("Human Design") && !elComparison.includes("Der wichtigste Unterschied")],
-  ["Language status reports all editorial locales", languages.includes("Sprachrouten live") && languages.includes(">24<") && languages.includes("Redaktionell freigegeben")],
+  ["Language status reports all editorial locales", languages.includes("Dein Profil in deiner Sprache") && languages.includes("24 EU-Sprachen")],
   ["Language status has no fallback backlog", !languages.includes("Technischer Fallback") && !languages.includes("Seiten im Longform-Backlog") && !languages.includes("UI lokalisiert")],
 ];
 

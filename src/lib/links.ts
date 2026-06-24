@@ -2,7 +2,7 @@ import { appUrl, siteUrl, type Locale } from "@/i18n/config";
 
 type MarketingLinkOptions = {
   source?: string;
-  medium?: "cta" | "nav" | "footer";
+  medium?: "cta" | "nav" | "footer" | "hero" | "inline" | "pricing";
   campaign?: string;
 };
 
@@ -52,7 +52,7 @@ export const paths = {
   seelenkarte: "/seelenkarte",
   tagesimpulse: "/tagesimpulse",
   journaling: "/journaling",
-  profilBuch: "/vollprofil-buch",
+  profilBuch: "/Seelenbuch",
   companion: "/companion",
   profilVerfeinern: "/profil-verfeinern",
   beziehungen: "/beziehungen",
@@ -75,3 +75,9 @@ export const paths = {
   widerruf: "/widerruf",
   impressum: "/impressum",
 } as const;
+
+
+
+
+
+

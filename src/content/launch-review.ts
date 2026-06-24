@@ -52,7 +52,7 @@ export const reviewGates: ReviewGate[] = [
     summary:
       "AI wird als Formulierungsschicht beschrieben, nicht als Rechenkern oder Autorität über Menschen. AI-Inhalte werden als unterstützte Reflexion und nicht als Beratung gerahmt.",
     evidence: [
-      "KI-Transparenzseite beschreibt Rolle und Grenzen der AI.",
+      "AI-Transparenzseite beschreibt Rolle und Grenzen der AI.",
       "Footer kennzeichnet AI-gestützte Inhalte.",
       "Konvergenz-Engine wird als deterministische Schicht erklärt.",
     ],
@@ -102,7 +102,7 @@ export const reviewGates: ReviewGate[] = [
     evidence: [
       "buildMetadata() setzt öffentliche Marketingseiten auf index/follow.",
       "Robots und Sitemap liefern alle öffentlichen Sprachrouten.",
-      "Primäre Start-CTAs führen in der Beta-Phase auf /beta-zugang statt direkt in das App-Onboarding.",
+      "Primäre Start-CTAs führen in der Testphase auf /beta-zugang statt direkt in das App-Onboarding.",
     ],
   },
 ];
@@ -115,3 +115,4 @@ export function reviewSummary() {
     external: reviewGates.filter((gate) => gate.status === "external").length,
   };
 }
+

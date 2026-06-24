@@ -56,3 +56,4 @@ export function buildMetadata({
     twitter: { card: "summary_large_image", title: meta.title, description: meta.description, images: [ogImage] },
   };
 }
+
