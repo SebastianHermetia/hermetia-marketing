@@ -124,3 +124,4 @@ function glossaryFaq(term: (typeof glossaryTerms)[number]) {
     },
   ];
 }
+

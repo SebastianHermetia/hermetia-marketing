@@ -2,15 +2,15 @@
   "site": {
     "name": "Astrakey",
     "tagline": "Wie oben, so unten",
-    "claim": "Ein Bild deiner Seele – aus allem, was dich ausmacht."
+    "claim": "Ein einzelnes System kann dich berühren. Astrakey zeigt, was wirklich wiederkehrt."
   },
   "nav": {
     "leistungen": "Leistungen",
     "systeme": "Systeme",
-    "methodik": "Methode",
+    "methodik": "So entsteht dein Profil",
     "preise": "Preise",
     "login": "Anmelden",
-    "start": "Profil erstellen",
+    "start": "Profil kostenlos starten",
     "menu_open": "Menü öffnen",
     "menu_close": "Menü schließen"
   },
@@ -25,7 +25,7 @@
     "more": "Mehr erfahren"
   },
   "footer": {
-    "blurb": "Ein Bild deiner Seele – aus allem, was dich ausmacht. Wie oben, so unten.",
+    "blurb": "Ein einzelnes System kann dich berühren. Astrakey zeigt, was wirklich wiederkehrt. Wie oben, so unten.",
     "product": "Produkt",
     "discover": "Entdecken",
     "legal": "Rechtliches",
@@ -34,18 +34,18 @@
     "faq": "FAQ",
     "about": "Über Astrakey",
     "datenschutz": "Datenschutz",
-    "kiTransparenz": "KI-Transparenz",
+    "kiTransparenz": "AI-Transparenz",
     "agb": "AGB",
     "widerruf": "Widerruf",
     "impressum": "Impressum",
-    "disclaimer": "Inspiration zur Selbstreflexion – keine medizinische oder therapeutische Beratung. Inhalte teilweise KI-gestützt erstellt (EU AI Act Art. 50)."
+    "disclaimer": "Inspiration zur Selbstreflexion – keine medizinische oder therapeutische Beratung. Inhalte teilweise AI-gestützt erstellt (EU AI Act Art. 50)."
   },
   "home": {
-    "seoTitle": "Astrakey — Deine Seelenkarte. Ein Bild, das dich versteht.",
+    "seoTitle": "Astrakey — Dein Profil aus vielen Systemen.",
     "seoDescription": "Astrakey verwandelt deine Geburtsdaten in eine Seelenkarte aus 31 Systemen und begleitet dich Tag für Tag. Jetzt kostenlos dein Profil entdecken.",
     "hero": {
       "eyebrow": "Wie oben, so unten",
-      "title": "Ein Bild deiner Seele – aus allem, was dich ausmacht.",
+      "title": "Ein einzelnes System kann dich berühren. Astrakey zeigt, was wirklich wiederkehrt.",
       "lead": "Astrakey liest deine Geburtsdaten und webt aus bis zu 31 Systemen eine einzige, klare Seelenkarte – und begleitet dich Tag für Tag. Kein Datenblatt. Eine Reise zu dir.",
       "trustline": "Kostenlos starten · keine Kreditkarte · EU-Hosting & verschlüsselt",
       "quote": "Deine Sensibilität ist ein Kompass – keine Schwäche.",
@@ -60,7 +60,7 @@
       "items": [
         "31 Systeme",
         "DSGVO & Art. 9 by design",
-        "KI transparent gekennzeichnet",
+        "AI transparent gekennzeichnet",
         "Einladend, nie bestimmend"
       ]
     },
@@ -71,7 +71,7 @@
         {
           "icon": "❂",
           "title": "Deine Seelenkarte",
-          "text": "Ein schönes, persönliches Gesamtbild – Chart-Wheel und Energiekörper in einem Blick. Dein Aha-Moment."
+          "text": "Ein schönes, persönliches Gesamtbild – Chart-Wheel und Energiekörper in einem Blick. Dein Resonanzmoment."
         },
         {
           "icon": "❧",
@@ -118,7 +118,7 @@
         {
           "step": "Schritt 03",
           "title": "Begleiten",
-          "text": "Erst hier deutet die KI – einladend, in deiner Sprache. Sichtbar gekennzeichnet, niemals als medizinischer oder schicksalhafter Rat."
+          "text": "Erst hier deutet die AI – einladend, in deiner Sprache. Sichtbar gekennzeichnet, niemals als medizinischer oder schicksalhafter Rat."
         }
       ]
     },
@@ -145,11 +145,11 @@
       "title": "Was Menschen erleben",
       "items": [
         {
-          "quote": "Zum ersten Mal hat sich Spiritualität nicht kitschig angefühlt, sondern klug.",
+          "quote": "Zum ersten Mal hat sich Spiritualität nicht AItschig angefühlt, sondern klug.",
           "name": "Marie K., 34"
         },
         {
-          "quote": "Die Seelenkarte war mein Aha-Moment. Ich wollte sofort mehr lesen.",
+          "quote": "Die Seelenkarte war mein Resonanzmoment. Ich wollte sofort mehr lesen.",
           "name": "Lena S., 41"
         },
         {
@@ -195,9 +195,9 @@
     "seoDescription": "Seelenkarte, freischaltbare Ebenen, täglicher Impuls, Journaling, dein Buch und Beziehungsauswertungen: alle Funktionen von Astrakey im Überblick.",
     "kicker": "Leistungen",
     "title": "Alles, was dich auf deiner Reise begleitet.",
-    "lead": "Von deinem ersten Aha-Moment bis zur täglichen Begleitung – Astrakey wächst mit dir.",
+    "lead": "Von deinem ersten Resonanzmoment bis zur täglichen Begleitung – Astrakey wächst mit dir.",
     "soulmap": {
-      "tag": "Dein Aha-Moment",
+      "tag": "Dein Resonanzmoment",
       "title": "Die Seelenkarte",
       "text": "Ein schönes, persönliches Gesamtbild: dein Chart-Wheel und dein abstrahierter Energiekörper in einem Blick – berechnet, nicht behauptet. Der Moment, in dem du dich zum ersten Mal gesehen fühlst."
     },
@@ -238,13 +238,13 @@
         {
           "icon": "⚭",
           "title": "Beziehungen",
-          "text": "Zweites Profil anlegen (Partner, Eltern, Kind) und Harmonie, Spannung & Entwicklung sehen – mit klarer Einwilligung.",
+          "text": "Zweites Profil anlegen (Partner, Eltern, AInd) und Harmonie, Spannung & Entwicklung sehen – mit klarer Einwilligung.",
           "tier": "Tiefe"
         },
         {
           "icon": "✶",
           "title": "Orakel & Companion",
-          "text": "Stell eine Frage und erhalte einen kontemplativen Impuls aus deinem Profil – transparent KI-gestützt.",
+          "text": "Stell eine Frage und erhalte einen kontemplativen Impuls aus deinem Profil – transparent AI-gestützt.",
           "tier": "Tiefe"
         },
         {
@@ -340,10 +340,10 @@
   },
   "methodik": {
     "seoTitle": "So entsteht dein Profil — Wie Astrakey rechnet und deutet",
-    "seoDescription": "Transparent erklärt: Wie Astrakey aus deinen Geburtsdaten ein Profil berechnet (Skyfield), mit der Konvergenz-Engine verknüpft und warm deutet – und was die KI tut und was nicht.",
+    "seoDescription": "Transparent erklärt: Wie Astrakey aus deinen Geburtsdaten ein Profil berechnet (Skyfield), mit der Konvergenz-Engine verknüpft und warm deutet – und was die AI tut und was nicht.",
     "kicker": "So entsteht dein Profil",
     "title": "Wir rechnen exakt. Wir deuten warm.",
-    "lead": "Vertrauen entsteht durch Transparenz. Darum zeigen wir dir genau, woher jede Aussage kommt – und wo eine KI mitschreibt.",
+    "lead": "Vertrauen entsteht durch Transparenz. Darum zeigen wir dir genau, woher jede Aussage kommt – und wo eine AI mitschreibt.",
     "steps": [
       {
         "n": "01",
@@ -354,17 +354,17 @@
       {
         "n": "02",
         "title": "Verknüpfen — die Konvergenz-Engine",
-        "text": "Alle Systeme speisen eine gemeinsame Themen-Landkarte. Eine reine Rechen-Engine (keine KI) misst, wo sich Systeme bestätigen – das wird zu deiner Stärke – und wo sie auseinandergehen – das wird zu einer guten Frage. So wird aus vielen Stimmen eine.",
+        "text": "Alle Systeme speisen eine gemeinsame Themen-Landkarte. Eine reine Rechen-Engine (keine AI) misst, wo sich Systeme bestätigen – das wird zu deiner Stärke – und wo sie auseinandergehen – das wird zu einer guten Frage. So wird aus vielen Stimmen eine.",
         "tag": "Das Herz von Astrakey"
       },
       {
         "n": "03",
         "title": "Begleiten — die warme Stimme",
-        "text": "Erst jetzt formuliert eine KI deine Deutung – in deiner Sprache, einladend statt bestimmend. Sie liest nur die berechneten Fakten und die Themen-Landkarte, niemals dein rohes Geburtsdatum. Jeder KI-Text ist sichtbar gekennzeichnet.",
+        "text": "Erst jetzt formuliert eine AI deine Deutung – in deiner Sprache, einladend statt bestimmend. Sie liest nur die berechneten Fakten und die Themen-Landkarte, niemals dein rohes Geburtsdatum. Jeder AI-Text ist sichtbar gekennzeichnet.",
         "tag": ""
       }
     ],
-    "layersKicker": "Drei Schichten",
+    "layerskicker": "Drei Schichten",
     "layersTitle": "Vom Fundament zum Tagesimpuls",
     "layers": [
       {
@@ -383,19 +383,19 @@
         "text": "Aus deinem Kernprofil + Tagesdaten (Transite, Mondphase) wird dein sanfter Tagesimpuls."
       }
     ],
-    "aiDoTitle": "Was die KI tut",
+    "aiDoTitle": "Was die AI tut",
     "aiDo": [
       "berechnete Fakten in warme, lesbare Sprache übersetzen",
       "deine Ebenen-Texte und Tagesimpulse formulieren",
       "in deiner Sprache schreiben, einladend und nicht-deterministisch"
     ],
-    "aiDontTitle": "Was die KI nicht tut",
+    "aiDontTitle": "Was die AI nicht tut",
     "aiDont": [
       "keine Diagnosen, keine medizinische/therapeutische Beratung",
       "keine Schicksals- oder Angst-Aussagen",
-      "dein rohes Geburtsdatum sieht das KI-Modell nie"
+      "dein rohes Geburtsdatum sieht das AI-Modell nie"
     ],
-    "privacyNote": "Deine Daten liegen verschlüsselt in der EU. Spirituell-weltanschauliche Profile sind besondere Daten nach DSGVO Art. 9 – wir holen dafür deine ausdrückliche, getrennte Einwilligung. KI-Inhalte kennzeichnen wir gemäß EU AI Act Art. 50.",
+    "privacyNote": "Deine Daten liegen verschlüsselt in der EU. Spirituell-weltanschauliche Profile sind besondere Daten nach DSGVO Art. 9 – wir holen dafür deine ausdrückliche, getrennte Einwilligung. AI-Inhalte kennzeichnen wir gemäß EU AI Act Art. 50.",
     "cta": {
       "title": "Sieh die Methode an deinem eigenen Profil.",
       "lead": "Kostenlos und transparent – du entscheidest, wie tief du gehst."
@@ -502,7 +502,7 @@
   "legal": {
     "updatedLabel": "Stand",
     "updated": "Juni 2026",
-    "reviewNote": "Sorgfältiger Entwurf – die anwaltliche Endprüfung erfolgt vor dem Launch. Mit [ ] markierte Angaben werden vor Veröffentlichung ergänzt.",
+    "reviewNote": "Sorgfältiger Entwurf – die anwaltliche Endprüfung erfolgt vor dem Launch. Mit [ ] marAIerte Angaben werden vor Veröffentlichung ergänzt.",
     "tocLabel": "Inhalt",
     "impressum": {
       "title": "Impressum",
@@ -533,7 +533,7 @@
         },
         {
           "heading": "7 · Verantwortlichkeit für Inhalte",
-          "body": "Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Die Inhalte von Astrakey dienen der Information und Selbstreflexion. Sie ersetzen keine medizinische, therapeutische, psychologische, rechtliche oder finanzielle Beratung.\n\nSoweit Inhalte AI-gestützt formuliert werden, gelten die Hinweise auf der Seite KI-Transparenz. Rechtstexte, Datenschutzinformationen und Produktversprechen müssen vor dem öffentlichen Launch fachlich und rechtlich final geprüft werden."
+          "body": "Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Die Inhalte von Astrakey dienen der Information und Selbstreflexion. Sie ersetzen keine medizinische, therapeutische, psychologische, rechtliche oder finanzielle Beratung.\n\nSoweit Inhalte AI-gestützt formuliert werden, gelten die Hinweise auf der Seite AI-Transparenz. Rechtstexte, Datenschutzinformationen und Produktversprechen müssen vor dem öffentlichen Launch fachlich und rechtlich final geprüft werden."
         },
         {
           "heading": "8 · Externe Links",
@@ -558,7 +558,7 @@
         },
         {
           "heading": "2 · Kurzüberblick",
-          "body": "Astrakey erstellt aus deinen Eingaben und berechneten Systemmerkmalen ein persönliches Reflexionsprofil. Dazu gehören die Seelenkarte, Tagesimpulse, optionale Journalfunktionen, Beziehungs- und Resonanzmodule, Profilverfeinerung, Exportfunktionen, ein mögliches Vollprofil-Buch und AI-gestützte Begleittexte. Diese Inhalte können sehr persönlich sein, auch wenn sie nicht als Diagnose, Therapie oder verbindliche Beratung gedacht sind.\n\nWir behandeln diese Daten deshalb nicht wie gewöhnliche Marketingdaten. Datensparsamkeit, Zweckbindung, klare Einwilligungen, EU-orientiertes Hosting, Verschlüsselung, Rollenrechte, Export und Löschbarkeit sind Teil des Datenschutzkonzepts. Diese Erklärung ist ein sorgfältiger Arbeitsstand für den Launch und muss vor öffentlicher Freigabe anwaltlich final geprüft und mit den tatsächlich eingesetzten Dienstleistern abgeglichen werden."
+          "body": "Astrakey erstellt aus deinen Eingaben und berechneten Systemmerkmalen ein persönliches Reflexionsprofil. Dazu gehören die Seelenkarte, Tagesimpulse, optionale Journalfunktionen, Beziehungs- und Resonanzmodule, Profilverfeinerung, Exportfunktionen, ein mögliches Seelenbuch und AI-gestützte Begleittexte. Diese Inhalte können sehr persönlich sein, auch wenn sie nicht als Diagnose, Therapie oder verbindliche Beratung gedacht sind.\n\nWir behandeln diese Daten deshalb nicht wie gewöhnliche Marketingdaten. Datensparsamkeit, Zweckbindung, klare Einwilligungen, EU-orientiertes Hosting, Verschlüsselung, Rollenrechte, Export und Löschbarkeit sind Teil des Datenschutzkonzepts. Diese Erklärung ist ein sorgfältiger Arbeitsstand für den Launch und muss vor öffentlicher Freigabe anwaltlich final geprüft und mit den tatsächlich eingesetzten Dienstleistern abgeglichen werden."
         },
         {
           "heading": "3 · Welche Daten wir verarbeiten",
@@ -570,11 +570,11 @@
         },
         {
           "heading": "5 · Zwecke und Rechtsgrundlagen",
-          "body": "Wir verarbeiten Daten nur für definierte Zwecke:\n\n• Konto, Login, Sprache, Tarif und technische Bereitstellung: Vertragserfüllung oder vorvertragliche Maßnahmen.\n• Profilberechnung, Seelenkarte, Systemauswertung und Konvergenz: Vertragserfüllung und, soweit besondere Kategorien betroffen sind, ausdrückliche Einwilligung.\n• Tagesimpulse, Journaling, Companion, Vollprofil-Buch und Profilverfeinerung: Vertragserfüllung, Einwilligung für sensible Inhalte und berechtigtes Interesse an einer sicheren Produktfunktion.\n• Zahlungsabwicklung, Rechnungen und steuerliche Aufbewahrung: Vertragserfüllung und gesetzliche Pflichten.\n• Sicherheit, Fehleranalyse, Missbrauchsvermeidung und Zugriffsschutz: berechtigtes Interesse.\n• Newsletter, E-Mail-Impulse und optionale Produktkommunikation: Einwilligung, sofern keine gesetzliche Ausnahme greift.\n• Reichweitenmessung und Marketinganalyse: nur mit Einwilligung, soweit nicht rein technisch erforderlich."
+          "body": "Wir verarbeiten Daten nur für definierte Zwecke:\n\n• Konto, Login, Sprache, Tarif und technische Bereitstellung: Vertragserfüllung oder vorvertragliche Maßnahmen.\n• Profilberechnung, Seelenkarte, Systemauswertung und Konvergenz: Vertragserfüllung und, soweit besondere Kategorien betroffen sind, ausdrückliche Einwilligung.\n• Tagesimpulse, Journaling, Companion, Seelenbuch und Profilverfeinerung: Vertragserfüllung, Einwilligung für sensible Inhalte und berechtigtes Interesse an einer sicheren Produktfunktion.\n• Zahlungsabwicklung, Rechnungen und steuerliche Aufbewahrung: Vertragserfüllung und gesetzliche Pflichten.\n• Sicherheit, Fehleranalyse, Missbrauchsvermeidung und Zugriffsschutz: berechtigtes Interesse.\n• Newsletter, E-Mail-Impulse und optionale Produktkommunikation: Einwilligung, sofern keine gesetzliche Ausnahme greift.\n• Reichweitenmessung und Marketinganalyse: nur mit Einwilligung, soweit nicht rein technisch erforderlich."
         },
         {
           "heading": "6 · AI-Verarbeitung",
-          "body": "Astrakey kann AI einsetzen, um berechnete Profilmerkmale, Themencluster und freigegebene Kontexte sprachlich verständlich zu formulieren. Die Berechnung der Systemwerte soll getrennt von der AI-Formulierung erfolgen. Die AI soll keine eigenständige Diagnose, keine Therapie, keine Rechts- oder Finanzberatung und keine verbindliche Entscheidung erzeugen.\n\nAn AI-Dienste sollen nur die Informationen übermittelt werden, die für den konkreten Zweck erforderlich sind. Wo möglich, werden Rohdaten reduziert, pseudonymisiert oder durch berechnete Merkmale ersetzt. Besonders sensible Inhalte wie Journaltexte oder Beziehungsdaten dürfen nicht grenzenlos oder automatisch als AI-Kontext genutzt werden. Weitere Details stehen auf der Seite KI-Transparenz."
+          "body": "Astrakey kann AI einsetzen, um berechnete Profilmerkmale, Themencluster und freigegebene Kontexte sprachlich verständlich zu formulieren. Die Berechnung der Systemwerte soll getrennt von der AI-Formulierung erfolgen. Die AI soll keine eigenständige Diagnose, keine Therapie, keine Rechts- oder Finanzberatung und keine verbindliche Entscheidung erzeugen.\n\nAn AI-Dienste sollen nur die Informationen übermittelt werden, die für den konkreten Zweck erforderlich sind. Wo möglich, werden Rohdaten reduziert, pseudonymisiert oder durch berechnete Merkmale ersetzt. Besonders sensible Inhalte wie Journaltexte oder Beziehungsdaten dürfen nicht grenzenlos oder automatisch als AI-Kontext genutzt werden. Weitere Details stehen auf der Seite AI-Transparenz."
         },
         {
           "heading": "7 · Drittlandübermittlung und Dienstleister",
@@ -593,8 +593,8 @@
           "body": "Du hast nach Maßgabe der DSGVO Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerspruch und Widerruf erteilter Einwilligungen. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren.\n\nAstrakey soll diese Rechte nicht nur formal nennen, sondern im Produkt praktisch erreichbar machen. Dazu gehören Profil-Export, Löschung, Einwilligungsverwaltung, transparente AI-Hinweise und verständliche Einstellungen für freiwillige Daten. Wenn du Fragen zu deinen Daten hast, kannst du dich an die oben genannte Kontaktadresse wenden."
         },
         {
-          "heading": "11 · Cookies, Consent und Reichweitenmessung",
-          "body": "Die Marketing-Website kommt mit möglichst wenigen technisch notwendigen Cookies oder vergleichbaren Technologien aus. Technisch notwendige Elemente dienen zum Beispiel Sprache, Sicherheit, Consent-Status oder stabiler Seitenauslieferung. Optionale Analyse, Retargeting oder Conversion-Messung werden nur eingesetzt, wenn hierfür eine wirksame Einwilligung vorliegt.\n\nAktuell bleibt die Website bis zum finalen Domainumzug und Launch auf noindex/nofollow. Das schützt vor einer zu frühen Suchmaschinenindexierung unfertiger Inhalte. Nach dem Launch wird Reichweitenaufbau, SEO, GEO und AEO möglich, ohne sensible Profilinhalte für Werbung zu verkaufen oder unnötig an Dritte weiterzugeben."
+          "heading": "11 · CooAIes, Consent und Reichweitenmessung",
+          "body": "Die Marketing-Website kommt mit möglichst wenigen technisch notwendigen CooAIes oder vergleichbaren Technologien aus. Technisch notwendige Elemente dienen zum Beispiel Sprache, Sicherheit, Consent-Status oder stabiler Seitenauslieferung. Optionale Analyse, Retargeting oder Conversion-Messung werden nur eingesetzt, wenn hierfür eine wirksame Einwilligung vorliegt.\n\nAktuell bleibt die Website bis zum finalen Domainumzug und Launch auf noindex/nofollow. Das schützt vor einer zu frühen Suchmaschinenindexierung unfertiger Inhalte. Nach dem Launch wird Reichweitenaufbau, SEO, GEO und AEO möglich, ohne sensible Profilinhalte für Werbung zu verkaufen oder unnötig an Dritte weiterzugeben."
         },
         {
           "heading": "12 · Sicherheit",
@@ -606,7 +606,7 @@
         },
         {
           "heading": "14 · Minderjährige und sensible Nutzungssituationen",
-          "body": "Astrakey richtet sich nicht an Kinder. Falls Funktionen für jüngere Nutzerinnen und Nutzer, Familienkontexte oder besonders vulnerable Situationen geplant werden, braucht es gesonderte Alters-, Einwilligungs- und Schutzkonzepte. Spirituelle oder persönlichkeitsnahe Inhalte können in Krisen, Trauer, Trennung oder gesundheitlichen Belastungen besonders stark wirken.\n\nAstrakey sollte daher klare Hinweise, Grenzen und Eskalationslogiken vorsehen. Das Produkt darf keine Notfallhilfe ersetzen und soll Nutzerinnen und Nutzer in akuten Krisen an geeignete professionelle Stellen verweisen."
+          "body": "Astrakey richtet sich nicht an AInder. Falls Funktionen für jüngere Nutzerinnen und Nutzer, Familienkontexte oder besonders vulnerable Situationen geplant werden, braucht es gesonderte Alters-, Einwilligungs- und Schutzkonzepte. Spirituelle oder persönlichkeitsnahe Inhalte können in Krisen, Trauer, Trennung oder gesundheitlichen Belastungen besonders stark wirken.\n\nAstrakey sollte daher klare Hinweise, Grenzen und Eskalationslogiken vorsehen. Das Produkt darf keine Notfallhilfe ersetzen und soll Nutzerinnen und Nutzer in akuten Krisen an geeignete professionelle Stellen verweisen."
         },
         {
           "heading": "15 · Änderungen und finaler Review",
@@ -623,7 +623,7 @@
         },
         {
           "heading": "2 · Leistungsgegenstand",
-          "body": "Astrakey ist ein digitales Angebot zur Selbstreflexion. Aus Eingaben wie Geburtsdaten, optionaler Geburtszeit, Geburtsort und freiwilligen Kontexten können persönliche Profilinhalte entstehen: Seelenkarte, Systemauswertungen, Konvergenz-Engine, Tagesimpulse, Journaling, Beziehungs- und Resonanzmodule, Profilverfeinerung, AI-gestützter Companion, Export und ein mögliches Vollprofil-Buch.\n\nAstrakey bietet kostenlose Einstiege und kostenpflichtige Modelle mit erweitertem Umfang. Kostenpflichtige Leistungen können insbesondere mehr Profiltiefe, längere Texte, gespeicherte Verläufe, Companion-Dialoge, erweiterte Tagesimpulse, Beziehungsauswertungen, Exportfunktionen oder besondere Profilbuch-Inhalte umfassen. Die konkrete Leistung ergibt sich aus der jeweiligen Tarifbeschreibung zum Zeitpunkt der Bestellung."
+          "body": "Astrakey ist ein digitales Angebot zur Selbstreflexion. Aus Eingaben wie Geburtsdaten, optionaler Geburtszeit, Geburtsort und freiwilligen Kontexten können persönliche Profilinhalte entstehen: Seelenkarte, Systemauswertungen, Konvergenz-Engine, Tagesimpulse, Journaling, Beziehungs- und Resonanzmodule, Profilverfeinerung, AI-gestützter Companion, Export und ein mögliches Seelenbuch.\n\nAstrakey bietet kostenlose Einstiege und kostenpflichtige Modelle mit erweitertem Umfang. Kostenpflichtige Leistungen können insbesondere mehr Profiltiefe, längere Texte, gespeicherte Verläufe, Companion-Dialoge, erweiterte Tagesimpulse, Beziehungsauswertungen, Exportfunktionen oder besondere Profilbuch-Inhalte umfassen. Die konkrete Leistung ergibt sich aus der jeweiligen Tarifbeschreibung zum Zeitpunkt der Bestellung."
         },
         {
           "heading": "3 · Kein Ersatz für Fachberatung",
@@ -651,7 +651,7 @@
         },
         {
           "heading": "9 · AI-Inhalte und Kennzeichnung",
-          "body": "Teile der Inhalte können mithilfe von AI formuliert werden. AI-gestützte Inhalte werden nach Maßgabe der anwendbaren Transparenzpflichten gekennzeichnet. Die Berechnung von Profilmerkmalen, die Konvergenzlogik und die sprachliche Formulierung sollen getrennt behandelt werden.\n\nAI-Ausgaben können unvollständig, missverständlich oder nicht passend sein. Sie sind eine Einladung zur Reflexion und keine objektive Wahrheit. Wenn ein Inhalt nicht zu dir passt, darfst du ihn verwerfen. Weitere Informationen findest du auf der Seite KI-Transparenz."
+          "body": "Teile der Inhalte können mithilfe von AI formuliert werden. AI-gestützte Inhalte werden nach Maßgabe der anwendbaren Transparenzpflichten gekennzeichnet. Die Berechnung von Profilmerkmalen, die Konvergenzlogik und die sprachliche Formulierung sollen getrennt behandelt werden.\n\nAI-Ausgaben können unvollständig, missverständlich oder nicht passend sein. Sie sind eine Einladung zur Reflexion und keine objektive Wahrheit. Wenn ein Inhalt nicht zu dir passt, darfst du ihn verwerfen. Weitere Informationen findest du auf der Seite AI-Transparenz."
         },
         {
           "heading": "10 · Rechte an Inhalten und Nutzungsrechte",
@@ -663,7 +663,7 @@
         },
         {
           "heading": "12 · Mindestalter",
-          "body": "Die Nutzung setzt grundsätzlich ein Mindestalter von 16 Jahren voraus. Kostenpflichtige Modelle setzen ein Mindestalter von 18 Jahren oder die wirksame Zustimmung gesetzlicher Vertreter voraus.\n\nAstrakey richtet sich nicht an Kinder. Wenn künftig Funktionen für Familien, Jugendliche oder besonders vulnerable Gruppen geplant werden, braucht es gesonderte Schutz-, Einwilligungs- und Alterskonzepte."
+          "body": "Die Nutzung setzt grundsätzlich ein Mindestalter von 16 Jahren voraus. Kostenpflichtige Modelle setzen ein Mindestalter von 18 Jahren oder die wirksame Zustimmung gesetzlicher Vertreter voraus.\n\nAstrakey richtet sich nicht an AInder. Wenn künftig Funktionen für Familien, Jugendliche oder besonders vulnerable Gruppen geplant werden, braucht es gesonderte Schutz-, Einwilligungs- und Alterskonzepte."
         },
         {
           "heading": "13 · Sperrung und Beendigung",
@@ -688,7 +688,7 @@
       "sections": [
         {
           "heading": "1 · Widerrufsrecht",
-          "body": "Wenn du Verbraucher:in bist, hast du grundsätzlich das Recht, binnen vierzehn Tagen ohne Angabe von Gründen einen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsschlusses.\n\nDiese Belehrung gilt für kostenpflichtige digitale Leistungen von Astrakey, soweit gesetzlich ein Widerrufsrecht besteht. Dazu können Abonnements, Premium-Funktionen, digitale Profilinhalte, ein Vollprofil-Buch als digitales Produkt oder andere digitale Zusatzleistungen gehören."
+          "body": "Wenn du Verbraucher:in bist, hast du grundsätzlich das Recht, binnen vierzehn Tagen ohne Angabe von Gründen einen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsschlusses.\n\nDiese Belehrung gilt für kostenpflichtige digitale Leistungen von Astrakey, soweit gesetzlich ein Widerrufsrecht besteht. Dazu können Abonnements, Premium-Funktionen, digitale Profilinhalte, ein Seelenbuch als digitales Produkt oder andere digitale Zusatzleistungen gehören."
         },
         {
           "heading": "2 · Ausübung des Widerrufs",
@@ -700,7 +700,7 @@
         },
         {
           "heading": "4 · Digitale Inhalte und Sofortzugriff",
-          "body": "Astrakey stellt digitale Inhalte und digitale Dienstleistungen bereit. Dazu gehören zum Beispiel Premium-Profile, AI-gestützte Deutungstexte, Tagesimpulse, Companion-Funktionen, Exportinhalte oder ein digitales Vollprofil-Buch. Viele dieser Inhalte können unmittelbar nach dem Kauf erzeugt oder freigeschaltet werden.\n\nDein Widerrufsrecht kann vorzeitig erlöschen, wenn wir mit der Bereitstellung digitaler Inhalte begonnen haben, nachdem du ausdrücklich zugestimmt hast, dass wir vor Ablauf der Widerrufsfrist beginnen, und du bestätigt hast, dass du dadurch dein Widerrufsrecht verlieren kannst. Diese Zustimmung muss im Bestellprozess klar und getrennt erfolgen."
+          "body": "Astrakey stellt digitale Inhalte und digitale Dienstleistungen bereit. Dazu gehören zum Beispiel Premium-Profile, AI-gestützte Deutungstexte, Tagesimpulse, Companion-Funktionen, Exportinhalte oder ein digitales Seelenbuch. Viele dieser Inhalte können unmittelbar nach dem Kauf erzeugt oder freigeschaltet werden.\n\nDein Widerrufsrecht kann vorzeitig erlöschen, wenn wir mit der Bereitstellung digitaler Inhalte begonnen haben, nachdem du ausdrücklich zugestimmt hast, dass wir vor Ablauf der Widerrufsfrist beginnen, und du bestätigt hast, dass du dadurch dein Widerrufsrecht verlieren kannst. Diese Zustimmung muss im Bestellprozess klar und getrennt erfolgen."
         },
         {
           "heading": "5 · Abonnements und laufende Verträge",
@@ -720,16 +720,16 @@
         }
       ]
     },
-    "ki": {
-      "title": "KI-Transparenz",
+    "AI": {
+      "title": "AI-Transparenz",
       "sections": [
         {
-          "heading": "Warum Astrakey KI-Transparenz offenlegt",
-          "body": "Astrakey verbindet deterministische Berechnungen aus mehreren Deutungssystemen mit sprachlicher Aufbereitung durch AI. Diese Kombination kann sehr persönlich wirken, weil sie Themen wie Selbstbild, Beziehung, Lebensrhythmus, Resonanz und innere Muster berührt. Genau deshalb erklären wir offen, wo AI beteiligt ist, welche Daten sie verarbeitet, welche Grenzen gelten und welche Verantwortung beim Menschen bleibt.\n\nDie Transparenzseite ist Teil der rechtlichen und redaktionellen Grundstruktur der Website. Sie unterstützt die Anforderungen aus dem EU AI Act, insbesondere die Kennzeichnung AI-generierter oder AI-gestützter Inhalte, und sie soll Nutzerinnen und Nutzern eine klare Entscheidungsgrundlage geben, bevor sie ein Profil starten, Premium-Inhalte kaufen oder mit Companion, Journaling und Vollprofil-Buch arbeiten."
+          "heading": "Warum Astrakey AI-Transparenz offenlegt",
+          "body": "Astrakey verbindet deterministische Berechnungen aus mehreren Deutungssystemen mit sprachlicher Aufbereitung durch AI. Diese Kombination kann sehr persönlich wirken, weil sie Themen wie Selbstbild, Beziehung, Lebensrhythmus, Resonanz und innere Muster berührt. Genau deshalb erklären wir offen, wo AI beteiligt ist, welche Daten sie verarbeitet, welche Grenzen gelten und welche Verantwortung beim Menschen bleibt.\n\nDie Transparenzseite ist Teil der rechtlichen und redaktionellen Grundstruktur der Website. Sie unterstützt die Anforderungen aus dem EU AI Act, insbesondere die Kennzeichnung AI-generierter oder AI-gestützter Inhalte, und sie soll Nutzerinnen und Nutzern eine klare Entscheidungsgrundlage geben, bevor sie ein Profil starten, Premium-Inhalte kaufen oder mit Companion, Journaling und Seelenbuch arbeiten."
         },
         {
           "heading": "Wo AI in Astrakey eingesetzt wird",
-          "body": "AI wird in Astrakey vor allem für Formulierung, Verdichtung und Dialog eingesetzt. Dazu gehören persönliche Deutungstexte, Ebenen-Texte, Tagesimpulse, erklärende Abschnitte im Vollprofil-Buch, Reflexionsfragen, Companion-Antworten und redaktionelle Varianten für unterschiedliche Nutzungsfälle. Die AI hilft also dabei, berechnete Muster verständlich, ruhig und anschlussfähig zu formulieren.\n\nDie AI entscheidet nicht, welches System recht hat, welche Aussage wahr ist oder welche Zukunft eintreten wird. Sie schreibt aus vorbereiteten Kontexten, Regelwerken und berechneten Profilmerkmalen heraus. Wenn eine Seite, ein Profilbereich oder ein Dialog AI-gestützt formuliert wurde, soll dies erkennbar sein. Astrakey nutzt AI nicht als unsichtbare Autorität, sondern als sprachliches Werkzeug innerhalb klarer Grenzen."
+          "body": "AI wird in Astrakey vor allem für Formulierung, Verdichtung und Dialog eingesetzt. Dazu gehören persönliche Deutungstexte, Ebenen-Texte, Tagesimpulse, erklärende Abschnitte im Seelenbuch, Reflexionsfragen, Companion-Antworten und redaktionelle Varianten für unterschiedliche Nutzungsfälle. Die AI hilft also dabei, berechnete Muster verständlich, ruhig und anschlussfähig zu formulieren.\n\nDie AI entscheidet nicht, welches System recht hat, welche Aussage wahr ist oder welche Zukunft eintreten wird. Sie schreibt aus vorbereiteten Kontexten, Regelwerken und berechneten Profilmerkmalen heraus. Wenn eine Seite, ein Profilbereich oder ein Dialog AI-gestützt formuliert wurde, soll dies erkennbar sein. Astrakey nutzt AI nicht als unsichtbare Autorität, sondern als sprachliches Werkzeug innerhalb klarer Grenzen."
         },
         {
           "heading": "Berechnung, Konvergenz und Formulierung sind getrennt",
@@ -749,7 +749,7 @@
         },
         {
           "heading": "Premium-Inhalte und faire Conversion",
-          "body": "AI kann Premium-Inhalte besser lesbar, persönlicher und kontinuierlicher machen. Ein Vollprofil-Buch, tiefere Tagesimpulse oder Companion-Dialoge erzeugen Wert, weil sie berechnete Muster in längere, differenzierte Sprache übersetzen. Trotzdem darf AI nicht eingesetzt werden, um künstlichen Druck aufzubauen, Angst zu erzeugen oder Nutzerinnen und Nutzer in ein bezahltes Modell zu drängen.\n\nAstrakey soll neugierig machen und zur Anmeldung einladen, aber die Entscheidung für ein bezahltes Modell muss nachvollziehbar bleiben. Gute Conversion entsteht durch Klarheit, Nutzen, Vertrauen und echte Tiefe, nicht durch manipulative Knappheit oder scheinbar absolute Aussagen. Deshalb müssen Kaufargumente erklären, was Premium erweitert: Umfang, Kontext, Verlauf, Dialogtiefe, Export, Vergleich und langfristige Arbeit mit dem Profil."
+          "body": "AI kann Premium-Inhalte besser lesbar, persönlicher und kontinuierlicher machen. Ein Seelenbuch, tiefere Tagesimpulse oder Companion-Dialoge erzeugen Wert, weil sie berechnete Muster in längere, differenzierte Sprache übersetzen. Trotzdem darf AI nicht eingesetzt werden, um künstlichen Druck aufzubauen, Angst zu erzeugen oder Nutzerinnen und Nutzer in ein bezahltes Modell zu drängen.\n\nAstrakey soll neugierig machen und zur Anmeldung einladen, aber die Entscheidung für ein bezahltes Modell muss nachvollziehbar bleiben. Gute Conversion entsteht durch Klarheit, Nutzen, Vertrauen und echte Tiefe, nicht durch manipulative Knappheit oder scheinbar absolute Aussagen. Deshalb müssen Kaufargumente erklären, was Premium erweitert: Umfang, Kontext, Verlauf, Dialogtiefe, Export, Vergleich und langfristige Arbeit mit dem Profil."
         },
         {
           "heading": "Urheberrecht, Quellen und eigene Sprache",
@@ -767,3 +767,7 @@
     }
   }
 }
+
+
+
+

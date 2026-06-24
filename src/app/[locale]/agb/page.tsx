@@ -16,3 +16,4 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const t = getDictionary(locale as Locale);
   return <LegalPage locale={locale as Locale} entry={t.legal.agb} />;
 }
+

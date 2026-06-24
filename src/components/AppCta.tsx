@@ -15,7 +15,7 @@ export function AppCta({
   source: string;
   secondary?: boolean;
 }) {
-  const url = startUrl(locale, { source, medium: "cta", campaign: "content" });
+  const url = startUrl(locale, { source, medium: "inline", campaign: "profile_start" });
   const ui = localizedUi(locale);
   const labels =
     locale === "de"
@@ -34,3 +34,5 @@ export function AppCta({
     </div>
   );
 }
+
+

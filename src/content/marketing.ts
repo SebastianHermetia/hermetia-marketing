@@ -5,6 +5,7 @@ export type FaqItem = { q: string; a: string };
 export type ContentSection = { title: string; body: string };
 export type ContentGraphic = { src: string; alt: string; caption: string };
 export type ContentPage = {
+  key?: string;
   slug: string;
   navKey: string;
   title: string;
@@ -13,6 +14,11 @@ export type ContentPage = {
   eyebrow: string;
   lead: string;
   answer: string;
+  trustline?: string;
+  primaryCta?: string;
+  primaryCtaHref?: string;
+  secondaryCta?: string;
+  secondaryCtaHref?: string;
   image: string;
   imageAlt: string;
   sections: ContentSection[];
@@ -25,891 +31,628 @@ export type ContentPage = {
 type LocalizedPage = { de: ContentPage; en: ContentPage };
 
 const dePages = {
-  konvergenz: {
-    slug: "konvergenz-engine",
-    navKey: "konvergenz",
-    title: "Die Konvergenz-Engine: Astrakeys eigentliches Herz",
-    seoTitle: "Astrakey Konvergenz-Engine — wie 31 Systeme zu Kernthemen werden",
-    seoDescription:
-      "Die Astrakey Konvergenz-Engine erklärt, wie spirituelle und psychologische Systeme gewichtet, entkoppelt und zu persönlichen Kernthemen verdichtet werden.",
-    eyebrow: "Methode · USP",
-    lead:
-      "Viele Tools zeigen einzelne Systeme. Astrakey verbindet sie. Die Konvergenz-Engine prüft, welche unabhängigen Perspektiven auf dasselbe Thema zeigen und wo daraus echte Kernthemen entstehen.",
-    answer:
-      "Die Konvergenz-Engine ist eine erklärbare Verdichtungsschicht: Sie nimmt die Theme-Signale aus Astrologie, Human Design, Gene Keys, Numerologie, Fragebögen und weiteren Systemen, gruppiert verwandte Quellen in Familien und erkennt, wo mehrere unabhängige Perspektiven dasselbe Thema bestätigen.",
-    image: "/images/hermetia/resonance-instrument.png",
-    imageAlt: "Ein imaginäres Resonanzinstrument als Bild für die Astrakey Konvergenz-Engine",
-    sections: [
-      {
-        title: "Warum Konvergenz wichtiger ist als Treffer",
-        body:
-          "Ein einzelnes System kann eine starke Aussage erzeugen, aber es bleibt eine Perspektive. Astrakey fragt deshalb nicht nur: Was sagt ein System? Sondern: Welche Themen tauchen über mehrere unabhängige Systeme hinweg auf? Erst wenn astrologische, numerologische, psychologische oder körperbezogene Perspektiven in dieselbe Richtung zeigen, entsteht ein Kernthema mit höherer Tragfähigkeit. Das verhindert, dass eine einzelne Symbolsprache überinterpretiert wird.",
-      },
-      {
-        title: "Systemfamilien verhindern Doppelzählung",
-        body:
-          "Viele Systeme teilen dieselbe Rohquelle. Westliche Astrologie, Sabian-Grade, Fixsterne und Astrokartografie nutzen verwandte Himmelsdaten. Human Design und Gene Keys teilen das Tor-Rad. Numerologie, Kabbalah, Tarot-Geburtskarten und Lo-Shu arbeiten aus Datum oder Name. Die Konvergenz-Engine zählt solche Echos nicht naiv mehrfach, sondern bündelt sie in Familien. Dadurch wird ein Thema erst dann wirklich stark, wenn verschiedene Familien zustimmen.",
-      },
-      {
-        title: "Stärke, Konvergenz, Sicherheit und Spannung",
-        body:
-          "Astrakey trennt bewusst mehrere Größen: Stärke zeigt, wie präsent ein Thema in deinem Profil ist. Konvergenz zeigt, wie viele unabhängige Familien dieses Thema tragen. Sicherheit beschreibt, wie belastbar die Eingaben und Berechnungen sind. Spannungsfelder zeigen, wo zwei Pole gleichzeitig aktiv sind. Aus dieser Trennung entsteht eine Deutung, die nicht nur beeindruckend klingt, sondern erklärbar bleibt.",
-      },
-      {
-        title: "Was du als Nutzer davon siehst",
-        body:
-          "Du musst die Mathematik dahinter nicht verstehen. In der App erscheint daraus eine klare Sprache: deine Kernthemen, deine leisen Nebenthemen, deine produktiven Spannungen und die Systeme, die diese Aussagen tragen. Auf Wunsch kannst du tiefer schauen und nachvollziehen, warum Astrakey eine Aussage macht. Der Aha-Moment bleibt warm, die Grundlage bleibt überprüfbar.",
-      },
-    ],
-    graphics: [
-      {
-        src: "/graphics/convergence/abb1-familien-modell.svg",
-        alt: "Systemfamilien-Modell der Astrakey Konvergenz-Engine",
-        caption: "Systemfamilien verhindern, dass verwandte Quellen mehrfach als unabhängige Bestätigung gezählt werden.",
-      },
-      {
-        src: "/graphics/convergence/abb3-daempfung-statt-summe.svg",
-        alt: "Dämpfung statt naiver Summierung in der Konvergenz-Engine",
-        caption: "Astrakey gewichtet ähnliche Signale vorsichtig, statt starke Aussagen durch reine Addition künstlich aufzublähen.",
-      },
-      {
-        src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
-        alt: "Algorithmus-Funnel von Rohsignalen zu Kernthemen",
-        caption: "Aus Rohsignalen werden Theme-Signale, daraus Familienbelege und schließlich verständliche Kernthemen.",
-      },
-    ],
-    faq: [
-      { q: "Ist die Konvergenz-Engine eine AI?", a: "Nein. Die Konvergenz-Engine ist eine deterministische Rechenschicht. AI formuliert später die Deutung, entscheidet aber nicht, welche Systeme übereinstimmen." },
-      { q: "Warum zählt Astrakey Systeme nicht einfach zusammen?", a: "Weil viele Systeme verwandte Datenquellen nutzen. Eine naive Summe würde einzelne Perspektiven übergewichten. Astrakey gruppiert Systeme deshalb in Familien." },
-      { q: "Kann ich sehen, woher ein Kernthema kommt?", a: "Ja. Astrakey kann zeigen, welche Systeme und Familien ein Thema tragen. Das ist wichtig für Vertrauen und Erklärbarkeit." },
-    ],
-    ctaTitle: "Sieh, welche Themen bei dir wirklich zusammenlaufen.",
-    ctaText: "Starte dein Profil und entdecke deine ersten Kernthemen kostenlos.",
-  },
-  seelenkarte: {
-    slug: "seelenkarte",
-    navKey: "seelenkarte",
-    title: "Deine Seelenkarte: ein verständliches Bild deiner inneren Muster",
-    seoTitle: "Seelenkarte erstellen — Astrakey verbindet 31 Systeme zu deinem Profil",
-    seoDescription:
-      "Was eine Seelenkarte ist, wie Astrakey sie berechnet und warum sie mehr ist als ein Geburtshoroskop oder Persönlichkeitstest.",
-    eyebrow: "Produkt · Profil",
-    lead:
-      "Die Seelenkarte ist der erste Aha-Moment in Astrakey: kein Datenblatt, sondern eine visuelle und sprachliche Verdichtung deiner wichtigsten Muster.",
-    answer:
-      "Eine Seelenkarte ist ein integriertes Persönlichkeitsbild. Astrakey berechnet verschiedene spirituelle und psychologische Systeme, erkennt gemeinsame Themen und übersetzt sie in eine klare, warme Darstellung, die dich nicht festlegt, sondern zur Selbstreflexion einlädt.",
+  home: {
+    key: "home",
+    slug: "",
+    navKey: "home",
+    title: "Ein Profil aus vielen Systemen. Nicht nur ein Blick auf dich.",
+    seoTitle: "Astrakey: dein Profil aus vielen Systemen",
+    seoDescription: "Astrakey verbindet Astrologie, Human Design, Gene Keys, Numerologie und mehr",
+    eyebrow: "Mehrsystem-Profil",
+    lead: "",
+    answer: "Astrakey verbindet mehrere Systeme zu einem erklärbaren persönlichen Profil.",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
     image: "/images/hermetia/atmospheric-data-topography.png",
-    imageAlt: "Atmosphärische Datentopografie als visuelle Metapher für die Astrakey Seelenkarte",
-    sections: [
-      {
-        title: "Warum die Seelenkarte kein klassisches Chart ist",
-        body:
-          "Ein klassisches Chart zeigt oft viele Symbole, Linien und Fachbegriffe. Das kann faszinieren, aber auch überfordern. Die Seelenkarte geht anders vor: Sie nimmt die berechneten Daten ernst, stellt aber zuerst die menschlich verständliche Synthese in den Mittelpunkt. Du siehst nicht nur Planeten, Zahlen oder Typen, sondern die Frage: Was wiederholt sich in mir über mehrere Perspektiven hinweg? Genau deshalb ist die Seelenkarte keine Kopie eines Horoskops, kein Human-Design-Bodygraph und kein Persönlichkeitstest mit hübscher Oberfläche. Sie ist Astrakeys eigene Darstellungsform für Konvergenz: ein lesbares Profil, das mehrere Systeme nebeneinander ernst nimmt, sie aber nicht ungefiltert auf dich stapelt.",
-      },
-      {
-        title: "Ebenen statt Informationswand",
-        body:
-          "Astrakey gliedert dein Profil in Ebenen: Wesenskern, Gaben, Schatten, Beziehung, Berufung, Rhythmus und Seelenweg. Jede Ebene kann für sich gelesen werden. Dadurch entsteht eine geführte Reise. Du musst nicht alles auf einmal verstehen, sondern kannst nach und nach tiefer gehen. Der erste Blick zeigt Resonanz, die vollständigen Ebenen machen aus einem Aha-Moment eine langfristig nutzbare Ressource.",
-      },
-      {
-        title: "Welche Daten in die Seelenkarte einfließen",
-        body:
-          "Die Seelenkarte kann Geburtsdatum, Geburtsort, Geburtszeit, Namen, Selbstauskunft und spätere Profilverfeinerungen nutzen. Nicht jede Angabe ist für jedes System gleich wichtig. Eine genaue Geburtszeit verbessert zeit- und ortsabhängige Systeme, während Fragebögen Alltag, Verhalten und Selbstwahrnehmung erden. Astrakey zeigt transparent, welche Aussagen auf welchen Eingaben beruhen und wo Unsicherheit besteht. Das stärkt Vertrauen, verhindert Überdeutung und unterstützt eine informierte Entscheidung im Onboarding.",
-      },
-      {
-        title: "Von Systemsignalen zu Kernthemen",
-        body:
-          "Die Seelenkarte entsteht nicht dadurch, dass Astrakey 31 Systeme nacheinander ausgibt. Zuerst werden Rohsignale berechnet, dann in Themen übersetzt, in Systemfamilien gruppiert und über die Konvergenz-Engine gewichtet. So wird sichtbar, ob ein Motiv nur aus einer Datenfamilie kommt oder ob unabhängige Perspektiven dasselbe Thema tragen. Eine starke Aussage ist bei Astrakey nicht lauter, weil sie dramatisch klingt, sondern belastbarer, weil sie nachvollziehbar hergeleitet wird.",
-      },
-      {
-        title: "Was kostenlos sichtbar wird",
-        body:
-          "Der kostenlose Profilstart zeigt genug für eine echte Entscheidung: erste Kernthemen, eine verständliche Grundresonanz und ein Gefühl dafür, ob Sprache, Ton und Datenschutz stimmig sind. Der Einstieg wirkt nicht künstlich leer, sondern neugierig und fair. Wer nach dem kostenlosen Einstieg merkt, dass Astrakey nicht passt, hat trotzdem Orientierung gewonnen. Wer Resonanz spürt, versteht klarer, warum Premium-Tiefe sinnvoll werden kann.",
-      },
-      {
-        title: "Was Premium an der Seelenkarte vertieft",
-        body:
-          "Bezahlte Modelle werden dort plausibel, wo Astrakey mehr als einen ersten Eindruck liefert: vollständige Ebenen, längere Deutungen, Profilbuch, Journaling, Tagesimpulse, Beziehungsprofile, Rückblicke und Profilverfeinerung. Die Seelenkarte ist damit nicht nur ein Ergebnis, sondern der Ausgangspunkt einer Arbeitsumgebung. Gute Conversion entsteht hier nicht durch Druck, sondern durch nachvollziehbaren Mehrwert: mehr Kontext, mehr Zeitbezug, mehr Selbstbeobachtung und mehr Möglichkeiten, die eigenen Themen im Alltag zu prüfen.",
-      },
-      {
-        title: "Der persönliche Nutzen",
-        body:
-          "Die Seelenkarte macht dich neugierig, ohne dich zu vereinnahmen. Sie kann Worte für Muster geben, die du schon lange spürst, aber schwer greifen konntest. Gleichzeitig bleibt sie offen: Wenn etwas nicht resoniert, ist das ein wertvoller Hinweis. Astrakey ist Reflexion, keine Festlegung. Der Nutzen liegt nicht darin, eine neue Identität zu behaupten, sondern bessere Fragen zu ermöglichen: Wo erkenne ich mich? Wo widerspreche ich? Was möchte ich beobachten? Was verändert sich, wenn ich dieses Muster nicht bekämpfe, sondern verstehe?",
-      },
-      {
-        title: "Rechtliche und ethische Grenzen",
-        body:
-          "Die Seelenkarte darf keine Diagnose, keine Therapie, keine medizinische Empfehlung und keine sichere Vorhersage sein. Auch spirituelle Sprache muss sorgfältig bleiben, weil persönliche Profile sensible Rückschlüsse auf Identität, Weltbild und Beziehungsmuster erlauben. Astrakey verwendet deshalb eigene redaktionelle Texte, keine übernommenen proprietären Deutungspassagen fremder Systeme, und rahmt jede Aussage als Reflexionsangebot. Diese Grenze ist nicht nur rechtlicher Schutz, sondern Teil des Markenvertrauens.",
-      },
-    ],
-    graphics: [
-      {
-        src: "/graphics/convergence/abb1-familien-modell.svg",
-        alt: "Astrakey Systemfamilien als Grundlage der Seelenkarte",
-        caption: "Die Seelenkarte bündelt verwandte Systeme in Familien, damit ähnliche Rohquellen nicht fälschlich als unabhängige Bestätigung wirken.",
-      },
-      {
-        src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
-        alt: "Algorithmus-Funnel von Daten zur lesbaren Seelenkarte",
-        caption: "Aus Eingaben, Rohsignalen und Familienbelegen entsteht eine verständliche Seelenkarte mit Kernthemen, Grenzen und Premium-Tiefe.",
-      },
-    ],
-    faq: [
-      { q: "Ist die Seelenkarte kostenlos?", a: "Der Einstieg ist kostenlos. Du siehst deine Seelenkarte und erste Kernthemen ohne Kreditkarte. Weitere Ebenen können über ein bezahltes Modell freigeschaltet werden." },
-      { q: "Brauche ich eine genaue Geburtszeit?", a: "Eine genaue Geburtszeit verbessert manche Systeme. Astrakey funktioniert aber auch mit grober Tageszeit und kennzeichnet, was dadurch weniger sicher ist." },
-      { q: "Ist das eine Diagnose?", a: "Nein. Die Seelenkarte ist Inspiration zur Selbstreflexion und keine medizinische, psychologische oder therapeutische Beratung." },
-      { q: "Warum nutzt Astrakey mehrere Systeme für eine Seelenkarte?", a: "Weil ein einzelnes System nur eine Perspektive liefert. Astrakey prüft, welche Themen über mehrere unabhängige Systemfamilien hinweg auftauchen und dadurch als Kernthemen tragfähiger werden." },
-      { q: "Was unterscheidet die Seelenkarte von einem Persönlichkeitstest?", a: "Ein Persönlichkeitstest basiert meist auf Selbstauskunft. Die Seelenkarte verbindet Selbstauskunft, berechnete Daten, Systemfamilien und Konvergenz zu einem mehrschichtigen Reflexionsprofil." },
-      { q: "Wann lohnt sich Premium für die Seelenkarte?", a: "Premium lohnt sich, wenn du nicht nur erste Kernthemen sehen möchtest, sondern vollständige Ebenen, Profilbuch, Journaling, Tagesimpulse, Beziehungsauswertungen oder langfristige Reflexion nutzen willst." },
-      { q: "Verwendet Astrakey geschützte Texte anderer Systeme?", a: "Nein. Astrakey formuliert eigene redaktionelle Deutungstexte und übernimmt keine proprietären Passagen, Tabellen oder Originalformulierungen fremder Anbieter." },
-    ],
-    ctaTitle: "Beginne mit deiner eigenen Seelenkarte.",
-    ctaText: "In wenigen Minuten siehst du kostenlos, welche ersten Themen Astrakey bei dir erkennt.",
-  },
-  tagesimpulse: {
-    slug: "tagesimpulse",
-    navKey: "tagesimpulse",
-    title: "Tagesimpulse: persönliche Reflexion statt lautes Tageshoroskop",
-    seoTitle: "Persönliche Tagesimpulse — Astrakey verbindet Profil, Timing und Journaling",
-    seoDescription:
-      "Wie Astrakey aus deinem Profil und Tagesdaten ruhige Impulse, Journaling-Fragen und Monatsrückblicke erstellt.",
-    eyebrow: "Alltag · Begleitung",
-    lead:
-      "Astrakey begleitet nicht mit Druck, sondern mit einem ruhigen Fokus: ein Satz, eine Frage, ein kleiner Blick auf das, was heute in dir anklingen könnte.",
-    answer:
-      "Ein Astrakey-Tagesimpuls ist kein allgemeines Horoskop. Er verbindet dein dauerhaftes Profil mit aktuellen Zyklen und formuliert daraus einen reflektierenden Tagesfokus. Der Impuls sagt nicht die Zukunft voraus, sondern bündelt Aufmerksamkeit.",
-    image: "/images/hermetia/dawn-clock-of-becoming.png",
-    imageAlt: "Ein abstrakter Tagesmechanismus als Symbol für Astrakey Tagesimpulse",
-    sections: [
-      {
-        title: "Der Unterschied zum Tageshoroskop",
-        body:
-          "Ein Tageshoroskop spricht meist für ein Sternzeichen und damit für sehr viele Menschen gleichzeitig. Astrakey arbeitet enger: Dein persönliches Profil bleibt die Grundlage, Tagesdaten färben nur den Fokus. Dadurch entsteht kein lauter Anspruch, sondern ein persönlicher Reflexionsrahmen. Der Impuls behauptet nicht, was passieren wird. Er fragt, welche Qualität heute zu deinen Kernthemen passen könnte und welche Beobachtung daraus sinnvoll wird.",
-      },
-      {
-        title: "Wie ein persönlicher Tagesimpuls entsteht",
-        body:
-          "Ein Tagesimpuls kombiniert stabile Profilthemen mit zeitbezogenen Signalen. Stabil sind etwa Kernthemen, wiederkehrende Spannungsfelder, bevorzugte Energieformen oder persönliche Reflexionsmotive. Zeitbezogene Signale können aus Tageszyklen, Transiten, numerologischen Rhythmen oder anderen vorsichtig gewichteten Systemen kommen. Astrakey macht daraus keinen Befehl, sondern eine kurze, verständliche Fokussierung: ein Thema, eine Einordnung, eine Frage.",
-      },
-      {
-        title: "Beispielhafte Struktur eines Impulses",
-        body:
-          "Ein guter Impuls braucht Klarheit. Sinnvoll ist eine wiedererkennbare Struktur: zuerst ein kurzer Fokus, dann die Verbindung zu deinem Profil, anschließend eine Alltagssituation, in der das Thema auftauchen könnte, und zum Schluss eine Journaling-Frage. So bleibt der Impuls leicht genug für den Morgen, aber tief genug, um mehr zu sein als ein schöner Satz. Diese Struktur unterstützt auch AEO und GEO, weil sie Fragen direkt beantwortet und Begriffe konsistent verwendet.",
-      },
-      {
-        title: "Journaling als zweite Hälfte",
-        body:
-          "Der Impuls wird erst wertvoll, wenn du ihn mit deinem Alltag verbindest. Deshalb gehören Journaling-Fragen, Feedback und Monatsrückblicke zum Konzept. Astrakey fragt nicht nur „Was sagt das System?“, sondern auch: Hat das heute für dich gestimmt? Was hast du bemerkt? Was wiederholt sich? Genau hier entsteht die Brücke zur bezahlten Tiefe: Wer regelmäßig reflektiert, profitiert von Verlauf, Rückblicken, Profilverfeinerung und einem System, das nicht nur sendet, sondern Resonanz sammelt.",
-      },
-      {
-        title: "Rhythmus statt Dauerbeschallung",
-        body:
-          "Tagesimpulse funktionieren nicht wie ein weiterer Feed. Astrakey wird stärker, wenn du Frequenz und Tiefe bewusst wählen kannst: täglich, mehrmals pro Woche, nur zu bestimmten Themen oder pausiert. Diese Logik schützt vor FOMO und macht die Begleitung wertvoller. Ein guter Impuls darf auch leise sein. Er muss nicht jeden Tag dramatisch wirken, sondern bündelt Aufmerksamkeit so, dass sie im Alltag tragbar bleibt.",
-      },
-      {
-        title: "Warum Tagesimpulse Premium-Wert schaffen",
-        body:
-          "Der kostenlose Profilstart beantwortet die Frage: Erkenne ich mich in Astrakey wieder? Tagesimpulse beantworten eine andere Frage: Kann Astrakey mich über Zeit sinnvoll begleiten? Genau deshalb sind sie ein starker Grund für ein bezahltes Modell. Nicht weil sie geheimnisvolle Vorhersagen liefern, sondern weil sie Profil, Timing, Journaling und Rückblick zu einer wiederkehrenden Praxis verbinden.",
-      },
-      {
-        title: "Bewusst anti-süchtig",
-        body:
-          "Astrakey erzeugt keine FOMO-Schleife. Tagesimpulse sind ruhig, pausierbar und nicht als Pflicht gedacht. Die App begleitet dich, statt einen weiteren Strom aus Push-Reizen zu erzeugen. Diese Haltung ist Teil der Produktethik: Neugier ja, Angst nein. Es gibt keinen verpassten Schicksalstag, keine Warnung vor falschen Entscheidungen und keinen Druck, jeden Impuls zu lesen. Vertrauen entsteht durch Klarheit, nicht durch Abhängigkeit.",
-      },
-      {
-        title: "Rechtliche Grenzen und sensible Sprache",
-        body:
-          "Ein Tagesimpuls ist keine medizinische, therapeutische, rechtliche oder finanzielle Empfehlung. Er darf keine sichere Zukunft behaupten und keine Entscheidung für dich treffen. Astrakey formuliert deshalb in eigener Sprache, benennt Unsicherheit und bleibt bei Reflexion. Gerade bei täglichen Inhalten ist diese Grenze wichtig, weil Wiederholung schnell Autorität erzeugen kann. Die App bleibt eine Stimme neben der eigenen, nicht der Ersatz für die eigene Stimme.",
-      },
-    ],
-    graphics: [
-      {
-        src: "/graphics/convergence/abb8-deine-kernthemen.svg",
-        alt: "Kernthemen als Grundlage persönlicher Tagesimpulse",
-        caption: "Tagesimpulse starten nicht beim Sternzeichen, sondern bei den Kernthemen deines persönlichen Profils.",
-      },
-      {
-        src: "/graphics/convergence/abb9-deine-innere-spannung.svg",
-        alt: "Innere Spannung als Reflexionsfeld eines Tagesimpulses",
-        caption: "Ein guter Impuls kann Spannungen sichtbar machen, ohne daraus eine Diagnose oder Vorhersage abzuleiten.",
-      },
-    ],
-    faq: [
-      { q: "Bekomme ich jeden Tag einen Impuls?", a: "Je nach Einstellung ja. Astrakey ist aber bewusst so gedacht, dass du Frequenz und Pausen selbst bestimmen kannst." },
-      { q: "Kann ein Tagesimpuls falsch sein?", a: "Ja, und das ist okay. Der Impuls ist eine Einladung zur Reflexion, kein Urteil. Dein Feedback hilft, wiederkehrende Themen besser einzuordnen." },
-      { q: "Sind Tagesimpulse medizinische Empfehlungen?", a: "Nein. Sie sind keine medizinische, psychologische oder therapeutische Beratung." },
-      { q: "Was unterscheidet Astrakey-Tagesimpulse von Tageshoroskopen?", a: "Astrakey beginnt beim persönlichen Profil und nutzt Tagesdaten nur als Färbung. Ein Tageshoroskop spricht meist sehr viele Menschen über ein Sternzeichen an." },
-      { q: "Warum sind Tagesimpulse ein Premium-Feature?", a: "Weil sie erst über Zeit ihren vollen Wert entfalten: Verlauf, Journaling, Rückblicke, Profilbezug und feinere Impulse brauchen eine fortlaufende Begleitung." },
-      { q: "Kann ich Tagesimpulse pausieren?", a: "Ja. Tagesimpulse bleiben eine freiwillige Begleitung. Sie erzeugen keine Pflicht, keine FOMO und keinen Druck." },
-      { q: "Treffen Tagesimpulse Entscheidungen für mich?", a: "Nein. Sie bieten Fragen und Fokus an. Entscheidungen, professionelle Beratung und Verantwortung bleiben beim Nutzer." },
-    ],
-    ctaTitle: "Erlebe, wie dein Profil den Tag färbt.",
-    ctaText: "Starte kostenlos und öffne deine ersten persönlichen Impulse.",
-  },
-  journaling: {
-    slug: "journaling",
-    navKey: "journaling",
-    title: "Journaling mit Astrakey: aus Impulsen wird Selbsterkenntnis",
-    seoTitle: "Journaling mit Astrakey - Profil, Tagesimpulse und Reflexion verbinden",
-    seoDescription:
-      "Wie Astrakey Journaling nutzt, um Tagesimpulse, Seelenkarte, Feedback und langfristige Muster zu einer ruhigen Reflexionspraxis zu verbinden.",
-    eyebrow: "Alltag · Reflexion",
-    lead:
-      "Journaling ist bei Astrakey nicht einfach ein leeres Textfeld. Es ist die Brücke zwischen deinem Profil, deinen Tagesimpulsen und dem, was du wirklich in deinem Alltag bemerkst.",
-    answer:
-      "Astrakey-Journaling verbindet persönliche Impulse mit eigenen Notizen, Feedback und wiederkehrenden Themen. Die App behauptet nicht, dich besser zu kennen als du selbst, sondern hilft dir, Resonanz, Zweifel, Muster und Entwicklung über Zeit bewusster zu sehen.",
-    image: "/images/hermetia/library-of-self-profile.png",
-    imageAlt: "Eine ruhige Bibliothek innerer Notizen als Bild für Astrakey Journaling",
-    sections: [
-      {
-        title: "Warum Journaling die Seelenkarte erdet",
-        body:
-          "Eine Seelenkarte kann berühren, aber sie wird erst wertvoll, wenn du sie mit deinem gelebten Alltag verbindest. Journaling ist diese Erdung. Du kannst festhalten, welche Aussagen resonieren, welche Fragen offen bleiben und welche Muster sich wiederholen. Dadurch bleibt Astrakey keine Einmal-Auswertung, sondern wird zu einem lernenden Reflexionsraum. Wichtig ist: Deine Notizen sind keine Beweise gegen dich und keine Diagnosedaten. Sie sind deine eigene Sprache für das, was du beobachtest.",
-      },
-      {
-        title: "Vom Tagesimpuls zur eigenen Beobachtung",
-        body:
-          "Ein Tagesimpuls gibt einen Fokus. Das Journal fragt danach, was du daraus machst. Hat der Impuls etwas sichtbar gemacht? Gab es eine Situation, in der ein Kernthema spürbar wurde? War der Satz unpassend, zu stark oder überraschend genau? Diese Rückmeldung macht die Deutung menschlicher. Astrakey sendet nicht nur, sondern gibt dir Raum, zurückzusprechen. So entsteht aus einem täglichen Hinweis eine persönliche Spur.",
-      },
-      {
-        title: "Muster über Wochen und Monate erkennen",
-        body:
-          "Ein einzelner Eintrag ist oft nur ein Moment. Spannend wird es, wenn sich Themen über Wochen sammeln: Rückzug, Sichtbarkeit, Entscheidung, Beziehung, Kreativität, Überforderung oder Ruhe. Astrakey kann diese Wiederholungen als Rückblick sichtbar machen, ohne daraus starre Wahrheiten zu bauen. Gerade hier entsteht Premium-Tiefe: nicht mehr Text um des Textes willen, sondern eine klarere Sicht auf die eigene Entwicklung.",
-      },
-      {
-        title: "Privatsphäre und sensible Notizen",
-        body:
-          "Journaling kann sehr persönlich sein. Deshalb erklärt Astrakey klar, dass solche Inhalte sensibel behandelt werden. Du siehst, was gespeichert wird, wie Löschung und Export funktionieren und welche Rolle AI bei Zusammenfassungen spielt. Astrakey leitet aus Journaltexten keine medizinischen, therapeutischen oder rechtlichen Aussagen ab. Die Funktion bleibt ein Reflexionswerkzeug, kein Ersatz für professionelle Beratung.",
-      },
-      {
-        title: "Kostenlos starten, bezahlte Tiefe verstehen",
-        body:
-          "Der kostenlose Einstieg kann erste Impulse und einfache Reflexion ermöglichen. Bezahlte Modelle werden sinnvoll, wenn du Verlauf, Rückblicke, mehr Ebenen, tiefere Fragen und langfristige Muster nutzen möchtest. Genau deshalb gehört Journaling zur Astrakey-Erfahrung: Es zeigt, warum Astrakey nicht nur ein Profilrechner ist, sondern eine fortlaufende Begleitung, die sich mit der Zeit entfaltet.",
-      },
-    ],
-    faq: [
-      { q: "Ist Astrakey-Journaling ein normales Tagebuch?", a: "Es kann wie ein Tagebuch genutzt werden, ist aber stärker mit Profil, Tagesimpulsen und wiederkehrenden Themen verbunden. Der Fokus liegt auf Selbstreflexion, nicht auf Leistung oder perfekter Dokumentation." },
-      { q: "Liest die AI meine Journaltexte?", a: "AI-gestützte Zusammenfassungen erfolgen transparent und zweckgebunden. Du siehst, wann AI beteiligt ist und welche Inhalte dafür verwendet werden." },
-      { q: "Kann ich Journal-Einträge löschen?", a: "Ja. Persönliche Inhalte bleiben exportierbar und löschbar. Astrakey behandelt das als Teil der Datenschutzlinie." },
-      { q: "Ist Journaling Therapie?", a: "Nein. Astrakey-Journaling ist ein Reflexionswerkzeug und ersetzt keine medizinische, psychologische oder therapeutische Beratung." },
-    ],
-    ctaTitle: "Starte mit deiner Seelenkarte und halte fest, was wirklich resoniert.",
-    ctaText: "Das Journal wird wertvoll, sobald dein eigenes Profil die ersten Fragen öffnet.",
-  },
-  profilBuch: {
-    slug: "vollprofil-buch",
-    navKey: "profilBuch",
-    title: "Das Vollprofil-Buch: deine Seelenkarte als tiefe, lesbare Reise",
-    seoTitle: "Astrakey Vollprofil-Buch - Seelenkarte, Systeme und Premium-Tiefe",
-    seoDescription:
-      "Was das Astrakey Vollprofil-Buch enthält, wie es aus Systemen, Konvergenz und AI-Deutung entsteht und wann sich bezahlte Premium-Tiefe lohnt.",
-    eyebrow: "Premium · Tiefenprofil",
-    lead:
-      "Das Vollprofil-Buch ist für Menschen gedacht, die nicht nur einen schnellen Aha-Moment wollen, sondern ihre Seelenkarte in Ruhe lesen, wiederlesen und als Entwicklungsbegleiter nutzen möchten.",
-    answer:
-      "Das Vollprofil-Buch bündelt die wichtigsten Ebenen deiner Astrakey-Seelenkarte in einer langen, strukturierten Auswertung. Es verbindet berechnete Systeme, Konvergenz, fiktive Beispielkapitel und AI-gestützte Formulierung zu einem lesbaren Profil, bleibt aber klar als Reflexionsangebot gerahmt.",
-    image: "/images/hermetia/alchemical-listening-room.png",
-    imageAlt: "Ein alchemistischer Leseraum als Bild für das Astrakey Vollprofil-Buch",
-    sections: [
-      {
-        title: "Warum ein Buch mehr ist als eine Ergebnisansicht",
-        body:
-          "Eine Ergebnisansicht ist schnell, ein Buch erlaubt Tiefe. Das Astrakey-Vollprofil zeigt deine wichtigsten Themen nicht nur an, sondern bringt sie in eine lesbare Dramaturgie: Wesenskern, Gaben, Schatten, Beziehungsmuster, Berufung, Rhythmus, Seelenweg und praktische Reflexionsfragen. Dadurch entsteht ein Dokument, das man nicht hektisch konsumiert, sondern in Etappen liest. Genau hier liegt ein zentraler Premium-Wert: Das Buch verwandelt einen ersten Profilmoment in eine Ressource, zu der du zurückkehren kannst.",
-      },
-      {
-        title: "Wie das Vollprofil aus der Konvergenz entsteht",
-        body:
-          "Das Buch druckt nicht einfach alle Systeme nacheinander ab. Astrakey verdichtet zuerst, welche Themen wirklich tragen, welche nur Nebenmotive sind und welche Spannungsfelder sich zeigen. Erst danach entsteht die Kapitelstruktur. Dadurch wird das Profil ruhiger und relevanter: Du liest keine Sammlung einzelner Deutungsschnipsel, sondern eine begründete Synthese deiner Seelenkarte. Jedes Kapitel zeigt, welche Systemfamilien ein Motiv stützen und wo Astrakey bewusst vorsichtig bleibt.",
-      },
-      {
-        title: "Kapitel, die Nutzer wirklich erwarten",
-        body:
-          "Ein gutes Vollprofil braucht Orientierung. Kapitel zu Kernthemen, Gaben, Schatten und Wachstum, Entscheidung und Energie, Beziehung, Arbeit und Berufung, Rhythmus, Timing, persönlichen Fragen und nächsten Schritten machen die Seelenkarte lesbar. Jedes Kapitel erklärt, welche Systeme eine Aussage tragen, wo Unsicherheit besteht und wie du damit reflektieren kannst. Das macht die Auswertung wertvoller als absolute Behauptungen. Kapitelzusammenfassungen helfen, nach dem Lesen konkrete Reflexionsfragen mitzunehmen.",
-      },
-      {
-        title: "Leseerlebnis, Export und Wiederlesen",
-        body:
-          "Das Vollprofil-Buch fühlt sich nicht wie ein technischer Report an. Kapitel, Zwischenübersichten, kleine Reflexionsfragen, visuelle Marker und ein ruhiger Lesefluss machen es wiederlesbar. Gleichzeitig ist Export ein Vertrauenssignal: Wer für Tiefe bezahlt, möchte Inhalte später wiederfinden, speichern oder in Etappen lesen können. Ob als PDF, buchartiger Lesemodus oder exportierbare Zusammenfassung: Der Wert liegt darin, dass die Seelenkarte dauerhaft zugänglich bleibt.",
-      },
-      {
-        title: "Beispielkapitel nur fiktiv und transparent",
-        body:
-          "Beispielkapitel sind hilfreich, wenn sie klar fiktiv bleiben. Astrakey zeigt keine echten Nutzerprofile ohne Einwilligung und übernimmt keine geschützten Deutungstexte anderer Systeme. Gute Beispiele zeigen Struktur, Ton und Grenzen: So kann ein Kapitel klingen, so wird ein Kernthema erklärt, so bleibt eine Aussage offen genug für Selbstreflexion. Das macht das Produkt greifbar und rechtlich sauber.",
-      },
-      {
-        title: "Wie das Buch mit Journaling und Companion zusammenhängt",
-        body:
-          "Das Vollprofil-Buch ist nicht das Ende der Reise. Es kann die Grundlage für Journaling, Tagesimpulse und den Companion werden. Du liest ein Kapitel, markierst Resonanz, schreibst eigene Beobachtungen und stellst später Fragen an den Companion. Dadurch entsteht ein Ökosystem: Das Buch gibt Tiefe, Journaling erdet sie im Alltag, Tagesimpulse halten Themen lebendig und der Companion erklärt Zusammenhänge bei Bedarf.",
-      },
-      {
-        title: "Bezahlte Tiefe ohne Druck",
-        body:
-          "Das Vollprofil-Buch ist ein natürlicher Grund für ein bezahltes Modell, aber nicht für Angstdruck. Der kostenlose Einstieg zeigt Resonanz. Das Buch lohnt sich, wenn du tiefer lesen, Zusammenhänge verstehen und deine Themen langfristig begleiten möchtest. Keine künstliche Dringlichkeit, keine Schicksalsversprechen, keine Heilsprache. Der Kaufgrund ist Tiefe, nicht Druck. Genau diese Fairness macht den Wert nachvollziehbar.",
-      },
-      {
-        title: "Rechtliche und redaktionelle Leitplanken",
-        body:
-          "Das Vollprofil darf keine fremden Deutungstexte, keine geschützten Fragebogenitems und keine therapeutischen Versprechen enthalten. AI kann helfen, berechnete und kuratierte Informationen lesbar zu formulieren, darf aber nicht als unfehlbare Autorität auftreten. Beispiele müssen fiktiv sein. Aussagen über Gesundheit, Beziehung und psychische Belastung brauchen vorsichtige Sprache und klare Grenzen. Jede Premium-Seite muss deshalb erklären: mehr Text bedeutet mehr Reflexion, nicht mehr Wahrheit über einen Menschen.",
-      },
-    ],
+    imageAlt: "Ein Profil aus vielen Systemen. Nicht nur ein Blick auf dich. als Astrakey Markenbild",
+    sections: [],
     graphics: [
       {
         src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
-        alt: "Algorithmus-Funnel als Grundlage des Astrakey Vollprofil-Buchs",
-        caption: "Das Vollprofil-Buch entsteht erst nach Berechnung, Themenübersetzung, Systemfamilien und Konvergenz. Es ist keine lose Sammlung einzelner Systemtexte.",
-      },
-      {
-        src: "/graphics/convergence/abb10-verankert-und-fein.svg",
-        alt: "Verankert und fein als Prinzip für lesbare Premium-Tiefe",
-        caption: "Gute Premium-Tiefe bleibt zugleich verankert in Daten und fein genug, um persönliche Reflexion statt starre Festlegung zu ermöglichen.",
-      },
+        alt: "Ein Profil aus vielen Systemen. Nicht nur ein Blick auf dich. Grafik",
+        caption: "Die Grafik macht die Methode und die Belege hinter dem Profil sichtbar."
+      }
     ],
-    faq: [
-      { q: "Ist das Vollprofil-Buch ein PDF?", a: "Es kann als exportierbares Dokument oder buchartiger Lesemodus erscheinen. Wichtig ist die strukturierte, wiederlesbare Tiefe, nicht das Dateiformat allein." },
-      { q: "Ist das Buch im kostenlosen Einstieg enthalten?", a: "Der kostenlose Einstieg zeigt die erste Seelenkarte und Kernthemen. Das ausführliche Vollprofil-Buch ist als Premium-Tiefe gedacht." },
-      { q: "Schreibt AI das ganze Profil frei?", a: "Nein. AI formuliert berechnete, kuratierte und konvergenzgeprüfte Informationen lesbar. Die Grundlage bleibt die Profilberechnung." },
-      { q: "Kann ich das Vollprofil als Wahrheit über mich lesen?", a: "Nein. Das Vollprofil ist ein Reflexionsangebot. Es kann Sprache für Muster geben, ersetzt aber keine eigene Entscheidung und keine professionelle Beratung." },
-      { q: "Welche Kapitel enthält ein Vollprofil?", a: "Sinnvoll sind Kernthemen, Gaben, Schatten, Beziehung, Arbeit, Berufung, Rhythmus, Timing, Reflexionsfragen und nächste Schritte. Die genaue Struktur entsteht aus der Konvergenz der Seelenkarte." },
-      { q: "Kann ich das Vollprofil später wieder öffnen oder exportieren?", a: "Ja. Wiederlesbarkeit, Export und ein gut strukturierter Lesemodus sind wichtige Vertrauens- und Nutzensignale." },
-      { q: "Warum ist das Vollprofil Premium und nicht komplett kostenlos?", a: "Weil lange, strukturierte, geprüfte Profiltexte, AI-Formulierung, Sicherheit, Exportlogik und redaktionelle Qualität laufenden Aufwand erzeugen. Der kostenlose Einstieg zeigt zuerst Resonanz." },
-      { q: "Darf Astrakey Beispielprofile zeigen?", a: "Ja, wenn sie fiktiv, klar gekennzeichnet und rechtlich sauber formuliert sind. Echte Nutzerprofile brauchen ausdrückliche Einwilligung." },
-    ],
-    ctaTitle: "Erst die Seelenkarte öffnen, dann entscheiden, ob du Tiefe willst.",
-    ctaText: "Starte kostenlos und prüfe, ob dein Profil genug Resonanz für das Vollprofil-Buch erzeugt.",
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
   },
-  companion: {
-    slug: "companion",
-    navKey: "companion",
-    title: "Astrakey Companion: ein ruhiger AI-Begleiter für deine Seelenkarte",
-    seoTitle: "Astrakey Companion - AI-Begleiter für Profil, Fragen und Reflexion",
-    seoDescription:
-      "Wie der Astrakey Companion persönliche Fragen zur Seelenkarte beantwortet, Tagesimpulse vertieft und dabei klare Grenzen für AI, Datenschutz und Beratung einhält.",
-    eyebrow: "AI · Begleitung",
-    lead:
-      "Der Companion ist kein Orakel, das dir sagt, was du tun musst. Er ist ein ruhiger Gesprächsraum, der deine Seelenkarte erklärt, gute Fragen stellt und Grenzen respektiert.",
-    answer:
-      "Der Astrakey Companion ist ein AI-gestützter Begleiter, der berechnete Profilinformationen, Kernthemen und freigegebene Reflexionen in verständliche Antworten übersetzt. Er ersetzt keine Beratung, trifft keine Entscheidungen und macht sichtbar, worauf eine Antwort basiert.",
-    image: "/images/hermetia/resonance-instrument.png",
-    imageAlt: "Ein Resonanzinstrument als Bild für den Astrakey Companion",
-    sections: [
-      {
-        title: "Was der Companion leistet",
-        body:
-          "Viele Menschen verstehen ihr Profil nicht in einem einzigen Durchgang. Du liest einen Satz, spürst Resonanz und hast danach Fragen. Der Companion hilft genau dort: Was bedeutet dieses Kernthema? Warum taucht es in mehreren Systemen auf? Welche Journaling-Frage passt dazu? Die Antwort bleibt warm und verständlich, ohne so zu tun, als hätte die AI eine höhere Wahrheit über dich. Der Companion ist kein Ersatz für das eigene Spüren, sondern ein Übersetzer zwischen Profil, Methode und Alltag.",
-      },
-      {
-        title: "Berechnungsbasiert statt freier Spekulation",
-        body:
-          "Der Companion improvisiert nicht mystisch ins Blaue. Seine Stärke entsteht, wenn er auf berechneten Profilfakten, Konvergenzsignalen, freigegebenen Notizen und klaren Produktgrenzen arbeitet. Du kannst nachvollziehen, ob eine Antwort aus Astrologie, Human Design, Numerologie, Fragebogenwerten, Journaling oder allgemeinen Reflexionsfragen abgeleitet wurde. Dadurch bleibt das Erlebnis persönlich, ohne beliebig zu werden. Die AI formuliert, verbindet und erklärt, aber die Profilgrundlage entsteht aus der Astrakey-Berechnung.",
-      },
-      {
-        title: "Antwortlogik: Quelle, Kontext, Frage",
-        body:
-          "Eine gute Companion-Antwort klingt nicht nur schön, sondern zeigt ihre Grundlage. Die Antwortlogik bleibt klar: Welche Profilquelle ist relevant? In welchem Kontext fragst du? Welche Unsicherheit bleibt? Welche nächste Reflexionsfrage ist hilfreich? Diese Struktur macht den Companion vertrauenswürdig, weil du siehst, worauf eine Aussage basiert.",
-      },
-      {
-        title: "Transparenz bei AI-Nutzung",
-        body:
-          "Astrakey macht sichtbar, wann AI beteiligt ist und wann nicht. Berechnung, Konvergenz und Systemlogik sind nicht dasselbe wie die spätere Formulierung. Die einfache Erklärung lautet: Die AI schreibt keine freien Wahrheiten über dich, sondern formuliert aus freigegebenen Profilinformationen, redaktionellen Leitplanken und deiner aktuellen Frage. Diese Trennung schützt vor Überhöhung.",
-      },
-      {
-        title: "Datenschutz und Datenminimierung im Gespräch",
-        body:
-          "Ein Companion kann schnell sehr persönliche Fragen erhalten. Deshalb gilt Datenminimierung auch im Gespräch: nur relevante Profilteile, nur freigegebene Journalnotizen, klare Zwecke, verständliche Lösch- und Exportwege. Gerade bei sensiblen spirituellen Daten erklärt Astrakey, wie aus Begleitung keine unnötige Datensammlung wird.",
-      },
-      {
-        title: "Beispielhafte Fragen an den Companion",
-        body:
-          "Beispiele zeigen, welche Fragen sinnvoll sind: Warum taucht mein Kernthema in mehreren Systemen auf? Wie kann ich diesen Tagesimpuls journaln? Welche Spannung zwischen Rückzug und Sichtbarkeit zeigt mein Profil? Wie lese ich ein Kapitel aus dem Vollprofil-Buch? Was ist nur Symbolsprache und was beruht auf berechneten Daten? Solche Beispiele machen den Nutzen konkret, ohne echte Nutzerprofile zu verwenden.",
-      },
-      {
-        title: "Orakel-Moment ohne Schicksalsdruck",
-        body:
-          "Ein optionaler Orakel- oder Kartenmoment kann inspirierend sein, wenn er sauber gerahmt ist. Astrakey behandelt ihn nicht als Vorhersage, sondern als Symbolfrage für den Moment: Worauf könnte ich heute achten? Was will gesehen werden? Welche Perspektive hilft mir, ruhiger zu handeln? Der Companion kann solche Motive erklären, aber niemals Druck, Angst oder Abhängigkeit erzeugen. Symbolische Impulse dürfen öffnen, aber nicht bestimmen.",
-      },
-      {
-        title: "Grenzen bei Gesundheit, Beziehung und Entscheidung",
-        body:
-          "Der Companion gibt keine medizinischen, therapeutischen, rechtlichen oder finanziellen Ratschläge. Bei Beziehungsthemen bleibt er respektvoll und trifft keine Aussagen über eine zweite Person, wenn deren Einwilligung fehlt. Bei psychischer Belastung benennt er klare Hilfsgrenzen. Diese Grenzen schaffen Vertrauen. Eine gute Antwort erkennt also auch, wann sie nicht antworten sollte.",
-      },
-      {
-        title: "Warum der Companion Premium-Wert erzeugt",
-        body:
-          "Der kostenlose Einstieg zeigt die Seelenkarte. Der Companion wird wertvoll, wenn du tiefer fragst, Beispiele wünschst, Journaling vertiefst oder lange Profilkapitel verständlich aufschlüsseln möchtest. Das ist ein natürlicher Premium-Nutzen: mehr Begleitung, mehr Kontext, mehr Ruhe. Premium heißt hier nicht Abhängigkeit, sondern Zugang zu besserem Kontext, längeren Gesprächsverläufen und verantwortungsvoller Qualitätssicherung.",
-      },
-    ],
-    graphics: [
-      {
-        src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
-        alt: "Funnel von Profilberechnung zu Companion-Antworten",
-        caption: "Der Companion antwortet nicht frei aus dem Nichts, sondern auf Basis berechneter Profilfakten, Konvergenz und freigegebener Kontexte.",
-      },
-      {
-        src: "/graphics/convergence/abb7-crosswalk-sankey.svg",
-        alt: "Crosswalk-Grafik für Übersetzung verschiedener Systemsprachen",
-        caption: "AI-Begleitung wird wertvoll, wenn sie unterschiedliche Systemsprachen in verständliche Reflexionsfragen übersetzt.",
-      },
-    ],
-    faq: [
-      { q: "Ist der Companion ein Orakel?", a: "Nein. Er kann symbolische Impulse erklären, aber er ist kein Vorhersagewerkzeug und keine Autorität über Entscheidungen." },
-      { q: "Kann der Companion mein ganzes Profil sehen?", a: "Er nutzt nur die Daten, die für die jeweilige Antwort nötig und freigegeben sind. Datenminimierung bleibt auch bei AI-Begleitung wichtig." },
-      { q: "Ersetzt der Companion Beratung oder Therapie?", a: "Nein. Er bietet Reflexionsfragen und Erklärungen zur Seelenkarte, aber keine medizinische, psychologische, therapeutische, rechtliche oder finanzielle Beratung." },
-      { q: "Warum ist der Companion nicht komplett kostenlos?", a: "Persönliche AI-Begleitung, sichere Infrastruktur, Redaktion, Qualitätssicherung und längere Profilkontexte verursachen laufende Kosten. Deshalb kann Tiefe Teil bezahlter Modelle sein." },
-      { q: "Woher weiß der Companion, worauf seine Antwort basiert?", a: "Er leitet Antworten aus berechneten Profilfakten, Konvergenzsignalen, freigegebenen Notizen und der aktuellen Frage ab. Die Grundlage bleibt nachvollziehbar." },
-      { q: "Kann ich sensible Themen mit dem Companion besprechen?", a: "Du kannst reflektierende Fragen stellen, aber der Companion ersetzt keine professionelle Hilfe. Bei Gesundheit, Krise, Recht, Finanzen oder akuter Belastung braucht es passende Fachstellen." },
-      { q: "Nutzt der Companion meine Journaltexte automatisch?", a: "Journaltexte werden nur genutzt, wenn sie für den Zweck relevant und freigegeben sind. Datenminimierung und Transparenz bleiben zentrale Produktregeln." },
-      { q: "Warum stärkt der Companion bezahlte Modelle?", a: "Weil längere Kontexte, individuellere Antworten, sichere AI-Infrastruktur, Qualitätssicherung und redaktionelle Leitplanken laufenden Aufwand erzeugen." },
-    ],
-    ctaTitle: "Öffne deine Seelenkarte und stelle später die Fragen, die wirklich zählen.",
-    ctaText: "Der Companion wird sinnvoll, sobald dein eigenes Profil die Grundlage bildet.",
-  },
-  profilVerfeinern: {
-    slug: "profil-verfeinern",
-    navKey: "profilVerfeinern",
-    title: "Profil verfeinern: Feedback, Export und Löschung verständlich erklärt",
-    seoTitle: "Astrakey Profil verfeinern - Feedback, Datenexport und Löschung",
-    seoDescription:
-      "Wie Nutzer ihr Astrakey-Profil durch Feedback, genauere Geburtsdaten und bewusste Einstellungen verfeinern und dabei Kontrolle über Export und Löschung behalten.",
-    eyebrow: "Daten · Kontrolle",
-    lead:
-      "Ein gutes Profil darf nicht starr sein. Astrakey zeigt, welche Aussagen sicher sind, was du später nachtragen kannst und wie du die Kontrolle über persönliche Inhalte behältst.",
-    answer:
-      "Profilverfeinerung bedeutet bei Astrakey: Du kannst Geburtszeit, Selbstauskunft, Resonanzfeedback und Einstellungen nachschärfen, damit die Seelenkarte genauer und nützlicher wird. Gleichzeitig bleiben Export, Löschung, Einwilligung und AI-Nutzung transparent.",
+  leistungen: {
+    key: "leistungen",
+    slug: "leistungen",
+    navKey: "leistungen",
+    title: "Ein Profil, das du berechnen, vergleichen, verstehen, vertiefen und anwenden kannst.",
+    seoTitle: "Astrakey Leistungen: ein Profil, viele Module",
+    seoDescription: "Vom Mehrsystem-Profil über Systemprofile, Seelenbuch und Be",
+    eyebrow: "Produktarchitektur",
+    lead: "Astrakey ist eine",
+    answer: "Astrakey ist eine",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
     image: "/images/hermetia/atmospheric-data-topography.png",
-    imageAlt: "Eine feine Datentopografie als Bild für Profilverfeinerung und Datenkontrolle",
-    sections: [
-      {
-        title: "Warum Profile nicht fertig vom Himmel fallen",
-        body:
-          "Viele Systeme starten mit Geburtsdaten, aber Menschen sind mehr als ein Datensatz. Astrakey kann sehr viel berechnen, doch Resonanz entsteht erst im Zusammenspiel mit echter Selbstauskunft. Wenn du später deine Geburtszeit findest, Interessen nachträgst, Tagesimpulse bewertest oder Journalmuster reflektierst, wird das Profil klarer. Das ist kein Fehler im ersten Profil, sondern Teil eines ehrlichen Produktverständnisses: Ein Profil darf wachsen, ohne den ersten Einstieg zu entwerten.",
-      },
-      {
-        title: "Datenqualität sichtbar machen",
-        body:
-          "Profilverfeinerung beginnt mit Transparenz. Du siehst, welche Angaben sicher sind, welche nur grob geschätzt wurden und welche Systeme besonders von Genauigkeit abhängen. Eine bekannte Geburtszeit verbessert andere Aussagen als ein ausgefüllter Fragebogen oder ein Journaling-Verlauf. Daraus entsteht eine Datenqualitätslogik: Was ist stabil? Was ist unsicher? Was würde sich verbessern, wenn ich freiwillig ergänze?",
-      },
-      {
-        title: "Resonanzfeedback statt blinder Korrektur",
-        body:
-          "Wenn du sagst, dass ein Satz nicht passt, ist das mehr als ein bloßes Nein. Interessant ist die Frage: War die Aussage zu stark, zu allgemein, zu früh oder fachlich falsch eingeordnet? Gutes Feedback verbessert Sprache, Gewichtung und künftige Reflexion. Gleichzeitig drängt Astrakey dich nicht, immer mehr intime Details preiszugeben. Verfeinerung bleibt freiwillig. Auch ein Widerspruch ist wertvoll, weil er hilft, die eigene Sprache genauer zu finden.",
-      },
-      {
-        title: "Sicherheitsstufen statt Absolutheit",
-        body:
-          "Nicht jede Aussage im Profil ist gleich belastbar. Astrakey arbeitet deshalb mit Sicherheitsstufen: hoch, wenn Eingaben vollständig und mehrere unabhängige Systemfamilien beteiligt sind; mittel, wenn gute Hinweise vorliegen, aber eine Quelle fehlt; niedrig, wenn ein Thema poetisch interessant, aber dünn belegt ist. Diese Differenzierung macht die Seelenkarte glaubwürdiger und verhindert, dass schöne Formulierungen wie endgültige Wahrheiten wirken.",
-      },
-      {
-        title: "Export als Vertrauenssignal",
-        body:
-          "Wer persönliche Inhalte speichert, kann sie auch wieder herausgeben. Ein Export von Profil, Journalnotizen oder wichtigen Einstellungen schafft Vertrauen, besonders bei sensiblen spirituellen Daten. Astrakey denkt Datenportabilität, Transparenz und Nutzersouveränität als Teil des Produkts. Export ist damit nicht nur ein Datenschutzthema, sondern auch ein Argument für bezahlte Tiefe.",
-      },
-      {
-        title: "Löschung und Einwilligung nicht verstecken",
-        body:
-          "Ein spirituelles Profil kann intime Aussagen über Weltbild, Identität und Beziehung enthalten. Deshalb ist Löschung einfach erklärbar. Ebenso wichtig ist die Einwilligung: Du siehst, welche Daten für Berechnung, AI-Formulierung, Journaling und Beziehungsauswertungen genutzt werden. Diese Klarheit reduziert Unsicherheit. Besonders bei Beziehungsprofilen gilt: Meine Daten sind nicht automatisch die Erlaubnis, eine zweite Person zu deuten.",
-      },
-      {
-        title: "AI-Nutzung und Profilverfeinerung",
-        body:
-          "Wenn AI bei Zusammenfassungen, Companion-Antworten oder Profiltexten hilft, erklärt Astrakey, welche verfeinerten Daten überhaupt in den Kontext gelangen. Eine gute Regel lautet: nur notwendige Informationen, nur für den angegebenen Zweck und nur mit sichtbarer Grenze. Profilverfeinerung macht AI nicht zur Blackbox, sondern zeigt genauer, warum eine Antwort besser wird.",
-      },
-      {
-        title: "Premium-Wert durch bessere Genauigkeit",
-        body:
-          "Profilverfeinerung kann bezahlten Mehrwert schaffen: genauere Ebenen, bessere Rückblicke, differenzierte Companion-Antworten, verfeinerte Beziehungsmuster und klarere Tagesimpulse. Die Grenze bleibt fair. Der kostenlose Einstieg zeigt Resonanz, bezahlte Modelle vertiefen und begleiten, ohne dich in Datenabgabe zu drängen. Der Kaufgrund ist nicht, dass vorher alles ungenau war, sondern dass mehr Kontext über Zeit mehr Nutzen schafft.",
-      },
-    ],
+    imageAlt: "Ein Profil, das du berechnen, vergleichen, verstehen, vertiefen und anwenden kannst. als Astrakey Markenbild",
+    sections: [],
     graphics: [
       {
         src: "/graphics/convergence/abb4-pipeline-einordnung.svg",
-        alt: "Pipeline von Eingaben zu Profilverfeinerung und besserer Einordnung",
-        caption: "Profilverfeinerung macht sichtbar, welche Eingaben eine Aussage verbessern und welche Unsicherheiten erhalten bleiben.",
+        alt: "Ein Profil, das du berechnen, vergleichen, verstehen, vertiefen und anwenden kannst. Grafik",
+        caption: "Die Grafik macht die Methode und die Belege hinter dem Profil sichtbar."
+      }
+    ],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  konvergenz: {
+    key: "konvergenz",
+    slug: "konvergenz-engine",
+    navKey: "konvergenz",
+    title: "Nicht das lauteste System gewinnt, sondern das Thema, das mehrfach wiederkehrt.",
+    seoTitle: "Astrakey Konvergen",
+    seoDescription: "Astrakey",
+    eyebrow: "USP und Methode",
+    lead: "Du musst keine Mathematik mögen, um das hier",
+    answer: "Du musst keine Mathematik mögen, um das hier",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/resonance-instrument.png",
+    imageAlt: "Nicht das lauteste System gewinnt, sondern das Thema, das mehrfach wiederkehrt. als Astrakey Markenbild",
+    sections: [],
+    graphics: [
+      {
+        src: "/graphics/convergence/abb1-familien-modell.svg",
+        alt: "Nicht das lauteste System gewinnt, sondern das Thema, das mehrfach wiederkehrt. Grafik",
+        caption: "Die Grafik macht die Methode und die Belege hinter dem Profil sichtbar."
+      },
+      {
+        src: "/graphics/convergence/abb3-daempfung-statt-summe.svg",
+        alt: "Nicht das lauteste System gewinnt, sondern das Thema, das mehrfach wiederkehrt. Grafik",
+        caption: "Die Grafik macht die Methode und die Belege hinter dem Profil sichtbar."
+      },
+      {
+        src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
+        alt: "Nicht das lauteste System gewinnt, sondern das Thema, das mehrfach wiederkehrt. Grafik",
+        caption: "Die Grafik macht die Methode und die Belege hinter dem Profil sichtbar."
       },
       {
         src: "/graphics/convergence/abb2-konvergenz-vs-staerke.svg",
-        alt: "Konvergenz versus Stärke als Grundlage für Sicherheitsstufen",
-        caption: "Eine Aussage kann stark wirken, aber erst Konvergenz und gute Datenqualität machen sie belastbarer.",
-      },
+        alt: "Nicht das lauteste System gewinnt, sondern das Thema, das mehrfach wiederkehrt. Grafik",
+        caption: "Die Grafik macht die Methode und die Belege hinter dem Profil sichtbar."
+      }
     ],
-    faq: [
-      { q: "Kann ich meine Geburtszeit später ergänzen?", a: "Ja. Eine spätere Geburtszeit kann bestimmte Systeme genauer machen. Astrakey zeigt transparent, welche Aussagen dadurch belastbarer werden." },
-      { q: "Kann ich mein Profil exportieren?", a: "Ja. Wichtige persönliche Inhalte sind exportierbar. Export ist bei Astrakey ein Vertrauens- und Datenschutzsignal." },
-      { q: "Kann ich Daten löschen lassen?", a: "Ja. Persönliche Profile, sensible Inhalte und Einwilligungen brauchen klare Löschwege. Rechtstexte und Produktlogik bilden das vor Launch verbindlich ab." },
-      { q: "Muss ich immer mehr Daten angeben?", a: "Nein. Verfeinerung bleibt freiwillig. Astrakey erklärt, was zusätzliche Angaben verbessern, ohne Druck zu erzeugen." },
-      { q: "Was bedeutet Datenqualität in Astrakey?", a: "Datenqualität beschreibt, wie vollständig und belastbar die Eingaben sind. Eine genaue Geburtszeit, gute Selbstauskunft und freiwilliges Feedback können unterschiedliche Profilbereiche verbessern." },
-      { q: "Werden Aussagen nach Sicherheit gekennzeichnet?", a: "Astrakey macht Unsicherheit sichtbar: starke Konvergenz, vollständige Daten und mehrere Systemfamilien werden anders gelesen als dünn belegte Hinweise." },
-      { q: "Verbessert Feedback die AI-Antworten?", a: "Feedback kann helfen, Kontext und Sprache besser einzuordnen. AI nutzt dabei nur notwendige und freigegebene Informationen." },
-      { q: "Ist Profilverfeinerung nur für Premium sinnvoll?", a: "Nein. Schon kostenloses Feedback kann Orientierung schaffen. Premium wird sinnvoll, wenn Verlauf, Rückblicke, Companion, Journaling und tiefere Ebenen regelmäßig genutzt werden." },
-    ],
-    ctaTitle: "Starte mit dem, was du weißt, und verfeinere dein Profil später.",
-    ctaText: "Die erste Seelenkarte funktioniert als Einstieg. Mehr Genauigkeit kann wachsen, wenn du sie willst.",
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
   },
-  beziehungen: {
-    slug: "beziehungen",
-    navKey: "beziehungen",
-    title: "Beziehungen verstehen: Resonanz, Reibung und Entwicklung",
-    seoTitle: "Beziehungsauswertung mit Synastrie und Composite — Astrakey erklärt",
-    seoDescription:
-      "Wie Astrakey Beziehungsauswertungen denkt: Synastrie, Composite, Harmonie, Reibung, Entwicklung und klare Einwilligung.",
-    eyebrow: "Beziehungen · Consent",
-    lead:
-      "Beziehungsprofile sind mächtig und sensibel. Astrakey behandelt sie deshalb nicht als Spielerei, sondern als zustimmungspflichtige Reflexion über zwei Menschen.",
-    answer:
-      "Eine Beziehungsauswertung verbindet zwei Profile und fragt: Wo entsteht Resonanz, wo Reibung, wo Entwicklung? Astrakey nutzt dafür berechnete Synastrie- und Composite-Logik, aber nur mit klarer Einwilligung der betroffenen Person.",
-    image: "/images/hermetia/garden-of-agreements.png",
-    imageAlt: "Zwei Gärten, die sich zu einem gemeinsamen Beziehungsraum überlagern",
-    sections: [
-      {
-        title: "Synastrie und Composite einfach erklärt",
-        body:
-          "Synastrie vergleicht zwei Profile miteinander: Welche Punkte berühren sich, wo ergänzen sich Muster, wo entsteht Spannung? Composite betrachtet die Beziehung als eigenes drittes Feld. Beide Blickwinkel sind wertvoll, aber sie dürfen nicht als Urteil über richtig oder falsch missverstanden werden. Astrakey nutzt diese Logik als Reflexionssprache: Sie kann zeigen, wo Nähe leicht entsteht, wo zwei Rhythmen aneinander reiben und welche Themen eine Beziehung bewusst machen kann.",
-      },
-      {
-        title: "Warum Einwilligung unverzichtbar ist",
-        body:
-          "Eine Beziehungsauswertung verarbeitet sensible Aussagen über eine zweite Person. Deshalb reicht es nicht, einfach Daten einzutragen. Vor echter Nutzung braucht die betroffene Person eine eigene, informierte Einwilligung oder einen rechtlich sauberen Guardian-Fall. Das ist kein Hindernis, sondern Respekt. Vertrauen ist hier wichtiger als schnelle Conversion: Wer andere heimlich auswerten will, ist nicht der richtige Nutzer für diese Funktion.",
-      },
-      {
-        title: "Welche Beziehungsfragen Astrakey beantworten kann",
-        body:
-          "Astrakey kann Fragen strukturieren, ohne die Beziehung zu bewerten: Wo sprechen wir eine ähnliche Sprache? Wo brauchen wir Übersetzung? Welche Dynamik fühlt sich wiederkehrend an? Wo entsteht Anziehung, aber auch Überforderung? Welche Themen gehören zu mir, welche zur anderen Person und welche entstehen erst im gemeinsamen Feld? Diese Fragen sind für Partnerschaft, Freundschaft, Familie, kreative Zusammenarbeit und bewusste Trennung gleichermaßen relevant.",
-      },
-      {
-        title: "Resonanz, Reibung und Entwicklungsfeld",
-        body:
-          "Eine gute Beziehungsauswertung braucht mehr als Harmoniepunkte. Zu viel Übereinstimmung kann beruhigen, aber auch blinde Flecken erzeugen. Reibung kann anstrengend sein, aber Entwicklung ermöglichen. Astrakey unterscheidet deshalb drei Ebenen: Resonanz als Gefühl von Verstandenwerden, Reibung als produktive Differenz und Entwicklungsfeld als Frage, die zwei Menschen gemeinsam reifer machen kann. Genau daraus entsteht eine differenzierte, nicht wertende Beziehungssprache.",
-      },
-      {
-        title: "Datenschutz bei Profilen anderer Menschen",
-        body:
-          "Beziehungsprofile sind datenschutzrechtlich besonders sensibel, weil sie Daten und Ableitungen über mindestens zwei Personen verbinden. Astrakey erklärt, welche Daten benötigt werden, wer sie eingibt, wer Zugriff hat, wie Einwilligung dokumentiert wird und wie Löschung funktioniert. Gerade Geburtsdaten, spirituelle Ableitungen und Beziehungsmuster können intime Rückschlüsse ermöglichen. Deshalb gehört Datenschutz nicht nur in den Footer, sondern direkt in die Beziehungsseite.",
-      },
-      {
-        title: "Warum Beziehungsauswertungen Premium-Tiefe schaffen",
-        body:
-          "Beziehungsauswertungen sind ein natürlicher Premium-Bereich, weil sie mehr Rechenlogik, mehr Texttiefe, Consent-Flows und mehr Verantwortung brauchen als ein einzelnes Profil. Der Wert liegt nicht in einem schnellen Kompatibilitätsurteil, sondern in einer lesbaren gemeinsamen Landkarte: Dynamiken, Spannungsfelder, Gesprächsimpulse, Journaling-Fragen und wiederkehrende Themen. So wird nachvollziehbar, warum diese Tiefe bezahlten Raum braucht.",
-      },
-      {
-        title: "Was Astrakey nicht verspricht",
-        body:
-          "Astrakey sagt nicht, ob eine Beziehung halten wird. Es bewertet keine Menschen und ersetzt keine Paarberatung. Die Auswertung gibt Sprache für Dynamiken: Was fühlt sich leicht an? Wo entsteht Reibung? Welche Entwicklung lädt die Beziehung ein? Sie ist keine Diagnose, keine Schuldzuweisung und keine Entscheidung über Trennung, Bindung oder Zukunft. Du bleibst verantwortlich, und bei Gewalt, Krise oder psychischer Belastung braucht es professionelle Hilfe.",
-      },
-    ],
+  systeme: {
+    key: "systeme",
+    slug: "systeme",
+    navKey: "systeme",
+    title: "Jedes System sieht einen Teil von dir. Gemeinsam werden sie belastbar.",
+    seoTitle: "Astrakey Systeme: viele Perspektiven, ein Profil",
+    seoDescription: "Astrologie, Human Design, Gene Keys, Numerologie, BaZi, Enneagramm und mehr. Erkunde jedes System ein",
+    eyebrow: "Systeme und Gesamtprofil",
+    lead: "Astrakey nut",
+    answer: "Astrakey nut",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/celestial-layer-orbits.png",
+    imageAlt: "Jedes System sieht einen Teil von dir. Gemeinsam werden sie belastbar. als Astrakey Markenbild",
+    sections: [],
     graphics: [
       {
-        src: "/graphics/convergence/abb6-beispiel-radar.svg",
-        alt: "Radar-Grafik für Resonanz, Reibung und Beziehungsthemen",
-        caption: "Beziehungsprofile zeigen nicht nur Harmonie, sondern mehrere Dimensionen wie Resonanz, Spannung und Entwicklung.",
+        src: "/graphics/convergence/abb1-familien-modell.svg",
+        alt: "Jedes System sieht einen Teil von dir. Gemeinsam werden sie belastbar. Grafik",
+        caption: "Die Grafik macht die Methode und die Belege hinter dem Profil sichtbar."
+      }
+    ],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  methodik: {
+    key: "methodik",
+    slug: "so-entsteht-dein-profil",
+    navKey: "methodik",
+    title: "Dein Profil entsteht in drei getrennten Schritten.",
+    seoTitle: "So entsteht dein Astrakey-Profil: drei Schritte",
+    seoDescription: "Berechnen, vergleichen, formulieren. Astrakey trennt diese Schritte. Dein Profil bleibt nachvoll",
+    eyebrow: "Methode",
+    lead: "Astrakey berechnet, vergleicht und formuliert in klar getrennten Phasen. Diese Trennung ist der Grund, warum dein Profil erklärbar bleibt. Du kannst bei jeder wichtigen Aussage nachsehen, welche Systeme sie tragen und wo Unsicherheit besteht.",
+    answer: "AI ist die Sprachebene, nicht die Quelle der Wahrheit. Jede starke Aussage",
+    trustline: "AI ist die Sprachebene, nicht die Quelle der Wahrheit. Jede starke Aussage",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/birth-moment-meridian.png",
+    imageAlt: "Dein Profil entsteht in drei getrennten Schritten. als Astrakey Markenbild",
+    sections: [],
+    graphics: [
+      {
+        src: "/graphics/convergence/abb4-pipeline-einordnung.svg",
+        alt: "Dein Profil entsteht in drei getrennten Schritten. Grafik",
+        caption: "Die Grafik macht die Methode und die Belege hinter dem Profil sichtbar."
       },
       {
-        src: "/graphics/convergence/abb9-deine-innere-spannung.svg",
-        alt: "Innere Spannung als Grundlage für Beziehungsdynamik",
-        caption: "Manche Reibung entsteht nicht zwischen zwei Menschen, sondern aus inneren Spannungsfeldern, die in Beziehung sichtbar werden.",
-      },
+        src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
+        alt: "Dein Profil entsteht in drei getrennten Schritten. Grafik",
+        caption: "Die Grafik macht die Methode und die Belege hinter dem Profil sichtbar."
+      }
     ],
-    faq: [
-      { q: "Kann ich einfach die Daten meines Partners eingeben?", a: "Für echte Kundennutzung braucht die zweite Person eine eigene informierte Einwilligung. Astrakey ist hier bewusst streng." },
-      { q: "Sagt Astrakey, ob wir zusammenpassen?", a: "Nein. Astrakey zeigt Resonanzen, Spannungen und Entwicklungsthemen, aber keine Beziehungsgarantie." },
-      { q: "Ist das therapeutische Beratung?", a: "Nein. Beziehungsauswertungen sind Reflexionsimpulse und ersetzen keine professionelle Beratung." },
-      { q: "Was ist der Unterschied zwischen Synastrie und Composite?", a: "Synastrie vergleicht zwei Profile direkt miteinander. Composite betrachtet die Beziehung als gemeinsames Feld. Astrakey nutzt beide Perspektiven vorsichtig und nicht als Urteil." },
-      { q: "Warum braucht Astrakey Consent für Beziehungsprofile?", a: "Weil eine Auswertung sensible Aussagen über eine zweite Person ableiten kann. Informierte Einwilligung schützt Privatsphäre, Vertrauen und die rechtliche Grundlage." },
-      { q: "Kann Astrakey Beziehungskonflikte lösen?", a: "Nein. Astrakey kann Sprache, Fragen und Muster anbieten. Konfliktlösung, Beratung oder Therapie ersetzt die Plattform nicht." },
-      { q: "Wann lohnt sich Premium für Beziehungen?", a: "Premium lohnt sich, wenn beide Personen bewusst mit einer Beziehungsauswertung arbeiten möchten: mit tieferer Analyse, Gesprächsimpulsen, Journaling und klar dokumentierter Einwilligung." },
-    ],
-    ctaTitle: "Beginne zuerst mit deinem eigenen Profil.",
-    ctaText: "Deine Beziehungsmuster werden verständlicher, wenn du deine eigene Seelenkarte kennst.",
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
   },
+  profilBuch: {
+    key: "profilBuch",
+    slug: "vollprofil-buch",
+    navKey: "profilBuch",
+    title: "Dein Seelenbuch. Ein erklärbarer Begleiter über dich selbst.",
+    seoTitle: "Seelenbuch: dein erklärbares Profil als Buch",
+    seoDescription: "Das Seelenbuch ist ein mehrhundertseitiger, erklärbarer Begleiter über dich, mit Kernthemen, Spannungsfeldern, Gaben und sichtbaren Systembelegen.",
+    eyebrow: "Premium · Seelenbuch",
+    lead: "Das Seelenbuch ist die ausführlichste Form deines Astrakey-Profils. Kein kur",
+    answer: "Das Seelenbuch ist die ausführlichste Form deines Astrakey-Profils. Kein kur",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/library-of-self-profile.png",
+    imageAlt: "Dein Seelenbuch. Ein erklärbarer Begleiter über dich selbst. als Astrakey Markenbild",
+    sections: [],
+    graphics: [
+      {
+        src: "/graphics/convergence/abb8-deine-kernthemen.svg",
+        alt: "Dein Seelenbuch. Ein erklärbarer Begleiter über dich selbst. Grafik",
+        caption: "Die Grafik macht die Methode und die Belege hinter dem Profil sichtbar."
+      }
+    ],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  beziehungen: {
+    key: "beziehungen",
+    slug: "beziehungen",
+    navKey: "beziehungen",
+    title: "beziehungen",
+    seoTitle: "Be",
+    seoDescription: "Astrakey verbindet",
+    eyebrow: "Kernmodul · Be",
+    lead: "",
+    answer: "Astrakey verbindet mehrere Systeme zu einem erklärbaren persönlichen Profil.",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/garden-of-agreements.png",
+    imageAlt: "beziehungen als Astrakey Markenbild",
+    sections: [],
+    graphics: [
+      {
+        src: "/graphics/convergence/abb9-deine-innere-spannung.svg",
+        alt: "beziehungen Grafik",
+        caption: "Die Grafik macht die Methode und die Belege hinter dem Profil sichtbar."
+      }
+    ],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  companion: {
+    key: "companion",
+    slug: "companion",
+    navKey: "companion",
+    title: "Der Companion. Dein Begleiter, der dein Profil erklärt. Kein Orakel.",
+    seoTitle: "Companion: dein AI-Begleiter fürs Profil",
+    seoDescription: "Astrakey Companion erklärt dein Profil aus Quelle, Kontext und Frage. Er nut",
+    eyebrow: "Premium · Begleitung",
+    lead: "Der Companion, dein Begleiter, hilft dir, dein Mehrsystem-Profil",
+    answer: "Der Companion, dein Begleiter, hilft dir, dein Mehrsystem-Profil",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/resonance-instrument.png",
+    imageAlt: "Der Companion. Dein Begleiter, der dein Profil erklärt. Kein Orakel. als Astrakey Markenbild",
+    sections: [],
+    graphics: [
+      {
+        src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
+        alt: "Der Companion. Dein Begleiter, der dein Profil erklärt. Kein Orakel. Grafik",
+        caption: "Die Grafik macht die Methode und die Belege hinter dem Profil sichtbar."
+      }
+    ],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  tagesimpulse: {
+    key: "tagesimpulse",
+    slug: "tagesimpulse",
+    navKey: "tagesimpulse",
+    title: "Ein Tagesimpuls aus deinem Profil. Nicht aus deinem Stern",
+    seoTitle: "Tagesimpulse: dein Profil im Alltag",
+    seoDescription: "Astrakey-Tagesimpulse kommen aus deinem persönlichen Profil und aktuellem Timing, nicht aus deinem Stern",
+    eyebrow: "Begleitung im Alltag",
+    lead: "",
+    answer: "Astrakey verbindet mehrere Systeme zu einem erklärbaren persönlichen Profil.",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/dawn-clock-of-becoming.png",
+    imageAlt: "Ein Tagesimpuls aus deinem Profil. Nicht aus deinem Stern als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  journaling: {
+    key: "journaling",
+    slug: "journaling",
+    navKey: "journaling",
+    title: "Dein Profil sagt etwas. Hier antwortest du.",
+    seoTitle: "Journaling: dein Profil im Alltag prüfen",
+    seoDescription: "Astrakey-Journaling erdet dein Profil im Alltag. Du prüfst Aussagen, hältst Beobachtungen fest und siehst Muster über Wochen. Noti",
+    eyebrow: "Reflexionstagebuch und Feedback",
+    lead: "Ein Profil kann eine starke erste Resonan",
+    answer: "Ein Profil kann eine starke erste Resonan",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/library-of-self-profile.png",
+    imageAlt: "Dein Profil sagt etwas. Hier antwortest du. als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  profilVerfeinern: {
+    key: "profilVerfeinern",
+    slug: "profil-verfeinern",
+    navKey: "profilVerfeinern",
+    title: "Ein gutes Profil bleibt korrigierbar.",
+    seoTitle: "Profil verfeinern: Qualität und Kontrolle",
+    seoDescription: "Bei Astrakey ist dein Profil korrigierbar. Datenqualität ist sichtbar, Unsicherheit markiert, neue Angaben fließen ein. Export und Löschung jeder",
+    eyebrow: "Qualität und Kontrolle",
+    lead: "Astrakey tut nicht so, als wäre die erste Aussage endgültig. Wenn Geburts",
+    answer: "Astrakey tut nicht so, als wäre die erste Aussage endgültig. Wenn Geburts",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/atmospheric-data-topography.png",
+    imageAlt: "Ein gutes Profil bleibt korrigierbar. als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  seelenkarte: {
+    key: "seelenkarte",
+    slug: "seelenkarte",
+    navKey: "seelenkarte",
+    title: "Die Seelenkarte ist die Oberfläche. Das Profil ist der Kern.",
+    seoTitle: "Seelenkarte: die Oberfläche deines Profils",
+    seoDescription: "Die Seelenkarte ist eine schöne Oberfläche deines Astrakey-Profils und ein guter Einstieg. Der eigentliche Wert kommt aus dem Mehrsystem-Profil dahinter.",
+    eyebrow: "Darstellungsmodul",
+    lead: "Die Seelenkarte ist eine visuelle und sprachliche Oberfläche deines Astrakey-Profils. Sie ist ein guter Einstieg, weil sie erste Kernthemen schnell sichtbar macht. Ihr Wert kommt aber nicht aus der Ästhetik, sondern aus dem Mehrsystem-Profil dahinter, das mehrere Systeme berechnet und vergleicht.",
+    answer: "Ein schöner Einstieg, nicht der gan",
+    trustline: "Ein schöner Einstieg, nicht der gan",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/atmospheric-data-topography.png",
+    imageAlt: "Die Seelenkarte ist die Oberfläche. Das Profil ist der Kern. als Astrakey Markenbild",
+    sections: [],
+    graphics: [
+      {
+        src: "/graphics/convergence/abb8-deine-kernthemen.svg",
+        alt: "Die Seelenkarte ist die Oberfläche. Das Profil ist der Kern. Grafik",
+        caption: "Die Grafik macht die Methode und die Belege hinter dem Profil sichtbar."
+      }
+    ],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  onboarding: {
+    key: "onboarding",
+    slug: "profil-starten",
+    navKey: "onboarding",
+    title: "Berechne dein Profil und sieh, was",
+    seoTitle: "Profil kostenlos starten bei Astrakey",
+    seoDescription: "Starte dein erklärbares Mehrsystem-Profil kostenlos. Sieh, welche Daten wofür genut",
+    eyebrow: "Profil starten",
+    lead: "",
+    answer: "Astrakey verbindet mehrere Systeme zu einem erklärbaren persönlichen Profil.",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/birth-moment-meridian.png",
+    imageAlt: "Berechne dein Profil und sieh, was als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  preise: {
+    key: "preise",
+    slug: "preise",
+    navKey: "preise",
+    title: "Du",
+    seoTitle: "Astrakey Preise: Wert der Tiefe, nicht Verknappung",
+    seoDescription: "Astrakey ist kostenlos erlebbar. Premium öffnet mehr Systeme, das Seelenbuch und Begleitung. Du",
+    eyebrow: "Preise",
+    lead: "",
+    answer: "Astrakey verbindet mehrere Systeme zu einem erklärbaren persönlichen Profil.",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/library-of-self-profile.png",
+    imageAlt: "Du als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Wähle die Tiefe, die zu deinem Profil passt.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  freePremium: {
+    key: "freePremium",
+    slug: "kostenlos-vs-premium",
+    navKey: "freePremium",
+    title: "Resonan",
+    seoTitle: "Astrakey: kostenlos vs Premium im Vergleich",
+    seoDescription: "Kostenlos prüfst du Resonan",
+    eyebrow: "Kostenlos vs Premium",
+    lead: "",
+    answer: "Astrakey verbindet mehrere Systeme zu einem erklärbaren persönlichen Profil.",
+    trustline: "",
+    primaryCta: "Premium ansehen",
+    primaryCtaHref: "/preise/",
+    secondaryCta: "Profil kostenlos starten",
+    secondaryCtaHref: "start",
+    image: "/images/hermetia/library-of-self-profile.png",
+    imageAlt: "Resonan als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  anwendungsfaelle: {
+    key: "anwendungsfaelle",
+    slug: "anwendungsfaelle",
+    navKey: "anwendungsfaelle",
+    title: "Für alle, denen eine ein",
+    seoTitle: "Anwendungsfälle: wofür du Astrakey nut",
+    seoDescription: "Selbstverständnis, Beruf, Be",
+    eyebrow: "Anwendungsfälle",
+    lead: "",
+    answer: "Astrakey verbindet mehrere Systeme zu einem erklärbaren persönlichen Profil.",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/garden-of-agreements.png",
+    imageAlt: "Für alle, denen eine ein als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  datenSicherheit: {
+    key: "datenSicherheit",
+    slug: "daten-und-sicherheit",
+    navKey: "datenSicherheit",
+    title: "Je persönlicher das Profil, desto klarer die Kontrolle.",
+    seoTitle: "Astrakey: Daten und Sicherheit",
+    seoDescription: "Welche Daten Astrakey nut",
+    eyebrow: "Vertrauen und Kontrolle",
+    lead: "Astrakey verbindet viele Systeme",
+    answer: "Astrakey verbindet viele Systeme",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/atmospheric-data-topography.png",
+    imageAlt: "Je persönlicher das Profil, desto klarer die Kontrolle. als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  ki: {
+    key: "ki",
+    slug: "ki-transparenz",
+    navKey: "ki",
+    title: "ki",
+    seoTitle: "Astrakey: AI-Transparen",
+    seoDescription: "AI formuliert deine Deutung verständlich, sie entscheidet nicht über die Wahrheit. So trennt Astrakey Berechnung, Konvergen",
+    eyebrow: "AI-Transparen",
+    lead: "",
+    answer: "Astrakey verbindet mehrere Systeme zu einem erklärbaren persönlichen Profil.",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/resonance-instrument.png",
+    imageAlt: "ki als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  about: {
+    key: "about",
+    slug: "ueber-hermetia",
+    navKey: "about",
+    title: "Viele Systeme sehen wenig. Zusammen sehen sie mehr.",
+    seoTitle: "Über Astrakey: die Idee und das Warum",
+    seoDescription: "Astrakey verbindet viele begren",
+    eyebrow: "Über Astrakey",
+    lead: "Astrakey entsteht aus einer einfachen Beobachtung. Jedes spirituelle oder psychologische System kann berühren, aber jedes bleibt ein Ausschnitt. Astrakey verbindet diese Perspektiven ruhig, sorgfältig und erklärbar, damit du dich aus mehreren Blickwinkeln verstehen kannst, ohne dich in ein Etikett",
+    answer: "Astrakey entsteht aus einer einfachen Beobachtung. Jedes spirituelle oder psychologische System kann berühren, aber jedes bleibt ein Ausschnitt. Astrakey verbindet diese Perspektiven ruhig, sorgfältig und erklärbar, damit du dich aus mehreren Blickwinkeln verstehen kannst, ohne dich in ein Etikett",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/alchemical-listening-room.png",
+    imageAlt: "Viele Systeme sehen wenig. Zusammen sehen sie mehr. als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  faq: {
+    key: "faq",
+    slug: "faq",
+    navKey: "faq",
+    title: "Klare Antworten",
+    seoTitle: "Astrakey: häufige Fragen und Antworten",
+    seoDescription: "Antworten",
+    eyebrow: "Häufige Fragen",
+    lead: "",
+    answer: "Astrakey verbindet mehrere Systeme zu einem erklärbaren persönlichen Profil.",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/library-of-self-profile.png",
+    imageAlt: "Klare Antworten als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  wissen: {
+    key: "wissen",
+    slug: "wissen",
+    navKey: "wissen",
+    title: "Verstehe Systeme ein",
+    seoTitle: "Wissen: Systeme verstehen und verbinden",
+    seoDescription: "Der Astrakey Wissensbereich erklärt ein",
+    eyebrow: "Ratgeber und Lernumgebung",
+    lead: "",
+    answer: "Astrakey verbindet mehrere Systeme zu einem erklärbaren persönlichen Profil.",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/library-of-self-profile.png",
+    imageAlt: "Verstehe Systeme ein als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  glossar: {
+    key: "glossar",
+    slug: "glossar",
+    navKey: "glossar",
+    title: "Klare Begriffe statt beliebiger Vermischung.",
+    seoTitle: "Glossar: Astrakey Begriffe klar erklärt",
+    seoDescription: "Das Astrakey Glossar erklärt Mehrsystem-Profil, Konvergen",
+    eyebrow: "Begriffe und Klarheit",
+    lead: "Astrakey verbindet viele Systeme. Damit das nachvoll",
+    answer: "Astrakey verbindet viele Systeme. Damit das nachvoll",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/library-of-self-profile.png",
+    imageAlt: "Klare Begriffe statt beliebiger Vermischung. als Astrakey Markenbild",
+    sections: [
+      {
+        title: "Warum Astrakey ein eigenes Glossar braucht",
+        body: "Spirituelle und psychologische Systeme nut"
+      }
+    ],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  vergleiche: {
+    key: "vergleiche",
+    slug: "vergleiche",
+    navKey: "vergleiche",
+    title: "Nicht welches System recht hat. Was jedes sieht.",
+    seoTitle: "Vergleiche: was jedes System wirklich sieht",
+    seoDescription: "Astrakey Systemvergleiche",
+    eyebrow: "Systeme im Vergleich",
+    lead: "Menschen suchen oft nach Unterschieden",
+    answer: "Menschen suchen oft nach Unterschieden",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/resonance-instrument.png",
+    imageAlt: "Nicht welches System recht hat. Was jedes sieht. als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  sprachen: {
+    key: "sprachen",
+    slug: "sprachen",
+    navKey: "sprachen",
+    title: "Dein Profil in deiner Sprache. Sprache ist Teil der Qualität.",
+    seoTitle: "Sprachen: Astrakey in 24 EU-Sprachen",
+    seoDescription: "Astrakey ist in 24 EU-Sprachen verfügbar. Sprache ist Teil der Profilqualität, mit klarem Hinweis, welche Inhalte redaktionell geprüft sind.",
+    eyebrow: "Sprache und Qualität",
+    lead: "Astrakey ist in 24 EU-Sprachen verfügbar. Sprache ist für uns kein nachträglicher Anstrich, sondern Teil der Profilqualität. Ein Profil aus vielen Systemen enthält feine Nuancen, Gren",
+    answer: "Astrakey ist in 24 EU-Sprachen verfügbar. Sprache ist für uns kein nachträglicher Anstrich, sondern Teil der Profilqualität. Ein Profil aus vielen Systemen enthält feine Nuancen, Gren",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/celestial-layer-orbits.png",
+    imageAlt: "Dein Profil in deiner Sprache. Sprache ist Teil der Qualität. als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  },
+  freigaben: {
+    key: "freigaben",
+    slug: "freigaben",
+    navKey: "freigaben",
+    title: "Klare Gates für Daten, AI, IP und Recht.",
+    seoTitle: "Freigaben: Datenschut",
+    seoDescription: "Astrakey",
+    eyebrow: "Verantwortung und Gates",
+    lead: "Astrakey verbindet viele Systeme, sensible Daten, AI und Be",
+    answer: "Astrakey verbindet viele Systeme, sensible Daten, AI und Be",
+    trustline: "",
+    primaryCta: "Profil kostenlos starten",
+    secondaryCta: "",
+    image: "/images/hermetia/garden-of-agreements.png",
+    imageAlt: "Klare Gates für Daten, AI, IP und Recht. als Astrakey Markenbild",
+    sections: [],
+    graphics: [],
+    faq: [],
+    ctaTitle: "Starte mit deinem eigenen Astrakey-Profil.",
+    ctaText: "Beginne kostenlos, prüfe Resonanz und entscheide später in Ruhe, ob du mehr Tiefe nutzen möchtest."
+  }
 } satisfies Record<string, ContentPage>;
 
-const enPages: Record<keyof typeof dePages, ContentPage> = Object.fromEntries(
-  Object.entries(dePages).map(([key, page]) => [
-    key,
-    {
-      ...page,
-      title: page.title,
-      seoTitle: page.seoTitle,
-      seoDescription: page.seoDescription,
-      eyebrow: page.eyebrow,
-      lead: page.lead,
-      answer: page.answer,
-      ctaTitle: page.ctaTitle,
-      ctaText: page.ctaText,
-    },
-  ]),
-) as Record<keyof typeof dePages, ContentPage>;
-
-enPages.beziehungen = {
-  ...dePages.beziehungen,
-  title: "Understanding relationships: resonance, friction and growth",
-  seoTitle: "Relationship readings with synastry and composite — Astrakey explains",
-  seoDescription:
-    "How Astrakey frames relationship readings: synastry, composite, harmony, friction, growth and clear consent.",
-  eyebrow: "Relationships · Consent",
-  lead:
-    "Relationship profiles are powerful and sensitive. Astrakey therefore does not treat them as a game, but as consent-based reflection about two people.",
-  answer:
-    "A relationship reading connects two profiles and asks: where does resonance arise, where does friction appear and where can growth happen? Astrakey uses calculated synastry and composite logic, but only with clear consent from the person concerned.",
-  imageAlt: "Two gardens overlapping into a shared relationship space",
-  sections: [
-    {
-      title: "Synastry and composite, explained simply",
-      body:
-        "Synastry compares two profiles directly: which points touch, where do patterns complement each other and where does tension arise? Composite looks at the relationship as its own third field. Both perspectives are valuable, but they must not be misunderstood as a verdict about right or wrong. Astrakey uses this logic as reflection language: it can show where closeness comes easily, where two rhythms rub against each other and which themes a relationship can make conscious.",
-    },
-    {
-      title: "Why consent is essential",
-      body:
-        "A relationship reading processes sensitive statements about a second person. It is therefore not enough to simply enter data. Real use needs the affected person's own informed consent or a legally clean guardian case. This is not an obstacle, but respect. Trust matters more here than quick conversion: someone who wants to read others secretly is not the right user for this feature.",
-    },
-    {
-      title: "Which relationship questions Astrakey can answer",
-      body:
-        "Astrakey can structure questions without judging the relationship: where do we speak a similar language, where do we need translation, which dynamic feels recurring, where is there attraction but also overwhelm, which themes belong to me, which to the other person and which emerge only in the shared field? These questions are relevant for partnership, friendship, family, creative collaboration and conscious separation alike.",
-    },
-    {
-      title: "Resonance, friction and growth field",
-      body:
-        "A good relationship reading needs more than harmony points. Too much agreement can soothe, but can also create blind spots. Friction can be exhausting, but it can make growth possible. Astrakey therefore distinguishes three layers: resonance as the feeling of being understood, friction as productive difference and growth field as a question that can help two people mature together. This creates a nuanced, non-judgmental relationship language.",
-    },
-    {
-      title: "Data protection for profiles of other people",
-      body:
-        "Relationship profiles are especially sensitive because they connect data and interpretations about at least two people. Astrakey explains which data is needed, who enters it, who has access, how consent is documented and how deletion works. Birth data, spiritual derivations and relationship patterns can allow intimate inferences. That is why privacy is part of the relationship experience, not a footnote.",
-    },
-    {
-      title: "Why relationship readings create premium depth",
-      body:
-        "Relationship readings create natural premium depth because they need more calculation logic, more textual nuance, consent flows and more responsibility than a single profile. The value is not a quick compatibility verdict, but a readable shared map: dynamics, fields of tension, conversation impulses, journaling questions and recurring themes. You see where the deeper work begins and why it needs more space.",
-    },
-    {
-      title: "What Astrakey does not promise",
-      body:
-        "Astrakey does not say whether a relationship will last. It does not judge people and does not replace couples counselling. The reading gives language for dynamics: what feels easy, where friction appears and which growth the relationship invites. It is not a diagnosis, blame assignment or decision about separation, commitment or the future. You remain responsible, and violence, crisis or psychological strain require professional support.",
-    },
-  ],
-  graphics: [
-    {
-      src: "/graphics/convergence/abb6-beispiel-radar.svg",
-      alt: "Radar graphic for resonance, friction and relationship themes",
-      caption:
-        "Relationship profiles show more than harmony: resonance, tension, growth and the space between them.",
-    },
-    {
-      src: "/graphics/convergence/abb9-deine-innere-spannung.svg",
-      alt: "Inner tension as a basis for relationship dynamics",
-      caption:
-        "Some friction does not arise between two people, but from inner fields of tension that become visible in relationship.",
-    },
-  ],
-  faq: [
-    {
-      q: "Can I simply enter my partner's data?",
-      a: "For real customer use, the second person needs their own informed consent. Astrakey is intentionally strict here.",
-    },
-    {
-      q: "Does Astrakey say whether we are compatible?",
-      a: "No. Astrakey shows resonance, tensions and growth themes, but no relationship guarantee.",
-    },
-    {
-      q: "Is this therapeutic counselling?",
-      a: "No. Relationship readings are reflection impulses and do not replace professional counselling.",
-    },
-    {
-      q: "What is the difference between synastry and composite?",
-      a: "Synastry compares two profiles directly. Composite looks at the relationship as a shared field. Astrakey uses both perspectives carefully and not as a verdict.",
-    },
-    {
-      q: "Why does Astrakey need consent for relationship profiles?",
-      a: "Because a reading can derive sensitive statements about a second person. Informed consent protects privacy, trust and the legal foundation.",
-    },
-    {
-      q: "Can Astrakey solve relationship conflicts?",
-      a: "No. Astrakey can offer language, questions and patterns. It does not replace conflict resolution, counselling or therapy.",
-    },
-    {
-      q: "When is premium worth it for relationships?",
-      a: "Premium is worthwhile when both people consciously want to work with a relationship reading: with deeper analysis, conversation impulses, journaling and clearly documented consent.",
-    },
-  ],
-  ctaTitle: "Start with your own profile first.",
-  ctaText: "Your relationship patterns become easier to understand when you know your own soul map.",
-};
-
-enPages.companion = {
-  ...dePages.companion,
-  title: "Astrakey Companion: a calm AI guide for your soul map",
-  seoTitle: "Astrakey Companion - AI guide for profile questions and reflection",
-  seoDescription:
-    "How the Astrakey Companion answers personal questions about the soul map, deepens daily impulses and keeps clear limits for AI, data protection and advice.",
-  eyebrow: "AI · Companionship",
-  lead:
-    "The Companion is not an oracle that tells you what to do. It is a calm conversation space that explains your soul map, asks useful questions and respects limits.",
-  answer:
-    "The Astrakey Companion is an AI-assisted guide that translates calculated profile information, core themes and approved reflections into understandable answers. It does not replace advice, does not make decisions and keeps its basis visible.",
-  imageAlt: "A resonance instrument as an image for the Astrakey Companion",
-  sections: [
-    {
-      title: "What the Companion does",
-      body:
-        "Most people do not understand their profile in a single pass. You read a sentence, feel resonance and then have questions. The Companion helps exactly there: what does this core theme mean, why does it appear in several systems and which journaling question fits? The answer stays warm and understandable without pretending that AI has a higher truth about you. The Companion is therefore not a substitute for your own sensing, but a translator between profile, method and everyday life.",
-    },
-    {
-      title: "Calculation-based instead of free speculation",
-      body:
-        "The Companion does not simply improvise mystically. Its strength arises from calculated profile facts, convergence signals, approved notes and clear product boundaries. You can understand whether an answer comes from astrology, Human Design, numerology, questionnaire values, journaling or general reflection questions. This keeps the experience personal without making it arbitrary. AI phrases, connects and explains, but the profile foundation comes from the Astrakey calculation.",
-    },
-    {
-      title: "Answer logic: source, context, question",
-      body:
-        "A good Companion answer does more than sound beautiful: it shows its basis. A clear answer logic asks which profile source is relevant, in which context the question appears, what uncertainty remains and which next reflection question helps. This structure makes the Companion useful because it gives direct answers and trustworthy because you can see what a statement is based on.",
-    },
-    {
-      title: "Transparency when AI is used",
-      body:
-        "Astrakey makes visible when AI is involved and when it is not. Calculation, convergence and system logic are not the same as later wording. The simple rule: AI does not write free truths about you, but phrases from approved profile information, editorial guardrails and your current question. This separation protects against overclaiming and keeps the Companion understandable.",
-    },
-    {
-      title: "Data protection and data minimization in conversation",
-      body:
-        "A Companion can quickly receive very personal questions. Data minimization therefore also applies in conversation: only relevant profile parts, only approved journal notes, clear purposes, understandable deletion and export paths. Especially with sensitive spiritual data, Astrakey explains how companionship stays helpful without becoming unnecessary data collection.",
-    },
-    {
-      title: "Example questions for the Companion",
-      body:
-        "Useful Companion questions are concrete: why does my core theme appear in several systems, how can I journal this daily impulse, which tension between retreat and visibility does my profile show, how do I read a chapter from the full profile book and what is symbolic language versus calculated data? These examples make the value tangible without using real user profiles.",
-    },
-    {
-      title: "Oracle moment without fate pressure",
-      body:
-        "An optional oracle or card moment can be inspiring when it is framed cleanly. Astrakey treats it as a symbolic question for the moment, not as prediction: what could I pay attention to today, what wants to be seen and which perspective helps me act more calmly? The Companion can explain such motifs without creating pressure, fear or dependency. The boundary is clear: symbolic impulses may open, but not decide.",
-    },
-    {
-      title: "Limits around health, relationships and decisions",
-      body:
-        "The Companion gives no medical, therapeutic, legal or financial advice. In relationship topics, it stays respectful and does not make statements about a second person if that person's consent is missing. In psychological strain, it names clear support boundaries. These limits create trust. A good answer also recognizes when silence or professional support is the better next step.",
-    },
-    {
-      title: "Why the Companion creates premium value",
-      body:
-        "The free start shows the soul map. The Companion becomes valuable when you ask deeper questions, want examples, deepen journaling or need long profile chapters explained in plain language. That is a natural premium benefit: more companionship, more context and more calm. Premium here means access to better context, longer conversation histories and responsible quality assurance, not dependency.",
-    },
-  ],
-  graphics: [
-    {
-      src: "/graphics/convergence/abb5-algorithmus-funnel.svg",
-      alt: "Funnel from profile calculation to Companion answers",
-      caption:
-        "The Companion does not answer freely from nowhere, but from calculated profile facts, convergence and approved contexts.",
-    },
-    {
-      src: "/graphics/convergence/abb7-crosswalk-sankey.svg",
-      alt: "Crosswalk graphic for translating different system languages",
-      caption:
-        "AI companionship becomes valuable when it translates different system languages into understandable reflection questions.",
-    },
-  ],
-  faq: [
-    {
-      q: "Is the Companion an oracle?",
-      a: "No. It can explain symbolic impulses, but it is not a prediction tool and not an authority over decisions.",
-    },
-    {
-      q: "Can the Companion see my whole profile?",
-      a: "It uses only the data needed and approved for the specific answer. Data minimization remains important in AI companionship.",
-    },
-    {
-      q: "Does the Companion replace advice or therapy?",
-      a: "No. It offers reflection questions and explanations for the soul map, but no medical, psychological, therapeutic, legal or financial advice.",
-    },
-    {
-      q: "Why is the Companion not completely free?",
-      a: "Personal AI companionship, secure infrastructure, editorial work, quality assurance and longer profile contexts create ongoing costs. Depth can therefore be part of paid models.",
-    },
-    {
-      q: "How does the Companion know what its answer is based on?",
-      a: "It derives answers from calculated profile facts, convergence signals, approved notes and the current question. The basis remains understandable.",
-    },
-    {
-      q: "Can I discuss sensitive topics with the Companion?",
-      a: "You can ask reflective questions, but the Companion does not replace professional support. Health, crisis, legal, financial or acute emotional strain require appropriate specialists.",
-    },
-    {
-      q: "Does the Companion use my journal texts automatically?",
-      a: "Journal texts are only used when they are relevant for the purpose and explicitly approved. Data minimization and transparency remain central product rules.",
-    },
-    {
-      q: "Why does the Companion strengthen paid models?",
-      a: "Because longer contexts, more individual answers, secure AI infrastructure, quality assurance and editorial guardrails create ongoing effort.",
-    },
-  ],
-  ctaTitle: "Open your soul map first, then ask the questions that really matter.",
-  ctaText: "The Companion becomes useful once your own profile is the foundation.",
-};
-
-enPages.journaling = {
-  ...dePages.journaling,
-  title: "Journaling with Astrakey: turning impulses into self-knowledge",
-  seoTitle: "Journaling with Astrakey - connecting profile, daily impulses and reflection",
-  seoDescription:
-    "How Astrakey uses journaling to connect daily impulses, soul map, feedback and long-term patterns into a calm reflection practice.",
-  eyebrow: "Daily life · Reflection",
-  lead:
-    "Journaling in Astrakey is not just an empty text field. It is the bridge between your profile, your daily impulses and what you actually notice in everyday life.",
-  answer:
-    "Astrakey journaling connects personal impulses with your own notes, feedback and recurring themes. The app does not claim to know you better than you know yourself. It helps you see resonance, doubt, patterns and development more consciously over time.",
-  imageAlt: "A quiet library of inner notes as an image for Astrakey journaling",
-  sections: [
-    {
-      title: "Why journaling grounds the soul map",
-      body:
-        "A soul map can be moving, but it becomes truly valuable when you connect it with lived everyday life. Journaling is that grounding. You can note which statements resonate, which questions remain open and which patterns repeat. Astrakey therefore does not remain a one-time reading, but becomes a learning reflection space. Important: your notes are not evidence against you and not diagnostic data. They are your own language for what you observe.",
-    },
-    {
-      title: "From daily impulse to personal observation",
-      body:
-        "A daily impulse gives focus. The journal asks what you make of it. Did the impulse reveal something, was there a situation where a core theme became tangible, did the sentence feel wrong, too strong or surprisingly accurate? This feedback matters because it makes interpretation more human. Astrakey gives you room to answer back. That is how a daily hint becomes a personal trail.",
-    },
-    {
-      title: "Recognizing patterns over weeks and months",
-      body:
-        "A single entry is often only a moment. It becomes interesting when themes gather over weeks: withdrawal, visibility, decision, relationship, creativity, overwhelm or calm. Astrakey can make these repetitions visible in review without turning them into rigid truths. This is where premium depth emerges: not more text for its own sake, but a clearer view of personal development.",
-    },
-    {
-      title: "Privacy and sensitive notes",
-      body:
-        "Journaling can be deeply personal. Astrakey treats this content as sensitive and explains what is stored, how deletion and export work and what role AI plays in summaries. Astrakey derives no medical, therapeutic or legal claims from journal texts. The feature remains a reflection tool, not a substitute for professional advice.",
-    },
-    {
-      title: "Start free, understand paid depth",
-      body:
-        "The free start can enable first impulses and simple reflection. Paid models become useful when you want history, reviews, more levels, deeper questions and long-term patterns. Journaling shows why Astrakey is not only a profile calculator, but an ongoing companion that unfolds over time.",
-    },
-  ],
-  faq: [
-    {
-      q: "Is Astrakey journaling a normal diary?",
-      a: "It can be used like a diary, but it is more closely connected with profile, daily impulses and recurring themes. The focus is self-reflection, not performance or perfect documentation.",
-    },
-    {
-      q: "Does AI read my journal texts?",
-      a: "AI-assisted summaries happen transparently and for a defined purpose. You can see when AI is involved and which content is used for it.",
-    },
-    {
-      q: "Can I delete journal entries?",
-      a: "Yes. Personal content can be exported and deleted. Astrakey treats this as part of the data-protection line.",
-    },
-    {
-      q: "Is journaling therapy?",
-      a: "No. Astrakey journaling is a reflection tool and does not replace medical, psychological or therapeutic advice.",
-    },
-  ],
-  ctaTitle: "Start with your soul map and keep what truly resonates.",
-  ctaText: "The journal becomes valuable once your own profile opens the first questions.",
-};
+const enPages: Record<string, ContentPage> = Object.fromEntries(
+  Object.entries(dePages).map(([key, page]) => [key, { ...page }]),
+) as Record<string, ContentPage>;
 
 export const pillarPages: Record<string, LocalizedPage> = Object.fromEntries(
   Object.entries(dePages).map(([key, de]) => [key, { de, en: enPages[key as keyof typeof dePages] }]),
 ) as Record<string, LocalizedPage>;
+
+export function getPillarPage(key: string, locale: Locale): ContentPage | undefined {
+  const page = pillarPages[key];
+  if (!page) return undefined;
+  const base = locale === "de" ? page.de : page.en;
+  return localizeContentPage(base, locale);
+}
 
 function glossaryTerm(input: {
   slug: string;
@@ -1371,7 +1114,7 @@ export const articles = [
   {
     slug: "ai-selbstreflexion",
     title: "AI in der Selbstreflexion: Chancen und Grenzen",
-    seoTitle: "AI in der Selbstreflexion — wie Astrakey transparent mit KI arbeitet",
+    seoTitle: "AI in der Selbstreflexion — wie Astrakey transparent mit AI arbeitet",
     description: "Warum AI Texte hilfreich formulieren kann, aber keine Autorität über Menschen haben sollte.",
     body:
       "AI kann komplexe Muster verständlich machen. Sie kann erklären, verdichten und Beispiele formulieren. Gleichzeitig darf sie nicht als unfehlbare Stimme auftreten. Astrakey trennt deshalb Berechnung, Konvergenz und AI-Deutung. Das Modell schreibt auf Grundlage berechneter Fakten, nicht aus freier Spekulation.",
@@ -1438,7 +1181,7 @@ export const articles = [
     seoTitle: "Human Design ohne starre Labels — Astrakeys vorsichtiger Ansatz",
     description: "Warum Typ, Autorität und Zentren hilfreich sein können, aber nie die ganze Person erklären.",
     body:
-      "Human Design kann starke Aha-Momente erzeugen. Gleichzeitig besteht die Gefahr, Menschen auf Typ, Autorität oder offene Zentren zu reduzieren. Astrakey nutzt Human Design deshalb als eine Systemfamilie unter mehreren. Was wirklich wichtig wird, zeigt sich erst, wenn andere Perspektiven ähnliche Themen bestätigen.",
+      "Human Design kann starke Resonanzmomente erzeugen. Gleichzeitig besteht die Gefahr, Menschen auf Typ, Autorität oder offene Zentren zu reduzieren. Astrakey nutzt Human Design deshalb als eine Systemfamilie unter mehreren. Was wirklich wichtig wird, zeigt sich erst, wenn andere Perspektiven ähnliche Themen bestätigen.",
   },
   {
     slug: "gene-keys-ohne-kopierte-texte",
@@ -1613,10 +1356,6 @@ export const comparisons = [
   },
 ] as const;
 
-export function getPillarPage(key: string, locale: Locale): ContentPage | undefined {
-  const page = pillarPages[key];
-  if (!page) return undefined;
-  const base = locale === "de" ? page.de : page.en;
-  return localizeContentPage(base, locale);
-}
+
+
 

@@ -188,7 +188,7 @@ export const systems: SystemEntry[] = [
       reveals: "Deine prägenden Archetypen und ihren Reifungsweg – besonders rund um Berufung, Beziehungen und das Nervensystem. Speist die Ebenen „Gaben“, „Schatten & Wachstum“ und „Berufung“.",
       faq: [
         { q: "Sind Gene Keys dasselbe wie Human Design?", a: "Sie teilen dieselbe astronomische Grundlage, deuten sie aber anders: Human Design als Energiemechanik, Gene Keys als kontemplativen Wachstumsweg." },
-        { q: "Verwendet Astrakey Original-Gene-Keys-Texte?", a: "Nein. Wir nutzen einen eigenen, geprüften Korpus für die Archetyp-Triaden; geschützte Originaltexte fließen nicht ins KI-Modell." }
+        { q: "Verwendet Astrakey Original-Gene-Keys-Texte?", a: "Nein. Wir nutzen einen eigenen, geprüften Korpus für die Archetyp-Triaden; geschützte Originaltexte fließen nicht ins AI-Modell." }
       ]
     },
     en: {
@@ -694,16 +694,16 @@ export const systems: SystemEntry[] = [
     revealsEn: "Which motives recur strongly between the natal and draconic chart. This feeds soul-path and convergence texts.",
   }),
   simpleSystem({
-    slug: "nine-star-ki",
+    slug: "nine-star-AI",
     glyph: "9",
     art: "03-library-of-self-profile.jpg",
-    name: "Nine Star Ki",
+    name: "Nine Star AI",
     tagline: "Jahresenergie, Elementbild und Lebensrhythmus",
     taglineEn: "year energy, element image and life rhythm",
     family: "ostasiatisch inspirierte Kalendermodelle",
     familyEn: "East Asian inspired calendar models",
-    computed: "Astrakey berechnet die Nine-Star-Ki-Zahl aus Geburtsjahr und Kalenderlogik und kennzeichnet die Methode transparent als symbolisches Modell.",
-    computedEn: "Astrakey calculates the Nine Star Ki number from birth year and calendar logic and labels the method transparently as a symbolic model.",
+    computed: "Astrakey berechnet die Nine-Star-AI-Zahl aus Geburtsjahr und Kalenderlogik und kennzeichnet die Methode transparent als symbolisches Modell.",
+    computedEn: "Astrakey calculates the Nine Star AI number from birth year and calendar logic and labels the method transparently as a symbolic model.",
     reveals: "Ein kompaktes Bild fuer Grundenergie, Bewegungsmuster und Rhythmus. Besonders wertvoll als Vergleich zu Numerologie und Elementlehren.",
     revealsEn: "A compact image for basic energy, movement patterns and rhythm. Especially useful as a comparison with numerology and element teachings.",
   }),
@@ -872,3 +872,4 @@ export function getSystem(slug: string): SystemEntry | undefined {
 export function systemText(system: SystemEntry, locale: string): SystemText {
   return localizeSystemText(system, locale as Locale);
 }
+

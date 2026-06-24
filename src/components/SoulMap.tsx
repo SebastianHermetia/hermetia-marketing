@@ -26,3 +26,4 @@ export function SoulMap({ size = 260 }: { size?: number }) {
     </svg>
   );
 }
+

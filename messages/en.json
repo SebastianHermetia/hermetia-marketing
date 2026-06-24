@@ -2,15 +2,15 @@
   "site": {
     "name": "Astrakey",
     "tagline": "As above, so below",
-    "claim": "A portrait of your soul — from everything that makes you you."
+    "claim": "One system can resonate. Astrakey shows what truly repeats."
   },
   "nav": {
     "leistungen": "Features",
     "systeme": "Systems",
-    "methodik": "Method",
+    "methodik": "How your profile is made",
     "preise": "Pricing",
     "login": "Log in",
-    "start": "Start your profile",
+    "start": "Start profile for free",
     "menu_open": "Open menu",
     "menu_close": "Close menu"
   },
@@ -25,7 +25,7 @@
     "more": "Learn more"
   },
   "footer": {
-    "blurb": "A portrait of your soul — from everything that makes you you. As above, so below.",
+    "blurb": "One system can resonate. Astrakey shows what truly repeats. As above, so below.",
     "product": "Product",
     "discover": "Discover",
     "legal": "Legal",
@@ -41,11 +41,11 @@
     "disclaimer": "Inspiration for self-reflection — not medical or therapeutic advice. Content is partly AI-assisted (EU AI Act Art. 50)."
   },
   "home": {
-    "seoTitle": "Astrakey — Your soul map. A portrait that understands you.",
+    "seoTitle": "Astrakey — Your profile from many systems.",
     "seoDescription": "Astrakey turns your birth data into a soul map drawn from 31 interpretive systems and walks beside you day by day. Discover your profile for free.",
     "hero": {
       "eyebrow": "As above, so below",
-      "title": "A portrait of your soul — from everything that makes you you.",
+      "title": "One system can resonate. Astrakey shows what truly repeats.",
       "lead": "Astrakey reads your birth data and weaves a single, clear soul map from up to 31 interpretive systems — and accompanies you day by day. Not a data sheet. A journey to yourself.",
       "trustline": "Start free · no credit card · EU-hosted & encrypted",
       "quote": "Your sensitivity is a compass — not a weakness.",
@@ -71,7 +71,7 @@
         {
           "icon": "❂",
           "title": "Your soul map",
-          "text": "A beautiful, personal whole — chart wheel and energy body at a glance. Your aha moment."
+          "text": "A beautiful, personal whole — chart wheel and energy body at a glance. Your resonance moment."
         },
         {
           "icon": "❧",
@@ -145,11 +145,11 @@
       "title": "What people experience",
       "items": [
         {
-          "quote": "For the first time spirituality didn’t feel kitschy, but clever.",
+          "quote": "For the first time spirituality didn’t feel AItschy, but clever.",
           "name": "Marie K., 34"
         },
         {
-          "quote": "The soul map was my aha moment. I wanted to read more right away.",
+          "quote": "The soul map was my resonance moment. I wanted to read more right away.",
           "name": "Lena S., 41"
         },
         {
@@ -195,9 +195,9 @@
     "seoDescription": "Soul map, unlockable levels, daily impulse, journaling, your book and relationship readings: all of Astrakey’s features at a glance.",
     "kicker": "Features",
     "title": "Everything that accompanies you on your journey.",
-    "lead": "From your first aha moment to daily companionship — Astrakey grows with you.",
+    "lead": "From your first resonance moment to daily companionship — Astrakey grows with you.",
     "soulmap": {
-      "tag": "Your aha moment",
+      "tag": "Your resonance moment",
       "title": "The soul map",
       "text": "A beautiful, personal whole: your chart wheel and your abstracted energy body at a glance — calculated, not claimed. The moment you first feel truly seen."
     },
@@ -364,7 +364,7 @@
         "tag": ""
       }
     ],
-    "layersKicker": "Three layers",
+    "layerskicker": "Three layers",
     "layersTitle": "From foundation to daily impulse",
     "layers": [
       {
@@ -537,7 +537,7 @@
         },
         {
           "heading": "8 · External links",
-          "body": "This website may contain links to external websites. The operators of linked pages are solely responsible for their content. No unlawful content was apparent at the time of linking. If infringements become known, such links will be removed promptly.\n\nExternal sources, tools or providers are mentioned only where this is useful for transparency, technical function or legal classification."
+          "body": "This website may contain links to external websites. The operators of linked pages are solely responsible for their content. No unlawful content was apparent at the time of linAIng. If infringements become known, such links will be removed promptly.\n\nExternal sources, tools or providers are mentioned only where this is useful for transparency, technical function or legal classification."
         },
         {
           "heading": "9 · Copyright and image rights",
@@ -558,7 +558,7 @@
         },
         {
           "heading": "2 · Short overview",
-          "body": "Astrakey creates a personal reflection profile from your inputs and calculated system markers. This includes the soul map, daily impulses, optional journaling, relationship and resonance modules, profile refinement, export functions, a possible full profile book and AI-assisted companion texts. These contents can be highly personal, even though they are not intended as diagnosis, therapy or binding advice.\n\nWe therefore do not treat this data like ordinary marketing data. Data minimisation, purpose limitation, clear consent, EU-oriented hosting, encryption, role-based access, export and deletion are part of the privacy concept. This policy is a careful launch draft and must be legally reviewed and aligned with the actual providers used before public release."
+          "body": "Astrakey creates a personal reflection profile from your inputs and calculated system markers. This includes the soul map, daily impulses, optional journaling, relationship and resonance modules, profile refinement, export functions, a possible soul book and AI-assisted companion texts. These contents can be highly personal, even though they are not intended as diagnosis, therapy or binding advice.\n\nWe therefore do not treat this data like ordinary marketing data. Data minimisation, purpose limitation, clear consent, EU-oriented hosting, encryption, role-based access, export and deletion are part of the privacy concept. This policy is a careful launch draft and must be legally reviewed and aligned with the actual providers used before public release."
         },
         {
           "heading": "3 · Which data we process",
@@ -570,7 +570,7 @@
         },
         {
           "heading": "5 · Purposes and legal bases",
-          "body": "We process data only for defined purposes:\n\n• Account, login, language, plan and technical provision: performance of a contract or pre-contractual measures.\n• Profile calculation, soul map, system evaluation and convergence: contract performance and, where special categories are affected, explicit consent.\n• Daily impulses, journaling, Companion, full profile book and profile refinement: contract performance, consent for sensitive content and legitimate interest in a safe product function.\n• Payment processing, invoices and tax retention: contract performance and legal obligations.\n• Security, error analysis, abuse prevention and access protection: legitimate interest.\n• Newsletter, email impulses and optional product communication: consent unless a legal exception applies.\n• Analytics and marketing measurement: only with consent unless purely technically required."
+          "body": "We process data only for defined purposes:\n\n• Account, login, language, plan and technical provision: performance of a contract or pre-contractual measures.\n• Profile calculation, soul map, system evaluation and convergence: contract performance and, where special categories are affected, explicit consent.\n• Daily impulses, journaling, Companion, soul book and profile refinement: contract performance, consent for sensitive content and legitimate interest in a safe product function.\n• Payment processing, invoices and tax retention: contract performance and legal obligations.\n• Security, error analysis, abuse prevention and access protection: legitimate interest.\n• Newsletter, email impulses and optional product communication: consent unless a legal exception applies.\n• Analytics and marketing measurement: only with consent unless purely technically required."
         },
         {
           "heading": "6 · AI processing",
@@ -593,8 +593,8 @@
           "body": "Subject to the GDPR, you have rights of access, rectification, erasure, restriction of processing, data portability, objection and withdrawal of consent. You may also lodge a complaint with a data protection supervisory authority.\n\nAstrakey should make these rights practically accessible, not merely mention them formally. This includes profile export, deletion, consent management, transparent AI notices and understandable settings for voluntary data. If you have questions about your data, you can contact the address listed above."
         },
         {
-          "heading": "11 · Cookies, consent and analytics",
-          "body": "The marketing website uses as few technically necessary cookies or comparable technologies as possible. Technically necessary elements may serve language settings, security, consent status or stable page delivery. Optional analytics, retargeting or conversion measurement is used only where valid consent exists.\n\nUntil the final domain move and launch, the website intentionally remains on noindex/nofollow. This protects unfinished content from premature search indexing. After launch, measurement enables reach, SEO, GEO and AEO without selling sensitive profile content for advertising or unnecessarily passing it to third parties."
+          "heading": "11 · CooAIes, consent and analytics",
+          "body": "The marketing website uses as few technically necessary cooAIes or comparable technologies as possible. Technically necessary elements may serve language settings, security, consent status or stable page delivery. Optional analytics, retargeting or conversion measurement is used only where valid consent exists.\n\nUntil the final domain move and launch, the website intentionally remains on noindex/nofollow. This protects unfinished content from premature search indexing. After launch, measurement enables reach, SEO, GEO and AEO without selling sensitive profile content for advertising or unnecessarily passing it to third parties."
         },
         {
           "heading": "12 · Security",
@@ -623,7 +623,7 @@
         },
         {
           "heading": "2 · Subject of the service",
-          "body": "Astrakey is a digital self-reflection service. Inputs such as birth data, optional birth time, birthplace and voluntary contexts can generate personal profile content: soul map, system evaluations, convergence engine, daily impulses, journaling, relationship and resonance modules, profile refinement, AI-assisted Companion, export and a possible full profile book.\n\nAstrakey offers free entry points and paid models with expanded scope. Paid services may include more profile depth, longer texts, saved histories, Companion dialogues, extended daily impulses, relationship evaluations, export functions or special profile book content. The concrete service is defined by the relevant plan description at the time of order."
+          "body": "Astrakey is a digital self-reflection service. Inputs such as birth data, optional birth time, birthplace and voluntary contexts can generate personal profile content: soul map, system evaluations, convergence engine, daily impulses, journaling, relationship and resonance modules, profile refinement, AI-assisted Companion, export and a possible soul book.\n\nAstrakey offers free entry points and paid models with expanded scope. Paid services may include more profile depth, longer texts, saved histories, Companion dialogues, extended daily impulses, relationship evaluations, export functions or special profile book content. The concrete service is defined by the relevant plan description at the time of order."
         },
         {
           "heading": "3 · No substitute for professional advice",
@@ -631,7 +631,7 @@
         },
         {
           "heading": "4 · Registration and conclusion of contract",
-          "body": "A free usage contract is concluded upon registration. You enter into a paid model by selecting a plan, reviewing the order summary, making the required declarations and completing payment. Before conclusion, essential information such as price, term, scope, renewal and cancellation options is displayed.\n\nFor digital content, access may begin immediately after conclusion if you expressly consent. Where legally required, you will be informed that the right of withdrawal may expire early when immediate performance begins and digital content is fully provided."
+          "body": "A free usage contract is concluded upon registration. You enter into a paid model by selecting a plan, reviewing the order summary, maAIng the required declarations and completing payment. Before conclusion, essential information such as price, term, scope, renewal and cancellation options is displayed.\n\nFor digital content, access may begin immediately after conclusion if you expressly consent. Where legally required, you will be informed that the right of withdrawal may expire early when immediate performance begins and digital content is fully provided."
         },
         {
           "heading": "5 · Prices, payment and paid models",
@@ -688,7 +688,7 @@
       "sections": [
         {
           "heading": "1 · Right of withdrawal",
-          "body": "If you are a consumer, you generally have the right to withdraw from a contract within fourteen days without giving any reason. The withdrawal period is fourteen days from the day the contract is concluded.\n\nThis notice applies to paid digital Astrakey services where a statutory right of withdrawal exists. This may include subscriptions, premium functions, digital profile content, a full profile book as a digital product or other digital add-on services."
+          "body": "If you are a consumer, you generally have the right to withdraw from a contract within fourteen days without giving any reason. The withdrawal period is fourteen days from the day the contract is concluded.\n\nThis notice applies to paid digital Astrakey services where a statutory right of withdrawal exists. This may include subscriptions, premium functions, digital profile content, a soul book as a digital product or other digital add-on services."
         },
         {
           "heading": "2 · Exercising the right",
@@ -700,7 +700,7 @@
         },
         {
           "heading": "4 · Digital content and immediate access",
-          "body": "Astrakey provides digital content and digital services. These may include premium profiles, AI-assisted interpretation texts, daily impulses, Companion features, export content or a digital full profile book. Many of these contents can be generated or unlocked immediately after purchase.\n\nYour right of withdrawal may expire early if we have begun providing digital content after you expressly consented to us beginning before the withdrawal period ends and confirmed that you may thereby lose your withdrawal right. This consent must be clear and separate in the order flow."
+          "body": "Astrakey provides digital content and digital services. These may include premium profiles, AI-assisted interpretation texts, daily impulses, Companion features, export content or a digital soul book. Many of these contents can be generated or unlocked immediately after purchase.\n\nYour right of withdrawal may expire early if we have begun providing digital content after you expressly consented to us beginning before the withdrawal period ends and confirmed that you may thereby lose your withdrawal right. This consent must be clear and separate in the order flow."
         },
         {
           "heading": "5 · Subscriptions and ongoing contracts",
@@ -720,16 +720,16 @@
         }
       ]
     },
-    "ki": {
+    "AI": {
       "title": "AI transparency",
       "sections": [
         {
           "heading": "Why Astrakey discloses AI transparency",
-          "body": "Astrakey combines deterministic calculations from several interpretation systems with linguistic refinement supported by AI. This combination can feel highly personal because it touches themes such as self-image, relationships, life rhythm, resonance and inner patterns. For that reason, we explain clearly where AI is involved, which data it processes, which limits apply and where human responsibility remains.\n\nThis transparency page is part of the legal and editorial foundation of the website. It supports the requirements of the EU AI Act, especially the labelling of AI-generated or AI-assisted content, and it gives users a clear basis before starting a profile, buying premium content or using Companion, journaling and the full profile book."
+          "body": "Astrakey combines deterministic calculations from several interpretation systems with linguistic refinement supported by AI. This combination can feel highly personal because it touches themes such as self-image, relationships, life rhythm, resonance and inner patterns. For that reason, we explain clearly where AI is involved, which data it processes, which limits apply and where human responsibility remains.\n\nThis transparency page is part of the legal and editorial foundation of the website. It supports the requirements of the EU AI Act, especially the labelling of AI-generated or AI-assisted content, and it gives users a clear basis before starting a profile, buying premium content or using Companion, journaling and the soul book."
         },
         {
           "heading": "Where AI is used in Astrakey",
-          "body": "AI is used in Astrakey primarily for wording, condensation and dialogue. This can include personal interpretation texts, layer descriptions, daily impulses, explanatory sections in the full profile book, reflection questions, Companion answers and editorial variants for different use cases. AI helps to express calculated patterns in a calm, understandable and usable way.\n\nAI does not decide which system is right, which statement is true or which future will happen. It writes from prepared contexts, rules and calculated profile markers. Whenever a page, profile area or dialogue is phrased with AI assistance, this should be recognisable. Astrakey uses AI as a linguistic tool within defined boundaries, not as an invisible authority."
+          "body": "AI is used in Astrakey primarily for wording, condensation and dialogue. This can include personal interpretation texts, layer descriptions, daily impulses, explanatory sections in the soul book, reflection questions, Companion answers and editorial variants for different use cases. AI helps to express calculated patterns in a calm, understandable and usable way.\n\nAI does not decide which system is right, which statement is true or which future will happen. It writes from prepared contexts, rules and calculated profile markers. Whenever a page, profile area or dialogue is phrased with AI assistance, this should be recognisable. Astrakey uses AI as a linguistic tool within defined boundaries, not as an invisible authority."
         },
         {
           "heading": "Calculation, convergence and wording are separate",
@@ -749,7 +749,7 @@
         },
         {
           "heading": "Premium content and fair conversion",
-          "body": "AI can make premium content more readable, personal and continuous. A full profile book, deeper daily impulses or Companion dialogues create value because they translate calculated patterns into longer, more differentiated language. Still, AI must not be used to create artificial pressure, fear or urgency in order to push users into a paid model.\n\nAstrakey should spark curiosity and invite sign-up, but the decision to choose a paid model must remain understandable. Good conversion comes from clarity, usefulness, trust and real depth, not from manipulative scarcity or apparently absolute claims. Premium arguments should therefore explain what expands: scope, context, continuity, dialogue depth, export, comparison and long-term work with the profile."
+          "body": "AI can make premium content more readable, personal and continuous. A soul book, deeper daily impulses or Companion dialogues create value because they translate calculated patterns into longer, more differentiated language. Still, AI must not be used to create artificial pressure, fear or urgency in order to push users into a paid model.\n\nAstrakey should spark curiosity and invite sign-up, but the decision to choose a paid model must remain understandable. Good conversion comes from clarity, usefulness, trust and real depth, not from manipulative scarcity or apparently absolute claims. Premium arguments should therefore explain what expands: scope, context, continuity, dialogue depth, export, comparison and long-term work with the profile."
         },
         {
           "heading": "Copyright, sources and original language",
@@ -767,3 +767,7 @@
     }
   }
 }
+
+
+
+

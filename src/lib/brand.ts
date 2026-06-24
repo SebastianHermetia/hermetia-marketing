@@ -1,27 +1,31 @@
-// Zentrale Brand-Konfiguration — eine Quelle der Wahrheit für den Markennamen,
-// Domains und Trust-/SEO-Felder. Ein künftiger Marken- oder Domainwechsel passiert
-// hier, nicht verstreut über die Codebasis.
-//
-// Domains sind per ENV überschreibbar (Vercel), damit Preview/Staging/Prod ohne
-// Code-Änderung umgezogen werden können.
+// Zentrale Brand-Konfiguration: eine Quelle der Wahrheit für Markennamen,
+// Domains sowie Trust- und SEO-Felder.
 
 import { siteUrl, appUrl } from "@/i18n/config";
 
 export const brand = {
-  /** Sichtbarer Markenname. Eigenname — wird in KEINER Sprache übersetzt. */
   name: "Astrakey",
-  /** Frühere Marke. Nur für bewusste Legacy-Hinweise / Redirects. */
   legacyName: "Hermetia",
-  /** Marketing-Domain (canonical/hreflang/Sitemap). */
   marketingUrl: siteUrl,
-  /** App-Domain (Onboarding + Login). */
   appUrl,
-  /** Support-/Kontaktadresse. TODO: finale Anbieter-E-Mail bestätigen. */
   supportEmail: process.env.NEXT_PUBLIC_SUPPORT_EMAIL ?? "hallo@astrakey.me",
-  /** Anzeigeslogan für Organization-Schema. */
-  slogan: "Wie oben, so unten",
-  /** Default-OG-/Social-Bild (relativ zur Marketing-Domain). */
+  slogan: "Ein einzelnes System kann dich berühren. Astrakey zeigt, was wirklich wiederkehrt.",
   socialImagePath: "/og/default.jpg",
+  positioning:
+    "Astrakey verbindet viele spirituelle, symbolische und psychologische Systeme zu einem erklärbaren persönlichen Profil und zeigt, welche Themen über mehrere unabhängige Systemfamilien hinweg wirklich wiederkehren.",
+  primaryCta: "Profil kostenlos starten",
+  primaryCtaRoute: "/de/beta-zugang/",
+  trustlines: {
+    privacy: "Datenschutz bewusst gestaltet",
+    noSale: "kein Verkauf deiner Daten",
+    processors: "Dienstleister nur zweckgebunden",
+    control: "Datenkontrolle mit Export und Löschung",
+    ai: "AI formuliert, sie urteilt nicht über dich",
+    noDiagnosis: "Keine Diagnose, ein Reflexionsangebot",
+  },
+  standardDisclaimer: "Astrakey ist kein medizinischer, therapeutischer, rechtlicher oder finanzieller Rat.",
+  footerLinks: ["Impressum", "Datenschutz", "AGB", "Widerruf", "AI-Transparenz", "Freigaben"],
 } as const;
 
 export type Brand = typeof brand;
+

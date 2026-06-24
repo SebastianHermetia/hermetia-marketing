@@ -13,3 +13,4 @@ export function Faq({ items }: { items: { q: string; a: string }[] }) {
     </div>
   );
 }
+

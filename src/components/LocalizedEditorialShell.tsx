@@ -75,3 +75,4 @@ export function LocalizedEditorialShell({ locale, routePath = "/", detailLabel }
     </>
   );
 }
+

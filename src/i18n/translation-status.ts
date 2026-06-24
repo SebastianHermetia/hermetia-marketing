@@ -130,3 +130,4 @@ export function translationQaSummary() {
     legalCritical: translationQaGates.filter((gate) => gate.id === "legal" || gate.id === "safety").length,
   };
 }
+

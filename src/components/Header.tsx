@@ -50,3 +50,4 @@ export function Header({ locale, current }: { locale: Locale; current?: string }
     </header>
   );
 }
+

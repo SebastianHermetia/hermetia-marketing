@@ -4,18 +4,18 @@ import { buildMetadata } from "@/lib/seo";
 import { localePath, loginUrl, paths } from "@/lib/links";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { BetaAccessForm } from "@/components/BetaAccessForm";
+import { AccessForm } from "@/components/BetaAccessForm";
 
 const copy = {
   de: {
-    seoTitle: "Beta-Zugang zu Astrakey erhalten",
-    seoDescription: "Fordere deinen kuratierten Beta-Zugang zu Astrakey an oder starte direkt, wenn deine E-Mail bereits freigegeben ist.",
-    kicker: "Beta-Zugang",
-    title: "Astrakey ist aktuell in einer kuratierten Beta.",
+    seoTitle: "Profilstart zu Astrakey erhalten",
+    seoDescription: "Starte dein Astrakey-Profil oder hinterlasse deine E-Mail, falls dein Zugang noch nicht freigeschaltet ist.",
+    kicker: "Profilstart",
+    title: "Starte dein Profil, sobald dein Zugang freigeschaltet ist.",
     intro: "Wenn deine E-Mail bereits freigegeben ist, gelangst du direkt zum Profilstart. Wenn nicht, speichern wir deine Anfrage für die nächste Freigaberunde.",
     bullets: [
       "öffentliche Website lesen und Methode verstehen",
-      "Beta-Zugang mit deiner E-Mail prüfen",
+      "Zugang mit deiner E-Mail prüfen",
       "bei Freigabe direkt in das Onboarding starten",
       "sonst eine saubere Anfrage hinterlassen",
     ],
@@ -23,25 +23,25 @@ const copy = {
     login: "Zum Login",
     legal: ["Datenschutz", "Widerruf", "AGB"],
     form: {
-      emailLabel: "E-Mail für den Beta-Zugang",
+      emailLabel: "E-Mail für den Profilstart",
       emailPlaceholder: "du@example.com",
-      submit: "Beta-Zugang prüfen",
+      submit: "Zugang prüfen",
       loading: "Prüfe Zugang...",
       approved: "Freigabe gefunden. Du wirst weitergeleitet.",
       requested: "Danke. Deine Anfrage ist gespeichert und wartet auf Freigabe.",
       error: "Die Anfrage konnte gerade nicht verarbeitet werden. Bitte versuche es erneut.",
-      privacy: "Wir nutzen deine E-Mail nur, um deine Beta-Anfrage zu prüfen und dich zum Zugang zu kontaktieren.",
+      privacy: "Wir nutzen deine E-Mail nur, um deine Zugangs-Anfrage zu prüfen und dich zum Zugang zu kontaktieren.",
     },
   },
   en: {
-    seoTitle: "Get beta access to Astrakey",
-    seoDescription: "Request curated beta access to Astrakey or continue directly if your email has already been approved.",
-    kicker: "Beta access",
-    title: "Astrakey is currently running as a curated beta.",
+    seoTitle: "Start your Astrakey profile",
+    seoDescription: "Start your Astrakey profile or leave your email if your access has not been approved yet.",
+    kicker: "Profile start",
+    title: "Start your profile as soon as your access is approved.",
     intro: "If your email has already been approved, you will continue straight to profile setup. If not, we will save your request for the next approval round.",
     bullets: [
       "read the public website and understand the method",
-      "check beta access with your email",
+      "Check access with your email",
       "continue directly to onboarding when approved",
       "otherwise leave a clear access request",
     ],
@@ -49,14 +49,14 @@ const copy = {
     login: "Go to login",
     legal: ["Privacy", "Withdrawal", "Terms"],
     form: {
-      emailLabel: "Email for beta access",
+      emailLabel: "Email for profile start",
       emailPlaceholder: "you@example.com",
-      submit: "Check beta access",
+      submit: "Check access",
       loading: "Checking access...",
       approved: "Approval found. Redirecting you now.",
       requested: "Thank you. Your request has been saved and is waiting for approval.",
       error: "Your request could not be processed right now. Please try again.",
-      privacy: "We use your email only to review your beta request and contact you about access.",
+      privacy: "We use your email only to review your access request and contact you about access.",
     },
   },
 };
@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   });
 }
 
-export default async function BetaAccessPage({ params }: { params: Promise<{ locale: Locale }> }) {
+export default async function AccessPage({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
   const c = pageCopy(locale);
   return (
@@ -102,7 +102,7 @@ export default async function BetaAccessPage({ params }: { params: Promise<{ loc
               </p>
             </div>
             <div>
-              <BetaAccessForm locale={locale} copy={c.form} />
+              <AccessForm locale={locale} copy={c.form} />
               <div className="mt-5 rounded-2xl border border-sand bg-creme p-5 text-sm text-tinte/70">
                 <a className="link" href={localePath(locale, paths.datenschutz)}>{c.legal[0]}</a>
                 <span className="mx-2">·</span>
@@ -118,3 +118,5 @@ export default async function BetaAccessPage({ params }: { params: Promise<{ loc
     </>
   );
 }
+
+

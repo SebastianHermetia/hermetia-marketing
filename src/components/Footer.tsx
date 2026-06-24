@@ -13,7 +13,7 @@ const footerLabels = {
     comparisons: "Vergleiche",
     useCases: "Anwendungsfälle",
     dailyImpulses: "Tagesimpulse",
-    profileBook: "Vollprofil-Buch",
+    profileBook: "Seelenbuch",
     refineProfile: "Profil verfeinern",
     relationships: "Beziehungen",
     languages: "Sprachen",
@@ -28,7 +28,7 @@ const footerLabels = {
     comparisons: "Comparisons",
     useCases: "Use cases",
     dailyImpulses: "Daily impulses",
-    profileBook: "Full profile book",
+    profileBook: "Soul book",
     refineProfile: "Refine profile",
     relationships: "Relationships",
     languages: "Languages",
@@ -131,3 +131,6 @@ function FootLink({ href, children }: { href: string; children: React.ReactNode 
     </li>
   );
 }
+
+
+
