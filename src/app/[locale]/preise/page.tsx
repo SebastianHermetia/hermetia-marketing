@@ -16,7 +16,7 @@ const pricingPageCopy = {
     priceTruthKicker: "Preiswahrheit",
     priceTruthTitle: "Was bedeutet der Jahrespreis im Alltag?",
     priceTruthText:
-      "Hermetia rechnet Jahrespreise offen herunter, ohne daraus ein künstlich kleines Versprechen zu machen. Vor dem Kauf zählt immer die Bestellübersicht in der App: Dort stehen Preis, Laufzeit, Zahlungsart, Leistungsbeginn und Kündigung verbindlich.",
+      "Astrakey rechnet Jahrespreise offen herunter, ohne daraus ein künstlich kleines Versprechen zu machen. Vor dem Kauf zählt immer die Bestellübersicht in der App: Dort stehen Preis, Laufzeit, Zahlungsart, Leistungsbeginn und Kündigung verbindlich.",
     priceTruthCta: "Preis prüfen und starten",
     withdrawalCta: "Widerruf lesen",
     priceTruthRows: [
@@ -34,7 +34,7 @@ const pricingPageCopy = {
       {
         label: "1",
         title: "Erst kostenlos Resonanz prüfen",
-        text: "Hermetia wirkt nur dann wertvoll, wenn die erste Seelenkarte persönlich anschließt. Deshalb beginnt die Reise ohne Kreditkarte: Profil starten, erste Kernthemen sehen, Sprache testen.",
+        text: "Astrakey wirkt nur dann wertvoll, wenn die erste Seelenkarte persönlich anschließt. Deshalb beginnt die Reise ohne Kreditkarte: Profil starten, erste Kernthemen sehen, Sprache testen.",
       },
       {
         label: "2",
@@ -68,17 +68,17 @@ const pricingPageCopy = {
       },
       {
         title: "Wann kostenlos reicht",
-        text: "Kostenlos reicht, wenn du Hermetia kennenlernen, die erste Seelenkarte sehen und prüfen willst, ob die Tonalität resoniert. Niemand muss sofort upgraden, um einen echten Eindruck zu bekommen.",
+        text: "Kostenlos reicht, wenn du Astrakey kennenlernen, die erste Seelenkarte sehen und prüfen willst, ob die Tonalität resoniert. Niemand muss sofort upgraden, um einen echten Eindruck zu bekommen.",
       },
       {
         title: "Wann Tiefe sinnvoll wird",
-        text: "Tiefe ist für Nutzer gedacht, die Hermetia nicht nur für sich selbst, sondern auch für Beziehungsmuster, mehrere Profile, Companion-Dialoge und vertiefte Jahres- oder Entwicklungsfragen nutzen möchten.",
+        text: "Tiefe ist für Nutzer gedacht, die Astrakey nicht nur für sich selbst, sondern auch für Beziehungsmuster, mehrere Profile, Companion-Dialoge und vertiefte Jahres- oder Entwicklungsfragen nutzen möchten.",
       },
     ],
     fairnessKicker: "Fairness und Grenzen",
     fairnessTitle: "Ein guter Kaufgrund ist Klarheit, nicht Angst.",
     fairnessText:
-      "Bezahlte Modelle stehen bei Hermetia für mehr Tiefe, Komfort und Begleitung, nicht für FOMO, Schicksalsdruck oder Heilsversprechen. Sie ersetzen keine Therapie, keine medizinische Beratung und keine sichere Zukunftsaussage.",
+      "Bezahlte Modelle stehen bei Astrakey für mehr Tiefe, Komfort und Begleitung, nicht für FOMO, Schicksalsdruck oder Heilsversprechen. Sie ersetzen keine Therapie, keine medizinische Beratung und keine sichere Zukunftsaussage.",
     fairnessCta: "Fair starten",
     dataCta: "Daten und Sicherheit",
     beforePurchaseTitle: "Vor dem Kauf wichtig",
@@ -95,7 +95,7 @@ const pricingPageCopy = {
     priceTruthKicker: "Price clarity",
     priceTruthTitle: "What does the yearly price mean day to day?",
     priceTruthText:
-      "Hermetia breaks yearly prices down openly without turning them into an artificially tiny promise. Before purchase, the in-app order summary is binding: it shows price, term, payment method, service start and cancellation clearly.",
+      "Astrakey breaks yearly prices down openly without turning them into an artificially tiny promise. Before purchase, the in-app order summary is binding: it shows price, term, payment method, service start and cancellation clearly.",
     priceTruthCta: "Check price and start",
     withdrawalCta: "Read withdrawal policy",
     priceTruthRows: [
@@ -113,7 +113,7 @@ const pricingPageCopy = {
       {
         label: "1",
         title: "First test resonance for free",
-        text: "Hermetia is only valuable when the first soul map feels personally relevant. That is why the journey starts without a credit card: create a profile, see first core themes and test the language.",
+        text: "Astrakey is only valuable when the first soul map feels personally relevant. That is why the journey starts without a credit card: create a profile, see first core themes and test the language.",
       },
       {
         label: "2",
@@ -147,17 +147,17 @@ const pricingPageCopy = {
       },
       {
         title: "When free is enough",
-        text: "Free is enough if you want to get to know Hermetia, see your first soul map and check whether the tone resonates. Nobody has to upgrade immediately to get a real impression.",
+        text: "Free is enough if you want to get to know Astrakey, see your first soul map and check whether the tone resonates. Nobody has to upgrade immediately to get a real impression.",
       },
       {
         title: "When Depth makes sense",
-        text: "Depth is for users who want to use Hermetia not only for themselves, but also for relationship patterns, multiple profiles, Companion dialogues and deeper yearly or development questions.",
+        text: "Depth is for users who want to use Astrakey not only for themselves, but also for relationship patterns, multiple profiles, Companion dialogues and deeper yearly or development questions.",
       },
     ],
     fairnessKicker: "Fairness and limits",
     fairnessTitle: "A good reason to buy is clarity, not fear.",
     fairnessText:
-      "Paid plans at Hermetia stand for more depth, comfort and guidance, not FOMO, destiny pressure or healing promises. They do not replace therapy, medical advice or a guaranteed prediction.",
+      "Paid plans at Astrakey stand for more depth, comfort and guidance, not FOMO, destiny pressure or healing promises. They do not replace therapy, medical advice or a guaranteed prediction.",
     fairnessCta: "Start fairly",
     dataCta: "Data and security",
     beforePurchaseTitle: "Important before purchase",
@@ -187,7 +187,7 @@ export default async function PreisePage({ params }: { params: Promise<{ locale:
 
   return (
     <>
-      <JsonLd data={[faqSchema(p.faq), productSchema({ name: "Hermetia", description: p.seoDescription, url: pageUrl, offers })]} />
+      <JsonLd data={[faqSchema(p.faq), productSchema({ name: "Astrakey", description: p.seoDescription, url: pageUrl, offers })]} />
       <Header locale={locale} current="preise" />
 
       <section className="pb-7 pt-16">

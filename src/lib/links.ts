@@ -12,7 +12,7 @@ export function localePath(locale: Locale, path = ""): string {
   return `/${locale}/${clean}`.replace(/\/+$/, "/").replace(/\/$/, "") + "/";
 }
 
-// Onboarding (Profil starten) und Login leben in der bestehenden Hermetia-App.
+// Onboarding (Profil starten) und Login leben in der bestehenden Astrakey-App.
 // Die App-Routen sind NICHT locale-prefixed (`/onboarding`, `/login`); die
 // Profilsprache wählt der Nutzer im ersten Onboarding-Schritt. `?lang=` ist ein
 // unschädlicher Sprach-Hinweis (App darf ihn künftig zur UI-Vorauswahl nutzen).

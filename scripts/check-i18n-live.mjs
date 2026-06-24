@@ -59,7 +59,7 @@ function escapeCsv(value) {
 
 const locale = option("locale", "en");
 const phase = option("phase", "p0");
-const base = option("base", "https://hermetiastart.digital-expert.de").replace(/\/$/, "");
+const base = option("base", "https://astrakey.me").replace(/\/$/, "");
 const auditDir = option("out-dir", join(root, "i18n-audits"));
 const selectedLocales = locale === "all" ? config.locales : locale.split(",").map((item) => item.trim()).filter(Boolean);
 const selectedPhases = phase === "all" ? Object.keys(config.phaseRoutes) : phase.split(",").map((item) => item.trim()).filter(Boolean);

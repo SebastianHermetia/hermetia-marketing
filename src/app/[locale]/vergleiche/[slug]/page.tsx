@@ -51,7 +51,7 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
             </div>
             <div className="rounded-card border border-altrosa/25 bg-altrosa/10 p-5">
               <span className="kicker">{ui.limits}</span>
-              <p className="muted mt-2 leading-relaxed">Keines der Systeme entscheidet allein über eine Person. Hermetia nutzt Vergleiche als Orientierung, nicht als endgültiges Urteil.</p>
+              <p className="muted mt-2 leading-relaxed">Keines der Systeme entscheidet allein über eine Person. Astrakey nutzt Vergleiche als Orientierung, nicht als endgültiges Urteil.</p>
             </div>
           </div>
           <div className="mt-8 rounded-card border border-sand bg-creme-tief p-6">
@@ -79,7 +79,7 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
                 <p className="muted mt-3 text-[17px] leading-[1.9]">{section.body}</p>
                 {idx === 1 ? (
                   <div className="mt-8">
-                    <AppCta locale={locale} title="Sieh den Vergleich in deinem eigenen Profil." text="Hermetia zeigt nicht nur, wie Systeme sich abstrakt unterscheiden, sondern welche Perspektiven bei dir tatsächlich zusammenwirken." source={`comparison-${comparison.slug}-inline`} />
+                    <AppCta locale={locale} title="Sieh den Vergleich in deinem eigenen Profil." text="Astrakey zeigt nicht nur, wie Systeme sich abstrakt unterscheiden, sondern welche Perspektiven bei dir tatsächlich zusammenwirken." source={`comparison-${comparison.slug}-inline`} />
                   </div>
                 ) : null}
               </section>
@@ -87,16 +87,16 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
           </div>
           <section className="mt-10">
             <span className="kicker">Datenquellen und Fairness</span>
-            <h2 className="mt-2 text-[clamp(24px,3vw,32px)]">Warum Vergleiche bei Hermetia keine Gewinnerliste sind</h2>
+            <h2 className="mt-2 text-[clamp(24px,3vw,32px)]">Warum Vergleiche bei Astrakey keine Gewinnerliste sind</h2>
             <p className="muted mt-3 text-[17px] leading-[1.9]">
-              Hermetia bewertet Systeme nicht nach Lautstärke, Bekanntheit oder spiritueller Dramaturgie. Entscheidend ist, welche Datenbasis vorliegt, welche Aussage daraus verantwortungsvoll abgeleitet werden kann und ob andere unabhängige Quellen dasselbe Motiv bestätigen. So entsteht ein Vergleich, der Nutzer weiterführt, ohne Systeme gegeneinander auszuspielen.
+              Astrakey bewertet Systeme nicht nach Lautstärke, Bekanntheit oder spiritueller Dramaturgie. Entscheidend ist, welche Datenbasis vorliegt, welche Aussage daraus verantwortungsvoll abgeleitet werden kann und ob andere unabhängige Quellen dasselbe Motiv bestätigen. So entsteht ein Vergleich, der Nutzer weiterführt, ohne Systeme gegeneinander auszuspielen.
             </p>
           </section>
           <section className="mt-10">
             <span className="kicker">Rechtliche Grenzen</span>
             <h2 className="mt-2 text-[clamp(24px,3vw,32px)]">Keine Diagnose, keine kopierten Deutungstexte</h2>
             <p className="muted mt-3 text-[17px] leading-[1.9]">
-              Die Vergleichstexte sind eigene Hermetia-Erklärungen. Sie übernehmen keine geschützten Reporttexte, Fragebogenitems oder fremden Kartendeutungen. Gerade bei psychologischen, körpernahen oder spirituellen Systemen bleibt die Sprache bewusst vorsichtig: Reflexion ja, Diagnose oder Therapie nein.
+              Die Vergleichstexte sind eigene Astrakey-Erklärungen. Sie übernehmen keine geschützten Reporttexte, Fragebogenitems oder fremden Kartendeutungen. Gerade bei psychologischen, körpernahen oder spirituellen Systemen bleibt die Sprache bewusst vorsichtig: Reflexion ja, Diagnose oder Therapie nein.
             </p>
           </section>
           <div className="mt-12">
@@ -115,15 +115,15 @@ function comparisonSections(comparison: (typeof comparisons)[number]) {
   return [
     {
       title: "Der wichtigste Unterschied",
-      body: `${comparison.title} ist nicht nur ein Vergleich zweier Begriffe. Entscheidend ist, welche Art von Signal beide Seiten liefern: Manche Systeme sind rechnerisch aus Geburtsdaten abgeleitet, andere beruhen auf Selbstauskunft, wieder andere sind symbolische Reflexionsmodelle. Hermetia trennt diese Quellen, damit ein stark klingendes Ergebnis nicht automatisch als stärkerer Beweis wirkt.`,
+      body: `${comparison.title} ist nicht nur ein Vergleich zweier Begriffe. Entscheidend ist, welche Art von Signal beide Seiten liefern: Manche Systeme sind rechnerisch aus Geburtsdaten abgeleitet, andere beruhen auf Selbstauskunft, wieder andere sind symbolische Reflexionsmodelle. Astrakey trennt diese Quellen, damit ein stark klingendes Ergebnis nicht automatisch als stärkerer Beweis wirkt.`,
     },
     {
-      title: "Warum Hermetia beide Perspektiven verbindet",
-      body: `Ein einzelnes System kann sehr treffend wirken, bleibt aber in seiner eigenen Sprache. Hermetia prüft deshalb, ob Themen aus verschiedenen Familien wiederkehren. Wenn der Vergleich zeigt, dass zwei Systeme unterschiedliche Datenquellen nutzen und dennoch ähnliche Motive sichtbar machen, wird daraus ein stärkeres Konvergenzsignal. Wenn sie widersprechen, entsteht kein Fehler, sondern eine gute Reflexionsfrage.`,
+      title: "Warum Astrakey beide Perspektiven verbindet",
+      body: `Ein einzelnes System kann sehr treffend wirken, bleibt aber in seiner eigenen Sprache. Astrakey prüft deshalb, ob Themen aus verschiedenen Familien wiederkehren. Wenn der Vergleich zeigt, dass zwei Systeme unterschiedliche Datenquellen nutzen und dennoch ähnliche Motive sichtbar machen, wird daraus ein stärkeres Konvergenzsignal. Wenn sie widersprechen, entsteht kein Fehler, sondern eine gute Reflexionsfrage.`,
     },
     {
       title: "Wann welcher Blickwinkel hilfreicher ist",
-      body: `Für schnelle Orientierung kann eine klare Typologie hilfreich sein. Für Alltag, Beziehung und langfristige Entwicklung braucht es oft mehr Nuance. Hermetia nutzt Vergleiche deshalb nicht, um einen Gewinner zu bestimmen, sondern um den passenden Einsatz zu erklären: Was hilft beim ersten Aha-Moment, was bei Entscheidungen, was bei Beziehungsmustern und was bei tieferer Selbstreflexion?`,
+      body: `Für schnelle Orientierung kann eine klare Typologie hilfreich sein. Für Alltag, Beziehung und langfristige Entwicklung braucht es oft mehr Nuance. Astrakey nutzt Vergleiche deshalb nicht, um einen Gewinner zu bestimmen, sondern um den passenden Einsatz zu erklären: Was hilft beim ersten Aha-Moment, was bei Entscheidungen, was bei Beziehungsmustern und was bei tieferer Selbstreflexion?`,
     },
     {
       title: "So wird daraus ein persönlicher Aha-Moment",
@@ -136,10 +136,10 @@ function comparisonFaq(comparison: (typeof comparisons)[number]) {
   return [
     {
       q: `Welches System ist bei ${comparison.title} besser?`,
-      a: "Hermetia entscheidet das nicht pauschal. Systeme haben unterschiedliche Stärken. Entscheidend ist, welche Perspektive zur Frage passt und ob mehrere unabhängige Signale zusammenlaufen.",
+      a: "Astrakey entscheidet das nicht pauschal. Systeme haben unterschiedliche Stärken. Entscheidend ist, welche Perspektive zur Frage passt und ob mehrere unabhängige Signale zusammenlaufen.",
     },
     {
-      q: "Warum nutzt Hermetia überhaupt mehrere Systeme?",
+      q: "Warum nutzt Astrakey überhaupt mehrere Systeme?",
       a: "Mehrere Systeme reduzieren die Abhängigkeit von einer einzelnen Symbolsprache. Wichtig ist dabei, verwandte Datenquellen nicht naiv doppelt zu zählen.",
     },
     {

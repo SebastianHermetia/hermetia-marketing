@@ -69,7 +69,7 @@ function shouldTranslate(value) {
   const text = normalizedText(value);
   if (!text) return false;
   if (text.length < 3) return false;
-  if (text === "Hermetia" || text === "AI" || text === "FAQ" || text === "Premium") return false;
+  if (text === "Astrakey" || text === "AI" || text === "FAQ" || text === "Premium") return false;
   if (/^[a-z]{2}$/i.test(text)) return false;
   if (/^https?:\/\//i.test(text) || text.startsWith("/") || text.startsWith("#")) return false;
   // A bare email/handle is not translatable, but prose that merely *contains* an address is
@@ -131,7 +131,7 @@ async function translateBatch(locale, batch) {
   const query = batch.join(delimiter);
   const params = new URLSearchParams({ client: "gtx", sl: "de", tl: locale, dt: "t", q: query });
   const response = await fetch(`https://translate.googleapis.com/translate_a/single?${params.toString()}`, {
-    headers: { "user-agent": "Hermetia-i18n-build/1.0" },
+    headers: { "user-agent": "Astrakey-i18n-build/1.0" },
   });
   if (!response.ok) throw new Error(`Translation request failed for ${locale}: ${response.status}`);
   const data = await response.json();

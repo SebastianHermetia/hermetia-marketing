@@ -54,20 +54,20 @@ export default async function GlossarDetailPage({ params }: { params: Promise<{ 
             <span className="kicker">{ui.method}</span>
             <h2 className="mt-2 text-[clamp(24px,3vw,30px)]">Wann ist {term.term} für mein Profil relevant?</h2>
             <p className="muted mt-3 text-[17px] leading-[1.85]">
-              Relevant wird {term.term}, wenn der Begriff hilft, ein wiederkehrendes Muster präziser zu benennen. Hermetia nutzt solche Begriffe nicht als isolierte Etiketten, sondern als verständliche Antwortbausteine: erst erklären, dann mit anderen Systemsignalen vergleichen, dann in der eigenen Seelenkarte prüfen.
+              Relevant wird {term.term}, wenn der Begriff hilft, ein wiederkehrendes Muster präziser zu benennen. Astrakey nutzt solche Begriffe nicht als isolierte Etiketten, sondern als verständliche Antwortbausteine: erst erklären, dann mit anderen Systemsignalen vergleichen, dann in der eigenen Seelenkarte prüfen.
             </p>
           </section>
           <section className="mt-12 rounded-card border border-sand bg-white p-6 shadow-soft">
-            <h2 className="text-[clamp(24px,3vw,30px)]">Bedeutung in Hermetia</h2>
+            <h2 className="text-[clamp(24px,3vw,30px)]">Bedeutung in Astrakey</h2>
             <p className="muted mt-3 text-[17px] leading-[1.85]">
-              Der Begriff {term.term} wird bei Hermetia nicht isoliert verwendet. Er bekommt seine Bedeutung erst im Zusammenspiel mit Seelenkarte, Konvergenz-Engine, Systemfamilien und Nutzerfeedback. Dadurch bleibt die Erklärung verständlich, ohne den Begriff als starres Etikett über eine Person zu legen.
+              Der Begriff {term.term} wird bei Astrakey nicht isoliert verwendet. Er bekommt seine Bedeutung erst im Zusammenspiel mit Seelenkarte, Konvergenz-Engine, Systemfamilien und Nutzerfeedback. Dadurch bleibt die Erklärung verständlich, ohne den Begriff als starres Etikett über eine Person zu legen.
             </p>
           </section>
           <section className="mt-8 rounded-card border border-sand bg-white p-6 shadow-soft">
             <span className="kicker">Beispiel, fiktiv</span>
             <h2 className="mt-2 text-[clamp(24px,3vw,30px)]">Wie {term.term} in einer Deutung auftauchen könnte</h2>
             <p className="muted mt-3 text-[17px] leading-[1.85]">
-              Eine fiktive Person liest den Begriff {term.term} und erkennt darin zunächst nur ein einzelnes Wort. Erst wenn Hermetia zeigt, welche Systeme, Fragen oder Tagesimpulse dasselbe Thema berühren, entsteht ein nutzbarer Kontext. Die Deutung würde deshalb nicht lauten: Du bist so. Sie würde fragen: Wo zeigt sich dieses Motiv, wo hilft es dir, und wo wird es zu eng?
+              Eine fiktive Person liest den Begriff {term.term} und erkennt darin zunächst nur ein einzelnes Wort. Erst wenn Astrakey zeigt, welche Systeme, Fragen oder Tagesimpulse dasselbe Thema berühren, entsteht ein nutzbarer Kontext. Die Deutung würde deshalb nicht lauten: Du bist so. Sie würde fragen: Wo zeigt sich dieses Motiv, wo hilft es dir, und wo wird es zu eng?
             </p>
           </section>
           <section className="mt-8 rounded-card border border-altrosa/25 bg-altrosa/10 p-6">
@@ -78,9 +78,9 @@ export default async function GlossarDetailPage({ params }: { params: Promise<{ 
           </section>
           <section className="mt-8 rounded-card border border-sand bg-creme-tief p-6">
             <span className="kicker">IP und Datenschutz</span>
-            <h2 className="mt-2 text-[clamp(24px,3vw,30px)]">Warum Hermetia eigene Sprache verwendet</h2>
+            <h2 className="mt-2 text-[clamp(24px,3vw,30px)]">Warum Astrakey eigene Sprache verwendet</h2>
             <p className="muted mt-3 text-[17px] leading-[1.85]">
-              Hermetia erklärt {term.term} mit eigenen Texten und übernimmt keine geschützten Reportpassagen, Kartentexte oder Fragebogenitems. Wenn ein Begriff sensible Profilinhalte berührt, bleibt außerdem wichtig: Einwilligung, Datenminimierung, Löschung und AI-Transparenz gehören zur Produktlogik.
+              Astrakey erklärt {term.term} mit eigenen Texten und übernimmt keine geschützten Reportpassagen, Kartentexte oder Fragebogenitems. Wenn ein Begriff sensible Profilinhalte berührt, bleibt außerdem wichtig: Einwilligung, Datenminimierung, Löschung und AI-Transparenz gehören zur Produktlogik.
             </p>
           </section>
           <section className="mt-10">
@@ -99,7 +99,7 @@ export default async function GlossarDetailPage({ params }: { params: Promise<{ 
             <Faq items={faq} />
           </div>
           <div className="mt-12">
-            <AppCta locale={locale} title="Erlebe den Begriff in deinem eigenen Profil." text="Hermetia macht abstrakte Begriffe erst dann wirklich greifbar, wenn sie mit deiner Seelenkarte verbunden sind." source={`glossary-${term.slug}`} />
+            <AppCta locale={locale} title="Erlebe den Begriff in deinem eigenen Profil." text="Astrakey macht abstrakte Begriffe erst dann wirklich greifbar, wenn sie mit deiner Seelenkarte verbunden sind." source={`glossary-${term.slug}`} />
           </div>
         </div>
       </article>
@@ -115,12 +115,12 @@ function glossaryFaq(term: (typeof glossaryTerms)[number]) {
       a: term.definition,
     },
     {
-      q: `Wie nutzt Hermetia ${term.term}?`,
-      a: "Hermetia nutzt den Begriff als erklärbaren Baustein innerhalb der Seelenkarte. Entscheidend ist, ob er mit anderen Systemsignalen zusammenläuft und für den Nutzer nachvollziehbar bleibt.",
+      q: `Wie nutzt Astrakey ${term.term}?`,
+      a: "Astrakey nutzt den Begriff als erklärbaren Baustein innerhalb der Seelenkarte. Entscheidend ist, ob er mit anderen Systemsignalen zusammenläuft und für den Nutzer nachvollziehbar bleibt.",
     },
     {
       q: `Ist ${term.term} eine Diagnose oder Vorhersage?`,
-      a: "Nein. Der Begriff dient der Orientierung und Selbstreflexion. Hermetia ersetzt keine medizinische, psychologische, therapeutische oder rechtliche Beratung.",
+      a: "Nein. Der Begriff dient der Orientierung und Selbstreflexion. Astrakey ersetzt keine medizinische, psychologische, therapeutische oder rechtliche Beratung.",
     },
   ];
 }

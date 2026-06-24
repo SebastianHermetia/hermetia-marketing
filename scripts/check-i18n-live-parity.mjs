@@ -3,7 +3,7 @@ import { join } from "node:path";
 
 const args = process.argv.slice(2);
 const baseArg = args[args.indexOf("--base") + 1];
-const base = (baseArg || "https://hermetiastart.digital-expert.de").replace(/\/$/, "");
+const base = (baseArg || "https://astrakey.me").replace(/\/$/, "");
 const root = process.cwd();
 const config = JSON.parse(await import("node:fs").then((fs) => fs.readFileSync(join(root, "scripts", "i18n-audit-config.json"), "utf8")));
 const reportDir = join(root, "..", "..", "2.Gehirn", "02 Projekte", "Hermetia", "Übersetzungen", "Audits");

@@ -13,7 +13,7 @@ const freeItems = [
   "erste Kernthemen und Grundresonanz",
   "keine Kreditkarte beim Start",
   "Gefühl für Sprache, Methode und Datenschutz",
-  "Entscheidung, ob Hermetia überhaupt passt",
+  "Entscheidung, ob Astrakey überhaupt passt",
 ];
 
 const premiumItems = [
@@ -27,7 +27,7 @@ const premiumItems = [
 const decisionSignals = [
   {
     title: "Kostenlos reicht, wenn...",
-    text: "du erst prüfen willst, ob Hermetias Sprache dich berührt, ob die Seelenkarte resoniert und ob du Vertrauen in Methode, Datenschutz und Grenzen aufbaust.",
+    text: "du erst prüfen willst, ob Astrakeys Sprache dich berührt, ob die Seelenkarte resoniert und ob du Vertrauen in Methode, Datenschutz und Grenzen aufbaust.",
   },
   {
     title: "Premium lohnt sich, wenn...",
@@ -35,7 +35,7 @@ const decisionSignals = [
   },
   {
     title: "Warten ist richtig, wenn...",
-    text: "du gerade eine Diagnose, Therapie, akute Krisenhilfe oder eine Entscheidungsgarantie suchst. Dafür ist Hermetia nicht gedacht.",
+    text: "du gerade eine Diagnose, Therapie, akute Krisenhilfe oder eine Entscheidungsgarantie suchst. Dafür ist Astrakey nicht gedacht.",
   },
 ];
 
@@ -90,7 +90,7 @@ const fairnessRules = [
 
 const faq = [
   {
-    q: "Kann ich Hermetia wirklich kostenlos starten?",
+    q: "Kann ich Astrakey wirklich kostenlos starten?",
     a: "Ja. Der Einstieg ist ohne Kreditkarte gedacht. Du siehst deine Seelenkarte und erste Kernthemen, bevor du entscheidest, ob ein bezahltes Modell sinnvoll ist.",
   },
   {
@@ -99,7 +99,7 @@ const faq = [
   },
   {
     q: "Wann sollte ich nicht upgraden?",
-    a: "Wenn du nur aus Angst, Druck oder dem Wunsch nach sicheren Vorhersagen upgraden würdest. Hermetia erzeugt keine FOMO, sondern unterstützt bewusste Reflexion.",
+    a: "Wenn du nur aus Angst, Druck oder dem Wunsch nach sicheren Vorhersagen upgraden würdest. Astrakey erzeugt keine FOMO, sondern unterstützt bewusste Reflexion.",
   },
   {
     q: "Kann ich später kündigen?",
@@ -115,25 +115,25 @@ const faq = [
   },
   {
     q: "Warum ist der kostenlose Einstieg wichtig für Vertrauen?",
-    a: "Weil Hermetia mit sensiblen Profilthemen arbeitet. Du erlebst Sprache, Grenzen, Datenschutz und erste Kernthemen, bevor du bezahlte Tiefe wählst.",
+    a: "Weil Astrakey mit sensiblen Profilthemen arbeitet. Du erlebst Sprache, Grenzen, Datenschutz und erste Kernthemen, bevor du bezahlte Tiefe wählst.",
   },
 ];
 
 const freePremiumCopy = {
   de: {
-    seoTitle: "Hermetia kostenlos vs Premium — wann sich bezahlte Tiefe lohnt",
+    seoTitle: "Astrakey kostenlos vs Premium — wann sich bezahlte Tiefe lohnt",
     seoDescription:
-      "Was du kostenlos bei Hermetia bekommst, wann Premium sinnvoll ist und wann du bewusst nicht upgraden solltest. Klare Entscheidungshilfe mit FAQ.",
-    articleHeadline: "Hermetia kostenlos vs Premium",
+      "Was du kostenlos bei Astrakey bekommst, wann Premium sinnvoll ist und wann du bewusst nicht upgraden solltest. Klare Entscheidungshilfe mit FAQ.",
+    articleHeadline: "Astrakey kostenlos vs Premium",
     articleDescription: "Klare Entscheidungshilfe für kostenlosen Einstieg und bezahlte Tiefe.",
     breadcrumb: "Kostenlos vs Premium",
     heroKicker: "Kostenlos vs Premium",
     heroTitle: "Erst Resonanz prüfen. Dann bewusst Tiefe wählen.",
     heroLead:
-      "Hermetia verkauft nicht über Druck. Der kostenlose Einstieg zeigt dir, ob deine Seelenkarte, die Sprache und die Methode stimmig wirken. Premium wird erst dann sinnvoll, wenn du mehr Tiefe, Alltag und Beziehungsebene wirklich nutzen möchtest.",
+      "Astrakey verkauft nicht über Druck. Der kostenlose Einstieg zeigt dir, ob deine Seelenkarte, die Sprache und die Methode stimmig wirken. Premium wird erst dann sinnvoll, wenn du mehr Tiefe, Alltag und Beziehungsebene wirklich nutzen möchtest.",
     startCta: "Kostenlos starten",
     pricingCta: "Tarife ansehen",
-    heroAlt: "Abstrakte Ebenen als Bild für kostenlosen Einstieg und Premium-Tiefe bei Hermetia",
+    heroAlt: "Abstrakte Ebenen als Bild für kostenlosen Einstieg und Premium-Tiefe bei Astrakey",
     heroCaption: "Kostenlos zeigt den ersten Zusammenhang. Premium öffnet die fortlaufende Arbeit mit den Ebenen.",
     freeChip: "Kostenlos",
     freeTitle: "Was du ohne Zahlung prüfen kannst",
@@ -146,21 +146,21 @@ const freePremiumCopy = {
     valueKicker: "Werttreppe",
     valueTitle: "Von kostenloser Resonanz zu bezahlter Tiefe.",
     valueText:
-      "Die Preislogik von Hermetia wirkt nicht wie eine harte Paywall. Sie zeigt, welche Art von Wert in welchem Nutzungsmoment entsteht und wann ein Upgrade wirklich Sinn ergibt.",
+      "Die Preislogik von Astrakey wirkt nicht wie eine harte Paywall. Sie zeigt, welche Art von Wert in welchem Nutzungsmoment entsteht und wann ein Upgrade wirklich Sinn ergibt.",
     decisionKicker: "Entscheidungshilfe",
     decisionTitle: "Nicht jeder sollte sofort upgraden.",
     decisionText:
-      "Bei Hermetia geht es nicht darum, möglichst schnell Druck aufzubauen. Du sollst verstehen, welcher Schritt wirklich passt.",
+      "Bei Astrakey geht es nicht darum, möglichst schnell Druck aufzubauen. Du sollst verstehen, welcher Schritt wirklich passt.",
     modulesKicker: "Premium-Module",
     modulesTitle: "Wofür bezahlte Modelle konkret stehen.",
     modulesText:
       "Premium ist kein einzelnes Geheimkapitel. Es bündelt die Funktionen, die über Zeit echten Nutzen erzeugen: mehr Kontext, mehr Wiederholung, mehr Sicherheit und mehr persönliche Begleitung.",
-    moduleAlt: "Grafik für verankerte und feine Premium-Tiefe bei Hermetia",
+    moduleAlt: "Grafik für verankerte und feine Premium-Tiefe bei Astrakey",
     moduleCaption: "Bezahlte Tiefe bleibt verankert in Daten und zugleich fein genug für persönliche Reflexion.",
     fairnessKicker: "Fairness",
     fairnessTitle: "Ein gutes Upgrade fühlt sich nicht gedrängt an.",
     fairnessText:
-      "Hermetia wächst über Vertrauen, nicht über Angstmarketing. Gerade weil spirituelle Profile sensibel sind, bleibt die Kaufentscheidung ruhig, transparent und widerrufbar.",
+      "Astrakey wächst über Vertrauen, nicht über Angstmarketing. Gerade weil spirituelle Profile sensibel sind, bleibt die Kaufentscheidung ruhig, transparent und widerrufbar.",
     approvalsCta: "Rechtliche Freigaben ansehen",
     nextKicker: "Nächster Schritt",
     nextTitle: "Beginne dort, wo Vertrauen entsteht: kostenlos.",
@@ -169,7 +169,7 @@ const freePremiumCopy = {
     useCasesCta: "Anwendungsfälle lesen",
     fairnessRuleTitle: "Fairness-Regel",
     fairnessRuleText:
-      "Premium fühlt sich wie eine bewusste Vertiefung an, nicht wie eine Angstreaktion. Deshalb benennt Hermetia Grenzen, Kündigung, Widerruf und Datenschutz sichtbar.",
+      "Premium fühlt sich wie eine bewusste Vertiefung an, nicht wie eine Angstreaktion. Deshalb benennt Astrakey Grenzen, Kündigung, Widerruf und Datenschutz sichtbar.",
     faqKicker: "FAQ",
     faqTitle: "Häufige Fragen zu kostenlos und Premium",
     freeItems,
@@ -181,19 +181,19 @@ const freePremiumCopy = {
     faq,
   },
   en: {
-    seoTitle: "Hermetia free vs Premium — when paid depth is worth it",
+    seoTitle: "Astrakey free vs Premium — when paid depth is worth it",
     seoDescription:
-      "What you get for free in Hermetia, when Premium makes sense and when you should deliberately wait. Clear decision help with FAQ.",
-    articleHeadline: "Hermetia free vs Premium",
+      "What you get for free in Astrakey, when Premium makes sense and when you should deliberately wait. Clear decision help with FAQ.",
+    articleHeadline: "Astrakey free vs Premium",
     articleDescription: "Clear decision help for the free start and paid depth.",
     breadcrumb: "Free vs Premium",
     heroKicker: "Free vs Premium",
     heroTitle: "Test resonance first. Then choose depth consciously.",
     heroLead:
-      "Hermetia does not sell through pressure. The free start shows whether your soul map, the language and the method feel coherent. Premium becomes useful only when you truly want more depth, daily practice and relationship layers.",
+      "Astrakey does not sell through pressure. The free start shows whether your soul map, the language and the method feel coherent. Premium becomes useful only when you truly want more depth, daily practice and relationship layers.",
     startCta: "Start free",
     pricingCta: "View plans",
-    heroAlt: "Abstract layers as an image for Hermetia's free start and Premium depth",
+    heroAlt: "Abstract layers as an image for Astrakey's free start and Premium depth",
     heroCaption: "Free shows the first connection. Premium opens ongoing work with the levels.",
     freeChip: "Free",
     freeTitle: "What you can test without paying",
@@ -206,21 +206,21 @@ const freePremiumCopy = {
     valueKicker: "Value ladder",
     valueTitle: "From free resonance to paid depth.",
     valueText:
-      "Hermetia's pricing logic does not feel like a hard paywall. It explains what kind of value emerges at which moment of use and when an upgrade genuinely makes sense.",
+      "Astrakey's pricing logic does not feel like a hard paywall. It explains what kind of value emerges at which moment of use and when an upgrade genuinely makes sense.",
     decisionKicker: "Decision help",
     decisionTitle: "Not everyone should upgrade immediately.",
     decisionText:
-      "Hermetia does not try to create pressure as quickly as possible. It helps you understand which step truly fits.",
+      "Astrakey does not try to create pressure as quickly as possible. It helps you understand which step truly fits.",
     modulesKicker: "Premium modules",
     modulesTitle: "What paid models stand for in practice.",
     modulesText:
       "Premium is not a single secret chapter. It bundles the functions that create value over time: more context, more repetition, more safety and more personal guidance.",
-    moduleAlt: "Graphic for grounded and subtle Premium depth in Hermetia",
+    moduleAlt: "Graphic for grounded and subtle Premium depth in Astrakey",
     moduleCaption: "Paid depth remains grounded in data and subtle enough for personal reflection.",
     fairnessKicker: "Fairness",
     fairnessTitle: "A good upgrade does not feel forced.",
     fairnessText:
-      "Hermetia grows through trust, not fear marketing. Precisely because spiritual profiles are sensitive, the purchase decision remains calm, transparent and withdrawable.",
+      "Astrakey grows through trust, not fear marketing. Precisely because spiritual profiles are sensitive, the purchase decision remains calm, transparent and withdrawable.",
     approvalsCta: "View legal approvals",
     nextKicker: "Next step",
     nextTitle: "Begin where trust starts: free.",
@@ -229,7 +229,7 @@ const freePremiumCopy = {
     useCasesCta: "Read use cases",
     fairnessRuleTitle: "Fairness rule",
     fairnessRuleText:
-      "Premium feels like conscious deepening, not a fear response. That is why Hermetia makes limits, cancellation, withdrawal and data protection visible.",
+      "Premium feels like conscious deepening, not a fear response. That is why Astrakey makes limits, cancellation, withdrawal and data protection visible.",
     faqKicker: "FAQ",
     faqTitle: "Frequently asked questions about Free and Premium",
     freeItems: [
@@ -237,7 +237,7 @@ const freePremiumCopy = {
       "first core themes and basic resonance",
       "no credit card at the start",
       "a feel for language, method and data protection",
-      "a decision on whether Hermetia fits at all",
+      "a decision on whether Astrakey fits at all",
     ],
     premiumItems: [
       "all levels of your soul map",
@@ -249,7 +249,7 @@ const freePremiumCopy = {
     decisionSignals: [
       {
         title: "Free is enough if...",
-        text: "you first want to check whether Hermetia's language touches you, whether the soul map resonates and whether you build trust in the method, data protection and limits.",
+        text: "you first want to check whether Astrakey's language touches you, whether the soul map resonates and whether you build trust in the method, data protection and limits.",
       },
       {
         title: "Premium is worth it if...",
@@ -257,7 +257,7 @@ const freePremiumCopy = {
       },
       {
         title: "Waiting is right if...",
-        text: "you are currently looking for a diagnosis, therapy, acute crisis support or a guaranteed decision. Hermetia is not designed for that.",
+        text: "you are currently looking for a diagnosis, therapy, acute crisis support or a guaranteed decision. Astrakey is not designed for that.",
       },
     ],
     valueLadder: [
@@ -280,7 +280,7 @@ const freePremiumCopy = {
     ],
     faq: [
       {
-        q: "Can I really start Hermetia for free?",
+        q: "Can I really start Astrakey for free?",
         a: "Yes. The entry is designed without a credit card. You see your soul map and first core themes before deciding whether a paid model makes sense.",
       },
       {
@@ -289,7 +289,7 @@ const freePremiumCopy = {
       },
       {
         q: "When should I not upgrade?",
-        a: "If you would upgrade only from fear, pressure or a wish for guaranteed predictions. Hermetia does not create FOMO, but supports conscious reflection.",
+        a: "If you would upgrade only from fear, pressure or a wish for guaranteed predictions. Astrakey does not create FOMO, but supports conscious reflection.",
       },
       {
         q: "Can I cancel later?",
@@ -305,7 +305,7 @@ const freePremiumCopy = {
       },
       {
         q: "Why is the free start important for trust?",
-        a: "Because Hermetia works with sensitive profile themes. You experience language, limits, data protection and first core themes before choosing paid depth.",
+        a: "Because Astrakey works with sensitive profile themes. You experience language, limits, data protection and first core themes before choosing paid depth.",
       },
     ],
   },
@@ -338,12 +338,12 @@ export default async function FreePremiumPage({ params }: { params: Promise<{ lo
             description: copy.articleDescription,
             locale,
             url: pageUrl,
-            about: "Hermetia Preise und Premium-Modell",
+            about: "Astrakey Preise und Premium-Modell",
             image: `${siteUrl}/images/hermetia/celestial-layer-orbits.png`,
           }),
           faqSchema(localizedFaq),
           breadcrumbSchema([
-            { name: "Hermetia", url: `${siteUrl}/${locale}/` },
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
             { name: copy.breadcrumb, url: pageUrl },
           ]),
         ]}

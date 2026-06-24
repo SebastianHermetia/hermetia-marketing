@@ -23,7 +23,7 @@ export function Header({ locale, current }: { locale: Locale; current?: string }
           <span className="relative inline-block h-[22px] w-[22px] rounded-full border-[1.4px] border-gold">
             <span className="absolute inset-[5px] rounded-full bg-gold/85" />
           </span>
-          Hermetia
+          Astrakey
         </Link>
         <nav className="ml-1 hidden min-w-0 gap-4 text-[14px] lg:flex xl:gap-6 xl:text-[14.5px]">
           {items.map((i) => (

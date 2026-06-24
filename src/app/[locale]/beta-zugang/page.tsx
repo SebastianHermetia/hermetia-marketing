@@ -8,10 +8,10 @@ import { BetaAccessForm } from "@/components/BetaAccessForm";
 
 const copy = {
   de: {
-    seoTitle: "Beta-Zugang zu Hermetia erhalten",
-    seoDescription: "Fordere deinen kuratierten Beta-Zugang zu Hermetia an oder starte direkt, wenn deine E-Mail bereits freigegeben ist.",
+    seoTitle: "Beta-Zugang zu Astrakey erhalten",
+    seoDescription: "Fordere deinen kuratierten Beta-Zugang zu Astrakey an oder starte direkt, wenn deine E-Mail bereits freigegeben ist.",
     kicker: "Beta-Zugang",
-    title: "Hermetia ist aktuell in einer kuratierten Beta.",
+    title: "Astrakey ist aktuell in einer kuratierten Beta.",
     intro: "Wenn deine E-Mail bereits freigegeben ist, gelangst du direkt zum Profilstart. Wenn nicht, speichern wir deine Anfrage für die nächste Freigaberunde.",
     bullets: [
       "öffentliche Website lesen und Methode verstehen",
@@ -34,10 +34,10 @@ const copy = {
     },
   },
   en: {
-    seoTitle: "Get beta access to Hermetia",
-    seoDescription: "Request curated beta access to Hermetia or continue directly if your email has already been approved.",
+    seoTitle: "Get beta access to Astrakey",
+    seoDescription: "Request curated beta access to Astrakey or continue directly if your email has already been approved.",
     kicker: "Beta access",
-    title: "Hermetia is currently running as a curated beta.",
+    title: "Astrakey is currently running as a curated beta.",
     intro: "If your email has already been approved, you will continue straight to profile setup. If not, we will save your request for the next approval round.",
     bullets: [
       "read the public website and understand the method",

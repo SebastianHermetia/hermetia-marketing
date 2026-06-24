@@ -3,7 +3,7 @@
 # (oder lokal testen mit:  npx decap-server  +  local_backend: true).
 backend:
   name: github
-  repo: SebastianHermetia/hermetia-marketing
+  repo: SebastianAstrakey/hermetia-marketing
   branch: main
 
 # Produktion: false. Zum lokalen Testen ohne GitHub-Login vorübergehend auf true

@@ -66,7 +66,7 @@ export function Footer({ locale }: { locale: Locale }) {
               <span className="relative inline-block h-[22px] w-[22px] rounded-full border-[1.4px] border-gold">
                 <span className="absolute inset-[5px] rounded-full bg-gold/85" />
               </span>
-              Hermetia
+              Astrakey
             </span>
             <p className="mt-4 max-w-[240px] text-[#cdbfe0]">{t.footer.blurb}</p>
           </div>
@@ -106,7 +106,7 @@ export function Footer({ locale }: { locale: Locale }) {
           </FootCol>
         </div>
         <hr className="hair my-6 border-gold-weich/20" />
-        <p className="text-[12.5px] text-[#bfb0d2]">© 2026 Hermetia · {t.footer.disclaimer}</p>
+        <p className="text-[12.5px] text-[#bfb0d2]">© 2026 Astrakey · {t.footer.disclaimer}</p>
       </div>
     </footer>
   );

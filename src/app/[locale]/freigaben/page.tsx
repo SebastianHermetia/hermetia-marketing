@@ -10,13 +10,13 @@ import { AppCta } from "@/components/AppCta";
 
 const launchReviewCopy = {
   de: {
-    seoTitle: "Hermetia Launch-Freigaben — Legal, IP, Datenschutz und Indexing",
+    seoTitle: "Astrakey Launch-Freigaben — Legal, IP, Datenschutz und Indexing",
     seoDescription:
-      "Transparenter Status der Hermetia Launch-Freigaben für eigene Inhalte, Bildrechte, Datenschutz, AI-Transparenz, Verbraucherrecht, Sprachen und Indexing.",
+      "Transparenter Status der Astrakey Launch-Freigaben für eigene Inhalte, Bildrechte, Datenschutz, AI-Transparenz, Verbraucherrecht, Sprachen und Indexing.",
     kicker: "Launch-Governance",
     title: "Legal-, IP- und Launch-Freigaben",
     lead:
-      "Hermetia baut Reichweite mit sichtbaren Leitplanken auf. Diese Seite zeigt, welche Schutzmaßnahmen technisch und redaktionell bereits eingebaut sind und welche Punkte vor dem finalen Domain-Launch noch extern freigegeben werden.",
+      "Astrakey baut Reichweite mit sichtbaren Leitplanken auf. Diese Seite zeigt, welche Schutzmaßnahmen technisch und redaktionell bereits eingebaut sind und welche Punkte vor dem finalen Domain-Launch noch extern freigegeben werden.",
     metrics: {
       total: "Gates gesamt",
       ready: "Umgesetzt",
@@ -33,7 +33,7 @@ const launchReviewCopy = {
     conversionTitle: "Warum das conversion-relevant ist",
     conversionText:
       "Vertrauen ist Teil der Conversion. Besucher sollen neugierig werden, sich anmelden und ein bezahltes Modell wählen können, ohne dass sensible Daten, AI-Deutung, Beziehungsprofile oder Preise unklar wirken.",
-    ctaTitle: "Teste Hermetia mit klaren Leitplanken.",
+    ctaTitle: "Teste Astrakey mit klaren Leitplanken.",
     ctaText:
       "Starte dein Profil kostenlos und erlebe, wie Methode, Datenschutz und Selbstreflexion zusammenfinden.",
     status: {
@@ -43,13 +43,13 @@ const launchReviewCopy = {
     },
   },
   en: {
-    seoTitle: "Hermetia launch approvals — legal, IP, data protection and indexing",
+    seoTitle: "Astrakey launch approvals — legal, IP, data protection and indexing",
     seoDescription:
-      "Transparent status of Hermetia launch approvals for original content, image rights, data protection, AI transparency, consumer law, languages and indexing.",
+      "Transparent status of Astrakey launch approvals for original content, image rights, data protection, AI transparency, consumer law, languages and indexing.",
     kicker: "Launch governance",
     title: "Legal, IP and launch approvals",
     lead:
-      "Hermetia builds reach with visible guardrails. This page shows which technical and editorial safeguards are already in place and which points still need external approval before the final domain launch.",
+      "Astrakey builds reach with visible guardrails. This page shows which technical and editorial safeguards are already in place and which points still need external approval before the final domain launch.",
     metrics: {
       total: "Total gates",
       ready: "Implemented",
@@ -66,7 +66,7 @@ const launchReviewCopy = {
     conversionTitle: "Why this matters for conversion",
     conversionText:
       "Trust is part of conversion. Visitors should become curious, sign up and choose a paid plan without sensitive data, AI interpretation, relationship profiles or pricing feeling unclear.",
-    ctaTitle: "Test Hermetia with clear guardrails.",
+    ctaTitle: "Test Astrakey with clear guardrails.",
     ctaText:
       "Start your profile for free and experience how method, data protection and self-reflection work together.",
     status: {
@@ -82,7 +82,7 @@ const reviewGateCopy = {
     "own-content": {
       title: "Original texts and no copied interpretations",
       summary:
-        "Marketing, glossary, system and knowledge content is written as original Hermetia language. Proprietary interpretations, card texts or questionnaire items are not copied.",
+        "Marketing, glossary, system and knowledge content is written as original Astrakey language. Proprietary interpretations, card texts or questionnaire items are not copied.",
       evidence: [
         "System pages use original descriptions and legal boundaries.",
         "Gene Keys, Human Design, Tarot and oracle-card content refers to original language instead of third-party source text.",
@@ -96,7 +96,7 @@ const reviewGateCopy = {
       evidence: [
         "content/asset-inventory.md documents live images and graphics.",
         "npm run check:assets checks missing image and graphic references.",
-        "Convergence graphics are original abstract Hermetia diagrams.",
+        "Convergence graphics are original abstract Astrakey diagrams.",
       ],
     },
     "data-protection": {
@@ -122,7 +122,7 @@ const reviewGateCopy = {
     "no-diagnosis": {
       title: "No diagnosis, therapy or prediction",
       summary:
-        "All sensitive areas frame Hermetia as inspiration for self-reflection. Medical, psychological, therapeutic, legal and financial advice is excluded.",
+        "All sensitive areas frame Astrakey as inspiration for self-reflection. Medical, psychological, therapeutic, legal and financial advice is excluded.",
       evidence: [
         "Footer disclaimer on all pages.",
         "System detail pages contain interpretation limits.",

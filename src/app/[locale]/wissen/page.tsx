@@ -37,15 +37,15 @@ const clusters: { title: string; text: string; slugs: ArticleSlug[] }[] = [
 
 const searchIntents = [
   "Was ist eine Seelenkarte und wie entsteht sie?",
-  "Welche spirituellen Systeme nutzt Hermetia?",
+  "Welche spirituellen Systeme nutzt Astrakey?",
   "Wie funktioniert Konvergenz statt einzelner Deutung?",
-  "Ist Hermetia Therapie, Diagnose oder Vorhersage?",
+  "Ist Astrakey Therapie, Diagnose oder Vorhersage?",
   "Wann lohnt sich ein bezahltes Modell?",
 ];
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  return buildMetadata({ locale: locale as Locale, path: paths.wissen, title: "Hermetia Wissen — spirituelles Profiling, AI und Selbstreflexion", description: "Ratgeber und Grundlagen zu spirituellem Profiling, Geburtszeit, AI-Deutung, Datenschutz und verantwortungsvoller Selbstreflexion." });
+  return buildMetadata({ locale: locale as Locale, path: paths.wissen, title: "Astrakey Wissen — spirituelles Profiling, AI und Selbstreflexion", description: "Ratgeber und Grundlagen zu spirituellem Profiling, Geburtszeit, AI-Deutung, Datenschutz und verantwortungsvoller Selbstreflexion." });
 }
 
 export default async function WissenPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -61,15 +61,15 @@ export default async function WissenPage({ params }: { params: Promise<{ locale:
       <JsonLd
         data={[
           articleSchema({
-            headline: "Hermetia Wissen",
+            headline: "Astrakey Wissen",
             description: "Ratgeber zu spirituellem Profiling, Seelenkarte, Konvergenz, AI, Datenschutz und verantwortungsvoller Selbstreflexion.",
             locale,
             url: pageUrl,
-            about: "Hermetia Wissen",
+            about: "Astrakey Wissen",
             image: `${siteUrl}/images/hermetia/library-of-self-profile.png`,
           }),
           breadcrumbSchema([
-            { name: "Hermetia", url: `${siteUrl}/${locale}/` },
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
             { name: "Wissen", url: pageUrl },
           ]),
         ]}
@@ -80,14 +80,14 @@ export default async function WissenPage({ params }: { params: Promise<{ locale:
           <div>
             <span className="kicker">{ui.overview}</span>
             <h1 className="mt-3 max-w-[780px] text-[clamp(32px,5vw,48px)]">Ratgeber für spirituelles Profiling, AI und Selbstreflexion</h1>
-            <p className="lead mt-5 max-w-[700px]">Vertiefende Artikel, die Suchfragen beantworten und gleichzeitig zeigen, wie Hermetia verantwortungsvoll mit komplexen Systemen arbeitet.</p>
+            <p className="lead mt-5 max-w-[700px]">Vertiefende Artikel, die Suchfragen beantworten und gleichzeitig zeigen, wie Astrakey verantwortungsvoll mit komplexen Systemen arbeitet.</p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a className="btn btn-primary btn-lg" href={startUrl(locale, { source: "knowledge-hero" })}>{ui.startFree}</a>
               <a className="btn btn-ghost btn-lg" href={localePath(locale, paths.glossar)}>{ui.glossary}</a>
             </div>
           </div>
           <figure className="m-0 overflow-hidden rounded-card border border-sand bg-white shadow-soft">
-            <img src="/images/hermetia/library-of-self-profile.png" alt="Ruhige Bibliothek als Bild für Hermetia Wissen und Selbstreflexion" className="aspect-[4/3] w-full object-cover" />
+            <img src="/images/hermetia/library-of-self-profile.png" alt="Ruhige Bibliothek als Bild für Astrakey Wissen und Selbstreflexion" className="aspect-[4/3] w-full object-cover" />
             <figcaption className="px-5 py-4 text-[14px] text-pflaume/80">
               Wissen gibt Orientierung und macht den Weg zur eigenen Seelenkarte verständlicher.
             </figcaption>
@@ -101,7 +101,7 @@ export default async function WissenPage({ params }: { params: Promise<{ locale:
             <span className="kicker">Suchfragen</span>
             <h2 className="mt-3 text-[clamp(27px,4vw,38px)]">Welche Fragen beantwortet dieser Bereich?</h2>
             <p className="muted mt-4 text-[17px] leading-[1.85]">
-              Der Wissensbereich ist für Menschen gebaut, die Hermetia noch nicht kennen, aber nach Seelenkarte, Human Design, AI-Deutung, Datenschutz oder spirituellem Profiling suchen. Jede Antwort hilft konkret und führt bei passender Resonanz zum Profilstart.
+              Der Wissensbereich ist für Menschen gebaut, die Astrakey noch nicht kennen, aber nach Seelenkarte, Human Design, AI-Deutung, Datenschutz oder spirituellem Profiling suchen. Jede Antwort hilft konkret und führt bei passender Resonanz zum Profilstart.
             </p>
           </div>
           <div className="rounded-card border border-sand bg-white p-7 shadow-soft">
@@ -166,7 +166,7 @@ export default async function WissenPage({ params }: { params: Promise<{ locale:
           <AppCta
             locale={locale}
             title="Wissen ist der Einstieg. Dein Profil ist die Erfahrung."
-            text="Starte kostenlos und sieh, welche Themen Hermetia bei dir tatsächlich erkennt."
+            text="Starte kostenlos und sieh, welche Themen Astrakey bei dir tatsächlich erkennt."
             source="knowledge-final"
           />
         </div>

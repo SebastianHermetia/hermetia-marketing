@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: "Hermetia", template: "%s" },
+  title: { default: "Astrakey", template: "%s" },
 };
 
 // Pass-through: <html>/<body> + Fonts werden im [locale]-Layout gesetzt,

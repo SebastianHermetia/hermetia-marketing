@@ -14,7 +14,7 @@ export const reviewGates: ReviewGate[] = [
     title: "Eigene Texte und keine kopierten Deutungen",
     status: "ready",
     summary:
-      "Marketing-, Glossar-, System- und Wissensinhalte sind als eigene Hermetia-Texte formuliert. Proprietäre Deutungstexte, Kartentexte oder Fragebogenitems werden nicht übernommen.",
+      "Marketing-, Glossar-, System- und Wissensinhalte sind als eigene Astrakey-Texte formuliert. Proprietäre Deutungstexte, Kartentexte oder Fragebogenitems werden nicht übernommen.",
     evidence: [
       "Systemseiten nutzen eigene Beschreibungen und rechtliche Grenzen.",
       "Gene-Keys-, Human-Design-, Tarot- und Oracle-Card-Inhalte verweisen auf eigene Sprache statt fremde Originaltexte.",
@@ -30,7 +30,7 @@ export const reviewGates: ReviewGate[] = [
     evidence: [
       "content/asset-inventory.md dokumentiert live genutzte Bilder und Grafiken.",
       "npm run check:assets prüft fehlende Bild- und Grafikreferenzen.",
-      "Konvergenz-Grafiken sind eigene, abstrakte Hermetia-Diagramme.",
+      "Konvergenz-Grafiken sind eigene, abstrakte Astrakey-Diagramme.",
     ],
   },
   {
@@ -62,7 +62,7 @@ export const reviewGates: ReviewGate[] = [
     title: "Keine Diagnose, Therapie oder Vorhersage",
     status: "ready",
     summary:
-      "Alle sensiblen Bereiche rahmen Hermetia als Inspiration zur Selbstreflexion. Medizinische, psychologische, therapeutische, rechtliche und finanzielle Beratung werden ausgeschlossen.",
+      "Alle sensiblen Bereiche rahmen Astrakey als Inspiration zur Selbstreflexion. Medizinische, psychologische, therapeutische, rechtliche und finanzielle Beratung werden ausgeschlossen.",
     evidence: [
       "Footer-Disclaimer auf allen Seiten.",
       "Systemdetailseiten enthalten Grenzen der Deutung.",

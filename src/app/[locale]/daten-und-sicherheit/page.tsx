@@ -39,7 +39,7 @@ const safeguards = [
 const trustQuestions = [
   {
     title: "Warum sind spirituelle Profile besonders sensibel?",
-    text: "Geburtsdaten wirken zunächst neutral. In Verbindung mit Deutungssystemen können daraus aber Aussagen über Weltbild, Identität, Beziehung, Berufung, innere Konflikte oder spirituelle Orientierung entstehen. Hermetia behandelt solche Ableitungen deshalb nicht wie harmlose Marketingdaten.",
+    text: "Geburtsdaten wirken zunächst neutral. In Verbindung mit Deutungssystemen können daraus aber Aussagen über Weltbild, Identität, Beziehung, Berufung, innere Konflikte oder spirituelle Orientierung entstehen. Astrakey behandelt solche Ableitungen deshalb nicht wie harmlose Marketingdaten.",
   },
   {
     title: "Welche Rolle spielt Einwilligung?",
@@ -47,7 +47,7 @@ const trustQuestions = [
   },
   {
     title: "Was macht AI mit meinen Daten?",
-    text: "AI spekuliert bei Hermetia nicht frei über rohe Identitätsdaten. Die Produktlogik trennt Berechnung, Konvergenz und Formulierung. AI nutzt nur notwendige, freigegebene Kontexte, um berechnete Ergebnisse verständlicher zu machen.",
+    text: "AI spekuliert bei Astrakey nicht frei über rohe Identitätsdaten. Die Produktlogik trennt Berechnung, Konvergenz und Formulierung. AI nutzt nur notwendige, freigegebene Kontexte, um berechnete Ergebnisse verständlicher zu machen.",
   },
 ];
 
@@ -95,16 +95,16 @@ const riskControls = [
 
 const faq = [
   {
-    q: "Warum spricht Hermetia von sensiblen Daten?",
-    a: "Hermetia kann aus Geburtsdaten und Systemen spirituell-weltanschauliche Profilinhalte ableiten. Solche Aussagen können sehr persönlich sein und werden deshalb besonders vorsichtig erklärt und verarbeitet.",
+    q: "Warum spricht Astrakey von sensiblen Daten?",
+    a: "Astrakey kann aus Geburtsdaten und Systemen spirituell-weltanschauliche Profilinhalte ableiten. Solche Aussagen können sehr persönlich sein und werden deshalb besonders vorsichtig erklärt und verarbeitet.",
   },
   {
-    q: "Braucht Hermetia meine genaue Geburtszeit?",
-    a: "Nicht zwingend. Eine genaue Geburtszeit verbessert bestimmte Systeme. Ohne exakte Zeit kennzeichnet Hermetia, welche Aussagen weniger sicher sind.",
+    q: "Braucht Astrakey meine genaue Geburtszeit?",
+    a: "Nicht zwingend. Eine genaue Geburtszeit verbessert bestimmte Systeme. Ohne exakte Zeit kennzeichnet Astrakey, welche Aussagen weniger sicher sind.",
   },
   {
     q: "Sieht die AI mein rohes Geburtsdatum?",
-    a: "Hermetia trennt Rechenkern, Konvergenz und AI-Formulierung. AI arbeitet mit abgeleiteten Signalen und tritt nicht als Autorität über rohe Identitätsdaten auf.",
+    a: "Astrakey trennt Rechenkern, Konvergenz und AI-Formulierung. AI arbeitet mit abgeleiteten Signalen und tritt nicht als Autorität über rohe Identitätsdaten auf.",
   },
   {
     q: "Kann ich meine Daten löschen?",
@@ -116,11 +116,11 @@ const faq = [
   },
   {
     q: "Werden meine Daten für Werbung verkauft?",
-    a: "Nein. Hermetia rahmt keine Weitergabe zu Werbezwecken als Produktprinzip. Für den finalen Launch bilden die formalen Rechtstexte diese Linie verbindlich ab.",
+    a: "Nein. Astrakey rahmt keine Weitergabe zu Werbezwecken als Produktprinzip. Für den finalen Launch bilden die formalen Rechtstexte diese Linie verbindlich ab.",
   },
   {
     q: "Warum sind Beziehungsauswertungen anders geregelt?",
-    a: "Weil dabei Daten und Ableitungen über mindestens zwei Personen entstehen können. Deshalb braucht Hermetia klare Einwilligung der betroffenen Person und darf keine heimliche Auswertung normalisieren.",
+    a: "Weil dabei Daten und Ableitungen über mindestens zwei Personen entstehen können. Deshalb braucht Astrakey klare Einwilligung der betroffenen Person und darf keine heimliche Auswertung normalisieren.",
   },
   {
     q: "Warum ist die Marketingseite indexierbar, die App aber kontrolliert?",
@@ -130,19 +130,19 @@ const faq = [
 
 const dataSecurityCopy = {
   de: {
-    seoTitle: "Hermetia Daten und Sicherheit — sensible Profile, Einwilligung und AI",
+    seoTitle: "Astrakey Daten und Sicherheit — sensible Profile, Einwilligung und AI",
     seoDescription:
-      "Wie Hermetia Geburtsdaten, sensible Profilinhalte, Einwilligung, Export, Löschung, Zahlung und AI-Transparenz verständlich erklärt.",
-    articleHeadline: "Hermetia Daten und Sicherheit",
+      "Wie Astrakey Geburtsdaten, sensible Profilinhalte, Einwilligung, Export, Löschung, Zahlung und AI-Transparenz verständlich erklärt.",
+    articleHeadline: "Astrakey Daten und Sicherheit",
     articleDescription: "Verständliche Erklärung zu sensiblen Profildaten, Einwilligung, AI und Nutzerrechten.",
     breadcrumb: "Daten und Sicherheit",
     heroKicker: "Daten und Sicherheit",
     heroTitle: "Persönliche Tiefe braucht verständlichen Datenschutz.",
     heroLead:
-      "Hermetia arbeitet mit Geburtsdaten und abgeleiteten Profilinhalten. Das kann sehr persönlich werden. Deshalb werden Einwilligung, Datenminimierung, Export, Löschung, Zahlung und AI-Transparenz vor dem Profilstart klar erklärt.",
+      "Astrakey arbeitet mit Geburtsdaten und abgeleiteten Profilinhalten. Das kann sehr persönlich werden. Deshalb werden Einwilligung, Datenminimierung, Export, Löschung, Zahlung und AI-Transparenz vor dem Profilstart klar erklärt.",
     startCta: "Profil kostenlos starten",
     privacyCta: "Datenschutzerklärung lesen",
-    heroAlt: "Abstrakte Datentopografie als Bild für Hermetia Datenschutz und Sicherheit",
+    heroAlt: "Abstrakte Datentopografie als Bild für Astrakey Datenschutz und Sicherheit",
     heroCaption: "Datenschutz ist hier kein Pflichttext, sondern Teil der Produktverantwortung.",
     dataKicker: "Welche Daten?",
     dataTitle: "Vier Datenbereiche, klar getrennt.",
@@ -151,21 +151,21 @@ const dataSecurityCopy = {
     trustKicker: "Trust-Fragen",
     trustTitle: "Die drei wichtigsten Sicherheitsfragen vor dem Profilstart.",
     trustText:
-      "Hermetia macht neugierig, ohne dich zu unüberlegter Dateneingabe zu drängen. Deshalb beantwortet die Seite früh, warum die Daten besonders sind, wofür Einwilligung gebraucht wird und wie AI begrenzt bleibt.",
+      "Astrakey macht neugierig, ohne dich zu unüberlegter Dateneingabe zu drängen. Deshalb beantwortet die Seite früh, warum die Daten besonders sind, wofür Einwilligung gebraucht wird und wie AI begrenzt bleibt.",
     safeguardsKicker: "Schutzprinzipien",
     safeguardsTitle: "Was vor dem Onboarding klar ist.",
     safeguardsText:
-      "Hermetia weckt Neugier, aber keine blinde Dateneingabe. Die folgenden Prinzipien zeigen, worauf du dich vor dem Profilstart verlassen kannst.",
+      "Astrakey weckt Neugier, aber keine blinde Dateneingabe. Die folgenden Prinzipien zeigen, worauf du dich vor dem Profilstart verlassen kannst.",
     approvalsCta: "Launch-Freigaben ansehen",
     lifecycleKicker: "Daten-Lebenszyklus",
     lifecycleTitle: "Von der Eingabe bis zur Kontrolle.",
     lifecycleText:
       "Datenschutz wird verständlicher, wenn du siehst, an welcher Stelle welche Verarbeitung passiert: von der Eingabe über Berechnung und Formulierung bis zu Export, Löschung und Widerruf.",
     risksKicker: "Risikobereiche",
-    risksTitle: "Wo Hermetia besonders vorsichtig ist.",
+    risksTitle: "Wo Astrakey besonders vorsichtig ist.",
     risksText:
       "Nicht alle Daten haben dasselbe Risiko. Beziehungsauswertungen, Journaltexte, Zahlungsstatus und öffentliche Indexierung brauchen besonders klare Regeln, weil hier Vertrauen schnell gewonnen oder verloren wird.",
-    pipelineAlt: "Pipeline-Grafik für Verarbeitung und Einordnung von Hermetia-Daten",
+    pipelineAlt: "Pipeline-Grafik für Verarbeitung und Einordnung von Astrakey-Daten",
     pipelineCaption: "Die Pipeline macht sichtbar, dass Rohdaten, Einordnung, Konvergenz und Sprache getrennte Schritte sind.",
     funnelAlt: "Algorithmus-Funnel von Daten zu Kernthemen und verständlicher Sprache",
     funnelCaption: "Der Funnel unterstützt die AI-Transparenz: Erst rechnen und prüfen, dann vorsichtig formulieren.",
@@ -187,19 +187,19 @@ const dataSecurityCopy = {
     faq,
   },
   en: {
-    seoTitle: "Hermetia data and security — sensitive profiles, consent and AI",
+    seoTitle: "Astrakey data and security — sensitive profiles, consent and AI",
     seoDescription:
-      "How Hermetia explains birth data, sensitive profile content, consent, export, deletion, payment and AI transparency in understandable language.",
-    articleHeadline: "Hermetia data and security",
+      "How Astrakey explains birth data, sensitive profile content, consent, export, deletion, payment and AI transparency in understandable language.",
+    articleHeadline: "Astrakey data and security",
     articleDescription: "Clear explanation of sensitive profile data, consent, AI and user rights.",
     breadcrumb: "Data and security",
     heroKicker: "Data and security",
     heroTitle: "Personal depth needs understandable data protection.",
     heroLead:
-      "Hermetia works with birth data and derived profile content. That can become very personal. Consent, data minimization, export, deletion, payment and AI transparency are therefore clear before profile start, not hidden somewhere else.",
+      "Astrakey works with birth data and derived profile content. That can become very personal. Consent, data minimization, export, deletion, payment and AI transparency are therefore clear before profile start, not hidden somewhere else.",
     startCta: "Start profile for free",
     privacyCta: "Read privacy policy",
-    heroAlt: "Abstract data topography as an image for Hermetia data protection and security",
+    heroAlt: "Abstract data topography as an image for Astrakey data protection and security",
     heroCaption: "Data protection is not just mandatory text here; it is part of product responsibility.",
     dataKicker: "Which data?",
     dataTitle: "Four data areas, clearly separated.",
@@ -214,16 +214,16 @@ const dataSecurityCopy = {
     trustKicker: "Trust questions",
     trustTitle: "The three most important security questions before profile start.",
     trustText:
-      "Hermetia makes you curious without pushing you into careless data entry. The page therefore explains early why the data is special, what consent is needed for and how AI remains limited.",
+      "Astrakey makes you curious without pushing you into careless data entry. The page therefore explains early why the data is special, what consent is needed for and how AI remains limited.",
     trustQuestions: [
-      { title: "Why are spiritual profiles especially sensitive?", text: "Birth data may look neutral at first. Combined with interpretation systems, it can produce statements about worldview, identity, relationships, calling, inner conflicts or spiritual orientation. Hermetia therefore does not treat these derivations like harmless marketing data." },
+      { title: "Why are spiritual profiles especially sensitive?", text: "Birth data may look neutral at first. Combined with interpretation systems, it can produce statements about worldview, identity, relationships, calling, inner conflicts or spiritual orientation. Astrakey therefore does not treat these derivations like harmless marketing data." },
       { title: "What role does consent play?", text: "Profile start needs understandable consent for processing sensitive profile information. For relationship readings, the consent of one person is not enough because statements about a second person may also be created." },
-      { title: "What does AI do with my data?", text: "AI in Hermetia does not freely speculate about raw identity data. Hermetia separates calculation, convergence and wording. AI uses only necessary, approved contexts to make calculated results easier to understand." },
+      { title: "What does AI do with my data?", text: "AI in Astrakey does not freely speculate about raw identity data. Astrakey separates calculation, convergence and wording. AI uses only necessary, approved contexts to make calculated results easier to understand." },
     ],
     safeguardsKicker: "Protection principles",
     safeguardsTitle: "What is clear before onboarding.",
     safeguardsText:
-      "Hermetia creates curiosity, but not blind data entry. The following principles show what you can rely on before profile start.",
+      "Astrakey creates curiosity, but not blind data entry. The following principles show what you can rely on before profile start.",
     approvalsCta: "View launch approvals",
     safeguards: [
       "explicit consent for sensitive profile processing",
@@ -244,7 +244,7 @@ const dataSecurityCopy = {
       { step: "4", title: "Control", text: "You need export, deletion, withdrawal, plan control and clear limits for journal and relationship contexts." },
     ],
     risksKicker: "Risk areas",
-    risksTitle: "Where Hermetia is especially careful.",
+    risksTitle: "Where Astrakey is especially careful.",
     risksText:
       "Not all data has the same risk. Relationship readings, journal texts, payment status and public indexing need especially clear rules because trust can be won or lost quickly here.",
     riskControls: [
@@ -253,7 +253,7 @@ const dataSecurityCopy = {
       { title: "Payments", text: "Plan status and invoice data are processed separately from profile interpretation. Full payment data belongs to specialized payment providers." },
       { title: "Launch and indexing", text: "The public marketing website is prepared for indexing. The app remains separately controlled so personal onboarding and profile areas do not appear as marketing pages." },
     ],
-    pipelineAlt: "Pipeline graphic for processing and classifying Hermetia data",
+    pipelineAlt: "Pipeline graphic for processing and classifying Astrakey data",
     pipelineCaption: "The pipeline shows that raw data, classification, convergence and language are separate steps.",
     funnelAlt: "Algorithm funnel from data to core themes and understandable language",
     funnelCaption: "The funnel supports AI transparency: calculate and check first, then phrase carefully.",
@@ -268,13 +268,13 @@ const dataSecurityCopy = {
     faqKicker: "FAQ",
     faqTitle: "Frequently asked questions about data and security",
     faq: [
-      { q: "Why does Hermetia talk about sensitive data?", a: "Hermetia can derive spiritual or worldview-related profile content from birth data and systems. Such statements can be very personal and are therefore explained and processed with special care." },
-      { q: "Does Hermetia need my exact birth time?", a: "Not necessarily. An exact birth time improves certain systems. Without exact time, Hermetia marks which statements are less certain." },
-      { q: "Does AI see my raw birth date?", a: "Hermetia separates calculation core, convergence and AI wording. AI works with derived signals and does not appear as an authority over raw identity data." },
+      { q: "Why does Astrakey talk about sensitive data?", a: "Astrakey can derive spiritual or worldview-related profile content from birth data and systems. Such statements can be very personal and are therefore explained and processed with special care." },
+      { q: "Does Astrakey need my exact birth time?", a: "Not necessarily. An exact birth time improves certain systems. Without exact time, Astrakey marks which statements are less certain." },
+      { q: "Does AI see my raw birth date?", a: "Astrakey separates calculation core, convergence and AI wording. AI works with derived signals and does not appear as an authority over raw identity data." },
       { q: "Can I delete my data?", a: "Yes, deletion and export are intended as core rights. The formal privacy policy describes rights to access, rectification, deletion, portability and withdrawal." },
       { q: "Is this page legal advice?", a: "No. This page explains the data logic in understandable language. Formal legal texts and external data-protection/legal review remain decisive for final launch." },
-      { q: "Will my data be sold for advertising?", a: "No. Hermetia frames no disclosure for advertising purposes as a product principle. For final launch, the formal legal texts make this binding." },
-      { q: "Why are relationship readings regulated differently?", a: "Because they can create data and derivations about at least two people. Hermetia therefore needs clear consent from the affected person and does not normalize secret readings." },
+      { q: "Will my data be sold for advertising?", a: "No. Astrakey frames no disclosure for advertising purposes as a product principle. For final launch, the formal legal texts make this binding." },
+      { q: "Why are relationship readings regulated differently?", a: "Because they can create data and derivations about at least two people. Astrakey therefore needs clear consent from the affected person and does not normalize secret readings." },
       { q: "Why is the marketing website indexable while the app remains controlled?", a: "The website should publicly explain method, limits and beta access. Personal app flows, onboarding and profile areas remain separately protected and are not treated as marketing content." },
     ],
   },
@@ -312,7 +312,7 @@ export default async function DataSecurityPage({ params }: { params: Promise<{ l
           }),
           faqSchema(localizedFaq),
           breadcrumbSchema([
-            { name: "Hermetia", url: `${siteUrl}/${locale}/` },
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
             { name: copy.breadcrumb, url: pageUrl },
           ]),
         ]}

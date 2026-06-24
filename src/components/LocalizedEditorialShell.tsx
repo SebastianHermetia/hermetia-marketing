@@ -30,7 +30,7 @@ export function LocalizedEditorialShell({ locale, routePath = "/", detailLabel }
               </div>
             </div>
             <figure className="m-0 overflow-hidden rounded-card border border-sand bg-white shadow-soft">
-              <img src="/images/hermetia/atmospheric-data-topography.png" alt="Hermetia" className="aspect-[4/3] w-full object-cover" />
+              <img src="/images/hermetia/atmospheric-data-topography.png" alt="Astrakey" className="aspect-[4/3] w-full object-cover" />
               <figcaption className="px-5 py-4 text-[14px] text-pflaume/80">{copy.ctaText}</figcaption>
             </figure>
           </div>
