@@ -36,8 +36,8 @@ export function Header({ locale, current }: { locale: Locale; current?: string }
         {/* Desktop: locale switch + login, covered by the drawer below xl. */}
         <div className="hidden shrink-0 items-center gap-2 xl:flex 2xl:gap-3">
           <LocaleSwitch locale={locale} current={current} />
-          <a className="btn btn-ghost hidden whitespace-nowrap px-4 py-2.5 text-[13px] 2xl:inline-flex" href={loginUrl(locale, { source: "header-login", medium: "nav" })}>{t.nav.login}</a>
-          <a className="btn btn-primary whitespace-nowrap px-4 py-2.5 text-[13px]" href={startUrl(locale, { source: "header-start", medium: "nav" })}>{t.nav.start}</a>
+          <a className="btn btn-ghost whitespace-nowrap px-3 py-2.5 text-[13px] 2xl:px-4" href={loginUrl(locale, { source: "header-login", medium: "nav" })}>{t.nav.login}</a>
+          <a className="btn btn-primary whitespace-nowrap px-3 py-2.5 text-[13px] 2xl:px-4" href={startUrl(locale, { source: "header-start", medium: "nav" })}>{t.nav.start}</a>
         </div>
         <a className="btn btn-primary hidden shrink-0 whitespace-nowrap px-4 py-2.5 text-[13px] sm:inline-flex xl:hidden" href={startUrl(locale, { source: "header-start", medium: "nav" })}>{t.nav.start}</a>
         {/* Mobile/tablet hamburger renders drawer with nav + locale + login. */}
@@ -45,6 +45,8 @@ export function Header({ locale, current }: { locale: Locale; current?: string }
           items={items}
           loginLabel={t.nav.login}
           loginHref={loginUrl(locale, { source: "header-login-mobile", medium: "nav" })}
+          startLabel={t.nav.start}
+          startHref={startUrl(locale, { source: "header-start-mobile-drawer", medium: "nav" })}
           menuOpenLabel={t.nav.menu_open}
           menuCloseLabel={t.nav.menu_close}
           locale={locale}

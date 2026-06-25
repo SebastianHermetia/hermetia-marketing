@@ -8,8 +8,10 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
 import { Faq } from "@/components/Faq";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
 import { glossaryTerms } from "@/content/marketing";
+import { tr } from "@/i18n/html-translations";
 import { localizedFaq, localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
 
 export function generateStaticParams() {
@@ -39,6 +41,7 @@ export default async function GlossarDetailPage({ params }: { params: Promise<{ 
       <Header locale={locale} current="glossar" />
       <article className="py-16">
         <div className="wrap max-w-[820px]">
+          <Breadcrumbs locale={locale} items={[{ label: tr(locale, "Glossar"), href: paths.glossar }, { label: term.term }]} />
           <span className="kicker">{ui.glossary}</span>
           <h1 className="mt-3 text-[clamp(32px,5vw,46px)]">{term.term}</h1>
           <div className="mt-7 rounded-card border border-gold/30 bg-gold-weich/25 p-6">

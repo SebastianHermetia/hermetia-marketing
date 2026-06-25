@@ -9,6 +9,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Faq } from "@/components/Faq";
 import { AppCta } from "@/components/AppCta";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd, faqSchema, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { systems, systemSlugs, getSystem, systemText } from "@/content/systems";
 import { bookSearchUrl, bookText, getBooksForSystem } from "@/content/bookRecommendations";
@@ -104,10 +105,7 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
           <div className="absolute inset-0 bg-gradient-to-t from-aubergine/85 via-aubergine/45 to-aubergine/25" />
           <div className="absolute inset-0 flex items-end">
             <div className="wrap pb-7">
-              <Link href={localePath(locale, paths.systeme)} className="text-[13px] text-gold-weich/80 no-underline hover:text-white">
-                ← {t.nav.systeme}
-              </Link>
-              <div className="mt-2 flex items-center gap-3">
+              <div className="flex items-center gap-3">
                 <span className="text-[34px] text-gold-weich" aria-hidden>{sys.glyph}</span>
                 <div>
                   <h1 className="text-[clamp(28px,4vw,40px)] text-white">{c.name}</h1>
@@ -121,6 +119,7 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
 
       <section className="py-14">
         <div className="wrap max-w-[800px]">
+          <Breadcrumbs locale={locale} items={[{ label: t.nav.systeme, href: paths.systeme }, { label: c.name }]} />
           <p className="lead">{c.intro}</p>
 
           <div className="mt-8 rounded-card border border-gold/30 bg-gold-weich/25 p-6">
