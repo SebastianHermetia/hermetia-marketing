@@ -1,0 +1,53 @@
+<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect x="0" y="0" width="900" height="480" rx="18" fill="#FBF7F0"/>
+  <text x="40" y="44" font-size="23" font-weight="700" fill="#3E2C39">Paigutamine torujuhtmesse</text>
+  <text x="40" y="68" font-size="14" fill="#6B4A5E">Moodul 3 “Süntees” – staatiline, LLM-vaba tihenduskiht süsteemide ja kõigi tarbijate vahel.</text>
+
+  <!-- Input -->
+  <rect x="40" y="100" width="210" height="300" rx="12" fill="#FFFFFF" stroke="#E4D9CB"/>
+  <text x="145" y="128" font-size="14" font-weight="700" fill="#6B4A5E" text-anchor="middle">Mootor (moodul 2)</text>
+  <text x="145" y="150" font-size="13" font-weight="700" fill="#3E2C39" text-anchor="middle">32 × Vaimne süsteem</text>
+  <line x1="64" y1="162" x2="226" y2="162" stroke="#EEE6DA"/>
+  <text x="64" y="186" font-size="11.5" fill="#5E4257">• compute() → RawChart</text>
+  <text x="64" y="208" font-size="11.5" fill="#5E4257">• theme_signals()</text>
+  <text x="78" y="226" font-size="10.5" fill="#9A8AA0">{theme.* : 0..1}</text>
+  <text x="64" y="250" font-size="11.5" fill="#5E4257">• RawChart.usaldus</text>
+  <text x="64" y="300" font-size="10.5" fill="#9A8AA0">8 perekonda</text>
+  <text x="64" y="318" font-size="10.5" fill="#9A8AA0">(astro · hd_gk · numeroloogia ·</text>
+  <text x="64" y="334" font-size="10.5" fill="#9A8AA0">kalender · enesearuanne …)</text>
+
+  <!-- Engine -->
+  <rect x="310" y="100" width="245" height="300" rx="14" fill="#FBF3E0" stroke="#C2A14D" stroke-width="2.5"/>
+  <text x="432" y="130" font-size="16" font-weight="700" fill="#B0892F" text-anchor="middle">KONVERGENTSEMOOTOR</text>
+  <text x="432" y="150" font-size="11" fill="#9A8AA0" text-anchor="middle">deterministlik · LLM puudub</text>
+  <line x1="332" y1="162" x2="533" y2="162" stroke="#EAD9AE"/>
+  <text x="432" y="184" font-size="12.5" font-weight="700" fill="#3E2C39" text-anchor="middle">ConvergenceProfile</text>
+  <text x="332" y="210" font-size="11.5" fill="#5E4257">★ core_themes (2 parimat)</text>
+  <text x="332" y="232" font-size="11.5" fill="#5E4257">⚖ pinged</text>
+  <text x="332" y="254" font-size="11.5" fill="#5E4257">◷ makro (9) / mikro (26)</text>
+  <text x="332" y="276" font-size="11.5" fill="#5E4257">tugevus_rel / tugevus_abs</text>
+  <text x="332" y="298" font-size="11.5" fill="#5E4257">lähenemine · kokkulepe</text>
+  <text x="332" y="320" font-size="11.5" fill="#5E4257">enesekindlus · päritolu</text>
+  <text x="432" y="356" font-size="10.5" fill="#9A8AA0" text-anchor="middle">staatiline – ainult koos profiili_versioon /</text>
+  <text x="432" y="372" font-size="10.5" fill="#9A8AA0" text-anchor="middle">mootori_versioon uus</text>
+
+  <!-- Consumers -->
+  <g font-size="12" font-weight="600" fill="#3E2C39">
+    <rect x="615" y="100" width="245" height="48" rx="10" fill="#FFFFFF" stroke="#E4D9CB"/>
+    <text x="632" y="122">Kohene paljastamine</text><text x="632" y="139" font-size="10" font-weight="400" fill="#9A8AA0">2 põhiteemat pärast sisseelamist</text>
+    <rect x="615" y="158" width="245" height="48" rx="10" fill="#FFFFFF" stroke="#E4D9CB"/>
+    <text x="632" y="180">Hingekaart</text><text x="632" y="197" font-size="10" font-weight="400" fill="#9A8AA0">core_themes + pinged visuaalsena</text>
+    <rect x="615" y="216" width="245" height="48" rx="10" fill="#FFFFFF" stroke="#E4D9CB"/>
+    <text x="632" y="238">2. taseme süntees</text><text x="632" y="255" font-size="10" font-weight="400" fill="#9A8AA0">Maandus kattumise asemel.analüüsida</text>
+    <rect x="615" y="274" width="245" height="48" rx="10" fill="#FFFFFF" stroke="#E4D9CB"/>
+    <text x="632" y="296">Navigaator (4. moodul)</text><text x="632" y="313" font-size="10" font-weight="400" fill="#9A8AA0">+ Ajastus / Hiljutine / Kohanduv</text>
+    <rect x="615" y="332" width="245" height="48" rx="10" fill="#FFFFFF" stroke="#E4D9CB"/>
+    <text x="632" y="354">Admin</text><text x="632" y="371" font-size="10" font-weight="400" fill="#9A8AA0">Seletatavus/katvus</text>
+  </g>
+
+  <!-- arrows -->
+  <text x="280" y="255" font-size="26" fill="#C2A14D" text-anchor="middle">→</text>
+  <text x="585" y="255" font-size="26" fill="#C2A14D" text-anchor="middle">→</text>
+
+  <text x="40" y="438" font-size="11.5" fill="#6B4A5E">Aja/adaptiivsed terminid (ajastus, hiljutisus, adaptiivne) on sihilikult sisestatud <tspan font-weight="700" fill="#3E2C39">Navigaator</tspan>, mitte mootoris — selge kihtide eraldamine staatiline ↔ dünaamiline.</text>
+</svg>

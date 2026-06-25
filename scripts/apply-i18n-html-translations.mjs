@@ -130,15 +130,24 @@ function chunks(values, maxChars = 1200) {
 async function translateBatch(locale, batch) {
   const query = batch.join(delimiter);
   const params = new URLSearchParams({ client: "gtx", sl: "de", tl: locale, dt: "t", q: query });
-  const response = await fetch(`https://translate.googleapis.com/translate_a/single?${params.toString()}`, {
-    headers: { "user-agent": "Astrakey-i18n-build/1.0" },
-  });
-  if (!response.ok) throw new Error(`Translation request failed for ${locale}: ${response.status}`);
-  const data = await response.json();
-  const translated = (data[0] ?? []).map((part) => part[0]).join("");
-  const parts = translated.split(delimiter).map((part) => part.trim());
-  if (parts.length !== batch.length) throw new Error(`Translation split mismatch for ${locale}: expected ${batch.length}, got ${parts.length}`);
-  return parts;
+  let lastError;
+  for (let attempt = 1; attempt <= 4; attempt += 1) {
+    try {
+      const response = await fetch(`https://translate.googleapis.com/translate_a/single?${params.toString()}`, {
+        headers: { "user-agent": "Astrakey-i18n-build/1.0" },
+      });
+      if (!response.ok) throw new Error(`Translation request failed for ${locale}: ${response.status}`);
+      const data = await response.json();
+      const translated = (data[0] ?? []).map((part) => part[0]).join("");
+      const parts = translated.split(delimiter).map((part) => part.trim());
+      if (parts.length !== batch.length) throw new Error(`Translation split mismatch for ${locale}: expected ${batch.length}, got ${parts.length}`);
+      return parts;
+    } catch (error) {
+      lastError = error;
+      if (attempt < 4) await new Promise((resolve) => setTimeout(resolve, 750 * attempt));
+    }
+  }
+  throw lastError;
 }
 
 async function fillCache(cache, stringsByLocale) {

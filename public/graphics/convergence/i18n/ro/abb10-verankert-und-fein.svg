@@ -1,0 +1,52 @@
+<svg viewBox="0 0 860 650" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect x="0" y="0" width="860" height="650" rx="18" fill="#FBF7F0"/>
+  <text x="40" y="48" font-size="24" font-weight="700" fill="#3E2C39">Ce este ferm ancorat - și ce atingere fină</text>
+  <text x="40" y="76" font-size="14.5" fill="#6B4A5E">Cu cât un subiect este mai în interior, cu atât perspectivele mai independente îl confirmă.</text>
+
+  <!-- rings -->
+  <circle cx="290" cy="362" r="242" fill="#EFE6EC" stroke="#DCC9D5"/>
+  <circle cx="290" cy="362" r="162" fill="#EAF0E6" stroke="#CFDDC6"/>
+  <circle cx="290" cy="362" r="82" fill="#F6EBCF" stroke="#E6D29C"/>
+
+  <!-- inner: verankert -->
+  <text x="290" y="356" font-size="16.5" font-weight="700" fill="#B0892F" text-anchor="middle">Conexiunea</text>
+  <text x="290" y="382" font-size="16.5" font-weight="700" fill="#B0892F" text-anchor="middle">Tăcere și profunzime</text>
+
+  <!-- middle: tragend -->
+  <text x="290" y="248" font-size="14" font-weight="600" fill="#5C7A55" text-anchor="middle">Curaj să fii vizibil</text>
+  <text x="196" y="430" font-size="14" font-weight="600" fill="#5C7A55" text-anchor="middle">Lasă controlul</text>
+  <text x="392" y="430" font-size="13" font-weight="600" fill="#5C7A55" text-anchor="middle">propriul ritm</text>
+
+  <!-- outer: feine note -->
+  <text x="168" y="214" font-size="13" fill="#8B6F84" text-anchor="middle">Bucuria</text>
+  <text x="420" y="220" font-size="13" fill="#8B6F84" text-anchor="middle">Exprimarea de sine</text>
+  <text x="120" y="372" font-size="13" fill="#8B6F84" text-anchor="middle">Timpul</text>
+  <text x="290" y="572" font-size="13" fill="#8B6F84" text-anchor="middle">Stabiliți limite</text>
+
+  <!-- legend -->
+  <text x="560" y="150" font-size="16" font-weight="700" fill="#3E2C39">Cât de adânc ancorat?</text>
+  <circle cx="572" cy="190" r="9" fill="#C2A14D"/>
+  <text x="592" y="187" font-size="14" font-weight="700" fill="#3E2C39">Ancorat</text>
+  <text x="592" y="207" font-size="12" fill="#5E4257">Multe puncte de vedere independente</text>
+  <text x="592" y="224" font-size="12" fill="#5E4257">confirmați-l - vă descrie în mod fiabil.</text>
+
+  <circle cx="572" cy="262" r="9" fill="#97AD8E"/>
+  <text x="592" y="259" font-size="14" font-weight="700" fill="#3E2C39">Purtând</text>
+  <text x="592" y="279" font-size="12" fill="#5E4257">Mai multe perspective o susțin.</text>
+
+  <circle cx="572" cy="316" r="9" fill="#C2AEBC"/>
+  <text x="592" y="313" font-size="14" font-weight="700" fill="#3E2C39">Atingere fină</text>
+  <text x="592" y="333" font-size="12" fill="#5E4257">O singură voce — mai degrabă</text>
+  <text x="592" y="350" font-size="12" fill="#5E4257">Nuanță sau situațional.</text>
+
+  <rect x="560" y="392" width="262" height="150" rx="12" fill="#FFFFFF" stroke="#E4D9CB"/>
+  <text x="578" y="420" font-size="13" font-weight="700" fill="#6B4A5E">De ce ajută acest lucru</text>
+  <text x="578" y="444" font-size="12.5" fill="#5E4257">Nu trebuie să dai fiecărui rezultat la fel</text>
+  <text x="578" y="462" font-size="12.5" fill="#5E4257">da multa greutate. Ce în centru</text>
+  <text x="578" y="480" font-size="12.5" fill="#5E4257">minte, te poartă; notele fine asupra</text>
+  <text x="578" y="498" font-size="12.5" fill="#5E4257">Marginile sunt stropi de culoare, nu coloane.</text>
+  <text x="578" y="524" font-size="11.5" font-style="italic" fill="#8A6B7C">Exact asta este familia</text>
+  <text x="578" y="540" font-size="11.5" font-style="italic" fill="#8A6B7C">Convergență în fundal.</text>
+
+  <text x="40" y="624" font-size="10.5" fill="#A38FA0" font-style="italic">Exemplu de profil, schematic · „Ancorare” = numărul de familii independente care susțin subiectul · Astrakey</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 840 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect x="0" y="0" width="840" height="540" rx="18" fill="#FBF7F0"/>
+  <text x="40" y="48" font-size="24" font-weight="700" fill="#3E2C39">Jūsu radošā spriedze</text>
+  <text x="40" y="76" font-size="14.5" fill="#6B4A5E">Abi stabi tevī ir spēcīgi. Nav atrisināmu pretrunu — darbības joma.</text>
+
+  <!-- beam (slightly tilted toward the heavier right pole) -->
+  <line x1="170" y1="232" x2="670" y2="268" stroke="#C2A14D" stroke-width="11" stroke-linecap="round"/>
+  <!-- fulcrum -->
+  <polygon points="420,250 388,330 452,330" fill="#6B4A5E"/>
+  <rect x="360" y="330" width="120" height="10" rx="5" fill="#6B4A5E"/>
+
+  <!-- left pole: Sichtbarkeit -->
+  <line x1="190" y1="234" x2="190" y2="276" stroke="#B59FA8" stroke-width="2"/>
+  <rect x="80" y="276" width="220" height="92" rx="14" fill="#FFFFFF" stroke="#B0892F" stroke-width="2"/>
+  <text x="190" y="306" font-size="17" font-weight="700" fill="#3E2C39" text-anchor="middle">Drosme būt redzamam</text>
+  <text x="190" y="330" font-size="12.5" fill="#5E4257" text-anchor="middle">būt redzamam, rīkoties,</text>
+  <text x="190" y="348" font-size="12.5" fill="#5E4257" text-anchor="middle">parādi sevi</text>
+  <text x="190" y="366" font-size="12" font-weight="700" fill="#B0892F" text-anchor="middle">stiprs · 0,70</text>
+
+  <!-- right pole: Stille -->
+  <line x1="650" y1="266" x2="650" y2="300" stroke="#B59FA8" stroke-width="2"/>
+  <rect x="540" y="300" width="220" height="92" rx="14" fill="#FFFFFF" stroke="#5E6B86" stroke-width="2"/>
+  <text x="650" y="330" font-size="17" font-weight="700" fill="#3E2C39" text-anchor="middle">Atļaujiet klusumu un dziļumu</text>
+  <text x="650" y="354" font-size="12.5" fill="#5E4257" text-anchor="middle">atkāpšanās, pašpārbaude,</text>
+  <text x="650" y="372" font-size="12.5" fill="#5E4257" text-anchor="middle">nāc pie sevis</text>
+  <text x="650" y="390" font-size="12" font-weight="700" fill="#5E6B86" text-anchor="middle">ļoti spēcīgs · 0,85</text>
+
+  <!-- growth question -->
+  <rect x="120" y="416" width="600" height="74" rx="14" fill="#F4EAC9" stroke="#E0CE97"/>
+  <text x="140" y="444" font-size="13" font-weight="700" fill="#B0892F">Izaugsmes jautājums</text>
+  <text x="140" y="468" font-size="14.5" fill="#3E2C39">Kad vajag skatuvi – un kad atkāpties? Abi var būt patiesi.</text>
+  <text x="140" y="484" font-size="11.5" fill="#8A6B7C">Spriedze ir labu jautājumu avots, nevis kļūda, kas jums jālabo.</text>
+
+  <text x="40" y="520" font-size="10.5" fill="#A38FA0" font-style="italic">Profila paraugs, shematisks · Spriegojuma lauks rodas, ja divi pretēji stabi ir spēcīgi (√ no diviem stiprumiem) · Astrakey</text>
+</svg>

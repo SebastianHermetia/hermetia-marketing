@@ -1,0 +1,93 @@
+<svg viewBox="0 0 760 945" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect x="0" y="0" width="760" height="945" rx="18" fill="#FBF7F0"/>
+  <text x="40" y="42" font-size="22" font-weight="700" fill="#3E2C39">Crosswalk — 26 mikroemner → 9 makroemner</text>
+  <text x="40" y="66" font-size="13.5" fill="#6B4A5E">Forenklet, illustrativ opgave (ægte tabel kurateret + m:n-vægtet, med forbehold for teknisk godkendelse).</text>
+  <text x="250" y="86" font-size="11" font-weight="700" fill="#9A8AA0" text-anchor="end">tema.* (systemernes signalordforråd)</text>
+  <text x="650" y="86" font-size="11" font-weight="700" fill="#9A8AA0" text-anchor="middle">Makro (underniveauer / navigator)</text>
+
+  <!-- links -->
+  <g fill="none" stroke-width="2" stroke-opacity="0.6">
+    <path d="M258,95 C408,95 408,126 558,126" stroke="#6B4A5E"/>
+    <path d="M258,126 C408,126 408,126 558,126" stroke="#6B4A5E"/>
+    <path d="M258,157 C408,157 408,126 558,126" stroke="#6B4A5E"/>
+    <path d="M258,188 C408,188 408,188 558,188" stroke="#C2A14D"/>
+    <path d="M258,219 C408,219 408,265.5 558,265.5" stroke="#97AD8E"/>
+    <path d="M258,250 C408,250 408,265.5 558,265.5" stroke="#97AD8E"/>
+    <path d="M258,281 C408,281 408,265.5 558,265.5" stroke="#97AD8E"/>
+    <path d="M258,312 C408,312 408,265.5 558,265.5" stroke="#97AD8E"/>
+    <path d="M258,343 C408,343 408,358.5 558,358.5" stroke="#7E9476"/>
+    <path d="M258,374 C408,374 408,358.5 558,358.5" stroke="#7E9476"/>
+    <path d="M258,405 C408,405 408,436 558,436" stroke="#6E8867"/>
+    <path d="M258,436 C408,436 408,436 558,436" stroke="#6E8867"/>
+    <path d="M258,467 C408,467 408,436 558,436" stroke="#6E8867"/>
+    <path d="M258,498 C408,498 408,529 558,529" stroke="#A0617A"/>
+    <path d="M258,529 C408,529 408,529 558,529" stroke="#A0617A"/>
+    <path d="M258,560 C408,560 408,529 558,529" stroke="#A0617A"/>
+    <path d="M258,591 C408,591 408,637.5 558,637.5" stroke="#8B6F84"/>
+    <path d="M258,622 C408,622 408,637.5 558,637.5" stroke="#8B6F84"/>
+    <path d="M258,653 C408,653 408,637.5 558,637.5" stroke="#8B6F84"/>
+    <path d="M258,684 C408,684 408,637.5 558,637.5" stroke="#8B6F84"/>
+    <path d="M258,715 C408,715 408,746 558,746" stroke="#B0892F"/>
+    <path d="M258,746 C408,746 408,746 558,746" stroke="#B0892F"/>
+    <path d="M258,777 C408,777 408,746 558,746" stroke="#B0892F"/>
+    <path d="M258,808 C408,808 408,839 558,839" stroke="#5E6B86"/>
+    <path d="M258,839 C408,839 408,839 558,839" stroke="#5E6B86"/>
+    <path d="M258,870 C408,870 408,839 558,839" stroke="#5E6B86"/>
+  </g>
+
+  <!-- micro labels -->
+  <g font-size="11" fill="#5E4257" text-anchor="end">
+    <text x="250" y="99">identity.seeking</text>
+    <text x="250" y="130">expression.creative</text>
+    <text x="250" y="161">expression.verbal</text>
+    <text x="250" y="192">energy.high</text>
+    <text x="250" y="223">energy.cyclical</text>
+    <text x="250" y="254">identity.fluid</text>
+    <text x="250" y="285">perception.sensory</text>
+    <text x="250" y="316">growth.stability</text>
+    <text x="250" y="347">perception.intuitive</text>
+    <text x="250" y="378">shadow.trust</text>
+    <text x="250" y="409">relation.empathy</text>
+    <text x="250" y="440">relation.support</text>
+    <text x="250" y="471">purpose.service</text>
+    <text x="250" y="502">relation.autonomy</text>
+    <text x="250" y="533">purpose.freedom</text>
+    <text x="250" y="564">shadow.boundaries</text>
+    <text x="250" y="595">identity.fixed</text>
+    <text x="250" y="626">perception.analytical</text>
+    <text x="250" y="657">growth.transformation</text>
+    <text x="250" y="688">shadow.perfectionism</text>
+    <text x="250" y="719">energy.focused</text>
+    <text x="250" y="750">relation.leadership</text>
+    <text x="250" y="781">purpose.mastery</text>
+    <text x="250" y="812">expression.silence</text>
+    <text x="250" y="843">growth.learning</text>
+    <text x="250" y="874">purpose.depth</text>
+  </g>
+  <g fill="#3E2C39">
+    <circle cx="256" cy="95" r="2.5"/><circle cx="256" cy="126" r="2.5"/><circle cx="256" cy="157" r="2.5"/>
+    <circle cx="256" cy="188" r="2.5"/><circle cx="256" cy="219" r="2.5"/><circle cx="256" cy="250" r="2.5"/>
+    <circle cx="256" cy="281" r="2.5"/><circle cx="256" cy="312" r="2.5"/><circle cx="256" cy="343" r="2.5"/>
+    <circle cx="256" cy="374" r="2.5"/><circle cx="256" cy="405" r="2.5"/><circle cx="256" cy="436" r="2.5"/>
+    <circle cx="256" cy="467" r="2.5"/><circle cx="256" cy="498" r="2.5"/><circle cx="256" cy="529" r="2.5"/>
+    <circle cx="256" cy="560" r="2.5"/><circle cx="256" cy="591" r="2.5"/><circle cx="256" cy="622" r="2.5"/>
+    <circle cx="256" cy="653" r="2.5"/><circle cx="256" cy="684" r="2.5"/><circle cx="256" cy="715" r="2.5"/>
+    <circle cx="256" cy="746" r="2.5"/><circle cx="256" cy="777" r="2.5"/><circle cx="256" cy="808" r="2.5"/>
+    <circle cx="256" cy="839" r="2.5"/><circle cx="256" cy="870" r="2.5"/>
+  </g>
+
+  <!-- macro boxes -->
+  <g font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+    <rect x="558" y="106" width="170" height="40" rx="9" fill="#6B4A5E"/><text x="643" y="131">selvudfoldelse</text>
+    <rect x="558" y="168" width="170" height="40" rx="9" fill="#C2A14D"/><text x="643" y="193">glæde</text>
+    <rect x="558" y="245.5" width="170" height="40" rx="9" fill="#97AD8E"/><text x="643" y="270.5">rytme</text>
+    <rect x="558" y="338.5" width="170" height="40" rx="9" fill="#7E9476"/><text x="643" y="363.5">timing</text>
+    <rect x="558" y="416" width="170" height="40" rx="9" fill="#6E8867"/><text x="643" y="441">forbundethed</text>
+    <rect x="558" y="509" width="170" height="40" rx="9" fill="#A0617A"/><text x="643" y="534">grænser</text>
+    <rect x="558" y="617.5" width="170" height="40" rx="9" fill="#8B6F84"/><text x="643" y="642.5">kontrol</text>
+    <rect x="558" y="726" width="170" height="40" rx="9" fill="#B0892F"/><text x="643" y="751">synlighed</text>
+    <rect x="558" y="819" width="170" height="40" rx="9" fill="#5E6B86"/><text x="643" y="844">stilhed</text>
+  </g>
+
+  <text x="40" y="912" font-size="11" fill="#A38FA0">Astrakey · Convergence Engine · Fig. 7 — Micro feeds niveau 2 fin granularitet, makro de 9 underniveauer / navigatoren.</text>
+</svg>

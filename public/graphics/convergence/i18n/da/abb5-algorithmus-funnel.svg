@@ -1,0 +1,50 @@
+<svg viewBox="0 0 820 640" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect x="0" y="0" width="820" height="640" rx="18" fill="#FBF7F0"/>
+  <text x="40" y="44" font-size="23" font-weight="700" fill="#3E2C39">Algoritme — fra 832 signaler om 2 kerneemner</text>
+  <text x="40" y="68" font-size="14" fill="#6B4A5E">Deterministisk komprimering i etaper (sorteret iteration + fast afrunding → bit-stabil).</text>
+
+  <!-- Funnel stages: centered rounded rects, decreasing width -->
+  <!-- stage 1 -->
+  <rect x="110" y="90" width="600" height="52" rx="9" fill="#6B4A5E"/>
+  <text x="410" y="113" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">① Rå signaler · 32 systemer × til 26 temaer.* (≈ 832 værdier)</text>
+  <text x="410" y="132" font-size="10.5" fill="#E7D9E0" text-anchor="middle">rå fra calc_results · tillidsfri aggregeret</text>
+
+  <rect x="150" y="152" width="520" height="48" rx="9" fill="#7A5670"/>
+  <text x="410" y="173" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">② Intrafamiliemætning → 8 familier × 26</text>
+  <text x="410" y="190" font-size="10.5" fill="#EAD9E2" text-anchor="middle">max + λ(1−max)·avg_rest (≤ 1, redundans dæmpet)</text>
+
+  <rect x="185" y="210" width="450" height="48" rx="9" fill="#8B6F84"/>
+  <text x="410" y="231" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">③ Makroprojektion · Crosswalk 26 → 9</text>
+  <text x="410" y="248" font-size="10.5" fill="#EFE2EA" text-anchor="middle">8 familier × 9 makrotemaer</text>
+
+  <rect x="215" y="268" width="390" height="48" rx="9" fill="#6E8867"/>
+  <text x="410" y="289" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">④ Blød tilstedeværelse + inter-familie</text>
+  <text x="410" y="306" font-size="10.5" fill="#E2EBDD" text-anchor="middle">rå_styrke · konvergens (CAN_EMIT-nævner) · enighed · tillid</text>
+
+  <rect x="245" y="326" width="330" height="46" rx="9" fill="#7E9476"/>
+  <text x="410" y="346" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">⑤ Normalisering (gulv R_MIN)</text>
+  <text x="410" y="363" font-size="10.5" fill="#E6EEE1" text-anchor="middle">styrke_rel (rangering) · styrke_abs (krydsprofil)</text>
+
+  <rect x="275" y="382" width="270" height="46" rx="9" fill="#B79A45"/>
+  <text x="410" y="402" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">⑥ Score = s (β+(1−β) konv.)</text>
+  <text x="410" y="419" font-size="10.5" fill="#F5ECD3" text-anchor="middle">Rangering af de 9 makroemner</text>
+
+  <rect x="300" y="438" width="220" height="46" rx="9" fill="#C2A14D"/>
+  <text x="410" y="458" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">⑦ Spændingsfelter</text>
+  <text x="410" y="475" font-size="10.5" fill="#F7EFD6" text-anchor="middle">√(a b) via MODSTAND</text>
+
+  <rect x="320" y="494" width="180" height="54" rx="10" fill="#3E2C39"/>
+  <text x="410" y="516" font-size="14" font-weight="700" fill="#F4D98A" text-anchor="middle">★ kerne_temaer (top 2)</text>
+  <text x="410" y="535" font-size="10.5" fill="#D9C9D2" text-anchor="middle">+ spændinger + herkomst</text>
+
+  <!-- side note micro -->
+  <rect x="600" y="326" width="180" height="100" rx="10" fill="#FFFFFF" stroke="#E4D9CB"/>
+  <text x="690" y="350" font-size="11.5" font-weight="700" fill="#6B4A5E" text-anchor="middle">Mikrovisning (26)</text>
+  <text x="690" y="370" font-size="10" fill="#7A6470" text-anchor="middle">Trin ④–⑥ yderligere</text>
+  <text x="690" y="385" font-size="10" fill="#7A6470" text-anchor="middle">i 26 værelset</text>
+  <text x="690" y="406" font-size="10" fill="#9A8AA0" text-anchor="middle">→ fodrer dem</text>
+  <text x="690" y="420" font-size="10" fill="#9A8AA0" text-anchor="middle">10 underniveauer</text>
+
+  <text x="40" y="588" font-size="11.5" fill="#6B4A5E">Fire separate outputstørrelser pr. emne: <tspan font-weight="700" fill="#3E2C39">strength</tspan> (hvor stærkt) · <tspan font-weight="700" fill="#6E8867">konvergens</tspan> (hvor bred) · <tspan font-weight="700" fill="#8B6F84">agreement</tspan> (hvor stramt) · <tspan font-weight="700" fill="#B0892F">confidence</tspan> (som sikkert).</text>
+  <text x="40" y="610" font-size="11.5" fill="#6B4A5E">Intet er slået sammen til en enkelt værdi, der sletter information.</text>
+</svg>

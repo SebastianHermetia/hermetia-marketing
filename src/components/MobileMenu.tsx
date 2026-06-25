@@ -34,9 +34,9 @@ export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCl
     requestAnimationFrame(() => triggerRef.current?.focus());
   }
 
-  // Close drawer when viewport reaches lg breakpoint (1024px)
+  // Close drawer when viewport reaches xl breakpoint (1280px)
   useEffect(() => {
-    const mq = window.matchMedia("(min-width: 1024px)");
+    const mq = window.matchMedia("(min-width: 1280px)");
     const handler = (e: MediaQueryListEvent) => {
       if (e.matches) closeMenu();
     };
@@ -93,11 +93,11 @@ export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCl
 
   return (
     <>
-      {/* Hamburger button — visible only below lg, toggles drawer open/closed */}
+      {/* Hamburger button — visible below xl, toggles drawer open/closed */}
       <button
         ref={triggerRef}
         type="button"
-        className="flex flex-col items-center justify-center gap-[5px] rounded-lg p-2.5 text-aubergine lg:hidden"
+        className="flex flex-col items-center justify-center gap-[5px] rounded-lg p-2.5 text-aubergine xl:hidden"
         aria-label={open ? menuCloseLabel : menuOpenLabel}
         aria-expanded={open}
         aria-controls="mobile-menu-drawer"
@@ -111,7 +111,7 @@ export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCl
       {/* Backdrop — closes drawer on click/tap (cursor-pointer required for iOS Safari) */}
       {open && (
         <div
-          className="fixed inset-0 z-40 cursor-pointer bg-aubergine/40 lg:hidden"
+          className="fixed inset-0 z-40 cursor-pointer bg-aubergine/40 xl:hidden"
           aria-hidden="true"
           onClick={closeMenu}
         />
@@ -125,7 +125,7 @@ export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCl
         aria-labelledby="mobile-menu-title"
         // @ts-expect-error — inert is a valid HTML attribute, TS DOM types lag behind
         inert={open ? undefined : ""}
-        className={`fixed right-0 top-0 z-50 flex h-[100dvh] w-4/5 max-w-xs flex-col bg-creme shadow-soft transition-transform duration-300 lg:hidden ${
+        className={`fixed right-0 top-0 z-50 flex h-[100dvh] w-4/5 max-w-xs flex-col bg-creme shadow-soft transition-transform duration-300 xl:hidden ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >

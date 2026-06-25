@@ -1,0 +1,50 @@
+<svg viewBox="0 0 820 640" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect x="0" y="0" width="820" height="640" rx="18" fill="#FBF7F0"/>
+  <text x="40" y="44" font-size="23" font-weight="700" fill="#3E2C39">Algoritm — från 832 signaler om 2 kärnämnen</text>
+  <text x="40" y="68" font-size="14" fill="#6B4A5E">Deterministisk komprimering i etapper (sorterad iteration + fast avrundning → bitstabil).</text>
+
+  <!-- Funnel stages: centered rounded rects, decreasing width -->
+  <!-- stage 1 -->
+  <rect x="110" y="90" width="600" height="52" rx="9" fill="#6B4A5E"/>
+  <text x="410" y="113" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">① Råsignaler · 32 system × till 26 teman.* (≈ 832 värden)</text>
+  <text x="410" y="132" font-size="10.5" fill="#E7D9E0" text-anchor="middle">rå från calc_results · konfidensfritt aggregerat</text>
+
+  <rect x="150" y="152" width="520" height="48" rx="9" fill="#7A5670"/>
+  <text x="410" y="173" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">② Mättnad inom familjen → 8 familjer × 26</text>
+  <text x="410" y="190" font-size="10.5" fill="#EAD9E2" text-anchor="middle">max + λ(1−max)·avg_rest (≤ 1, redundans dämpad)</text>
+
+  <rect x="185" y="210" width="450" height="48" rx="9" fill="#8B6F84"/>
+  <text x="410" y="231" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">③ Makroprojektion · Övergångsställe 26 → 9</text>
+  <text x="410" y="248" font-size="10.5" fill="#EFE2EA" text-anchor="middle">8 familjer × 9 makroteman</text>
+
+  <rect x="215" y="268" width="390" height="48" rx="9" fill="#6E8867"/>
+  <text x="410" y="289" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">④ Mjuk närvaro + mellan familjer</text>
+  <text x="410" y="306" font-size="10.5" fill="#E2EBDD" text-anchor="middle">rå_styrka · konvergens (CAN_EMIT-nämnare) · överenskommelse · förtroende</text>
+
+  <rect x="245" y="326" width="330" height="46" rx="9" fill="#7E9476"/>
+  <text x="410" y="346" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">⑤ Normalisering (golv R_MIN)</text>
+  <text x="410" y="363" font-size="10.5" fill="#E6EEE1" text-anchor="middle">styrka_rel (ranking) · styrka_abs (tvärprofil)</text>
+
+  <rect x="275" y="382" width="270" height="46" rx="9" fill="#B79A45"/>
+  <text x="410" y="402" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">⑥ Poäng = s (β+(1−β) konv)</text>
+  <text x="410" y="419" font-size="10.5" fill="#F5ECD3" text-anchor="middle">Rangordning av de 9 makroämnena</text>
+
+  <rect x="300" y="438" width="220" height="46" rx="9" fill="#C2A14D"/>
+  <text x="410" y="458" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">⑦ Spänningsfält</text>
+  <text x="410" y="475" font-size="10.5" fill="#F7EFD6" text-anchor="middle">√(a b) via OPPOSITES</text>
+
+  <rect x="320" y="494" width="180" height="54" rx="10" fill="#3E2C39"/>
+  <text x="410" y="516" font-size="14" font-weight="700" fill="#F4D98A" text-anchor="middle">★ kärnteman (topp 2)</text>
+  <text x="410" y="535" font-size="10.5" fill="#D9C9D2" text-anchor="middle">+ spänningar + härkomst</text>
+
+  <!-- side note micro -->
+  <rect x="600" y="326" width="180" height="100" rx="10" fill="#FFFFFF" stroke="#E4D9CB"/>
+  <text x="690" y="350" font-size="11.5" font-weight="700" fill="#6B4A5E" text-anchor="middle">Mikrovy (26)</text>
+  <text x="690" y="370" font-size="10" fill="#7A6470" text-anchor="middle">Steg ④–⑥ ytterligare</text>
+  <text x="690" y="385" font-size="10" fill="#7A6470" text-anchor="middle">i 26-rummet</text>
+  <text x="690" y="406" font-size="10" fill="#9A8AA0" text-anchor="middle">→ matar dem</text>
+  <text x="690" y="420" font-size="10" fill="#9A8AA0" text-anchor="middle">10 undernivåer</text>
+
+  <text x="40" y="588" font-size="11.5" fill="#6B4A5E">Fyra separata utdatastorlekar per ämne: <tspan font-weight="700" fill="#3E2C39">strength</tspan> (hur starkt) · <tspan font-weight="700" fill="#6E8867">konvergens</tspan> (hur bred) · <tspan font-weight="700" fill="#8B6F84">agreement</tspan> (hur tight) · <tspan font-weight="700" fill="#B0892F">confidence</tspan> (som visst).</text>
+  <text x="40" y="610" font-size="11.5" fill="#6B4A5E">Ingenting slås samman till ett enda värde som raderar information.</text>
+</svg>
