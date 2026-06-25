@@ -87,6 +87,18 @@ export function MarketingContentPage({ locale, page }: { locale: Locale; page: C
                   {s.body.split("\n\n").map((paragraph) => (
                     <p key={paragraph} className="muted mt-3 whitespace-pre-line text-[17px] leading-[1.85]">{paragraph}</p>
                   ))}
+                  {page.slug === "systeme" && s.title === "Alle Systeme im Überblick" ? (
+                    <div className="mt-5 flex flex-wrap gap-3">
+                      <a className="btn btn-primary" href={localePath(locale, paths.systemeBibliothek)}>Alle Systeme ansehen</a>
+                      <a className="btn btn-ghost" href={localePath(locale, paths.konvergenz)}>Konvergenz verstehen</a>
+                    </div>
+                  ) : null}
+                  {page.slug === "glossar" && s.title === "Begriffe nach Themen sortiert" ? (
+                    <div className="mt-5 flex flex-wrap gap-3">
+                      <a className="btn btn-primary" href={localePath(locale, paths.glossarThemen)}>Begriffe nach Themen ansehen</a>
+                      <a className="btn btn-ghost" href={localePath(locale, paths.systemeBibliothek)}>Systeme ansehen</a>
+                    </div>
+                  ) : null}
                   {idx === 1 ? (
                     <div className="mt-8">
                       <AppCta locale={locale} title={page.ctaTitle} text={page.ctaText} source={`${page.slug}-inline-${idx}`} />
