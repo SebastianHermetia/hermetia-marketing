@@ -1,0 +1,59 @@
+<svg viewBox="0 0 880 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect x="0" y="0" width="880" height="560" rx="18" fill="#FBF7F0"/>
+  <text x="40" y="46" font-size="23" font-weight="700" fill="#3E2C39">Prigušenje umjesto sume</text>
+  <text x="40" y="72" font-size="14" fill="#6B4A5E">Kontrolnu temu prijavilo je 5 sustava u istoj obitelji astro_western (shematske vrijednosti).</text>
+
+  <!-- Panel A: naive sum -->
+  <rect x="40" y="100" width="250" height="380" rx="12" fill="#FFFFFF" stroke="#E4D9CB"/>
+  <text x="165" y="128" font-size="15" font-weight="700" fill="#8B6F84" text-anchor="middle">① Naivno (Σ Prisutnost)</text>
+  <text x="165" y="146" font-size="11" fill="#9A8AA0" text-anchor="middle">današnje preklapanje.analizirati</text>
+  <line x1="70" y1="430" x2="270" y2="430" stroke="#C9BBA9"/>
+  <!-- 5 small contributions stacked into a tall bar -->
+  <g fill="#8B6F84">
+    <rect x="120" y="250" width="90" height="180" rx="3"/>
+  </g>
+  <g font-size="9" fill="#FFFFFF" text-anchor="middle">
+    <text x="165" y="270">astrologija 0.8</text>
+    <text x="165" y="300">sabian 0.8</text>
+    <text x="165" y="330">fiksne_zvjezdice 0.8</text>
+    <text x="165" y="360">astrocarto 0.8</text>
+    <text x="165" y="395">Draconic 0.8</text>
+  </g>
+  <text x="165" y="246" font-size="15" font-weight="700" fill="#8B6F84" text-anchor="middle">Σ = 4,0</text>
+  <text x="165" y="452" font-size="11" fill="#B0392F" text-anchor="middle" font-weight="600">1 izvor prebrojan 5 puta</text>
+  <text x="165" y="468" font-size="10.5" fill="#9A8AA0" text-anchor="middle">→ Prividna konvergencija</text>
+
+  <!-- Panel B: intra-family saturation -->
+  <rect x="315" y="100" width="250" height="380" rx="12" fill="#FFFFFF" stroke="#E4D9CB"/>
+  <text x="440" y="128" font-size="15" font-weight="700" fill="#6E8867" text-anchor="middle">② Sitost obitelji</text>
+  <text x="440" y="146" font-size="11" fill="#9A8AA0" text-anchor="middle">max + λ(1−max) prosj._odmor</text>
+  <line x1="345" y1="430" x2="545" y2="430" stroke="#C9BBA9"/>
+  <rect x="395" y="386" width="90" height="44" rx="3" fill="#6E8867"/>
+  <text x="440" y="376" font-size="15" font-weight="700" fill="#6E8867" text-anchor="middle">≈ 1.0</text>
+  <text x="440" y="412" font-size="10" fill="#FFFFFF" text-anchor="middle">astro_western</text>
+  <text x="440" y="452" font-size="11" fill="#5E4257" text-anchor="middle" font-weight="600">1 obitelj = 1 glas</text>
+  <text x="440" y="468" font-size="10.5" fill="#9A8AA0" text-anchor="middle">Redundancija prigušena, ostaje ≤ 1</text>
+
+  <!-- Panel C: inter-family real convergence -->
+  <rect x="590" y="100" width="250" height="380" rx="12" fill="#FFFFFF" stroke="#C2A14D" stroke-width="2"/>
+  <text x="715" y="128" font-size="15" font-weight="700" fill="#B0892F" text-anchor="middle">③ Prava konvergencija</text>
+  <text x="715" y="146" font-size="11" fill="#9A8AA0" text-anchor="middle">slažu se razne obitelji</text>
+  <line x1="620" y1="430" x2="820" y2="430" stroke="#C9BBA9"/>
+  <rect x="628" y="386" width="44" height="44" rx="3" fill="#6B4A5E"/>
+  <text x="650" y="446" font-size="9" fill="#5E4257" text-anchor="middle">astro</text>
+  <text x="650" y="378" font-size="10" fill="#6B4A5E" text-anchor="middle">1.0</text>
+  <rect x="693" y="394" width="44" height="36" rx="3" fill="#C2A14D"/>
+  <text x="715" y="446" font-size="9" fill="#5E4257" text-anchor="middle">self_report</text>
+  <text x="715" y="386" font-size="10" fill="#B0892F" text-anchor="middle">0.9</text>
+  <rect x="758" y="402" width="44" height="28" rx="3" fill="#97AD8E"/>
+  <text x="780" y="446" font-size="9" fill="#5E4257" text-anchor="middle">numerologija</text>
+  <text x="780" y="394" font-size="10" fill="#7E9476" text-anchor="middle">0.7</text>
+  <text x="715" y="468" font-size="11" fill="#B0892F" text-anchor="middle" font-weight="700">3 obitelji → konvergencija ↑</text>
+
+  <!-- arrows -->
+  <text x="302" y="300" font-size="22" fill="#C9BBA9" text-anchor="middle">→</text>
+  <text x="577" y="300" font-size="22" fill="#C9BBA9" text-anchor="middle">→</text>
+
+  <text x="40" y="516" font-size="12.5" fill="#6B4A5E">Motor prvo mjeri konzistentnost <tspan font-weight="700" fill="#3E2C39">poslije</tspan> obiteljska zasićenost – tako može jedan sustav izvora (efemerida).</text>
+  <text x="40" y="536" font-size="12.5" fill="#6B4A5E">ne činite da tema izgleda umjetno "konvergentno".</text>
+</svg>

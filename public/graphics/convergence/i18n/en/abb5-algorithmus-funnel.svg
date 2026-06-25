@@ -1,0 +1,50 @@
+<svg viewBox="0 0 820 640" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect x="0" y="0" width="820" height="640" rx="18" fill="#FBF7F0"/>
+  <text x="40" y="44" font-size="23" font-weight="700" fill="#3E2C39">Algorithm — from 832 signals on 2 core topics</text>
+  <text x="40" y="68" font-size="14" fill="#6B4A5E">Deterministic compaction in stages (sorted iteration + fixed rounding → bit-stable).</text>
+
+  <!-- Funnel stages: centered rounded rects, decreasing width -->
+  <!-- stage 1 -->
+  <rect x="110" y="90" width="600" height="52" rx="9" fill="#6B4A5E"/>
+  <text x="410" y="113" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">① Raw signals · 32 systems × to 26 themes.* (≈ 832 values)</text>
+  <text x="410" y="132" font-size="10.5" fill="#E7D9E0" text-anchor="middle">raw from calc_results · confidence-free aggregated</text>
+
+  <rect x="150" y="152" width="520" height="48" rx="9" fill="#7A5670"/>
+  <text x="410" y="173" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">② Intra-family saturation → 8 families × 26</text>
+  <text x="410" y="190" font-size="10.5" fill="#EAD9E2" text-anchor="middle">max + λ(1−max)·avg_rest (≤ 1, redundancy dampened)</text>
+
+  <rect x="185" y="210" width="450" height="48" rx="9" fill="#8B6F84"/>
+  <text x="410" y="231" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">③ Macro projection · Crosswalk 26 → 9</text>
+  <text x="410" y="248" font-size="10.5" fill="#EFE2EA" text-anchor="middle">8 families × 9 macro themes</text>
+
+  <rect x="215" y="268" width="390" height="48" rx="9" fill="#6E8867"/>
+  <text x="410" y="289" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">④ Soft presence + inter-family</text>
+  <text x="410" y="306" font-size="10.5" fill="#E2EBDD" text-anchor="middle">raw_strength · convergence (CAN_EMIT denominator) · agreement · confidence</text>
+
+  <rect x="245" y="326" width="330" height="46" rx="9" fill="#7E9476"/>
+  <text x="410" y="346" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">⑤ Normalization (Floor R_MIN)</text>
+  <text x="410" y="363" font-size="10.5" fill="#E6EEE1" text-anchor="middle">strength_rel (ranking) · strength_abs (cross profile)</text>
+
+  <rect x="275" y="382" width="270" height="46" rx="9" fill="#B79A45"/>
+  <text x="410" y="402" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">⑥ Score = s (β+(1−β) conv)</text>
+  <text x="410" y="419" font-size="10.5" fill="#F5ECD3" text-anchor="middle">Ranking of the 9 macro topics</text>
+
+  <rect x="300" y="438" width="220" height="46" rx="9" fill="#C2A14D"/>
+  <text x="410" y="458" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">⑦ Tension fields</text>
+  <text x="410" y="475" font-size="10.5" fill="#F7EFD6" text-anchor="middle">√(a b) via OPPOSITES</text>
+
+  <rect x="320" y="494" width="180" height="54" rx="10" fill="#3E2C39"/>
+  <text x="410" y="516" font-size="14" font-weight="700" fill="#F4D98A" text-anchor="middle">★ core_themes (top 2)</text>
+  <text x="410" y="535" font-size="10.5" fill="#D9C9D2" text-anchor="middle">+ tensions + provenance</text>
+
+  <!-- side note micro -->
+  <rect x="600" y="326" width="180" height="100" rx="10" fill="#FFFFFF" stroke="#E4D9CB"/>
+  <text x="690" y="350" font-size="11.5" font-weight="700" fill="#6B4A5E" text-anchor="middle">Micro view (26)</text>
+  <text x="690" y="370" font-size="10" fill="#7A6470" text-anchor="middle">Steps ④–⑥ additional</text>
+  <text x="690" y="385" font-size="10" fill="#7A6470" text-anchor="middle">in the 26 room</text>
+  <text x="690" y="406" font-size="10" fill="#9A8AA0" text-anchor="middle">→ feeds them</text>
+  <text x="690" y="420" font-size="10" fill="#9A8AA0" text-anchor="middle">10 sublevels</text>
+
+  <text x="40" y="588" font-size="11.5" fill="#6B4A5E">Four separate output sizes per topic: <tspan font-weight="700" fill="#3E2C39">strength</tspan> (how strong) · <tspan font-weight="700" fill="#6E8867">convergence</tspan> (how wide) · <tspan font-weight="700" fill="#8B6F84">agreement</tspan> (how tight) · <tspan font-weight="700" fill="#B0892F">confidence</tspan> (like sure).</text>
+  <text x="40" y="610" font-size="11.5" fill="#6B4A5E">Nothing is merged into a single value that erases information.</text>
+</svg>

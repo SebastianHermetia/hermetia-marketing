@@ -1,0 +1,45 @@
+<svg viewBox="0 0 820 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect x="0" y="0" width="820" height="600" rx="18" fill="#FBF7F0"/>
+  <text x="40" y="46" font-size="23" font-weight="700" fill="#3E2C39">Konverģence ≠ spēks</text>
+  <text x="40" y="72" font-size="14" fill="#6B4A5E">Katrai tēmai divi atsevišķi izmēri. Tikai mijiedarbība rada pamattēmu (shēmu).</text>
+
+  <!-- plot box -->
+  <g>
+    <!-- quadrant tints -->
+    <rect x="130" y="100" width="300" height="200" fill="#EEF1E9"/>     <!-- TL low strength high conv -->
+    <rect x="430" y="100" width="300" height="200" fill="#F4EAC9"/>     <!-- TR high strength high conv = core -->
+    <rect x="130" y="300" width="300" height="200" fill="#F6F1EA"/>     <!-- BL low/low noise -->
+    <rect x="430" y="300" width="300" height="200" fill="#EFE6EC"/>     <!-- BR high strength low conv -->
+    <line x1="430" y1="100" x2="430" y2="500" stroke="#D8CcBd" stroke-width="1.5"/>
+    <line x1="130" y1="300" x2="730" y2="300" stroke="#D8CcBd" stroke-width="1.5"/>
+    <rect x="130" y="100" width="600" height="400" fill="none" stroke="#C9BBA9" stroke-width="2" rx="6"/>
+
+    <!-- axes labels -->
+    <text x="430" y="540" font-size="14" font-weight="600" fill="#3E2C39" text-anchor="middle">Spēks (strength_rel →)</text>
+    <text x="92" y="300" font-size="14" font-weight="600" fill="#3E2C39" text-anchor="middle" transform="rotate(-90 92 300)">Konverģence (ģimenes līgums →)</text>
+    <text x="150" y="120" font-size="11" fill="#9A8AA0">zems ◀ stiprums</text>
+    <text x="710" y="120" font-size="11" fill="#9A8AA0" text-anchor="end">Spēks ▶ augsts</text>
+
+    <!-- quadrant titles -->
+    <text x="280" y="160" font-size="15" font-weight="700" fill="#6E8867" text-anchor="middle">Plašs apakštonis</text>
+    <text x="280" y="180" font-size="11" fill="#6E8867" text-anchor="middle">daudzas ģimenes, bet vājas</text>
+    <text x="580" y="160" font-size="16" font-weight="700" fill="#B0892F" text-anchor="middle">★ PAMAT TĒMA</text>
+    <text x="580" y="180" font-size="11" fill="#B0892F" text-anchor="middle">stiprs UN plaši nēsāts</text>
+    <text x="280" y="470" font-size="15" font-weight="700" fill="#A89A8C" text-anchor="middle">Troksnis</text>
+    <text x="280" y="488" font-size="11" fill="#A89A8C" text-anchor="middle">vājš un izolēts → ignorēt</text>
+    <text x="580" y="470" font-size="15" font-weight="700" fill="#8B6F84" text-anchor="middle">Viena balss</text>
+    <text x="580" y="488" font-size="11" fill="#8B6F84" text-anchor="middle">viena ģimene dominē → interpretēt uzmanīgi</text>
+
+    <!-- example bubbles -->
+    <circle cx="610" cy="225" r="20" fill="#C2A14D"/><text x="610" y="230" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">5 ģimenes</text>
+    <text x="610" y="262" font-size="11.5" fill="#3E2C39" text-anchor="middle" font-weight="600">savienojamība</text>
+
+    <circle cx="615" cy="400" r="16" fill="#8B6F84"/><text x="615" y="404" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">1 ģimene</text>
+    <text x="615" y="432" font-size="11.5" fill="#3E2C39" text-anchor="middle" font-weight="600">klusums</text>
+
+    <circle cx="300" cy="220" r="14" fill="#7E9476"/><text x="300" y="224" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">3 ģimenes</text>
+    <text x="300" y="248" font-size="11.5" fill="#3E2C39" text-anchor="middle" font-weight="600">laika noteikšana</text>
+  </g>
+
+  <text x="40" y="578" font-size="11.5" fill="#6B4A5E">Reader &amp; Navigator izmanto kvadrantus atšķirīgi: Pamattēma = galvenais paziņojums · Atsevišķa balss = ar atrunu · Zemtonis = nianse · Troksnis = izlaists.</text>
+</svg>

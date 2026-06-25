@@ -1,0 +1,45 @@
+<svg viewBox="0 0 880 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect x="0" y="0" width="880" height="560" rx="18" fill="#FBF7F0"/>
+  <text x="40" y="48" font-size="24" font-weight="700" fill="#3E2C39">Hvad bærer dig indeni</text>
+  <text x="40" y="76" font-size="14.5" fill="#6B4A5E">To temaer løber gennem næsten alle perspektiver på dig – din røde tråd.</text>
+
+  <!-- Core card 1 -->
+  <rect x="40" y="104" width="400" height="190" rx="16" fill="#FFFFFF" stroke="#C2A14D" stroke-width="2.5"/>
+  <text x="64" y="140" font-size="13" font-weight="700" fill="#B0892F">★ KERNEEMNE</text>
+  <text x="64" y="172" font-size="22" font-weight="700" fill="#3E2C39">Tillad forbindelse</text>
+  <text x="64" y="202" font-size="13.5" fill="#5E4257">Nærhed, medfølelse og ægte samvær er</text>
+  <text x="64" y="221" font-size="13.5" fill="#5E4257">den jord, du vokser i.</text>
+  <text x="64" y="256" font-size="12" fill="#8A6B7C">understøttet af 5 ud af 8 livsperspektiver</text>
+  <g>
+    <circle cx="70" cy="276" r="7" fill="#C2A14D"/><circle cx="92" cy="276" r="7" fill="#C2A14D"/><circle cx="114" cy="276" r="7" fill="#C2A14D"/><circle cx="136" cy="276" r="7" fill="#C2A14D"/><circle cx="158" cy="276" r="7" fill="#C2A14D"/>
+    <circle cx="180" cy="276" r="7" fill="#E7DCC8"/><circle cx="202" cy="276" r="7" fill="#E7DCC8"/><circle cx="224" cy="276" r="7" fill="#E7DCC8"/>
+  </g>
+
+  <!-- Core card 2 -->
+  <rect x="460" y="104" width="400" height="190" rx="16" fill="#FFFFFF" stroke="#C2A14D" stroke-width="2.5"/>
+  <text x="484" y="140" font-size="13" font-weight="700" fill="#B0892F">★ KERNEEMNE</text>
+  <text x="484" y="172" font-size="22" font-weight="700" fill="#3E2C39">Tillad stilhed og dybde</text>
+  <text x="484" y="202" font-size="13.5" fill="#5E4257">Du har brug for tilbagetog og dybde for at</text>
+  <text x="484" y="221" font-size="13.5" fill="#5E4257">At finde dig - det er styrke, ikke mangel.</text>
+  <text x="484" y="256" font-size="12" fill="#8A6B7C">understøttet af 4 ud af 8 livsperspektiver</text>
+  <g>
+    <circle cx="490" cy="276" r="7" fill="#C2A14D"/><circle cx="512" cy="276" r="7" fill="#C2A14D"/><circle cx="534" cy="276" r="7" fill="#C2A14D"/><circle cx="556" cy="276" r="7" fill="#C2A14D"/>
+    <circle cx="578" cy="276" r="7" fill="#E7DCC8"/><circle cx="600" cy="276" r="7" fill="#E7DCC8"/><circle cx="622" cy="276" r="7" fill="#E7DCC8"/><circle cx="644" cy="276" r="7" fill="#E7DCC8"/>
+  </g>
+
+  <!-- supporting themes -->
+  <text x="40" y="344" font-size="14" font-weight="700" fill="#6B4A5E">Det giver også genklang hos dig</text>
+  <text x="40" y="366" font-size="12" fill="#9A8AA0">— mere situationsbestemt, mere stille end din kerne:</text>
+  <g font-size="13" fill="#5E4257">
+    <rect x="40" y="384" width="200" height="40" rx="20" fill="#FFFFFF" stroke="#D8CcBd"/><text x="60" y="409">Mod til at være synlig</text>
+    <rect x="256" y="384" width="190" height="40" rx="20" fill="#FFFFFF" stroke="#D8CcBd"/><text x="276" y="409">Slip kontrollen</text>
+    <rect x="462" y="384" width="220" height="40" rx="20" fill="#FFFFFF" stroke="#D8CcBd"/><text x="482" y="409">Bliv i din egen rytme</text>
+    <rect x="40" y="434" width="150" height="40" rx="20" fill="#FBF7F0" stroke="#E4D9CB"/><text x="60" y="459" fill="#9A8AA0">Glæden...</text>
+    <rect x="206" y="434" width="175" height="40" rx="20" fill="#FBF7F0" stroke="#E4D9CB"/><text x="226" y="459" fill="#9A8AA0">Stol på timing</text>
+    <rect x="397" y="434" width="140" height="40" rx="20" fill="#FBF7F0" stroke="#E4D9CB"/><text x="417" y="459" fill="#9A8AA0">Sæt grænser</text>
+  </g>
+
+  <text x="40" y="512" font-size="12.5" fill="#6B4A5E">Jo mere uafhængige perspektiver på et emne, jo mere pålideligt beskriver det dig -</text>
+  <text x="40" y="531" font-size="12.5" fill="#6B4A5E">dine kernetemaer er ikke et tilfælde af en enkelt metode.</text>
+  <text x="40" y="552" font-size="10.5" fill="#A38FA0" font-style="italic">Eksempelprofil, skematisk · Astrakey</text>
+</svg>

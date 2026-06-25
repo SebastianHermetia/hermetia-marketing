@@ -1,0 +1,45 @@
+<svg viewBox="0 0 880 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect x="0" y="0" width="880" height="560" rx="18" fill="#FBF7F0"/>
+  <text x="40" y="48" font-size="24" font-weight="700" fill="#3E2C39">What carries you inside</text>
+  <text x="40" y="76" font-size="14.5" fill="#6B4A5E">Two themes run through almost all perspectives on you - your common thread.</text>
+
+  <!-- Core card 1 -->
+  <rect x="40" y="104" width="400" height="190" rx="16" fill="#FFFFFF" stroke="#C2A14D" stroke-width="2.5"/>
+  <text x="64" y="140" font-size="13" font-weight="700" fill="#B0892F">★ CORE TOPIC</text>
+  <text x="64" y="172" font-size="22" font-weight="700" fill="#3E2C39">Allow connection</text>
+  <text x="64" y="202" font-size="13.5" fill="#5E4257">Closeness, compassion and real togetherness are</text>
+  <text x="64" y="221" font-size="13.5" fill="#5E4257">the soil in which you grow.</text>
+  <text x="64" y="256" font-size="12" fill="#8A6B7C">supported by 5 out of 8 life perspectives</text>
+  <g>
+    <circle cx="70" cy="276" r="7" fill="#C2A14D"/><circle cx="92" cy="276" r="7" fill="#C2A14D"/><circle cx="114" cy="276" r="7" fill="#C2A14D"/><circle cx="136" cy="276" r="7" fill="#C2A14D"/><circle cx="158" cy="276" r="7" fill="#C2A14D"/>
+    <circle cx="180" cy="276" r="7" fill="#E7DCC8"/><circle cx="202" cy="276" r="7" fill="#E7DCC8"/><circle cx="224" cy="276" r="7" fill="#E7DCC8"/>
+  </g>
+
+  <!-- Core card 2 -->
+  <rect x="460" y="104" width="400" height="190" rx="16" fill="#FFFFFF" stroke="#C2A14D" stroke-width="2.5"/>
+  <text x="484" y="140" font-size="13" font-weight="700" fill="#B0892F">★ CORE TOPIC</text>
+  <text x="484" y="172" font-size="22" font-weight="700" fill="#3E2C39">Allow silence &amp; depth</text>
+  <text x="484" y="202" font-size="13.5" fill="#5E4257">You need retreat and depth in order to</text>
+  <text x="484" y="221" font-size="13.5" fill="#5E4257">Finding you - that is strength, not lack.</text>
+  <text x="484" y="256" font-size="12" fill="#8A6B7C">supported by 4 out of 8 life perspectives</text>
+  <g>
+    <circle cx="490" cy="276" r="7" fill="#C2A14D"/><circle cx="512" cy="276" r="7" fill="#C2A14D"/><circle cx="534" cy="276" r="7" fill="#C2A14D"/><circle cx="556" cy="276" r="7" fill="#C2A14D"/>
+    <circle cx="578" cy="276" r="7" fill="#E7DCC8"/><circle cx="600" cy="276" r="7" fill="#E7DCC8"/><circle cx="622" cy="276" r="7" fill="#E7DCC8"/><circle cx="644" cy="276" r="7" fill="#E7DCC8"/>
+  </g>
+
+  <!-- supporting themes -->
+  <text x="40" y="344" font-size="14" font-weight="700" fill="#6B4A5E">It also resonates with you</text>
+  <text x="40" y="366" font-size="12" fill="#9A8AA0">— more situational, quieter than your core:</text>
+  <g font-size="13" fill="#5E4257">
+    <rect x="40" y="384" width="200" height="40" rx="20" fill="#FFFFFF" stroke="#D8CcBd"/><text x="60" y="409">Courage to be visible</text>
+    <rect x="256" y="384" width="190" height="40" rx="20" fill="#FFFFFF" stroke="#D8CcBd"/><text x="276" y="409">Let go of control</text>
+    <rect x="462" y="384" width="220" height="40" rx="20" fill="#FFFFFF" stroke="#D8CcBd"/><text x="482" y="409">Stay in your own rhythm</text>
+    <rect x="40" y="434" width="150" height="40" rx="20" fill="#FBF7F0" stroke="#E4D9CB"/><text x="60" y="459" fill="#9A8AA0">The joy...</text>
+    <rect x="206" y="434" width="175" height="40" rx="20" fill="#FBF7F0" stroke="#E4D9CB"/><text x="226" y="459" fill="#9A8AA0">Trust in timing</text>
+    <rect x="397" y="434" width="140" height="40" rx="20" fill="#FBF7F0" stroke="#E4D9CB"/><text x="417" y="459" fill="#9A8AA0">Set boundaries</text>
+  </g>
+
+  <text x="40" y="512" font-size="12.5" fill="#6B4A5E">The more independent perspectives on a topic, the more reliably it describes you -</text>
+  <text x="40" y="531" font-size="12.5" fill="#6B4A5E">your core themes are not an accident of a single method.</text>
+  <text x="40" y="552" font-size="10.5" fill="#A38FA0" font-style="italic">Example profile, schematic · Astrakey</text>
+</svg>

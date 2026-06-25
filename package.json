@@ -18,6 +18,7 @@
     "check:i18n:export": "node scripts/check-i18n-export.mjs --changed",
     "check:i18n:untranslated": "node scripts/check-i18n-untranslated.mjs",
     "check:i18n:live": "node scripts/check-i18n-live.mjs",
+    "check:graphics:i18n": "node scripts/check-localized-graphics.mjs",
     "start": "next start",
     "lint": "tsc --noEmit"
   },

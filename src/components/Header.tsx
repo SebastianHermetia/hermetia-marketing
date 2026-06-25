@@ -18,26 +18,29 @@ export function Header({ locale, current }: { locale: Locale; current?: string }
 
   return (
     <header className="sticky top-0 z-30 border-b border-sand bg-creme/80 backdrop-blur">
-      <div className="wrap flex h-[68px] items-center gap-4 lg:gap-6">
+      <div className="wrap flex h-[68px] min-w-0 items-center gap-3 lg:gap-4">
         <Link href={localePath(locale)} className="flex shrink-0 items-center gap-2 font-serif text-[21px] text-aubergine no-underline">
           <span className="relative inline-block h-[22px] w-[22px] rounded-full border-[1.4px] border-gold">
             <span className="absolute inset-[5px] rounded-full bg-gold/85" />
           </span>
           Astrakey
         </Link>
-        <nav className="ml-1 hidden min-w-0 gap-4 text-[14px] lg:flex xl:gap-6 xl:text-[14.5px]">
+        <nav className="ml-1 hidden min-w-0 flex-1 items-center justify-center gap-3 text-[13px] xl:flex 2xl:gap-5 2xl:text-[14px]">
           {items.map((i) => (
             <Link key={i.key} href={i.href} className={`whitespace-nowrap no-underline hover:text-aubergine ${current === i.key ? "text-aubergine" : "text-tinte/80"}`}>
               {i.label}
             </Link>
           ))}
         </nav>
-        <span className="flex-1" />
-        {/* Desktop: locale switch + login — hidden below lg (covered by MobileMenu drawer) */}
-        <LocaleSwitch locale={locale} current={current} />
-        <a className="btn btn-ghost hidden whitespace-nowrap lg:inline-flex" href={loginUrl(locale, { source: "header-login", medium: "nav" })}>{t.nav.login}</a>
-        <a className="btn btn-primary whitespace-nowrap" href={startUrl(locale, { source: "header-start", medium: "nav" })}>{t.nav.start}</a>
-        {/* Mobile hamburger — renders drawer with nav + locale + login */}
+        <span className="min-w-0 flex-1 xl:hidden" />
+        {/* Desktop: locale switch + login, covered by the drawer below xl. */}
+        <div className="hidden shrink-0 items-center gap-2 xl:flex 2xl:gap-3">
+          <LocaleSwitch locale={locale} current={current} />
+          <a className="btn btn-ghost hidden whitespace-nowrap px-4 py-2.5 text-[13px] 2xl:inline-flex" href={loginUrl(locale, { source: "header-login", medium: "nav" })}>{t.nav.login}</a>
+          <a className="btn btn-primary whitespace-nowrap px-4 py-2.5 text-[13px]" href={startUrl(locale, { source: "header-start", medium: "nav" })}>{t.nav.start}</a>
+        </div>
+        <a className="btn btn-primary hidden shrink-0 whitespace-nowrap px-4 py-2.5 text-[13px] sm:inline-flex xl:hidden" href={startUrl(locale, { source: "header-start", medium: "nav" })}>{t.nav.start}</a>
+        {/* Mobile/tablet hamburger renders drawer with nav + locale + login. */}
         <MobileMenu
           items={items}
           loginLabel={t.nav.login}

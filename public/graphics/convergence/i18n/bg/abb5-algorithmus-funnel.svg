@@ -1,0 +1,50 @@
+<svg viewBox="0 0 820 640" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect x="0" y="0" width="820" height="640" rx="18" fill="#FBF7F0"/>
+  <text x="40" y="44" font-size="23" font-weight="700" fill="#3E2C39">Алгоритъм — от 832 сигнала по 2 основни теми</text>
+  <text x="40" y="68" font-size="14" fill="#6B4A5E">Детерминистично уплътняване на етапи (сортирана итерация + фиксирано закръгляване → битово стабилно).</text>
+
+  <!-- Funnel stages: centered rounded rects, decreasing width -->
+  <!-- stage 1 -->
+  <rect x="110" y="90" width="600" height="52" rx="9" fill="#6B4A5E"/>
+  <text x="410" y="113" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">① Сурови сигнали · 32 системи × до 26 теми.* (≈ 832 стойности)</text>
+  <text x="410" y="132" font-size="10.5" fill="#E7D9E0" text-anchor="middle">необработено от calc_results · обобщено без достоверност</text>
+
+  <rect x="150" y="152" width="520" height="48" rx="9" fill="#7A5670"/>
+  <text x="410" y="173" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">② Вътрешносемейно насищане → 8 семейства × 26</text>
+  <text x="410" y="190" font-size="10.5" fill="#EAD9E2" text-anchor="middle">max + λ(1−max)·avg_rest (≤ 1, излишъкът е намален)</text>
+
+  <rect x="185" y="210" width="450" height="48" rx="9" fill="#8B6F84"/>
+  <text x="410" y="231" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">③ Макро проекция · Пешеходна пътека 26 → 9</text>
+  <text x="410" y="248" font-size="10.5" fill="#EFE2EA" text-anchor="middle">8 семейства × 9 макро теми</text>
+
+  <rect x="215" y="268" width="390" height="48" rx="9" fill="#6E8867"/>
+  <text x="410" y="289" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">④ Меко присъствие + вътрешносемейство</text>
+  <text x="410" y="306" font-size="10.5" fill="#E2EBDD" text-anchor="middle">raw_strength · конвергенция (CAN_EMIT знаменател) · съгласие · увереност</text>
+
+  <rect x="245" y="326" width="330" height="46" rx="9" fill="#7E9476"/>
+  <text x="410" y="346" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">⑤ Нормализация (Floor R_MIN)</text>
+  <text x="410" y="363" font-size="10.5" fill="#E6EEE1" text-anchor="middle">force_rel (класиране) · strength_abs (напречен профил)</text>
+
+  <rect x="275" y="382" width="270" height="46" rx="9" fill="#B79A45"/>
+  <text x="410" y="402" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">⑥ Резултат = s (β+(1−β) conv)</text>
+  <text x="410" y="419" font-size="10.5" fill="#F5ECD3" text-anchor="middle">Класиране на 9-те макро теми</text>
+
+  <rect x="300" y="438" width="220" height="46" rx="9" fill="#C2A14D"/>
+  <text x="410" y="458" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">⑦ Полета на напрежение</text>
+  <text x="410" y="475" font-size="10.5" fill="#F7EFD6" text-anchor="middle">√(a b) чрез ОПОЗИТИТЕ</text>
+
+  <rect x="320" y="494" width="180" height="54" rx="10" fill="#3E2C39"/>
+  <text x="410" y="516" font-size="14" font-weight="700" fill="#F4D98A" text-anchor="middle">★ core_themes (топ 2)</text>
+  <text x="410" y="535" font-size="10.5" fill="#D9C9D2" text-anchor="middle">+ напрежение + произход</text>
+
+  <!-- side note micro -->
+  <rect x="600" y="326" width="180" height="100" rx="10" fill="#FFFFFF" stroke="#E4D9CB"/>
+  <text x="690" y="350" font-size="11.5" font-weight="700" fill="#6B4A5E" text-anchor="middle">Микро изглед (26)</text>
+  <text x="690" y="370" font-size="10" fill="#7A6470" text-anchor="middle">Допълнителни стъпки ④–⑥</text>
+  <text x="690" y="385" font-size="10" fill="#7A6470" text-anchor="middle">в 26 стая</text>
+  <text x="690" y="406" font-size="10" fill="#9A8AA0" text-anchor="middle">→ храни ги</text>
+  <text x="690" y="420" font-size="10" fill="#9A8AA0" text-anchor="middle">10 поднива</text>
+
+  <text x="40" y="588" font-size="11.5" fill="#6B4A5E">Четири отделни изходни размера на тема: <tspan font-weight="700" fill="#3E2C39">strength</tspan> (колко силно) · <tspan font-weight="700" fill="#6E8867">конвергенция</tspan> (колко широк) · <tspan font-weight="700" fill="#8B6F84">agreement</tspan> (колко стегнато) · <tspan font-weight="700" fill="#B0892F">confidence</tspan> (като сигурен).</text>
+  <text x="40" y="610" font-size="11.5" fill="#6B4A5E">Нищо не е обединено в една стойност, която изтрива информация.</text>
+</svg>

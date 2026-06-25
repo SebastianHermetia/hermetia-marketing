@@ -1,7 +1,8 @@
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
 const root = process.cwd();
+const config = JSON.parse(readFileSync(join(root, "scripts", "i18n-audit-config.json"), "utf8"));
 const files = [
   "src/content/marketing.ts",
   "src/content/systems.ts",
@@ -46,10 +47,22 @@ for (const ref of requiredPublicAssets) {
   if (!existsSync(path)) missing.push(ref);
 }
 
+const graphicDir = join(root, "public", "graphics", "convergence");
+const sourceGraphics = readdirSync(graphicDir, { withFileTypes: true })
+  .filter((entry) => entry.isFile() && entry.name.endsWith(".svg"))
+  .map((entry) => entry.name);
+
+for (const locale of config.locales.filter((value) => value !== "de")) {
+  for (const filename of sourceGraphics) {
+    const localized = `graphics/convergence/i18n/${locale}/${filename}`;
+    if (!existsSync(join(root, "public", localized))) missing.push(localized);
+  }
+}
+
 if (missing.length > 0) {
   console.error("Missing public assets:");
   for (const ref of missing) console.error(`- /${ref}`);
   process.exit(1);
 }
 
-console.log(`Asset check passed: ${refs.size} referenced public assets and ${requiredPublicAssets.length} required SEO assets found.`);
+console.log(`Asset check passed: ${refs.size} referenced public assets, ${sourceGraphics.length * (config.locales.length - 1)} localized SVG graphics and ${requiredPublicAssets.length} required SEO assets found.`);

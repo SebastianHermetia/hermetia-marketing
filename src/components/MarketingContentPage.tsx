@@ -102,7 +102,7 @@ export function MarketingContentPage({ locale, page }: { locale: Locale; page: C
                 <div className="mt-6 grid gap-5">
                   {page.graphics.map((graphic) => (
                     <figure key={graphic.src} className="rounded-card border border-sand bg-white p-4 shadow-soft">
-                      <img src={graphic.src} alt={graphic.alt} className="w-full rounded-[6px]" loading="lazy" />
+                      <img src={localizedGraphicSrc(graphic.src, locale)} alt={graphic.alt} className="w-full rounded-[6px]" loading="lazy" />
                       <figcaption className="muted mt-3 text-[14px] leading-relaxed">{graphic.caption}</figcaption>
                     </figure>
                   ))}
@@ -129,6 +129,13 @@ function resolveHref(locale: Locale, href: string | undefined, slug: string, sou
   if (!href || href === "start") return startUrl(locale, { source: `${sourceId}-${source}`, medium: source === "hero" ? "hero" : "inline" });
   if (href.startsWith("#")) return href;
   return localePath(locale, href);
+}
+
+function localizedGraphicSrc(src: string, locale: Locale) {
+  if (locale === "de") return src;
+  const prefix = "/graphics/convergence/";
+  if (!src.startsWith(prefix) || !src.endsWith(".svg")) return src;
+  return `${prefix}i18n/${locale}/${src.slice(prefix.length)}`;
 }
 
 function slugify(value: string) {
