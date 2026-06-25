@@ -37,10 +37,10 @@ const dePages = {
     navKey: "home",
     title: "Ein Profil aus vielen Systemen. Nicht nur ein Blick auf dich.",
     seoTitle: "Astrakey: dein Profil aus vielen Systemen",
-    seoDescription: "Astrakey verbindet Astrologie, Human Design, Gene Keys, Numerologie und mehr zu einem erklärbaren Profil und zeigt, welche Themen wirklich wiederkehren.",
+    seoDescription: "Astrakey verbindet mehr als 30 Systeme wie Astrologie, Human Design, Gene Keys, Numerologie und Fragebögen zu einem erklärbaren Profil und zeigt, welche Themen wirklich wiederkehren.",
     eyebrow: "Mehrsystem-Profil",
-    lead: "Astrakey verbindet Astrologie, Human Design, Gene Keys, Numerologie, Fragebögen und weitere Systeme zu einem erklärbaren Profil. Du siehst, welche Themen über mehrere unabhängige Perspektiven hinweg wirklich wiederkehren und welche dich nur aus einem einzelnen Blickwinkel beschreiben.",
-    answer: "Astrakey verbindet Astrologie, Human Design, Gene Keys, Numerologie, Fragebögen und weitere Systeme zu einem erklärbaren Profil.",
+    lead: "Astrakey verbindet mehr als 30 Systeme wie Astrologie, Human Design, Gene Keys, Numerologie, Fragebögen und weitere Systeme zu einem erklärbaren Profil. Du siehst, welche Themen über mehrere unabhängige Perspektiven hinweg wirklich wiederkehren und welche dich nur aus einem einzelnen Blickwinkel beschreiben.",
+    answer: "Astrakey verbindet mehr als 30 Systeme wie Astrologie, Human Design, Gene Keys, Numerologie, Fragebögen und weitere Systeme zu einem erklärbaren Profil.",
     trustline: "Kostenloser Einstieg ohne Kreditkarte. Datenschutz bewusst gestaltet, kein Verkauf deiner Daten, Export und Löschung jederzeit. AI formuliert die Deutung, sie urteilt nicht über dich.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "So entsteht dein Profil",
@@ -318,7 +318,7 @@ const dePages = {
     trustline: "Du musst die Systeme nicht kennen, Astrakey erklärt sie. Jedes System zeigt seinen Beitrag und seine Grenze. Kein System wird überhöht. Kostenloser Einstieg ohne Kreditkarte.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Konvergenz-Engine ansehen",
-    image: "/images/hermetia/celestial-layer-orbits.png",
+    image: "/images/hermetia/personal-dawn-constellation.png",
     imageAlt: "Jedes System sieht einen Teil von dir. Gemeinsam werden sie belastbar. als Astrakey Markenbild",
     sections: [
       {
@@ -1137,7 +1137,7 @@ const dePages = {
     trustline: "Kostenloser Einstieg ohne Kreditkarte. Klare Tarife ohne versteckte Bedingungen. Keine Dringlichkeit, keine Countdown-Logik.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Kostenlos vs Premium",
-    image: "/images/hermetia/library-of-self-profile.png",
+    image: "/images/hermetia/quiet-offering-table.png",
     imageAlt: "Du zahlst für Tiefe, nicht für ein Geheimnis. als Astrakey Markenbild",
     sections: [
       {

@@ -33,6 +33,8 @@ Dieses Inventar dokumentiert die aktuell live referenzierten Bilder und Grafiken
 | `public/images/hermetia/dawn-clock-of-becoming.png` | Tagesimpulse | Hermetia Designwelt, intern bereitgestellt | keine medizinische Bildsprache |
 | `public/images/hermetia/garden-of-agreements.png` | Beziehungen | Hermetia Designwelt, intern bereitgestellt | Consent-/Beziehungskontext passend |
 | `public/images/hermetia/library-of-self-profile.png` | Glossar | Hermetia Designwelt, intern bereitgestellt | neutraler Wissenskontext |
+| `public/images/hermetia/personal-dawn-constellation.png` | Systeme | Hermetia Designwelt, intern bereitgestellt | fotorealistisches Mehrsystem-/Profilmotiv |
+| `public/images/hermetia/quiet-offering-table.png` | Preise | Hermetia Designwelt, intern bereitgestellt | ruhiges Pricing-/Angebotsmotiv |
 | `public/images/hermetia/resonance-instrument.png` | Konvergenz-Engine | Hermetia Designwelt, intern bereitgestellt | USP-Motiv |
 
 ## Live-Grafiken

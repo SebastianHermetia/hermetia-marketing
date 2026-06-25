@@ -10,6 +10,8 @@ type Props = {
   items: NavItem[];
   loginLabel: string;
   loginHref: string;
+  startLabel: string;
+  startHref: string;
   menuOpenLabel: string;
   menuCloseLabel: string;
   locale: Locale;
@@ -17,7 +19,7 @@ type Props = {
 
 const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
-export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCloseLabel, locale }: Props) {
+export function MobileMenu({ items, loginLabel, loginHref, startLabel, startHref, menuOpenLabel, menuCloseLabel, locale }: Props) {
   const [open, setOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname() || `/${locale}/`;
@@ -160,7 +162,7 @@ export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCl
           ))}
         </nav>
 
-        {/* Drawer footer: locale chips + login */}
+        {/* Drawer footer: locale chips + account actions */}
         <div className="shrink-0 border-t border-sand px-4 pb-6 pt-4">
           <div className="mb-3 flex flex-wrap gap-1.5">
             {locales.map((l) => (
@@ -179,6 +181,13 @@ export function MobileMenu({ items, loginLabel, loginHref, menuOpenLabel, menuCl
               </a>
             ))}
           </div>
+          <a
+            href={startHref}
+            className="btn btn-primary mb-2 w-full text-center"
+            onClick={closeMenu}
+          >
+            {startLabel}
+          </a>
           <a
             href={loginHref}
             className="btn btn-ghost w-full text-center"

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
 import { type Locale, siteUrl } from "@/i18n/config";
 import { tr, trItems, trObject } from "@/i18n/html-translations";
@@ -42,7 +43,7 @@ export default async function GlossaryThemesPage({ params }: { params: Promise<{
         <section className="pb-10 pt-14">
           <div className="wrap grid items-center gap-9 lg:grid-cols-[1.05fr_.95fr]">
             <div>
-              <Link href={localePath(locale, paths.glossar)} className="note no-underline hover:text-aubergine">← {tr(locale, "Glossar")}</Link>
+              <Breadcrumbs locale={locale} items={[{ label: tr(locale, "Glossar"), href: paths.glossar }, { label: intro.eyebrow }]} />
               <span className="kicker mt-5 block">{intro.eyebrow}</span>
               <h1 className="mt-3 text-[clamp(32px,5vw,50px)] leading-[1.08]">{intro.title}</h1>
               <p className="lead mt-5 max-w-[680px]">{intro.lead}</p>

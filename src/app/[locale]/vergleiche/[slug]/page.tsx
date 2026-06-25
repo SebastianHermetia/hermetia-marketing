@@ -7,8 +7,10 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
 import { Faq } from "@/components/Faq";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
 import { comparisons } from "@/content/marketing";
+import { tr } from "@/i18n/html-translations";
 import { localizedFaq, localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
 
 export function generateStaticParams() {
@@ -38,6 +40,7 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
       <Header locale={locale} current="vergleiche" />
       <article className="py-16">
         <div className="wrap max-w-[820px]">
+          <Breadcrumbs locale={locale} items={[{ label: tr(locale, "Vergleiche"), href: paths.vergleiche }, { label: comparison.title }]} />
           <span className="kicker">{ui.comparison}</span>
           <h1 className="mt-3 text-[clamp(32px,5vw,46px)]">{comparison.title}</h1>
           <p className="lead mt-5">{comparison.description}</p>
