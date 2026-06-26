@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import { Fraunces, Mulish } from "next/font/google";
 import { locales, type Locale } from "@/i18n/config";
 import { LanguageNotice } from "@/components/LanguageNotice";
+import { Analytics } from "@/components/analytics/Analytics";
+import { ConsentBanner } from "@/components/analytics/ConsentBanner";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -36,6 +38,8 @@ export default async function LocaleLayout({
       <body>
         <LanguageNotice locale={locale as Locale} />
         {children}
+        <Analytics />
+        <ConsentBanner locale={locale as Locale} />
       </body>
     </html>
   );

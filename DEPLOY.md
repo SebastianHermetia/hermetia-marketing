@@ -24,6 +24,13 @@ Statischer Export (`output: "export"` → `/out`), deployt über **Vercel** auf 
 |---|---|---|
 | `NEXT_PUBLIC_SITE_URL` | `https://hermetiastart.digital-expert.de` | finale Domain |
 | `NEXT_PUBLIC_APP_URL` | `https://hermetia.digital-expert.de` | bleibt gleich |
+| `NEXT_PUBLIC_POSTHOG_KEY` | _(leer = aus)_ | **gleicher Project-API-Key wie die App** |
+| `NEXT_PUBLIC_POSTHOG_HOST` | `https://eu.i.posthog.com` | bleibt gleich |
+
+> **PostHog = gleiches Konto wie die App.** Den Project-API-Key aus der App
+> (`NEXT_PUBLIC_POSTHOG_KEY`) hier 1:1 eintragen → Marketing- und App-Events
+> teilen ein Projekt (durchgängiger Funnel). Vor Consent läuft PostHog cookielos
+> und anonym; nach Zustimmung im Banner volles, persistentes Tracking.
 
 ENV-Variablen setzen: Vercel-Dashboard → Project → Settings → Environment Variables.
 
