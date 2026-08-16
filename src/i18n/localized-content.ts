@@ -451,7 +451,7 @@ export function localizedRouteLabel(locale: Locale, routePath: string, detailLab
     "/profil-verfeinern": p.profile,
     "/beziehungen": p.relationship,
     "/anwendungsfaelle": p.profile,
-    "/ueber-hermetia": "Astrakey",
+    "/ueber-astrakey": "Astrakey",
     "/faq": p.faq,
     "/sprachen": p.overview,
     "/systeme": p.method,

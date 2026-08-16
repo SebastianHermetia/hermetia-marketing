@@ -13,6 +13,9 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd, faqSchema, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { systems, systemSlugs, getSystem, systemText } from "@/content/systems";
 import { bookSearchUrl, bookText, getBooksForSystem } from "@/content/bookRecommendations";
+import { RelatedLinks } from "@/components/RelatedLinks";
+import { comparisonsForSystem } from "@/content/cross-links";
+import { localizeKnowledgeItem } from "@/i18n/localized-content";
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
@@ -36,6 +39,12 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
   const t = getDictionary(locale);
   const c = systemText(sys, locale);
   const related = systems.filter((s) => s.slug !== slug).slice(0, 4);
+  // Vergleichsseiten, in denen genau dieses System vorkommt — die naechste
+  // sinnvolle Frage nach "Was ist X?" ist "Wie unterscheidet sich X von Y?".
+  const relatedComparisons = comparisonsForSystem(sys.slug).map((comparison) => {
+    const item = localizeKnowledgeItem(comparison, locale, "comparison");
+    return { href: `${paths.vergleiche}/${item.slug}`, label: item.title, note: item.description };
+  });
   const books = getBooksForSystem(sys.slug);
   const pageUrl = `${siteUrl}/${locale}${paths.systeme}/${slug}/`;
   const imageUrl = `${siteUrl}/images/art/${sys.art}`;
@@ -242,6 +251,11 @@ export default async function SystemDetailPage({ params }: { params: Promise<{ l
           <div className="mt-12">
             <h2 className="mb-2 text-[24px]">{t.home.faq.kicker}</h2>
             <Faq items={extendedFaq} />
+          </div>
+
+          {/* Vergleiche, in denen dieses System vorkommt */}
+          <div className="mt-12">
+            <RelatedLinks locale={locale} heading="Vergleiche" links={relatedComparisons} />
           </div>
 
           {/* CTA */}

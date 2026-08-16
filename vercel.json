@@ -1,4 +1,10 @@
 {
+  "redirects": [
+    { "source": "/(\\w{2})/ueber-hermetia(.*)", "destination": "/$1/ueber-astrakey/", "permanent": true },
+    { "source": "/(\\w{2})/vergleiche/tageshoroskop-vs-hermetia(.*)", "destination": "/$1/vergleiche/tageshoroskop-vs-astrakey/", "permanent": true },
+    { "source": "/(\\w{2})/vergleiche/kostenloses-horoskop-vs-hermetia(.*)", "destination": "/$1/vergleiche/kostenloses-horoskop-vs-astrakey/", "permanent": true },
+    { "source": "/(\\w{2})/wissen/warum-hermetia-keine-therapie-ist(.*)", "destination": "/$1/wissen/warum-astrakey-keine-therapie-ist/", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/ingest/static/(.*)", "destination": "https://eu-assets.i.posthog.com/static/$1" },
     { "source": "/ingest/(.*)", "destination": "https://eu.i.posthog.com/$1" }

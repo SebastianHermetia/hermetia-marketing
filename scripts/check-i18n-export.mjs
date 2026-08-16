@@ -66,7 +66,7 @@ for (const locale of locales) {
       console.error(`Missing Astrakey content in ${relative(out, file)}`);
       failures += 1;
     }
-    if (!isCoveredRoute(route) && !["/faq/", "/sprachen/", "/ueber-hermetia/", "/anwendungsfaelle/"].includes(route)) {
+    if (!isCoveredRoute(route) && !["/faq/", "/sprachen/", "/ueber-astrakey/", "/anwendungsfaelle/"].includes(route)) {
       console.error(`Unmapped exported route in i18n audit config: ${locale}${route}`);
       failures += 1;
     }

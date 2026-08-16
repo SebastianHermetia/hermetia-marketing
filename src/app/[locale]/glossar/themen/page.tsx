@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
+import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
 import { type Locale, siteUrl } from "@/i18n/config";
 import { tr, trItems, trObject } from "@/i18n/html-translations";
 import { buildMetadata } from "@/lib/seo";
@@ -37,7 +37,17 @@ export default async function GlossaryThemesPage({ params }: { params: Promise<{
 
   return (
     <>
-      <JsonLd data={[articleSchema({ headline: intro.seoTitle, description: intro.seoDescription, locale, url: `${siteUrl}/${locale}${routePath}/`, about: intro.title, image: `${siteUrl}${heroImage}` }), faqSchema(localizedFaq)]} />
+      <JsonLd
+        data={[
+          articleSchema({ headline: intro.seoTitle, description: intro.seoDescription, locale, url: `${siteUrl}/${locale}${routePath}/`, about: intro.title, image: `${siteUrl}${heroImage}` }),
+          faqSchema(localizedFaq),
+          breadcrumbSchema([
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
+            { name: tr(locale, "Glossar"), url: `${siteUrl}/${locale}${paths.glossar}/` },
+            { name: intro.eyebrow, url: `${siteUrl}/${locale}${routePath}/` },
+          ]),
+        ]}
+      />
       <Header locale={locale} current="glossar" />
       <main>
         <section className="pb-10 pt-14">
