@@ -10,7 +10,7 @@ const files = [
   "src/app/[locale]/glossar/[slug]/page.tsx",
   "src/app/[locale]/wissen/[slug]/page.tsx",
   "src/app/[locale]/vergleiche/[slug]/page.tsx",
-  "src/app/[locale]/ueber-hermetia/page.tsx",
+  "src/app/[locale]/ueber-astrakey/page.tsx",
   "src/app/[locale]/anwendungsfaelle/page.tsx",
   "src/app/[locale]/kostenlos-vs-premium/page.tsx",
   "src/app/[locale]/daten-und-sicherheit/page.tsx",

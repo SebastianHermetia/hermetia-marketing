@@ -3,8 +3,10 @@ import { type Locale, siteUrl } from "@/i18n/config";
 import { buildMetadata } from "@/lib/seo";
 import { paths } from "@/lib/links";
 import { getPillarPage } from "@/content/marketing";
+import { pricing } from "@/content/pricing";
 import { MarketingContentPage } from "@/components/MarketingContentPage";
-import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
+import { JsonLd, articleSchema, faqSchema, productSchema } from "@/components/JsonLd";
+import { tr } from "@/i18n/html-translations";
 
 const pageKey = "preise";
 const routePath = paths.preise;
@@ -19,9 +21,22 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const { locale: raw } = await params;
   const locale = raw as Locale;
   const page = getPillarPage(pageKey, locale)!;
+  const pageUrl = `${siteUrl}/${locale}${routePath}/`;
+  // Preise aus derselben Quelle wie die Tabelle auf der Seite, damit strukturierte
+  // Daten und sichtbare Preise nicht auseinanderlaufen. "0 €" -> "0", "49 €" -> "49".
+  const offers = pricing.tiers.map((tier) => ({
+    name: tr(locale, tier.name),
+    price: tier.price.replace(/[^0-9.,]/g, "").replace(",", ".") || "0",
+  }));
   return (
     <>
-      <JsonLd data={[faqSchema(page.faq), articleSchema({ headline: page.seoTitle, description: page.seoDescription, locale, url: `${siteUrl}/${locale}${routePath}/`, about: page.title, image: `${siteUrl}${page.image}` })]} />
+      <JsonLd
+        data={[
+          faqSchema(page.faq),
+          articleSchema({ headline: page.seoTitle, description: page.seoDescription, locale, url: pageUrl, about: page.title, image: `${siteUrl}${page.image}` }),
+          productSchema({ name: page.title, description: page.seoDescription, url: pageUrl, offers }),
+        ]}
+      />
       <MarketingContentPage locale={locale} page={page} />
     </>
   );

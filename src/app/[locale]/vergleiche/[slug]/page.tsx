@@ -9,6 +9,9 @@ import { AppCta } from "@/components/AppCta";
 import { Faq } from "@/components/Faq";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
+import { RelatedLinks } from "@/components/RelatedLinks";
+import { systemsInComparison } from "@/content/cross-links";
+import { getSystem, systemText } from "@/content/systems";
 import { comparisons } from "@/content/marketing";
 import { tr } from "@/i18n/html-translations";
 import { localizedFaq, localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
@@ -32,6 +35,15 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
   const rawComparison = comparisons.find((c) => c.slug === slug);
   if (!rawComparison) notFound();
   const comparison = localizeKnowledgeItem(rawComparison, locale, "comparison");
+  // Die verglichenen Systeme bekommen ihre eigenen Detailseiten verlinkt — sonst
+  // endet der Leser hier, obwohl beide Systeme ausfuehrliche Seiten haben.
+  const relatedSystems = systemsInComparison(comparison.slug)
+    .map((slug) => getSystem(slug))
+    .filter((system): system is NonNullable<typeof system> => Boolean(system))
+    .map((system) => {
+      const text = systemText(system, locale);
+      return { href: `${paths.systeme}/${system.slug}`, label: text.name, note: text.tagline };
+    });
   const sections = comparisonSections(comparison);
   const faq = localizedFaq(locale, comparisonFaq(comparison));
   return (
@@ -115,6 +127,9 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
           <div className="mt-12">
             <h2 className="mb-4 text-[clamp(24px,3vw,32px)]">{ui.faq}</h2>
             <Faq items={faq} />
+          </div>
+          <div className="mt-10">
+            <RelatedLinks locale={locale} heading="Systeme" links={relatedSystems} />
           </div>
           <AppCta locale={locale} title="Vergleiche Systeme nicht nur abstrakt." text="Starte dein Profil und sieh, welche Perspektiven bei dir wirklich zusammenwirken." source={`comparison-${comparison.slug}`} />
         </div>

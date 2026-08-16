@@ -66,7 +66,7 @@ export const paths = {
   datenSicherheit: "/daten-und-sicherheit",
   onboarding: "/profil-starten",
   betaAccess: "/beta-zugang",
-  about: "/ueber-hermetia",
+  about: "/ueber-astrakey",
   sprachen: "/sprachen",
   freigaben: "/freigaben",
   preise: "/preise",

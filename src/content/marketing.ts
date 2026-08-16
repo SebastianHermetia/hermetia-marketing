@@ -1531,7 +1531,7 @@ const dePages = {
   },
   about: {
     key: "about",
-    slug: "ueber-hermetia",
+    slug: "ueber-astrakey",
     navKey: "about",
     title: "Viele Systeme sehen wenig. Zusammen sehen sie mehr.",
     seoTitle: "Über Astrakey: die Idee und das Warum",
@@ -2753,7 +2753,7 @@ export const articles = [
       "Der kostenlose Einstieg zeigt, ob Astrakey resoniert. Ein bezahltes Modell wird sinnvoll, wenn du mehr Tiefe willst: zusätzliche Ebenen, Beziehungsauswertungen, Tagesimpulse, Journaling-Verlauf oder langfristige Rückblicke. Die Entscheidung bleibt bewusst und gut erklärt.",
   },
   {
-    slug: "warum-hermetia-keine-therapie-ist",
+    slug: "warum-astrakey-keine-therapie-ist",
     title: "Warum Astrakey keine Therapie ist",
     seoTitle: "Astrakey ist keine Therapie — klare Grenzen für spirituelle Selbstreflexion",
     description: "Warum Astrakey inspirieren kann, aber keine medizinische, psychologische oder therapeutische Behandlung ersetzt.",
@@ -2788,7 +2788,7 @@ export const comparisons = [
       "Big Five beschreibt Persönlichkeitsdimensionen wie Offenheit, Gewissenhaftigkeit oder Neurotizismus. Das Enneagramm fragt stärker nach Motivation und innerem Grundmuster. Astrakey nutzt Big Five als wissenschaftlicheren Erdungsanker und das Enneagramm als reflektierende Typologie, ohne eines der beiden Systeme als alleinige Wahrheit zu behandeln.",
   },
   {
-    slug: "tageshoroskop-vs-hermetia",
+    slug: "tageshoroskop-vs-astrakey",
     title: "Tageshoroskop vs. Astrakey Tagesimpuls",
     seoTitle: "Tageshoroskop vs. Astrakey Tagesimpuls — allgemein oder persönlich?",
     description: "Warum Astrakeys Tagesimpulse vom persönlichen Profil ausgehen und nicht nur vom Sternzeichen.",
@@ -2844,7 +2844,7 @@ export const comparisons = [
       "Ein Persönlichkeitstest ist oft schnell und klar, aber auf Selbstauskunft begrenzt. Eine Seelenkarte kombiniert Selbstauskunft mit berechneten Systemen und Konvergenz. Dadurch entsteht kein objektives Urteil, sondern ein mehrschichtiges Reflexionsbild.",
   },
   {
-    slug: "kostenloses-horoskop-vs-hermetia",
+    slug: "kostenloses-horoskop-vs-astrakey",
     title: "Kostenloses Horoskop vs. Astrakey",
     seoTitle: "Kostenloses Horoskop vs. Astrakey — warum ein Profil mehr kann",
     description: "Kostenlose Horoskope liefern schnelle Deutung. Astrakey baut daraus eine langfristige, erklärbare Profilreise.",

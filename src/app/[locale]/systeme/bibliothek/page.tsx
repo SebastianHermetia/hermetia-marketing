@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
+import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
 import { type Locale, siteUrl } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { tr, trItems, trObject } from "@/i18n/html-translations";
@@ -46,6 +46,11 @@ export default async function SystemLibraryPage({ params }: { params: Promise<{ 
         data={[
           articleSchema({ headline: intro.seoTitle, description: intro.seoDescription, locale, url: `${siteUrl}/${locale}${routePath}/`, about: intro.title, image: `${siteUrl}${heroImage}` }),
           faqSchema(localizedFaq),
+          breadcrumbSchema([
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
+            { name: t.nav.systeme, url: `${siteUrl}/${locale}${paths.systeme}/` },
+            { name: intro.eyebrow, url: `${siteUrl}/${locale}${routePath}/` },
+          ]),
           {
             "@context": "https://schema.org",
             "@type": "ItemList",
