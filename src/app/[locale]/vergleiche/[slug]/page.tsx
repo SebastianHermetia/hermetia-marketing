@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
 import { Faq } from "@/components/Faq";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
+import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
 import { comparisons } from "@/content/marketing";
 import { tr } from "@/i18n/html-translations";
 import { localizedFaq, localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
@@ -36,7 +36,17 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
   const faq = localizedFaq(locale, comparisonFaq(comparison));
   return (
     <>
-      <JsonLd data={[articleSchema({ headline: comparison.seoTitle, description: comparison.description, locale, url: `${siteUrl}/${locale}${paths.vergleiche}/${comparison.slug}/`, about: comparison.title, image: `${siteUrl}/images/hermetia/celestial-layer-orbits.png` }), faqSchema(faq)]} />
+      <JsonLd
+        data={[
+          articleSchema({ headline: comparison.seoTitle, description: comparison.description, locale, url: `${siteUrl}/${locale}${paths.vergleiche}/${comparison.slug}/`, about: comparison.title, image: `${siteUrl}/images/hermetia/celestial-layer-orbits.png` }),
+          faqSchema(faq),
+          breadcrumbSchema([
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
+            { name: tr(locale, "Vergleiche"), url: `${siteUrl}/${locale}${paths.vergleiche}/` },
+            { name: tr(locale, comparison.title), url: `${siteUrl}/${locale}${paths.vergleiche}/${comparison.slug}/` },
+          ]),
+        ]}
+      />
       <Header locale={locale} current="vergleiche" />
       <article className="py-16">
         <div className="wrap max-w-[820px]">

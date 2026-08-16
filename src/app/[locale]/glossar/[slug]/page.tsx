@@ -9,7 +9,7 @@ import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
 import { Faq } from "@/components/Faq";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
+import { JsonLd, articleSchema, breadcrumbSchema, definedTermSchema, faqSchema } from "@/components/JsonLd";
 import { glossaryTerms } from "@/content/marketing";
 import { tr } from "@/i18n/html-translations";
 import { localizedFaq, localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
@@ -37,7 +37,18 @@ export default async function GlossarDetailPage({ params }: { params: Promise<{ 
   const related = glossaryTerms.filter((item) => item.slug !== term.slug).slice(0, 4).map((item) => localizeKnowledgeItem(item, locale, "glossary"));
   return (
     <>
-      <JsonLd data={[articleSchema({ headline: term.seoTitle, description: term.definition, locale, url: `${siteUrl}/${locale}${paths.glossar}/${term.slug}/`, about: term.term, image: `${siteUrl}/images/hermetia/library-of-self-profile.png` }), faqSchema(faq)]} />
+      <JsonLd
+        data={[
+          articleSchema({ headline: term.seoTitle, description: term.definition, locale, url: `${siteUrl}/${locale}${paths.glossar}/${term.slug}/`, about: term.term, image: `${siteUrl}/images/hermetia/library-of-self-profile.png` }),
+          definedTermSchema({ term: tr(locale, term.term), definition: tr(locale, term.definition), locale, url: `${siteUrl}/${locale}${paths.glossar}/${term.slug}/`, glossaryUrl: `${siteUrl}/${locale}${paths.glossar}/` }),
+          faqSchema(faq),
+          breadcrumbSchema([
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
+            { name: tr(locale, "Glossar"), url: `${siteUrl}/${locale}${paths.glossar}/` },
+            { name: tr(locale, term.term), url: `${siteUrl}/${locale}${paths.glossar}/${term.slug}/` },
+          ]),
+        ]}
+      />
       <Header locale={locale} current="glossar" />
       <article className="py-16">
         <div className="wrap max-w-[820px]">

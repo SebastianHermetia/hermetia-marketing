@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import type { Locale } from "@/i18n/config";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -8,7 +9,16 @@ import type { ContentPage } from "@/content/marketing";
 import { localizedUi } from "@/i18n/localized-content";
 import { localePath, paths, startUrl } from "@/lib/links";
 
-export function MarketingContentPage({ locale, page }: { locale: Locale; page: ContentPage }) {
+export function MarketingContentPage({
+  locale,
+  page,
+  index,
+}: {
+  locale: Locale;
+  page: ContentPage;
+  /** Optionales Verzeichnis der Unterseiten (Hub-Seiten wie Wissen/Vergleiche). */
+  index?: ReactNode;
+}) {
   const ui = localizedUi(locale);
   const labels = locale === "de"
     ? {
@@ -107,6 +117,7 @@ export function MarketingContentPage({ locale, page }: { locale: Locale; page: C
                 </section>
               ))}
             </div>
+            {index}
             {page.graphics?.length ? (
               <section className="mt-12">
                 <span className="kicker">{labels.graphics}</span>

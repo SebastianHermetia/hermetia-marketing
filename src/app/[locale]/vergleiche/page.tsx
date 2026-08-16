@@ -2,12 +2,15 @@ import type { Metadata } from "next";
 import { type Locale, siteUrl } from "@/i18n/config";
 import { buildMetadata } from "@/lib/seo";
 import { paths } from "@/lib/links";
-import { getPillarPage } from "@/content/marketing";
+import { comparisons, getPillarPage } from "@/content/marketing";
 import { MarketingContentPage } from "@/components/MarketingContentPage";
+import { HubIndex, hubItemListSchema } from "@/components/HubIndex";
 import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
+import { localizeKnowledgeItem } from "@/i18n/localized-content";
 
 const pageKey = "vergleiche";
 const routePath = paths.vergleiche;
+const indexHeading = "Alle Vergleiche";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -19,10 +22,21 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const { locale: raw } = await params;
   const locale = raw as Locale;
   const page = getPillarPage(pageKey, locale)!;
+  const items = comparisons.map((comparison) => localizeKnowledgeItem(comparison, locale, "comparison"));
   return (
     <>
-      <JsonLd data={[faqSchema(page.faq), articleSchema({ headline: page.seoTitle, description: page.seoDescription, locale, url: `${siteUrl}/${locale}${routePath}/`, about: page.title, image: `${siteUrl}${page.image}` })]} />
-      <MarketingContentPage locale={locale} page={page} />
+      <JsonLd
+        data={[
+          faqSchema(page.faq),
+          articleSchema({ headline: page.seoTitle, description: page.seoDescription, locale, url: `${siteUrl}/${locale}${routePath}/`, about: page.title, image: `${siteUrl}${page.image}` }),
+          hubItemListSchema({ name: indexHeading, siteUrl, locale, basePath: routePath, items }),
+        ]}
+      />
+      <MarketingContentPage
+        locale={locale}
+        page={page}
+        index={<HubIndex locale={locale} heading={indexHeading} basePath={routePath} items={items} />}
+      />
     </>
   );
 }
