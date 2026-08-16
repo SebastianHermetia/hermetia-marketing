@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
 import { Faq } from "@/components/Faq";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
+import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
 import { articles } from "@/content/marketing";
 import { tr } from "@/i18n/html-translations";
 import { localizedFaq, localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
@@ -36,7 +36,17 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
   const faq = localizedFaq(locale, articleFaq(article));
   return (
     <>
-      <JsonLd data={[articleSchema({ headline: article.seoTitle, description: article.description, locale, url: `${siteUrl}/${locale}${paths.wissen}/${article.slug}/`, about: article.title, image: `${siteUrl}/images/hermetia/alchemical-listening-room.png` }), faqSchema(faq)]} />
+      <JsonLd
+        data={[
+          articleSchema({ headline: article.seoTitle, description: article.description, locale, url: `${siteUrl}/${locale}${paths.wissen}/${article.slug}/`, about: article.title, image: `${siteUrl}/images/hermetia/alchemical-listening-room.png` }),
+          faqSchema(faq),
+          breadcrumbSchema([
+            { name: "Astrakey", url: `${siteUrl}/${locale}/` },
+            { name: tr(locale, "Wissen"), url: `${siteUrl}/${locale}${paths.wissen}/` },
+            { name: tr(locale, article.title), url: `${siteUrl}/${locale}${paths.wissen}/${article.slug}/` },
+          ]),
+        ]}
+      />
       <Header locale={locale} current="wissen" />
       <article className="py-16">
         <div className="wrap max-w-[820px]">

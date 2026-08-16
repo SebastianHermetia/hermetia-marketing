@@ -5,7 +5,13 @@ import { getConsent } from './consent';
 // Gleiches PostHog-Projekt wie die App: denselben Project-API-Key + EU-Host
 // setzen, dann teilen Marketing und App ein Projekt (durchgängiger Funnel).
 const KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY;
-const HOST = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://eu.i.posthog.com';
+// First-Party-Proxy statt Direktabruf: Ad-/Trackingblocker kennen eu.i.posthog.com und
+// verwerfen die Requests, /ingest laeuft ueber die eigene Domain (Rewrite in vercel.json,
+// gleiche Loesung wie in der App). Bewusst NICHT ueber ENV steuerbar — sonst haengt die
+// Messbarkeit an einer Dashboard-Einstellung, die niemand mehr prueft.
+const API_HOST = '/ingest';
+// Der UI-Host bleibt der echte: PostHog verlinkt darueber ins Dashboard.
+const UI_HOST = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://eu.posthog.com';
 
 type PosthogLike = {
   init: (key: string, opts: Record<string, unknown>) => void;
@@ -62,7 +68,8 @@ export function ensurePosthog(): Promise<PosthogLike | null> {
     initPromise = import('posthog-js').then(({ default: posthog }) => {
       const consented = getConsent().analytics;
       posthog.init(KEY, {
-        api_host: HOST,
+        api_host: API_HOST,
+        ui_host: UI_HOST,
         // Pageviews feuern wir manuell bei jedem Routenwechsel (App Router).
         capture_pageview: false,
         capture_pageleave: true,

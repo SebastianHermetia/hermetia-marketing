@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo";
 import { paths } from "@/lib/links";
 import { getPillarPage } from "@/content/marketing";
 import { MarketingContentPage } from "@/components/MarketingContentPage";
-import { JsonLd, articleSchema, faqSchema } from "@/components/JsonLd";
+import { JsonLd, articleSchema, faqSchema, orgSchema, websiteSchema } from "@/components/JsonLd";
 
 const pageKey = "home";
 const routePath = paths.home;
@@ -21,7 +21,14 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const page = getPillarPage(pageKey, locale)!;
   return (
     <>
-      <JsonLd data={[faqSchema(page.faq), articleSchema({ headline: page.seoTitle, description: page.seoDescription, locale, url: `${siteUrl}/${locale}${routePath}/`, about: page.title, image: `${siteUrl}${page.image}` })]} />
+      <JsonLd
+        data={[
+          orgSchema(siteUrl),
+          websiteSchema(siteUrl, locale),
+          faqSchema(page.faq),
+          articleSchema({ headline: page.seoTitle, description: page.seoDescription, locale, url: `${siteUrl}/${locale}${routePath}/`, about: page.title, image: `${siteUrl}${page.image}` }),
+        ]}
+      />
       <MarketingContentPage locale={locale} page={page} />
     </>
   );

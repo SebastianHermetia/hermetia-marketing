@@ -30,16 +30,55 @@ export function faqSchema(items: { q: string; a: string }[]) {
   };
 }
 
+// Marken-Entitaet. Wichtig, weil "Astrakey" mit fremden Projekten kollidiert
+// (Passwortmanager, NFT-Projekt, Social-Handles): @id + sameAs sagen Suchmaschinen
+// und Antwortmaschinen, welche Astrakey-Entitaet gemeint ist.
 export function orgSchema(siteUrl: string) {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${siteUrl}/#organization`,
     name: brand.name,
+    alternateName: brand.legacyName,
     url: siteUrl,
     logo: `${siteUrl}/og/default.jpg`,
+    image: `${siteUrl}/og/default.jpg`,
     slogan: brand.slogan,
-    description:
-      "Astrakey verwandelt Geburtsdaten in eine Seelenkarte aus bis zu 31 Deutungssystemen und begleitet Menschen Tag für Tag.",
+    email: brand.supportEmail,
+    description: brand.positioning,
+  };
+}
+
+export function websiteSchema(siteUrl: string, locale: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteUrl}/#website`,
+    name: brand.name,
+    url: `${siteUrl}/${locale}/`,
+    inLanguage: locale,
+    publisher: { "@id": `${siteUrl}/#organization` },
+    description: brand.positioning,
+  };
+}
+
+// Glossarbegriffe als DefinedTerm: der Typ, den Antwortmaschinen fuer
+// "Was bedeutet X?" auswerten — praeziser als ein generisches Article.
+export function definedTermSchema(opts: {
+  term: string;
+  definition: string;
+  locale: string;
+  url: string;
+  glossaryUrl: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    name: opts.term,
+    description: opts.definition,
+    inLanguage: opts.locale,
+    url: opts.url,
+    inDefinedTermSet: { "@type": "DefinedTermSet", name: `${brand.name} Glossar`, url: opts.glossaryUrl },
   };
 }
 

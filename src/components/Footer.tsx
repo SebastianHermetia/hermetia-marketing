@@ -82,7 +82,8 @@ export function Footer({ locale }: { locale: Locale }) {
           </FootCol>
           <FootCol title={t.footer.discover}>
             <FootLink href={L(paths.glossar)}>{t.footer.glossar}</FootLink>
-            <FootLink href={L(paths.wissen)}>{t.footer.magazin}</FootLink>
+            {/* Label = Seitentitel „Wissen“; „Magazin“ zeigte auf dieselbe Seite unter anderem Namen. */}
+            <FootLink href={L(paths.wissen)}>{t.nav.wissen}</FootLink>
             <FootLink href={L(paths.vergleiche)}>{labels.comparisons}</FootLink>
             <FootLink href={L(paths.anwendungsfaelle)}>{labels.useCases}</FootLink>
             <FootLink href={L(paths.about)}>{t.footer.about}</FootLink>
