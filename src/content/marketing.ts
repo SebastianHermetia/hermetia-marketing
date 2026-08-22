@@ -2766,24 +2766,24 @@ export const comparisons = [
   {
     slug: "human-design-vs-gene-keys",
     title: "Human Design vs. Gene Keys",
-    seoTitle: "Human Design vs. Gene Keys — Unterschiede, Gemeinsamkeiten und Astrakey",
-    description: "Beide Systeme teilen eine Grundlage, lesen sie aber unterschiedlich.",
+    seoTitle: "Unterschied Human Design und Gene Keys — einfach erklärt",
+    description: "Beide rechnen mit denselben 64 Hexagrammen. Human Design beschreibt Entscheidungen, Gene Keys einen Reifungsweg. Der Unterschied im Detail, mit Vergleichstabelle.",
     body:
       "Human Design beschreibt Energie, Entscheidung und Zentren. Gene Keys beschreibt Archetypen, Reifung und Kontemplation. Beide teilen astronomische Grundlagen, aber nicht dieselbe Sprache. Astrakey nutzt beide nicht als doppelte Bestätigung, sondern als verwandte Perspektiven innerhalb einer Systemfamilie.",
   },
   {
     slug: "astrologie-vs-human-design",
     title: "Astrologie vs. Human Design",
-    seoTitle: "Astrologie vs. Human Design — was zeigt welches System?",
-    description: "Wie sich Horoskop und Bodygraph unterscheiden und warum Astrakey beide nutzt.",
+    seoTitle: "Unterschied Human Design und Astrologie — was zeigt was?",
+    description: "Dieselben Planetenpositionen, zwei Deutungen: Die Astrologie beschreibt Charakter und Zeitqualität, Human Design einen Entscheidungsmechanismus. Mit Vergleichstabelle.",
     body:
       "Astrologie zeigt Himmelspositionen als Charakter-, Timing- und Beziehungssprache. Human Design übersetzt ähnliche Rohdaten in Typ, Autorität und Energiezentren. Astrakey nutzt beide Perspektiven, achtet aber darauf, gemeinsame Datenquellen nicht naiv doppelt zu zählen.",
   },
   {
     slug: "big-five-vs-enneagramm",
     title: "Big Five vs. Enneagramm",
-    seoTitle: "Big Five vs. Enneagramm — Psychologie und Motivation im Vergleich",
-    description: "Big Five misst Persönlichkeitseigenschaften, Enneagramm deutet Motivationsmuster. Astrakey nutzt beide unterschiedlich.",
+    seoTitle: "Big Five oder Enneagramm — was misst welches Modell?",
+    description: "Die Big Five messen Ausprägung, das Enneagramm fragt nach dem Motiv dahinter. Wissenschaftlicher Stand, Stärken und Grenzen — mit Vergleichstabelle.",
     body:
       "Big Five beschreibt Persönlichkeitsdimensionen wie Offenheit, Gewissenhaftigkeit oder Neurotizismus. Das Enneagramm fragt stärker nach Motivation und innerem Grundmuster. Astrakey nutzt Big Five als wissenschaftlicheren Erdungsanker und das Enneagramm als reflektierende Typologie, ohne eines der beiden Systeme als alleinige Wahrheit zu behandeln.",
   },
@@ -2796,10 +2796,18 @@ export const comparisons = [
       "Das Tageshoroskop startet meist beim Sonnenzeichen. Astrakey startet beim ganzen Profil: Kernthemen, Konvergenz, Rhythmus und optional Tagesdaten. Deshalb ist der Impuls weniger plakativ, aber persönlicher. Er soll nicht vorhersagen, sondern eine sinnvolle Reflexionsfrage für den Tag anbieten.",
   },
   {
+    slug: "human-design-vs-numerologie",
+    title: "Human Design vs. Numerologie",
+    seoTitle: "Unterschied Human Design und Numerologie — einfach erklärt",
+    description: "Human Design braucht die exakte Geburtszeit, die Numerologie nur das Datum. Was beide zeigen, wo sie sich unterscheiden — mit Vergleichstabelle.",
+    body:
+      "Human Design leitet Typ, Autorität und Zentren aus tatsächlichen Planetenpositionen ab und braucht dafür die exakte Geburtszeit. Die Numerologie bildet Quersummen aus den Ziffern des Geburtsdatums und kommt ohne Uhrzeit aus. Astrakey führt beide getrennt, weil sie auf grundverschiedene Weise rechnen — eine Übereinstimmung zwischen ihnen wiegt deshalb mehr als zwischen zwei Systemen derselben Familie.",
+  },
+  {
     slug: "astrologie-vs-numerologie",
     title: "Astrologie vs. Numerologie",
-    seoTitle: "Astrologie vs. Numerologie — Himmelssprache und Zahlenmuster im Vergleich",
-    description: "Astrologie arbeitet mit Himmelspositionen, Numerologie mit Zahlen aus Datum und Name. Astrakey verbindet beide vorsichtig.",
+    seoTitle: "Unterschied Astrologie und Numerologie — einfach erklärt",
+    description: "Die Astrologie rechnet mit tatsächlichen Himmelspositionen, die Numerologie mit Quersummen aus dem Datum. Der Unterschied im Detail, mit Vergleichstabelle.",
     body:
       "Astrologie ist zeit- und ortsbezogen, Numerologie arbeitet stärker mit einfachen Zahlenmustern. Beide können persönliche Themen beleuchten, aber aus sehr unterschiedlichen Datenquellen. Astrakey nutzt genau diesen Unterschied: Wenn beide unabhängig ähnliche Motive zeigen, steigt die Konvergenz eines Kernthemas.",
   },
