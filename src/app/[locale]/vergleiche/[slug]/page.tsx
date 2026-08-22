@@ -8,11 +8,13 @@ import { Footer } from "@/components/Footer";
 import { AppCta } from "@/components/AppCta";
 import { Faq } from "@/components/Faq";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ComparisonTable } from "@/components/ComparisonTable";
 import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
 import { RelatedLinks } from "@/components/RelatedLinks";
 import { systemsInComparison } from "@/content/cross-links";
 import { getSystem, systemText } from "@/content/systems";
 import { comparisons } from "@/content/marketing";
+import { getComparisonDetail } from "@/content/comparisons";
 import { tr } from "@/i18n/html-translations";
 import { localizedFaq, localizedUi, localizeKnowledgeItem } from "@/i18n/localized-content";
 
@@ -44,18 +46,25 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
       const text = systemText(system, locale);
       return { href: `${paths.systeme}/${system.slug}`, label: text.name, note: text.tagline };
     });
-  const sections = comparisonSections(comparison);
-  const faq = localizedFaq(locale, comparisonFaq(comparison));
+
+  // Seiten mit ausgearbeitetem Inhalt bekommen die vollstaendige Darstellung: Frage
+  // als H1, Antwort direkt darunter, Vergleichstabelle, eigene Abschnitte,
+  // Entscheidungshilfe und echte Folgefragen. Alle uebrigen bleiben bei der
+  // frueheren Vorlage, bis sie ebenfalls ausgearbeitet sind.
+  const detail = getComparisonDetail(comparison.slug);
+  const faq = localizedFaq(locale, detail ? detail.faq : comparisonFaq(comparison));
+  const url = `${siteUrl}/${locale}${paths.vergleiche}/${comparison.slug}/`;
+
   return (
     <>
       <JsonLd
         data={[
-          articleSchema({ headline: comparison.seoTitle, description: comparison.description, locale, url: `${siteUrl}/${locale}${paths.vergleiche}/${comparison.slug}/`, about: comparison.title, image: `${siteUrl}/images/hermetia/celestial-layer-orbits.webp` }),
+          articleSchema({ headline: comparison.seoTitle, description: comparison.description, locale, url, about: comparison.title, image: `${siteUrl}/images/hermetia/celestial-layer-orbits.webp` }),
           faqSchema(faq),
           breadcrumbSchema([
             { name: "Astrakey", url: `${siteUrl}/${locale}/` },
             { name: tr(locale, "Vergleiche"), url: `${siteUrl}/${locale}${paths.vergleiche}/` },
-            { name: tr(locale, comparison.title), url: `${siteUrl}/${locale}${paths.vergleiche}/${comparison.slug}/` },
+            { name: tr(locale, comparison.title), url },
           ]),
         ]}
       />
@@ -64,66 +73,96 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
         <div className="wrap max-w-[820px]">
           <Breadcrumbs locale={locale} items={[{ label: tr(locale, "Vergleiche"), href: paths.vergleiche }, { label: comparison.title }]} />
           <span className="kicker">{ui.comparison}</span>
-          <h1 className="mt-3 text-[clamp(32px,5vw,46px)]">{comparison.title}</h1>
-          <p className="lead mt-5">{comparison.description}</p>
-          <div className="my-10 rounded-card border border-sand bg-white p-6 shadow-soft">
-            <p className="muted text-[17px] leading-[1.9]">{comparison.body}</p>
-          </div>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div className="rounded-card border border-salbei/25 bg-salbei/10 p-5">
-              <span className="kicker">{ui.strengths}</span>
-              <p className="muted mt-2 leading-relaxed">Der Vergleich macht sichtbar, welche Perspektive besonders gut für Struktur, Sprache, Timing oder Alltagstauglichkeit geeignet ist.</p>
-            </div>
-            <div className="rounded-card border border-altrosa/25 bg-altrosa/10 p-5">
-              <span className="kicker">{ui.limits}</span>
-              <p className="muted mt-2 leading-relaxed">Keines der Systeme entscheidet allein über eine Person. Astrakey nutzt Vergleiche als Orientierung, nicht als endgültiges Urteil.</p>
-            </div>
-          </div>
-          <div className="mt-8 rounded-card border border-sand bg-creme-tief p-6">
-            <span className="kicker">{ui.overview}</span>
-            <h2 className="mt-2 text-[clamp(24px,3vw,30px)]">Wann welcher Blick hilfreicher ist</h2>
-            <div className="mt-5 grid gap-4 md:grid-cols-3">
-              <div className="rounded-card border border-sand bg-white p-5">
-                <h3 className="text-[18px]">Für den ersten Resonanzmoment</h3>
-                <p className="muted mt-2 text-[15px] leading-relaxed">Nutze die Perspektive, die schnell Sprache für ein Muster gibt, ohne dich festzulegen.</p>
+
+          {detail ? (
+            <>
+              <h1 className="mt-3 text-[clamp(30px,4.6vw,44px)]">{tr(locale, detail.question)}</h1>
+              {/* Die Kurzantwort steht bewusst vor allem anderen: Sie ist der Absatz,
+                  den Suchmaschinen als Snippet und Antwortmaschinen als Zitat nehmen.
+                  Deshalb muss sie ohne den Rest der Seite verstaendlich sein. */}
+              <div className="mt-6 rounded-card border border-gold/30 bg-gold-weich/25 p-6">
+                <span className="kicker">{tr(locale, "Kurz beantwortet")}</span>
+                <p className="mt-2 text-[18px] leading-relaxed text-aubergine">{tr(locale, detail.answer)}</p>
               </div>
-              <div className="rounded-card border border-sand bg-white p-5">
-                <h3 className="text-[18px]">Für verlässliche Tiefe</h3>
-                <p className="muted mt-2 text-[15px] leading-relaxed">Achte darauf, ob unabhängige Datenquellen dasselbe Thema stützen oder nur dieselbe Familie wiederholt wird.</p>
+
+              <h2 className="mt-12 text-[clamp(24px,3vw,32px)]">{tr(locale, "Der Vergleich im Überblick")}</h2>
+              <ComparisonTable
+                locale={locale}
+                columns={detail.columns}
+                rows={detail.table.map((row) => ({ aspect: tr(locale, row.aspect), a: tr(locale, row.a), b: tr(locale, row.b) }))}
+                caption={tr(locale, detail.question)}
+              />
+
+              <div className="mt-12 flex flex-col gap-10">
+                {detail.sections.map((section, idx) => (
+                  <section key={section.title}>
+                    <h2 className="text-[clamp(24px,3vw,32px)]">{tr(locale, section.title)}</h2>
+                    <p className="muted mt-3 text-[17px] leading-[1.9]">{tr(locale, section.body)}</p>
+                    {idx === 1 ? (
+                      <div className="mt-8">
+                        <AppCta locale={locale} title="Sieh den Vergleich in deinem eigenen Profil." text="Astrakey zeigt nicht nur, wie Systeme sich abstrakt unterscheiden, sondern welche Perspektiven bei dir tatsächlich zusammenwirken." source={`comparison-${comparison.slug}-inline`} />
+                      </div>
+                    ) : null}
+                  </section>
+                ))}
               </div>
-              <div className="rounded-card border border-sand bg-white p-5">
-                <h3 className="text-[18px]">Für Premium-Entscheidung</h3>
-                <p className="muted mt-2 text-[15px] leading-relaxed">Tiefe lohnt sich, wenn du den Vergleich nicht nur lesen, sondern im eigenen Profil nachvollziehen willst.</p>
-              </div>
-            </div>
-          </div>
-          <div className="mt-10 flex flex-col gap-10">
-            {sections.map((section, idx) => (
-              <section key={section.title}>
-                <h2 className="text-[clamp(24px,3vw,32px)]">{section.title}</h2>
-                <p className="muted mt-3 text-[17px] leading-[1.9]">{section.body}</p>
-                {idx === 1 ? (
-                  <div className="mt-8">
-                    <AppCta locale={locale} title="Sieh den Vergleich in deinem eigenen Profil." text="Astrakey zeigt nicht nur, wie Systeme sich abstrakt unterscheiden, sondern welche Perspektiven bei dir tatsächlich zusammenwirken." source={`comparison-${comparison.slug}-inline`} />
-                  </div>
-                ) : null}
+
+              <section className="mt-12">
+                <h2 className="text-[clamp(24px,3vw,32px)]">{tr(locale, "Was passt in welcher Situation?")}</h2>
+                <div className="mt-5 flex flex-col gap-4">
+                  {detail.decide.map((entry) => (
+                    <div key={entry.when} className="rounded-card border border-sand bg-white p-5 shadow-soft">
+                      <h3 className="text-[17px] leading-snug">{tr(locale, entry.when)}</h3>
+                      <p className="mt-2 text-[15.5px] font-semibold text-gold">{tr(locale, entry.pick)}</p>
+                      <p className="muted mt-1 text-[15.5px] leading-relaxed">{tr(locale, entry.why)}</p>
+                    </div>
+                  ))}
+                </div>
               </section>
-            ))}
-          </div>
-          <section className="mt-10">
-            <span className="kicker">Datenquellen und Fairness</span>
-            <h2 className="mt-2 text-[clamp(24px,3vw,32px)]">Warum Vergleiche bei Astrakey keine Gewinnerliste sind</h2>
-            <p className="muted mt-3 text-[17px] leading-[1.9]">
-              Astrakey bewertet Systeme nicht nach Lautstärke, Bekanntheit oder spiritueller Dramaturgie. Entscheidend ist, welche Datenbasis vorliegt, welche Aussage daraus verantwortungsvoll abgeleitet werden kann und ob andere unabhängige Quellen dasselbe Motiv bestätigen. So entsteht ein Vergleich, der Nutzer weiterführt, ohne Systeme gegeneinander auszuspielen.
+            </>
+          ) : (
+            <>
+              <h1 className="mt-3 text-[clamp(32px,5vw,46px)]">{comparison.title}</h1>
+              <p className="lead mt-5">{comparison.description}</p>
+              <div className="my-10 rounded-card border border-sand bg-white p-6 shadow-soft">
+                <p className="muted text-[17px] leading-[1.9]">{comparison.body}</p>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-card border border-salbei/25 bg-salbei/10 p-5">
+                  <span className="kicker">{ui.strengths}</span>
+                  <p className="muted mt-2 leading-relaxed">Der Vergleich macht sichtbar, welche Perspektive besonders gut für Struktur, Sprache, Timing oder Alltagstauglichkeit geeignet ist.</p>
+                </div>
+                <div className="rounded-card border border-altrosa/25 bg-altrosa/10 p-5">
+                  <span className="kicker">{ui.limits}</span>
+                  <p className="muted mt-2 leading-relaxed">Keines der Systeme entscheidet allein über eine Person. Astrakey nutzt Vergleiche als Orientierung, nicht als endgültiges Urteil.</p>
+                </div>
+              </div>
+              <div className="mt-10 flex flex-col gap-10">
+                {comparisonSections(comparison).map((section, idx) => (
+                  <section key={section.title}>
+                    <h2 className="text-[clamp(24px,3vw,32px)]">{section.title}</h2>
+                    <p className="muted mt-3 text-[17px] leading-[1.9]">{section.body}</p>
+                    {idx === 1 ? (
+                      <div className="mt-8">
+                        <AppCta locale={locale} title="Sieh den Vergleich in deinem eigenen Profil." text="Astrakey zeigt nicht nur, wie Systeme sich abstrakt unterscheiden, sondern welche Perspektiven bei dir tatsächlich zusammenwirken." source={`comparison-${comparison.slug}-inline`} />
+                      </div>
+                    ) : null}
+                  </section>
+                ))}
+              </div>
+            </>
+          )}
+
+          <section className="mt-12 rounded-card border border-altrosa/25 bg-altrosa/10 p-6">
+            <h2 className="text-[clamp(22px,2.6vw,28px)]">{tr(locale, "Grenzen dieses Vergleichs")}</h2>
+            <p className="muted mt-3 text-[16.5px] leading-[1.85]">
+              {tr(
+                locale,
+                "Keines dieser Systeme ist wissenschaftlich validiert, und keines ersetzt Diagnose, Beratung oder Therapie. Die Texte hier sind eigene Astrakey-Erklärungen und übernehmen keine geschützten Reportpassagen oder Fragebogenitems. Wenn eine Beschreibung nicht passt, ist auch das eine brauchbare Information.",
+              )}
             </p>
           </section>
-          <section className="mt-10">
-            <span className="kicker">Rechtliche Grenzen</span>
-            <h2 className="mt-2 text-[clamp(24px,3vw,32px)]">Keine Diagnose, keine kopierten Deutungstexte</h2>
-            <p className="muted mt-3 text-[17px] leading-[1.9]">
-              Die Vergleichstexte sind eigene Astrakey-Erklärungen. Sie übernehmen keine geschützten Reporttexte, Fragebogenitems oder fremden Kartendeutungen. Gerade bei psychologischen, körpernahen oder spirituellen Systemen bleibt die Sprache bewusst vorsichtig: Reflexion ja, Diagnose oder Therapie nein.
-            </p>
-          </section>
+
           <div className="mt-12">
             <h2 className="mb-4 text-[clamp(24px,3vw,32px)]">{ui.faq}</h2>
             <Faq items={faq} />
@@ -176,4 +215,3 @@ function comparisonFaq(comparison: (typeof comparisons)[number]) {
     },
   ];
 }
-

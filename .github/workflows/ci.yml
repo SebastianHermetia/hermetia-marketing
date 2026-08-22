@@ -38,3 +38,9 @@ jobs:
 
       - name: Check for untranslated German leakage
         run: npm run check:i18n:untranslated
+
+      # Verhindert, dass DE oder EN versehentlich auf noindex laufen oder eine
+      # maschinenuebersetzte Sprache zurueck in die Sitemap rutscht. Beides faellt
+      # sonst erst Wochen spaeter in der Search Console auf.
+      - name: Check index strategy
+        run: npm run check:index
