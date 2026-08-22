@@ -50,7 +50,7 @@ export default async function ComparisonPage({ params }: { params: Promise<{ loc
     <>
       <JsonLd
         data={[
-          articleSchema({ headline: comparison.seoTitle, description: comparison.description, locale, url: `${siteUrl}/${locale}${paths.vergleiche}/${comparison.slug}/`, about: comparison.title, image: `${siteUrl}/images/hermetia/celestial-layer-orbits.png` }),
+          articleSchema({ headline: comparison.seoTitle, description: comparison.description, locale, url: `${siteUrl}/${locale}${paths.vergleiche}/${comparison.slug}/`, about: comparison.title, image: `${siteUrl}/images/hermetia/celestial-layer-orbits.webp` }),
           faqSchema(faq),
           breadcrumbSchema([
             { name: "Astrakey", url: `${siteUrl}/${locale}/` },

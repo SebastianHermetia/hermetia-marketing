@@ -13,7 +13,7 @@ import { getGlossaryThemeTerms, glossaryThemeIntro, glossaryThemes } from "@/con
 import { localizeKnowledgeItem } from "@/i18n/localized-content";
 
 const routePath = paths.glossarThemen;
-const heroImage = "/images/hermetia/library-of-self-profile.png";
+const heroImage = "/images/hermetia/library-of-self-profile.webp";
 
 const faq = [
   { q: "Warum ein thematisches Glossar?", a: "Weil Astrakey Begriffe aus verschiedenen Welten verbindet. Die thematische Ansicht zeigt Zusammenhaenge, damit Methode, Systemsprachen und Vertrauensbegriffe nicht durcheinander geraten." },
