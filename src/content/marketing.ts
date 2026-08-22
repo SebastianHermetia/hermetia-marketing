@@ -44,7 +44,7 @@ const dePages = {
     trustline: "Kostenloser Einstieg ohne Kreditkarte. Datenschutz bewusst gestaltet, kein Verkauf deiner Daten, Export und Löschung jederzeit. AI formuliert die Deutung, sie urteilt nicht über dich.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "So entsteht dein Profil",
-    image: "/images/hermetia/atmospheric-data-topography.png",
+    image: "/images/hermetia/atmospheric-data-topography.webp",
     imageAlt: "Ein Profil aus vielen Systemen. Nicht nur ein Blick auf dich. als Astrakey Markenbild",
     sections: [
       {
@@ -133,7 +133,7 @@ const dePages = {
     trustline: "Kostenloser Einstieg ohne Kreditkarte. Jede Funktion zeigt ihre Grundlage. AI formuliert, sie urteilt nicht über dich.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Seelenbuch entdecken",
-    image: "/images/hermetia/atmospheric-data-topography.png",
+    image: "/images/hermetia/atmospheric-data-topography.webp",
     imageAlt: "Ein Profil, das du berechnen, vergleichen, verstehen, vertiefen und anwenden kannst. als Astrakey Markenbild",
     sections: [
       {
@@ -214,7 +214,7 @@ const dePages = {
     trustline: "Eine deterministische Rechenschicht, das heißt sie folgt festen Regeln, gleiche Eingaben ergeben dasselbe Ergebnis. Kein Sprachmodell, das urteilt. Jede Aussage zeigt ihre Konvergenz und ihre Unsicherheit.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "So entsteht dein Profil",
-    image: "/images/hermetia/resonance-instrument.png",
+    image: "/images/hermetia/resonance-instrument.webp",
     imageAlt: "Nicht das lauteste System gewinnt, sondern das Thema, das mehrfach wiederkehrt. als Astrakey Markenbild",
     sections: [
       {
@@ -318,7 +318,7 @@ const dePages = {
     trustline: "Du musst die Systeme nicht kennen, Astrakey erklärt sie. Jedes System zeigt seinen Beitrag und seine Grenze. Kein System wird überhöht. Kostenloser Einstieg ohne Kreditkarte.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Konvergenz-Engine ansehen",
-    image: "/images/hermetia/personal-dawn-constellation.png",
+    image: "/images/hermetia/personal-dawn-constellation.webp",
     imageAlt: "Jedes System sieht einen Teil von dir. Gemeinsam werden sie belastbar. als Astrakey Markenbild",
     sections: [
       {
@@ -399,7 +399,7 @@ const dePages = {
     trustline: "AI ist die Sprachebene, nicht die Quelle der Wahrheit. Jede starke Aussage zeigt ihre Belege. Kostenloser Einstieg ohne Kreditkarte.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Konvergenz-Engine ansehen",
-    image: "/images/hermetia/birth-moment-meridian.png",
+    image: "/images/hermetia/birth-moment-meridian.webp",
     imageAlt: "Dein Profil entsteht in drei getrennten Schritten. als Astrakey Markenbild",
     sections: [
       {
@@ -481,7 +481,7 @@ const dePages = {
     trustline: "Entsteht aus deinem Mehrsystem-Profil. Mit sichtbaren Systembelegen. Keine Diagnose, keine Vorhersage, kein Absolutheitsanspruch.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Preise ansehen",
-    image: "/images/hermetia/library-of-self-profile.png",
+    image: "/images/hermetia/library-of-self-profile.webp",
     imageAlt: "Dein Seelenbuch. Ein erklärbarer Begleiter über dich selbst. als Astrakey Markenbild",
     sections: [
       {
@@ -582,7 +582,7 @@ const dePages = {
     trustline: "Nur mit beidseitiger, widerrufbarer Einwilligung. Keine Passt-Bewertung, keine Paartherapie. Keine heimliche Auswertung einer zweiten Person.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Beziehungsanalyse verstehen",
-    image: "/images/hermetia/garden-of-agreements.png",
+    image: "/images/hermetia/garden-of-agreements.webp",
     imageAlt: "Eure Beziehung verständlicher, nicht bewertet. als Astrakey Markenbild",
     sections: [
       {
@@ -671,7 +671,7 @@ const dePages = {
     trustline: "Arbeitet nur mit freigegebenem Kontext. Zeigt, worauf eine Antwort beruht. Kein Ersatz für Menschen oder Beratung, keine Entscheidungen, keine Vorhersage.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "AI-Transparenz ansehen",
-    image: "/images/hermetia/resonance-instrument.png",
+    image: "/images/hermetia/resonance-instrument.webp",
     imageAlt: "Der Companion. Dein Begleiter, der dein Profil erklärt. Kein Orakel. als Astrakey Markenbild",
     sections: [
       {
@@ -764,7 +764,7 @@ const dePages = {
     trustline: "Aus deinem persönlichen Profil, nicht aus deinem Sternzeichen. Kein Streak, kein Countdown, bewusst anti-süchtig und jederzeit pausierbar. Keine Vorhersage, kein Druck, keine Dringlichkeit.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Journaling ansehen",
-    image: "/images/hermetia/dawn-clock-of-becoming.png",
+    image: "/images/hermetia/dawn-clock-of-becoming.webp",
     imageAlt: "Ein Tagesimpuls aus deinem Profil. Nicht aus deinem Sternzeichen. als Astrakey Markenbild",
     sections: [
       {
@@ -839,7 +839,7 @@ const dePages = {
     trustline: "Ein Reflexionstagebuch, das die Selbstreflexion unterstützt und keine Therapie ersetzt. Sensible Notizen, klar geschützt. Export und Löschung jederzeit. AI fasst nur zusammen, wenn du es freigibst.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Tagesimpulse ansehen",
-    image: "/images/hermetia/library-of-self-profile.png",
+    image: "/images/hermetia/library-of-self-profile.webp",
     imageAlt: "Dein Profil sagt etwas. Hier antwortest du. als Astrakey Markenbild",
     sections: [
       {
@@ -910,7 +910,7 @@ const dePages = {
     trustline: "Datenqualität sichtbar. Unsicherheit markiert. Export, Löschung und Korrektur jederzeit möglich.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Daten und Sicherheit ansehen",
-    image: "/images/hermetia/atmospheric-data-topography.png",
+    image: "/images/hermetia/atmospheric-data-topography.webp",
     imageAlt: "Ein gutes Profil bleibt korrigierbar. als Astrakey Markenbild",
     sections: [
       {
@@ -981,7 +981,7 @@ const dePages = {
     trustline: "Ein schöner Einstieg, nicht der ganze Inhalt. Der Wert liegt im Profil. Reflexionsangebot, keine Festlegung.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Mehrsystem-Profil verstehen",
-    image: "/images/hermetia/atmospheric-data-topography.png",
+    image: "/images/hermetia/atmospheric-data-topography.webp",
     imageAlt: "Die Seelenkarte ist die Oberfläche. Das Profil ist der Kern. als Astrakey Markenbild",
     sections: [
       {
@@ -1058,7 +1058,7 @@ const dePages = {
     trustline: "Kostenloser Einstieg ohne Kreditkarte. Du siehst vor jeder Eingabe, wofür sie genutzt wird. AI formuliert die Deutung, sie urteilt nicht über dich.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Daten und Sicherheit ansehen",
-    image: "/images/hermetia/birth-moment-meridian.png",
+    image: "/images/hermetia/birth-moment-meridian.webp",
     imageAlt: "Berechne dein Profil und sieh, was zusammenläuft. als Astrakey Markenbild",
     sections: [
       {
@@ -1137,7 +1137,7 @@ const dePages = {
     trustline: "Kostenloser Einstieg ohne Kreditkarte. Klare Tarife ohne versteckte Bedingungen. Keine Dringlichkeit, keine Countdown-Logik.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Kostenlos vs Premium",
-    image: "/images/hermetia/quiet-offering-table.png",
+    image: "/images/hermetia/quiet-offering-table.webp",
     imageAlt: "Du zahlst für Tiefe, nicht für ein Geheimnis. als Astrakey Markenbild",
     sections: [
       {
@@ -1218,7 +1218,7 @@ const dePages = {
     primaryCtaHref: "/preise/",
     secondaryCta: "Profil kostenlos starten",
     secondaryCtaHref: "start",
-    image: "/images/hermetia/library-of-self-profile.png",
+    image: "/images/hermetia/library-of-self-profile.webp",
     imageAlt: "Resonanz prüfen oder in die Tiefe gehen. als Astrakey Markenbild",
     sections: [
       {
@@ -1297,7 +1297,7 @@ const dePages = {
     trustline: "Kostenloser Einstieg ohne Kreditkarte. Reflexionsangebot, keine Diagnose und keine Vorhersage. Du entscheidest, wie tief du gehst.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Passendes Modul ansehen",
-    image: "/images/hermetia/garden-of-agreements.png",
+    image: "/images/hermetia/garden-of-agreements.webp",
     imageAlt: "Für alle, denen eine einzige Erklärung nicht genügt. als Astrakey Markenbild",
     sections: [
       {
@@ -1380,7 +1380,7 @@ const dePages = {
     trustline: "Klare Einwilligung. Sichtbare Datennutzung. Export und Löschung jederzeit. Keine heimliche Auswertung anderer Personen.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "AI-Transparenz ansehen",
-    image: "/images/hermetia/atmospheric-data-topography.png",
+    image: "/images/hermetia/atmospheric-data-topography.webp",
     imageAlt: "Je persönlicher das Profil, desto klarer die Kontrolle. als Astrakey Markenbild",
     sections: [
       {
@@ -1463,7 +1463,7 @@ const dePages = {
     trustline: "Berechnung und Konvergenz sind deterministisch, gleiche Eingaben ergeben dasselbe Ergebnis, nicht eine bewiesene Wahrheit. AI ist die Sprachebene. Jede starke Aussage lässt sich zu ihren Systembelegen zurückverfolgen.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "So entsteht dein Profil",
-    image: "/images/hermetia/resonance-instrument.png",
+    image: "/images/hermetia/resonance-instrument.webp",
     imageAlt: "AI formuliert. Sie urteilt nicht über dich. als Astrakey Markenbild",
     sections: [
       {
@@ -1542,7 +1542,7 @@ const dePages = {
     trustline: "Eine Haltung statt großer Versprechen. Differenziert statt absolut. Erklärbar statt geheimnisvoll.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Leistungen ansehen",
-    image: "/images/hermetia/alchemical-listening-room.png",
+    image: "/images/hermetia/alchemical-listening-room.webp",
     imageAlt: "Viele Systeme sehen wenig. Zusammen sehen sie mehr. als Astrakey Markenbild",
     sections: [
       {
@@ -1617,7 +1617,7 @@ const dePages = {
     trustline: "Mehrsystem-Profil zuerst, Seelenkarte später. Kein Urteil über dich, sondern ein Reflexionsangebot.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Preise ansehen",
-    image: "/images/hermetia/library-of-self-profile.png",
+    image: "/images/hermetia/library-of-self-profile.webp",
     imageAlt: "Klare Antworten zuerst. als Astrakey Markenbild",
     sections: [
       {
@@ -1772,7 +1772,7 @@ const dePages = {
     trustline: "Sachliche Erklärungen ohne Heilsversprechen. Eigene redaktionelle Texte. Kein übernommener proprietärer Systemtext.",
     primaryCta: "Artikel lesen",
     secondaryCta: "Profil kostenlos starten",
-    image: "/images/hermetia/library-of-self-profile.png",
+    image: "/images/hermetia/library-of-self-profile.webp",
     imageAlt: "Verstehe Systeme einzeln. Verstehe, warum mehrere zusammen mehr zeigen. als Astrakey Markenbild",
     sections: [
       {
@@ -1847,7 +1847,7 @@ const dePages = {
     trustline: "Kurze, präzise Definitionen. Jeder Begriff verlinkt auf vertiefende Erklärungen. Keine vagen Versprechen.",
     primaryCta: "Begriff nachschlagen",
     secondaryCta: "Profil kostenlos starten",
-    image: "/images/hermetia/library-of-self-profile.png",
+    image: "/images/hermetia/library-of-self-profile.webp",
     imageAlt: "Klare Begriffe statt beliebiger Vermischung. als Astrakey Markenbild",
     sections: [
       {
@@ -1922,7 +1922,7 @@ const dePages = {
     trustline: "Faire Gegenüberstellung ohne Sieger. Eigene redaktionelle Texte. Kein übernommener proprietärer Systemtext.",
     primaryCta: "Vergleich lesen",
     secondaryCta: "Profil kostenlos starten",
-    image: "/images/hermetia/resonance-instrument.png",
+    image: "/images/hermetia/resonance-instrument.webp",
     imageAlt: "Nicht welches System recht hat. Was jedes sieht. als Astrakey Markenbild",
     sections: [
       {
@@ -1997,7 +1997,7 @@ const dePages = {
     trustline: "24 EU-Sprachen. Sichtbarer Prüfstatus je Sprache mit Datum der letzten Prüfung. Sensible Profiltexte werden besonders sorgfältig behandelt.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Über Astrakey ansehen",
-    image: "/images/hermetia/celestial-layer-orbits.png",
+    image: "/images/hermetia/celestial-layer-orbits.webp",
     imageAlt: "Dein Profil in deiner Sprache. Sprache ist Teil der Qualität. als Astrakey Markenbild",
     sections: [
       {
@@ -2072,7 +2072,7 @@ const dePages = {
     trustline: "Sieben klare Gates vor Veröffentlichung, je mit Prüfdatum und verantwortlicher Stelle. Rechtliche und redaktionelle Prüfung, keine wissenschaftliche Validierung. Schutz vor Diskriminierung nach Geschlecht und Orientierung.",
     primaryCta: "Profil kostenlos starten",
     secondaryCta: "Daten und Sicherheit ansehen",
-    image: "/images/hermetia/garden-of-agreements.png",
+    image: "/images/hermetia/garden-of-agreements.webp",
     imageAlt: "Klare Gates für Daten, AI, IP und Recht. als Astrakey Markenbild",
     sections: [
       {

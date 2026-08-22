@@ -39,7 +39,7 @@ export default async function GlossarDetailPage({ params }: { params: Promise<{ 
     <>
       <JsonLd
         data={[
-          articleSchema({ headline: term.seoTitle, description: term.definition, locale, url: `${siteUrl}/${locale}${paths.glossar}/${term.slug}/`, about: term.term, image: `${siteUrl}/images/hermetia/library-of-self-profile.png` }),
+          articleSchema({ headline: term.seoTitle, description: term.definition, locale, url: `${siteUrl}/${locale}${paths.glossar}/${term.slug}/`, about: term.term, image: `${siteUrl}/images/hermetia/library-of-self-profile.webp` }),
           definedTermSchema({ term: tr(locale, term.term), definition: tr(locale, term.definition), locale, url: `${siteUrl}/${locale}${paths.glossar}/${term.slug}/`, glossaryUrl: `${siteUrl}/${locale}${paths.glossar}/` }),
           faqSchema(faq),
           breadcrumbSchema([

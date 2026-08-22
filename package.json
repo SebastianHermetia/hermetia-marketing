@@ -23,7 +23,8 @@
     "lint": "tsc --noEmit",
     "gen:llms": "node scripts/gen-llms-txt.mjs",
     "gen:lastmod": "node scripts/gen-lastmod.mjs",
-    "check:index": "node scripts/check-index-strategy.mjs"
+    "check:index": "node scripts/check-index-strategy.mjs",
+    "images:optimize": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
     "next": "^16.2.9",

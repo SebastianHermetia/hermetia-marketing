@@ -26,16 +26,16 @@ Dieses Inventar dokumentiert die aktuell live referenzierten Bilder und Grafiken
 | `public/images/art/04-living-waveform-profile.jpg` | Systemdetailseiten | Hermetia Brand-Art, intern bereitgestellt | finale Rechtefreigabe vor Launch dokumentieren |
 | `public/images/art/05-archetype-procession-profile.jpg` | Systemdetailseiten | Hermetia Brand-Art, intern bereitgestellt | finale Rechtefreigabe vor Launch dokumentieren |
 | `public/images/art/06-inner-city-map-profile.jpg` | Systemdetailseiten | Hermetia Brand-Art, intern bereitgestellt | finale Rechtefreigabe vor Launch dokumentieren |
-| `public/images/hermetia/alchemical-listening-room.png` | Wissen-Artikel JSON-LD, Methodikmotiv | Hermetia Designwelt, intern bereitgestellt | fuer OG-/Artikelbilder geeignet |
-| `public/images/hermetia/atmospheric-data-topography.png` | Seelenkarte | Hermetia Designwelt, intern bereitgestellt | kein Drittmarkenbezug sichtbar |
-| `public/images/hermetia/birth-moment-meridian.png` | Reserve/Content-Motiv | Hermetia Designwelt, intern bereitgestellt | aktuell nicht direkt referenziert |
-| `public/images/hermetia/celestial-layer-orbits.png` | Vergleichsseiten JSON-LD | Hermetia Designwelt, intern bereitgestellt | fuer Systemvergleich geeignet |
-| `public/images/hermetia/dawn-clock-of-becoming.png` | Tagesimpulse | Hermetia Designwelt, intern bereitgestellt | keine medizinische Bildsprache |
-| `public/images/hermetia/garden-of-agreements.png` | Beziehungen | Hermetia Designwelt, intern bereitgestellt | Consent-/Beziehungskontext passend |
-| `public/images/hermetia/library-of-self-profile.png` | Glossar | Hermetia Designwelt, intern bereitgestellt | neutraler Wissenskontext |
-| `public/images/hermetia/personal-dawn-constellation.png` | Systeme | Hermetia Designwelt, intern bereitgestellt | fotorealistisches Mehrsystem-/Profilmotiv |
-| `public/images/hermetia/quiet-offering-table.png` | Preise | Hermetia Designwelt, intern bereitgestellt | ruhiges Pricing-/Angebotsmotiv |
-| `public/images/hermetia/resonance-instrument.png` | Konvergenz-Engine | Hermetia Designwelt, intern bereitgestellt | USP-Motiv |
+| `public/images/hermetia/alchemical-listening-room.webp` | Wissen-Artikel JSON-LD, Methodikmotiv | Hermetia Designwelt, intern bereitgestellt | fuer OG-/Artikelbilder geeignet |
+| `public/images/hermetia/atmospheric-data-topography.webp` | Seelenkarte | Hermetia Designwelt, intern bereitgestellt | kein Drittmarkenbezug sichtbar |
+| `public/images/hermetia/birth-moment-meridian.webp` | Reserve/Content-Motiv | Hermetia Designwelt, intern bereitgestellt | aktuell nicht direkt referenziert |
+| `public/images/hermetia/celestial-layer-orbits.webp` | Vergleichsseiten JSON-LD | Hermetia Designwelt, intern bereitgestellt | fuer Systemvergleich geeignet |
+| `public/images/hermetia/dawn-clock-of-becoming.webp` | Tagesimpulse | Hermetia Designwelt, intern bereitgestellt | keine medizinische Bildsprache |
+| `public/images/hermetia/garden-of-agreements.webp` | Beziehungen | Hermetia Designwelt, intern bereitgestellt | Consent-/Beziehungskontext passend |
+| `public/images/hermetia/library-of-self-profile.webp` | Glossar | Hermetia Designwelt, intern bereitgestellt | neutraler Wissenskontext |
+| `public/images/hermetia/personal-dawn-constellation.webp` | Systeme | Hermetia Designwelt, intern bereitgestellt | fotorealistisches Mehrsystem-/Profilmotiv |
+| `public/images/hermetia/quiet-offering-table.webp` | Preise | Hermetia Designwelt, intern bereitgestellt | ruhiges Pricing-/Angebotsmotiv |
+| `public/images/hermetia/resonance-instrument.webp` | Konvergenz-Engine | Hermetia Designwelt, intern bereitgestellt | USP-Motiv |
 
 ## Live-Grafiken
 

@@ -14,7 +14,7 @@ import { getSystemLibraryItems, systemLibraryIntro, systemLibrarySections } from
 import { systemText } from "@/content/systems";
 
 const routePath = paths.systemeBibliothek;
-const heroImage = "/images/hermetia/celestial-layer-orbits.png";
+const heroImage = "/images/hermetia/celestial-layer-orbits.webp";
 
 const faq = [
   { q: "Welche Systeme nutzt Astrakey?", a: "Astrakey nutzt unter anderem Astrologie, Human Design, Gene Keys, Numerologie, BaZi, Enneagramm, Maya Tzolkin, Nakshatra, I Ching, Ayurveda, Big Five, RIASEC, Chronotyp, VIA-Staerken und weitere symbolische, psychologische und koerperbezogene Perspektiven." },

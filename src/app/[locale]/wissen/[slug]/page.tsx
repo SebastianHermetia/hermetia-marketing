@@ -38,7 +38,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
     <>
       <JsonLd
         data={[
-          articleSchema({ headline: article.seoTitle, description: article.description, locale, url: `${siteUrl}/${locale}${paths.wissen}/${article.slug}/`, about: article.title, image: `${siteUrl}/images/hermetia/alchemical-listening-room.png` }),
+          articleSchema({ headline: article.seoTitle, description: article.description, locale, url: `${siteUrl}/${locale}${paths.wissen}/${article.slug}/`, about: article.title, image: `${siteUrl}/images/hermetia/alchemical-listening-room.webp` }),
           faqSchema(faq),
           breadcrumbSchema([
             { name: "Astrakey", url: `${siteUrl}/${locale}/` },
