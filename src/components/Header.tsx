@@ -40,6 +40,8 @@ export function Header({ locale, current }: { locale: Locale; current?: string }
           <a className="btn btn-ghost whitespace-nowrap px-3 py-2.5 text-[13px] 2xl:px-4" href={loginUrl(locale, { source: "header-login", medium: "nav" })}>{t.nav.login}</a>
           <a className="btn btn-primary whitespace-nowrap px-3 py-2.5 text-[13px] 2xl:px-4" href={startUrl(locale, { source: "header-start", medium: "nav" })}>{t.nav.start}</a>
         </div>
+        {/* Kompakt-Leiste unterhalb xl: Login + Start bleiben sichtbar, Nav wandert in den Drawer. */}
+        <a className="btn btn-ghost hidden shrink-0 whitespace-nowrap px-3 py-2.5 text-[13px] sm:inline-flex xl:hidden" href={loginUrl(locale, { source: "header-login-compact", medium: "nav" })}>{t.nav.login}</a>
         <a className="btn btn-primary hidden shrink-0 whitespace-nowrap px-4 py-2.5 text-[13px] sm:inline-flex xl:hidden" href={startUrl(locale, { source: "header-start", medium: "nav" })}>{t.nav.start}</a>
         {/* Mobile/tablet hamburger renders drawer with nav + locale + login. */}
         <MobileMenu
