@@ -31,6 +31,22 @@ export const defaultLocale: Locale = "de";
 export const editorialLocales = locales;
 export const uiLocalizedLocales = locales;
 
+// Sprachen, die in den Suchindex gehören. Alle übrigen Locales bleiben für
+// Besucher erreichbar, tragen aber `noindex, follow`, stehen nicht in der
+// Sitemap und nicht in den hreflang-Alternates.
+//
+// Hintergrund (SEO-Audit 2026-08-22): Die maschinenübersetzten Locales erbten
+// einen generischen Site-Title, wodurch sich 3.212 von 3.504 URLs eine Handvoll
+// Titel teilten. Google wertet so etwas als "scaled content" und zieht das
+// Qualitätsurteil über die gesamte Domain nach unten — messbar daran, dass nur
+// ein Bruchteil der deutschen Inhaltsseiten überhaupt indexiert war.
+export const indexedLocales = ["de", "en", "fr", "es", "it"] as const;
+export type IndexedLocale = (typeof indexedLocales)[number];
+
+export function isIndexedLocale(locale: Locale): boolean {
+  return (indexedLocales as readonly string[]).includes(locale);
+}
+
 export function hasEditorialTranslation(locale: Locale): boolean {
   return (editorialLocales as readonly string[]).includes(locale);
 }

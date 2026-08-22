@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:i18n": "next build && node scripts/apply-i18n-html-translations.mjs --generate-missing && node scripts/gen-llms-txt.mjs",
-    "build:i18n:cached": "next build && node scripts/apply-i18n-html-translations.mjs && node scripts/gen-llms-txt.mjs",
+    "build:i18n": "node scripts/gen-lastmod.mjs && next build && node scripts/apply-i18n-html-translations.mjs --generate-missing && node scripts/gen-llms-txt.mjs",
+    "build:i18n:cached": "node scripts/gen-lastmod.mjs && next build && node scripts/apply-i18n-html-translations.mjs && node scripts/gen-llms-txt.mjs",
     "i18n:extract": "node scripts/extract-i18n-source-catalog.mjs",
     "i18n:apply": "node scripts/apply-i18n-html-translations.mjs",
     "i18n:parity": "node scripts/check-i18n-content-parity.mjs",
@@ -21,7 +21,9 @@
     "check:graphics:i18n": "node scripts/check-localized-graphics.mjs",
     "start": "next start",
     "lint": "tsc --noEmit",
-    "gen:llms": "node scripts/gen-llms-txt.mjs"
+    "gen:llms": "node scripts/gen-llms-txt.mjs",
+    "gen:lastmod": "node scripts/gen-lastmod.mjs",
+    "check:index": "node scripts/check-index-strategy.mjs"
   },
   "dependencies": {
     "next": "^16.2.9",

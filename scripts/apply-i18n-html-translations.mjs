@@ -1,5 +1,11 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import {
+  containsProtectedTerm,
+  maskProtectedTerms,
+  placeholdersIntact,
+  unmaskProtectedTerms,
+} from "./protected-terms.mjs";
 
 const root = process.cwd();
 const outDir = join(root, "out");
@@ -10,6 +16,10 @@ const delimiter = "\n<<<HERMETIA_TRANSLATION_SPLIT>>>\n";
 const args = new Set(process.argv.slice(2));
 const generateMissing = args.has("--generate-missing");
 const refreshExisting = args.has("--refresh-existing");
+// Verwirft die zwischengespeicherten Übersetzungen aller Strings mit geschützten
+// Eigennamen, damit sie mit Maskierung neu erzeugt werden. Einmalig nötig, nachdem
+// `scripts/protected-terms.mjs` eingeführt oder erweitert wurde.
+const refreshProtected = args.has("--refresh-protected");
 
 function readCache() {
   if (!existsSync(cachePath)) return {};
@@ -128,7 +138,10 @@ function chunks(values, maxChars = 1200) {
 }
 
 async function translateBatch(locale, batch) {
-  const query = batch.join(delimiter);
+  // Eigennamen vor dem Versand maskieren und danach zurücktauschen — sonst macht gtx
+  // aus "Human Design" ein "design humain". Siehe scripts/protected-terms.mjs.
+  const masked = batch.map((value) => maskProtectedTerms(value));
+  const query = masked.join(delimiter);
   const params = new URLSearchParams({ client: "gtx", sl: "de", tl: locale, dt: "t", q: query });
   let lastError;
   for (let attempt = 1; attempt <= 4; attempt += 1) {
@@ -141,7 +154,16 @@ async function translateBatch(locale, batch) {
       const translated = (data[0] ?? []).map((part) => part[0]).join("");
       const parts = translated.split(delimiter).map((part) => part.trim());
       if (parts.length !== batch.length) throw new Error(`Translation split mismatch for ${locale}: expected ${batch.length}, got ${parts.length}`);
-      return parts;
+      return parts.map((part, index) => {
+        // Hat gtx einen Platzhalter verschluckt, wäre der Eigenname im Ergebnis
+        // verloren — dann lieber den deutschen Quelltext behalten als eine Übersetzung
+        // mit fehlendem Markennamen ausliefern.
+        if (!placeholdersIntact(masked[index], part)) {
+          console.warn(`  Platzhalter verloren (${locale}), behalte Quelltext: ${batch[index].slice(0, 60)}`);
+          return batch[index];
+        }
+        return unmaskProtectedTerms(part);
+      });
     } catch (error) {
       lastError = error;
       if (attempt < 4) await new Promise((resolve) => setTimeout(resolve, 750 * attempt));
@@ -150,13 +172,34 @@ async function translateBatch(locale, batch) {
   throw lastError;
 }
 
+function dropProtectedFromCache(cache, stringsByLocale) {
+  if (!refreshProtected) return;
+  let dropped = 0;
+  for (const locale of Object.keys(cache)) {
+    // Nur verwerfen, was der aktuelle Build auch wirklich anfordert. Sonst löscht
+    // ein Refresh-Lauf Einträge, die zu keiner gerenderten Seite mehr gehören und
+    // deshalb nie neu erzeugt werden — der Cache verliert sie dauerhaft.
+    const wanted = stringsByLocale[locale];
+    if (!wanted) continue;
+    for (const source of Object.keys(cache[locale] ?? {})) {
+      if (wanted.has(source) && containsProtectedTerm(source)) {
+        delete cache[locale][source];
+        dropped += 1;
+      }
+    }
+  }
+  console.log(`--refresh-protected: ${dropped} Cache-Einträge mit Eigennamen verworfen.`);
+}
+
 async function fillCache(cache, stringsByLocale) {
   if (!generateMissing) return;
+  dropProtectedFromCache(cache, stringsByLocale);
   for (const locale of locales) {
     cache[locale] ??= {};
     const missing = [...stringsByLocale[locale]].filter((text) => refreshExisting || !cache[locale][text]);
     if (!missing.length) continue;
     console.log(`Translating ${missing.length} missing strings for ${locale}...`);
+    let failed = 0;
     for (const batch of chunks(missing)) {
       try {
         const translated = await translateBatch(locale, batch);
@@ -166,12 +209,22 @@ async function fillCache(cache, stringsByLocale) {
       } catch (error) {
         console.warn(`${error.message}; retrying individually.`);
         for (const source of batch) {
-          const [translated] = await translateBatch(locale, [source]);
-          cache[locale][source] = translated || source;
+          // Auch der Einzel-Retry kann scheitern (gtx antwortet zeitweise mit 500).
+          // Früher riss das den gesamten Lauf ab — inklusive aller noch nicht
+          // bearbeiteten Sprachen. Jetzt bleibt der String unübersetzt und der
+          // nächste Lauf holt ihn nach; der Rest läuft durch.
+          try {
+            const [translated] = await translateBatch(locale, [source]);
+            cache[locale][source] = translated || source;
+          } catch (singleError) {
+            failed += 1;
+            if (failed <= 3) console.warn(`  übersprungen (${locale}): ${singleError.message}`);
+          }
         }
       }
       saveCache(cache);
     }
+    if (failed) console.warn(`${locale}: ${failed} Strings nicht übersetzt — erneuter Lauf holt sie nach.`);
   }
 }
 
@@ -207,6 +260,8 @@ function createJsStringReplacers(cache, locale, strings, embeddedInJsString = fa
   const skipped = new Set([
     "width=device-width, initial-scale=1",
     "noindex, nofollow",
+    "noindex, follow",
+    "index, follow",
     "website",
     "summary_large_image",
   ]);
